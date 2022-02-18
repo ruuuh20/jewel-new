@@ -9,7 +9,8 @@ import { ImageUrlBuilder } from "@sanity/image-url";
 // }
 const Program = ({ program }) => {
  
-console.log(program)
+if (!program) return null
+
   return (
     <div className="container">
     
@@ -22,7 +23,7 @@ console.log(program)
         />
       </div>
       <div className="images-section">
-        <ImageComponent identifier="main-image" image={mainImage} />
+        <ImageComponent identifier="main-image" image={program.mainImage ? program.mainIamge : null} />
       </div>
     </div>
   );
