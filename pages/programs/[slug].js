@@ -9,7 +9,7 @@ import { ImageUrlBuilder } from "@sanity/image-url";
 // }
 const Program = ({ program }) => {
   const {
-    title = "Missing title",
+    title,
 
     mainImage,
   } = program;
@@ -17,7 +17,7 @@ console.log(program)
   return (
     <div className="container">
     
-      <p>{title}</p>
+      <p>{title ? title : 'no title'}</p>
       <div className="images-section">
         <NextImage
           src="https://via.placeholder.com/150"
