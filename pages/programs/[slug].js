@@ -8,16 +8,12 @@ import { ImageUrlBuilder } from "@sanity/image-url";
 //   return imageUrlBuilder(client).image(source);
 // }
 const Program = ({ program }) => {
-  const {
-    title,
-
-    mainImage,
-  } = program;
+ 
 console.log(program)
   return (
     <div className="container">
     
-      <p>{title ? title : 'no title'}</p>
+      <p>{program.title ? program.title : 'no title'}</p>
       <div className="images-section">
         <NextImage
           src="https://via.placeholder.com/150"
