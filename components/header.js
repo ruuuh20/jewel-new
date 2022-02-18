@@ -16,9 +16,10 @@ export default function Header() {
             <FancyLink destination="/" a11yText="Navigate to the home page" label="Home" />
 
             <FancyLink destination="/about" a11yText="Navigate to the about page" label="About" />
-            <FancyLink destination="/about" a11yText="Navigate to the programs page" label="Programs" />
+            <FancyLink destination="/programs" a11yText="Navigate to the programs page" label="Programs" />
+            <FancyLink destination="/" a11yText="Navigate to the events page" label="Events" />
             
-            <FancyLink destination="/about" a11yText="Navigate to the contact page" label="Contact" />
+            <FancyLink destination="/contact" a11yText="Navigate to the contact page" label="Contact" />
             <FancyLink destination="/about" a11yText="Navigate to the donate page" label="Donate" extraClasses="border-1 py-2 px-4 bg-blue-dark text-white" />
           </nav>
         </div>
