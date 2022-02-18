@@ -13,11 +13,11 @@ const Program = ({ program }) => {
 
     mainImage,
   } = program;
-
+console.log(program)
   return (
     <div className="container">
-      <h2>{program?.slug?.current}</h2>
-      {/* <p>{description}</p> */}
+    
+      <p>{title}</p>
       <div className="images-section">
         <NextImage
           src="https://via.placeholder.com/150"
