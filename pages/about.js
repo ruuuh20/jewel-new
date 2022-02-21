@@ -71,15 +71,15 @@ export default function About(props) {
                       <div className="flex flex-wrap">
                         <div className="w-full md:w-1/2 content md:px-12 xl:px-16 max-w-2xl">
                           <div className="content">
-                            <p>{post.goals}</p>
+                            <p>{post.foundersMessage}</p>
                           </div>
                         </div>
                         <div className="w-full md:w-1/2 relative content mb-8 md:mb-0 overflow-hidden">
-                          <figure className="mb-6 md:mb-8 xl:mb-10">
+                          <figure className="mb-6 md:mb-8 xl:mb-10 rounded-full overflow-hidden">
                             <ImageComponent
                               image={
-                                post.imageUrl !== null
-                                  ? post.imageUrl
+                                post.foundersImageUrl !== null
+                                  ? post.foundersImageUrl
                                   : "https://via.placeholder.com/50"
                               }
                             />
@@ -95,69 +95,25 @@ export default function About(props) {
                           Our History
                         </h2>
                       </div>
-
-                      <div className="flex flex-wrap md-mx-6 border-t border-opacity-50 md:py-8 py-5">
-                        <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
-                          <div className="max-w-xl">
-                            <div className="text-2xl md:text-3xl xl:text-4xl w-full text-right">
-                              <p>2021</p>
+                      {post.timelineItems?.map((item, i) => {
+                        return (
+                          <>
+                            <div className="flex flex-wrap md-mx-6 border-t border-opacity-50 md:py-8 py-5">
+                              <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
+                                <div className="max-w-xl">
+                                  <div className="text-2xl md:text-3xl xl:text-4xl w-full text-right">
+                                    <p>{item.timelineItemYear}</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="w-full md:w-7/12 xl:w-4/6 md:pl-10 ml-auto leading-8">
+                                <p>{item.timelineItemText}</p>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                        <div className="w-full md:w-7/12 xl:w-4/6 md:pl-10 ml-auto leading-8">
-                          <p>01 list of events lorem ipsum </p>
-                          <p>02 list of events lorem ipsum</p>
-                          <p> 03 list of events lorem ipsum</p>
-                          <p>04 list of events lorem ipsum</p>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-wrap md-mx-6 border-t border-opacity-50 md:py-8 py-5">
-                        <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
-                          <div className="max-w-xl">
-                            <div className="text-2xl md:text-3xl xl:text-4xl w-full text-right">
-                              <p>2020</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-full md:w-7/12 xl:w-4/6 md:pl-10 ml-auto leading-8">
-                          <p>01 list of events</p>
-                          <p>02 list of events</p>
-                          <p> 03 list of events</p>
-                          <p>04 list of events</p>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-wrap md-mx-6 border-t border-opacity-50 md:py-8 py-5">
-                        <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
-                          <div className="max-w-xl">
-                            <div className="text-2xl md:text-3xl xl:text-4xl w-full text-right">
-                              <p>2019</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-full md:w-7/12 xl:w-4/6 md:pl-10 ml-auto leading-8">
-                          <p>01 list of events</p>
-                          <p>02 list of events</p>
-                          <p>03 list of events</p>
-                          <p>04 list of events</p>
-                        </div>
-                      </div>
-                      <div className="flex flex-wrap md-mx-6 border-t border-opacity-50 md:py-8 py-5">
-                        <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
-                          <div className="max-w-xl">
-                            <div className="text-2xl md:text-3xl xl:text-4xl w-full text-right">
-                              <p>2018</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-full md:w-7/12 xl:w-4/6 md:pl-10 ml-auto leading-8">
-                          <p>01 list of events</p>
-                          <p>02 list of events</p>
-                          <p> 03 list of events</p>
-                          <p>04 list of events</p>
-                        </div>
-                      </div>
+                          </>
+                        );
+                      })}
+                      a
                     </Container>
                     <hr />
                     <Container>
@@ -289,7 +245,8 @@ const query = groq`
  *[_type == "about" && title == "About"] | order(_createdAt desc) {
   
 ...,
- "imageUrl": heroImage.asset->url
+ "imageUrl": heroImage.asset->url,
+ "foundersImageUrl": foundersImage.asset->url
 
  
 }

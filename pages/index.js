@@ -80,14 +80,23 @@ const Home = ({ data }) => {
                 <h2 className="mb-4 max-w-4xl text-3xl md:text-4xl xl:text-5xl font-medium">
                   {homepageData.welcomeHeading}
                 </h2>
-                <div className="max-w-3xl text-xl mb-4 content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  </p>
-                  <FancyLink destination="/about" label="Learn More" />
+                <div className="max-w-4xl text-xl my-4 bg-gray-200 content">
+                  <h3>Our goals are</h3>
+                  <div className="mb-4">
+                    {homepageData.goals.map((item, i) => {
+                      return (
+                        <p>
+                          {i + 1}. {item}
+                        </p>
+                      );
+                    })}
+                  </div>
                 </div>
+                <FancyLink
+                  destination="/about"
+                  label="Learn more about us"
+                  extraClasses="underline text-blue-dark"
+                />
               </m.article>
             </section>
           </Container>
@@ -343,6 +352,7 @@ const homepageQuery = `*\[_type == "home"\][0] {
   },
   welcomeHeading,
   whatWeDo,
+  goals,
   callToAction[]-> {
     title,
     description
