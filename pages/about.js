@@ -89,7 +89,7 @@ export default function About(props) {
                     </Container>
 
                     {/* flex 2 columns */}
-                    <Container>
+                    <Container className="my-2">
                       <div className="relative mb-2 md:mb-3">
                         <h2 className="md:text-lg uppercase block ">
                           Our History

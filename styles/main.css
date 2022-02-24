@@ -18,4 +18,15 @@ body {
 
 .image {
   border-radius: 100%;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+/* .dropdown {
+  transition: all 1s ease-in;
+} */
+.neg-margin {
+  margin-left: -5px !important;
 }

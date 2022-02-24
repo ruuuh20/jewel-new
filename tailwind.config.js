@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
-      'sans': ['Arial', 'sans-serif'],
+      'sans': ['roboto_condensedregular', 'Arial', 'sans-serif'],
       'mono': ['Lucida Console', 'Courier', 'monospace'],
     },
     screens: {
@@ -31,7 +31,8 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    // extend: {},
+      display: ["group-hover"]
   },
   plugins: []
 }

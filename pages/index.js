@@ -74,40 +74,42 @@ const Home = ({ data }) => {
               </m.span>
             </div>
           </Container>
-          <Container>
-            <section className="py-10 md:py-16 2xl:py-20">
-              <m.article variants={fade}>
-                <h2 className="mb-4 max-w-4xl text-3xl md:text-4xl xl:text-5xl font-medium">
-                  {homepageData.welcomeHeading}
-                </h2>
-                <div className="max-w-4xl text-xl my-4 bg-gray-200 content">
-                  <h3>Our goals are</h3>
-                  <div className="mb-4">
-                    {homepageData.goals.map((item, i) => {
-                      return (
-                        <p>
-                          {i + 1}. {item}
-                        </p>
-                      );
-                    })}
+          <section className="w-full bg-gray-200 my-6">
+            <Container>
+              <div className="py-10 md:py-16 2xl:py-20">
+                <m.article variants={fade}>
+                  <h3 className="mb-4 max-w-4xl text-3xl md:text-4xl xl:text-5xl font-medium leading-normal">
+                    {homepageData.welcomeHeading}
+                  </h3>
+                  <div className="max-w-4xl text-xl mt-8 content">
+                    <h3>Our goals are</h3>
+                    <div className="mb-4">
+                      {homepageData.goals.map((item, i) => {
+                        return (
+                          <p>
+                            {i + 1}. {item}
+                          </p>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-                <FancyLink
-                  destination="/about"
-                  label="Learn more about us"
-                  extraClasses="underline text-blue-dark"
-                />
-              </m.article>
-            </section>
-          </Container>
+                  <FancyLink
+                    destination="/about"
+                    label=" --> Learn more about us"
+                    extraClasses="underline text-blue-dark text-lg"
+                  />
+                </m.article>
+              </div>
+            </Container>
+          </section>
 
           <Container>
-            <div className="flex flex-wrap bg-blue-light">
+            <div className="flex flex-wrap bg-blue">
               <div className="flex flex-wrap w-full px-8 py-8">
                 {/* <h3 className="text-3xl md:text-3xl xl:text-4xl leading-none tracking-tighter w-full md:w-32 xl:w-48 md:mb-8 xl:mb-12">
                   Upcoming Event
                 </h3> */}
-                <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
+                <h2 className="relative text-white block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
                   Upcoming event
                 </h2>
                 <div p>
@@ -210,45 +212,47 @@ const Home = ({ data }) => {
               </div>
             </div>
           </Container>
-          <Container>
-            <section className="py-10">
-              <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
-                programs
-              </h2>
-              <div className="border-t border-current mb-12 md:mb-16 2xl:mb-24 relative">
-                {programData.map((item, i) => {
-                  return (
-                    <Link href="/">
-                      <a className="flex flex-wrap border-b py-6">
-                        <div className="flex flex-wrap w-full md:px-8">
-                          <div className="flex flex-wrap w-full md:px-8 md:w-1/2">
-                            <div className="md:flex flex-1 md:flex-wrap md:h-full">
-                              <div className="w-full self-end mt-auto">
-                                <h3 className="text-[40px]">{item.title}</h3>
-                              </div>
-                              <div className="w-full self-end mt-auto">
-                                Cateogry
+          <section>
+            <Container>
+              <div className="py-10">
+                <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
+                  programs
+                </h2>
+                <div className="border-t border-current mb-12 md:mb-16 2xl:mb-24 relative">
+                  {programData.map((item, i) => {
+                    return (
+                      <Link href="/">
+                        <a className="flex flex-wrap border-b py-6">
+                          <div className="flex flex-wrap w-full md:px-8">
+                            <div className="flex flex-wrap w-full md:px-8 md:w-1/2">
+                              <div className="md:flex flex-1 md:flex-wrap md:h-full">
+                                <div className="w-full self-end mt-auto">
+                                  <h3 className="text-[40px]">{item.title}</h3>
+                                </div>
+                                <div className="w-full self-end mt-auto">
+                                  Cateogry
+                                </div>
                               </div>
                             </div>
+                            <div className="w-full md:px-8 md:w-1/2">
+                              {" "}
+                              <ImageComponent
+                                image={
+                                  item.mainImage !== null
+                                    ? item.mainImage.url
+                                    : "https://via.placeholder.com/50"
+                                }
+                              />
+                            </div>
                           </div>
-                          <div className="w-full md:px-8 md:w-1/2">
-                            {" "}
-                            <ImageComponent
-                              image={
-                                item.mainImage !== null
-                                  ? item.mainImage.url
-                                  : "https://via.placeholder.com/50"
-                              }
-                            />
-                          </div>
-                        </div>
-                      </a>
-                    </Link>
-                  );
-                })}
+                        </a>
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-            </section>
-          </Container>
+            </Container>
+          </section>
           <Container>
             <section className="py-10">
               <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
