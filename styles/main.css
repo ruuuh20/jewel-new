@@ -16,12 +16,17 @@ body {
   @apply font-sans antialiased text-black bg-white;
 }
 
-.image {
-  border-radius: 100%;
-  overflow: hidden;
-  width: 350px;
-  height: 350px;
-  margin: 0 auto;
+.image-container {
+  position: relative;
+  /* padding: 2rem; */
+  min-height: 400px;
+  width: 90%;
+}
+.image-circle {
+  /* width: 350px;
+  height: 350px; */
+  /* margin: 0 auto; */
+  filter: grayscale(80%);
 }
 
 /* .dropdown {
@@ -29,4 +34,12 @@ body {
 } */
 .neg-margin {
   margin-left: -5px !important;
+}
+
+.image {
+  filter: grayscale(100%);
+}
+
+.image:hover {
+  filter: grayscale(0);
 }
