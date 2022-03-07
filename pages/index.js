@@ -30,8 +30,6 @@ const Home = ({ data }) => {
     <Layout>
       <NextSeo title="Home" />
 
-      <Header />
-
       <LazyMotion features={domAnimation}>
         <m.main
           initial="initial"
@@ -78,6 +76,7 @@ const Home = ({ data }) => {
             <Container>
               <div className="py-10 md:py-16 2xl:py-20">
                 <m.article variants={fade}>
+                  <h2>{homepageData.title}</h2>
                   <h3 className="mb-4 max-w-4xl text-3xl md:text-4xl xl:text-5xl font-medium leading-normal">
                     {homepageData.welcomeHeading}
                   </h3>
@@ -348,7 +347,7 @@ const siteHeaderQuery = `*\[_type == "siteheader"\][0] {
 
 // Create a query called homepageQuery
 const homepageQuery = `*\[_type == "home"\][0] {
-  title,
+  "title": title.en,
   subtitle,
   
   heroImage {

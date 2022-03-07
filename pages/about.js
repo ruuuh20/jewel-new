@@ -7,6 +7,7 @@ import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
+import Link from "next/link";
 
 import { useRouter } from "next/router";
 import client, {
@@ -26,12 +27,13 @@ export default function About(props) {
   const { postdata, preview, program } = props;
 
   const router = useRouter();
+  const locale = router.locale || router.defaultLocale;
 
   const { data: posts } = usePreviewSubscription(query, {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-  console.log(posts);
+  console.log(posts, locale, router.defaultLocale);
   return (
     <Layout>
       <NextSeo title="About" />
@@ -53,7 +55,7 @@ export default function About(props) {
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           <div className="relative mb-2 md:mb-3">
                             <h2 className="block uppercase md:text-lg ">
-                              {post.title}
+                              {post.title[locale]}
                             </h2>
                           </div>
                           <div className="w-full pr-12 text-2xl md:text-3xl xl:text-4xl">
@@ -103,6 +105,9 @@ export default function About(props) {
                         </div>
                       </div>
                     </Container>
+                    <Link href="/about" locale="ko">
+                      <a>To /ko/another</a>
+                    </Link>
 
                     {/* flex 2 columns */}
                     <Container className="my-2">
@@ -257,9 +262,11 @@ export default function About(props) {
 }
 
 const query = groq`
- *[_type == "about" && title == "About"] | order(_createdAt desc) {
+ *[_type == "about" && title.en == "About"] | order(_createdAt desc) {
   
 ...,
+
+introText,
  "imageUrl": heroImage.asset->url,
  "foundersImageUrl": foundersImage.asset->url
 
