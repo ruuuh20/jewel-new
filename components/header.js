@@ -27,30 +27,32 @@ export default function Header() {
               </button>
 
               <ul className="absolute hidden text-gray-700 pt-1 group-hover:block w-[120%] ease-in duration-300 z-50">
-                <li className="">
+                <Link href="/about">
                   <a
                     className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     Our Mission
                   </a>
-                </li>
-                <li class="">
+                </Link>
+                <Link href="/">
                   <a
-                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     Founder's Message
                   </a>
-                </li>
-                <li class="">
-                  <a
-                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                  >
-                    Three is the magic number
+                </Link>
+                <Link href="/team">
+                  <a className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                    Our Team
                   </a>
-                </li>
+                </Link>
+                <Link href="/">
+                  <a className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                    asdasd
+                  </a>
+                </Link>
               </ul>
             </div>
 
