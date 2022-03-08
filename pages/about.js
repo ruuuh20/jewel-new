@@ -1,6 +1,4 @@
 import Layout from "@/components/layout";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 import Container from "@/components/container";
 import FancyLink from "@/components/fancyLink";
 import { fade } from "@/helpers/transitions";
@@ -67,44 +65,6 @@ export default function About(props) {
                       </div>
                     </Container>
 
-                    <Container>
-                      <div className="flex flex-wrap">
-                        <div className="w-full max-w-2xl md:w-1/2 content md:px-12 xl:px-16">
-                          <div className="content">
-                            <p>{post.foundersMessage}</p>
-                            <p>oijasoiad</p>
-                            <p>oijasoiad</p>
-                            <p>oijasoiad</p>
-                            <p>oijasoiad</p>
-                            <p>oijasoiad</p>
-                            <p>oijasoiad</p>
-                            <p>oijasoiad</p>
-                          </div>
-                        </div>
-                        <div className="relative w-full mb-8 overflow-hidden md:w-1/2 content md:mb-0">
-                          <div className="image-container">
-                            <figure className="mb-6 overflow-hidden rounded-full md:mb-8 xl:mb-10">
-                              <Image
-                                className="image-circle"
-                                // layout="fill"
-                                // width={400}
-                                // height={400}
-                                // width={800}
-                                // height={450}
-                                // layout="responsive"
-                                layout="fill"
-                                objectFit="contain"
-                                src={
-                                  post.foundersImageUrl !== null
-                                    ? post.foundersImageUrl
-                                    : "https://via.placeholder.com/50"
-                                }
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                      </div>
-                    </Container>
                     <Link href="/about" locale="ko">
                       <a>To /ko/another</a>
                     </Link>
@@ -255,8 +215,6 @@ export default function About(props) {
           </Container>
         </m.div>
       </LazyMotion>
-
-      <Footer />
     </Layout>
   );
 }
