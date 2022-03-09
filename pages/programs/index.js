@@ -41,6 +41,12 @@ export default function Programs(props) {
             </span>
           </div>
 
+          <div className="flex m-4 programs">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+          </div>
+
           <div className="relative">
             {posts &&
               posts.map((post) => (
@@ -56,7 +62,7 @@ export default function Programs(props) {
                       />
                     </div>
 
-                    <div className="flex justify-center w-full bg-[#e1d8dc]">
+                    <div className="flex justify-center w-1/2 bg-[#e1d8dc]">
                       <div className="p-4 intro">
                         <h3 className="block w-full text-2xl duration-500 ease-in-out md:text-3xl group-hover:opacity-60">
                           {post.title}
