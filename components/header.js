@@ -35,7 +35,7 @@ export default function Header() {
                     Our Mission
                   </a>
                 </Link>
-                <Link href="/">
+                <Link href="/founder">
                   <a
                     className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
@@ -48,9 +48,9 @@ export default function Header() {
                     Our Team
                   </a>
                 </Link>
-                <Link href="/">
+                <Link href="/history">
                   <a className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
-                    asdasd
+                    History
                   </a>
                 </Link>
               </ul>

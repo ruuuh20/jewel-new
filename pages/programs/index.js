@@ -46,7 +46,7 @@ export default function Programs(props) {
               posts.map((post) => (
                 <Link href={`/${post.slug}`}>
                   <a className="flex flex-wrap m-auto border-b group md:py-10 md:w-full">
-                    <div className="w-full">
+                    <div className="w-1/2 m-auto">
                       <ImageComponent
                         image={
                           post.mainImage !== null
