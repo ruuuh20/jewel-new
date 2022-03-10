@@ -43,14 +43,19 @@ export default function Header() {
                     Founder's Message
                   </a>
                 </Link>
-                <Link href="/team">
+                <Link href="/leadership">
                   <a className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
-                    Organization
+                    Leadership
                   </a>
                 </Link>
                 <Link href="/history">
                   <a className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
                     History
+                  </a>
+                </Link>
+                <Link href="/contact">
+                  <a className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">
+                    Contact Us
                   </a>
                 </Link>
               </ul>
@@ -78,11 +83,6 @@ export default function Header() {
               label="Media"
             />
 
-            <FancyLink
-              destination="/contact"
-              a11yText="Navigate to the contact page"
-              label="Contact"
-            />
             <FancyLink
               destination="/about"
               a11yText="Navigate to the donate page"

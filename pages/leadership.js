@@ -1,5 +1,4 @@
 import Layout from "@/components/layout";
-import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
 import FancyLink from "@/components/fancyLink";
@@ -21,9 +20,8 @@ import ImageWrapper from "@/components/imageWrapper";
 import ImageComponent from "@/components/image";
 
 import Image from "next/image";
-import { useNextSanityImage } from "next-sanity-image";
 
-export default function Team(props) {
+export default function Leadership(props) {
   const { postdata, preview, program } = props;
 
   const router = useRouter();
@@ -37,7 +35,7 @@ export default function Team(props) {
   const boardNames = ["Officers", "Directors", "Honorable Advisor"];
   return (
     <Layout>
-      <NextSeo title="About" />
+      <NextSeo title="Leadership" />
 
       <LazyMotion features={domAnimation}>
         <m.div
