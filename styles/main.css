@@ -26,7 +26,7 @@ body {
   /* width: 350px;
   height: 350px; */
   /* margin: 0 auto; */
-  filter: grayscale(80%);
+  /* filter: grayscale(80%); */
 }
 
 /* .dropdown {
@@ -37,9 +37,21 @@ body {
 }
 
 .image {
-  filter: grayscale(100%);
+  filter: grayscale(25%);
 }
 
 .image:hover {
-  filter: grayscale(0);
+  /* filter: grayscale(0); */
+}
+
+.project-card,
+.project-title {
+  transition: ease 0.4s all;
+}
+
+.project-card:hover .project-title {
+  text-decoration: underline;
+}
+
+.project-card:hover .image {
 }

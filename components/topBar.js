@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function TopBar() {
   return (
-    <header className="py-2 bg-blue text-white border-b border-gray-50 ">
+    <div className="py-2 bg-purple-secondary text-white border-b border-gray-50 ">
       <div className="max-w-[1500px] px-6 mx-auto w-full">
         <div className="flex flex-wrap">
           
@@ -23,6 +23,6 @@ export default function TopBar() {
           </nav>
         </div>
       </div>
-    </header>
+    </div>
   );
 }

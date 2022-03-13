@@ -68,7 +68,7 @@ export default function Header() {
               extraClasses="neg-margin"
             />
             <FancyLink
-              destination="/programs"
+              destination="/projects"
               a11yText="Navigate to the projects page"
               label="Projects"
             />

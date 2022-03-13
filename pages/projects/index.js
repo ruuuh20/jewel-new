@@ -45,7 +45,7 @@ export default function Projects(props) {
             {posts &&
               posts.map((post) => (
                 <Link href={`/${post.slug}`}>
-                  <a className="flex flex-wrap m-auto border-b group md:p-10 md:w-1/2">
+                  <a className="flex flex-wrap m-auto border-b group md:mb-10 md:w-2/5 project-card">
                     <div className="m-auto w-full">
                       <ImageComponent
                         image={
@@ -56,9 +56,9 @@ export default function Projects(props) {
                       />
                     </div>
 
-                    <div className="flex w-full justify-center bg-[#e1d8dc]">
+                    <div className="flex w-full justify-center">
                       <div className="p-5 intro">
-                        <h3 className="block w-full text-2xl duration-500 ease-in-out md:text-3xl group-hover:opacity-60">
+                        <h3 className="block w-full text-2xl md:text-3xl project-title">
                           {post.title[locale]}
                         </h3>
                         <p>{post.description}</p>
