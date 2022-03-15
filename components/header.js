@@ -74,13 +74,13 @@ export default function Header() {
             />
             <FancyLink
               destination="/"
-              a11yText="Navigate to the events page"
-              label="Events"
+              a11yText="Navigate to the media page"
+              label="Media"
             />
             <FancyLink
               destination="/"
-              a11yText="Navigate to the media page"
-              label="Media"
+              a11yText="Navigate to the join us page"
+              label="Join Us"
             />
 
             <FancyLink

@@ -1,31 +1,63 @@
 import client, { sanityClient } from "sanity";
-import NextImage from "next/image";
+import Layout from "@/components/layout";
 import ImageComponent from "../../components/image";
 import groq from "groq";
-import { ImageUrlBuilder } from "@sanity/image-url";
-
+import { useRouter } from "next/router";
+import Container from "@/components/container";
 // function urlFor(source) {
 //   return imageUrlBuilder(client).image(source);
 // }
-const Program = ({ program }) => {
- 
-if (!program) return null
+const Project = ({ program }) => {
+  if (!program) return null;
+
+  const router = useRouter();
+  const locale = router.locale || router.defaultLocale;
 
   return (
-    <div className="container">
-    
-      <p>{program.title ? program.title : 'no title'}</p>
-      <div className="images-section">
-        <NextImage
-          src="https://via.placeholder.com/150"
-          width={200}
-          height={200}
-        />
-      </div>
-      <div className="images-section">
-        <ImageComponent identifier="main-image" image={program.mainImage ? program.mainIamge : null} />
-      </div>
-    </div>
+    <Layout>
+      <Container>
+        {/* <div className="relative w-full pt-8 pb-[88px]"></div> */}
+
+        <div className="images-section mb-16">
+          <ImageComponent
+            identifier="main-image"
+            image={program.mainImage ? program.mainImage : null}
+          />
+        </div>
+        <div className="grid grid-cols-12 gap-16 mb-2">
+          <div className="col-span-8 col-end-auto">
+            <h1 className="md:text-6xl">
+              {program.title[locale] ? program.title[locale] : ""}
+            </h1>
+            <h2 className="md:text-6xl mb-12">July - Aug 2022</h2>
+            <div className="content-inner">
+              <p className="mb-4 text-xl">{program.contentOne}</p>
+              <p className="mb-4 text-xl">{program.contentTwo}</p>
+              <p className="mb-4 text-xl">{program.contentThree}</p>
+            </div>
+            <div>Photos from previous trips</div>
+          </div>
+          <div className="col-span-4 col-end-auto">
+            <div className="sticky top-3">
+              <div className="border-t">
+                <div className="border-b">
+                  <div className="text-center uppercase">Overview</div>
+                  <div className="mb-2">
+                    <p> {program.overview}</p>
+                  </div>
+                </div>
+                <div className="border-b">
+                  <div className="text-center uppercase">Key Dates</div>
+                  <div className="mb-2">
+                    <p> {program.keyDates}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </Layout>
   );
 };
 
@@ -56,7 +88,7 @@ if (!program) return null
 //     };
 //   }
 // };
-const query = groq`*[_type == "program" && slug.current == $slug][0]{
+const query = groq`*[_type == "project" && slug.current == $slug][0]{
   title,
  mainImage
 }`;
@@ -64,7 +96,7 @@ const query = groq`*[_type == "program" && slug.current == $slug][0]{
 export async function getStaticPaths() {
   const paths = await client.fetch(
     groq`
-      *[_type == "program" && defined(slug.current)][].slug.current
+      *[_type == "project" && defined(slug.current)][].slug.current
     `
   );
 
@@ -78,7 +110,7 @@ export async function getStaticProps(context) {
   const { slug = "" } = context.params;
   const program = await client.fetch(
     `
-    *[_type == "program" && slug.current == $slug][0]
+    *[_type == "project" && slug.current == $slug][0]
   `,
     { slug }
   );
@@ -89,4 +121,4 @@ export async function getStaticProps(context) {
   };
 }
 
-export default Program;
+export default Project;

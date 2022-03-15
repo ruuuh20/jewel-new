@@ -31,7 +31,7 @@ export default function Leadership(props) {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-  console.log(posts, locale, router.defaultLocale);
+ 
   const boardNames = ["Officers", "Directors", "Honorable Advisor"];
   return (
     <Layout>

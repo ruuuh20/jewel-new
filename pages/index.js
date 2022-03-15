@@ -74,8 +74,7 @@ const Home = ({ data }) => {
             <Container>
               <div className="py-10 md:py-16 2xl:py-20">
                 <m.article variants={fade}>
-                  <h2>{homepageData.title}</h2>
-                  <h3 className="mb-4 max-w-4xl text-3xl md:text-4xl xl:text-5xl font-medium leading-normal">
+                  <h3 className="mb-4 px-8 text-3xl md:text-4xl xl:text-5xl font-medium text-center">
                     {homepageData.welcomeHeading}
                   </h3>
                   <div className="max-w-4xl text-xl mt-8 content">
@@ -92,8 +91,8 @@ const Home = ({ data }) => {
                   </div>
                   <FancyLink
                     destination="/about"
-                    label=" --> Learn more about us"
-                    extraClasses="underline text-blue-dark text-lg"
+                    label="Who We are"
+                    extraClasses="underline text-blue-dark text-xl"
                   />
                 </m.article>
               </div>
@@ -213,7 +212,7 @@ const Home = ({ data }) => {
             <Container>
               <div className="py-10">
                 <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
-                  programs
+                  programs & projects
                 </h2>
                 <div className="border-t border-current mb-12 md:mb-16 2xl:mb-24 relative">
                   {programData.map((item, i) => {
@@ -252,9 +251,6 @@ const Home = ({ data }) => {
           </section>
           <Container>
             <section className="py-10">
-              <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
-                What We Do? Featured ?
-              </h2>
               <div className="w-full mb-12 md:mb-16 md:mt-24 xl:mb-24 2xl:mb-40 3xl:mb-48 relative z-10">
                 <div className="flex flex-wrap border-dotted border-off-black border-opacity-50 border-t md:border-0 md:-mx-8">
                   {homepageData.callToAction.map((item, i) => {

@@ -25,12 +25,11 @@ export default function Projects(props) {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-
+console.log(posts)
   return (
     <>
       <Layout>
         <NextSeo title="Projects" />
-
         <Container>
           <div className="relative w-full pt-8 pb-[88px]">
             <h2 className="relative block pb-0 pr-12 mb-0 text-2xl font-light leading-normal tracking-tight text-gray-400 md:text-3xl lg:text-4xl 2xl:text-5xl">
@@ -44,7 +43,7 @@ export default function Projects(props) {
           <div className="relative flex flex-wrap">
             {posts &&
               posts.map((post) => (
-                <Link href={`/${post.slug}`}>
+                <Link href={`/projects/${post.slug.current}`}>
                   <a className="flex flex-wrap m-auto border-b group md:mb-10 md:w-2/5 project-card">
                     <div className="m-auto w-full">
                       <ImageComponent
@@ -56,7 +55,7 @@ export default function Projects(props) {
                       />
                     </div>
 
-                    <div className="flex w-full justify-center">
+                    <div className="flex w-full justify-center gray-box min-h-[240px]">
                       <div className="p-5 intro">
                         <h3 className="block w-full text-2xl md:text-3xl project-title">
                           {post.title[locale]}
@@ -77,6 +76,7 @@ export default function Projects(props) {
 const query = groq`
 *[_type == "project"] | order(_createdAt desc) {
   ..., 
+  slug,
   mainImage {
   ...asset->
 },

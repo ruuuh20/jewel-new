@@ -53,5 +53,9 @@ body {
   text-decoration: underline;
 }
 
-.project-card:hover .image {
+.gray-box {
+  background: #f3f3f3;
+}
+.project-card:hover .gray-box {
+  background: #dfff60;
 }
