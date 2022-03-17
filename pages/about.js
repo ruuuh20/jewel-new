@@ -63,6 +63,24 @@ export default function About(props) {
                           </div>
                         </div>
                       </div>
+                      <div className="max-w-4xl text-xl mt-12 content">
+                        <h3 className=" tracking-wide text-xl">Our Goals</h3>
+                        <div className="mb-4">
+                          <p>
+                            1. Providing opportunities for the enrichment and
+                            learning of Asian cultures and history.
+                          </p>
+                          <p>
+                            2. Empowering our future generations to feel a sense
+                            of belonging to their own heritage while engaging
+                            with other cultures.
+                          </p>
+                          <p>
+                            3. Promoting a mutual understanding for world
+                            cultures and methods of education
+                          </p>
+                        </div>
+                      </div>
                     </Container>
 
                     <div className="max-w-3xl mb-4 content">

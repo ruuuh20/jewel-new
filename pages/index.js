@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useRouter } from "next/router";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
 import FancyLink from "@/components/fancyLink";
@@ -22,7 +23,8 @@ const Home = ({ data }) => {
   };
   const { siteHeaderData, homepageData, programData } = data;
 
-  console.log({ siteHeaderData, homepageData, programData });
+  const router = useRouter();
+  const locale = router.locale || router.defaultLocale;
 
   return (
     <Layout>
@@ -72,44 +74,32 @@ const Home = ({ data }) => {
           </Container>
           <section className="w-full bg-gray-200 my-6">
             <Container>
-              <div className="py-10 md:py-16 2xl:py-20">
-                <m.article variants={fade}>
-                  <h3 className="mb-4 px-8 text-3xl md:text-4xl xl:text-5xl font-medium text-center">
+              <div className="py-10 md:py-20 2xl:py-20 m-auto">
+                <div className="flex flex-col px-[12rem]">
+                  <p className="mb-4 text-3xl md:text-4xl xl:text-5xl font-medium text-center">
                     {homepageData.welcomeHeading}
-                  </h3>
-                  <div className="max-w-4xl text-xl mt-8 content">
-                    <h3>Our goals are</h3>
-                    <div className="mb-4">
-                      {homepageData.goals.map((item, i) => {
-                        return (
-                          <p>
-                            {i + 1}. {item}
-                          </p>
-                        );
-                      })}
-                    </div>
+                  </p>
+
+                  <div className="mt-10 w-full m-auto text-center">
+                    <FancyLink
+                      destination="/about"
+                      label="Who We Are"
+                      extraClasses="text-xl border-1 py-4 px-8 bg-purple text-white rounded-full hover:bg-white"
+                    />
                   </div>
-                  <FancyLink
-                    destination="/about"
-                    label="Who We are"
-                    extraClasses="underline text-blue-dark text-xl"
-                  />
-                </m.article>
+                </div>
               </div>
             </Container>
           </section>
 
           <Container>
-            <div className="flex flex-wrap bg-blue">
+            <div className="flex flex-wrap ">
               <div className="flex flex-wrap w-full px-8 py-8">
-                {/* <h3 className="text-3xl md:text-3xl xl:text-4xl leading-none tracking-tighter w-full md:w-32 xl:w-48 md:mb-8 xl:mb-12">
-                  Upcoming Event
-                </h3> */}
-                <h2 className="relative text-white block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
+                <h2 className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-purple after:w-[70%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
                   Upcoming event
                 </h2>
-                <div p>
-                  <p>flyer image/information</p>
+
+                <div className="pt-8">
                   <ImageComponent
                     image={
                       homepageData.heroImage !== null
@@ -120,20 +110,11 @@ const Home = ({ data }) => {
                   <br />
                   <br />
                   <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
                 </div>
               </div>
             </div>
 
-            <div className="py-10">
+            {/* <div className="py-10">
               <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
                 News
               </h2>
@@ -153,7 +134,7 @@ const Home = ({ data }) => {
                       <br />
                       <br />
                       <br />
-                      <br />
+                   
                     </div>
                     <span className="flex mt-2 font-bold text-base md:text-lg font-display">
                       News Article 1
@@ -187,7 +168,7 @@ const Home = ({ data }) => {
                       <br />
                       <br />
                       <br />
-                      <br />
+                   
                     </div>
                     <span className="flex mt-2 font-bold text-base md:text-lg font-display">
                       News Article 2
@@ -206,15 +187,15 @@ const Home = ({ data }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </Container>
           <section>
             <Container>
-              <div className="py-10">
-                <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
-                  programs & projects
+              <div className="flex flex-wrap py-10">
+                <h2 className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-purple after:w-[70%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
+                  Projects
                 </h2>
-                <div className="border-t border-current mb-12 md:mb-16 2xl:mb-24 relative">
+                <div className="mb-12 md:mb-16 2xl:mb-24 relative">
                   {programData.map((item, i) => {
                     return (
                       <Link href="/">
@@ -223,7 +204,9 @@ const Home = ({ data }) => {
                             <div className="flex flex-wrap w-full md:px-8 md:w-1/2">
                               <div className="md:flex flex-1 md:flex-wrap md:h-full">
                                 <div className="w-full self-end mt-auto">
-                                  <h3 className="text-[40px]">{item.title}</h3>
+                                  <h3 className="text-[40px]">
+                                    {item.title[locale]}
+                                  </h3>
                                 </div>
                                 <div className="w-full self-end mt-auto">
                                   Cateogry
@@ -354,7 +337,7 @@ const homepageQuery = `*\[_type == "home"\][0] {
   }
 }`;
 
-const programQuery = `*\[ _type == "program"\] {
+const projectQuery = `*\[ _type == "project"\] {
 title,
 mainImage {
   ...asset->
@@ -365,7 +348,7 @@ description
 export async function getStaticProps() {
   const homepageData = await client.fetch(homepageQuery);
   const siteHeaderData = await client.fetch(siteHeaderQuery);
-  const programData = await client.fetch(programQuery);
+  const programData = await client.fetch(projectQuery);
 
   const data = { homepageData, siteHeaderData, programData };
 

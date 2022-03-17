@@ -38,6 +38,8 @@ body {
 
 .image {
   filter: grayscale(25%);
+  margin: 0 auto;
+  width: 50%;
 }
 
 .image:hover {

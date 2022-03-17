@@ -71,7 +71,7 @@ export default function Footer() {
           </Container>
         </div>
 
-        <div className="bg-blue text-white pt-4 pb-5">
+        <div className="bg-purple text-white pt-4 pb-5">
           <Container>
             <div className="flex flex-wrap items-center">
               <div className="w-full md:flex-1 mb-3 md:mb-0">
