@@ -31,7 +31,6 @@ export default function Founder(props) {
     enabled: preview || router.query.preview !== undefined,
   });
 
-  console.log(posts);
   return (
     <Layout>
       <NextSeo title="About" />

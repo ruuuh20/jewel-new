@@ -31,7 +31,7 @@ export default function About(props) {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-  console.log(posts, locale, router.defaultLocale);
+
   return (
     <Layout>
       <NextSeo title="About" />
@@ -44,24 +44,16 @@ export default function About(props) {
           className="mb-12 md:mb-16 xl:mb-24 pt-[75px] pb-[75px]"
         >
           <Container>
-                <div className="relative pb-[50px] md:mb-3">
-              <div className="mx-auto max-w-[600px] md:max-w-[740px]">
-                <h1 className="block uppercase py-7 md:text-5xl ">
-                  {locale === "ko" ? "history" : "Our History"}
-                </h1>
-              </div>
+            <div className="relative w-full pt-8 pb-[88px]">
+              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+                {locale === "ko" ? "History" : "Our History"}
+              </span>
             </div>
             <m.div variants={fade}>
               {posts &&
                 posts.map((post) => (
                   <>
-   
                     <Container className="my-2">
-                      <div className="relative mb-2 md:mb-3">
-                        <h2 className="block uppercase md:text-lg ">
-                          Our History
-                        </h2>
-                      </div>
                       {post.timelineItems?.map((item, i) => {
                         return (
                           <>
@@ -81,8 +73,8 @@ export default function About(props) {
                         );
                       })}
                     </Container>
-                    <hr />
-                    <Container>
+
+                    {/* <Container>
                       <div className="relative mb-2 md:mb-3">
                         <h2 className="block uppercase md:text-lg ">
                           Our Team / Leadership
@@ -128,74 +120,17 @@ export default function About(props) {
                             Member
                           </span>
                         </div>
-                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
-                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
-                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
-                              image
-                            </div>
-                          </div>
-                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
-                            Joe Smith
-                          </h4>
-                          <span className="text-xs italic md:text-sm">
-                            Member
-                          </span>
-                        </div>
-                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
-                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
-                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
-                              image
-                            </div>
-                          </div>
-                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
-                            Joe Smith
-                          </h4>
-                          <span className="text-xs italic md:text-sm">
-                            Member
-                          </span>
-                        </div>
-                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
-                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
-                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
-                              image
-                            </div>
-                          </div>
-                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
-                            Joe Smith
-                          </h4>
-                          <span className="text-xs italic md:text-sm">
-                            Member
-                          </span>
-                        </div>
                       </div>
-                    </Container>
+                    </Container> */}
 
-                    <div className="max-w-3xl mb-4 content">
-                      <p className="block font-bold text-xl md:text-[2.75vw] 2xl:text-[38px] leading-snug relative mb-5 md:mb-8 2xl:mb-10">
-                        {post.introText}
-                      </p>
-                    </div>
-                    <ImageComponent
+                    {/* <ImageComponent
                       image={
                         post.imageUrl !== null
                           ? post.imageUrl
                           : "https://via.placeholder.com/50"
                       }
-                    />
-                    {/* <Img src={post.heroImage? post.heroImage : "https://via.placeholder.com/100"}layout="fill" />  */}
+                    /> */}
                   </>
-                ))}
-
-              <FancyLink
-                destination="/"
-                a11yText="Navigate to the home page"
-                label="Home Page"
-              />
-              {posts &&
-                posts.map((post) => (
-                  <article>
-                    <h3 className="text-lg"> this is an article </h3>
-                  </article>
                 ))}
             </m.div>
           </Container>
