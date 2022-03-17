@@ -65,10 +65,6 @@ export default function About(props) {
                       </div>
                     </Container>
 
-                    <Link href="/about" locale="ko">
-                      <a>To /ko/another</a>
-                    </Link>
-
                     <div className="max-w-3xl mb-4 content">
                       <p className="block font-bold text-xl md:text-[2.75vw] 2xl:text-[38px] leading-snug relative mb-5 md:mb-8 2xl:mb-10">
                         {post.introText}
@@ -83,18 +79,6 @@ export default function About(props) {
                     />
                     {/* <Img src={post.heroImage? post.heroImage : "https://via.placeholder.com/100"}layout="fill" />  */}
                   </>
-                ))}
-
-              <FancyLink
-                destination="/"
-                a11yText="Navigate to the home page"
-                label="Home Page"
-              />
-              {posts &&
-                posts.map((post) => (
-                  <article>
-                    <h3 className="text-lg"> this is an article </h3>
-                  </article>
                 ))}
             </m.div>
           </Container>
