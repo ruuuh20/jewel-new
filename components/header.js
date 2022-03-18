@@ -1,6 +1,7 @@
 import FancyLink from "@/components/fancyLink";
 import Container from "@/components/container";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
         <div className="flex flex-wrap">
           <Link href="/">
             <a className='="font-bold text-2xl uppercase font-semibold'>
-              Jewel
+              <Image src="/jlogo1.png" alt="me" width="125" height="58" />
             </a>
           </Link>
 
@@ -104,7 +105,7 @@ export default function Header() {
                     className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
-                    Careers
+                    Join Our Team
                   </a>
                 </Link>
               </ul>

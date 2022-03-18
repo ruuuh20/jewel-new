@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="bg-purple text-white py-6 md:py-8">
+        <div className="bg-purple-light text-white py-6 md:py-8">
           <Container fullBleed>
             <div className="flex flex-wrap items-center lg:-mx-4">
               <nav className="w-full lg:w-7/12 lg:px-4 mb-5 lg:mb-0">

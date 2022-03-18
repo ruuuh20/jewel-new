@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function TopBar() {
   return (
-    <div className="py-2 bg-purple text-white border-b border-gray-50 ">
+    <div className="py-2 bg-purple-light border-b border-gray-50 ">
       <div className="max-w-[1500px] px-6 mx-auto w-full">
         <div className="flex flex-wrap">
           
@@ -11,12 +11,12 @@ export default function TopBar() {
             
 
               <Link href="/" locale="en">
-                      <a className="hover:text-gray-500 focus:text-gray-500 ">English</a>
+                      <a className="hover:text-gray-900 focus:text-gray-900 ">English</a>
                     </Link>
                     <div className="spacer vertical-line">|</div>
 
              <Link href="/" locale="ko">
-                      <a className="hover:text-gray-500 focus:text-gray-500">한국어</a>
+                      <a className="hover:text-gray-900 focus:text-gray-900">한국어</a>
                     </Link>
           </nav>
         </div>

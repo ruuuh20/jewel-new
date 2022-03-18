@@ -29,7 +29,8 @@ module.exports = {
         },
         'purple': {
           DEFAULT: '#722e9a',
-          secondary: '#683aff'
+          secondary: '#683aff',
+          light: '#85729b'
         },
         'yellow': {
           DEFAULT: '#f5bd1f',

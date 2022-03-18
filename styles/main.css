@@ -14,6 +14,7 @@
 /* Simple defaults */
 body {
   @apply font-sans antialiased text-black bg-white;
+  background-color: rgb(234, 232, 228);
 }
 
 .image-container {
@@ -60,4 +61,10 @@ body {
 }
 .project-card:hover .gray-box {
   background: #dfff60;
+}
+
+.phone-icon,
+.email-icon,
+.location-icon {
+  width: 0.8em;
 }
