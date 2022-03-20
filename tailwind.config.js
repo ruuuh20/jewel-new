@@ -25,7 +25,8 @@ module.exports = {
           dark: '#2b4354',
         },
         'green': {
-          DEFAULT: '#298073'
+          DEFAULT: '#298073',
+          light: '#6B9C95'
         },
         'purple': {
           DEFAULT: '#722e9a',
@@ -35,8 +36,13 @@ module.exports = {
         'yellow': {
           DEFAULT: '#f5bd1f',
           secondary: '#ffe090',
-          light: '#fff6df'
+          light: '#fff6df',
+          lighter: 'rgb(207, 191, 132)'
         }
+      },
+       backgroundImage: {
+        'arrow-right': "url('/arrow-right.svg')",
+      
       }
     },
   },

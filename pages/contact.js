@@ -45,7 +45,7 @@ export default function Contact(props) {
                 >
                   {posts && posts[0].email}
                 </a>{" "}
-                or fill out the form.
+                or fill out the form, and we will get back to you!
               </p>{" "}
               <div className="box py-8">
                 {posts &&

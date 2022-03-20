@@ -16,7 +16,7 @@ export default function Footer() {
                 <ul>
                   <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
                     <FancyLink
-                      destination="/"
+                      destination="/about"
                       a11yText="Navigate to about us page"
                       label="About Us"
                     />
@@ -36,9 +36,9 @@ export default function Footer() {
                   </li>
                   <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
                     <FancyLink
-                      destination="/"
-                      a11yText="Go to Events page"
-                      label="Events"
+                      destination="/projects"
+                      a11yText="Go to Projects page"
+                      label="Projects"
                     />
                   </li>
                   <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
@@ -57,13 +57,13 @@ export default function Footer() {
               <nav className="w-full lg:w-5/12 lg:px-4">
                 <ul className="lg:text-right">
                   <li className="inline-block mr-3 lg:mr-0 lg:ml-3 text-xl md:text-xl 3xl:text-3xl">
-                    contact info
+                    jewelspeaks@gmail.com
                   </li>
                   <li className="inline-block mr-3 lg:mr-0 lg:ml-3 text-xl md:text-xl 3xl:text-3xl">
                     &bull;
                   </li>
                   <li className="inline-block mr-3 lg:mr-0 lg:ml-3 text-xl md:text-xl 3xl:text-3xl">
-                    email
+                    -
                   </li>
                 </ul>
               </nav>
@@ -71,7 +71,7 @@ export default function Footer() {
           </Container>
         </div>
 
-        <div className="bg-purple text-white pt-4 pb-5">
+        <div className="bg-purple-light text-white pt-4 pb-5">
           <Container>
             <div className="flex flex-wrap items-center">
               <div className="w-full md:flex-1 mb-3 md:mb-0">

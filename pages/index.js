@@ -10,6 +10,8 @@ import { NextSeo } from "next-seo";
 import { client } from "../sanity";
 import SanityPageService from "../sanityPageService";
 import ImageComponent from "@/components/image";
+import Image from "next/image";
+import ArrowRight from "@/components/arrow-right";
 
 const Home = ({ data }) => {
   const wavyTextRefs = useRef(null);
@@ -72,20 +74,23 @@ const Home = ({ data }) => {
               </m.span>
             </div>
           </Container>
-          <section className="w-full bg-gray-200 my-6">
+          <section className="w-full bg-[#CFBF84] my-8">
             <Container>
               <div className="py-10 md:py-20 2xl:py-20 m-auto">
                 <div className="flex flex-col px-[12rem]">
-                  <p className="mb-4 text-3xl md:text-4xl xl:text-5xl font-medium text-center">
+                  <p className="mb-4 text-3xl md:text-4xl xl:text-5xl font-medium text-center xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
 
                   <div className="mt-10 w-full m-auto text-center">
-                    <FancyLink
-                      destination="/about"
-                      label="Who We Are"
-                      extraClasses="text-xl border-1 py-4 px-8 bg-purple text-white rounded-full hover:bg-white"
-                    />
+                    <Link href="/about">
+                      <a class="button learn-more">
+                        <span class="circle" aria-hidden="true">
+                          <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Who We Are</span>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -93,24 +98,37 @@ const Home = ({ data }) => {
           </section>
 
           <Container>
-            <div className="flex flex-wrap ">
-              <div className="flex flex-wrap w-full px-8 py-8">
-                <h2 className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-purple after:w-[70%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
-                  Upcoming event
-                </h2>
+            <div className="">
+              <h2
+                className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl"
+                // after:absolute
+                // after:h-[4px]
+                // after:bg-purple
+                // after:w-[70%]
+                // after:left-[0]
+                // after:right-[12.5%]
+                // after:top-[8%]
+              >
+                Upcoming event
+                <div className="line w-[20%] mt-2 h-[4px] bg-purple-light"></div>
+              </h2>
 
-                <div className="pt-8">
-                  <ImageComponent
+              <div className="relative flex justify-center align-middle w-full mx-auto mt-8">
+                {/* <ImageComponent
                     image={
                       homepageData.heroImage !== null
                         ? homepageData.heroImage.url
                         : "https://via.placeholder.com/50"
                     }
-                  />
-                  <br />
-                  <br />
-                  <br />
-                </div>
+                  /> */}
+                <Image
+                  src={homepageData.heroImage.url}
+                  width="550"
+                  height="800"
+                />
+
+                <br />
+                <br />
               </div>
             </div>
 
@@ -192,28 +210,16 @@ const Home = ({ data }) => {
           <section>
             <Container>
               <div className="flex flex-wrap py-10">
-                <h2 className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-purple after:w-[70%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
+                <h2 className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-purple-light after:w-[70%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
                   Projects
                 </h2>
-                <div className="mb-12 md:mb-16 2xl:mb-24 relative">
+                <div className="mb-12 mt-10 md:mb-16 2xl:mb-24 mx-[5rem] relative">
                   {programData.map((item, i) => {
                     return (
                       <Link href="/">
-                        <a className="flex flex-wrap border-b py-6">
-                          <div className="flex flex-wrap w-full md:px-8">
-                            <div className="flex flex-wrap w-full md:px-8 md:w-1/2">
-                              <div className="md:flex flex-1 md:flex-wrap md:h-full">
-                                <div className="w-full self-end mt-auto">
-                                  <h3 className="text-[40px]">
-                                    {item.title[locale]}
-                                  </h3>
-                                </div>
-                                <div className="w-full self-end mt-auto">
-                                  Cateogry
-                                </div>
-                              </div>
-                            </div>
-                            <div className="w-full md:px-8 md:w-1/2">
+                        <a className="flex flex-wrap border-b py-4 mb-4 bg-[rgba(98,50,0,.04)]">
+                          <div className="flex flex-wrap w-full md:px-4">
+                            <div className="w-full md:px-4 md:w-5/12">
                               {" "}
                               <ImageComponent
                                 image={
@@ -222,6 +228,28 @@ const Home = ({ data }) => {
                                     : "https://via.placeholder.com/50"
                                 }
                               />
+                            </div>
+                            <div className="flex flex-wrap w-full md:px-16 md:w-7/12">
+                              <div className="md:flex flex-1 md:flex-wrap md:h-full">
+                                <div className="w-full self-end mt-auto">
+                                  <h3 className="text-[38px]">
+                                    {item.title[locale]}
+                                  </h3>
+                                  <p className="text-[18px]">
+                                    {item.cardDescription}
+                                  </p>
+                                </div>
+
+                                <div className="w-full self-end mt-auto relative">
+                                  <Link href={item.slug}>
+                                    <a className="arrow-btn">
+                                      <span className="flex justify-center items-center small-arrow bg-yellow-lighter">
+                                        <ArrowRight />
+                                      </span>
+                                    </a>
+                                  </Link>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </a>
@@ -337,12 +365,14 @@ const homepageQuery = `*\[_type == "home"\][0] {
   }
 }`;
 
-const projectQuery = `*\[ _type == "project"\] {
+const projectQuery = `*\[ _type == "project"\] | order(id) {
 title,
 mainImage {
   ...asset->
 },
-description
+slug,
+cardDescription,
+
 }`;
 
 export async function getStaticProps() {

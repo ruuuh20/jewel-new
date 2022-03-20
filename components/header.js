@@ -91,7 +91,7 @@ export default function Header() {
                 </svg>
               </button>
 
-              <ul className="absolute hidden text-gray-700 pt-1 group-hover:block w-[120%] ease-in duration-300 z-50">
+              <ul className="absolute hidden text-gray-700 pt-1 group-hover:block w-[140%] ease-in duration-300 z-50">
                 <Link href="/">
                   <a
                     className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
@@ -115,7 +115,7 @@ export default function Header() {
               destination="/"
               a11yText="Navigate to the donate page"
               label="Donate"
-              extraClasses="border-1 py-2 px-4 bg-blue-dark text-white rounded"
+              extraClasses="border-1 py-2 px-4 bg-green-light text-black rounded"
             />
           </nav>
         </div>
