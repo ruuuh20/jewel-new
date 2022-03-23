@@ -17,6 +17,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'background': 'rgb(234, 232, 228)',
         'black': '#000',
         'white': '#FFF',
         'blue': {

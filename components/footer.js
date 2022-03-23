@@ -6,64 +6,19 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="bg-purple-light text-white py-6 md:py-8">
+        <div className="py-6 text-white bg-purple-light md:py-6">
           <Container fullBleed>
             <div className="flex flex-wrap items-center lg:-mx-4">
-              <nav className="w-full lg:w-7/12 lg:px-4 mb-5 lg:mb-0">
-                <span className="block text-xs uppercase tracking-tight leading-none mb-3">
-                  Browse
-                </span>
-                <ul>
-                  <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
-                    <FancyLink
-                      destination="/about"
-                      a11yText="Navigate to about us page"
-                      label="About Us"
-                    />
-                  </li>
-                  <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
-                    &bull;
-                  </li>
-                  <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
-                    <FancyLink
-                      destination="/programs"
-                      a11yText="Go to Programs page"
-                      label="Programs"
-                    />
-                  </li>
-                  <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
-                    &bull;
-                  </li>
-                  <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
-                    <FancyLink
-                      destination="/projects"
-                      a11yText="Go to Projects page"
-                      label="Projects"
-                    />
-                  </li>
-                  <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
-                    &bull;
-                  </li>
-                  <li className="inline-block mr-3 text-xl md:text-xl 3xl:text-3xl">
-                    <FancyLink
-                      destination="/contact"
-                      a11yText="Go to Contact page"
-                      label="Contact"
-                    />
-                  </li>
-                </ul>
-              </nav>
-
-              <nav className="w-full lg:w-5/12 lg:px-4">
+              <nav className="w-full lg:px-4">
                 <ul className="lg:text-right">
-                  <li className="inline-block mr-3 lg:mr-0 lg:ml-3 text-xl md:text-xl 3xl:text-3xl">
+                  <li className="inline-block mr-3 text-xl lg:mr-0 lg:ml-3 md:text-xl 3xl:text-3xl">
                     jewelspeaks@gmail.com
                   </li>
-                  <li className="inline-block mr-3 lg:mr-0 lg:ml-3 text-xl md:text-xl 3xl:text-3xl">
+                  <li className="inline-block mr-3 text-xl lg:mr-0 lg:ml-3 md:text-xl 3xl:text-3xl">
                     &bull;
                   </li>
-                  <li className="inline-block mr-3 lg:mr-0 lg:ml-3 text-xl md:text-xl 3xl:text-3xl">
-                    -
+                  <li className="inline-block mr-3 text-xl lg:mr-0 lg:ml-3 md:text-xl 3xl:text-3xl">
+                    201
                   </li>
                 </ul>
               </nav>
@@ -71,17 +26,17 @@ export default function Footer() {
           </Container>
         </div>
 
-        <div className="bg-purple-light text-white pt-4 pb-5">
+        <div className="pt-4 pb-5 text-white bg-purple-light">
           <Container>
             <div className="flex flex-wrap items-center">
-              <div className="w-full md:flex-1 mb-3 md:mb-0">
-                <small className="tracking-tight block leading-tight">
+              <div className="w-full mb-3 md:flex-1 md:mb-0">
+                <small className="block leading-tight tracking-tight">
                   &copy; {new Date().getFullYear()} JEWEL Organization, All
                   rights reserved.
                 </small>
               </div>
 
-              <div className="w-full md:w-auto md:text-right text-sm">
+              <div className="w-full text-sm md:w-auto md:text-right">
                 <nav>
                   <li className="inline-block mx-3 ml-0">
                     <FancyLink

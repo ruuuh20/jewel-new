@@ -34,7 +34,7 @@ body {
   transition: all 1s ease-in;
 } */
 .neg-margin {
-  margin-left: -5px !important;
+  margin-left: -3px !important;
 }
 
 .image {
@@ -179,4 +179,210 @@ body {
 }
 
 .arrow-btn {
+}
+
+.spin {
+  color: black;
+  opacity: 0;
+}
+
+.spin {
+  /* transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) all; */
+  animation: spin 3s ease-in-out infinite;
+}
+.spin-0 {
+  animation-delay: 500ms;
+}
+.spin-1 {
+  animation-delay: 2500ms;
+}
+.spin-2 {
+  animation-delay: 4500ms;
+}
+.spin-3 {
+  animation-delay: 6500ms;
+}
+.spin-4 {
+  animation-delay: 8500ms;
+}
+
+.fade-out {
+  animation: fadeOut 6s ease-in-out infinite;
+}
+
+@keyframes spin {
+  25% {
+    opacity: 1;
+    color: rgb(155, 107, 155);
+  }
+  50% {
+    opacity: 1;
+    color: rgb(155, 107, 155);
+  }
+  75% {
+    opacity: 1;
+    color: rgb(155, 107, 155);
+  }
+}
+
+@keyframes fadeOut {
+  /* from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  } */
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-bounce-right {
+  animation: bounceRight 2.25s infinite;
+}
+
+.animate-bounce-left {
+  animation: bounceLeft 2.25s infinite;
+}
+
+.animate-bounce-rightsmall {
+  animation: bounceRightSmall 5s infinite;
+}
+
+.animate-bounce-leftsmall {
+  animation: bounceLeftSmall 5s infinite;
+}
+
+@keyframes bounceLeft {
+  0%,
+  100% {
+    transform: translateX(-50%);
+    animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes bounceLeftSmall {
+  0%,
+  100% {
+    transform: translateY(-50%);
+    animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@screen md {
+  @keyframes bounceLeftSmall {
+    0%,
+    100% {
+      transform: translateX(-50%);
+      animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateX(0);
+      animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}
+
+@keyframes bounceRightSmall {
+  0%,
+  100% {
+    transform: translateY(35%);
+    animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@screen md {
+  @keyframes bounceRightSmall {
+    0%,
+    100% {
+      transform: translateX(35%);
+      animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateX(0);
+      animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}
+
+.wrap-image {
+  position: relative;
+}
+
+/* .wrap-image:first-of-type {
+  background-color: #fff6df;
+} */
+.wrap-image:before,
+.wrap-image:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  /* border: 2px solid yellow; */
+  border-width: 2px;
+  transition: all 0.25s ease-out;
+}
+
+.wrap-image:before {
+  top: -15px;
+  left: -15px;
+}
+.wrap-image:after {
+  bottom: -15px;
+  right: -15px;
+}
+.wrap-image:hover:before {
+  top: 15px;
+  left: 15px;
+}
+.wrap-image:hover:after {
+  bottom: 15px;
+  right: 15px;
+}
+
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.link:before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(36, 36, 36);
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link:before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.link:hover:before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
 }

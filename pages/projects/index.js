@@ -1,4 +1,4 @@
-import Head from "next/head";
+
 import { useRouter } from "next/router";
 import client, {
   getClient,
@@ -11,7 +11,6 @@ import Layout from "@/components/layout";
 import Container from "@/components/container";
 import Link from "next/link";
 import ImageComponent from "@/components/image";
-import ImageStandard from "@/components/imageStandard";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 
@@ -55,12 +54,12 @@ console.log(posts)
                       />
                     </div>
 
-                    <div className="flex w-full justify-center gray-box min-h-[240px]">
-                      <div className="p-5 intro">
+                    <div className="flex w-full justify-center gray-box min-h-[220px]">
+                      <div className="p-10 intro">
                         <h3 className="block w-full text-2xl md:text-3xl project-title">
                           {post.title[locale]}
                         </h3>
-                        <p>{post.description}</p>
+                        <p>{post.cardDescription}</p>
                       </div>
                     </div>
                   </a>
@@ -74,8 +73,10 @@ console.log(posts)
 }
 
 const query = groq`
-*[_type == "project"] | order(_createdAt desc) {
+*[_type == "project"] | order(id) {
   ..., 
+  title,
+  cardDescription,
   slug,
   mainImage {
   ...asset->
