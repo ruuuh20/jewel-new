@@ -63,31 +63,34 @@ export default function About(props) {
                           </div>
                         </div>
                       </div>
-                      <div className="max-w-4xl text-xl mt-12 content">
-                        <h3 className=" tracking-wide text-xl">Our Goals</h3>
-                        <div className="mb-4">
-                          <p>
-                            1. Providing opportunities for the enrichment and
-                            learning of Asian cultures and history.
-                          </p>
-                          <p>
-                            2. Empowering our future generations to feel a sense
-                            of belonging to their own heritage while engaging
-                            with other cultures.
-                          </p>
-                          <p>
-                            3. Promoting a mutual understanding for world
-                            cultures and methods of education
-                          </p>
+                      <div className="max-w-4xl py-12 m-auto mt-12 text-xl content">
+                        <h3 className="text-3xl tracking-wide uppercase ">
+                          Our Goals are to:
+                        </h3>
+                        <div className="flex flex-wrap mt-8 mb-4">
+                          <div className="about-item">
+                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative m4-5 2xl:mb-10 p-[3rem]">
+                              Provide opportunities for the enrichment and
+                              learning of Asian cultures and history.
+                            </p>
+                          </div>
+                          <div className="about-item">
+                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative mb-4 2xl:mb-10 p-[3rem]">
+                              Empower our future generation to embrace a sense
+                              of belonging to their own heritage while engaging
+                              with other cultures.
+                            </p>
+                          </div>
+                          <div className="about-item">
+                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative mb-4 2xl:mb-10 p-[3rem]">
+                              Promote a mutual understanding for world cultures
+                              and methods of education
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </Container>
 
-                    <div className="max-w-3xl mb-4 content">
-                      <p className="block font-bold text-xl md:text-[2.75vw] 2xl:text-[38px] leading-snug relative mb-5 md:mb-8 2xl:mb-10">
-                        {post.introText}
-                      </p>
-                    </div>
                     <ImageComponent
                       image={
                         post.imageUrl !== null
@@ -107,10 +110,10 @@ export default function About(props) {
 }
 
 const query = groq`
- *[_type == "about" && title.en == "About"] | order(_createdAt desc) {
+ *[_type == "about" && title.en == "Our Mission"] | order(_createdAt desc) {
   
 ...,
-
+title,
 introText,
  "imageUrl": heroImage.asset->url,
  "foundersImageUrl": foundersImage.asset->url

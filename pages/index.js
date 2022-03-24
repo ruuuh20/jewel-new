@@ -315,8 +315,8 @@ const Home = ({ data }) => {
                                 <div
                                   className={`${bgColor} wrap-image ${borderColor} ${afterColor}`}
                                 >
-                                  <div className="relative z-10 flex-1 p-2 ml-2 bg-gray-300 md:w-full md:p-4 md:ml-0">
-                                    <h3 className="w-full text-3xl leading-none tracking-tighter text-center md:text-3xl xl:text-4xl md:w-32 xl:w-48 md:mb-8 xl:mb-12">
+                                  <div className="relative z-10 flex-1 p-2 ml-2 bg-gray-300 md:w-full md:p-8 md:ml-0">
+                                    <h3 className="w-full text-2xl leading-none tracking-tight text-center md:text-2xl xl:text-3xl md:w-32 xl:w-48 md:mb-8 xl:mb-12">
                                       {item.title}
                                     </h3>
                                     <div className="w-11/12 mb-4 text-sm xl:text-base md:mb-6 md:w-full md:max-w-xs">
