@@ -141,7 +141,7 @@ export default function About(props) {
 }
 
 const query = groq`
- *[_type == "about" && title.en == "About"] | order(_createdAt desc) {
+ *[_type == "about" && title.en == "Our Mission"] | order(_createdAt desc) {
   
 ...,
 

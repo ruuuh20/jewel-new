@@ -46,7 +46,7 @@ const Home = ({ data }) => {
                 className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
               >
                 <span className="spin spin-0">J</span>
-                <span className="fade-out">OINING</span>
+                <span>OINING</span>
               </m.span>
             </div>
             <div className="overflow-hidden">
@@ -55,9 +55,8 @@ const Home = ({ data }) => {
                 className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
               >
                 <span className="spin spin-1">E</span>
-                <span className="fade-out">AST &</span>{" "}
-                <span className="spin spin-2">W</span>
-                <span className="fade-out">EST</span>
+                <span>AST &</span> <span className="spin spin-2">W</span>
+                <span>EST</span>
               </m.span>
             </div>
             <div className="overflow-hidden">
@@ -65,9 +64,8 @@ const Home = ({ data }) => {
                 variants={textReveal}
                 className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
               >
-                <span className="fade-out">AS</span>{" "}
-                <span className="spin spin-3">E</span>
-                <span className="fade-out">DUCATIONAL</span>
+                <span>AS</span> <span className="spin spin-3">E</span>
+                <span>DUCATIONAL</span>
               </m.span>
             </div>
             <div className="overflow-hidden">
@@ -76,10 +74,15 @@ const Home = ({ data }) => {
                 className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
               >
                 <span className="spin spin-4">L</span>
-                <span className="fade-out">IASONS</span>
+                <span>IASONS</span>
               </m.span>
             </div>
           </Container>
+          <div className="absolute top-[3%] left-[12%] spin-slow opacity-90 overflow-visible">
+            <div className="relative spin-container">
+              <Image className="" src="/ham-logo.png" width="80" height="80" />
+            </div>
+          </div>
           <section className="w-full bg-[#CFBF84] my-8">
             <Container>
               <div className="py-10 m-auto md:py-20 2xl:py-20">

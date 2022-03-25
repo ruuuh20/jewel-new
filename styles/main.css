@@ -206,8 +206,9 @@ body {
   animation-delay: 8500ms;
 }
 
-.fade-out {
-  animation: fadeOut 6s ease-in-out infinite;
+.spin-slow {
+  transform-origin: 50% 0;
+  animation: swing 3s ease-in-out forwards infinite;
 }
 
 @keyframes spin {
@@ -225,21 +226,24 @@ body {
   }
 }
 
-@keyframes fadeOut {
-  /* from {
-    opacity: 1;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
   to {
-    opacity: 0;
-  } */
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes swing {
   0% {
-    opacity: 1;
+    transform: rotate(10deg);
   }
   50% {
-    opacity: 0;
+    transform: rotate(-5deg);
   }
   100% {
-    opacity: 0;
+    transform: rotate(10deg);
   }
 }
 
