@@ -11,15 +11,35 @@ import { useRouter } from "next/router";
 import client, {
   getClient,
   usePreviewSubscription,
-  PortableText,
+  // PortableText,
   urlFor,
 } from "../sanity";
-import ImageStandard from "@/components/imageStandard";
-import ImageWrapper from "@/components/imageWrapper";
-import ImageComponent from "@/components/image";
 
 import Image from "next/image";
 import { useNextSanityImage } from "next-sanity-image";
+import BlockContent from "@/components/blockContent";
+import { PortableText } from "@portabletext/react";
+
+const myPortableTextComponents = {
+  types: {
+    listItem: {
+      // Ex. 1: customizing common list types
+      bullet: ({ children }) => (
+        <li style={{ listStyleType: "disclosure-closed" }}>{children}</li>
+      ),
+
+      // Ex. 2: rendering custom list items
+      checkmarks: ({ children }) => <li>✅ {children}</li>,
+    },
+    image: ({ value }) => <img src={value.imageUrl} />,
+    callToAction: ({ value, isInline }) =>
+      isInline ? (
+        <a href={value.url}>{value.text}</a>
+      ) : (
+        <div className="callToAction">{value.text}</div>
+      ),
+  },
+};
 
 export default function About(props) {
   const { postdata, preview, program } = props;
@@ -49,10 +69,17 @@ export default function About(props) {
                 {locale === "ko" ? "History" : "Our History"}
               </span>
             </div>
+
             <m.div variants={fade}>
               {posts &&
                 posts.map((post) => (
                   <>
+                    {/* <PortableText
+                      value={post.welcomeText}
+                      components={myPortableTextComponents}
+                    /> */}
+                    <BlockContent text={post.welcomeText} />
+
                     <Container className="my-2">
                       {post.timelineItems?.map((item, i) => {
                         return (
@@ -144,7 +171,8 @@ const query = groq`
  *[_type == "about" && title.en == "Our Mission"] | order(_createdAt desc) {
   
 ...,
-
+content,
+welcomeText,
 introText,
  "imageUrl": heroImage.asset->url,
 

@@ -119,14 +119,16 @@ export default function Header() {
 
           <nav className="flex items-center justify-center w-full space-x-3 text-sm md:text-base md:w-auto">
             <Link href="/" locale="en">
-              <a className="hover:text-gray-900 focus:text-gray-900 ">
+              <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
                 English
               </a>
             </Link>
             <div className="spacer vertical-line">|</div>
 
             <Link href="/" locale="ko">
-              <a className="hover:text-gray-900 focus:text-gray-900">한국어</a>
+              <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
+                한국어
+              </a>
             </Link>
           </nav>
         </div>
