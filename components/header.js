@@ -20,7 +20,7 @@ export default function Header() {
           <nav className="flex items-center justify-center w-full ml-auto mr-auto space-x-6 text-sm md:text-base md:w-auto">
             <div className="relative inline-block ease-in dropdown group">
               <button className="text-[#242b2d] hover:text-black focus:text-black px-4 inline-flex items-center">
-                <span className="mr-1 uppercase tracking-[1.5px]">
+                <span className="mr-1 uppercase tracking-[1.3px]">
                   About JEWEL
                 </span>
                 <svg
@@ -86,7 +86,7 @@ export default function Header() {
 
             <div className="relative inline-block ease-in dropdown group">
               <button className="text-[#242b2d] hover:text-black focus:text-black pr-2 inline-flex items-center">
-                <span className="mr-1 uppercase tracking-[1.5px]">Join Us</span>
+                <span className="mr-1 uppercase tracking-[1.3px]">Join Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ export default function Header() {
                     Become a Member
                   </a>
                 </Link>
-                <Link href="/">
+                <Link href="/careers">
                   <a className="block px-4 py-2 whitespace-no-wrap bg-gray-200 hover:bg-gray-400">
                     Join Our Team
                   </a>

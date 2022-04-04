@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import client, {
   getClient,
   usePreviewSubscription,
-  PortableText,
 } from "../sanity";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
@@ -34,18 +33,18 @@ export default function Contact(props) {
           </div>
         </Container>
         <Container>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap py-6">
             <div className="w-full p-10 lg:w-5/12">
               <p className="text-xl">
                 We’d love to hear from you. For all inquiries, you can send us
                 an email at{" "}
                 <a
                   className="border-b border-indigo-500 hover:text-indigo-500"
-                  href="mailto:"
+                  href="mailto:kaykim@wearejewel.org"
                 >
                   {posts && posts[0].email}
                 </a>{" "}
-                or fill out the form, and we will get back to you!
+                or fill out the form, and we will get back to you.
               </p>{" "}
               <div className="box py-8">
                 {posts &&
@@ -54,7 +53,7 @@ export default function Contact(props) {
                       <li className="text-lg mb-4">
                         {" "}
                         <a
-                          href="mailto:hello@adtrak.co.uk"
+                          href="mailto:kaykim@wearejewel.org"
                           class="block text-xl transition duration-500 ease-in-out text-secondary-dark hover:text-primary focus:text-primary md:text-xl contactlink"
                         >
                           <svg
@@ -77,7 +76,7 @@ export default function Contact(props) {
                       </li>
                       <li className="text-lg mb-4">
                         <a
-                          href="mailto:hello@adtrak.co.uk"
+                          href="mailto:kaykim@wearejewel.org"
                           className="block text-xl transition duration-500 ease-in-out text-secondary-dark hover:text-primary focus:text-primary md:text-xl contactlink"
                         >
                           <svg
@@ -115,13 +114,14 @@ export default function Contact(props) {
                           <span class="inline-block">{post.phoneNumber}</span>
                         </a>{" "}
                       </li>
-                      <li>Facebook:</li>
+                     
                     </ul>
                   ))}
               </div>
             </div>
 
             <div className="w-full lg:w-7/12 p-6">
+              <p className="text-xl text-gray-600 text-center">Get in Touch</p>
               <Form />
             </div>
           </div>
