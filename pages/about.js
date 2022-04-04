@@ -49,40 +49,46 @@ export default function About(props) {
                 posts.map((post) => (
                   <>
                     <Container>
-                      <div className="max-w-3xl  relative mb-16 md:mb-20 2xl:mb-28 mx-[3%] md:mx-[5%] lg:mx-24 2xl:mx-32">
+                      <div className="relative max-w-3xl mb-16 md:mb-20 2xl:mb-28">
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           <div className="relative mb-2 md:mb-3">
-                            <h2 className="block uppercase md:text-lg ">
+                            <h2 className="block uppercase md:text-lg text-purple">
                               {post.title[locale]}
                             </h2>
                           </div>
-                          <div className="w-full pr-12 text-2xl md:text-3xl xl:text-4xl">
+                          <div className="w-full pr-12 text-2xl md:text-3xl xl:text-4xl text-darkgray">
                             <p className="font-bold leading-snug">
                               {post.introText}
                             </p>
                           </div>
                         </div>
                       </div>
-                      <div className="max-w-4xl py-12 m-auto mt-12 text-xl content">
-                        <h3 className="text-3xl tracking-wide uppercase ">
+                      <ImageComponent
+                        image={
+                          post.imageUrl !== null
+                            ? post.imageUrl
+                            : "https://via.placeholder.com/50"
+                        }
+                      />
+                      <div className="max-w-4xl py-12 m-auto mt-12 text-xl content text-darkgray">
+                        <h3 className="text-3xl tracking-normal text-center">
                           Our Goals are to:
                         </h3>
                         <div className="flex flex-wrap mt-8 mb-4">
                           <div className="about-item">
-                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative m4-5 2xl:mb-10 p-[3rem]">
+                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[3rem]">
                               Provide opportunities for the enrichment and
                               learning of Asian cultures and history.
                             </p>
                           </div>
                           <div className="about-item">
-                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative mb-4 2xl:mb-10 p-[3rem]">
-                              Empower our future generation to embrace a sense
-                              of belonging to their own heritage while engaging
-                              with other cultures.
+                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative 2xl:mb-10 p-[3rem]">
+                              Empower future generations to celebrate their own
+                              heritage while engaging with other cultures.
                             </p>
                           </div>
                           <div className="about-item">
-                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative mb-4 2xl:mb-10 p-[3rem]">
+                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[3rem] pt-4rem">
                               Promote a mutual understanding for world cultures
                               and methods of education
                             </p>
@@ -90,15 +96,6 @@ export default function About(props) {
                         </div>
                       </div>
                     </Container>
-
-                    <ImageComponent
-                      image={
-                        post.imageUrl !== null
-                          ? post.imageUrl
-                          : "https://via.placeholder.com/50"
-                      }
-                    />
-                    {/* <Img src={post.heroImage? post.heroImage : "https://via.placeholder.com/100"}layout="fill" />  */}
                   </>
                 ))}
             </m.div>

@@ -12,6 +12,7 @@ const BlockContent = ({ text }) => {
             listItem: ({ children }) => (
               <li className="special-list-item">{children}</li>
             ),
+            p: ({ children }) => <p className="mb-2">{children}</p>,
             blockquote: ({ children }) => (
               <blockquote className="border-l-gray-500">{children}</blockquote>
             ),

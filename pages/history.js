@@ -8,12 +8,7 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
-import client, {
-  getClient,
-  usePreviewSubscription,
-  // PortableText,
-  urlFor,
-} from "../sanity";
+import client, { getClient, usePreviewSubscription } from "../sanity";
 
 import Image from "next/image";
 import { useNextSanityImage } from "next-sanity-image";
@@ -69,22 +64,23 @@ export default function About(props) {
                 {locale === "ko" ? "History" : "Our History"}
               </span>
             </div>
+            <div class="w-full mx-auto mb-10 md:w-10/12">
+              <div class="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
+                <div class="content  text-[24px] leading-normal">
+                  <p>{posts[0].history[locale]}</p>
+                </div>
+              </div>
+            </div>
 
             <m.div variants={fade}>
               {posts &&
                 posts.map((post) => (
                   <>
-                    {/* <PortableText
-                      value={post.welcomeText}
-                      components={myPortableTextComponents}
-                    /> */}
-                    <BlockContent text={post.welcomeText} />
-
                     <Container className="my-2">
                       {post.timelineItems?.map((item, i) => {
                         return (
                           <>
-                            <div className="flex flex-wrap py-5 border-t border-opacity-50 md-mx-6 md:py-8">
+                            <div className="flex flex-wrap py-8 border-t border-black border-opacity-20 md-mx-6 md:py-12">
                               <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
                                 <div className="max-w-xl">
                                   <div className="w-full text-2xl text-right md:text-3xl xl:text-4xl">
@@ -93,7 +89,11 @@ export default function About(props) {
                                 </div>
                               </div>
                               <div className="w-full ml-auto leading-8 md:w-7/12 xl:w-4/6 md:pl-10">
-                                <p>{item.timelineItemText[locale]}</p>
+                                {locale === "ko" ? (
+                                  <PortableText value={item.timelineBlockKo} />
+                                ) : (
+                                  <PortableText value={item.timelineBlockEn} />
+                                )}
                               </div>
                             </div>
                           </>
@@ -171,6 +171,7 @@ const query = groq`
  *[_type == "about" && title.en == "Our Mission"] | order(_createdAt desc) {
   
 ...,
+history,
 content,
 welcomeText,
 introText,

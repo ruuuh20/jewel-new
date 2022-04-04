@@ -43,7 +43,7 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
+                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
                 <span className="spin spin-0">J</span>
                 <span>OINING</span>
@@ -52,9 +52,9 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
+                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
-                <span className="spin spin-1">E</span>
+                <span className="spin spin-3">E</span>
                 <span>AST &</span> <span className="spin spin-2">W</span>
                 <span>EST</span>
               </m.span>
@@ -62,16 +62,16 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
+                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
-                <span>AS</span> <span className="spin spin-3">E</span>
+                <span>AS</span> <span className="spin spin-1">E</span>
                 <span>DUCATIONAL</span>
               </m.span>
             </div>
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[14vw] md:text-[10.5vw] 2xl:text-[170px] leading-none relative z-10"
+                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
                 <span className="spin spin-4">L</span>
                 <span>IASONS</span>
@@ -87,7 +87,7 @@ const Home = ({ data }) => {
             <Container>
               <div className="py-10 m-auto md:py-20 2xl:py-20">
                 <div className="flex flex-col px-[12rem]">
-                  <p className="mb-4 text-3xl font-medium text-center md:text-4xl xl:text-5xl xl:leading-snug">
+                  <p className="mb-4 text-3xl font-medium text-center md:text-3xl xl:text-5xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
 
