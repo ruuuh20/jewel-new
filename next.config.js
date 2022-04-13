@@ -30,5 +30,14 @@ i18n: {
 
   images:{
     domains: ['via.placeholder.com', 'cdn.sanity.io']
-  }
+  },
+   async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/maintenance',
+        permanent: true,
+      },
+    ]
+  },
 };

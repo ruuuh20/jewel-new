@@ -86,7 +86,7 @@ const Home = ({ data }) => {
           <section className="w-full bg-[#CFBF84] my-8">
             <Container>
               <div className="py-10 m-auto md:py-20 2xl:py-20">
-                <div className="flex flex-col px-[12rem]">
+                <div className="flex flex-col px-[1rem] md:px-[12rem]">
                   <p className="mb-4 text-3xl font-medium text-center md:text-3xl xl:text-5xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
@@ -222,13 +222,13 @@ const Home = ({ data }) => {
                 <h2 className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-purple-light after:w-[70%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
                   Projects
                 </h2>
-                <div className="mb-12 mt-10 md:mb-16 2xl:mb-24 mx-[5rem] relative">
+                <div className="mb-12 mt-10 md:mb-16 2xl:mb-24 mx-2 md:mx-[5rem] relative">
                   {programData.map((item, i) => {
                     return (
                       <Link href={`/projects/${item.slug.current}`}>
                         <a className="flex flex-wrap border-b py-4 mb-4 bg-[rgba(98,50,0,.04)]">
                           <div className="flex flex-wrap w-full md:px-4">
-                            <div className="w-full md:px-4 md:w-5/12">
+                            <div className="w-full px-6 py-4 md:px-4 md:w-5/12">
                               {" "}
                               <ImageComponent
                                 image={
@@ -238,10 +238,10 @@ const Home = ({ data }) => {
                                 }
                               />
                             </div>
-                            <div className="flex flex-wrap w-full md:px-16 md:w-7/12">
+                            <div className="flex flex-wrap w-full px-6 py-4 md:px-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:h-full">
                                 <div className="self-end w-full mt-auto">
-                                  <h3 className="text-[38px]">
+                                  <h3 className="text-2xl md:text-3xl">
                                     {item.title[locale]}
                                   </h3>
                                   <p className="text-[18px]">
@@ -270,19 +270,19 @@ const Home = ({ data }) => {
             </Container>
           </section>
           <Container>
-            <section className="py-10">
+            <section className="md:py-10">
               <div className="relative z-10 w-full mb-12 md:mb-16 md:mt-24 xl:mb-24 2xl:mb-40 3xl:mb-48">
                 <div className="flex flex-wrap border-t border-opacity-50 border-dotted border-off-black md:border-0 md:-mx-8">
                   {homepageData.callToAction.map((item, i) => {
                     let color = "text-blue-dark";
                     let bgColor = "#000000";
-                    let paddingClass = "py-8";
+                    let marginClass = "md:mt-0";
                     let borderColor = "#000000";
                     let afterColor = "#000000";
                     if (i === 0) {
                       color = "text-blue-dark";
                       bgColor = "before:bg-blue";
-                      paddingClass = "py-8";
+                      marginClass = "md:mt-[-60px]";
                       borderColor = "before:border-blue";
                       afterColor = "after:border-blue";
                     } else if (i === 1) {
@@ -290,25 +290,24 @@ const Home = ({ data }) => {
                       bgColor = "before:bg-purple-secondary";
                       borderColor = "before:border-purple-secondary";
                       afterColor = "after:border-purple-secondary";
-
-                      paddingClass = "py-8";
+                      marginClass = "md:mt-[-2px]";
                     } else if (i === 2) {
                       color = "text-green";
                       bgColor = "before:bg-yellow-secondary";
                       borderColor = "before:border-yellow-secondary";
                       afterColor = "after:border-yellow-secondary";
-                      paddingClass = "py-8";
+                      marginClass = "md:mt-[-30px]";
                     }
                     return (
                       <div className="w-full md:w-1/3 md:px-8">
                         <div
-                          className={`h-full md:border-l  border-off-black border-opacity-1 ${paddingClass} ${
+                          className={`h-full ${marginClass} md:border-l  border-off-black border-opacity-1 py-8 ${
                             i !== 2
                               ? "border-b md:border-b-0 md:pl-8"
                               : "md:border-b-0 md:border-r md:px-8"
                           }`}
                         >
-                          <div className="flex flex-wrap -mx-4 md:mx-0 max-w-[250px] md:mx-auto">
+                          <div className="flex flex-wrap m-auto my-4 md:mx-0 max-w-[250px] md:mx-auto">
                             <div
                               className={`${color} w-16 md:w-full md:mb-4 xl:mb-6`}
                             ></div>
@@ -384,7 +383,7 @@ const homepageQuery = `*\[_type == "home"\][0] {
     ...asset->
   },
   welcomeHeading,
-  whatWeDo,
+
   goals,
   callToAction[]-> {
     title,

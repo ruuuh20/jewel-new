@@ -9,7 +9,6 @@ import { useRouter } from "next/router";
 import client, {
   getClient,
   usePreviewSubscription,
-  PortableText,
   urlFor,
 } from "../sanity";
 
@@ -26,7 +25,7 @@ export default function Leadership(props) {
     enabled: preview || router.query.preview !== undefined,
   });
 
-  const boardNames = ["Officers", "Directors", "Honorable Advisor"];
+  const boardNames = ["Officers", "Directors", "Honorary Advisory Board"];
   return (
     <Layout>
       <NextSeo title="Leadership" />
@@ -57,9 +56,7 @@ export default function Leadership(props) {
                               <span class="text-3xl md:text-3xl block w-full mb-0 pb-0 font-display leading-none pt-1">
                                 {name}
                               </span>
-                              <span class="text-xs uppercase block mb-2 -mt-1 md:mt-0">
-                                -
-                              </span>
+                           
                             </div>
                             <div class="w-10/12 md:w-8/12 xl:w-1/2 max-w-2xl 2xl:max-w-xl">
                               <div class="leading-snug lg:text-lg">

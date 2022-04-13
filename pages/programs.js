@@ -8,15 +8,13 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
-import client, {
-  getClient,
-  usePreviewSubscription,
-  PortableText,
-  urlFor,
-} from "../sanity";
+import client, { getClient, usePreviewSubscription, urlFor } from "../sanity";
 import ImageStandard from "@/components/imageStandard";
 import ImageWrapper from "@/components/imageWrapper";
 import ImageComponent from "@/components/image";
+import Accordion from "@/components/accordion";
+import BlockContent from "@/components/blockContent";
+import { PortableText } from "@portabletext/react";
 
 import Image from "next/image";
 
@@ -52,8 +50,8 @@ export default function Programs(props) {
               </span>
             </div>
             <m.div variants={fade}>
-              <div className="flex flex-wrap w-full">
-                <div className="w-full mb-5 md:mb-0 md:w-[300px]">
+              <div className="w-full">
+                {/* <div className="w-full mb-5 md:mb-0 md:w-[300px]">
                   <div class="w-full md:w-[250px]">
                     <span class="block text-sm text-navy mb-5 font-medium">
                       Categories
@@ -65,29 +63,20 @@ export default function Programs(props) {
                       B
                     </span>
                   </div>
-                </div>
-                <div className="w-full md:flex-1">
-                  <ul class="border-t border-off-black border-opacity-80">
+                </div> */}
+                <div className="relative z-10">
+                  <ul>
                     {posts &&
-                      posts.map((post) => (
-                        <li class="block">
-                          <a
-                            class="flex py-5 md:py-8 border-b border-off-black border-opacity-80"
-                            href="/"
+                      posts.map((post, i) => (
+                        <li>
+                          <Accordion
+                            key={i}
+                            heading={post.title[locale]}
+                            index={`0${i + 1}`}
+                            // icon={service.icon.asset}
                           >
-                            <span>logo img</span>
-                            <span class="text-2xl md:text-3xl xl:text-4xl xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
-                              {post.title[locale]}
-                            </span>
-                            <span class="block w-auto text-right ml-8 md:ml-12 xl:ml-24">
-                              <span class="block text-sm text-gold mb-2 font-medium">
-                                Date range
-                              </span>
-                              <span class="block text-sm text-gold underline font-medium">
-                                B
-                              </span>
-                            </span>
-                          </a>
+                            <PortableText value={post.descriptionBlockEn} />
+                          </Accordion>
                         </li>
                       ))}
                   </ul>
@@ -105,7 +94,7 @@ const query = groq`
  *[_type == "program"] | order(_createdAt desc) {
 ...,
 title,
-
+descriptionBlockEn,
  
 }
 `;
