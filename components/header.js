@@ -10,11 +10,11 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="py-4 mb-4 border-b border-gray-200 md:mb-6 xl:mb-8 ">
-      <div className="max-w-[1500px] px-6 mx-auto w-full">
-        <div className="relative flex flex-wrap">
+    <header className="py-8 md:py-4 mb-4 border-b border-gray-200 md:mb-6 xl:mb-8 ">
+      <div className="max-w-[1500px] px-8 md:px-6 mx-auto w-full">
+        <div className="relative flex md:flex-wrap">
           <Link href="/">
-            <a className='="font-bold text-2xl uppercase font-semibold'>
+            <a className="font-bold text-2xl uppercase font-semibold">
               <div className={"image-container2"}>
                 <Image
                   src="/jlogo1.png"
@@ -26,7 +26,7 @@ export default function Header() {
             </a>
           </Link>
 
-          <nav className="flex items-center justify-center w-full ml-auto mr-auto space-x-6 text-sm md:text-base md:w-auto">
+          <nav className="flex items-center justify-end md:justify-center w-full ml-auto mr-auto space-x-6 text-sm md:text-base md:w-auto">
             <div className="relative hidden md:inline-block ease-in dropdown group">
               <button className="text-[#242b2d] hover:text-black focus:text-black px-4 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">About JEWEL</span>
@@ -122,9 +122,9 @@ export default function Header() {
                 Donate
               </a>
             </Link>
-            <li className="md:hidden ml-5 mx-3 xl:mx-5 2xl:mx-8 mr-0 lg:hidden">
+            <div className="md:hidden ml-5 mx-3 xl:mx-5 2xl:mx-8 mr-0 lg:hidden">
               <button
-                className="btn btn--small btn--secondary-dark align-middle"
+                className="btn btn--small p-1 btn--secondary-dark align-middle"
                 onClick={() => setIsNavOpen((prev) => !prev)}
               >
                 {isNavOpen ? (
@@ -148,10 +148,10 @@ export default function Header() {
                   </span>
                 )}
               </button>
-            </li>
+            </div>
           </nav>
 
-          <nav className="flex items-center justify-center w-full space-x-3 text-sm md:text-base md:w-auto">
+          <nav className="hidden md:flex items-center justify-center w-full space-x-2 text-sm md:text-base md:w-auto">
             <Link href="/" locale="en">
               <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
                 English
@@ -171,7 +171,7 @@ export default function Header() {
           <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-purple-secondary text-white z-40 p-8">
             <div className="flex flex-wrap items-center mb-16">
               <Link href="/">
-                <a className='="font-bold text-2xl uppercase font-semibold'>
+                <a className="font-bold text-2xl uppercase font-semibold">
                   <div className={"image-container2"}>
                     <Image
                       src="/jlogo1.png"
@@ -229,7 +229,7 @@ export default function Header() {
                       className="link hover:opacity-75 focus:opacity-75
                     hover:text-white focus:text-white text-2xl text-white"
                     >
-                      Item
+                      About
                     </a>
                   </Link>
                 </li>
