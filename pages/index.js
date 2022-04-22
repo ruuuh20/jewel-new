@@ -86,8 +86,8 @@ const Home = ({ data }) => {
           <section className="w-full bg-[#CFBF84] my-8">
             <Container>
               <div className="py-10 m-auto md:py-20 2xl:py-20">
-                <div className="flex flex-col px-[1rem] md:px-[12rem]">
-                  <p className="mb-4 text-3xl font-medium text-center md:text-3xl xl:text-5xl xl:leading-snug">
+                <div className="flex flex-col px-[1rem] md:px-[14rem]">
+                  <p className="mb-4 text-2xl font-medium text-center md:text-3xl xl:text-4xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
 
@@ -226,7 +226,7 @@ const Home = ({ data }) => {
                   {programData.map((item, i) => {
                     return (
                       <Link href={`/projects/${item.slug.current}`}>
-                        <a className="flex flex-wrap border-b py-4 mb-4 bg-[rgba(98,50,0,.04)]">
+                        <a className="flex flex-wrap border-b py-4 mb-4 bg-[rgba(98,50,0,.04)] shadow hover:shadow-lg project-box">
                           <div className="flex flex-wrap w-full md:px-4">
                             <div className="w-full px-6 py-4 md:px-4 md:w-5/12">
                               {" "}
@@ -241,7 +241,7 @@ const Home = ({ data }) => {
                             <div className="flex flex-wrap w-full px-6 py-4 md:px-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:h-full">
                                 <div className="self-end w-full mt-auto">
-                                  <h3 className="text-2xl md:text-3xl">
+                                  <h3 className="text-2xl md:text-3xl project-title1">
                                     {item.title[locale]}
                                   </h3>
                                   <p className="text-[18px]">

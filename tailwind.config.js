@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       'sans': ['roboto_condensedregular', 'Arial', 'sans-serif'],
       'mono': ['Lucida Console', 'Courier', 'monospace'],
+      'serif': ['Source Serif Pro']
     },
     screens: {
       sm: "640px",
@@ -21,6 +22,7 @@ module.exports = {
         'black': '#000',
         'darkgray': 'rgb(51,51,51)',
         'white': '#FFF',
+        'slate': '#334155',
         'blue': {
           light: '#aab7cb',
           DEFAULT: '#083955',

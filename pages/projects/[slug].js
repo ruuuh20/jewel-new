@@ -16,8 +16,40 @@ const Project = ({ program }) => {
   return (
     <Layout>
       <Container>
-        {/* <div className="relative w-full pt-8 pb-[88px]"></div> */}
+        <section class="h-auto py-[6rem]">
+          <button
+            className="flex flex-wrap items-center"
+            type="button"
+            onClick={() => router.back()}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4"
+              viewBox="0 0 27.197 23.217"
+            >
+              <g
+                data-name="Group 116"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  data-name="Path 1"
+                  d="M12.314 22.51l-10.9-10.9 10.9-10.9"
+                ></path>
+                <path data-name="Path 2" d="M1.414 11.609h25.783"></path>
+              </g>
+            </svg>
+            <span className="ml-3">Go back to projects</span>
+          </button>
+        </section>
 
+        {/* <div className="relative w-full pt-8 pb-[88px]"></div> */}
+        <div className="w-1/2">
+          <h1 className="font-serif text-[50px] leading">
+            {program.title[locale] ? program.title[locale] : ""}
+          </h1>
+        </div>
         <div className="images-section mb-16">
           <ImageComponent
             identifier="main-image"
@@ -26,10 +58,6 @@ const Project = ({ program }) => {
         </div>
         <div className="grid grid-cols-12 gap-16 mb-2">
           <div className="col-span-8 col-end-auto">
-            <h1 className="md:text-6xl">
-              {program.title[locale] ? program.title[locale] : ""}
-            </h1>
-            <h2 className="md:text-6xl mb-12">July - Aug 2022</h2>
             <div className="content-inner">
               <p className="mb-4 text-xl">{program.contentOne}</p>
               <p className="mb-4 text-xl">{program.contentTwo}</p>

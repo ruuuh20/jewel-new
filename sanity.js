@@ -70,7 +70,6 @@
 
 import {
   createClient,
-  createPortableTextComponent,
   createImageUrlBuilder,
   createPreviewSubscriptionHook
 } from "next-sanity";

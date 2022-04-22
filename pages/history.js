@@ -175,6 +175,7 @@ history,
 content,
 welcomeText,
 introText,
+founderBlurb,
  "imageUrl": heroImage.asset->url,
 
  

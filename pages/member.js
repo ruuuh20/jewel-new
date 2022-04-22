@@ -27,22 +27,23 @@ export default function Member(props) {
             <div className="md:w-7/12 m-auto py-5">
               <p className="text-xl">As a member of JEWEL you will be:</p>{" "}
               <br />
-              <ul>
-                <li>
+              <ul className="text-xl">
+                <li className="list-disc mt-2">
                   Kept updated on new ways American and Korean educators are
                   organizing collaborative projects to foster greater
                   communication between the two educational systems.
                 </li>
-                <li>
+                <li className="list-isc mt-2">
                   Informed of new technologies for assisting students in the
                   learning process to insure success in the classroom.
                 </li>
-                <li>
+                <li className="list-disc mt-2">
                   Receive cultural information and travel opportunitie, when
                   they become available, to bridge the "gap" between the Korean
                   and American cultures.
                 </li>
               </ul>
+              <br />
               <p className="text-xl">
                 If you are interested in exploring opportunities with us, please
                 send your resume and a brief introduction to:{" "}

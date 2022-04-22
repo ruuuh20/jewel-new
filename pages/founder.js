@@ -8,32 +8,36 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
-import client, {
-  getClient,
-  usePreviewSubscription,
-
-  urlFor,
-} from "../sanity";
+import client, { getClient, usePreviewSubscription, urlFor } from "../sanity";
 import ImageStandard from "@/components/imageStandard";
 import ImageWrapper from "@/components/imageWrapper";
 import ImageComponent from "@/components/image";
 
 import Image from "next/image";
 import BlockContent from "@/components/blockContent";
-import { PortableText  } from "@portabletext/react";
+import { PortableText } from "@portabletext/react";
 
 const myPortableTextComponents = {
   types: {
-    quote: ({value}) => ( <div className="pt-5 pb-5 border-b md:border-t md:border-b-0 border-brown md:pb-0 md:pt-8 2xl:pt-10">
-          <span className="block pb-0 mb-2 text-4xl leading-none font-display md:text-5xl 2xl:text-6xl md:mb-0">“</span>
-          <p className="block mb-3 -mt-5 text-xl leading-tight font-display md:text-xl lg:text-2xl xl:text-3xl md:leading-tight 2xl:leading-tight md:mb-4">{value.quote}</p>
+    quote: ({ value }) => (
+      <div className="pt-5 pb-5 border-b md:border-t md:border-b-0 border-brown md:pb-0 md:pt-8 2xl:pt-10">
+        <span className="block pb-0 mb-2 text-4xl leading-none font-display md:text-5xl 2xl:text-6xl md:mb-0">
+          “
+        </span>
+        <p className="block mb-3 -mt-5 text-xl leading-tight font-display md:text-xl lg:text-2xl xl:text-3xl md:leading-tight 2xl:leading-tight md:mb-4">
+          {value.quote}
+        </p>
 
-          <div className="">
-            <span className="block leading-snug md:text-lg">{value.personJobTitle}</span>
-          </div>
-        </div>),
-    image: ({value}) => <img src={value.imageUrl} />,
-    callToAction: ({value, isInline}) =>
+        <div className="">
+          <span className="block leading-snug md:text-lg">
+            {value.personJobTitle}
+          </span>
+        </div>
+      </div>
+    ),
+    numeric: ({ value }) => <li className="text-lg">{value.text}</li>,
+    image: ({ value }) => <img src={value.imageUrl} />,
+    callToAction: ({ value, isInline }) =>
       isInline ? (
         <a href={value.url}>{value.text}</a>
       ) : (
@@ -42,17 +46,18 @@ const myPortableTextComponents = {
   },
 
   marks: {
-    link: ({children, value}) => {
-      const rel = !value.href.startsWith('/') ? 'noreferrer noopener' : undefined
+    link: ({ children, value }) => {
+      const rel = !value.href.startsWith("/")
+        ? "noreferrer noopener"
+        : undefined;
       return (
         <a href={value.href} rel={rel}>
           {children}
         </a>
-      )
+      );
     },
   },
-}
-
+};
 
 export default function Founder(props) {
   const { postdata, preview } = props;
@@ -103,111 +108,117 @@ export default function Founder(props) {
                         </div>
                         <div className="w-full md:w-7/12 content md:pr-10 xl:pr-14 md:pl-4">
                           {/* <BlockContent text={post.content} /> */}
-                          <PortableText className="content" value={post.content} components={myPortableTextComponents} />
-                         
+                          <PortableText
+                            value={post.content}
+                            components={myPortableTextComponents}
+                          />
                         </div>
                       </div>
-                  
+                      <hr className="h-1 mt-10 bg-gray-300" />
+                      <section>
+                        <div className="w-6/12 mx-auto my-10 md:w-6/12 content blurb">
+                          <PortableText value={posts[0].founderBlurb} />
+                        </div>
+                      </section>
                       <section className="pt-20">
                         <div className="content">
                           <div className="w-full mt-6 py-6 text-2xl text-center">
                             <h4>Profile / 프로필</h4>
                           </div>
-                          <div className="flex flex-wrap justify-center text-center align-middle">
-                            <div className="">
-                              <ul className="border-t border-off-black border-opacity-80">
-                                <li className="py-3 border-b md:py-4 border-off-black border-opacity-80">
-                                  <span class="inline-block text-center inline-block xl:leading-[1.2] font-normal font-display flex-1 block">
+                          <div className=" w-full">
+                            <table class="m-auto table-auto">
+                              <tbody>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pl-8 text-slate dark:text-slate-400">
                                     대표
-                                  </span>
-                                   
-                                  <span class="inline-block text-gray-500 text-center xl:leading-[1.2] font-normal md:ml-6 font-display  block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pr-8 text-slate dark:text-slate-400">
                                     함께하는교육
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-center xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pl-8 text-slate dark:text-slate-400">
                                     수석부회장
-                                  </span>
-                                  <span class="inline-block text-gray-500 xl:leading-[1.2] ml-6 font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pr-8 text-slate dark:text-slate-400">
                                     뉴욕한인회 36대, 37대
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pl-8 text-slate dark:text-slate-400">
                                     교장
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pr-8 text-slate dark:text-slate-400">
                                     가나다라한국문화학교
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left  xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pl-8 text-slate dark:text-slate-400">
                                     대표
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pr-8 text-slate dark:text-slate-400">
                                     재외동포청소년네트워크
-                                  </span>
-                                </li>
-                                <li className="flex py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pl-8 text-slate dark:text-slate-400">
                                     이사
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pr-8 text-slate dark:text-slate-400">
                                     전미여성유권자연맹 뉴저지노던벨리지구
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pl-8 text-slate dark:text-slate-400">
                                     개설위원장
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pr-8 text-slate dark:text-slate-400">
                                     (전)미주한국어재단 한국어반개설위원회
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy  block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pl-8 text-slate dark:text-slate-400">
                                     감사
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pr-8 text-slate dark:text-slate-400">
                                     (전)민주평통뉴욕협의회 18기
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pl-8 text-slate dark:text-slate-400">
                                     교육분과위원장
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pr-8 text-slate dark:text-slate-400">
                                     (전)민주평통뉴욕협의회 16기
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pl-8 text-slate dark:text-slate-400">
                                     자문위원
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate-700 p-4 pr-8 text-slate dark:text-slate-400">
                                     (전)민주평통뉴욕협의회 14기
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pl-8 text-slate dark:text-slate-400">
                                     연합회장
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pr-8 text-slate dark:text-slate-400">
                                     (전)뉴저지버겐카운티한인학부모연합회
-                                  </span>
-                                </li>
-                                <li className="py-5 border-b md:py-6 border-off-black border-opacity-80">
-                                  <span class="inline-block text-left xl:leading-[1.2] font-normal font-display text-navy flex-1 block">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pl-8 text-slate dark:text-slate-400">
                                     교육위원
-                                  </span>
-                                  <span class="inline-block text-gray-500 text-left ml-6 xl:leading-[1.2] font-normal font-display text-navy block">
+                                  </td>
+                                  <td className="border-b border-gray-300 dark:border-slate p-4 pr-8 text-slate dark:text-slate-400">
                                     (전)뉴저지 노우드학군 교육위원 5선
-                                  </span>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </section>
                     </Container>
@@ -225,6 +236,8 @@ const query = groq`
  *[_type == "about" && title.en == "Our Mission"] | order(_createdAt desc) {
 ...,
 foundersMessage,
+founderBlurb,
+introBlurb,
 foundersImage {
     ...asset->
 },

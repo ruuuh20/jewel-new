@@ -468,3 +468,26 @@ body {
     position: relative !important;
     height: unset !important;
   }
+
+  .project-box {
+    transition: all .5s ease;
+  }
+  .project-box:hover .project-title1 {
+    text-decoration: underline;
+   
+  }
+
+  .content > p {
+    line-height: 1.5;
+    font-size: 18px;
+  }
+
+  .blurb > p {
+    font-family: "Source Serif Pro"
+  }
+
+  .content > ul li {
+    font-size: 18px;
+    margin-bottom: 2px;
+    font-family: "roboto_condensedbold";
+  }

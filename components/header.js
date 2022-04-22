@@ -104,7 +104,7 @@ export default function Header() {
               </button>
 
               <ul className="absolute hidden text-gray-700 pt-1 group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
-                <Link href="/">
+                <Link href="/member">
                   <a className="block px-8 py-3 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400">
                     Become a Member
                   </a>
@@ -117,7 +117,7 @@ export default function Header() {
               </ul>
             </div>
 
-            <Link href="/">
+            <Link href="/donate">
               <a className="hidden md:inline-block border-1 py-2 px-4 bg-[#242b2d] hover:bg-black text-white rounded">
                 Donate
               </a>
@@ -133,7 +133,7 @@ export default function Header() {
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="w-6 h-6"
+                      className="w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -154,14 +154,14 @@ export default function Header() {
           <nav className="hidden md:flex items-center justify-center w-full space-x-2 text-sm md:text-base md:w-auto">
             <Link href="/" locale="en">
               <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
-                English
+                EN
               </a>
             </Link>
             <div className="spacer vertical-line">|</div>
 
             <Link href="/" locale="ko">
               <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
-                한국어
+                KO
               </a>
             </Link>
           </nav>
@@ -256,14 +256,14 @@ export default function Header() {
                   <nav className="flex items-center justify-center w-full space-x-3 text-sm md:text-base md:w-auto">
                     <Link href="/" locale="en">
                       <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
-                        English
+                        EN
                       </a>
                     </Link>
                     <div className="spacer vertical-line">|</div>
 
                     <Link href="/" locale="ko">
                       <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
-                        한국어
+                        KO
                       </a>
                     </Link>
                   </nav>
