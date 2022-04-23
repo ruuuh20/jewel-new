@@ -221,7 +221,50 @@ export default function Header() {
                 </li>
 
                 <li key="" className="text-white lg:block mb-2">
-                  <Link href="/">
+                  <div className="">
+              <div className="text-gray-300 text-2xl focus:text-black pr-2 inline-flex items-center">
+                <span className="mr-1 tracking-[1.1px]">About JEWEL</span>
+                <svg
+                  className="w-4 h-4 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+
+              <ul className="pt-1">
+                <Link href="/member">
+                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                    Our Mission
+                  </a>
+                </Link>
+                <Link href="/careers">
+                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                   Founder's Message
+                  </a>
+                </Link>
+                <Link href="/careers">
+                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                   Leadership
+                  </a>
+                </Link>
+                <Link href="/careers">
+                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                   History
+                  </a>
+                </Link>
+                <Link href="/careers">
+                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                   Contact Us
+                  </a>
+                </Link>
+              </ul>
+            </div>
+                </li>
+
+                <li key="" className="text-white lg:block mb-2">
+                  <Link href="/programs">
                     <a
                       onClick={() => setIsNavOpen((prev) => !prev)}
                       activeClassName="is--active"
@@ -229,9 +272,65 @@ export default function Header() {
                       className="link hover:opacity-75 focus:opacity-75
                     hover:text-white focus:text-white text-2xl text-white"
                     >
-                      About
+                      Programs
                     </a>
                   </Link>
+                </li>
+                <li key="" className="text-white lg:block mb-2">
+                  <Link href="/projects">
+                    <a
+                      onClick={() => setIsNavOpen((prev) => !prev)}
+                      activeClassName="is--active"
+                      partiallyActive={true}
+                      className="link hover:opacity-75 focus:opacity-75
+                    hover:text-white focus:text-white text-2xl text-white"
+                    >
+                      Projects
+                    </a>
+                  </Link>
+                </li>
+                <li key="" className="text-white lg:block mb-2">
+                  <Link href="/projects">
+                    <a
+                      onClick={() => setIsNavOpen((prev) => !prev)}
+                      activeClassName="is--active"
+                      partiallyActive={true}
+                      className="link focus:opacity-75
+                    hover:text-white focus:text-white text-2xl text-white"
+                    >
+                      Media
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                <div className="">
+              <div className="text-gray-300 text-2xl focus:text-black pr-2 inline-flex items-center">
+                <span className="mr-1 tracking-[1.1px]">Join Us</span>
+                <svg
+                  className="w-4 h-4 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+
+              <ul className="pt-1">
+                <Link href="/member">
+                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                    Become a Member
+                  </a>
+                </Link>
+                <Link href="/careers">
+                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                    Join Our Team
+                  </a>
+                </Link>
+              </ul>
+            </div>
+
+            
                 </li>
 
                 {/* <li className="text-white lg:block mb-2">
@@ -252,7 +351,7 @@ export default function Header() {
                 <h2 id="mobileMenuTrayToggle" className="sr-only">
                   Mobile Menu Tray
                 </h2>
-                <ul className="flex flex-wrap items-center">
+                <ul className="flex flex-wrap items-center mb-2">
                   <nav className="flex items-center justify-center w-full space-x-3 text-sm md:text-base md:w-auto">
                     <Link href="/" locale="en">
                       <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
