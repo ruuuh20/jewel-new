@@ -222,7 +222,7 @@ export default function Header() {
 
                 <li key="" className="text-white lg:block mb-2">
                   <div className="">
-              <div className="text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
+              <div className="opacity-70 text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">About JEWEL</span>
                 <svg
                   className="w-4 h-4 fill-current"
@@ -235,27 +235,27 @@ export default function Header() {
 
               <ul className="pt-1">
                 <Link href="/about">
-                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                     Our Mission
                   </a>
                 </Link>
                 <Link href="/founder">
-                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    Founder's Message
                   </a>
                 </Link>
                 <Link href="/leadership">
-                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    Leadership
                   </a>
                 </Link>
                 <Link href="/history">
-                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    History
                   </a>
                 </Link>
                 <Link href="/contact">
-                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    Contact Us
                   </a>
                 </Link>
@@ -305,7 +305,7 @@ export default function Header() {
 
                 <li>
                 <div className="">
-              <div className="text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
+              <div className="opacity-70 text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">Join Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
@@ -318,12 +318,12 @@ export default function Header() {
 
               <ul className="pt-1">
                 <Link href="/member">
-                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                     Become a Member
                   </a>
                 </Link>
                 <Link href="/careers">
-                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                     Join Our Team
                   </a>
                 </Link>
@@ -352,7 +352,7 @@ export default function Header() {
                   Mobile Menu Tray
                 </h2>
                 <ul className="flex flex-wrap items-center mb-2">
-                  <nav className="flex items-center justify-center w-full space-x-3 text-sm md:text-base md:w-auto">
+                  <nav className="flex items-center justify-center w-full space-x-3 text-sm md:text-base md:w-auto text-xl">
                     <Link href="/" locale="en">
                       <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
                         EN
