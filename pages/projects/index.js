@@ -43,7 +43,7 @@ console.log(posts)
             {posts &&
               posts.map((post) => (
                 <Link href={`/projects/${post.slug.current}`}>
-                  <a className="flex flex-wrap m-auto border-b group md:mb-10 md:w-2/5 project-card">
+                  <a className="flex flex-wrap m-auto border-b group mb-4 md:mb-10 md:w-2/5 project-card">
                     <div className="m-auto w-full">
                       <ImageComponent
                         image={

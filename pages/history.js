@@ -10,7 +10,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import client, { getClient, usePreviewSubscription } from "../sanity";
 
-import Image from "next/image";
 import { useNextSanityImage } from "next-sanity-image";
 import BlockContent from "@/components/blockContent";
 import { PortableText } from "@portabletext/react";
@@ -56,7 +55,7 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[75px] pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24 md:pt-[75px] pb-[75px]"
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">
@@ -76,14 +75,14 @@ export default function About(props) {
               {posts &&
                 posts.map((post) => (
                   <>
-                    <Container className="my-2">
+                    <section className="my-2">
                       {post.timelineItems?.map((item, i) => {
                         return (
                           <>
-                            <div className="flex flex-wrap py-8 border-t border-black border-opacity-20 md-mx-6 md:py-12">
-                              <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
+                            <div className="text-darkgray font-serif flex flex-wrap py-4 md:py-8 border-t border-black border-opacity-20 md-mx-6 md:py-12">
+                              <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 mb-2 md:mb-0">
                                 <div className="max-w-xl">
-                                  <div className="w-full text-2xl text-right md:text-3xl xl:text-4xl">
+                                  <div className="w-full text-2xl md:text-right md:text-3xl xl:text-4xl">
                                     <p>{item.timelineItemYear[locale]}</p>
                                   </div>
                                 </div>
@@ -99,7 +98,7 @@ export default function About(props) {
                           </>
                         );
                       })}
-                    </Container>
+                    </section>
 
                     {/* <Container>
                       <div className="relative mb-2 md:mb-3">

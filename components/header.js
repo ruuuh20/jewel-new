@@ -213,7 +213,7 @@ export default function Header() {
                       activeClassName="is--active"
                       className="link
                     hover:opacity-75 focus:opacity-75 hover:text-white
-                    focus:text-white text-2xl text-white"
+                    focus:text-white text-xl text-white"
                     >
                       Home
                     </a>
@@ -222,7 +222,7 @@ export default function Header() {
 
                 <li key="" className="text-white lg:block mb-2">
                   <div className="">
-              <div className="text-gray-300 text-2xl focus:text-black pr-2 inline-flex items-center">
+              <div className="text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">About JEWEL</span>
                 <svg
                   className="w-4 h-4 fill-current"
@@ -234,28 +234,28 @@ export default function Header() {
               </div>
 
               <ul className="pt-1">
-                <Link href="/member">
-                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                <Link href="/about">
+                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                     Our Mission
                   </a>
                 </Link>
-                <Link href="/careers">
-                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                <Link href="/founder">
+                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    Founder's Message
                   </a>
                 </Link>
-                <Link href="/careers">
-                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                <Link href="/leadership">
+                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    Leadership
                   </a>
                 </Link>
-                <Link href="/careers">
-                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                <Link href="/history">
+                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    History
                   </a>
                 </Link>
-                <Link href="/careers">
-                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                <Link href="/contact">
+                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                    Contact Us
                   </a>
                 </Link>
@@ -270,7 +270,7 @@ export default function Header() {
                       activeClassName="is--active"
                       partiallyActive={true}
                       className="link hover:opacity-75 focus:opacity-75
-                    hover:text-white focus:text-white text-2xl text-white"
+                    hover:text-white focus:text-white text-xl text-white"
                     >
                       Programs
                     </a>
@@ -283,7 +283,7 @@ export default function Header() {
                       activeClassName="is--active"
                       partiallyActive={true}
                       className="link hover:opacity-75 focus:opacity-75
-                    hover:text-white focus:text-white text-2xl text-white"
+                    hover:text-white focus:text-white text-xl text-white"
                     >
                       Projects
                     </a>
@@ -296,7 +296,7 @@ export default function Header() {
                       activeClassName="is--active"
                       partiallyActive={true}
                       className="link focus:opacity-75
-                    hover:text-white focus:text-white text-2xl text-white"
+                    hover:text-white focus:text-white text-xl text-white"
                     >
                       Media
                     </a>
@@ -305,7 +305,7 @@ export default function Header() {
 
                 <li>
                 <div className="">
-              <div className="text-gray-300 text-2xl focus:text-black pr-2 inline-flex items-center">
+              <div className="text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">Join Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
@@ -318,12 +318,12 @@ export default function Header() {
 
               <ul className="pt-1">
                 <Link href="/member">
-                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                     Become a Member
                   </a>
                 </Link>
                 <Link href="/careers">
-                  <a className="text-white text-2xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
                     Join Our Team
                   </a>
                 </Link>

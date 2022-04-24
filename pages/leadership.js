@@ -35,7 +35,7 @@ export default function Leadership(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[75px] pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24 md:pt-[75px] pb-[75px]"
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">

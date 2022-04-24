@@ -18,7 +18,7 @@ export default function Accordion({ children, heading, index, icon, openOverride
       <button className="block w-full text-left focus:outline-none focus:border-none wiggle-on-hover-container group p-0 m-0 " onClick={() => openToggle()}>
         <div className="py-6 md:py-10 2xl:py-12 cursor-pointer ring-blue">
           <div className="flex flex-wrap items-center">
-            <span className="block text-2xl md:text-3xl font-bold mt-0 md:-mt-1 md:w-1/3 pr-2 ">{index}</span>
+            <span className="block text-xl md:text-3xl text-gray-700 md:font-bold mt-0 md:-mt-1 md:w-1/3 pr-2">{index}</span>
             <div className="flex-1 md:w-2/3 ml-auto ">
               <div className="flex flex-wrap items-center -mx-3">
                 { icon && (

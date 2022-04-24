@@ -23,6 +23,12 @@ body {
   min-height: 400px;
   width: 90%;
 }
+
+@media (max-width: 768px) {
+  .image-container {
+    margin: 0 auto;
+  }
+}
 .image-circle {
   /* width: 350px;
   height: 350px; */

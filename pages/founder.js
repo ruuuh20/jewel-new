@@ -79,7 +79,7 @@ export default function Founder(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[75px] pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24 md:pt-[75px] pb-[75px]"
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">
@@ -116,11 +116,11 @@ export default function Founder(props) {
                       </div>
                       <hr className="h-1 mt-10 bg-gray-300" />
                       <section>
-                        <div className="w-6/12 mx-auto my-10 md:w-6/12 content blurb">
+                        <div className="w-full mx-auto my-10 md:w-6/12 content blurb">
                           <PortableText value={posts[0].founderBlurb} />
                         </div>
                       </section>
-                      <section className="pt-20">
+                      <section className="md:pt-20">
                         <div className="content">
                           <div className="w-full mt-6 py-6 text-2xl text-center">
                             <h4>Profile / 프로필</h4>

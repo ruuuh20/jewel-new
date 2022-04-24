@@ -16,7 +16,7 @@ const Project = ({ program }) => {
   return (
     <Layout>
       <Container>
-        <section class="h-auto py-[6rem]">
+        <section class="h-auto py-4 md:py-[6rem]">
           <button
             className="flex flex-wrap items-center"
             type="button"
@@ -45,8 +45,8 @@ const Project = ({ program }) => {
         </section>
 
         {/* <div className="relative w-full pt-8 pb-[88px]"></div> */}
-        <div className="w-1/2">
-          <h1 className="font-serif text-[50px] leading">
+        <div className="w-full md:w-1/2">
+          <h1 className="font-serif text-[32px] md:text-[50px] leading">
             {program.title[locale] ? program.title[locale] : ""}
           </h1>
         </div>

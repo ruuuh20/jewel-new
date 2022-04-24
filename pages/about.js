@@ -41,7 +41,7 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[75px] pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24 pt-5 md:pt-[75px] pb-[75px]"
         >
           <Container>
             <m.div variants={fade}>
