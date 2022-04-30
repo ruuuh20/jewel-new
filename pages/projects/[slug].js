@@ -50,7 +50,7 @@ const Project = ({ program }) => {
             {program.title[locale] ? program.title[locale] : ""}
           </h1>
         </div>
-        <div className="images-section mb-16">
+        <div className="mb-16 images-section">
           <ImageComponent
             identifier="main-image"
             image={program.mainImage ? program.mainImage : null}
@@ -63,7 +63,55 @@ const Project = ({ program }) => {
               <p className="mb-4 text-xl">{program.contentTwo}</p>
               <p className="mb-4 text-xl">{program.contentThree}</p>
             </div>
-            <div>Photos from previous trips</div>
+            <div className="my-5 gallery-container">
+              <div>
+                <h4>Take a look at out past programs</h4>
+              </div>
+              <div>
+                <section class="overflow-hidden text-gray-700 ">
+  <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-24">
+    <div class="flex flex-wrap -m-1 md:-m-2">
+      <div class="flex flex-wrap w-1/3">
+        <div class="w-full p-1 md:p-2">
+          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+            image={program.mainImage ? program.mainImage : null}/>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3">
+        <div class="w-full p-1 md:p-2">
+          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+             image={program.mainImage ? program.mainImage : null} />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3">
+        <div class="w-full p-1 md:p-2">
+          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+            image={program.mainImage ? program.mainImage : null} />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3">
+        <div class="w-full p-1 md:p-2">
+          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+            image={program.mainImage ? program.mainImage : null} />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3">
+        <div class="w-full p-1 md:p-2">
+          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+             image={program.mainImage ? program.mainImage : null} />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3">
+        <div class="w-full p-1 md:p-2">
+          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+             image={program.mainImage ? program.mainImage : null} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+              </div>
+              </div>
           </div>
           <div className="col-span-4 col-end-auto">
             <div className="sticky top-3">

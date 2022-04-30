@@ -8,10 +8,10 @@ import { fade, textReveal } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { client } from "../sanity";
-import SanityPageService from "../sanityPageService";
 import ImageComponent from "@/components/image";
 import Image from "next/image";
 import ArrowRight from "@/components/arrow-right";
+import Testimonial from "@/components/testimonial";
 
 const Home = ({ data }) => {
   const wavyTextRefs = useRef(null);
@@ -43,51 +43,53 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
                 <span className="spin spin-0">J</span>
-                <span>OINING</span>
+                <span className="text-blue">OINING</span>
               </m.span>
             </div>
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
                 <span className="spin spin-3">E</span>
-                <span>AST &</span> <span className="spin spin-2">W</span>
-                <span>EST</span>
+                <span className="text-blue">AST &</span>{" "}
+                <span className="spin spin-2">W</span>
+                <span className="text-blue">EST</span>
               </m.span>
             </div>
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
-                <span>AS</span> <span className="spin spin-1">E</span>
-                <span>DUCATIONAL</span>
+                <span className="text-blue">AS</span>{" "}
+                <span className="spin spin-1">E</span>
+                <span className="text-blue">DUCATIONAL</span>
               </m.span>
             </div>
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[12vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
               >
                 <span className="spin spin-4">L</span>
-                <span>IASONS</span>
+                <span className="text-blue">IASONS</span>
               </m.span>
             </div>
           </Container>
-          <div className="absolute top-[3%] left-[12%] spin-slow opacity-90 overflow-visible">
+          <div className="absolute top-[15%] md:top-[13%]  left-[56%] md:left-[27%] spin-slow opacity-90 overflow-visible">
             <div className="relative spin-container">
-              <Image className="" src="/ham-logo.png" width="80" height="80" />
+              <Image className="" src="/ham-logo.png" width="90" height="90" />
             </div>
           </div>
-          <section className="w-full bg-[#CFBF84] my-8">
+          <section className="w-full my-8 bg-yellow">
             <Container>
               <div className="py-10 m-auto md:py-20 2xl:py-20">
                 <div className="flex flex-col px-[1rem] md:px-[14rem]">
-                  <p className="mb-4 text-2xl font-medium text-center md:text-3xl xl:text-4xl xl:leading-snug">
+                  <p className="mb-4 text-[18px] font-medium text-center md:text-3xl xl:text-4xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
 
@@ -107,9 +109,9 @@ const Home = ({ data }) => {
           </section>
 
           <Container>
-            <div className="">
+            <div className="flex flex-wrap">
               <h2
-                className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl"
+                className="relative block pb-2 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]"
                 // after:absolute
                 // after:h-[4px]
                 // after:bg-purple
@@ -119,7 +121,7 @@ const Home = ({ data }) => {
                 // after:top-[8%]
               >
                 Upcoming event
-                <div className="line w-[20%] mt-2 h-[4px] bg-purple-light"></div>
+                {/* <div className="line w-[350px] mt-2 h-[4px] bg-blue"></div> */}
               </h2>
 
               <div className="relative flex justify-center w-full mx-auto mt-8 align-middle">
@@ -132,8 +134,8 @@ const Home = ({ data }) => {
                   /> */}
                 <Image
                   src={homepageData.heroImage.url}
-                  width="550"
-                  height="800"
+                  width="400"
+                  height="600"
                 />
 
                 <br />
@@ -141,70 +143,33 @@ const Home = ({ data }) => {
               </div>
             </div>
 
-            {/* <div className="py-10">
-              <h2 className="relative block pb-0 pr-12 mb-0 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl">
-                News
+            <div className="flex flex-wrap py-10">
+              <h2 className="relative block pb-2 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
+                Recent Events
               </h2>
-              <div className="flex flex-wrap mt-6 md:-mx-6">
+              <div className="flex flex-wrap justify-center w-full mt-6 ailgn-middle md:-mx-6">
                 <div className="w-full mb-12 md:w-7/12 xl:w-1/2 md:px-6 md:mb-0">
                   <div className="flex flex-col flex-wrap">
-                    <div className="w-1/2 px-4 bg-gray-100 border-2 md:w-full md:px-0">
-                      Article 2 IMAGE
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                   
+                    <div className="w-full px-4 m-auto bg-gray-100 border-2 md:w-1/2 md:px-0">
+                      <div className="flex justify-center w-full p-4">
+                        <Image
+                          src="/aac-poster.png"
+                          // layout="responsive"
+                          width="300px"
+                          height="400px"
+                        />
+                      </div>
                     </div>
                     <span className="flex mt-2 text-base font-bold md:text-lg font-display">
-                      News Article 1
+                      Adding Asian American Curriculum in Schools
                     </span>
 
                     <div className="relative">
                       <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </div>
-
-                      <div className="relative z-20">
-                        <FancyLink destination="/about" label="Learn More" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full ml-auto md:w-5/12 xl:w-1/2 md:px-6">
-                  <div className="flex flex-col flex-wrap -mx-4 md:mx-0">
-                    <div className="w-1/2 px-4 bg-gray-100 md:w-full md:px-0 ">
-                      Article 2 IMAGE
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                   
-                    </div>
-                    <span className="flex mt-2 text-base font-bold md:text-lg font-display">
-                      News Article 2
-                    </span>
-                    <div className="relative">
-                      <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                        NJ Korean American School Boards Luncheon <br /> Who
+                        should attend: Korean American School Board, NJ,
+                        community leaders, educators, parents and students, and
+                        policy makers
                       </div>
 
                       <div className="relative z-20">
@@ -214,12 +179,12 @@ const Home = ({ data }) => {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </Container>
           <section>
             <Container>
               <div className="flex flex-wrap py-10">
-                <h2 className="relative block pb-4 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-purple-light after:w-[70%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
+                <h2 className="relative block pb-2 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
                   Projects
                 </h2>
                 <div className="mb-12 mt-10 md:mb-16 2xl:mb-24 mx-2 md:mx-[5rem] relative">
@@ -270,6 +235,9 @@ const Home = ({ data }) => {
             </Container>
           </section>
           <Container>
+            <section>
+              <Testimonial />
+            </section>
             <section className="md:py-10">
               <div className="relative z-10 w-full mb-12 md:mb-16 md:mt-24 xl:mb-24 2xl:mb-40 3xl:mb-48">
                 <div className="flex flex-wrap border-t border-opacity-50 border-dotted border-off-black md:border-0 md:-mx-8">
@@ -281,15 +249,15 @@ const Home = ({ data }) => {
                     let afterColor = "#000000";
                     if (i === 0) {
                       color = "text-blue-dark";
-                      bgColor = "before:bg-blue";
+                      bgColor = "before:bg-[#2F65A7]";
                       marginClass = "md:mt-[-60px]";
-                      borderColor = "before:border-blue";
-                      afterColor = "after:border-blue";
+                      borderColor = "before:border-[#2F65A7]";
+                      afterColor = "after:border-[#2F65A7]";
                     } else if (i === 1) {
                       color = "text-blue-light";
-                      bgColor = "before:bg-purple-secondary";
-                      borderColor = "before:border-purple-secondary";
-                      afterColor = "after:border-purple-secondary";
+                      bgColor = "before:bg-[#75988d]";
+                      borderColor = "before:border-[#75988d]";
+                      afterColor = "after:border-[#75988d]";
                       marginClass = "md:mt-[-2px]";
                     } else if (i === 2) {
                       color = "text-green";

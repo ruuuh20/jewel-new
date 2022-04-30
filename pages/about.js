@@ -18,9 +18,6 @@ import ImageStandard from "@/components/imageStandard";
 import ImageWrapper from "@/components/imageWrapper";
 import ImageComponent from "@/components/image";
 
-import Image from "next/image";
-import { useNextSanityImage } from "next-sanity-image";
-
 export default function About(props) {
   const { postdata, preview, program } = props;
 
@@ -31,7 +28,7 @@ export default function About(props) {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-  console.log(posts, locale, router.defaultLocale);
+
   return (
     <Layout>
       <NextSeo title="About" />
@@ -56,8 +53,8 @@ export default function About(props) {
                               {post.title[locale]}
                             </h2>
                           </div>
-                          <div className="w-full pr-12 text-2xl md:text-3xl xl:text-4xl text-darkgray">
-                            <p className="font-bold leading-snug">
+                          <div className="w-full md:pr-12 text-2xl md:text-3xl xl:text-4xl text-darkgray">
+                            <p className="font-serif leading-snug">
                               {post.introText}
                             </p>
                           </div>
@@ -70,11 +67,13 @@ export default function About(props) {
                             : "https://via.placeholder.com/50"
                         }
                       />
-                      <div className="max-w-4xl py-12 m-auto mt-12 text-xl content text-darkgray">
-                        <h3 className="text-3xl tracking-normal text-center">
-                          Our Goals are to:
-                        </h3>
-                        <div className="flex flex-wrap mt-8 mb-4">
+                      <div className="max-w-4xl py-12 m-auto mt-12 text-xl content">
+                        <div className="relative mb-2 md:mb-3">
+                          <h2 className="block uppercase md:text-lg text-purple">
+                            Our Goals
+                          </h2>
+                        </div>
+                        <div className="flex flex-wrap mt-8 mb-4 text-darkgray">
                           <div className="about-item">
                             <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[3rem]">
                               Provide opportunities for the enrichment and

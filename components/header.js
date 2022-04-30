@@ -10,26 +10,28 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="py-8 md:py-4 mb-4 border-b border-gray-200 md:mb-6 xl:mb-8 ">
+    <header className="py-8 md:py-4 mb-4  border-gray-200 md:mb-6 xl:mb-8 ">
       <div className="max-w-[1500px] px-8 md:px-6 mx-auto w-full">
         <div className="relative flex md:flex-wrap">
           <Link href="/">
-            <a className="font-bold text-2xl uppercase font-semibold">
-              <div className={"image-container2"}>
+            <a className="font-bold text-[2rem] uppercase font-semibold leading-tight">
+              {/* <div className={"image-container2"}>
                 <Image
                   src="/jlogo1.png"
                   layout="fill"
                   className={"image"}
                   alt="me"
+                  sizes="10vw"
                 />
-              </div>
+              </div> */}
+              JEWEL
             </a>
           </Link>
 
           <nav className="flex items-center justify-end md:justify-center w-full ml-auto mr-auto space-x-6 text-sm md:text-base md:w-auto">
             <div className="relative hidden md:inline-block ease-in dropdown group">
               <button className="text-[#242b2d] hover:text-black focus:text-black px-4 inline-flex items-center">
-                <span className="mr-1 tracking-[1.1px]">About JEWEL</span>
+                <span className="mr-1 tracking-[1.1px]">About Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +41,7 @@ export default function Header() {
                 </svg>
               </button>
 
-              <ul className="absolute hidden text-gray-700 pt-1 group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
+              <ul className="absolute hidden text-gray-700 pt-0 group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
                 <Link href="/about">
                   <a className="block px-8 py-3 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400">
                     Our Mission
@@ -84,15 +86,10 @@ export default function Header() {
                 router.pathname == "/projects" ? "font-bold" : "text-[#242b2d]"
               }`}
             />
-            <FancyLink
-              destination="/"
-              a11yText="Navigate to the media page"
-              label="Media"
-              extraClasses="hidden md:inline-block link link--metis before:absolute"
-            />
+         
 
             <div className="relative hidden md:inline-block ease-in dropdown group">
-              <button className="text-[#242b2d] hover:text-black focus:text-black pr-2 inline-flex items-center">
+              <button className="text-[#242b2d] hover:text-black focus:text-89 */89lack pr-2 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">Join Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
@@ -103,7 +100,7 @@ export default function Header() {
                 </svg>
               </button>
 
-              <ul className="absolute hidden text-gray-700 pt-1 group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
+              <ul className="absolute hidden text-gray-700 pt-0  group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
                 <Link href="/member">
                   <a className="block px-8 py-3 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400">
                     Become a Member
@@ -168,8 +165,8 @@ export default function Header() {
         </div>
 
         {isNavOpen && (
-          <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-purple-secondary text-white z-40 p-8">
-            <div className="flex flex-wrap items-center mb-16">
+          <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-blue text-white z-40 p-8">
+            <div className="flex flex-wrap items-center mb-8">
               <Link href="/">
                 <a className="font-bold text-2xl uppercase font-semibold">
                   <div className={"image-container2"}>
@@ -178,6 +175,7 @@ export default function Header() {
                       layout="fill"
                       className={"image"}
                       alt="me"
+                      sizes="50vw"
                     />
                   </div>
                 </a>
@@ -289,20 +287,7 @@ export default function Header() {
                     </a>
                   </Link>
                 </li>
-                <li key="" className="text-white lg:block mb-2">
-                  <Link href="/projects">
-                    <a
-                      onClick={() => setIsNavOpen((prev) => !prev)}
-                      activeClassName="is--active"
-                      partiallyActive={true}
-                      className="link focus:opacity-75
-                    hover:text-white focus:text-white text-xl text-white"
-                    >
-                      Media
-                    </a>
-                  </Link>
-                </li>
-
+              
                 <li>
                 <div className="">
               <div className="opacity-70 text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">

@@ -14,7 +14,7 @@
 /* Simple defaults */
 body {
   @apply font-sans antialiased text-black bg-white;
-  background-color: rgb(234, 232, 228);
+  /* background-color: rgb(234, 232, 228); */
 }
 
 .image-container {
@@ -220,15 +220,15 @@ body {
 @keyframes spin {
   25% {
     opacity: 1;
-    color: rgb(155, 107, 155);
+    color: #FFCB05;
   }
   50% {
     opacity: 1;
-    color: rgb(155, 107, 155);
+    color: #FFCB05;
   }
   75% {
     opacity: 1;
-    color: rgb(155, 107, 155);
+    color: #FFCB05;
   }
 }
 
@@ -404,7 +404,6 @@ body {
   width: 75%;
   margin: 0 auto;
   height: 100%;
-
   counter-increment: itemcounter;
   display: flex;
   flex-direction: column;
@@ -419,6 +418,12 @@ body {
   top: 1.2rem;
   left: 0;
   content: counters(itemcounter, ".", decimal-leading-zero);
+}
+
+@media (max-width: 768px) {
+  .about-item {
+    width: 100%;
+  }
 }
 
 .lang-item {

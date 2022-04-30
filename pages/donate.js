@@ -6,6 +6,8 @@ import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
 import Form from "@/components/form";
+import { fade, textReveal } from "@/helpers/transitions";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
 export default function Donate(props) {
   const { postdata, preview } = props;
@@ -17,31 +19,43 @@ export default function Donate(props) {
     <>
       <Layout>
         <NextSeo title="Contact Us" />
+            <LazyMotion features={domAnimation}>
+               <m.main
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          className="mb-12 md:mb-16 xl:mb-24"
+        >
         <Container>
           <div className="relative w-full pt-8 pb-[88px]">
-            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl font-serif">
+            <m.span variants={fade} className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl font-serif">
               Make an Impact
-            </span>
+            </m.span>
           </div>
         </Container>
         <Container>
-          <div className="flex flex-wrap py-6 font-serif text-xl">
+          <m.div variants={fade} className="flex flex-wrap py-6 font-serif text-xl">
             <div className="md:w-7/12 m-auto py-5">
               <p>
                 Be a part of creating a thriving community by donating to JEWEL
                 today.
               </p>{" "}
               <br />
-              <h4 className="font-bold mb-2">Donate by Check</h4>
-              <p className="mb-2">
-                To make a contribution by check, please make your check payable
-                to “JEWEL” and mail to:
-              </p>
-              <p className="text-center">
-                JEWEL
-                <br />
-                Address
-              </p>
+              <div>
+                <h4 className="font-bold mb-2">Donate by Check</h4>
+                <p className="mb-2">
+                  To make a contribution by check, please make your check payable
+                  to “JEWEL” and mail to:
+                </p>
+                <p className="text-center">
+                  JEWEL Organization
+                  <br />
+                  317 Harrington Ave
+                  <br/>
+                  Closter, NJ 07624
+                </p>
+              </div>
+              <div className="my-4 md:my-8"> <h4 className="font-bold mb-2">Donate by Venmo/Zelle</h4></div>
             </div>
 
             <div className="w-full md:w-7/12 m-auto py-8">
@@ -49,8 +63,10 @@ export default function Donate(props) {
                 Thank you for donating to JEWEL!
               </p>
             </div>
-          </div>
+          </m.div>
         </Container>
+        </m.main>
+        </LazyMotion>
       </Layout>
     </>
   );

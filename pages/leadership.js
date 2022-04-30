@@ -25,7 +25,7 @@ export default function Leadership(props) {
     enabled: preview || router.query.preview !== undefined,
   });
 
-  const boardNames = ["Officers", "Directors", "Honorary Advisory Board"];
+  const boardNames = ["Officers", "Directors", "Honorary Advisory Board", "Advisory Board"];
   return (
     <Layout>
       <NextSeo title="Leadership" />

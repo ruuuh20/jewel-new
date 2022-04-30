@@ -33,7 +33,7 @@ export default function Member(props) {
                   organizing collaborative projects to foster greater
                   communication between the two educational systems.
                 </li>
-                <li className="list-isc mt-2">
+                <li className="list-disc mt-2">
                   Informed of new technologies for assisting students in the
                   learning process to insure success in the classroom.
                 </li>

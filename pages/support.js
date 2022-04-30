@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import client, {
   getClient,
   usePreviewSubscription,
-  PortableText,
 } from "../sanity";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
@@ -23,7 +22,7 @@ export default function GetInvolved(props) {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-console.log(posts)
+
   return (
     <>
       <Layout>
@@ -36,7 +35,7 @@ console.log(posts)
           </div>
         </Container>
         <Container>
-          <div className="flex flex-wrap">
+          <div className="m-auto">
             <div className="w-full p-10 lg:w-5/12">
               <p className="text-xl">
                 <Link href="/donate"><a>To Donate to JEWEL</a></Link>
