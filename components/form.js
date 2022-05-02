@@ -1,6 +1,6 @@
 export default function Form() {
   return (
-    <div className="mb-8 mt-4 md:mb-0 md:mx-20 xl:mx-32 2xl:mx-40">
+    <div className="mt-4 mb-8 md:mb-0 md:mx-20 xl:mx-32 2xl:mx-40">
       <form
         method="POST"
         action="https://formspree.io/f/moqrlknp"
@@ -13,7 +13,7 @@ export default function Form() {
             Name
           </label>
           <input
-            className="appearance-none w-full py-3 px-4 leading-tight border-transparent border-2 focus:outline-none focus:border-yellow text-xl transition ease-in-out duration-200 textb-off-lack"
+            className="w-full px-4 py-3 text-xl leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow"
             id="name"
             type="text"
             placeholder="Name"
@@ -26,7 +26,7 @@ export default function Form() {
             Email
           </label>
           <input
-            className="appearance-none w-full py-3 px-4 leading-tight border-transparent border-2 focus:outline-none focus:border-yellow text-xl transition ease-in-out duration-200 textb-off-lack"
+            className="w-full px-4 py-3 text-xl leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow"
             id="_replyto"
             type="email"
             name="_replyto"
@@ -39,7 +39,7 @@ export default function Form() {
             Phone
           </label>
           <input
-            className="appearance-none w-full py-3 px-4 leading-tight border-transparent border-2 focus:outline-none focus:border-yellow text-xl transition ease-in-out duration-200 textb-off-lack"
+            className="w-full px-4 py-3 text-xl leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow"
             id="tel"
             type="tel"
             placeholder="Phone"
@@ -53,7 +53,7 @@ export default function Form() {
           </label>
           <textarea
             rows="3"
-            className="appearance-none w-full py-3 px-4 leading-tight border-transparent border-2 focus:outline-none focus:border-yellow text-xl transition ease-in-out duration-200 textb-off-lack"
+            className="w-full px-4 py-3 text-xl leading-tight transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow textb-off-lack"
             id="message"
             placeholder="Message"
             name="message"
@@ -61,7 +61,7 @@ export default function Form() {
         </div>
 
         <button
-          className="tracking-wide text-lg lg:text-xl block ml-auto text-right rounded-lg border-4 border-purple py-2 px-8 bg-purple text-white"
+          className="block px-8 py-2 ml-auto text-lg tracking-wide text-right text-white border-4 rounded-lg lg:text-xl border-blue bg-blue"
           type="submit"
         >
           Send Message

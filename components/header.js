@@ -222,7 +222,7 @@ export default function Header() {
                     <a
                       onClick={() => setIsNavOpen((prev) => !prev)}
                       activeClassName="is--active"
-                      className="text-xl text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
+                      className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                     >
                       Home
                     </a>

@@ -89,7 +89,7 @@ export default function Programs(props) {
 }
 
 const query = groq`
- *[_type == "program"] | order(id) {
+ *[_type == "program"] | order(ID) {
 ...,
 title,
 descriptionBlockEn,
