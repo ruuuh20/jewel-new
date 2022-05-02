@@ -8,17 +8,18 @@ export default function Footer() {
       <footer>
         <div className="py-6 text-white bg-blue md:py-6">
           <Container fullBleed>
-            <div className="flex flex-wrap items-center lg:-mx-4">
+            <div className="flex flex-col flex-wrap items-center lg:-mx-4">
+              {/* <div className="text-left">Contact Us</div> */}
               <nav className="w-full lg:px-4">
                 <ul className="lg:text-right">
                   <li className="inline-block mr-3 text-xl lg:mr-0 lg:ml-3 md:text-xl 3xl:text-3xl">
-                    kaykim@wearejewel.org
+                  
                   </li>
                   <li className="inline-block mr-3 text-xl lg:mr-0 lg:ml-3 md:text-xl 3xl:text-3xl">
-                    &bull;
+                   
                   </li>
                   <li className="inline-block mr-3 text-xl lg:mr-0 lg:ml-3 md:text-xl 3xl:text-3xl">
-                    201.232.1313
+                 
                   </li>
                 </ul>
               </nav>

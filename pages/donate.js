@@ -1,16 +1,15 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import client, { getClient, usePreviewSubscription } from "../sanity";
+import { getClient, usePreviewSubscription } from "../sanity";
 import { NextSeo } from "next-seo";
-import { groq } from "next-sanity";
+
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import Form from "@/components/form";
 import { fade, textReveal } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 
 export default function Donate(props) {
-  const { postdata, preview } = props;
+ 
 
   const router = useRouter();
   const locale = router.locale || router.defaultLocale;
@@ -18,7 +17,7 @@ export default function Donate(props) {
   return (
     <>
       <Layout>
-        <NextSeo title="Contact Us" />
+        <NextSeo title="Donate" />
             <LazyMotion features={domAnimation}>
                <m.main
           initial="initial"
@@ -28,21 +27,21 @@ export default function Donate(props) {
         >
         <Container>
           <div className="relative w-full pt-8 pb-[88px]">
-            <m.span variants={fade} className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl font-serif">
+            <m.span variants={fade} className="relative block pb-0 pr-12 mb-0 font-serif text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
               Make an Impact
             </m.span>
           </div>
         </Container>
         <Container>
           <m.div variants={fade} className="flex flex-wrap py-6 font-serif text-xl">
-            <div className="md:w-7/12 m-auto py-5">
+            <div className="py-5 m-auto md:w-7/12">
               <p>
                 Be a part of creating a thriving community by donating to JEWEL
                 today.
               </p>{" "}
               <br />
               <div>
-                <h4 className="font-bold mb-2">Donate by Check</h4>
+                <h4 className="mb-2 font-bold">Donate by Check</h4>
                 <p className="mb-2">
                   To make a contribution by check, please make your check payable
                   to “JEWEL” and mail to:
@@ -55,11 +54,11 @@ export default function Donate(props) {
                   Closter, NJ 07624
                 </p>
               </div>
-              <div className="my-4 md:my-8"> <h4 className="font-bold mb-2">Donate by Venmo/Zelle</h4></div>
+              <div className="my-4 md:my-8"> <h4 className="mb-2 font-bold">Donate by Venmo/Zelle</h4></div>
             </div>
 
-            <div className="w-full md:w-7/12 m-auto py-8">
-              <p className="text-xl text-gray-600 text-center">
+            <div className="w-full py-8 m-auto md:w-7/12">
+              <p className="text-xl text-center text-gray-600">
                 Thank you for donating to JEWEL!
               </p>
             </div>

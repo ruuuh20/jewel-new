@@ -11,11 +11,8 @@ import { useRouter } from "next/router";
 import client, {
   getClient,
   usePreviewSubscription,
-  PortableText,
-  urlFor,
+
 } from "../sanity";
-import ImageStandard from "@/components/imageStandard";
-import ImageWrapper from "@/components/imageWrapper";
 import ImageComponent from "@/components/image";
 
 export default function About(props) {
@@ -49,11 +46,11 @@ export default function About(props) {
                       <div className="relative max-w-3xl mb-16 md:mb-20 2xl:mb-28">
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           <div className="relative mb-2 md:mb-3">
-                            <h2 className="block uppercase md:text-lg text-purple">
+                            <h2 className="block uppercase md:text-xl text-blue-sub">
                               {post.title[locale]}
                             </h2>
                           </div>
-                          <div className="w-full md:pr-12 text-2xl md:text-3xl xl:text-4xl text-darkgray">
+                          <div className="w-full text-2xl md:pr-12 md:text-3xl xl:text-4xl text-darkgray">
                             <p className="font-serif leading-snug">
                               {post.introText}
                             </p>
@@ -69,7 +66,7 @@ export default function About(props) {
                       />
                       <div className="max-w-4xl py-12 m-auto mt-12 text-xl content">
                         <div className="relative mb-2 md:mb-3">
-                          <h2 className="block uppercase md:text-lg text-purple">
+                          <h2 className="block uppercase md:text-xl text-blue-sub">
                             Our Goals
                           </h2>
                         </div>

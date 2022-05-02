@@ -43,7 +43,7 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
               >
                 <span className="spin spin-0">J</span>
                 <span className="text-blue">OINING</span>
@@ -52,7 +52,7 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
               >
                 <span className="spin spin-3">E</span>
                 <span className="text-blue">AST &</span>{" "}
@@ -63,7 +63,7 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
               >
                 <span className="text-blue">AS</span>{" "}
                 <span className="spin spin-1">E</span>
@@ -73,14 +73,14 @@ const Home = ({ data }) => {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[150px] leading-none relative z-10"
+                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
               >
                 <span className="spin spin-4">L</span>
                 <span className="text-blue">IASONS</span>
               </m.span>
             </div>
           </Container>
-          <div className="absolute top-[15%] md:top-[13%]  left-[56%] md:left-[27%] spin-slow opacity-90 overflow-visible">
+          <div className="absolute top-[15%] md:top-[13%] 2xl:top-[10%] left-[56%] md:left-[27%] 2xl:left-[33%] spin-slow opacity-90 overflow-visible">
             <div className="relative spin-container">
               <Image className="" src="/ham-logo.png" width="90" height="90" />
             </div>
@@ -89,6 +89,11 @@ const Home = ({ data }) => {
             <Container>
               <div className="py-10 m-auto md:py-20 2xl:py-20">
                 <div className="flex flex-col px-[1rem] md:px-[14rem]">
+                  <div className="relative mb-2 md:mb-3">
+                    <h2 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
+                      Who We Are
+                    </h2>
+                  </div>
                   <p className="mb-4 text-[18px] font-medium text-center md:text-3xl xl:text-4xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
@@ -99,7 +104,7 @@ const Home = ({ data }) => {
                         <span class="circle" aria-hidden="true">
                           <span class="icon arrow"></span>
                         </span>
-                        <span class="button-text">Who We Are</span>
+                        <span class="button-text">More About Us</span>
                       </a>
                     </Link>
                   </div>
@@ -170,10 +175,6 @@ const Home = ({ data }) => {
                         should attend: Korean American School Board, NJ,
                         community leaders, educators, parents and students, and
                         policy makers
-                      </div>
-
-                      <div className="relative z-20">
-                        <FancyLink destination="/about" label="Learn More" />
                       </div>
                     </div>
                   </div>

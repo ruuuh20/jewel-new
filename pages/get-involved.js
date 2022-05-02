@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import client, {
   getClient,
   usePreviewSubscription,
-  PortableText,
 } from "../sanity";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
@@ -26,7 +25,7 @@ export default function GetInvolved(props) {
   return (
     <>
       <Layout>
-        <NextSeo title="Contact Us" />
+        <NextSeo title="Get Involved" />
         <Container>
           <div className="relative w-full pt-8 pb-[88px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
@@ -41,7 +40,7 @@ export default function GetInvolved(props) {
                 Volunteer opportunities for students. Sign up for our email list.
 
               </p>{" "}
-              <div className="box py-8">
+              <div className="py-8 box">
                 {posts &&
                   posts.map((post) => (
                      <p>{post.title}</p> 
@@ -50,7 +49,7 @@ export default function GetInvolved(props) {
               </div>
             </div>
 
-            <div className="w-full lg:w-7/12 p-6">
+            <div className="w-full p-6 lg:w-7/12">
               <Form />
             </div>
           </div>

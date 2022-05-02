@@ -16,7 +16,7 @@ export default function Careers(props) {
   return (
     <>
       <Layout>
-        <NextSeo title="Contact Us" />
+        <NextSeo title="Careers" />
         <Container>
           <div className="relative w-full pt-8 pb-[88px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
@@ -26,7 +26,7 @@ export default function Careers(props) {
         </Container>
         <Container>
           <div className="flex flex-wrap py-6">
-            <div className="md:w-7/12 m-auto py-5">
+            <div className="py-5 m-auto md:w-7/12">
               <p className="text-xl">
                 At JEWEL, we are commited to building a diverse team that
                 represents many experiences and perspectives. We're always
@@ -46,8 +46,8 @@ export default function Careers(props) {
               </p>
             </div>
 
-            <div className="w-full md:w-7/12 m-auto py-8">
-              <p className="text-xl text-gray-600 text-center">
+            <div className="w-full py-8 m-auto md:w-7/12">
+              <p className="text-xl text-center text-gray-600">
                 You can also fill out our contact form for any inquiries.
               </p>
               <Form />

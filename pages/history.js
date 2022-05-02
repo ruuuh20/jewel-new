@@ -1,6 +1,5 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import FancyLink from "@/components/fancyLink";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
@@ -8,9 +7,8 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
-import client, { getClient, usePreviewSubscription } from "../sanity";
+import { getClient, usePreviewSubscription } from "../sanity";
 
-import { useNextSanityImage } from "next-sanity-image";
 import BlockContent from "@/components/blockContent";
 import { PortableText } from "@portabletext/react";
 
@@ -48,7 +46,7 @@ export default function About(props) {
 
   return (
     <Layout>
-      <NextSeo title="About" />
+      <NextSeo title="Our History" />
 
       <LazyMotion features={domAnimation}>
         <m.div
@@ -79,8 +77,8 @@ export default function About(props) {
                       {post.timelineItems?.map((item, i) => {
                         return (
                           <>
-                            <div className="text-darkgray font-serif flex flex-wrap py-4 md:py-8 border-t border-black border-opacity-20 md-mx-6 md:py-12">
-                              <div className="w-full md:w-7/12 xl:w-2/6 md:px-6 mb-2 md:mb-0">
+                            <div className="flex flex-wrap py-4 font-serif border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
+                              <div className="w-full mb-2 md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
                                 <div className="max-w-xl">
                                   <div className="w-full text-2xl md:text-right md:text-3xl xl:text-4xl">
                                     <p>{item.timelineItemYear[locale]}</p>

@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import client, { getClient, usePreviewSubscription } from "../sanity";
+import  { getClient, usePreviewSubscription } from "../sanity";
 import { NextSeo } from "next-seo";
-import { groq } from "next-sanity";
+
 import Layout from "@/components/layout";
 import Container from "@/components/container";
 import Form from "@/components/form";
@@ -24,20 +24,20 @@ export default function Member(props) {
         </Container>
         <Container>
           <div className="flex flex-wrap py-6">
-            <div className="md:w-7/12 m-auto py-5">
+            <div className="py-5 m-auto md:w-7/12">
               <p className="text-xl">As a member of JEWEL you will be:</p>{" "}
               <br />
               <ul className="text-xl">
-                <li className="list-disc mt-2">
+                <li className="mt-2 list-disc">
                   Kept updated on new ways American and Korean educators are
                   organizing collaborative projects to foster greater
                   communication between the two educational systems.
                 </li>
-                <li className="list-disc mt-2">
+                <li className="mt-2 list-disc">
                   Informed of new technologies for assisting students in the
                   learning process to insure success in the classroom.
                 </li>
-                <li className="list-disc mt-2">
+                <li className="mt-2 list-disc">
                   Receive cultural information and travel opportunitie, when
                   they become available, to bridge the "gap" between the Korean
                   and American cultures.
@@ -56,8 +56,8 @@ export default function Member(props) {
               </p>
             </div>
 
-            <div className="w-full md:w-7/12 m-auto py-8">
-              <p className="text-xl text-gray-600 text-center">
+            <div className="w-full py-8 m-auto md:w-7/12">
+              <p className="text-xl text-center text-gray-600">
                 You can also fill out our contact form for any inquiries.
               </p>
               <Form />

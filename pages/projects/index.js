@@ -1,4 +1,3 @@
-
 import { useRouter } from "next/router";
 import client, {
   getClient,
@@ -24,7 +23,7 @@ export default function Projects(props) {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-console.log(posts)
+
   return (
     <>
       <Layout>
@@ -39,33 +38,66 @@ console.log(posts)
             </span>
           </div>
 
-          <div className="relative flex flex-wrap">
-            {posts &&
-              posts.map((post) => (
-                <Link href={`/projects/${post.slug.current}`}>
-                  <a className="flex flex-wrap m-auto border-b group mb-4 md:mb-10 md:w-2/5 project-card">
-                    <div className="m-auto w-full">
-                      <ImageComponent
-                        image={
-                          post.mainImage !== null
-                            ? post.mainImage.url
-                            : "https://via.placeholder.com/50"
-                        }
-                      />
-                    </div>
+          {posts &&
+            posts.map((post) => (
+              <section>
+                <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+                  <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+                    <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
+                      <div
+                        class="image-container2 absolute inset-0 object-cover w-full h-full"
+                        alt="Student studying"
+                      >
+                        {/* <Image
+                    src="/ganadara-logo.png"
+                    alt="Student studying"
+                    layout="fill"
+                  /> */}
 
-                    <div className="flex w-full justify-center gray-box min-h-[220px]">
-                      <div className="p-10 intro">
-                        <h3 className="block w-full text-2xl md:text-3xl project-title">
-                          {post.title[locale]}
-                        </h3>
-                        <p>{post.cardDescription}</p>
+                        <ImageComponent
+                          image={
+                            post.mainImage !== null
+                              ? post.mainImage.url
+                              : "https://via.placeholder.com/50"
+                          }
+                        />
                       </div>
                     </div>
-                  </a>
-                </Link>
-              ))}
-          </div>
+
+                    <div class="lg:py-24">
+                      <h2 class="text-3xl font-bold sm:text-4xl font-serif">
+                        {post.title[locale]}
+                      </h2>
+
+                      <p class="mt-4 text-gray-600">{post.cardDescription}</p>
+                      <Link href={`/projects/${post.slug.current}`}>
+                        <a class="inline-flex items-center px-8 py-3 mt-8 text-white font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
+                          <span class="text-sm font-extrabold">
+                            {" "}
+                            Learn More
+                          </span>
+
+                          <svg
+                            class="w-5 h-5 ml-3"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                          </svg>
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            ))}
         </Container>
       </Layout>
     </>

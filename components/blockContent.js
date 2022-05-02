@@ -2,7 +2,7 @@ import { PortableText } from "@portabletext/react";
 import Quote from "./quote";
 
 const BlockContent = ({ text }) => {
-  console.log(text);
+ 
   return (
     <div>
       <PortableText

@@ -10,11 +10,11 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="py-8 md:py-4 mb-4  border-gray-200 md:mb-6 xl:mb-8 ">
+    <header className="py-8 mb-4 border-gray-200 md:py-4 md:mb-6 xl:mb-8 ">
       <div className="max-w-[1500px] px-8 md:px-6 mx-auto w-full">
         <div className="relative flex md:flex-wrap">
           <Link href="/">
-            <a className="font-bold text-[2rem] uppercase font-semibold leading-tight">
+            <a className="font-bold text-[1.5rem] md:text-[2rem] uppercase font-semibold leading-tight">
               {/* <div className={"image-container2"}>
                 <Image
                   src="/jlogo1.png"
@@ -28,8 +28,8 @@ export default function Header() {
             </a>
           </Link>
 
-          <nav className="flex items-center justify-end md:justify-center w-full ml-auto mr-auto space-x-6 text-sm md:text-base md:w-auto">
-            <div className="relative hidden md:inline-block ease-in dropdown group">
+          <nav className="flex items-center justify-end w-full ml-auto mr-auto space-x-6 text-sm md:justify-center md:text-base md:w-auto">
+            <div className="relative hidden ease-in md:inline-block dropdown group">
               <button className="text-[#242b2d] hover:text-black focus:text-black px-4 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">About Us</span>
                 <svg
@@ -86,10 +86,18 @@ export default function Header() {
                 router.pathname == "/projects" ? "font-bold" : "text-[#242b2d]"
               }`}
             />
+            <FancyLink
+              destination="/affiliates"
+              a11yText="Navigate to the projects page"
+              label="Affiliates"
+              extraClasses={`hidden md:inline-block link link--metis before:absolute ${
+                router.pathname == "/affiliates" ? "font-bold" : "text-[#242b2d]"
+              }`}
+            />
          
 
-            <div className="relative hidden md:inline-block ease-in dropdown group">
-              <button className="text-[#242b2d] hover:text-black focus:text-89 */89lack pr-2 inline-flex items-center">
+            <div className="relative hidden ease-in md:inline-block dropdown group">
+              <button className="text-[#242b2d] hover:text-black focus:text-black pr-2 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">Join Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
@@ -106,6 +114,11 @@ export default function Header() {
                     Become a Member
                   </a>
                 </Link>
+                <Link href="/member">
+                  <a className="block px-8 py-3 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400">
+                    Become a Partner
+                  </a>
+                </Link>
                 <Link href="/careers">
                   <a className="block px-8 py-3 whitespace-no-wrap bg-gray-200 hover:bg-gray-400">
                     Join Our Team
@@ -115,13 +128,13 @@ export default function Header() {
             </div>
 
             <Link href="/donate">
-              <a className="hidden md:inline-block border-1 py-2 px-4 bg-[#242b2d] hover:bg-black text-white rounded">
+              <a className="hidden px-4 py-2 text-white rounded md:inline-block border-1 bg-blue hover:bg-black">
                 Donate
               </a>
             </Link>
-            <div className="md:hidden ml-5 mx-3 xl:mx-5 2xl:mx-8 mr-0 lg:hidden">
+            <div className="mx-3 ml-5 mr-0 md:hidden xl:mx-5 2xl:mx-8 lg:hidden">
               <button
-                className="btn btn--small p-1 btn--secondary-dark align-middle"
+                className="p-1 align-middle btn btn--small btn--secondary-dark"
                 onClick={() => setIsNavOpen((prev) => !prev)}
               >
                 {isNavOpen ? (
@@ -148,7 +161,7 @@ export default function Header() {
             </div>
           </nav>
 
-          <nav className="hidden md:flex items-center justify-center w-full space-x-2 text-sm md:text-base md:w-auto">
+          <nav className="items-center justify-center hidden w-full space-x-2 text-sm md:flex md:text-base md:w-auto">
             <Link href="/" locale="en">
               <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
                 EN
@@ -165,10 +178,10 @@ export default function Header() {
         </div>
 
         {isNavOpen && (
-          <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-blue text-white z-40 p-8">
+          <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full p-8 text-white bg-blue">
             <div className="flex flex-wrap items-center mb-8">
               <Link href="/">
-                <a className="font-bold text-2xl uppercase font-semibold">
+                <a className="text-2xl font-semibold font-bold uppercase">
                   <div className={"image-container2"}>
                     <Image
                       src="/jlogo1.png"
@@ -182,7 +195,7 @@ export default function Header() {
               </Link>
 
               <button
-                className="btn--reset p-1 ml-auto"
+                className="p-1 ml-auto btn--reset"
                 onClick={() => setIsNavOpen((prev) => !prev)}
               >
                 <svg
@@ -204,24 +217,22 @@ export default function Header() {
                 Mobile Menu
               </h2>
               <ul>
-                <li className="text-white lg:block mb-2">
+                <li className="mb-2 text-white lg:block">
                   <Link href="/">
                     <a
                       onClick={() => setIsNavOpen((prev) => !prev)}
                       activeClassName="is--active"
-                      className="link
-                    hover:opacity-75 focus:opacity-75 hover:text-white
-                    focus:text-white text-xl text-white"
+                      className="text-xl text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                     >
                       Home
                     </a>
                   </Link>
                 </li>
 
-                <li key="" className="text-white lg:block mb-2">
+                <li key="" className="mb-2 text-white lg:block">
                   <div className="">
-              <div className="opacity-70 text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
-                <span className="mr-1 tracking-[1.1px]">About JEWEL</span>
+              <div className="inline-flex items-center pr-2 text-base text-white opacity-70 focus:text-black">
+                <span className="mr-1 tracking-[1.1px]">About Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -233,27 +244,27 @@ export default function Header() {
 
               <ul className="pt-1">
                 <Link href="/about">
-                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                     Our Mission
                   </a>
                 </Link>
                 <Link href="/founder">
-                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                    Founder's Message
                   </a>
                 </Link>
                 <Link href="/leadership">
-                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                    Leadership
                   </a>
                 </Link>
                 <Link href="/history">
-                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                    History
                   </a>
                 </Link>
                 <Link href="/contact">
-                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                    Contact Us
                   </a>
                 </Link>
@@ -261,36 +272,46 @@ export default function Header() {
             </div>
                 </li>
 
-                <li key="" className="text-white lg:block mb-2">
+                <li key="" className="mb-2 text-white lg:block">
                   <Link href="/programs">
                     <a
                       onClick={() => setIsNavOpen((prev) => !prev)}
                       activeClassName="is--active"
                       partiallyActive={true}
-                      className="link hover:opacity-75 focus:opacity-75
-                    hover:text-white focus:text-white text-xl text-white"
+                      className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                     >
                       Programs
                     </a>
                   </Link>
                 </li>
-                <li key="" className="text-white lg:block mb-2">
+                <li key="" className="mb-2 text-white lg:block">
                   <Link href="/projects">
                     <a
                       onClick={() => setIsNavOpen((prev) => !prev)}
                       activeClassName="is--active"
                       partiallyActive={true}
-                      className="link hover:opacity-75 focus:opacity-75
-                    hover:text-white focus:text-white text-xl text-white"
+                      className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                     >
                       Projects
+                    </a>
+                  </Link>
+                </li>
+                <li key="" className="mb-2 text-white lg:block">
+                  <Link href="/affiliates">
+                    <a
+                      onClick={() => setIsNavOpen((prev) => !prev)}
+                      activeClassName="is--active"
+                      partiallyActive={true}
+                      className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
+                    >
+                      Affiliates
                     </a>
                   </Link>
                 </li>
               
                 <li>
                 <div className="">
-              <div className="opacity-70 text-gray-300 text-xl focus:text-black pr-2 inline-flex items-center">
+              <div className="inline-flex items-center pr-2 text-base text-white opacity-70 focus:text-black">
                 <span className="mr-1 tracking-[1.1px]">Join Us</span>
                 <svg
                   className="w-4 h-4 fill-current"
@@ -303,12 +324,17 @@ export default function Header() {
 
               <ul className="pt-1">
                 <Link href="/member">
-                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                     Become a Member
                   </a>
                 </Link>
+                <Link href="/partner">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
+                    Become a Partner
+                  </a>
+                </Link>
                 <Link href="/careers">
-                  <a className="border-l border-gray-500 text-white text-xl ml-2 block px-2 py-1 whitespace-no-wrap">
+                  <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                     Join Our Team
                   </a>
                 </Link>
@@ -318,12 +344,12 @@ export default function Header() {
             
                 </li>
 
-                {/* <li className="text-white lg:block mb-2">
+                {/* <li className="mb-2 text-white lg:block">
                   <Link
                     onClick={this.toggleOverlay}
                     to="/careers"
                     activeClassName="is--active"
-                    className="link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white text-2xl text-white"
+                    className="text-2xl text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                   >
                     Careers
                   </Link>
@@ -331,13 +357,13 @@ export default function Header() {
               </ul>
             </nav>
 
-            <div className="block md:hidden fixed bottom-0 left-0 w-full z-50">
+            <div className="fixed bottom-0 left-0 z-50 block w-full md:hidden">
               <nav aria-labelledby="mobileMenuTrayToggle">
                 <h2 id="mobileMenuTrayToggle" className="sr-only">
                   Mobile Menu Tray
                 </h2>
                 <ul className="flex flex-wrap items-center mb-2">
-                  <nav className="flex items-center justify-center w-full space-x-3 text-sm md:text-base md:w-auto text-xl">
+                  <nav className="flex items-center justify-center w-full space-x-3 text-sm text-xl md:text-base md:w-auto">
                     <Link href="/" locale="en">
                       <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
                         EN

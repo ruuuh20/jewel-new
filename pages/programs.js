@@ -1,6 +1,6 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import FancyLink from "@/components/fancyLink";
+
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
@@ -8,10 +8,8 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
-import client, { getClient, usePreviewSubscription, urlFor } from "../sanity";
-import ImageStandard from "@/components/imageStandard";
-import ImageWrapper from "@/components/imageWrapper";
-import ImageComponent from "@/components/image";
+import { getClient, usePreviewSubscription, urlFor } from "../sanity";
+
 import Accordion from "@/components/accordion";
 import BlockContent from "@/components/blockContent";
 import { PortableText } from "@portabletext/react";
@@ -91,7 +89,7 @@ export default function Programs(props) {
 }
 
 const query = groq`
- *[_type == "program"] | order(_createdAt desc) {
+ *[_type == "program"] | | order(id) {
 ...,
 title,
 descriptionBlockEn,

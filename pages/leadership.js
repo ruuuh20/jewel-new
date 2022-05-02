@@ -6,13 +6,12 @@ import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
 
 import { useRouter } from "next/router";
-import client, {
+import {
   getClient,
   usePreviewSubscription,
-  urlFor,
+
 } from "../sanity";
 
-import Image from "next/image";
 
 export default function Leadership(props) {
   const { postdata, preview, program } = props;
@@ -46,7 +45,7 @@ export default function Leadership(props) {
 
             {boardNames.map((name) => (
               <>
-                <div className=" w-full py-1">
+                <div className="w-full py-1 ">
                   <div class="mx-auto">
                     <div class="overflow-hidden w-full md:w-9/12 mx-auto">
                       <div class="w-full flex flex-wrap">
@@ -67,7 +66,7 @@ export default function Leadership(props) {
                                     )
                                     .map((filteredPost) => (
                                       <li className="py-2">
-                                        <p className="font-bold text-lg">
+                                        <p className="text-lg font-bold">
                                           {filteredPost.name.en}
                                         </p>
                                         <p className="text-gray-500">

@@ -4,6 +4,7 @@ import ImageComponent from "../../components/image";
 import groq from "groq";
 import { useRouter } from "next/router";
 import Container from "@/components/container";
+import { NextSeo } from "next-seo";
 // function urlFor(source) {
 //   return imageUrlBuilder(client).image(source);
 // }
@@ -15,6 +16,7 @@ const Project = ({ program }) => {
 
   return (
     <Layout>
+      <NextSeo title={program.title[locale]} />
       <Container>
         <section class="h-auto py-4 md:py-[6rem]">
           <button
@@ -40,7 +42,7 @@ const Project = ({ program }) => {
                 <path data-name="Path 2" d="M1.414 11.609h25.783"></path>
               </g>
             </svg>
-            <span className="ml-3">Go back to projects</span>
+            <span className="ml-3">Go Back to Projects</span>
           </button>
         </section>
 
@@ -63,55 +65,6 @@ const Project = ({ program }) => {
               <p className="mb-4 text-xl">{program.contentTwo}</p>
               <p className="mb-4 text-xl">{program.contentThree}</p>
             </div>
-            <div className="my-5 gallery-container">
-              <div>
-                <h4>Take a look at out past programs</h4>
-              </div>
-              <div>
-                <section class="overflow-hidden text-gray-700 ">
-  <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-24">
-    <div class="flex flex-wrap -m-1 md:-m-2">
-      <div class="flex flex-wrap w-1/3">
-        <div class="w-full p-1 md:p-2">
-          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-            image={program.mainImage ? program.mainImage : null}/>
-        </div>
-      </div>
-      <div class="flex flex-wrap w-1/3">
-        <div class="w-full p-1 md:p-2">
-          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-             image={program.mainImage ? program.mainImage : null} />
-        </div>
-      </div>
-      <div class="flex flex-wrap w-1/3">
-        <div class="w-full p-1 md:p-2">
-          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-            image={program.mainImage ? program.mainImage : null} />
-        </div>
-      </div>
-      <div class="flex flex-wrap w-1/3">
-        <div class="w-full p-1 md:p-2">
-          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-            image={program.mainImage ? program.mainImage : null} />
-        </div>
-      </div>
-      <div class="flex flex-wrap w-1/3">
-        <div class="w-full p-1 md:p-2">
-          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-             image={program.mainImage ? program.mainImage : null} />
-        </div>
-      </div>
-      <div class="flex flex-wrap w-1/3">
-        <div class="w-full p-1 md:p-2">
-          <ImageComponent alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-             image={program.mainImage ? program.mainImage : null} />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-              </div>
-              </div>
           </div>
           <div className="col-span-4 col-end-auto">
             <div className="sticky top-3">
@@ -130,6 +83,34 @@ const Project = ({ program }) => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="my-5 gallery-container">
+          <div>
+            <h3 className="text-xl font-bold">
+              Photos from our past events or programs
+            </h3>
+          </div>
+          <div>
+            <section class="overflow-hidden text-gray-700 ">
+              <div class="container px-4 py-2 mx-auto lg:pt-12 lg:px-16">
+                <div class="flex flex-wrap -m-1 md:-m-2">
+                  {program.images
+                    ? program.images.map((img, index) => (
+                        <div class="flex flex-wrap w-1/3">
+                          <div class="w-full p-1 md:p-2">
+                            <ImageComponent
+                              alt="gallery"
+                              class="block object-cover object-center w-full h-full rounded-lg"
+                              image={img}
+                            />
+                          </div>
+                        </div>
+                      ))
+                    : null}
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </Container>
