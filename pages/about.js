@@ -72,19 +72,19 @@ export default function About(props) {
                         </div>
                         <div className="flex flex-wrap mt-8 mb-4 text-darkgray">
                           <div className="about-item">
-                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[3rem]">
+                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[3rem]">
                               Provide opportunities for the enrichment and
                               learning of Asian cultures and history.
                             </p>
                           </div>
                           <div className="about-item">
-                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative 2xl:mb-10 p-[3rem]">
+                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative 2xl:mb-10 p-[3rem]">
                               Empower future generations to celebrate their own
                               heritage while engaging with other cultures.
                             </p>
                           </div>
                           <div className="about-item">
-                            <p className="block font-bold text-xl md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[3rem] pt-4rem">
+                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[1rem] md:p-[3rem] pt-4rem">
                               Promote a mutual understanding for world cultures
                               and methods of education
                             </p>
