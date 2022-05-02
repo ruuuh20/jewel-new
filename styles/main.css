@@ -127,6 +127,12 @@ body {
   border-radius: 1.625rem;
 }
 
+/* @media (max-width: 768px) {
+  .circle {
+    height: 2rem;
+    width: 2rem;
+  }
+} */
 .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -170,6 +176,11 @@ body {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .button-text {
+    padding-left: .4rem;
+  }
 }
 
 .button:hover .circle {
@@ -437,7 +448,7 @@ body {
 }
 
 .accordion-item {
-  @apply transition-all ease-in-out duration-500 pointer-events-none;
+  @apply transition-all duration-500 ease-in-out pointer-events-none;
   max-height: 0;
   height: 100% !important;
 
@@ -446,7 +457,7 @@ body {
 .accordion-item--open {
   max-height: 1000px;
   height: 100% !important;
-  @apply transition-all ease-in-out duration-700 pb-12 md:pb-16 xl:pb-20;
+  @apply pb-12 transition-all duration-700 ease-in-out md:pb-16 xl:pb-20;
 }
 
 

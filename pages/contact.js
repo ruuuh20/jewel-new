@@ -34,7 +34,7 @@ export default function Contact(props) {
         </Container>
         <Container>
           <div className="flex flex-wrap py-6">
-            <div className="w-full p-10 lg:w-5/12">
+            <div className="w-full md:p-10 lg:w-5/12">
               <p className="text-xl">
                 We’d love to hear from you. For all inquiries, you can send us
                 an email at{" "}
@@ -46,11 +46,11 @@ export default function Contact(props) {
                 </a>{" "}
                 or fill out the form, and we will get back to you.
               </p>{" "}
-              <div className="box py-8">
+              <div className="py-8 box">
                 {posts &&
                   posts.map((post) => (
                     <>
-                      <div className="flex text-lg mb-4">
+                      <div className="flex mb-4 text-lg">
                         {" "}
                       
                           <svg
@@ -71,11 +71,11 @@ export default function Contact(props) {
                           <a href="mailto:kaykim@wearejewel.org" className="text-xl transition duration-500 ease-in-out text-secondary-dark hover:text-purple">{post.email} </a>
                         
                       </div>
-                      <div className="flex text-lg mb-4">
+                      <div className="flex mb-4 text-lg">
                       
                           <svg
                             aria-hidden="true"
-                            className="svg-inline--fa location-icon fa-w-16 inline-block mr-3 text-primary"
+                            className="inline-block mr-3 svg-inline--fa location-icon fa-w-16 text-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 384 512"
                           >
@@ -84,14 +84,14 @@ export default function Contact(props) {
                           <span className="text-xl transition duration-500 ease-in-out text-secondary-dark hover:text-purple">{post.address} </span>
                       
                       </div>
-                      <div className="flex text-lg mb-4">
+                      <div className="flex mb-4 text-lg">
                     
                           <svg
                             aria-hidden="true"
                             focusable="false"
                             data-prefix="fas"
                             data-icon="phone-alt"
-                            className="svg-inline--fa phone-icon fa-w-16 inline-block mr-3 text-primary"
+                            className="inline-block mr-3 svg-inline--fa phone-icon fa-w-16 text-primary"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -111,8 +111,8 @@ export default function Contact(props) {
               </div>
             </div>
 
-            <div className="w-full lg:w-7/12 p-6">
-              <p className="text-xl text-gray-600 text-center">Get in Touch</p>
+            <div className="w-full p-6 lg:w-7/12">
+              <p className="text-xl text-center text-gray-600">Get in Touch</p>
               <Form />
             </div>
           </div>

@@ -80,9 +80,14 @@ const Home = ({ data }) => {
               </m.span>
             </div>
           </Container>
-          <div className="absolute top-[15%] md:top-[13%] 2xl:top-[10%] left-[56%] md:left-[27%] 2xl:left-[33%] spin-slow opacity-90 overflow-visible">
+          <div className="absolute hidden md:block top-[16%] md:top-[13%] 2xl:top-[10%] left-[56%] md:left-[27%] 2xl:left-[33%] spin-slow opacity-90 overflow-visible">
             <div className="relative spin-container">
-              <Image className="" src="/ham-logo.png" width="90" height="90" />
+              <Image className="" src="/ham-logo.png" width="85" height="85" />
+            </div>
+          </div>
+          <div className="absolute md:hidden top-[16%]  2xl:top-[10%] left-[60%]  2xl:left-[33%] spin-slow opacity-90 overflow-visible">
+            <div className="relative spin-container">
+              <Image className="" src="/ham-logo.png" width="50" height="50" />
             </div>
           </div>
           <section className="w-full my-8 bg-yellow">
