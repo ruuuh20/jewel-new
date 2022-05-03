@@ -28,7 +28,7 @@ export default function Header() {
             </a>
           </Link>
 
-          <nav className="flex items-center justify-end w-full ml-auto mr-auto space-x-6 text-sm md:justify-center md:text-base md:w-auto">
+          <nav className="flex items-center justify-end w-full ml-auto space-x-6 text-sm md:justify-center md:text-base md:w-auto">
             <div className="relative hidden ease-in md:inline-block dropdown group">
               <button className="text-[#242b2d] hover:text-black focus:text-black px-4 inline-flex items-center">
                 <span className="mr-1 tracking-[1.1px]">About Us</span>
@@ -161,21 +161,22 @@ export default function Header() {
             </div>
           </nav>
 
-          <nav className="items-center justify-center hidden w-full space-x-2 text-sm md:flex md:text-base md:w-auto">
+         
+        </div>
+         <nav className="items-center justify-end hidden w-full mt-1 mr-1 space-x-2 text-sm md:flex md:text-base md:w-auto">
             <Link href="/" locale="en">
-              <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
+              <a className="underline link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
                 EN
               </a>
             </Link>
             <div className="spacer vertical-line">|</div>
 
             <Link href="/" locale="ko">
-              <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
+              <a className="underline link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
                 KO
               </a>
             </Link>
           </nav>
-        </div>
 
         {isNavOpen && (
           <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full p-8 text-white bg-blue">

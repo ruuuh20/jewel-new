@@ -121,7 +121,7 @@ const Affiliates = (props) => {
             </div>
           </div>
         </section>
-        <section>
+        <section className="mb-6">
           <div class="max-w-screen-xl px-4 md:py-16 mx-auto sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
               <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">

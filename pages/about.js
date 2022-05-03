@@ -66,7 +66,7 @@ export default function About(props) {
                       />
                       <div className="max-w-4xl py-12 m-auto mt-12 text-xl content">
                         <div className="relative mb-2 md:mb-3">
-                          <h2 className="block uppercase md:text-xl text-blue-sub">
+                          <h2 className="block text-base uppercase md:text-xl text-blue-sub">
                             Our Goals
                           </h2>
                         </div>
@@ -84,7 +84,7 @@ export default function About(props) {
                             </p>
                           </div>
                           <div className="about-item">
-                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[1rem] md:p-[3rem] pt-4rem">
+                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 md:p-[3rem] pt-4rem">
                               Promote a mutual understanding for world cultures
                               and methods of education
                             </p>
