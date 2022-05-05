@@ -89,9 +89,9 @@ export default function Founder(props) {
                 posts.map((post) => (
                   <>
                     <div className="flex flex-wrap">
-                      <div className="relative w-full overflow-hidden md:w-5/12 content md:mb-0">
+                      <div className="relative w-full px-10 overflow-hidden md:w-5/12 content md:mb-0">
                         <div className="image-container">
-                          <figure className="mb-6 overflow-hidden md:mb-8 xl:mb-10">
+                          <figure className="mb-6 overflow-hidden rounded-lg md:mb-8 xl:mb-10">
                             <ImageComponent
                               image={
                                 post.foundersImage !== null
@@ -102,12 +102,15 @@ export default function Founder(props) {
                           </figure>
                         </div>
                       </div>
-                      <div className="w-full md:w-7/12 content md:pr-10 xl:pr-14 md:pl-4">
-                        {/* <BlockContent text={post.content} /> */}
-                        <PortableText
-                          value={post.content}
-                          components={myPortableTextComponents}
-                        />
+                      <div className="w-full py-12 pl-16 pr-20 text-sm bg-gray-200 rounded-lg md:w-7/12 content">
+                      
+                      
+                          <PortableText
+                         
+                            value={post.content}
+                            components={myPortableTextComponents}
+                          />
+                      
                       </div>
                     </div>
                     <hr className="h-1 mt-10 bg-gray-300" />

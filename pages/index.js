@@ -80,21 +80,22 @@ const Home = ({ data }) => {
               </m.span>
             </div>
           </Container>
-          <div className="absolute hidden md:block top-[16%] md:top-[13%] 2xl:top-[10%] left-[56%] md:left-[27%] 2xl:left-[33%] spin-slow opacity-90 overflow-visible">
-            <div className="relative spin-container">
-              <Image className="" src="/ham-logo.png" width="85" height="85" />
-            </div>
-          </div>
-          <div className="absolute md:hidden top-[16%]  2xl:top-[10%] left-[60%]  2xl:left-[33%] spin-slow opacity-90 overflow-visible">
-            <div className="relative spin-container">
-              <Image className="" src="/ham-logo.png" width="50" height="50" />
-            </div>
-          </div>
+
           <section className="w-full my-8 bg-yellow">
             <Container>
-              <div className="py-10 m-auto md:py-20 2xl:py-20">
+              <div className="py-10 m-auto md:py-16 2xl:py-20">
                 <div className="flex flex-col px-[1rem] md:px-[14rem]">
-                  <div className="relative mb-2 md:mb-3">
+                  <div className="overflow-visible spin-slow">
+                    <div className="relative spin-container">
+                      <Image
+                        className=""
+                        src="/ham-logo.png"
+                        width="80"
+                        height="80"
+                      />
+                    </div>
+                  </div>
+                  <div className="relative mt-6 mb-2">
                     <h2 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
                       Who We Are
                     </h2>
@@ -119,40 +120,6 @@ const Home = ({ data }) => {
           </section>
 
           <Container>
-            <div className="flex flex-wrap">
-              <h2
-                className="relative block pb-2 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]"
-                // after:absolute
-                // after:h-[4px]
-                // after:bg-purple
-                // after:w-[70%]
-                // after:left-[0]
-                // after:right-[12.5%]
-                // after:top-[8%]
-              >
-                Upcoming event
-                {/* <div className="line w-[350px] mt-2 h-[4px] bg-blue"></div> */}
-              </h2>
-
-              <div className="relative flex justify-center w-full mx-auto mt-8 align-middle">
-                {/* <ImageComponent
-                    image={
-                      homepageData.heroImage !== null
-                        ? homepageData.heroImage.url
-                        : "https://via.placeholder.com/50"
-                    }
-                  /> */}
-                <Image
-                  src={homepageData.heroImage.url}
-                  width="400"
-                  height="600"
-                />
-
-                <br />
-                <br />
-              </div>
-            </div>
-
             <div className="flex flex-wrap py-10">
               <h2 className="relative block pb-2 mb-2 text-3xl uppercase md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[4px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
                 Recent Events

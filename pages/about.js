@@ -1,22 +1,16 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import FancyLink from "@/components/fancyLink";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
-import Link from "next/link";
 
 import { useRouter } from "next/router";
-import client, {
-  getClient,
-  usePreviewSubscription,
-
-} from "../sanity";
+import client, { getClient, usePreviewSubscription } from "../sanity";
 import ImageComponent from "@/components/image";
 
 export default function About(props) {
-  const { postdata, preview, program } = props;
+  const { postdata, preview } = props;
 
   const router = useRouter();
   const locale = router.locale || router.defaultLocale;
@@ -51,19 +45,33 @@ export default function About(props) {
                             </h2>
                           </div>
                           <div className="w-full text-2xl md:pr-12 md:text-3xl xl:text-4xl text-darkgray">
-                            <p className="font-serif leading-snug">
-                              {post.introText}
-                            </p>
+                            <p className="leading-snug">{post.introText}</p>
                           </div>
                         </div>
                       </div>
-                      <ImageComponent
-                        image={
-                          post.imageUrl !== null
-                            ? post.imageUrl
-                            : "https://via.placeholder.com/50"
-                        }
-                      />
+                      <section className="my-20">
+                        <div className="flex flex-wrap">
+                          <div className="w-1/2">
+                            <ImageComponent
+                              image={
+                                post.imageUrl !== null
+                                  ? post.imageUrl
+                                  : "https://via.placeholder.com/50"
+                              }
+                            />
+                          </div>
+                          <div className="w-1/2">
+                            <div className="px-10 right-col">
+                              <p className="text-2xl">
+                                We work in partnership with both public and
+                                private educators in America as well as the
+                                Korean Department of Education.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
                       <div className="max-w-4xl py-12 m-auto mt-12 text-xl content">
                         <div className="relative mb-2 md:mb-3">
                           <h2 className="block text-base uppercase md:text-xl text-blue-sub">
@@ -72,19 +80,19 @@ export default function About(props) {
                         </div>
                         <div className="flex flex-wrap mt-8 mb-4 text-darkgray">
                           <div className="about-item">
-                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 p-[3rem]">
+                            <p className="block font-bold text-lg md:text-2xl  leading-snug relative  2xl:mb-10 p-[3rem]">
                               Provide opportunities for the enrichment and
                               learning of Asian cultures and history.
                             </p>
                           </div>
                           <div className="about-item">
-                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative 2xl:mb-10 p-[3rem]">
+                            <p className="block font-bold text-lg md:text-2xl  leading-snug relative 2xl:mb-10 p-[3rem]">
                               Empower future generations to celebrate their own
                               heritage while engaging with other cultures.
                             </p>
                           </div>
                           <div className="about-item">
-                            <p className="block font-bold text-lg md:text-2xl 2xl:text-[38px] leading-snug relative  2xl:mb-10 md:p-[3rem] pt-4rem">
+                            <p className="block font-bold text-lg md:text-2xl  leading-snug relative  2xl:mb-10 p-[3rem] pt-4rem">
                               Promote a mutual understanding for world cultures
                               and methods of education
                             </p>
