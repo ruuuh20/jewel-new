@@ -114,7 +114,7 @@ export default function Header() {
                     Become a Member
                   </a>
                 </Link>
-                <Link href="/member">
+                <Link href="/partner-with-us">
                   <a className="block px-8 py-3 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400">
                     Become a Partner
                   </a>
@@ -329,7 +329,7 @@ export default function Header() {
                     Become a Member
                   </a>
                 </Link>
-                <Link href="/partner">
+                <Link href="/partner-with-us">
                   <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                     Become a Partner
                   </a>

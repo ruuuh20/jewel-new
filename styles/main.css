@@ -224,7 +224,7 @@ body {
 }
 
 .spin-slow {
-  transform-origin: 50% 0;
+  /* transform-origin: 50% 0; */
   animation: swing 3s ease-in-out forwards infinite;
 }
 

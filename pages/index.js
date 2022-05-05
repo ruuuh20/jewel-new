@@ -137,7 +137,7 @@ const Home = ({ data }) => {
                         />
                       </div>
                     </div>
-                    <span className="flex mt-2 text-base font-bold md:text-lg font-display">
+                    <span className="flex mt-2 text-xl font-bold md:text-2xl font-display">
                       Adding Asian American Curriculum in Schools
                     </span>
 
@@ -179,7 +179,7 @@ const Home = ({ data }) => {
                             <div className="flex flex-wrap w-full px-6 py-4 md:px-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:h-full">
                                 <div className="self-end w-full mt-auto">
-                                  <h3 className="text-2xl md:text-3xl project-title1">
+                                  <h3 className="text-xl md:text-2xl md:text-3xl project-title1">
                                     {item.title[locale]}
                                   </h3>
                                   <p className="text-[18px]">

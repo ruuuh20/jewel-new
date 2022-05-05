@@ -52,10 +52,10 @@ export default function Leadership(props) {
                         <div class="w-full mb-16">
                           <div>
                             <div class="border-b border-black mb-6">
-                              <span class="text-3xl md:text-3xl block w-full mb-0 pb-0 font-display leading-none pt-1">
+                              <span class="text-2xl  md:text-3xl block w-full mb-0 pb-0 font-display leading-none pt-1">
                                 {name} 
                               </span>
-                              <span className="text-xl italic text-gray-500">{name === "Honorary Advisory Board" ? "Former School Superintendants" : null }</span>
+                              <span className="text-lg italic text-gray-500 md:text-xl">{name === "Honorary Advisory Board" ? "Former School Superintendants" : null }</span>
                            
                             </div>
                             <div class="w-10/12 md:w-8/12 xl:w-1/2 max-w-2xl 2xl:max-w-xl">

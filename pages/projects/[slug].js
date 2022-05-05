@@ -48,7 +48,7 @@ const Project = ({ program }) => {
 
         {/* <div className="relative w-full pt-8 pb-[88px]"></div> */}
         <div className="w-full md:w-1/2">
-          <h1 className="font-serif text-[32px] md:text-[50px] leading">
+          <h1 className="font-serif text-[26px] md:text-[50px] leading">
             {program.title[locale] ? program.title[locale] : ""}
           </h1>
         </div>
@@ -58,25 +58,25 @@ const Project = ({ program }) => {
             image={program.mainImage ? program.mainImage : null}
           />
         </div>
-        <div className="grid grid-cols-12 gap-16 mb-2">
-          <div className="col-span-8 col-end-auto">
+        <div className="grid grid-cols-12 gap-4 mb-2 md:gap-16">
+          <div className="col-span-12 col-end-auto md:col-span-8">
             <div className="content-inner">
               <p className="mb-4 text-xl">{program.contentOne}</p>
               <p className="mb-4 text-xl">{program.contentTwo}</p>
               <p className="mb-4 text-xl">{program.contentThree}</p>
             </div>
           </div>
-          <div className="col-span-4 col-end-auto">
-            <div className="sticky top-3">
+          <div className="col-span-12 col-end-auto mb-4 md:col-span-4 md:mb-0">
+            <div className="md:sticky md:top-3">
               <div className="border-t">
-                <div className="border-b">
-                  <div className="text-center uppercase">Overview</div>
+                <div className="py-2 border-b">
+                  <div className="mb-2 text-center uppercase ">Overview</div>
                   <div className="mb-2">
                     <p> {program.overview}</p>
                   </div>
                 </div>
-                <div className="border-b">
-                  <div className="text-center uppercase">Key Dates</div>
+                <div className="py-2 border-b">
+                  <div className="mb-2 text-center uppercase ">Key Dates</div>
                   <div className="mb-2">
                     <p> {program.keyDates}</p>
                   </div>
@@ -87,17 +87,17 @@ const Project = ({ program }) => {
         </div>
         <div className="my-5 gallery-container">
           <div>
-            <h3 className="text-xl font-bold">
-              Photos from our past events or programs
+            <h3 className="text-lg font-bold md:text-xl">
+              Take a look at our past events:
             </h3>
           </div>
           <div>
             <section class="overflow-hidden text-gray-700 ">
-              <div class="container px-4 py-2 mx-auto lg:pt-12 lg:px-16">
+              <div class="container px-0 md:px-4 md:py-2 mx-auto lg:pt-12 lg:px-16">
                 <div class="flex flex-wrap -m-1 md:-m-2">
                   {program.images
                     ? program.images.map((img, index) => (
-                        <div class="flex flex-wrap w-1/3">
+                        <div class="flex flex-wrap w-full md:w-1/3">
                           <div class="w-full p-1 md:p-2">
                             <ImageComponent
                               alt="gallery"

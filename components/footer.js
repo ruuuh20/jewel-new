@@ -40,22 +40,13 @@ export default function Footer() {
               <div className="w-full text-sm text-white md:w-auto md:text-right">
                 <nav>
                   <li className="inline-block mx-3 ml-0">
-                    <FancyLink
-                      destination="/terms-of-use"
-                      a11yText="Navigate to site terms page"
-                      label="Terms and Conditions"
-                      noCircle
-                      extraClasses={"sm:text-white md:text-white text-xs"}
-                    />
+                     <Link href="/terms-of-use"><a className="text-xs text-white">Terms</a></Link>
+                    
                   </li>
 
                   <li className="inline-block mx-3">
-                    <FancyLink
-                      destination="/privacy"
-                      a11yText="Navigate to privacy policy page"
-                      label="Privacy Policy"
-                       extraClasses={"sm:text-white md:text-white text-xs"}
-                    />
+                    <Link href="/privacy"><a className="text-xs text-white">Privacy Policy</a></Link>
+                  
                   </li>
                 </nav>
               </div>

@@ -44,14 +44,14 @@ export default function About(props) {
                               {post.title[locale]}
                             </h2>
                           </div>
-                          <div className="w-full text-2xl md:pr-12 md:text-3xl xl:text-4xl text-darkgray">
+                          <div className="w-full text-xl md:pr-12 md:text-3xl xl:text-4xl text-darkgray">
                             <p className="leading-snug">{post.introText}</p>
                           </div>
                         </div>
                       </div>
                       <section className="my-20">
-                        <div className="flex flex-wrap">
-                          <div className="w-1/2">
+                        <div className="flex flex-col flex-wrap md:flex-row">
+                          <div className="w-full md:w-1/2">
                             <ImageComponent
                               image={
                                 post.imageUrl !== null
@@ -60,9 +60,9 @@ export default function About(props) {
                               }
                             />
                           </div>
-                          <div className="w-1/2">
-                            <div className="px-10 right-col">
-                              <p className="text-2xl">
+                          <div className="w-full md:w-1/2">
+                            <div className="md:px-10 right-col">
+                              <p className="mt-6 text-xl md:text-2xl md:mt-6">
                                 We work in partnership with both public and
                                 private educators in America as well as the
                                 Korean Department of Education.
@@ -72,7 +72,7 @@ export default function About(props) {
                         </div>
                       </section>
 
-                      <div className="max-w-4xl py-12 m-auto mt-12 text-xl content">
+                      <div className="max-w-4xl py-2 m-auto mt-12 text-xl md:py-12 content">
                         <div className="relative mb-2 md:mb-3">
                           <h2 className="block text-base uppercase md:text-xl text-blue-sub">
                             Our Goals

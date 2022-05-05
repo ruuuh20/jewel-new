@@ -46,11 +46,11 @@ export default function Contact(props) {
                 </a>{" "}
                 or fill out the form, and we will get back to you.
               </p>{" "}
-              <div className="py-8 box">
+              <div className="py-5 pl-5 mt-4 bg-gray-200 rounded box">
                 {posts &&
                   posts.map((post) => (
                     <>
-                      <div className="flex mb-4 text-lg">
+                      <div className="flex mb-4 text-base md:text-lg">
                         {" "}
                       
                           <svg
@@ -71,7 +71,7 @@ export default function Contact(props) {
                           <a href="mailto:kaykim@wearejewel.org" className="text-xl transition duration-500 ease-in-out text-secondary-dark hover:text-purple">{post.email} </a>
                         
                       </div>
-                      <div className="flex mb-4 text-lg">
+                      <div className="flex mb-4 text-base md:text-lg">
                       
                           <svg
                             aria-hidden="true"
@@ -84,7 +84,7 @@ export default function Contact(props) {
                           <span className="text-xl transition duration-500 ease-in-out text-secondary-dark hover:text-purple">{post.address} </span>
                       
                       </div>
-                      <div className="flex mb-4 text-lg">
+                      <div className="flex mb-4 text-base md:text-lg">
                     
                           <svg
                             aria-hidden="true"

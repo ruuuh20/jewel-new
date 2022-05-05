@@ -34,7 +34,7 @@ const Affiliates = (props) => {
                 </p>
 
                 <a
-                  class="inline-flex items-center px-8 py-3 mt-8 text-white font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring"
+                  class="inline-flex items-center px-8 py-3 mt-8 text-darkgray font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://peakeducenter.com"
@@ -92,7 +92,7 @@ const Affiliates = (props) => {
                 </p>
 
                 <a
-                  class="inline-flex items-center px-8 py-3 mt-8 text-white font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-yellow active:text-yellow focus:outline-none focus:ring"
+                  class="inline-flex items-center px-8 py-3 mt-8 text-darkgray font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-yellow active:text-yellow focus:outline-none focus:ring"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="#"
@@ -138,7 +138,7 @@ const Affiliates = (props) => {
                 <p class="mt-4 text-gray-600">-</p>
 
                 <a
-                  class="inline-flex items-center px-8 py-3 mt-8 text-white font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring"
+                  class="inline-flex items-center px-8 py-3 mt-8 text-darkgray font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="#"

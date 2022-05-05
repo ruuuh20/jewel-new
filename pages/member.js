@@ -27,7 +27,7 @@ export default function Member(props) {
             <div className="py-5 m-auto md:w-7/12">
               <p className="text-xl">As a member of JEWEL you will be:</p>{" "}
               <br />
-              <ul className="text-xl">
+              <ul className="px-6 text-lg md:text-xl md:px-0">
                 <li className="mt-2 list-disc">
                   Kept updated on new ways American and Korean educators are
                   organizing collaborative projects to foster greater
