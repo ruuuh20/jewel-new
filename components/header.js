@@ -228,7 +228,7 @@ export default function Header() {
                     </li>
                     <li key="" className="mb-2 text-white lg:block">
                       <div className="">
-                  <div className="inline-flex items-center pr-2 text-base text-white opacity-70 focus:text-black">
+                  <div className="inline-flex items-center pr-2 text-base text-white focus:text-black">
                     <span className="mr-1 tracking-[1.1px]">About Us</span>
                     <svg
                       className="w-4 h-4 fill-current"
@@ -305,7 +305,7 @@ export default function Header() {
                     </li>
                     <li>
                     <div className="">
-                  <div className="inline-flex items-center pr-2 text-base text-white opacity-70 focus:text-black">
+                  <div className="inline-flex items-center pr-2 text-base text-white focus:text-black">
                     <span className="mr-1 tracking-[1.1px]">Join Us</span>
                     <svg
                       className="w-4 h-4 fill-current"

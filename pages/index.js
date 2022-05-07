@@ -82,7 +82,7 @@ const Home = ({ data }) => {
           </Container>
 
           <section className="relative w-full my-8 bg-yellow">
-            <div className="hidden md:block absolute top-[5%] left-[45%] overflow-visible spin-slow spin-container">
+            <div className="hidden md:block absolute top-[5%] left-[47%] overflow-visible spin-slow spin-container">
               <div className="relative">
                 <Image
                   className=""
@@ -104,23 +104,48 @@ const Home = ({ data }) => {
             </div>
             <Container>
               <div className="py-10 m-auto md:mt-10 md:py-20">
-                <div className="flex flex-col px-[1rem] md:px-[14rem]">
-                  <div className="relative mt-6 mb-2">
-                    <h2 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
+                <div className="flex flex-col px-2 md:px-[14rem]">
+                  <div className="relative mt-8 mb-2 md:mt-6">
+                    <h4 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
                       Who We Are
-                    </h2>
+                    </h4>
                   </div>
                   <p className="mb-4 text-[18px] font-medium text-center md:text-3xl xl:text-4xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
 
-                  <div className="w-full m-auto mt-10 text-center">
+                  <div className="hidden w-full m-auto mt-10 text-center md:block">
                     <Link href="/about">
                       <a class="button learn-more">
                         <span class="circle" aria-hidden="true">
                           <span class="icon arrow"></span>
                         </span>
                         <span class="button-text">More About Us</span>
+                      </a>
+                    </Link>
+                  </div>
+                  <div className="w-full m-auto mt-10 text-center md:hidden">
+                    <Link href="/about">
+                      <a class="inline-flex items-center px-6 py-2 mt-2 text-white font-extrabold bg-blue border border-blue rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
+                        <span class="text-sm font-extrabold">
+                          {" "}
+                          More About Us
+                        </span>
+
+                        <svg
+                          class="w-5 h-5 ml-3"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
                       </a>
                     </Link>
                   </div>
@@ -192,7 +217,7 @@ const Home = ({ data }) => {
                                   <h3 className="text-xl md:text-2xl md:text-3xl project-title1">
                                     {item.title[locale]}
                                   </h3>
-                                  <p className="text-[18px]">
+                                  <p className="text-base md:text-[18px]">
                                     {item.cardDescription}
                                   </p>
                                 </div>
@@ -258,7 +283,7 @@ const Home = ({ data }) => {
                               : "md:border-b-0 md:border-r md:px-8"
                           }`}
                         >
-                          <div className="flex flex-wrap m-auto my-4 md:mx-0 max-w-[250px] md:mx-auto">
+                          <div className="flex flex-wrap m-auto my-4 md:mx-0 md:max-w-[250px] md:mx-auto">
                             <div
                               className={`${color} w-16 md:w-full md:mb-4 xl:mb-6`}
                             ></div>

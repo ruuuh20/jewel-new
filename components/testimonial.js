@@ -5,13 +5,12 @@ const Testimonial = () => {
         <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
           <div class="items-end justify-between sm:flex">
             <div class="max-w-xl">
-              <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+              <h2 class="text-3xl md:text-4xl font-bold tracking-tight">
                 What People are Saying
               </h2>
 
               <p class="max-w-lg mt-8 text-gray-500">
-                Take a look at what educators, administrators, and students have
-                to say about their experiences with JEWEL.
+                Educators, administrators, and students' testimonials about their experiences with JEWEL.
               </p>
             </div>
 
@@ -34,7 +33,7 @@ const Testimonial = () => {
           </div>
 
           <div class="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
-            <blockquote class="flex flex-col justify-between h-full p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
+            <blockquote class="flex flex-col justify-between h-full p-6 md:p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
               <div>
                 {/* <div class="flex space-x-0.5 text-green-500">
                   <svg
