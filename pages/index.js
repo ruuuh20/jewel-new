@@ -81,20 +81,30 @@ const Home = ({ data }) => {
             </div>
           </Container>
 
-          <section className="w-full my-8 bg-yellow">
+          <section className="relative w-full my-8 bg-yellow">
+            <div className="hidden md:block absolute top-[5%] left-[45%] overflow-visible spin-slow spin-container">
+              <div className="relative">
+                <Image
+                  className=""
+                  src="/ham-logo.png"
+                  width="75"
+                  height="75"
+                />
+              </div>
+            </div>
+            <div className="md:hidden absolute top-[5%] left-[45%] overflow-visible spin-slow spin-container">
+              <div className="relative">
+                <Image
+                  className=""
+                  src="/ham-logo.png"
+                  width="45"
+                  height="45"
+                />
+              </div>
+            </div>
             <Container>
-              <div className="py-10 m-auto md:py-16 2xl:py-20">
+              <div className="py-10 m-auto md:mt-10 md:py-20">
                 <div className="flex flex-col px-[1rem] md:px-[14rem]">
-                  <div className="overflow-visible spin-slow">
-                    <div className="relative spin-container">
-                      <Image
-                        className=""
-                        src="/ham-logo.png"
-                        width="80"
-                        height="80"
-                      />
-                    </div>
-                  </div>
                   <div className="relative mt-6 mb-2">
                     <h2 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
                       Who We Are

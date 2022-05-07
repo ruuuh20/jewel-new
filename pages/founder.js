@@ -102,7 +102,7 @@ export default function Founder(props) {
                           </figure>
                         </div>
                       </div>
-                      <div className="w-full py-5 pl-12 pr-16 text-sm bg-gray-200 rounded-lg md:py-12 md:pl-16 md:pr-20 md:w-7/12 content">
+                      <div className="w-full py-5 pl-8 pr-12 text-sm bg-gray-200 rounded-lg md:py-12 md:pl-16 md:pr-20 md:w-7/12 content">
                       
                       
                           <PortableText
