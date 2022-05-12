@@ -15,14 +15,14 @@ export default function Accordion({ children, heading, index, icon, openOverride
 
   return(
     <div className={`border-b border-blue w-full ${ index == '01' ? 'border-t' : ''}`}>
-      <button className="block w-full text-left focus:outline-none focus:border-none wiggle-on-hover-container group p-0 m-0 " onClick={() => openToggle()}>
-        <div className="py-6 md:py-10 2xl:py-12 cursor-pointer ring-blue">
+      <button className="block w-full p-0 m-0 text-left focus:outline-none focus:border-none wiggle-on-hover-container group " onClick={() => openToggle()}>
+        <div className="py-6 cursor-pointer md:py-10 2xl:py-12 ring-blue">
           <div className="flex flex-wrap items-center">
-            <span className="block text-xl md:text-3xl text-gray-700 md:font-bold mt-0 md:-mt-1 md:w-1/3 pr-2">{index}</span>
-            <div className="flex-1 md:w-2/3 ml-auto ">
+            <span className="block pr-2 mt-0 text-xl text-gray-700 md:text-3xl md:font-bold md:-mt-1 md:w-1/3">{index}</span>
+            <div className="flex-1 ml-auto md:w-2/3 ">
               <div className="flex flex-wrap items-center -mx-3">
                 { icon && (
-                  <div className="w-6 md:w-10 xl:w-14 ml-5 md:ml-0 mr-1 md:mr-3 xl:mr-5 wiggle-on-hover__item">
+                  <div className="w-6 ml-5 mr-1 md:w-10 xl:w-14 md:ml-0 md:mr-3 xl:mr-5 wiggle-on-hover__item">
                     <ImageStandard
                       src={icon.url}
                       width={icon.metadata.dimensions.width}
@@ -43,8 +43,8 @@ export default function Accordion({ children, heading, index, icon, openOverride
           </div>
         </div>
         
-        <div className={`md:w-2/3 ml-auto origin-top accordion-item ${ open ? 'accordion-item--open h-auto' : 'h-auto' }`}>
-          <div className={`content text-lg max-w-2xl transition-opacity ease-in-out duration-500 delay-250 ${open ? 'opacity-100' : 'opacity-0' }`}>
+        <div className={`md:w-full md:px-5 ml-auto origin-top accordion-item ${ open ? 'accordion-item--open h-auto' : 'h-auto' }`}>
+          <div className={`content text-lg transition-opacity ease-in-out duration-500 delay-250 ${open ? 'opacity-100' : 'opacity-0' }`}>
             {children}
           </div>
         </div>

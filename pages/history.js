@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
+import PageNav from "@/components/pageNav";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
@@ -63,7 +64,7 @@ export default function About(props) {
             </div>
             <div class="w-full mx-auto mb-10 md:w-10/12">
               <div class="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
-                <div class="content  text-[24px] leading-normal">
+                <div class="text-[24px] leading-normal">
                   <p>{posts[0].history[locale]}</p>
                 </div>
               </div>
@@ -157,6 +158,10 @@ export default function About(props) {
                   </>
                 ))}
             </m.div>
+
+            <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+                    <PageNav />
+                  </section>
           </Container>
         </m.div>
       </LazyMotion>
@@ -165,7 +170,7 @@ export default function About(props) {
 }
 
 const query = groq`
- *[_type == "about" && title.en == "Our Mission"] | order(_createdAt desc) {
+ *[_type == "about" && title.en == "Our Mission"] {
   
 ...,
 history,

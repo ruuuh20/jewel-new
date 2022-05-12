@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
+import PageNav from "@/components/pageNav";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
@@ -37,7 +38,7 @@ export default function About(props) {
                 posts.map((post) => (
                   <>
                     <Container>
-                      <div className="relative max-w-3xl mb-16 md:mb-20 2xl:mb-28">
+                      <div className="relative max-w-4xl mb-16 md:mb-20 2xl:mb-28">
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           <div className="relative mb-2 md:mb-3">
                             <h2 className="block uppercase md:text-xl text-blue-sub">
@@ -46,6 +47,11 @@ export default function About(props) {
                           </div>
                           <div className="w-full text-xl md:pr-12 md:text-3xl xl:text-4xl text-darkgray">
                             <p className="leading-snug">{post.introText}</p>
+                            <p className="mt-6 leading-snug">
+                              We work in partnership with both public and
+                              private educators in America and cultural, social,
+                              and educational organizations in Korea.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -62,47 +68,45 @@ export default function About(props) {
                           </div>
                           <div className="w-full md:w-1/2">
                             <div className="md:px-10 right-col">
-                              <p className="mt-6 text-xl md:text-2xl md:mt-6">
-                                We work in partnership with both public and
-                                private educators in America as well as the
-                                Korean Department of Education.
-                              </p>
+                              <div className="relative mb-2 md:mb-3">
+                                <h2 className="block text-base uppercase md:text-xl text-blue-sub">
+                                  Our Goals
+                                </h2>
+                              </div>
+                              <div className="flex flex-wrap mt-8 mb-4 text-darkgray">
+                                <div className="about-item">
+                                  <p className="block  text-lg md:text-xl  leading-snug relative  2xl:mb-10 p-[2.5rem]">
+                                    Provide opportunities for the enrichment and
+                                    learning of Asian cultures and history.
+                                  </p>
+                                </div>
+                                <div className="about-item">
+                                  <p className="block  text-lg md:text-xl  leading-snug relative 2xl:mb-10 p-[2.5rem]">
+                                    Empower future generations to celebrate
+                                    their own heritage while engaging with other
+                                    cultures.
+                                  </p>
+                                </div>
+                                <div className="about-item">
+                                  <p className="block text-lg md:text-xl  leading-snug relative  2xl:mb-10 p-[2.5rem] pt-4rem">
+                                    Promote a mutual understanding for world
+                                    cultures and methods of education
+                                  </p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </section>
 
-                      <div className="max-w-4xl py-2 m-auto mt-12 text-xl md:py-12 content">
-                        <div className="relative mb-2 md:mb-3">
-                          <h2 className="block text-base uppercase md:text-xl text-blue-sub">
-                            Our Goals
-                          </h2>
-                        </div>
-                        <div className="flex flex-wrap mt-8 mb-4 text-darkgray">
-                          <div className="about-item">
-                            <p className="block font-bold text-lg md:text-2xl  leading-snug relative  2xl:mb-10 p-[3rem]">
-                              Provide opportunities for the enrichment and
-                              learning of Asian cultures and history.
-                            </p>
-                          </div>
-                          <div className="about-item">
-                            <p className="block font-bold text-lg md:text-2xl  leading-snug relative 2xl:mb-10 p-[3rem]">
-                              Empower future generations to celebrate their own
-                              heritage while engaging with other cultures.
-                            </p>
-                          </div>
-                          <div className="about-item">
-                            <p className="block font-bold text-lg md:text-2xl  leading-snug relative  2xl:mb-10 p-[3rem] pt-4rem">
-                              Promote a mutual understanding for world cultures
-                              and methods of education
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                      <div className="max-w-4xl py-2 m-auto mt-12 text-xl md:py-12 content"></div>
                     </Container>
                   </>
                 ))}
             </m.div>
+             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+                    <PageNav />
+                  </section>
           </Container>
         </m.div>
       </LazyMotion>

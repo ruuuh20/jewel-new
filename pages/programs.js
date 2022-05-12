@@ -15,6 +15,7 @@ import BlockContent from "@/components/blockContent";
 import { PortableText } from "@portabletext/react";
 
 import Image from "next/image";
+import ImageComponent from "@/components/image";
 
 export default function Programs(props) {
   const { postdata, preview } = props;
@@ -27,6 +28,7 @@ export default function Programs(props) {
     enabled: preview || router.query.preview !== undefined,
   });
 
+  console.log(posts)
   return (
     <Layout>
       <NextSeo title="Programs" />
@@ -73,7 +75,24 @@ export default function Programs(props) {
                             index={`0${i + 1}`}
                             // icon={service.icon.asset}
                           >
+                            <div className="md:max-w-3xl">
                             <PortableText value={post.descriptionBlockEn} />
+                            </div>
+                            <div className="flex flex-wrap -m-1 md:-m-2">
+                              {post.images
+                                                  ? post.images.map((img, index) => (
+                                                      <div class="flex flex-wrap w-full md:w-1/3">
+                                                        <div class="w-full p-1 md:p-2">
+                              <ImageComponent
+                                alt="gallery"
+                                class="block object-cover object-center w-full h-full rounded-lg"
+                                image={img}
+                              />
+                                                        </div>
+                                                      </div>
+                                                    ))
+                                                  : null}
+                            </div>
                           </Accordion>
                         </li>
                       ))}

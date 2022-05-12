@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
+import PageNav from "@/components/pageNav";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
@@ -89,7 +90,7 @@ export default function Founder(props) {
                 posts.map((post) => (
                   <>
                     <div className="flex flex-wrap">
-                      <div className="relative w-full px-5 mt-5 rounded md:px-16 md:w-5/12 content md:mb-0">
+                      <div className="relative w-full px-1 my-5 rounded md:px-16 md:w-5/12 content md:mb-0">
                         <div className="image-container">
                           <div class="offset-bg">
                             <figure className="mb-2 rounded-lg md:mb-6 xl:mb-10">
@@ -103,9 +104,9 @@ export default function Founder(props) {
                             </figure>
                           </div>
                         </div>
-                        <section className="md:pt-2">
+                        <section className="pb-4 md:pt-2">
                       <div className="content">
-                        <div className="w-full py-6 mt-2 text-base text-center md:text-xl">
+                        <div className="w-full py-6 mt-2 text-base font-bold text-center md:text-xl">
                           <h4>Profile / 프로필</h4>
                         </div>
                         <div className="w-full ">
@@ -219,7 +220,7 @@ export default function Founder(props) {
                     </div>
                     <hr className="h-1 mt-10 bg-gray-300" />
                     <section>
-                      <div className="w-full mx-auto my-10 md:w-6/12 content blurb">
+                      <div className="w-full mx-auto my-10 text-base md:w-6/12 content blurb">
                         <PortableText value={posts[0].founderBlurb} />
                       </div>
                     </section>
@@ -227,6 +228,9 @@ export default function Founder(props) {
                   </>
                 ))}
             </m.div>
+             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+                    <PageNav />
+                  </section>
           </Container>
         </m.div>
       </LazyMotion>

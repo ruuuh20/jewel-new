@@ -1,4 +1,4 @@
-import Head from "next/head";
+
 import { useRouter } from "next/router";
 import client, {
   getClient,
@@ -9,6 +9,7 @@ import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
 import Form from "@/components/form";
+import PageNav from "@/components/pageNav";
 
 export default function Contact(props) {
   const { postdata, preview } = props;
@@ -116,6 +117,9 @@ export default function Contact(props) {
               <Form />
             </div>
           </div>
+           <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+                    <PageNav />
+                  </section>
         </Container>
       </Layout>
     </>

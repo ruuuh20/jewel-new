@@ -214,7 +214,7 @@ const Home = ({ data }) => {
                             <div className="flex flex-wrap w-full px-6 py-4 md:px-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:h-full">
                                 <div className="self-end w-full mt-auto">
-                                  <h3 className="text-xl md:text-2xl md:text-3xl project-title1">
+                                  <h3 className="text-xl font-bold md:text-2xl md:text-3xl project-title1">
                                     {item.title[locale]}
                                   </h3>
                                   <p className="text-base md:text-[18px]">

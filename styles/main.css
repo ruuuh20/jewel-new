@@ -28,7 +28,7 @@ body {
 @media (max-width: 768px) {
   .image-container {
     margin: 0 auto;
-    min-height: none;
+    min-height: 0;
   }
 }
 .image-circle {
@@ -399,7 +399,7 @@ body {
   left: -20px;
   width: 100%;
   height: 100%;
-  border: 5px solid #f5bd1f;
+  border: 3px solid #f5bd1f;
   box-sizing: border-box;
 }
 
@@ -408,7 +408,8 @@ body {
   position: relative;
   white-space: nowrap;
   letter-spacing: 1.1px;
-  
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 /* underline hover effect */
@@ -461,7 +462,7 @@ body {
   border-bottom: dotted 1px gray;
 }
 .about-item:before {
-  font-size: 28px;
+  font-size: 24px;
   position: absolute;
   top: 1.2rem;
   left: 0;
@@ -538,7 +539,16 @@ body {
 
   .content > p {
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 16px;
+  }
+
+  .content-inner a {
+text-decoration: underline;
+color: navy
+  }
+
+  .content-inner p {
+font-size: 1.25rem
   }
 
   .blurb > p {

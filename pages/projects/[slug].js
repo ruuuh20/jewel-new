@@ -5,6 +5,7 @@ import groq from "groq";
 import { useRouter } from "next/router";
 import Container from "@/components/container";
 import { NextSeo } from "next-seo";
+import { PortableText } from "@portabletext/react";
 // function urlFor(source) {
 //   return imageUrlBuilder(client).image(source);
 // }
@@ -64,6 +65,20 @@ const Project = ({ program }) => {
               <p className="mb-4 text-xl">{program.contentOne}</p>
               <p className="mb-4 text-xl">{program.contentTwo}</p>
               <p className="mb-4 text-xl">{program.contentThree}</p>
+              {program.blockContent ? (
+                <PortableText value={program.blockContent} />
+              ) : null}
+            </div>
+            <div className="col-span-12 col-end-auto md:col-span-6">
+              {program.poster
+                ? program.poster.map((poster, i) => (
+                    <ImageComponent
+                      alt="gallery"
+                      class="block object-cover object-center w-full h-full rounded-lg"
+                      image={poster}
+                    />
+                  ))
+                : null}
             </div>
           </div>
           <div className="col-span-12 col-end-auto mb-4 md:col-span-4 md:mb-0">
@@ -85,15 +100,10 @@ const Project = ({ program }) => {
             </div>
           </div>
         </div>
-        <div className="my-5 gallery-container">
-          <div>
-            <h3 className="text-lg font-bold md:text-xl">
-              Take a look at our past events:
-            </h3>
-          </div>
+        <div className="my-10 gallery-container">
           <div>
             <section class="overflow-hidden text-gray-700 ">
-              <div class="container px-0 md:px-4 md:py-2 mx-auto lg:pt-12 lg:px-16">
+              <div class="container px-0 md:px-4 md:py-2 mx-auto lg:pt-12 lg:px-8">
                 <div class="flex flex-wrap -m-1 md:-m-2">
                   {program.images
                     ? program.images.map((img, index) => (
@@ -113,6 +123,52 @@ const Project = ({ program }) => {
             </section>
           </div>
         </div>
+        <section className="py-2 md:py-10">
+          <div className="flex items-center justify-end">
+            <div className="flex md:my-4">
+              {program.previousSlug ? (
+                <a
+                  href={`/projects/${program.previousSlug}`}
+                  class="inline-flex items-center py-2 px-4 mr-3 text-xl font-medium text-gray-500 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  <svg
+                    class="mr-2 w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Previous Project
+                </a>
+              ) : null}
+              {program.nextSlug ? (
+                <a
+                  href={`/projects/${program.nextSlug}`}
+                  class="inline-flex items-center py-2 px-4 text-xl font-medium text-gray-500 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  Next Project
+                  <svg
+                    class="ml-2 w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              ) : null}
+            </div>
+          </div>
+        </section>
       </Container>
     </Layout>
   );
@@ -147,7 +203,9 @@ const Project = ({ program }) => {
 // };
 const query = groq`*[_type == "project" && slug.current == $slug][0]{
   title,
- mainImage
+ mainImage,
+ previousSlug,
+ nextSlug
 }`;
 
 export async function getStaticPaths() {
