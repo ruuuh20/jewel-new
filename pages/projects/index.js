@@ -31,10 +31,10 @@ export default function Projects(props) {
         <Container>
           <div className="relative w-full pt-8 pb-[88px]">
             <h2 className="relative block pb-0 pr-12 mb-0 text-2xl font-light leading-normal tracking-tight text-gray-400 md:text-3xl lg:text-4xl 2xl:text-5xl">
-              Projects
+              Our Educational and Cultural Initiatives
             </h2>
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
-              Our Current Projects
+             Current Projects
             </span>
           </div>
 

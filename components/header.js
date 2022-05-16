@@ -130,7 +130,7 @@ export default function Header() {
                   </ul>
                 </div>
                 <Link href="/donate">
-                  <a className="hidden px-4 py-2 text-white rounded md:inline-block border-1 bg-blue hover:bg-black">
+                  <a className="hidden px-5 py-2 tracking-wider text-white uppercase rounded md:inline-block border-1 bg-blue hover:bg-black">
                     Donate
                   </a>
                 </Link>
@@ -163,15 +163,15 @@ export default function Header() {
                 </div>
               </nav>
             </div>
-             <nav className="items-center justify-end hidden w-full mt-1 mr-1 space-x-2 text-sm md:flex md:text-base md:w-auto">
+             <nav className="items-center justify-end hidden w-full mt-1 mr-1 space-x-2 text-sm md:mt-3 md:mr-0 md:flex md:text-base md:w-auto">
                 <Link href="/" locale="en">
-                  <a className="underline link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
+                  <a className="underline link link--metis lang-item before:absolute hover:underline focus:text-gray-900">
                     EN
                   </a>
                 </Link>
                 <div className="spacer vertical-line">|</div>
                 <Link href="/" locale="ko">
-                  <a className="underline link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
+                  <a className="underline link link--metis lang-item before:absolute hover:underline focus:text-gray-900">
                     KO
                   </a>
                 </Link>

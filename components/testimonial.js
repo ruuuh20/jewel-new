@@ -9,7 +9,7 @@ const Testimonial = () => {
                 What People are Saying
               </h2>
 
-              <p class="max-w-lg mt-8 text-gray-500">
+              <p class="max-w-lg mt-8 text-xl text-gray-500">
                 Educators, administrators, and students' testimonials about their experiences with JEWEL.
               </p>
             </div>

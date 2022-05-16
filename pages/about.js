@@ -41,16 +41,16 @@ export default function About(props) {
                       <div className="relative max-w-4xl mb-16 md:mb-20 2xl:mb-28">
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           <div className="relative mb-2 md:mb-3">
-                            <h2 className="block uppercase md:text-xl text-blue-sub">
+                            <h2 className="block tracking-wider uppercase md:text-xl text-blue-sub">
                               {post.title[locale]}
                             </h2>
                           </div>
                           <div className="w-full text-xl md:pr-12 md:text-3xl xl:text-4xl text-darkgray">
                             <p className="leading-snug">{post.introText}</p>
                             <p className="mt-6 leading-snug">
-                              We work in partnership with both public and
-                              private educators in America and cultural, social,
-                              and educational organizations in Korea.
+                              We work in collaboration with both public and
+                              private educators and various organizations to 
+                              support cultural understanding between the U.S and Korea.
                             </p>
                           </div>
                         </div>
@@ -69,7 +69,7 @@ export default function About(props) {
                           <div className="w-full md:w-1/2">
                             <div className="md:px-10 right-col">
                               <div className="relative mb-2 md:mb-3">
-                                <h2 className="block text-base uppercase md:text-xl text-blue-sub">
+                                <h2 className="block text-base tracking-wider uppercase md:text-xl text-blue-sub">
                                   Our Goals
                                 </h2>
                               </div>

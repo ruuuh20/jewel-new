@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['roboto_condensedregular', 'Arial', 'sans-serif'],
+      'thin': ['roboto_condensedlight'],
       'mono': ['Lucida Console', 'Courier', 'monospace'],
       'serif': ['Source Serif Pro']
     },
