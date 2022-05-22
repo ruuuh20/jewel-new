@@ -51,7 +51,7 @@ export default function Header() {
                   <ul className="absolute hidden text-gray-700 pt-0 group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
                     <Link href="/about">
                       <a className="block px-8 py-3 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400">
-                        Our Mission
+                       Who We Are
                       </a>
                     </Link>
                     <Link href="/founder">
@@ -241,7 +241,7 @@ export default function Header() {
                   <ul className="pt-1">
                     <Link href="/about">
                       <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
-                        Our Mission
+                       Who We Are
                       </a>
                     </Link>
                     <Link href="/founder">

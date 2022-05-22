@@ -29,7 +29,7 @@ export default function Contact(props) {
         <Container>
           <div className="relative w-full pt-8 md:pb-[88px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
-              Contact Us
+                 {locale === "ko" ? "연락처" : "Contact Us"}
             </span>
           </div>
         </Container>

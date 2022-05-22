@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useRouter } from "next/router";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
+import Footer from "@/components/footer";
 import FancyLink from "@/components/fancyLink";
 import Link from "next/link";
 import { fade, textReveal } from "@/helpers/transitions";
@@ -23,7 +24,7 @@ const Home = ({ data }) => {
       revealRefs.current.push(el);
     }
   };
-  const { siteHeaderData, homepageData, programData } = data;
+  const { siteHeaderData, homepageData, programData, contactData } = data;
 
   const router = useRouter();
   const locale = router.locale || router.defaultLocale;
@@ -37,7 +38,7 @@ const Home = ({ data }) => {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24"
+          // className="mb-12 md:mb-16 xl:mb-24"
         >
           <Container>
             <div className="overflow-hidden">
@@ -105,7 +106,7 @@ const Home = ({ data }) => {
             <Container>
               <div className="m-auto py-[4rem] md:mt-10 md:py-28">
                 <div className="flex flex-col px-2 md:px-[14rem]">
-                  <div className="relative mt-8 mb-2 md:mt-6">
+                  <div className="relative mt-8 mb-2 md:mt-4">
                     <h4 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
                       Who We Are
                     </h4>
@@ -235,7 +236,7 @@ const Home = ({ data }) => {
                             <div className="flex flex-wrap w-full px-6 py-4 md:px-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:h-full">
                                 <div className="self-end w-full mt-auto">
-                                  <h3 className="text-xl font-bold md:text-3xl project-title1 text-blue">
+                                  <h3 className="text-xl font-bold md:text-3xl project-title1 text-darkgray">
                                     {item.title[locale]}
                                   </h3>
                                   <p className="text-base md:text-[20px] text-gray-700">
@@ -264,10 +265,13 @@ const Home = ({ data }) => {
               </div>
             </Container>
           </section>
-          <Container>
-            <section>
+
+          <section className="bg-gray-100">
+            <Container>
               <Testimonial />
-            </section>
+            </Container>
+          </section>
+          <Container>
             <section className="md:py-10">
               <div className="relative z-10 w-full mb-12 md:mb-16 md:mt-24 xl:mb-24 2xl:mb-40 3xl:mb-48">
                 <div className="flex flex-wrap border-t border-opacity-50 border-dotted border-off-black md:border-0 md:-mx-8">
@@ -400,12 +404,23 @@ cardDescription,
 
 }`;
 
+const contactQuery = `*\[ _type == "contact"\] {
+title,
+email,
+socialLinks[] {
+      title,
+      url
+    }
+
+}`;
+
 export async function getStaticProps() {
   const homepageData = await client.fetch(homepageQuery);
   const siteHeaderData = await client.fetch(siteHeaderQuery);
   const programData = await client.fetch(projectQuery);
+  const contactData = await client.fetch(contactQuery);
 
-  const data = { homepageData, siteHeaderData, programData };
+  const data = { homepageData, siteHeaderData, programData, contactData };
 
   return {
     props: {

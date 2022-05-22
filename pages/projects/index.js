@@ -72,9 +72,9 @@ export default function Projects(props) {
                       <p class="mt-4 text-gray-600">{post.cardDescription}</p>
                       <Link href={`/projects/${post.slug.current}`}>
                         <a class="inline-flex items-center px-8 py-3 mt-8 text-darkgray font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
-                          <span class="text-sm font-extrabold">
+                          <span class="text-base font-extrabold">
                             {" "}
-                            Learn More
+                            Explore
                           </span>
 
                           <svg

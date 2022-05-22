@@ -35,7 +35,8 @@ export default function Leadership(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 md:pt-[75px] pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24  pb-[75px]"
+          variants={fade}
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">
@@ -48,9 +49,12 @@ export default function Leadership(props) {
               {boardNames.map((name, i) => {
                 let col = "w-full";
                 let p = "pr-0";
-                if (i === 2 || i === 3) {
-                  col = "md:w-1/2";
-                  p = "pr-4";
+                // if (i === 2 || i === 3) {
+                //   col = "md:w-1/2";
+                //   p = "pr-4";
+                // }
+                if (i === 1) {
+                  
                 }
                 return (
                   <>
@@ -71,15 +75,15 @@ export default function Leadership(props) {
                                       : null}
                                   </span>
                                 </div>
-                                <div class="w-10/12 md:w-8/12   2xl:max-w-xl">
+                                <div class="w-10/12  2xl:max-w-xl">
                                   <div class="leading-snug lg:text-lg text-center">
-                                    <ul className="list-none">
+                                    <ul className="flex flex-wrap list-none">
                                       {posts
                                         .filter(
                                           (post) => post.boardName.en === name
                                         )
                                         .map((filteredPost) => (
-                                          <li className="py-3">
+                                          <li className="w-1/3 py-3">
                                             <p className="text-lg font-bold">
                                               {filteredPost.name.en}
                                             </p>

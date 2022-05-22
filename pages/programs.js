@@ -11,7 +11,6 @@ import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription, urlFor } from "../sanity";
 
 import Accordion from "@/components/accordion";
-import BlockContent from "@/components/blockContent";
 import { PortableText } from "@portabletext/react";
 
 import Image from "next/image";
@@ -39,6 +38,7 @@ export default function Programs(props) {
           animate="enter"
           exit="exit"
           className="mb-12 md:mb-16 xl:mb-24 pb-[75px]"
+          variants={fade}
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">
@@ -49,7 +49,7 @@ export default function Programs(props) {
                 Our Programs
               </span>
             </div>
-            <m.div variants={fade}>
+            <m.div >
               <div className="w-full">
                 {/* <div className="w-full mb-5 md:mb-0 md:w-[300px]">
                   <div class="w-full md:w-[250px]">
@@ -102,6 +102,7 @@ export default function Programs(props) {
             </m.div>
           </Container>
         </m.div>
+      
       </LazyMotion>
     </Layout>
   );

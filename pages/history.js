@@ -5,7 +5,6 @@ import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
-import Link from "next/link";
 
 import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription } from "../sanity";
@@ -54,12 +53,12 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 md:pt-[75px] pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">
               <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
-                {locale === "ko" ? "History" : "Our History"}
+                {locale === "ko" ? " 걸어온 길 " : "Our History"}
               </span>
             </div>
             <div class="w-full mx-auto mb-10 md:w-10/12">
@@ -160,8 +159,8 @@ export default function About(props) {
             </m.div>
 
             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
-                    <PageNav />
-                  </section>
+              <PageNav />
+            </section>
           </Container>
         </m.div>
       </LazyMotion>

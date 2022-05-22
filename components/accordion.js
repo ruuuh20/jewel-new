@@ -43,8 +43,8 @@ export default function Accordion({ children, heading, index, icon, openOverride
           </div>
         </div>
         
-        <div className={`md:w-full md:px-5 ml-auto origin-top accordion-item ${ open ? 'accordion-item--open h-auto' : 'h-auto' }`}>
-          <div className={`content text-lg transition-opacity ease-in-out duration-500 delay-250 ${open ? 'opacity-100' : 'opacity-0' }`}>
+        <div className={`md:w-full md:px-10 ml-auto origin-top accordion-item ${ open ? 'accordion-item--open h-auto' : 'h-auto' }`}>
+          <div className={`content text-lg text-gray-800 transition-opacity ease-in-out duration-500 delay-250 ${open ? 'opacity-100' : 'opacity-0' }`}>
             {children}
           </div>
         </div>

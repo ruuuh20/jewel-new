@@ -87,7 +87,7 @@ const Testimonial = () => {
               </div>
 
               <footer class="mt-8 text-gray-500 italic">
-                Participant, 2019 Program
+                Participant, 2019
               </footer>
             </blockquote>
 
@@ -102,7 +102,7 @@ const Testimonial = () => {
               </div>
 
               <footer class="mt-8 text-gray-500 italic">
-                Participant, 2019 Program
+                Participant, 2019
               </footer>
             </blockquote>
 
@@ -119,7 +119,7 @@ const Testimonial = () => {
               </div>
 
               <footer class="mt-8 text-gray-500 italic">
-                Participant, 2019 Program
+                Participant, 2018
               </footer>
             </blockquote>
 
@@ -137,7 +137,7 @@ const Testimonial = () => {
               </div>
 
               <footer class="mt-8 text-gray-500 italic">
-                Participant, 2018 Program
+                Participant, 2018
               </footer>
             </blockquote>
 
@@ -153,7 +153,7 @@ const Testimonial = () => {
               </div>
 
               <footer class="mt-8 text-gray-500 italic">
-                Participant, 2018 Program
+                Participant, 2017
               </footer>
             </blockquote>
 
@@ -168,7 +168,7 @@ const Testimonial = () => {
               </div>
 
               <footer class="mt-8 text-gray-500 italic">
-                Participant, 2017 Program
+                Participant, 2017
               </footer>
             </blockquote>
           </div>

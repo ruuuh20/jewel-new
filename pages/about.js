@@ -30,14 +30,19 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-5 md:pt-[75px] pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24   pb-[75px]"
         >
           <Container>
+             <div className="relative w-full pt-8 pb-[88px]">
+              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+                {locale === "ko" ? "함께하는교육 소개" : "Who We Are"}
+              </span>
+            </div>
             <m.div variants={fade}>
               {posts &&
                 posts.map((post) => (
                   <>
-                    <Container>
+                  
                       <div className="relative max-w-4xl mb-16 md:mb-20 2xl:mb-28">
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           <div className="relative mb-2 md:mb-3">
@@ -45,13 +50,9 @@ export default function About(props) {
                               {post.title[locale]}
                             </h2>
                           </div>
-                          <div className="w-full text-xl md:pr-12 md:text-3xl xl:text-4xl text-darkgray">
+                          <div className="w-full text-xl md:pr-12 md:text-3xl text-darkgray">
                             <p className="leading-snug">{post.introText}</p>
-                            <p className="mt-6 leading-snug">
-                              We work in collaboration with both public and
-                              private educators and various organizations to 
-                              support cultural understanding between the U.S and Korea.
-                            </p>
+                           
                           </div>
                         </div>
                       </div>
@@ -100,7 +101,7 @@ export default function About(props) {
                       </section>
 
                       <div className="max-w-4xl py-2 m-auto mt-12 text-xl md:py-12 content"></div>
-                    </Container>
+                  
                   </>
                 ))}
             </m.div>
