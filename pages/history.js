@@ -61,9 +61,9 @@ export default function About(props) {
                 {locale === "ko" ? " 걸어온 길 " : "Our History"}
               </span>
             </div>
-            <div class="w-full mx-auto mb-10 md:w-10/12">
-              <div class="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
-                <div class="text-[24px] leading-normal">
+            <div className="w-full mx-auto mb-10 md:w-10/12">
+              <div className="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
+                <div className="text-[24px] leading-normal">
                   <p>{posts[0].history[locale]}</p>
                 </div>
               </div>

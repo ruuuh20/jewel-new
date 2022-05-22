@@ -19,7 +19,7 @@ const Project = ({ program }) => {
     <Layout>
       <NextSeo title={program.title[locale]} />
       <Container>
-        <section class="h-auto py-4 md:py-[6rem]">
+        <section className="h-auto py-4 md:py-[6rem]">
           <button
             className="flex flex-wrap items-center"
             type="button"
@@ -27,7 +27,7 @@ const Project = ({ program }) => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-4"
+              className="w-4"
               viewBox="0 0 27.197 23.217"
             >
               <g
@@ -74,7 +74,7 @@ const Project = ({ program }) => {
                 ? program.poster.map((poster, i) => (
                     <ImageComponent
                       alt="gallery"
-                      class="block object-cover object-center w-full h-full rounded-lg"
+                      className="block object-cover object-center w-full h-full rounded-lg"
                       image={poster}
                     />
                   ))
@@ -102,16 +102,16 @@ const Project = ({ program }) => {
         </div>
         <div className="my-10 gallery-container">
           <div>
-            <section class="overflow-hidden text-gray-700 ">
-              <div class="container px-0 md:px-4 md:py-2 mx-auto lg:pt-12 lg:px-8">
-                <div class="flex flex-wrap -m-1 md:-m-2">
+            <section className="overflow-hidden text-gray-700 ">
+              <div className="container px-0 mx-auto md:px-4 md:py-2 lg:pt-12 lg:px-8">
+                <div className="flex flex-wrap -m-1 md:-m-2">
                   {program.images
                     ? program.images.map((img, index) => (
-                        <div class="flex flex-wrap w-full md:w-1/3">
-                          <div class="w-full p-1 md:p-2">
+                        <div className="flex flex-wrap w-full md:w-1/3">
+                          <div className="w-full p-1 md:p-2">
                             <ImageComponent
                               alt="gallery"
-                              class="block object-cover object-center w-full h-full rounded-lg"
+                              className="block object-cover object-center w-full h-full rounded-lg"
                               image={img}
                             />
                           </div>
@@ -129,10 +129,10 @@ const Project = ({ program }) => {
               {program.previousSlug ? (
                 <a
                   href={`/projects/${program.previousSlug}`}
-                  class="inline-flex items-center py-2 px-4 mr-3 text-xl font-medium text-gray-500 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="inline-flex items-center px-4 py-2 mr-3 text-xl font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   <svg
-                    class="mr-2 w-5 h-5"
+                    className="w-5 h-5 mr-2"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -149,11 +149,11 @@ const Project = ({ program }) => {
               {program.nextSlug ? (
                 <a
                   href={`/projects/${program.nextSlug}`}
-                  class="inline-flex items-center py-2 px-4 text-xl font-medium text-gray-500 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="inline-flex items-center px-4 py-2 text-xl font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   Next Project
                   <svg
-                    class="ml-2 w-5 h-5"
+                    className="w-5 h-5 ml-2"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"

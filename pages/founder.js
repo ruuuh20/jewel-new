@@ -92,7 +92,7 @@ export default function Founder(props) {
                     <div className="flex flex-wrap">
                       <div className="relative w-full px-1 my-5 rounded md:px-[6rem] md:w-6/12 content md:mb-0">
                         <div className="image-container">
-                          <div class="offset-bg">
+                          <div className="offset-bg">
                             <figure className="mb-2 rounded-lg md:mb-6">
                               <ImageComponent
                                 image={
@@ -110,7 +110,7 @@ export default function Founder(props) {
                               <h4>Profile / 프로필</h4>
                             </div>
                             <div className="w-full">
-                              <table class="m-auto table-auto text-[14px]">
+                              <table className="m-auto table-auto text-[14px]">
                                 <tbody>
                                   <tr>
                                     <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">

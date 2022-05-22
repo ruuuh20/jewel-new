@@ -117,24 +117,24 @@ const Home = ({ data }) => {
 
                   <div className="hidden w-full m-auto mt-10 text-center md:block">
                     <Link href="/about">
-                      <a class="button learn-more">
-                        <span class="circle" aria-hidden="true">
-                          <span class="icon arrow"></span>
+                      <a className="button learn-more">
+                        <span className="circle" aria-hidden="true">
+                          <span className="icon arrow"></span>
                         </span>
-                        <span class="button-text">More About Us</span>
+                        <span className="button-text">More About Us</span>
                       </a>
                     </Link>
                   </div>
                   <div className="w-full m-auto mt-10 text-center md:hidden">
                     <Link href="/about">
-                      <a class="inline-flex items-center px-6 py-2 mt-2 text-white font-extrabold bg-blue border border-blue rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
-                        <span class="text-sm font-extrabold">
+                      <a className="inline-flex items-center px-6 py-2 mt-2 font-extrabold text-white border rounded bg-blue border-blue hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
+                        <span className="text-sm font-extrabold">
                           {" "}
                           More About Us
                         </span>
 
                         <svg
-                          class="w-5 h-5 ml-3"
+                          className="w-5 h-5 ml-3"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"

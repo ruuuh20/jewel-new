@@ -1,15 +1,15 @@
 const Testimonial = () => {
   return (
     <>
-      <section class="bg-gray-100">
-        <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
-          <div class="items-end justify-between sm:flex">
-            <div class="max-w-xl">
-              <h2 class="text-3xl md:text-4xl font-bold tracking-tight">
+      <section className="bg-gray-100">
+        <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+          <div className="items-end justify-between sm:flex">
+            <div className="max-w-xl">
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
                 What People are Saying
               </h2>
 
-              <p class="max-w-lg mt-8 text-xl text-gray-500">
+              <p className="max-w-lg mt-8 text-xl text-gray-500">
                 Educators, administrators, and students' testimonials about their experiences with JEWEL.
               </p>
             </div>
@@ -32,8 +32,8 @@ const Testimonial = () => {
       </a> */}
           </div>
 
-          <div class="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
-            <blockquote class="flex flex-col justify-between h-full p-6 md:p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
+          <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+            <blockquote className="flex flex-col justify-between h-full p-6 transition-colors duration-300 bg-white md:p-12 hover:bg-indigo-100">
               <div>
                 {/* <div class="flex space-x-0.5 text-green-500">
                   <svg
@@ -78,38 +78,38 @@ const Testimonial = () => {
                   </svg>
                 </div> */}
 
-                <div class="mt-4">
-                  <p class="mt-4 text-gray-600">
+                <div className="mt-4">
+                  <p className="mt-4 text-gray-600">
                     JEWEL did a great job running the trip. Everyone was
                     helpful, friendly, and informative."
                   </p>
                 </div>
               </div>
 
-              <footer class="mt-8 text-gray-500 italic">
+              <footer className="mt-8 italic text-gray-500">
                 Participant, 2019
               </footer>
             </blockquote>
 
-            <blockquote class="flex flex-col justify-between h-full p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
               <div>
-                <div class="mt-4">
-                  <p class="mt-4 text-gray-600">
+                <div className="mt-4">
+                  <p className="mt-4 text-gray-600">
                     “The trip was meticulously planned and the volunteers were
                     excellent in all areas.”
                   </p>
                 </div>
               </div>
 
-              <footer class="mt-8 text-gray-500 italic">
+              <footer className="mt-8 italic text-gray-500">
                 Participant, 2019
               </footer>
             </blockquote>
 
-            <blockquote class="flex flex-col justify-between h-full p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
               <div>
-                <div class="mt-4">
-                  <p class="mt-4 text-gray-600">
+                <div className="mt-4">
+                  <p className="mt-4 text-gray-600">
                     “It was obvious that a great deal of planning and care went
                     into preparing for our visit on the part of JEWEL... a
                     phenomenal success- an experience which will be remembered
@@ -118,15 +118,15 @@ const Testimonial = () => {
                 </div>
               </div>
 
-              <footer class="mt-8 text-gray-500 italic">
+              <footer className="mt-8 italic text-gray-500">
                 Participant, 2018
               </footer>
             </blockquote>
 
-            <blockquote class="flex flex-col justify-between h-full p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
               <div>
-                <div class="mt-4">
-                  <p class="mt-4 text-gray-600">
+                <div className="mt-4">
+                  <p className="mt-4 text-gray-600">
                     “I will ever cherish the memories collected and friendships
                     cultivated on this remarkable journey... We look forward to
                     expanding future Korean Language and culture offerings in
@@ -136,15 +136,15 @@ const Testimonial = () => {
                 </div>
               </div>
 
-              <footer class="mt-8 text-gray-500 italic">
+              <footer className="mt-8 italic text-gray-500">
                 Participant, 2018
               </footer>
             </blockquote>
 
-            <blockquote class="flex flex-col justify-between h-full p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
               <div>
-                <div class="mt-4">
-                  <p class="mt-4 text-gray-600">
+                <div className="mt-4">
+                  <p className="mt-4 text-gray-600">
                     “JEWEL coordinated the program with efficiency. I
                     appreciated the way personal information and travel
                     arrangements were handled..."
@@ -152,22 +152,22 @@ const Testimonial = () => {
                 </div>
               </div>
 
-              <footer class="mt-8 text-gray-500 italic">
+              <footer className="mt-8 italic text-gray-500">
                 Participant, 2017
               </footer>
             </blockquote>
 
-            <blockquote class="flex flex-col justify-between h-full p-12 bg-white hover:bg-indigo-100 transition-colors duration-300">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
               <div>
-                <div class="mt-4">
-                  <p class="mt-4 text-gray-600">
+                <div className="mt-4">
+                  <p className="mt-4 text-gray-600">
                     Overall it was an unforgettable adventure and learning
                     experience.
                   </p>
                 </div>
               </div>
 
-              <footer class="mt-8 text-gray-500 italic">
+              <footer className="mt-8 italic text-gray-500">
                 Participant, 2017
               </footer>
             </blockquote>

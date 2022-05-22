@@ -27,7 +27,6 @@ export default function Programs(props) {
     enabled: preview || router.query.preview !== undefined,
   });
 
-  console.log(posts)
   return (
     <Layout>
       <NextSeo title="Programs" />
@@ -81,11 +80,11 @@ export default function Programs(props) {
                             <div className="flex flex-wrap -m-1 md:-m-2">
                               {post.images
                                                   ? post.images.map((img, index) => (
-                                                      <div class="flex flex-wrap w-full md:w-1/3">
-                                                        <div class="w-full p-1 md:p-2">
+                                                      <div className="flex flex-wrap w-full md:w-1/3">
+                                                        <div className="w-full p-1 md:p-2">
                               <ImageComponent
                                 alt="gallery"
-                                class="block object-cover object-center w-full h-full rounded-lg"
+                                className="block object-cover object-center w-full h-full rounded-lg"
                                 image={img}
                               />
                                                         </div>

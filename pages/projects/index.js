@@ -41,11 +41,11 @@ export default function Projects(props) {
           {posts &&
             posts.map((post) => (
               <section>
-                <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-                  <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
-                    <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
+                <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+                  <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+                    <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                       <div
-                        class="image-container2 absolute inset-0 object-cover w-full h-full"
+                        className="absolute inset-0 object-cover w-full h-full image-container2"
                         alt="Student studying"
                       >
                         {/* <Image
@@ -64,21 +64,21 @@ export default function Projects(props) {
                       </div>
                     </div>
 
-                    <div class="lg:py-24">
-                      <h2 class="text-3xl font-bold sm:text-4xl font-serif">
+                    <div className="lg:py-24">
+                      <h2 className="font-serif text-3xl font-bold sm:text-4xl">
                         {post.title[locale]}
                       </h2>
 
-                      <p class="mt-4 text-gray-600">{post.cardDescription}</p>
+                      <p className="mt-4 text-gray-600">{post.cardDescription}</p>
                       <Link href={`/projects/${post.slug.current}`}>
-                        <a class="inline-flex items-center px-8 py-3 mt-8 text-darkgray font-extrabold bg-yellow border border-yellow rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
-                          <span class="text-base font-extrabold">
+                        <a className="inline-flex items-center px-8 py-3 mt-8 font-extrabold border rounded text-darkgray bg-yellow border-yellow hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
+                          <span className="text-base font-extrabold">
                             {" "}
                             Explore
                           </span>
 
                           <svg
-                            class="w-5 h-5 ml-3"
+                            className="w-5 h-5 ml-3"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"

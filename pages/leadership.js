@@ -64,8 +64,8 @@ export default function Leadership(props) {
                           <div className="flex flex-wrap w-full">
                             <div className={`${p} w-full mb-16`}>
                               <div className="flex flex-col flex-wrap items-center justify-center">
-                                <div class="mb-6 flex flex-col flex-wrap">
-                                  <span class="uppercase tracking-wide text-2xl  md:text-3xl block mb-0 pb-0 font-display leading-none pt-1 relative block pb-2 mb-2  after:absolute after:h-[4px] after:bg-yellow after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%] text-center">
+                                <div className="flex flex-col flex-wrap mb-6">
+                                  <span className="uppercase tracking-wide text-2xl  md:text-3xl block mb-0 pb-0 font-display leading-none pt-1 relative block pb-2 mb-2  after:absolute after:h-[4px] after:bg-yellow after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%] text-center">
                                     {name}
                                   </span>
 
@@ -75,8 +75,8 @@ export default function Leadership(props) {
                                       : null}
                                   </span>
                                 </div>
-                                <div class="w-10/12  2xl:max-w-xl">
-                                  <div class="leading-snug lg:text-lg text-center">
+                                <div className="w-10/12 2xl:max-w-xl">
+                                  <div className="leading-snug text-center lg:text-lg">
                                     <ul className="flex flex-wrap list-none">
                                       {posts
                                         .filter(
