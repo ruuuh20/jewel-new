@@ -34,7 +34,7 @@ export default function Contact(props) {
           </div>
         </Container>
         <Container>
-          <div className="flex flex-wrap py-6">
+          <div className="flex flex-wrap">
             <div className="w-full md:p-10 lg:w-5/12">
               <p className="text-base md:text-xl">
                 We’d love to hear from you. For all inquiries, you can send us
@@ -47,7 +47,7 @@ export default function Contact(props) {
                 </a>{" "}
                 or fill out the form, and we will get back to you.
               </p>{" "}
-              <div className="py-5 pl-5 mt-4 bg-gray-200 rounded box">
+              <div className="pt-4 pb-2 pl-5 mt-4 bg-gray-200 rounded box">
                 {posts &&
                   posts.map((post) => (
                     <>
@@ -112,7 +112,7 @@ export default function Contact(props) {
               </div>
             </div>
 
-            <div className="w-full p-6 lg:w-7/12">
+            <div className="w-full pt-6 lg:w-7/12">
               <p className="text-xl text-center text-gray-600">Get in Touch</p>
               <Form />
             </div>

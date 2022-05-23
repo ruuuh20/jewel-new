@@ -13,7 +13,7 @@ export default function Form() {
             Name
           </label>
           <input
-            className="w-full px-4 py-3 text-xl leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow"
+            className="w-full px-4 py-3 text-base leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none md:text-xl focus:outline-none focus:border-yellow"
             id="name"
             type="text"
             placeholder="Name"
@@ -26,7 +26,7 @@ export default function Form() {
             Email
           </label>
           <input
-            className="w-full px-4 py-3 text-xl leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow"
+            className="w-full px-4 py-3 text-base leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none md:text-xl focus:outline-none focus:border-yellow"
             id="_replyto"
             type="email"
             name="_replyto"
@@ -39,7 +39,7 @@ export default function Form() {
             Phone
           </label>
           <input
-            className="w-full px-4 py-3 text-xl leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow"
+            className="w-full px-4 py-3 text-base leading-tight text-black transition duration-200 ease-in-out border-2 border-transparent appearance-none md:text-xl focus:outline-none focus:border-yellow"
             id="tel"
             type="tel"
             placeholder="Phone"
@@ -53,7 +53,7 @@ export default function Form() {
           </label>
           <textarea
             rows="3"
-            className="w-full px-4 py-3 text-xl leading-tight transition duration-200 ease-in-out border-2 border-transparent appearance-none focus:outline-none focus:border-yellow textb-off-lack"
+            className="w-full px-4 py-3 text-base leading-tight transition duration-200 ease-in-out border-2 border-transparent appearance-none md:text-xl focus:outline-none focus:border-yellow textb-off-lack"
             id="message"
             placeholder="Message"
             name="message"
