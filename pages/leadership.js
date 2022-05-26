@@ -35,7 +35,7 @@ export default function Leadership(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24  pb-[45px]"
           variants={fade}
         >
           <Container>
@@ -58,7 +58,7 @@ export default function Leadership(props) {
                 }
                 return (
                   <>
-                    <div className={`${col} w-full py-2 md:mb-4`}>
+                    <div className={`${col} w-full md:mb-4`}>
                       <div className="mx-auto">
                         <div className="w-full mx-auto overflow-hidden">
                           <div className="flex flex-wrap w-full">
@@ -69,28 +69,41 @@ export default function Leadership(props) {
                                     {name}
                                   </span>
 
-                                  <span className="text-lg italic text-center text-gray-500 md:text-xl">
+                                  <span className="text-base italic text-center text-gray-500 md:text-xl">
                                     {name === "Honorary Advisory Board"
                                       ? "Former School Superintendants"
                                       : null}
                                   </span>
                                 </div>
-                                <div className="w-10/12 2xl:max-w-xl">
+                                <div className="w-full 2xl:max-w-4xl">
                                   <div className="leading-snug text-center lg:text-lg">
                                     <ul className="flex flex-wrap list-none">
                                       {posts
                                         .filter(
                                           (post) => post.boardName.en === name
                                         )
-                                        .map((filteredPost) => (
-                                          <li className="w-1/3 py-3">
-                                            <p className="text-lg font-bold">
-                                              {filteredPost.name.en}
+                                        .map((filteredPost, i) => (
+                                         ( i >= 3 && filteredPost.boardName.en === "Directors" || filteredPost.boardName.en === "Honorary Advisory Board") ? (
+                                            <li className="w-1/3 py-2">
+                                            <p className="font-bold md:text-lg">
+                                               {filteredPost.name.en} 
                                             </p>
                                             <p className="text-gray-500">
                                               {filteredPost.position.en}
                                             </p>
                                           </li>
+                                          ) : (
+                                            <li className="w-full py-2">
+                                            <p className="font-bold md:text-lg">
+                                               {filteredPost.name.en}
+                                            </p>
+                                            <p className="text-gray-500">
+                                              {filteredPost.position.en}
+                                            </p>
+                                          </li>
+                                          )
+                                          
+                                         
                                         ))}
                                     </ul>
                                   </div>

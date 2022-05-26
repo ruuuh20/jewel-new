@@ -8,7 +8,7 @@ import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import Form from "@/components/form";
+import { ContactForm } from "@/components/form";
 import PageNav from "@/components/pageNav";
 
 export default function Contact(props) {
@@ -114,7 +114,7 @@ export default function Contact(props) {
 
             <div className="w-full pt-6 lg:w-7/12">
               <p className="text-xl text-center text-gray-600">Get in Touch</p>
-              <Form />
+              <ContactForm />
             </div>
           </div>
            <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">

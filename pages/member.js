@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import Form from "@/components/form";
+import { MemberForm } from "@/components/form";
 
 export default function Member(props) {
   const router = useRouter();
@@ -16,7 +16,7 @@ export default function Member(props) {
       <Layout>
         <NextSeo title="Membership" />
         <Container>
-          <div className="relative w-full pt-8 pb-[88px]">
+          <div className="relative w-full pt-8 pb-[45px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
               Become a Member
             </span>
@@ -48,7 +48,7 @@ export default function Member(props) {
                 If you are interested in exploring opportunities with us, please
                 send your resume and a brief introduction to:{" "}
                 <a
-                  className="border-b border-indigo-500 hover:text-indigo-500"
+                  className="border-b border-yellow hover:text-yellow"
                   href="mailto:kaykim@wearejewel.org"
                 >
                   kaykim@wearejewel.org
@@ -56,11 +56,13 @@ export default function Member(props) {
               </p>
             </div>
 
-            <div className="w-full py-8 m-auto md:w-7/12">
-              <p className="text-xl text-center text-gray-600">
-                You can also fill out our contact form for any inquiries.
+            <div className="w-full py-8 m-auto md:w-7/12 md:mt-6">
+              <p className="text-xl text-center">
+                Membership
               </p>
-              <Form />
+              <div className="form-membership">
+                <MemberForm />
+              </div>
             </div>
           </div>
         </Container>

@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import Form from "@/components/form";
+import { ContactForm } from "@/components/form";
 
 export default function Careers(props) {
   const { postdata, preview } = props;
@@ -18,7 +18,7 @@ export default function Careers(props) {
       <Layout>
         <NextSeo title="Careers" />
         <Container>
-          <div className="relative w-full pt-8 pb-[88px]">
+          <div className="relative w-full pt-8 pb-[45px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
               Join Our Team
             </span>
@@ -50,7 +50,7 @@ export default function Careers(props) {
               <p className="text-xl text-center text-gray-600">
                 You can also fill out our contact form for any inquiries.
               </p>
-              <Form />
+              <ContactForm />
             </div>
           </div>
         </Container>

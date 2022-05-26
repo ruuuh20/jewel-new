@@ -1,9 +1,9 @@
-export default function Form() {
+export const Form = () => {
   return (
     <div className="mt-4 mb-8 md:mb-0 md:mx-20 xl:mx-32 2xl:mx-40">
       <form
         method="POST"
-        action="https://formspree.io/f/moqrlknp"
+        action="#"
         className="contact-form"
       >
         <input type="text" name="_gotcha" className="hidden" />
@@ -69,4 +69,79 @@ export default function Form() {
       </form>
     </div>
   );
+}
+
+export const  ContactForm = () => {
+  return (
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqrlknp}" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="true" />
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="true" />
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+  </fieldset>
+  <input type="submit" value="Send Message" />
+</form>
+  )
+}
+
+export const  MemberForm = () => {
+  return (
+    <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/mvollrpo" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="true" />
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="true" />
+    <label for="email-address">Phone</label>
+    <input type="phone" name="_replyto" id="phone-number" placeholder="###"  />
+    <fieldset id="fs-frm-selects">
+      <label for="timely">I am a:</label>
+      <select name="timely" id="timely" required="">
+        <option value="" selected="" disabled="">Choose</option>
+        <option value="1">District Administrator</option>
+        <option value="3">School Teacher</option>
+       
+      </select>
+      <label for="timely">How did you hear about us?</label>
+      <select name="quality" id="quality" required="">
+        <option value="" selected="" disabled="">Choose</option>
+        <option value="1">Word of mouth</option>
+        <option value="3">Search Engine/Google</option>
+        <option value="5">Social Media</option>
+        <option value="7">Networking Event</option>
+        <option value="9">Other</option>
+      </select>
+    </fieldset>
+    <label for="message">Additional Comments</label>
+    <textarea rows="3" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Survey Responses" />
+  </fieldset>
+  <input type="submit" value="Submit" />
+</form>
+  )
+}
+
+export const  PartnershipForm = () => {
+  return (
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkyypro" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Organization/Company Name</label>
+    <input type="text" name="name" id="full-name" placeholder="Your organization/company" required="true" />
+    <label for="full-name">Title</label>
+    <input type="text" name="title" id="title" placeholder="Your title" required="true" />
+    <label for="email-address">Email Address</label>
+    <input type="text" name="title" id="title" placeholder="Your title" required="true" />
+    <label for="email-address">Phone</label>
+    <input type="phone" name="_replyto" id="phone" placeholder="Your Phone #" required="true" />
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+  </fieldset>
+  <input type="submit" value="Submit" />
+</form>
+  )
 }
