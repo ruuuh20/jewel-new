@@ -9,7 +9,7 @@ import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import Form from "@/components/form";
+import { ContactForm } from "@/components/form";
 
 export default function GetInvolved(props) {
   const { postdata, preview } = props;
@@ -50,7 +50,7 @@ export default function GetInvolved(props) {
             </div>
 
             <div className="w-full p-6 lg:w-7/12">
-              <Form />
+              <ContactForm />
             </div>
           </div>
         </Container>
