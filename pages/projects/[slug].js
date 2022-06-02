@@ -84,14 +84,18 @@ const Project = ({ program }) => {
           <div className="col-span-12 col-end-auto mb-4 md:col-span-4 md:mb-0">
             <div className="md:sticky md:top-3">
               <div className="border-t">
-                <div className="py-2 border-b">
-                  <div className="mb-2 text-center uppercase ">Overview</div>
+                <div className="py-3 border-b">
+                  <div className="mb-2 font-bold text-center uppercase">
+                    Overview
+                  </div>
                   <div className="mb-2">
                     <p> {program.overview}</p>
                   </div>
                 </div>
-                <div className="py-2 border-b">
-                  <div className="mb-2 text-center uppercase ">Key Dates</div>
+                <div className="py-3 border-b">
+                  <div className="mb-2 font-bold text-center uppercase">
+                    Key Dates
+                  </div>
                   <div className="mb-2">
                     <p> {program.keyDates}</p>
                   </div>

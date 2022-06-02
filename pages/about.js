@@ -50,7 +50,7 @@ export default function About(props) {
                               {post.title[locale]}
                             </h2>
                           </div>
-                          <div className="w-full text-xl md:pr-12 md:text-3xl text-darkgray">
+                          <div className="w-full text-lg md:pr-12 md:text-3xl text-darkgray">
                             <p className="leading-snug">{post.introText}</p>
                            
                           </div>
@@ -67,7 +67,7 @@ export default function About(props) {
                               }
                             />
                           </div>
-                          <div className="w-full md:w-1/2">
+                          <div className="w-full mt-10 md:w-1/2 md:mt-0">
                             <div className="md:px-10 right-col">
                               <div className="relative mb-2 md:mb-3">
                                 <h2 className="block text-base tracking-wider uppercase md:text-xl text-blue-sub">

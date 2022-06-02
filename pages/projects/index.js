@@ -29,12 +29,13 @@ export default function Projects(props) {
       <Layout>
         <NextSeo title="Projects" />
         <Container>
-          <div className="relative w-full pt-8 pb-[88px]">
-            <h2 className="relative block pb-0 pr-12 mb-0 text-2xl font-light leading-normal tracking-tight text-gray-400 md:text-3xl lg:text-4xl 2xl:text-5xl">
-              Our Educational and Cultural Initiatives
-            </h2>
-            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+          <div className="relative w-full pt-8 pb-[45px] md:max-4xl">
+           
+            <h2 className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
              Current Projects
+            </h2>
+             <span className="relative block pb-0 pr-12 mb-0 text-2xl font-light leading-normal tracking-tight text-gray-400 md:text-3xl lg:text-4xl 2xl:text-5xl">
+              We implement a broad range of educational and cultural initiatives.
             </span>
           </div>
 
@@ -65,13 +66,13 @@ export default function Projects(props) {
                     </div>
 
                     <div className="lg:py-24">
-                      <h2 className="font-serif text-3xl font-bold sm:text-4xl">
+                      <h2 className="font-serif text-2xl font-bold md:text-3xl">
                         {post.title[locale]}
                       </h2>
 
                       <p className="mt-4 text-gray-600">{post.cardDescription}</p>
                       <Link href={`/projects/${post.slug.current}`}>
-                        <a className="inline-flex items-center px-8 py-3 mt-8 font-extrabold border rounded text-darkgray bg-yellow border-yellow hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
+                        <a className="inline-flex items-center px-8 py-3 mt-8 font-extrabold border rounded text-darkgray bg-yellow border-yellow hover:bg-transparent hover:text-blue active:text-blue focus:outline-none focus:ring">
                           <span className="text-base font-extrabold">
                             {" "}
                             Explore

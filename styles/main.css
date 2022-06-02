@@ -455,6 +455,12 @@ body {
   
 }
 
+@media (max-width: 768px) {
+  .link {
+    text-transform: capitalize;
+  }
+}
+
 .about-item {
   width: 75%;
   margin: 0 auto;
@@ -553,13 +559,14 @@ text-decoration: underline;
 color: navy
   }
 
-  .content-inner p {
+  .content-inner p, .content-inner ul li {
+    
 font-size: 1.25rem;
 font-family: 'roboto_condensedlight'
   }
 
     @media (max-width: 768px) {
-      .content-inner p {
+      .content-inner p, .content ul li {
         font-size: 1rem
       }
     }
@@ -567,7 +574,7 @@ font-family: 'roboto_condensedlight'
   .content-inner ul {
     list-style-type: disc;
     margin-left: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
   }
 
   .blurb > p {
@@ -702,3 +709,5 @@ font-family: 'roboto_condensedlight'
     #fs-frm fieldset.locale select[name="state"] {
       margin-right: 3%;
     }
+
+   
