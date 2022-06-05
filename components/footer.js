@@ -247,11 +247,11 @@ export default function Footer({ contact }) {
               </div>
             </div>
           </div>
-          <p class="mt-8 text-xs text-gray-800">
+          <p class="mt-8 text-xs text-white">
             &copy; {new Date().getFullYear()} JEWEL Organization, All rights
             reserved.
           </p>
-          <div className="w-full text-xs text-gray-800 md:mt-3 md:w-auto">
+          <div className="w-full text-xs text-white md:mt-3 md:w-auto">
             <nav>
               <li className="inline-block mx-3 ml-0">
                 <Link href="/terms-of-use">

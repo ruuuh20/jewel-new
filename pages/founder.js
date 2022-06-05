@@ -76,7 +76,7 @@ export default function Founder(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
           variants={fade}
         >
           <Container>
@@ -259,12 +259,12 @@ export default function Founder(props) {
                           <div className="px-4 mt-4 text-base achievement text-slate">
                             <p>
                               <span className="italic">Achievement:</span>{" "}
-                              국민포장 (國民褒章, Civil Merit Medal)
+                              국민포장 (國民褒章, Civil Merit Medal 2018)
                             </p>
                           </div>
                         </section>
                       </div>
-                      <div className="w-full py-5 pl-6 pr-10 text-sm bg-gray-100 rounded-lg text-slate md:py-10 md:pl-14 md:pr-20 md:w-5/12 content">
+                      <div className="w-full py-5 pl-5 pr-5 text-sm bg-gray-100 rounded-lg md:pl-6 md:pr-10 text-slate md:py-10 md:pl-14 md:pr-20 md:w-5/12 content">
                         <PortableText
                           value={post.content}
                           components={myPortableTextComponents}

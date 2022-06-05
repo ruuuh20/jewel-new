@@ -27,7 +27,7 @@ export default function Contact(props) {
       <Layout>
         <NextSeo title="Contact Us" />
         <Container>
-          <div className="relative w-full pt-8 md:pb-[88px]">
+          <div className="relative w-full pt-[90px] md:pt-[180px]  md:pb-[45px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
                  {locale === "ko" ? "연락처" : "Contact Us"}
             </span>
@@ -35,7 +35,7 @@ export default function Contact(props) {
         </Container>
         <Container>
           <div className="flex flex-wrap">
-            <div className="w-full md:p-10 lg:w-5/12">
+            <div className="w-full mt-4 md:p-10 lg:w-5/12">
               <p className="text-base md:text-xl">
                 We’d love to hear from you. For all inquiries, you can send us
                 an email at{" "}

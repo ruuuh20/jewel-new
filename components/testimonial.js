@@ -5,11 +5,11 @@ const Testimonial = () => {
         <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
           <div className="items-end justify-between sm:flex">
             <div className="max-w-xl">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+              <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
                 What People are Saying
               </h2>
 
-              <p className="max-w-lg mt-8 text-xl text-gray-500">
+              <p className="max-w-lg mt-8 text-base text-gray-500">
                 Educators, administrators, and students' testimonials about their experiences with JEWEL.
               </p>
             </div>

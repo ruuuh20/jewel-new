@@ -35,7 +35,7 @@ export default function Leadership(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
           variants={fade}
         >
           <Container>
@@ -64,7 +64,7 @@ export default function Leadership(props) {
                           <div className="flex flex-wrap w-full">
                             <div className={`${p} w-full mb-16`}>
                               <div className="flex flex-col flex-wrap items-center justify-center">
-                                <div className="flex flex-col flex-wrap mb-6">
+                                <div className="flex flex-col flex-wrap mb-2 md:mb-6">
                                   <span className="uppercase tracking-wide text-2xl  md:text-3xl block mb-0 pb-0 font-display leading-none pt-1 relative block pb-2 mb-2  after:absolute after:h-[4px] after:bg-yellow after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%] text-center">
                                     {name}
                                   </span>

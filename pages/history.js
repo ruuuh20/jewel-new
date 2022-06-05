@@ -53,7 +53,7 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">
@@ -63,7 +63,7 @@ export default function About(props) {
             </div>
             <div className="w-full mx-auto mb-10 md:w-10/12">
               <div className="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
-                <div className="text-[24px] leading-normal">
+                <div className="text-base md:text-[24px] leading-normal">
                   <p>{posts[0].history[locale]}</p>
                 </div>
               </div>

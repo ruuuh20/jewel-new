@@ -41,7 +41,7 @@ const Home = ({ data }) => {
           // className="mb-12 md:mb-16 xl:mb-24"
         >
           <Container>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden md:mt-[15rem]">
               <m.span
                 variants={textReveal}
                 className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
@@ -106,7 +106,7 @@ const Home = ({ data }) => {
             <Container>
               <div className="m-auto py-[4rem] md:mt-10 md:py-28">
                 <div className="flex flex-col px-2 md:px-[14rem]">
-                  <div className="relative mt-8 mb-2 md:mt-4">
+                  <div className="relative mt-8 mb-2 md:mt-3">
                     <h4 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
                       Who We Are
                     </h4>
@@ -163,13 +163,13 @@ const Home = ({ data }) => {
               <div className="flex flex-wrap justify-center w-full mt-10 ailgn-middle md:-mx-6">
                 <div className="w-full mb-12 md:w-7/12 xl:w-1/2 md:px-6 md:mb-0">
                   <div className="flex flex-col flex-wrap">
-                    <div className="w-full px-0 m-auto bg-gray-100 border-2 md:w-1/2 md:px-0">
-                      <div className="flex justify-center w-full p-4">
+                    <div className="w-full px-0 m-auto bg-gray-100 border-none md:w-1/2 md:px-0">
+                      <div className="flex justify-center w-full p-4 rounded-lg">
                         <Image
                           src="/aac-poster.png"
                           // layout="responsive"
-                          width="300px"
-                          height="400px"
+                          width="350px"
+                          height="450px"
                         />
                       </div>
                     </div>
@@ -217,7 +217,7 @@ const Home = ({ data }) => {
                 <h2 className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
                   Projects
                 </h2>
-                <div className="mb-12 mt-10 md:mb-16 2xl:mb-24 mx-2 md:mx-[5rem] relative">
+                <div className="mb-12 mt-10 md:mb-16 2xl:mb-24 md:mx-[5rem] relative">
                   {programData.map((item, i) => {
                     return (
                       <Link href={`/projects/${item.slug.current}`}>
@@ -234,7 +234,7 @@ const Home = ({ data }) => {
                               />
                             </div>
                             <div className="flex flex-wrap w-full px-6 py-4 md:px-16 md:w-7/12">
-                              <div className="flex-1 md:flex md:flex-wrap md:h-full">
+                              <div className="flex-1 md:flex md:flex-wrap md:justify-center items=center md:h-full">
                                 <div className="self-end w-full mt-auto">
                                   <h3 className="text-xl font-bold md:text-3xl project-title1 text-darkgray">
                                     {item.title[locale]}
@@ -244,11 +244,11 @@ const Home = ({ data }) => {
                                   </p>
                                 </div>
 
-                                <div className="relative self-end w-full mt-auto">
+                                <div className="relative self-end mt-auto">
                                   <Link href={`/projects/${item.slug.current}`}>
                                     <a className="arrow-btn">
-                                      <span className="flex items-center justify-center small-arrow bg-yellow-lighter">
-                                        <span>Learn More</span>
+                                      <span className="flex items-center justify-center px-1 py-1 small-arrow">
+                                        <span className="mr-2">Learn More</span>
                                         <ArrowRight />
                                       </span>
                                     </a>
@@ -283,10 +283,10 @@ const Home = ({ data }) => {
                     let afterColor = "#000000";
                     if (i === 0) {
                       color = "text-blue-dark";
-                      bgColor = "before:bg-[#2F65A7]";
+                      bgColor = "before:bg-blue";
                       marginClass = "md:mt-[-60px]";
-                      borderColor = "before:border-[#2F65A7]";
-                      afterColor = "after:border-[#2F65A7]";
+                      borderColor = "before:border-blue";
+                      afterColor = "after:border-blue";
                     } else if (i === 1) {
                       color = "text-blue-light";
                       bgColor = "before:bg-[#75988d]";
@@ -295,9 +295,9 @@ const Home = ({ data }) => {
                       marginClass = "md:mt-[-2px]";
                     } else if (i === 2) {
                       color = "text-green";
-                      bgColor = "before:bg-yellow-secondary";
-                      borderColor = "before:border-yellow-secondary";
-                      afterColor = "after:border-yellow-secondary";
+                      bgColor = "before:bg-yellow";
+                      borderColor = "before:border-yellow";
+                      afterColor = "after:border-yellow";
                       marginClass = "md:mt-[-30px]";
                     }
                     return (

@@ -80,7 +80,7 @@ export const  ContactForm = () => {
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="true" />
     <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+    <textarea rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
   </fieldset>
   <input type="submit" value="Send Message" />
@@ -97,13 +97,16 @@ export const  MemberForm = () => {
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="true" />
     <label for="email-address">Phone</label>
-    <input type="phone" name="_replyto" id="phone-number" placeholder="###"  />
+    <input type="phone" name="_replyto" id="phone-number" placeholder="###-###-####"  />
     <fieldset id="fs-frm-selects">
       <label for="timely">I am a:</label>
       <select name="timely" id="timely" required="">
         <option value="" selected="" disabled="">Choose</option>
         <option value="1">District Administrator</option>
         <option value="3">School Teacher</option>
+        <option value="3">Student</option>
+        <option value="3">Parent</option>
+        <option value="3">Other</option>
        
       </select>
       <label for="timely">How did you hear about us?</label>
@@ -117,7 +120,7 @@ export const  MemberForm = () => {
       </select>
     </fieldset>
     <label for="message">Additional Comments</label>
-    <textarea rows="3" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor." required=""></textarea>
+    <textarea rows="3" name="message" id="message" placeholder="Comments" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Survey Responses" />
   </fieldset>
   <input type="submit" value="Submit" />
