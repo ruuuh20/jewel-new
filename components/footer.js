@@ -108,7 +108,7 @@ export default function Footer({ contact }) {
 
       {/* <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"> */}
       <footer class="bg-blue">
-        <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-screen-xl px-4 py-8 md:py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               {/* <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" /> */}
@@ -237,7 +237,7 @@ export default function Footer({ contact }) {
                   <Link href="/member">
                     <a className="hover:opacity-75"> Become a Member</a>
                   </Link>
-                  <Link href="/partner">
+                  <Link href="/partner-with-us">
                     <a class="hover:opacity-75"> Become a Partner</a>
                   </Link>
                   <Link href="/careers">
@@ -251,7 +251,7 @@ export default function Footer({ contact }) {
             &copy; {new Date().getFullYear()} JEWEL Organization, All rights
             reserved.
           </p>
-          <div className="w-full text-xs text-white md:mt-3 md:w-auto">
+          <div className="w-full mt-3 text-xs text-white md:w-auto">
             <nav>
               <li className="inline-block mx-3 ml-0">
                 <Link href="/terms-of-use">

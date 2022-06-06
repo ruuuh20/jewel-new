@@ -27,7 +27,7 @@ export default function Contact(props) {
       <Layout>
         <NextSeo title="Contact Us" />
         <Container>
-          <div className="relative w-full pt-[90px] md:pt-[180px]  md:pb-[45px]">
+          <div className="relative w-full pt-[90px] md:pt-[180px]  pb-[45px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
                  {locale === "ko" ? "연락처" : "Contact Us"}
             </span>
@@ -117,7 +117,8 @@ export default function Contact(props) {
               <ContactForm />
             </div>
           </div>
-           <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+     
+           <section className="relative pt-10 pb-6 mt-10 border-t border-gray-100 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
                     <PageNav />
                   </section>
         </Container>

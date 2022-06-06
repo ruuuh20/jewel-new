@@ -41,7 +41,7 @@ const Home = ({ data }) => {
           // className="mb-12 md:mb-16 xl:mb-24"
         >
           <Container>
-            <div className="overflow-hidden md:mt-[15rem]">
+            <div className="overflow-hidden mt-[10rem] md:mt-[15rem]">
               <m.span
                 variants={textReveal}
                 className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"

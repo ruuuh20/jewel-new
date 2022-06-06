@@ -2,7 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import  { getClient, usePreviewSubscription } from "../sanity";
 import { NextSeo } from "next-seo";
-
+import { fade } from "@/helpers/transitions";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
 import { MemberForm } from "@/components/form";
@@ -15,6 +16,14 @@ export default function Member(props) {
     <>
       <Layout>
         <NextSeo title="Membership" />
+          <LazyMotion features={domAnimation}>
+        <m.div
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
+          variants={fade}
+        >
         <Container>
           <div className="relative w-full pt-8 pb-[45px]">
             <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
@@ -66,6 +75,8 @@ export default function Member(props) {
             </div>
           </div>
         </Container>
+        </m.div>
+        </LazyMotion>
       </Layout>
     </>
   );

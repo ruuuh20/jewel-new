@@ -14,9 +14,12 @@ export default function Header() {
   return (
     <LazyMotion features={domAnimation}>
          
+
+       
       <m.header initial="initial"
           animate="enter"
-          exit="exit" className="fixed top-0 z-10 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 bg-gray-50 md:py-3 md:mb-6 xl:mb-8">
+          exit="exit" className="fixed top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 bg-gray-50 md:py-3 md:mb-6 xl:mb-8">
+       
         <m.div variants={fade}>
           <div className="w-full px-8 py-2 mx-auto md:shadow-md md:px-6 md:py-3">
             <div className="relative flex md:flex-wrap">
@@ -177,7 +180,7 @@ export default function Header() {
                 </Link>
               </nav>
             {isNavOpen && (
-              <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full p-8 text-white bg-blue">
+              <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full p-8 text-white bg-blue z-12">
                 <div className="flex flex-wrap items-center mb-8">
                   <Link href="/">
                     <a className="text-2xl font-semibold font-bold uppercase">

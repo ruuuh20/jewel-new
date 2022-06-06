@@ -13,7 +13,6 @@ import { getClient, usePreviewSubscription, urlFor } from "../sanity";
 import Accordion from "@/components/accordion";
 import { PortableText } from "@portabletext/react";
 
-import Image from "next/image";
 import ImageComponent from "@/components/image";
 
 export default function Programs(props) {
@@ -36,17 +35,18 @@ export default function Programs(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pb-[75px]"
+          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
           variants={fade}
         >
           <Container>
-            <div className="relative w-full pt-8 pb-[88px]">
-              <h2 className="relative block pb-0 pr-12 mb-0 text-2xl font-light leading-normal tracking-tight text-gray-400 md:text-3xl lg:text-4xl 2xl:text-5xl">
-                Promoting understanding through education
-              </h2>
-              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+            <div className="relative w-full md:max-4xl pt-8 pb-[88px]">
+              <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
                 Our Programs
+              </h2>
+              <span className="relative block pt-2 pb-0 pr-12 mb-0 text-xl font-light leading-normal tracking-tight text-gray-400 md:text-2xl lg:text-3xl">
+                Promoting understanding through education
               </span>
+              
             </div>
             <m.div >
               <div className="w-full">

@@ -2,9 +2,8 @@ import { useRouter } from "next/router";
 import client, {
   getClient,
   usePreviewSubscription,
-  PortableText,
 } from "../../sanity";
-
+import { fade } from "@/helpers/transitions";
 import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
@@ -28,13 +27,21 @@ export default function Projects(props) {
     <>
       <Layout>
         <NextSeo title="Projects" />
+         <LazyMotion features={domAnimation}>
+        <m.div
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
+          variants={fade}
+        >
         <Container>
-          <div className="relative w-full pt-8 pb-[45px] md:max-4xl">
+          <div className="relative w-full pt-8 pb-[88px] md:max-4xl">
            
-            <h2 className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+            <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
              Current Projects
             </h2>
-             <span className="relative block pb-0 pr-12 mb-0 text-2xl font-light leading-normal tracking-tight text-gray-400 md:text-3xl lg:text-4xl 2xl:text-5xl">
+             <span className="relative block pt-2 pb-0 pr-12 mb-0 text-xl font-light leading-normal tracking-tight text-gray-400 md:text-2xl lg:text-3xl">
               We implement a broad range of educational and cultural initiatives.
             </span>
           </div>
@@ -100,6 +107,8 @@ export default function Projects(props) {
               </section>
             ))}
         </Container>
+        </m.div>
+        </LazyMotion>
       </Layout>
     </>
   );

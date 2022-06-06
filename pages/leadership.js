@@ -29,7 +29,6 @@ export default function Leadership(props) {
   return (
     <Layout>
       <NextSeo title="Leadership" />
-
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"

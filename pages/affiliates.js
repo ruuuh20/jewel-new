@@ -1,16 +1,34 @@
 import Container from "@/components/container";
 import Layout from "@/components/layout";
-import Image from "next/image";
+import { fade } from "@/helpers/transitions";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
+import { useRouter } from "next/router";
 
 const Affiliates = (props) => {
+    const router = useRouter();
+  const locale = router.locale || router.defaultLocale;
+
   return (
     <Layout>
       <NextSeo title="Our Affiliates" />
+         <LazyMotion features={domAnimation}>
+        <m.div
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
+          variants={fade}
+        >
       <Container>
+            <div className="relative w-full pt-8 pb-[45px]">
+              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+                {locale === "ko" ? "Affiliantes" : "Affiliates"}
+              </span>
+            </div>
         <section>
           <div className="max-w-screen-xl px-4 mx-auto md:py-16 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                 <div className="absolute inset-0 flex items-center justify-center object-cover w-full h-full">
                   {/* <Image
@@ -165,6 +183,8 @@ const Affiliates = (props) => {
           </div>
         </section>
       </Container>
+      </m.div>
+      </LazyMotion>
     </Layout>
   );
 };
