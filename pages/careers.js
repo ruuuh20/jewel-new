@@ -37,14 +37,14 @@ export default function Careers(props) {
         <Container>
           <div className="flex flex-wrap py-6">
             <div className="py-5 m-auto md:w-7/12">
-              <p className="text-xl">
+              <p className="text-base md:text-xl">
                 At JEWEL, we are commited to building a diverse team that
                 represents many experiences and perspectives. We're always
                 looking for passionate people to join us in helping serve the
                 community. We hope you join us!
               </p>{" "}
               <br />
-              <p className="text-xl">
+              <p className="text-base md:text-xl">
                 If you are interested in exploring opportunities with us, please
                 send your resume and a brief introduction to:{" "}
                 <a
@@ -57,7 +57,7 @@ export default function Careers(props) {
             </div>
 
             <div className="w-full py-8 m-auto md:w-7/12">
-              <p className="text-xl text-center text-gray-600">
+              <p className="text-base text-center text-gray-600 md:text-xl">
                 You can also fill out our contact form for any inquiries.
               </p>
               <ContactForm />

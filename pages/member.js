@@ -34,9 +34,9 @@ export default function Member(props) {
         <Container>
           <div className="flex flex-wrap py-6">
             <div className="py-5 m-auto md:w-7/12">
-              <p className="text-xl">As a member of JEWEL you will be:</p>{" "}
+              <p className="tex-base md:text-xl">As a member of JEWEL you will be:</p>{" "}
               <br />
-              <ul className="px-6 text-lg md:text-xl md:px-0">
+              <ul className="px-6 text-base md:text-xl md:px-0">
                 <li className="mt-2 list-disc">
                   Kept updated on new ways American and Korean educators are
                   organizing collaborative projects to foster greater
@@ -53,7 +53,7 @@ export default function Member(props) {
                 </li>
               </ul>
               <br />
-              <p className="text-xl">
+              <p className="tex-base md:text-xl">
                 If you are interested in exploring opportunities with us, please
                 send your resume and a brief introduction to:{" "}
                 <a

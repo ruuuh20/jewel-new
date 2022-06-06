@@ -40,14 +40,14 @@ export default function Contact(props) {
                 We’d love to hear from you. For all inquiries, you can send us
                 an email at{" "}
                 <a
-                  className="border-b border-blue hover:text-indigo-500"
+                  className="border-b border-blue hover:text-yellow"
                   href="mailto:kaykim@wearejewel.org"
                 >
                   {posts && posts[0].email}
                 </a>{" "}
                 or fill out the form, and we will get back to you.
               </p>{" "}
-              <div className="pt-4 pb-2 pl-5 mt-4 bg-gray-200 rounded box">
+              <div className="pt-4 pb-2 pl-5 mt-4 bg-gray-100 rounded box">
                 {posts &&
                   posts.map((post) => (
                     <>
