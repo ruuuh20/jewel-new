@@ -223,7 +223,7 @@ const Home = ({ data }) => {
                       <Link href={`/projects/${item.slug.current}`}>
                         <a className="rounded-lg flex flex-wrap border-b py-3 mb-4 bg-[rgba(98,50,0,.04)] shadow hover:shadow-lg hover:bg-yellow-lighter project-box md:mb-4">
                           <div className="flex flex-wrap w-full md:px-4">
-                            <div className="w-full px-6 py-3 rounded-lg md:px-3 md:w-5/12">
+                            <div className="w-full px-6 py-6 rounded-lg  md:w-4/12">
                               {" "}
                               <ImageComponent
                                 image={
@@ -233,13 +233,32 @@ const Home = ({ data }) => {
                                 }
                               />
                             </div>
-                            <div className="flex flex-wrap w-full px-6 py-4 md:px-16 md:w-7/12">
+                            <div className="flex flex-wrap w-full px-6 py-4 md:pl-10 md:pr-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:justify-center items=center md:h-full">
-                                <div className="self-end w-full mt-auto">
-                                  <h3 className="text-xl font-bold md:text-3xl project-title1 text-darkgray">
+                                <div className="w-full">
+                                  <h3 className="text-xl font-bold md:text-3xl project-title1 text-darkgray mb-2">
                                     {item.title[locale]}
                                   </h3>
-                                  <p className="text-base md:text-[20px] text-gray-700">
+                                  <p className="flex items-center mb-2 text-gray-700">
+                                    <svg
+                                      className="svg-icon inline-block mr-2"
+                                      style={{
+                                        width: "1em",
+                                        height: "1em",
+                                        verticalAlign: "middle",
+                                        fill: "currentColor",
+                                        overflow: "hidden",
+                                      }}
+                                      viewBox="0 0 1024 1024"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="M682.667 469.333c70.613 0 127.573-57.386 127.573-128s-56.96-128-127.573-128c-70.614 0-128 57.387-128 128s57.386 128 128 128zm-341.334 0c70.614 0 127.574-57.386 127.574-128s-56.96-128-127.574-128c-70.613 0-128 57.387-128 128s57.387 128 128 128zm0 85.334c-99.626 0-298.666 49.92-298.666 149.333v106.667H640V704c0-99.413-199.04-149.333-298.667-149.333zm341.334 0c-12.374 0-26.24.853-41.174 2.346 49.494 35.627 83.84 83.627 83.84 146.987v106.667h256V704c0-99.413-199.04-149.333-298.666-149.333z" />
+                                    </svg>
+                                    <span className="inline-block  md:text-[18px]">
+                                      {item.category}
+                                    </span>
+                                  </p>
+                                  <p className="text-base md:text-[18px] text-gray-700">
                                     {item.cardDescription}
                                   </p>
                                 </div>
@@ -283,21 +302,21 @@ const Home = ({ data }) => {
                     let afterColor = "#000000";
                     if (i === 0) {
                       color = "text-blue-dark";
-                      bgColor = "before:bg-blue";
+                      bgColor = "before:bg-[#004F99]";
                       marginClass = "md:mt-[-60px]";
-                      borderColor = "before:border-blue";
-                      afterColor = "after:border-blue";
+                      borderColor = "before:border-[#004F99]";
+                      afterColor = "after:border-[#004F99]";
                     } else if (i === 1) {
                       color = "text-blue-light";
-                      bgColor = "before:bg-[#75988d]";
-                      borderColor = "before:border-[#75988d]";
-                      afterColor = "after:border-[#75988d]";
+                      bgColor = "before:bg-blue";
+                      borderColor = "before:border-blue";
+                      afterColor = "after:border-blue";
                       marginClass = "md:mt-[-2px]";
                     } else if (i === 2) {
                       color = "text-green";
-                      bgColor = "before:bg-yellow";
-                      borderColor = "before:border-yellow";
-                      afterColor = "after:border-yellow";
+                      bgColor = "before:bg-[#2E6599]";
+                      borderColor = "before:border-[#2E6599]";
+                      afterColor = "after:border-[#2E6599]";
                       marginClass = "md:mt-[-30px]";
                     }
                     return (
@@ -401,6 +420,7 @@ mainImage {
 },
 slug,
 cardDescription,
+category
 
 }`;
 

@@ -74,7 +74,7 @@ export default function Leadership(props) {
                                       : null}
                                   </span>
                                 </div>
-                                <div className="w-full 2xl:max-w-4xl">
+                                <div className="w-full 2xl:max-w-5xl">
                                   <div className="leading-snug text-center lg:text-lg">
                                     <ul className="flex flex-wrap list-none">
                                       {posts
@@ -92,7 +92,7 @@ export default function Leadership(props) {
                                             </p>
                                           </li>
                                           ) : (
-                                            <li className="w-full py-2">
+                                            <li className="w-full py-2 md:px-16">
                                             <p className="font-bold md:text-lg">
                                                {filteredPost.name.en}
                                             </p>
@@ -162,6 +162,8 @@ export default function Leadership(props) {
                      
                       </div>
                     </Container> */}
+
+                    <hr className="my-8 md:my-16"/>
             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
               <PageNav />
             </section>

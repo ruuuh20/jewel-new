@@ -49,8 +49,8 @@ export default function Projects(props) {
           {posts &&
             posts.map((post) => (
               <section>
-                <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-                  <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+                <div className="max-w-screen-xl px-4 md:py-16 mx-auto sm:px-6 px-0 lg:px-8">
+                  <div className="grid grid-cols-1 gap-0 lg:gap-16 lg:grid-cols-2">
                     <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                       <div
                         className="absolute inset-0 object-cover w-full h-full image-container2"
@@ -73,13 +73,13 @@ export default function Projects(props) {
                     </div>
 
                     <div className="lg:py-24">
-                      <h2 className="font-serif text-2xl font-bold md:text-3xl">
+                      <h2 className="font-serif text-2xl font-bold md:text-3xl mb-0">
                         {post.title[locale]}
                       </h2>
 
                       <p className="mt-4 text-gray-600">{post.cardDescription}</p>
                       <Link href={`/projects/${post.slug.current}`}>
-                        <a className="inline-flex items-center px-8 py-3 mt-8 font-extrabold border rounded text-darkgray bg-yellow border-yellow hover:bg-transparent hover:text-blue active:text-blue focus:outline-none focus:ring">
+                        <a className="inline-flex items-center px-8 py-3 mt-4 font-extrabold border rounded text-darkgray bg-yellow border-yellow hover:bg-transparent hover:text-blue active:text-blue focus:outline-none focus:ring">
                           <span className="text-base font-extrabold">
                             {" "}
                             Explore

@@ -42,7 +42,7 @@ const Affiliates = (props) => {
               </div>
 
               <div className="lg:py-24">
-                <h2 className="text-3xl font-bold sm:text-4xl">
+                <h2 className="text-2xl md:text-3xl font-bold">
                   Peak Education Center
                 </h2>
 

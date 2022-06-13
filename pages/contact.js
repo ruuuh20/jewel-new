@@ -47,7 +47,7 @@ export default function Contact(props) {
                 </a>{" "}
                 or fill out the form, and we will get back to you.
               </p>{" "}
-              <div className="pt-4 pb-2 pl-5 mt-4 bg-gray-100 rounded box">
+              <div className="pt-4 pb-2 pl-5 mt-4 bg-gray-100 rounded-lg box">
                 {posts &&
                   posts.map((post) => (
                     <>
@@ -117,7 +117,7 @@ export default function Contact(props) {
               <ContactForm />
             </div>
           </div>
-     
+        <hr className="my-8 md:my-16"/>
            <section className="relative pt-10 pb-6 mt-10 border-t border-gray-100 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
                     <PageNav />
                   </section>

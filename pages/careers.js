@@ -48,7 +48,7 @@ export default function Careers(props) {
                 If you are interested in exploring opportunities with us, please
                 send your resume and a brief introduction to:{" "}
                 <a
-                  className="border-b border-indigo-500 hover:text-indigo-500"
+                  className="border-b border-yellow hover:text-yellow"
                   href="mailto:kaykim@wearejewel.org"
                 >
                   kaykim@wearejewel.org

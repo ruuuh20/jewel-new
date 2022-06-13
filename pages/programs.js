@@ -7,7 +7,7 @@ import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
 
 import { useRouter } from "next/router";
-import { getClient, usePreviewSubscription, urlFor } from "../sanity";
+import { getClient, usePreviewSubscription } from "../sanity";
 
 import Accordion from "@/components/accordion";
 import { PortableText } from "@portabletext/react";

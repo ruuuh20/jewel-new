@@ -105,6 +105,7 @@ export default function About(props) {
                   </>
                 ))}
             </m.div>
+               <hr className="my-8 md:my-16"/>
              <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
                     <PageNav />
                   </section>
