@@ -50,7 +50,7 @@ export default function Projects(props) {
             posts.map((post) => (
               <section>
                 <div className="max-w-screen-xl px-4 md:py-16 mx-auto sm:px-6 px-0 lg:px-8">
-                  <div className="grid grid-cols-1 gap-0 lg:gap-16 lg:grid-cols-2">
+                  <div className="grid grid-cols-1 gap-2 lg:gap-16 lg:grid-cols-2">
                     <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                       <div
                         className="absolute inset-0 object-cover w-full h-full image-container2"

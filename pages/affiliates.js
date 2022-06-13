@@ -100,7 +100,7 @@ const Affiliates = (props) => {
               </div>
 
               <div className="lg:py-24 lg:order-last">
-                <h2 className="text-3xl font-bold sm:text-4xl">
+                <h2 className="text-2xl font-bold md:text-3xl">
                   GANADARA Korean Language and Cultural School
                 </h2>
 
@@ -149,7 +149,7 @@ const Affiliates = (props) => {
               </div>
 
               <div className="lg:py-24">
-                <h2 className="text-3xl font-bold sm:text-4xl">
+                <h2 className="text-2xl font-bold md:text-3xl">
                   Korean American Global Youth Network
                 </h2>
 

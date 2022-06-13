@@ -40,7 +40,7 @@ export default function Contact(props) {
                 We’d love to hear from you. For all inquiries, you can send us
                 an email at{" "}
                 <a
-                  className="border-b border-blue hover:text-yellow"
+                  className="border-b border-yellow hover:text-yellow"
                   href="mailto:kaykim@wearejewel.org"
                 >
                   {posts && posts[0].email}
@@ -118,7 +118,7 @@ export default function Contact(props) {
             </div>
           </div>
         <hr className="my-8 md:my-16"/>
-           <section className="relative pt-10 pb-6 mt-10 border-t border-gray-100 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+           <section className="relative pt-10 pb-6 mt-10 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
                     <PageNav />
                   </section>
         </Container>
