@@ -711,4 +711,6 @@ font-family: 'roboto_condensedlight'
       margin-right: 3%;
     }
 
-   
+   .title-thin {
+     font-family: 'roboto_condensedlight';
+   }

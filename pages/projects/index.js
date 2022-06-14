@@ -36,7 +36,7 @@ export default function Projects(props) {
           variants={fade}
         >
         <Container>
-          <div className="relative w-full pt-8 pb-[88px] md:max-4xl">
+          <div className="relative w-full pt-8 pb-[80px] md:max-4xl">
            
             <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
              Current Projects
@@ -48,9 +48,9 @@ export default function Projects(props) {
 
           {posts &&
             posts.map((post) => (
-              <section>
+              <section className="mt-4 md:mt-0">
                 <div className="max-w-screen-xl px-4 md:py-16 mx-auto sm:px-6 px-0 lg:px-8">
-                  <div className="grid grid-cols-1 gap-2 lg:gap-16 lg:grid-cols-2">
+                  <div className="grid grid-cols-1 gap-0 lg:gap-16 lg:grid-cols-2">
                     <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                       <div
                         className="absolute inset-0 object-cover w-full h-full image-container2"

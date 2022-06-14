@@ -194,7 +194,7 @@ const Home = ({ data }) => {
                         </span>
                       </div>
                     </div>
-                    <h3 className="flex mb-2 text-xl font-bold md:text-2xl font-display">
+                    <h3 className="flex mb-2 text-xl font-bold md:text-2xl title-thin">
                       Adding Asian American Curriculum in Schools
                     </h3>
 
@@ -223,7 +223,7 @@ const Home = ({ data }) => {
                       <Link href={`/projects/${item.slug.current}`}>
                         <a className="rounded-lg flex flex-wrap border-b py-3 mb-4 bg-[rgba(98,50,0,.04)] shadow hover:shadow-lg hover:bg-yellow-lighter project-box md:mb-4">
                           <div className="flex flex-wrap w-full md:px-4">
-                            <div className="w-full px-6 py-6 rounded-lg  md:w-4/12">
+                            <div className="w-full px-4 md:px-6 py-6 rounded-lg  md:w-4/12">
                               {" "}
                               <ImageComponent
                                 image={
@@ -233,10 +233,10 @@ const Home = ({ data }) => {
                                 }
                               />
                             </div>
-                            <div className="flex flex-wrap w-full px-6 py-4 md:pl-10 md:pr-16 md:w-7/12">
+                            <div className="flex flex-wrap w-full px-4 md:px-6 py-4 md:pl-10 md:pr-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:justify-center items=center md:h-full">
                                 <div className="w-full">
-                                  <h3 className="text-xl font-bold md:text-3xl project-title1 text-darkgray mb-2">
+                                  <h3 className="text-xl font-bold md:text-3xl project-title1 text-darkgray mb-2 title-thin">
                                     {item.title[locale]}
                                   </h3>
                                   <p className="flex items-center mb-2 text-gray-700">
@@ -263,7 +263,7 @@ const Home = ({ data }) => {
                                   </p>
                                 </div>
 
-                                <div className="relative self-end mt-auto">
+                                <div className="relative self-end mt-2 md:mt-auto">
                                   <Link href={`/projects/${item.slug.current}`}>
                                     <a className="arrow-btn">
                                       <span className="flex items-center justify-center px-1 py-1 small-arrow">

@@ -21,7 +21,7 @@ export default function Header() {
           exit="exit" className="fixed top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 bg-gray-50 md:py-3 md:mb-6 xl:mb-8">
        
         <m.div variants={fade}>
-          <div className="w-full px-8 py-2 mx-auto md:shadow-md md:px-6 md:py-3">
+          <div className="w-full px-8 py-2 mx-auto md:px-6 md:py-3">
             <div className="relative flex md:flex-wrap">
               <m.div>
                 <Link href="/">
@@ -166,7 +166,7 @@ export default function Header() {
                 </div>
               </nav>
             </div>
-             <nav className="items-center justify-end hidden w-full mt-1 mr-1 space-x-2 text-sm md:mt-3 md:mr-0 md:flex md:text-base md:w-auto">
+             {/* <nav className="items-center justify-end hidden w-full mt-1 mr-1 space-x-2 text-sm md:mt-3 md:mr-0 md:flex md:text-base md:w-auto">
                 <Link href="/" locale="en">
                   <a className="underline link link--metis lang-item before:absolute hover:underline focus:text-gray-900">
                     EN
@@ -178,7 +178,7 @@ export default function Header() {
                     KO
                   </a>
                 </Link>
-              </nav>
+              </nav> */}
             {isNavOpen && (
               <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full p-8 text-white bg-blue z-12">
                 <div className="flex flex-wrap items-center mb-8">
@@ -354,7 +354,7 @@ export default function Header() {
                     <h2 id="mobileMenuTrayToggle" className="sr-only">
                       Mobile Menu Tray
                     </h2>
-                    <ul className="flex flex-wrap items-center mb-2">
+                    {/* <ul className="flex flex-wrap items-center mb-2">
                       <nav className="flex items-center justify-center w-full space-x-3 text-sm text-xl md:text-base md:w-auto">
                         <Link href="/" locale="en">
                           <a className="link link--metis lang-item before:absolute hover:text-gray-900 focus:text-gray-900">
@@ -368,7 +368,7 @@ export default function Header() {
                           </a>
                         </Link>
                       </nav>
-                    </ul>
+                    </ul> */}
                   </nav>
                 </div>
               </div>
