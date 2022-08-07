@@ -121,7 +121,7 @@ const Home = ({ data }) => {
                         <span className="circle" aria-hidden="true">
                           <span className="icon arrow"></span>
                         </span>
-                        <span className="button-text">More About Us</span>
+                        <span className="button-text">Learn more</span>
                       </a>
                     </Link>
                   </div>
@@ -130,7 +130,7 @@ const Home = ({ data }) => {
                       <a className="inline-flex items-center px-6 py-2 mt-2 font-extrabold text-white border rounded bg-blue border-blue hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
                         <span className="text-sm font-extrabold">
                           {" "}
-                          More About Us
+                          Learn more
                         </span>
 
                         <svg
@@ -338,8 +338,8 @@ const Home = ({ data }) => {
                                 <div
                                   className={`${bgColor} wrap-image ${borderColor} ${afterColor}`}
                                 >
-                                  <div className="relative z-10 flex-1 p-2 ml-2 bg-gray-300 md:w-full md:p-8 md:ml-0">
-                                    <h3 className="w-full text-2xl leading-none tracking-tight text-center md:text-2xl xl:text-3xl md:w-32 xl:w-48 md:mb-8 xl:mb-12">
+                                  <div className="relative z-10 flex-1 px-4 py-8 ml-2 bg-gray-300 md:w-full md:p-8 md:ml-0">
+                                    <h3 className="font-thin w-full text-2xl leading-none tracking-tight text-center md:text-2xl xl:text-3xl md:w-32 xl:w-48 md:mb-8 xl:mb-12">
                                       {item.title}
                                     </h3>
                                     <div className="w-11/12 mb-4 text-sm xl:text-base md:mb-6 md:w-full md:max-w-xs">

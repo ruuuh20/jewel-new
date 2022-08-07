@@ -214,7 +214,16 @@ export default function Footer({ contact }) {
                 </nav>
               </div>
               <div>
-                <p class="font-medium text-yellow">Programs</p>
+                <p class="font-medium text-yellow">Our Programs</p>
+                    <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
+             
+                  <Link href="/programs">
+                    <a class="hover:opacity-75"> Programs</a>
+                  </Link>
+                  <Link href="/projects">
+                    <a class="hover:opacity-75"> Projects </a>
+                  </Link>
+                </nav>
               </div>
 
               <div>
@@ -223,12 +232,13 @@ export default function Footer({ contact }) {
                   <Link href="/privacy">
                     <a className="hover:opacity-75"> Affiliates</a>
                   </Link>
-                  <Link href="/programs">
-                    <a class="hover:opacity-75"> Programs</a>
+                  <Link href="/news">
+                    <a class="hover:opacity-75"> News</a>
                   </Link>
-                  <Link href="/projects">
-                    <a class="hover:opacity-75"> Projects </a>
+                  <Link href="/support">
+                    <a class="hover:opacity-75">Support</a>
                   </Link>
+             
                 </nav>
               </div>
               <div>

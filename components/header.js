@@ -141,7 +141,7 @@ export default function Header() {
                   </ul>
                 </div>
                 <Link href="/donate">
-                  <a className="hidden px-5 py-2 tracking-wider text-white uppercase rounded md:inline-block border-1 bg-blue hover:bg-black">
+                  <a className="btn-donate hidden px-5 py-2 tracking-wider text-white uppercase rounded-lg md:inline-block border-1 bg-blue hover:bg-black">
                     Donate
                   </a>
                 </Link>

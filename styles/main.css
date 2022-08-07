@@ -715,3 +715,7 @@ font-family: 'roboto_condensedlight'
    .title-thin {
      font-family: 'roboto_condensedlight';
    }
+
+   .btn-donate {
+    border-radius: 40px;
+   }
