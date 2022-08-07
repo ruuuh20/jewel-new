@@ -96,8 +96,16 @@ export default function Header() {
                   }`}
                 />
                 <FancyLink
+                  destination="/news"
+                  a11yText="Navigate to the newspage"
+                  label="News"
+                  extraClasses={`hidden md:inline-block link link--metis before:absolute ${
+                    router.pathname == "/news" ? "text-yellow" : "text-[#242b2d]"
+                  }`}
+                />
+                <FancyLink
                   destination="/affiliates"
-                  a11yText="Navigate to the projects page"
+                  a11yText="Navigate to the affiliates page"
                   label="Affiliates"
                   extraClasses={`hidden md:inline-block link link--metis before:absolute ${
                     router.pathname == "/affiliates" ? "text-yellow" : "text-[#242b2d]"
@@ -291,6 +299,18 @@ export default function Header() {
                           className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                         >
                           Projects
+                        </a>
+                      </Link>
+                    </li>
+                    <li key="" className="mb-2 text-white lg:block">
+                      <Link href="/news">
+                        <a
+                          onClick={() => setIsNavOpen((prev) => !prev)}
+                          activeClassName="is--active"
+                          partiallyActive={true}
+                          className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
+                        >
+                          News
                         </a>
                       </Link>
                     </li>

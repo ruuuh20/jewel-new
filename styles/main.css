@@ -477,6 +477,7 @@ body {
 .about-item:before {
   font-size: 24px;
   position: absolute;
+  color: rgb(34, 118, 162);
   top: 1.2rem;
   left: 0;
   content: counters(itemcounter, ".", decimal-leading-zero);
