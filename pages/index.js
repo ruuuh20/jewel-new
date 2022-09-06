@@ -221,7 +221,7 @@ const Home = ({ data }) => {
                   {programData.map((item, i) => {
                     return (
                       <Link href={`/projects/${item.slug.current}`}>
-                        <a className="rounded-lg flex flex-wrap border-b py-3 mb-4 bg-[rgba(98,50,0,.04)] shadow hover:shadow-lg hover:bg-yellow-lighter project-box md:mb-4">
+                        <a className="rounded-lg flex flex-wrap border-b py-3 mb-4 bg-[rgba(98,50,0,.04)] shadow hover:shadow-lg hover:bg-yellow project-box md:mb-4">
                           <div className="flex flex-wrap w-full md:px-4">
                             <div className="w-full px-4 md:px-6 py-6 rounded-lg  md:w-4/12">
                               {" "}

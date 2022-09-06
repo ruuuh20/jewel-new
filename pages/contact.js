@@ -7,6 +7,7 @@ import client, {
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
 import Layout from "@/components/layout";
+import Image from "next/image"
 import Container from "@/components/container";
 import { ContactForm } from "@/components/form";
 import PageNav from "@/components/pageNav";
@@ -28,7 +29,17 @@ export default function Contact(props) {
         <NextSeo title="Contact Us" />
         <Container>
           <div className="relative w-full pt-[90px] md:pt-[180px]  pb-[45px]">
-            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+              <div className="relative">
+                <Image
+                  
+                  src="/ham-logo.png"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[4%]">
                  {locale === "ko" ? "연락처" : "Contact Us"}
             </span>
           </div>
@@ -37,7 +48,7 @@ export default function Contact(props) {
           <div className="flex flex-wrap">
             <div className="w-full mt-4 md:p-10 lg:w-5/12">
               <p className="text-base md:text-xl">
-                We’d love to hear from you. For all inquiries, you can send us
+                We’d love to hear from you. For all inquiries, you can send
                 an email at{" "}
                 <a
                   className="border-b border-yellow hover:text-yellow"
@@ -113,7 +124,7 @@ export default function Contact(props) {
             </div>
 
             <div className="w-full pt-6 lg:w-7/12">
-              <p className="text-xl text-center text-gray-600">Get in Touch</p>
+              
               <ContactForm />
             </div>
           </div>

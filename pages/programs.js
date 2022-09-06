@@ -5,7 +5,7 @@ import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
-
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription } from "../sanity";
 
@@ -39,10 +39,20 @@ export default function Programs(props) {
         >
           <Container>
             <div className="relative w-full md:max-4xl pt-8 pb-[88px]">
-              <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+               <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+              <div className="relative">
+                <Image
+                  
+                  src="/ham-logo.png"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+              <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
                 Our Programs
               </h2>
-              <span className="relative block pt-2 pb-0 pr-12 mb-0 text-xl font-light leading-normal tracking-tight text-gray-400 md:text-2xl lg:text-3xl">
+              <span className="relative block pt-2 pb-0 pr-12 mb-0 text-xl font-light leading-normal max-w-3xl tracking-tight text-gray-400 md:text-2xl lg:text-3xl">
                 We develop programs that promote cross-cultural understanding
                 through education and collaboration.
               </span>

@@ -5,7 +5,7 @@ import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
-
+import Image from "next/image"
 import { useRouter } from "next/router";
 import client, { getClient, usePreviewSubscription } from "../sanity";
 import ImageComponent from "@/components/image";
@@ -34,7 +34,17 @@ export default function About(props) {
         >
           <Container>
              <div className="relative w-full pt-8 pb-[88px]">
-              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+                <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+              <div className="relative">
+                <Image
+                  
+                  src="/ham-logo.png"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[4%]">
                 {locale === "ko" ? "함께하는교육 소개" : "Who We Are"}
               </span>
             </div>
@@ -42,7 +52,6 @@ export default function About(props) {
               {posts &&
                 posts.map((post) => (
                   <>
-                  
                       <div className="relative max-w-4xl mb-16 md:mb-20 2xl:mb-28">
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           <div className="relative mb-2 md:mb-3">

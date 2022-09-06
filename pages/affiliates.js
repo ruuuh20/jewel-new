@@ -4,7 +4,7 @@ import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
-
+import Image from "next/image";
 const Affiliates = (props) => {
     const router = useRouter();
   const locale = router.locale || router.defaultLocale;
@@ -22,8 +22,18 @@ const Affiliates = (props) => {
         >
       <Container>
             <div className="relative w-full pt-8 pb-[45px]">
-              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
-                {locale === "ko" ? "Affiliantes" : "Affiliates"}
+               <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+              <div className="relative">
+                <Image
+                  
+                  src="/ham-logo.png"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
+                {locale === "ko" ? "Affiliates" : "Affiliates"}
               </span>
             </div>
         <section>

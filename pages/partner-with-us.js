@@ -7,7 +7,7 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
 import {PartnershipForm} from "@/components/form";
-
+import Image from "next/image";
 const Partner = (props) => {
 
 
@@ -23,12 +23,22 @@ const Partner = (props) => {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[88px]"
           variants={fade}
         >
         <Container>
           <div className="relative w-full pt-8 pb-[45px]">
-            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+              <div className="relative">
+                <Image
+                  
+                  src="/ham-logo.png"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
               Become a Partner
             </span>
           </div>

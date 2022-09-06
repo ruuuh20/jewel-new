@@ -11,7 +11,7 @@ import Link from "next/link";
 import ImageComponent from "@/components/image";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
-
+import Image from "next/image";
 export default function Projects(props) {
   const { postdata, preview } = props;
 
@@ -37,8 +37,18 @@ export default function Projects(props) {
         >
         <Container>
           <div className="relative w-full pt-8 pb-[80px] md:max-4xl">
-           
-            <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl">
+            
+            <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+              <div className="relative">
+                <Image
+                  
+                  src="/ham-logo.png"
+                  width="40"
+                  height="40"
+                />
+              </div>
+            </div>
+            <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
              Current Projects
             </h2>
              <span className="relative block pt-2 pb-0 pr-12 mb-0 text-xl font-light leading-normal tracking-tight text-gray-400 md:text-2xl lg:text-3xl">
