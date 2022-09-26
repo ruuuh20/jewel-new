@@ -2,8 +2,7 @@ import { useRef } from "react";
 import { useRouter } from "next/router";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import Footer from "@/components/footer";
-import FancyLink from "@/components/fancyLink";
+
 import Link from "next/link";
 import { fade, textReveal } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
@@ -138,8 +137,8 @@ const Home = ({ data }) => {
                           stroke="currentColor"
                         >
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             stroke-width="2"
                             d="M17 8l4 4m0 0l-4 4m4-4H3"
                           />
@@ -191,7 +190,7 @@ const Home = ({ data }) => {
                         </span>
                       </div>
                     </div>
-                    <h3 className="flex mb-2 text-xl font-bold md:text-2xl title-thin">
+                    <h3 className="flex mb-2 text-xl  md:text-2xl font-pt">
                       Adding Asian American Curriculum in Schools
                     </h3>
 

@@ -81,7 +81,7 @@ export default function Founder(props) {
         >
           <Container>
             <div className="relative w-full pt-8 pb-[88px]">
-               <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+               <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
               <div className="relative">
                 <Image
                   
@@ -292,7 +292,143 @@ export default function Founder(props) {
             </m.div>
             <hr className="my-8 md:my-16" />
             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
-              <PageNav />
+              <div className="flex flex-col-reverse mt-12 md:mt-0 md:flex-row">
+                <div className="w-full max-w-4-col md:order-last">
+                  <div className="relative w-full">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        1
+                      </div>
+                      <a
+                        className="relative w-full text-3xl italic leading-loose pointer-events-none group md:text-5xl font-pt"
+                        href="/about"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
+                          <span className="relative z-10">About us</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        2
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/programs"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">Programs</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        3
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/projects"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">Projects</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        4
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/news"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow  relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">News</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        5
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/affiliates"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">Affiliates</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between w-full md:max-w-4-col md:block">
+                  <div className="relative w-full">
+                    <nav className="m-auto md:w-2/3">
+                      <span className="block mb-4 text-gray-600 leading-tight uppercase text-base md:text-[18px]">
+                        {"About Us"}
+                      </span>
+                      <ul className="flex flex-wrap">
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/about">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Our Mission
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/founder">
+                            <a className="block transition-all duration-300 ease-in-out pointer-events-none group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Founder's Message
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/leadership">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Leadership
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/history">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Our History
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/contact">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Contact
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
             </section>
           </Container>
         </m.div>

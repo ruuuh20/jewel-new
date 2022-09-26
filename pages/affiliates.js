@@ -5,6 +5,8 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
+
 const Affiliates = (props) => {
     const router = useRouter();
   const locale = router.locale || router.defaultLocale;
@@ -22,7 +24,7 @@ const Affiliates = (props) => {
         >
       <Container>
             <div className="relative w-full pt-8 pb-[45px]">
-               <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+               <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
               <div className="relative">
                 <Image
                   
@@ -52,7 +54,7 @@ const Affiliates = (props) => {
               </div>
 
               <div className="lg:py-24">
-                <h2 className="text-2xl md:text-3xl font-bold">
+                <h2 className="text-2xl font-bold md:text-3xl">
                   Peak Education Center
                 </h2>
 
@@ -192,6 +194,80 @@ const Affiliates = (props) => {
             </div>
           </div>
         </section>
+        <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+              <div className="flex mt-12 md:mt-0">
+                <div className="w-full max-w-4-col md:order-last">
+                  <div className="relative w-full">
+                    <div className="relative flex items-center h-20 select-none">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        1
+                      </div>
+                      <Link href="/about">
+                        <a className="relative w-full text-3xl italic leading-loose uppercase group md:text-5xl font-pt">
+                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
+                            <span className="relative z-10">About us</span>
+                          </span>
+                        </a>
+                      </Link>
+                    </div>
+
+                    <div className="relative flex items-center h-20 select-none">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        2
+                      </div>
+                      <Link href="/programs">
+                        <a className="relative w-full text-3xl italic leading-loose uppercase group md:text-5xl font-pt">
+                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow  relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                            <span className="relative z-10">Programs</span>
+                          </span>
+                        </a>
+                      </Link>
+                    </div>
+
+                    <div className="relative flex items-center h-20 select-none">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        3
+                      </div>
+                      <Link href="/projects">
+                        <a className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt">
+                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                            <span className="relative z-10">Projects</span>
+                          </span>
+                        </a>
+                      </Link>
+                    </div>
+
+                    <div className="relative flex items-center h-20 select-none">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        4
+                      </div>
+                      <Link href="/news">
+                        <a className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt">
+                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                            <span className="relative z-10">News</span>
+                          </span>
+                        </a>
+                      </Link>
+                    </div>
+
+                    <div className="relative flex items-center h-20 select-none">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        5
+                      </div>
+                      <Link href="/affiliates">
+                        <a className="relative w-full text-3xl leading-loose pointer-events-none group md:text-5xl font-pt">
+                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                            <span className="relative z-10">Affiliates</span>
+                          </span>
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between w-full md:max-w-4-col md:block"></div>
+              </div>
+            </section>
       </Container>
       </m.div>
       </LazyMotion>
