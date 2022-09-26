@@ -25,7 +25,7 @@ export default function Header() {
             <div className="relative flex md:flex-wrap">
               <m.div>
                 <Link href="/">
-                  <a className="font-bold text-[1.5rem] md:text-[2rem] uppercase font-semibold leading-tight">
+                  <a className="font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight font-pt">
                     {/* <div className={"image-container2"}>
                       <Image
                         src="/jlogo1.png"
@@ -141,7 +141,7 @@ export default function Header() {
                   </ul>
                 </div>
                 <Link href="/donate">
-                  <a className="btn-donate hidden px-5 py-2 tracking-wider text-white uppercase rounded-lg md:inline-block border-1 bg-blue hover:bg-black">
+                  <a className="hidden px-5 py-2 tracking-wider text-white uppercase rounded-lg btn-donate md:inline-block border-1 bg-blue hover:bg-black">
                     Donate
                   </a>
                 </Link>

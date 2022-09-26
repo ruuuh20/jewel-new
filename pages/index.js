@@ -128,10 +128,7 @@ const Home = ({ data }) => {
                   <div className="w-full m-auto mt-10 text-center md:hidden">
                     <Link href="/about">
                       <a className="inline-flex items-center px-6 py-2 mt-2 font-extrabold text-white border rounded bg-blue border-blue hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
-                        <span className="text-sm font-extrabold">
-                          {" "}
-                          Learn more
-                        </span>
+                        <span className="text-sm font-pt"> Learn more</span>
 
                         <svg
                           className="w-5 h-5 ml-3"
@@ -223,7 +220,7 @@ const Home = ({ data }) => {
                       <Link href={`/projects/${item.slug.current}`}>
                         <a className="rounded-lg flex flex-wrap border-b py-3 mb-4 bg-[rgba(98,50,0,.04)] shadow hover:shadow-lg hover:bg-yellow project-box md:mb-4">
                           <div className="flex flex-wrap w-full md:px-4">
-                            <div className="w-full px-4 md:px-6 py-6 rounded-lg  md:w-4/12">
+                            <div className="w-full px-4 py-6 rounded-lg md:px-6 md:w-4/12">
                               {" "}
                               <ImageComponent
                                 image={
@@ -233,15 +230,15 @@ const Home = ({ data }) => {
                                 }
                               />
                             </div>
-                            <div className="flex flex-wrap w-full px-4 md:px-6 py-4 md:pl-10 md:pr-16 md:w-7/12">
+                            <div className="flex flex-wrap w-full px-4 py-4 md:px-6 md:pl-10 md:pr-16 md:w-7/12">
                               <div className="flex-1 md:flex md:flex-wrap md:justify-center items=center md:h-full">
                                 <div className="w-full">
-                                  <h3 className="text-xl font-bold md:text-3xl project-title1 text-darkgray mb-2 title-thin">
+                                  <h3 className="mb-2 text-xl font-bold md:text-3xl project-title1 text-darkgray">
                                     {item.title[locale]}
                                   </h3>
                                   <p className="flex items-center mb-2 text-gray-700">
                                     <svg
-                                      className="svg-icon inline-block mr-2"
+                                      className="inline-block mr-2 svg-icon"
                                       style={{
                                         width: "1em",
                                         height: "1em",
@@ -339,7 +336,7 @@ const Home = ({ data }) => {
                                   className={`${bgColor} wrap-image ${borderColor} ${afterColor}`}
                                 >
                                   <div className="relative z-10 flex-1 px-4 py-8 ml-2 bg-gray-300 md:w-full md:p-8 md:ml-0">
-                                    <h3 className="font-thin w-full text-2xl leading-none tracking-tight text-center md:text-2xl xl:text-3xl md:w-32 xl:w-48 md:mb-8 xl:mb-12">
+                                    <h3 className="w-full text-2xl font-thin leading-none tracking-tight text-center md:text-2xl xl:text-3xl md:w-32 xl:w-48 md:mb-8 xl:mb-12">
                                       {item.title}
                                     </h3>
                                     <div className="w-11/12 mb-4 text-sm xl:text-base md:mb-6 md:w-full md:max-w-xs">

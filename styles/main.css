@@ -546,6 +546,12 @@ body {
   .project-box {
     transition: all .5s ease;
   }
+  .project-title1 {
+    font-family: pt-sans-narrow, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    
+  }
   .project-box:hover .project-title1 {
     text-decoration: underline;
    
@@ -719,3 +725,9 @@ font-family: 'roboto_condensedlight'
    .btn-donate {
     border-radius: 40px;
    }
+
+      .font-pt {
+      font-family: pt-sans-narrow, 'roboto_condensedlight';
+        font-weight: 500;
+        font-style: normal;
+     }
