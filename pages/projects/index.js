@@ -37,7 +37,7 @@ export default function Projects(props) {
         >
         <Container>
           <div className="relative w-full pt-8 pb-[120px] md:max-4xl">
-             <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+             <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
                 <span>프로젝트</span>
               </div>
             <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
@@ -50,9 +50,9 @@ export default function Projects(props) {
                 />
               </div>
             </div>
-            <h2 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
+            <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
              Current Projects
-            </h2>
+            </h3>
             
           </div>
 

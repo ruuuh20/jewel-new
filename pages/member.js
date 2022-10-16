@@ -27,7 +27,7 @@ export default function Member(props) {
         >
         <Container>
           <div className="relative w-full pt-8 pb-[120px]">
-            <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+            <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
               <span>함께해요</span>
             </div>
              <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-2">
@@ -40,9 +40,9 @@ export default function Member(props) {
                 />
               </div>
             </div>
-            <span className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
+            <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
               Become a Member
-            </span>
+            </h3>
           </div>
         </Container>
         <Container>

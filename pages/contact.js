@@ -35,7 +35,7 @@ export default function Contact(props) {
           >
             <Container>
               <div className="relative w-full pb-[120px]">
-                <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
                   <span>연락처</span>
                 </div>
                 <div className="absolute hidden mt-t overflow-visible md:block spin-slow spin-container">
@@ -43,9 +43,9 @@ export default function Contact(props) {
                     <Image src="/ham-logo.png" width="60" height="60" />
                   </div>
                 </div>
-                <span className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[5%]">
+                <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[5%]">
                   {locale === "ko" ? "연락처" : "Contact Us"}
-                </span>
+                </h3>
               </div>
             </Container>
             <Container>
