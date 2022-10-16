@@ -38,7 +38,7 @@ const FirstTab = () => {
           </span>
         </div>
       </div>
-      <h3 className="flex mb-2 text-xl md:text-2xl font-semibold">
+      <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
         2022 Korean Festival (KAAGNY)
       </h3>
 
@@ -77,7 +77,7 @@ const SecondTab = () => {
           </span>
         </div>
       </div>
-      <h3 className="flex mb-2 text-xl md:text-2xl font-semibold">
+      <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
         Adding Asian American Curriculum in Schools
       </h3>
 
