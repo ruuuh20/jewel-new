@@ -36,24 +36,24 @@ export default function Projects(props) {
           variants={fade}
         >
         <Container>
-          <div className="relative w-full pt-8 pb-[80px] md:max-4xl">
-            
-            <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
+          <div className="relative w-full pt-8 pb-[120px] md:max-4xl">
+             <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <span>프로젝트</span>
+              </div>
+            <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
               <div className="relative">
                 <Image
                   
                   src="/ham-logo.png"
-                  width="40"
-                  height="40"
+                  width="60"
+                  height="60"
                 />
               </div>
             </div>
-            <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
+            <h2 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
              Current Projects
             </h2>
-             <span className="relative block pt-2 pb-0 pr-12 mb-0 text-xl font-light leading-normal tracking-tight text-gray-400 md:text-2xl lg:text-3xl">
-              We implement a broad range of educational and cultural initiatives.
-            </span>
+            
           </div>
 
           {posts &&

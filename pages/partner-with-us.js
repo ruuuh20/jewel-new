@@ -27,20 +27,22 @@ const Partner = (props) => {
           variants={fade}
         >
         <Container>
-          <div className="relative w-full pt-8 pb-[45px]">
-             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+          <div className="relative w-full pt-8 pb-[120px]">
+            <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+              <span>함께해요</span>
+            </div>
+            <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-2">
               <div className="relative">
                 <Image
-                  
                   src="/ham-logo.png"
-                  width="40"
-                  height="40"
+                  width="60"
+                  height="60"
                 />
               </div>
             </div>
-            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
+            <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
               Become a Partner
-            </span>
+            </h3>
           </div>
         </Container>
         <Container>
@@ -67,7 +69,7 @@ const Partner = (props) => {
 
             <div className="w-full py-8 m-auto md:w-7/12">
               <p className="text-base text-gray-800 md:text-xl md:my-5">
-                You can also fill out our contact form for any inquiries.
+                You can fill out our contact form for any inquiries.
               </p>
               <PartnershipForm />
             </div>

@@ -27,20 +27,22 @@ export default function NewsPage({ posts }) {
             variants={fade}
           >
             <Container>
-              <div className="relative w-full pt-8 pb-[45px]">
-                 <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
-              <div className="relative">
-                <Image
-                  
-                  src="/ham-logo.png"
-                  width="40"
-                  height="40"
-                />
+              <div className="relative w-full pt-8 pb-[120px]">
+                 <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <span>소식</span>
               </div>
-            </div>
-                <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
+                <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
+                  <div className="relative">
+                    <Image
+                      src="/ham-logo.png"
+                      width="60"
+                      height="60"
+                    />
+                  </div>
+                </div>
+                <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
                   News
-                </span>
+                </h3>
               </div>
               <section className="pt-10">
                 <div class="table-wrapper max-w-3xl mx-auto mt-0">

@@ -25,7 +25,6 @@ export default function About(props) {
   return (
     <Layout>
       <NextSeo title="About" />
-
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"
@@ -34,15 +33,18 @@ export default function About(props) {
           className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
         >
           <Container>
-            <div className="relative w-full pt-8 pb-[88px]">
-              <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
+            <div className="relative w-full pt-8 pb-[128px]">
+              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <span>함께하는교육 소개</span>
+              </div>
+              <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
                 <div className="relative">
-                  <Image src="/ham-logo.png" width="44" height="44" />
+                  <Image src="/ham-logo.png" width="60" height="60" />
                 </div>
               </div>
-              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[4%]">
+              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[5%]">
                 {locale === "ko" ? "함께하는교육 소개" : "Who We Are"}
-              </span>
+              </h3>
             </div>
             <m.div variants={fade}>
               {posts &&
@@ -55,7 +57,7 @@ export default function About(props) {
                             {post.title[locale]}
                           </h2>
                         </div>
-                        <div className="w-full text-lg md:pr-12 md:text-3xl text-darkgray">
+                        <div className="w-full text-lg md:pr-12 md:text-3xl text-darkgray font-thin">
                           <p className="leading-snug">{post.introText}</p>
                         </div>
                       </div>

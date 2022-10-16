@@ -22,21 +22,23 @@ const Affiliates = (props) => {
           className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
           variants={fade}
         >
-      <Container>
-            <div className="relative w-full pt-8 pb-[45px]">
-               <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
+        <Container>
+          <div className="relative w-full pt-8 pb-[120px]">
+            <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <span>함께하는 기관/단체들</span>
+            </div>
+            <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
               <div className="relative">
                 <Image
-                  
                   src="/ham-logo.png"
-                  width="40"
-                  height="40"
+                  width="60"
+                  height="60"
                 />
               </div>
             </div>
-              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
-                {locale === "ko" ? "Affiliates" : "Affiliates"}
-              </span>
+              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
+                Affiliates
+              </h3>
             </div>
         <section>
           <div className="max-w-screen-xl px-4 mx-auto md:py-16 sm:px-6 lg:px-8">
@@ -156,7 +158,7 @@ const Affiliates = (props) => {
             <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                 <div className="absolute inset-0 flex items-center justify-center object-cover w-full h-full">
-                  Coming Soon
+                  <div class="p-12 border border-black rounded-full">Coming Soon</div>
                 </div>
               </div>
 

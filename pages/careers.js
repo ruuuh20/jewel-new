@@ -10,7 +10,6 @@ import Container from "@/components/container";
 import { ContactForm } from "@/components/form";
 import Image from "next/image";
 export default function Careers(props) {
-  const { postdata, preview } = props;
 
   const router = useRouter();
   const locale = router.locale || router.defaultLocale;
@@ -28,18 +27,21 @@ export default function Careers(props) {
           variants={fade}
         >
         <Container>
-          <div className="relative w-full pt-8 pb-[88px]">
-             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+          <div className="relative w-full pt-8 pb-[120px]">
+             <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+              <span>함께해요</span>
+            </div>
+             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-2">
               <div className="relative">
                 <Image
                   
                   src="/ham-logo.png"
-                  width="40"
-                  height="40"
+                  width="60"
+                  height="60"
                 />
               </div>
             </div>
-            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
+            <span className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
               Join Our Team
             </span>
           </div>

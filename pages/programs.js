@@ -38,19 +38,18 @@ export default function Programs(props) {
           variants={fade}
         >
           <Container>
-            <div className="relative w-full md:max-4xl pt-8 pb-[88px]">
-              <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
+            <div className="relative w-full md:max-4xl pt-8 pb-[120px]">
+              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <span>프로그램</span>
+              </div>
+              <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
                 <div className="relative">
-                  <Image src="/ham-logo.png" width="44" height="44" />
+                  <Image src="/ham-logo.png" width="60" height="60" />
                 </div>
               </div>
-              <h2 className="relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
-                Our Programs
-              </h2>
-              <span className="relative block max-w-3xl pt-2 pb-0 pr-12 mb-0 text-xl font-light leading-normal tracking-tight text-gray-400 md:text-2xl lg:text-3xl">
-                We develop programs that promote cross-cultural understanding
-                through education and collaboration.
-              </span>
+              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
+                Programs
+              </h3>
             </div>
             <m.div>
               <div className="w-full">

@@ -726,8 +726,52 @@ font-family: 'roboto_condensedlight'
     border-radius: 40px;
    }
 
-      .font-pt {
-      font-family: pt-sans-narrow, 'roboto_condensedlight';
-        font-weight: 500;
-        font-style: normal;
-     }
+  .font-pt {
+  font-family: pt-sans-narrow, 'roboto_condensedlight';
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .font-qs {
+    font-family: questa-sans, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+  .events-nav {
+
+  }
+
+  .events-nav {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .events-nav ul li {
+    margin-bottom: .1rem;
+    cursor: pointer;
+   
+  }
+
+  .active-tab {
+    color: black;
+    position: relative;
+    /* list-style: disc; */
+  }
+
+  .active-tab::before {
+    content: "";
+      display: block;
+      position: absolute;
+        top: 50%;
+            background-color: #949494;
+              border-radius: 100%;
+        left: -1.125rem;
+          margin-top: -0.25rem;
+          margin-left: -0.25rem;
+          width: 0.5rem;
+          height: 0.5rem;
+    transition: opacity .25s cubic-bezier(.86, 0, .07, 1), visibility 0s linear 0s;
+    
+        opacity: 1;
+  }

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
@@ -13,7 +13,88 @@ import Image from "next/image";
 import ArrowRight from "@/components/arrow-right";
 import Testimonial from "@/components/testimonial";
 
+const FirstTab = () => {
+  return (
+    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-16">
+      <div className="w-full px-0 m-auto border-none md:w-1/2 md:px-0">
+        <div className="flex justify-center w-full p-4 rounded-lg">
+          <Image
+            src="/koreanfestival22.jpg"
+            // layout="responsive"
+            width="360px"
+            height="450px"
+          />
+        </div>
+      </div>
+      <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
+        <div className="flex flex-wrap items-center">
+          <span className="flex items-center text-sm header-tag md:mr-5">
+            <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
+              Festival
+            </span>
+          </span>
+          <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
+            Sunday, October 23 2022 | 11am - 5:00pm
+          </span>
+        </div>
+      </div>
+      <h3 className="flex mb-2 text-xl md:text-2xl font-semibold">
+        2022 Korean Festival (KAAGNY)
+      </h3>
+
+      <div className="relative">
+        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
+          Celebrating Korean culture in New York City with food, vendors,
+          performances, and more.
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SecondTab = () => {
+  return (
+    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-16">
+      <div className="w-full px-0 m-auto border-none md:w-1/2 md:px-0">
+        <div className="flex justify-center w-full p-4 rounded-lg">
+          <Image
+            src="/aac-poster.png"
+            // layout="responsive"
+            width="360px"
+            height="460px"
+          />
+        </div>
+      </div>
+      <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
+        <div className="flex flex-wrap items-center">
+          <span className="flex items-center text-sm header-tag md:mr-5">
+            <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
+              Seminar
+            </span>
+          </span>
+          <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
+            Tuesday, April 26 2022
+          </span>
+        </div>
+      </div>
+      <h3 className="flex mb-2 text-xl md:text-2xl font-semibold">
+        Adding Asian American Curriculum in Schools
+      </h3>
+
+      <div className="relative">
+        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
+          NJ Korean American School Boards Luncheon <br /> Who should attend:
+          Korean American School Board, NJ, community leaders, educators,
+          parents and students, and policy makers
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Home = ({ data }) => {
+  const [activeTab, setActiveTab] = useState("tab1");
+
   const wavyTextRefs = useRef(null);
   const revealRefs = useRef(null);
   revealRefs.current = [];
@@ -27,6 +108,15 @@ const Home = ({ data }) => {
 
   const router = useRouter();
   const locale = router.locale || router.defaultLocale;
+
+  const handleTab1 = () => {
+    // update the state to tab1
+    setActiveTab("tab1");
+  };
+  const handleTab2 = () => {
+    // update the state to tab2
+    setActiveTab("tab2");
+  };
 
   return (
     <Layout>
@@ -152,63 +242,44 @@ const Home = ({ data }) => {
           </section>
 
           <Container>
-            <div className="flex flex-wrap py-4 md:py-10">
+            <section className="flex flex-wrap py-4 md:py-10">
               <h2 className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
-                Recent Events
+                Events
               </h2>
-              <div className="flex flex-wrap justify-center w-full mt-10 ailgn-middle md:-mx-6">
-                <div className="w-full mb-12 md:w-7/12 xl:w-1/2 md:px-6 md:mb-0">
-                  <div className="flex flex-col flex-wrap">
-                    <div className="w-full px-0 m-auto bg-gray-100 border-none md:w-1/2 md:px-0">
-                      <div className="flex justify-center w-full p-4 rounded-lg">
-                        <Image
-                          src="/aac-poster.png"
-                          // layout="responsive"
-                          width="350px"
-                          height="450px"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
-                      <div className="flex flex-wrap items-center">
-                        <span className="flex items-center text-sm header-tag md:mr-5">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="27"
-                            width="27"
-                            viewBox="0 0 45 45"
-                            className="w-2 opacity-50 md:w-2"
-                          >
-                            <path d="M43 41.45V9Q43 9 43 9Q43 9 43 9H5Q5 9 5 9Q5 9 5 9V25H2V9Q2 7.75 2.875 6.875Q3.75 6 5 6H43Q44.25 6 45.125 6.875Q46 7.75 46 9V38Q46 39.3 45.15 40.275Q44.3 41.25 43 41.45ZM18 27.95Q14.7 27.95 12.6 25.85Q10.5 23.75 10.5 20.45Q10.5 17.15 12.6 15.05Q14.7 12.95 18 12.95Q21.3 12.95 23.4 15.05Q25.5 17.15 25.5 20.45Q25.5 23.75 23.4 25.85Q21.3 27.95 18 27.95ZM18 24.95Q19.95 24.95 21.225 23.675Q22.5 22.4 22.5 20.45Q22.5 18.5 21.225 17.225Q19.95 15.95 18 15.95Q16.05 15.95 14.775 17.225Q13.5 18.5 13.5 20.45Q13.5 22.4 14.775 23.675Q16.05 24.95 18 24.95ZM2 44V39.3Q2 37.4 2.95 36.05Q3.9 34.7 5.4 34Q8.75 32.5 11.825 31.75Q14.9 31 18 31Q21.1 31 24.15 31.775Q27.2 32.55 30.55 34Q32.1 34.7 33.05 36.05Q34 37.4 34 39.3V44ZM5 41H31V39.3Q31 38.5 30.525 37.775Q30.05 37.05 29.35 36.7Q26.15 35.15 23.5 34.575Q20.85 34 18 34Q15.15 34 12.45 34.575Q9.75 35.15 6.6 36.7Q5.9 37.05 5.45 37.775Q5 38.5 5 39.3ZM18 20.45Q18 20.45 18 20.45Q18 20.45 18 20.45Q18 20.45 18 20.45Q18 20.45 18 20.45Q18 20.45 18 20.45Q18 20.45 18 20.45Q18 20.45 18 20.45Q18 20.45 18 20.45ZM18 41Q18 41 18 41Q18 41 18 41Q18 41 18 41Q18 41 18 41Q18 41 18 41Q18 41 18 41Q18 41 18 41Q18 41 18 41Z" />
-                          </svg>
-                          <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
-                            Seminar
-                          </span>
-                        </span>
-                        <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
-                          Apr 26, 2022
-                        </span>
-                      </div>
-                    </div>
-                    <h3 className="flex mb-2 text-xl  md:text-2xl font-pt">
-                      Adding Asian American Curriculum in Schools
-                    </h3>
 
-                    <div className="relative">
-                      <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-                        NJ Korean American School Boards Luncheon <br /> Who
-                        should attend: Korean American School Board, NJ,
-                        community leaders, educators, parents and students, and
-                        policy makers
-                      </div>
-                    </div>
-                  </div>
+              <div className="flex flex-wrap justify-around w-full mt-10">
+                <nav className="events-nav ">
+                  <ul className="">
+                    <li
+                      className={
+                        activeTab === "tab1"
+                          ? "active-tab"
+                          : "text-[#949494] hover:text-black"
+                      }
+                      onClick={handleTab1}
+                    >
+                      Upcoming
+                    </li>
+                    <li
+                      className={
+                        activeTab === "tab2"
+                          ? "active-tab"
+                          : "text-[#949494] hover:text-black"
+                      }
+                      onClick={handleTab2}
+                    >
+                      Past
+                    </li>
+                  </ul>
+                </nav>
+
+                <div className="w-full mb-12 md:w-7/12  md:px-6 md:mb-0">
+                  {activeTab === "tab1" ? <FirstTab /> : <SecondTab />}
                 </div>
               </div>
-            </div>
-          </Container>
-          <section>
-            <Container>
+            </section>
+
+            <section className="py-4 md:py-10">
               <div className="flex flex-wrap py-10">
                 <h2 className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
                   Projects
@@ -278,8 +349,8 @@ const Home = ({ data }) => {
                   })}
                 </div>
               </div>
-            </Container>
-          </section>
+            </section>
+          </Container>
 
           <section className="bg-gray-100">
             <Container>

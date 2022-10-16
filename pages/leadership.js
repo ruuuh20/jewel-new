@@ -39,20 +39,22 @@ export default function Leadership(props) {
           variants={fade}
         >
           <Container>
-            <div className="relative w-full pt-8 pb-[88px]">
-               <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
-              <div className="relative">
-                <Image
-                  
-                  src="/ham-logo.png"
-                  width="40"
-                  height="40"
-                />
+            <div className="relative w-full pt-8 pb-[120px]">
+              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <span>함께하는 사람들</span>
               </div>
+               <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
+                <div className="relative">
+                  <Image
+                    src="/ham-logo.png"
+                    width="60"
+                    height="60"
+                  />
+                </div>
             </div>
-              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
+              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%] font-pt">
                 {locale === "ko" ? "함께하는 사람들" : "Leadership"}
-              </span>
+              </h3>
             </div>
 
             <div className="flex flex-wrap mx-auto md:px-0 md:w-10/12">
@@ -208,7 +210,7 @@ export default function Leadership(props) {
                       </a>
                     </div>
 
-                    <div className="relative flex items-center h-auto select-none md:-20">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         3
                       </div>

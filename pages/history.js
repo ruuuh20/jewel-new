@@ -46,7 +46,6 @@ export default function About(props) {
   return (
     <Layout>
       <NextSeo title="Our History" />
-
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"
@@ -55,19 +54,22 @@ export default function About(props) {
           className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
         >
           <Container>
-            <div className="relative w-full pt-8 pb-[88px]">
-              <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
+            <div className="relative w-full pt-8 pb-[120px]">
+              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400">
+                <span>함께하는교육이 걸어온 길</span>
+              </div>
+              <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
                 <div className="relative">
-                  <Image src="/ham-logo.png" width="40" height="40" />
+                  <Image src="/ham-logo.png" width="60" height="60" />
                 </div>
               </div>
-              <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
+              <span className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
                 {locale === "ko" ? " 걸어온 길 " : "Our History"}
               </span>
             </div>
             <div className="w-full mx-auto mb-10 md:w-10/12">
               <div className="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
-                <div className="text-base md:text-[24px] leading-normal">
+                <div className="text-base font-thin md:text-[24px] leading-normal">
                   <p>{posts[0].history[locale]}</p>
                 </div>
               </div>
