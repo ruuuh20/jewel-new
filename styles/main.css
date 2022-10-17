@@ -730,6 +730,11 @@ font-family: 'roboto_condensedlight'
     font-weight: 500;
     font-style: normal;
   }
+  .font-pt-bold {
+  font-family: pt-sans-narrow, 'roboto_condensedlight';
+    font-weight: 700;
+    font-style: normal;
+  }
 
   .font-arial {
     font-family: Arial, Helvetica, sans-serif;
@@ -738,19 +743,38 @@ font-family: 'roboto_condensedlight'
   }
 
   .events-nav {
-
-  }
-
-  .events-nav {
     font-size: 2.5rem;
     font-weight: 600;
+   
   }
 
   .events-nav ul li {
-
     cursor: pointer;
-   
+  
   }
+
+  @media (max-width: 768px) {
+    .events-nav {
+      width: 100%;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .events-nav ul {
+      border: 1px #949494 solid;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .events-nav ul li {
+      display: inline-block
+    }
+
+         .events-nav ul li:first-child {
+          border-right: 1px #949494 solid;
+          padding-right: 1.2rem;
+         }
+     }
 
   .active-tab {
     color: black;

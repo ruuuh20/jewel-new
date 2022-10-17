@@ -77,7 +77,7 @@ export default function Leadership(props) {
                             <div className={`${p} w-full mb-16`}>
                               <div className="flex flex-col flex-wrap items-center justify-center">
                                 <div className="flex flex-col flex-wrap mb-2 md:mb-6">
-                                  <span className="uppercase tracking-wide text-2xl  md:text-3xl block mb-0 pb-0 font-display leading-none pt-1 relative block pb-2 mb-2  after:absolute after:h-[4px] after:bg-yellow after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%] text-center">
+                                  <span className="uppercase  text-2xl  md:text-3xl block mb-0 pb-0 font-display leading-none pt-1 relative block pb-2 mb-2  after:absolute after:h-[4px] after:bg-yellow after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%] text-center">
                                     {name}
                                   </span>
 
@@ -97,19 +97,19 @@ export default function Leadership(props) {
                                         .map((filteredPost, i) => (
                                          ( i >= 3 && filteredPost.boardName.en === "Directors" || filteredPost.boardName.en === "Honorary Advisory Board") ? (
                                             <li className="w-1/3 py-2">
-                                            <p className="font-bold md:text-lg">
+                                            <p className="font-pt-bold md:text-lg">
                                                {filteredPost.name.en} 
                                             </p>
-                                            <p className="text-gray-500">
+                                            <p className="text-gray-500 font-pt">
                                               {filteredPost.position.en}
                                             </p>
                                           </li>
                                           ) : (
                                             <li className="w-full py-2 md:px-16">
-                                            <p className="font-bold md:text-lg">
+                                            <p className="font-pt-bold md:text-lg">
                                                {filteredPost.name.en}
                                             </p>
-                                            <p className="text-gray-500">
+                                            <p className="text-gray-500 font-pt">
                                               {filteredPost.position.en}
                                             </p>
                                           </li>
@@ -176,11 +176,11 @@ export default function Leadership(props) {
                       </div>
                     </Container> */}
 
-                    <hr className="my-8 md:my-16"/>
+                    {/* <hr className="my-8 md:my-16"/> */}
            
           <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
               <div className="flex flex-col-reverse mt-12 md:flex-row md:mt-0">
-                <div className="w-full max-w-4-col md:order-last">
+                <div className="w-full max-w-4-col md:order-last mt-6 md:mt-0 border-t border-dashed md:border-none pt-10 md:pt-0">
                   <div className="relative w-full">
                     <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
@@ -254,7 +254,7 @@ export default function Leadership(props) {
                   </div>
                 </div>
 
-                <div className="flex justify-between w-full md:max-w-4-col md:block">
+                <div className="flex justify-between w-full md:max-w-4-col md:block text-right md:text-left">
                   <div className="relative w-full">
                     <nav className="m-auto md:w-2/3">
                       <span className="block mb-4 text-base md:text-[18px] text-gray-600 leading-tight uppercase">

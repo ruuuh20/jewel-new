@@ -22,7 +22,7 @@ import { useInView } from "react-intersection-observer";
 
 const FirstTab = () => {
   return (
-    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-16">
+    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
       <div className="w-full px-0 m-auto border-none md:w-1/2 md:px-0">
         <div className="flex justify-center w-full p-4 rounded-lg">
           <Image
@@ -61,7 +61,7 @@ const FirstTab = () => {
 
 const SecondTab = () => {
   return (
-    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-16">
+    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
       <div className="w-full px-0 m-auto border-none md:w-1/2 md:px-0">
         <div className="flex justify-center w-full p-4 rounded-lg">
           <Image

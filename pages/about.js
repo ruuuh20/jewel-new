@@ -110,11 +110,11 @@ export default function About(props) {
                   </>
                 ))}
             </m.div>
-            <hr className="my-8 md:my-16" />
+            {/* <hr className="my-8 md:my-16" /> */}
 
             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
               <div className="flex flex-col-reverse mt-12 md:mt-0 md:flex-row">
-                <div className="w-full max-w-4-col md:order-last">
+                <div className="w-full max-w-4-col md:order-last mt-6 md:mt-0 border-t border-dashed md:border-none pt-10 md:pt-0">
                   <div className="relative w-full">
                     <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
@@ -188,7 +188,7 @@ export default function About(props) {
                   </div>
                 </div>
 
-                <div className="flex justify-between w-full md:max-w-4-col md:block">
+                <div className="flex justify-between w-full md:max-w-4-col md:block text-right md:text-left">
                   <div className="relative w-full">
                     <nav className="m-auto md:w-2/3">
                       <span className="block mb-4  text-gray-600 leading-tight uppercase text-base md:text-[18px]">

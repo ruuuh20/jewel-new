@@ -106,7 +106,7 @@ export default function Programs(props) {
               <div className="flex mt-12 md:mt-0">
                 <div className="w-full max-w-4-col md:order-last">
                   <div className="relative w-full">
-                    <div className="relative flex items-center h-20 select-none">
+                    <div className="relative flex items-center h-auto md:h-20 select-none">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         1
                       </div>
@@ -119,7 +119,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-20 select-none">
+                    <div className="relative flex items-center h-auto md:h-20 select-none">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         2
                       </div>
@@ -132,7 +132,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-20 select-none">
+                    <div className="relative flex items-center h-auto md:h-20 select-none">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         3
                       </div>
@@ -145,7 +145,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-20 select-none">
+                    <div className="relative flex items-center h-auto md:h-20 select-none">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         4
                       </div>
@@ -158,7 +158,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-20 select-none">
+                    <div className="relative flex items-center h-auto md:h-20 select-none">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         5
                       </div>
