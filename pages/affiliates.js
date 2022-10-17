@@ -158,7 +158,7 @@ const Affiliates = (props) => {
             <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                 <div className="absolute inset-0 flex items-center justify-center object-cover w-full h-full">
-                  <div class="p-12 border border-black rounded-full">Coming Soon</div>
+                  <div className="p-12 border border-black rounded-full">Coming Soon</div>
                 </div>
               </div>
 

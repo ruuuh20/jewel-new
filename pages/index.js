@@ -1,17 +1,24 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-
+import { InView } from "react-intersection-observer";
 import Link from "next/link";
 import { fade, textReveal } from "@/helpers/transitions";
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import {
+  LazyMotion,
+  domAnimation,
+  m,
+  useAnimation,
+  useScroll,
+} from "framer-motion";
 import { NextSeo } from "next-seo";
 import { client } from "../sanity";
 import ImageComponent from "@/components/image";
 import Image from "next/image";
 import ArrowRight from "@/components/arrow-right";
 import Testimonial from "@/components/testimonial";
+import { useInView } from "react-intersection-observer";
 
 const FirstTab = () => {
   return (
@@ -93,12 +100,46 @@ const SecondTab = () => {
 };
 
 const Home = ({ data }) => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref2, inView2 } = useInView({
+    triggerOnce: true,
+  });
+  const boxVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+    if (!inView) {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+  useEffect(() => {
+    if (inView2) {
+      controls.start("visible");
+    }
+    if (!inView2) {
+      controls.start("hidden");
+    }
+  }, [controls, inView2]);
+  const isInView = useInView({ once: true });
+
   const [activeTab, setActiveTab] = useState("tab1");
 
-  const wavyTextRefs = useRef(null);
   const revealRefs = useRef(null);
   revealRefs.current = [];
-  wavyTextRefs.current = [];
+
   const fadeRevealRefs = (el) => {
     if (el && !revealRefs.current.includes(el)) {
       revealRefs.current.push(el);
@@ -121,7 +162,6 @@ const Home = ({ data }) => {
   return (
     <Layout>
       <NextSeo title="Home" />
-
       <LazyMotion features={domAnimation}>
         <m.main
           initial="initial"
@@ -171,7 +211,13 @@ const Home = ({ data }) => {
             </div>
           </Container>
 
-          <section className="relative w-full my-8 bg-yellow">
+          <m.section
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={fade}
+            className="relative w-full my-8 bg-yellow"
+          >
             <div className="hidden md:block absolute top-[7%] left-[48%] overflow-visible spin-slow spin-container">
               <div className="relative">
                 <Image
@@ -239,13 +285,19 @@ const Home = ({ data }) => {
                 </div>
               </div>
             </Container>
-          </section>
+          </m.section>
 
           <Container>
             <section className="flex flex-wrap py-4 md:py-10">
-              <h2 className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
+              <m.h2
+                variants={boxVariants}
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]"
+              >
                 Events
-              </h2>
+              </m.h2>
 
               <div className="flex flex-wrap justify-around w-full mt-10">
                 <nav className="events-nav ">
@@ -281,7 +333,13 @@ const Home = ({ data }) => {
 
             <section className="py-4 md:py-10">
               <div className="flex flex-wrap py-10">
-                <h2 className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]">
+                <h2
+                  variants={boxVariants}
+                  ref={ref2}
+                  initial="hidden"
+                  animate={controls}
+                  className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]"
+                >
                   Projects
                 </h2>
                 <div className="mb-12 mt-10 md:mb-16 2xl:mb-24 md:mx-[5rem] relative">

@@ -54,14 +54,14 @@ export default function Programs(props) {
             <m.div>
               <div className="w-full">
                 {/* <div className="w-full mb-5 md:mb-0 md:w-[300px]">
-                  <div class="w-full md:w-[250px]">
-                    <span class="block text-sm text-navy mb-5 font-medium">
+                  <div className="w-full md:w-[250px]">
+                    <span className="block text-sm text-navy mb-5 font-medium">
                       Categories
                     </span>
-                    <span class="inline-block text-sm text-gold underline mb-3 mr-5 font-medium">
+                    <span className="inline-block text-sm text-gold underline mb-3 mr-5 font-medium">
                       A
                     </span>
-                    <span class="inline-block text-sm text-gold underline mb-3 mr-5 font-medium">
+                    <span className="inline-block text-sm text-gold underline mb-3 mr-5 font-medium">
                       B
                     </span>
                   </div>

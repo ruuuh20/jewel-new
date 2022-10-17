@@ -33,7 +33,7 @@ const Testimonial = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
-            <blockquote className="flex flex-col justify-between h-full p-6 transition-colors duration-300 bg-white md:p-12 hover:bg-indigo-100">
+            <blockquote className="flex flex-col justify-between h-full p-6 transition-colors duration-300 bg-white md:p-12 hover:bg-[#fcecbe]">
               <div>
                 {/* <div class="flex space-x-0.5 text-green-500">
                   <svg
@@ -91,7 +91,7 @@ const Testimonial = () => {
               </footer>
             </blockquote>
 
-            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-[#fcecbe]">
               <div>
                 <div className="mt-4">
                   <p className="mt-4 text-gray-600">
@@ -106,7 +106,7 @@ const Testimonial = () => {
               </footer>
             </blockquote>
 
-            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-[#fcecbe]">
               <div>
                 <div className="mt-4">
                   <p className="mt-4 text-gray-600">
@@ -123,7 +123,7 @@ const Testimonial = () => {
               </footer>
             </blockquote>
 
-            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-[#fcecbe]">
               <div>
                 <div className="mt-4">
                   <p className="mt-4 text-gray-600">
@@ -141,7 +141,7 @@ const Testimonial = () => {
               </footer>
             </blockquote>
 
-            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-[#fcecbe]">
               <div>
                 <div className="mt-4">
                   <p className="mt-4 text-gray-600">
@@ -157,7 +157,7 @@ const Testimonial = () => {
               </footer>
             </blockquote>
 
-            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-indigo-100">
+            <blockquote className="flex flex-col justify-between h-full p-12 transition-colors duration-300 bg-white hover:bg-[#fcecbe]">
               <div>
                 <div className="mt-4">
                   <p className="mt-4 text-gray-600">

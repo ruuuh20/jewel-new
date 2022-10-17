@@ -43,7 +43,7 @@ export default function About(props) {
                 </div>
               </div>
               <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[5%]">
-                {locale === "ko" ? "함께하는교육 소개" : "Who We Are"}
+                Who We Are
               </h3>
             </div>
             <m.div variants={fade}>
@@ -64,7 +64,7 @@ export default function About(props) {
                     </div>
                     <section className="my-20">
                       <div className="flex flex-col flex-wrap md:flex-row">
-                        <div className="w-full md:w-1/2">
+                        <div className="w-full md:w-2/5">
                           <ImageComponent
                             image={
                               post.imageUrl !== null
@@ -73,29 +73,29 @@ export default function About(props) {
                             }
                           />
                         </div>
-                        <div className="w-full mt-10 md:w-1/2 md:mt-0">
-                          <div className="md:px-10 right-col">
-                            <div className="relative mb-2 md:mb-3">
+                        <div className="w-full mt-10 md:w-3/5 md:mt-0">
+                          <div className="md:px-16 right-col">
+                            <div className="relative mb-2">
                               <h2 className="block text-base tracking-wider uppercase md:text-xl text-blue-sub">
                                 Our Goals
                               </h2>
                             </div>
-                            <div className="flex flex-wrap mt-8 mb-4 text-darkgray">
+                            <div className="flex flex-wrap mt-6 mb-4 text-darkgray">
                               <div className="about-item">
-                                <p className="block  text-lg md:text-xl  leading-snug relative  2xl:mb-10 p-[2.5rem]">
+                                <p className="block  text-lg md:text-xl  leading-snug relative   p-[2.2rem]">
                                   Provide opportunities for the enrichment and
                                   learning of Asian cultures and history.
                                 </p>
                               </div>
                               <div className="about-item">
-                                <p className="block  text-lg md:text-xl  leading-snug relative 2xl:mb-10 p-[2.5rem]">
+                                <p className="block  text-lg md:text-xl  leading-snug relative  p-[2.2rem]">
                                   Empower future generations to celebrate their
                                   own heritage while engaging with other
                                   cultures.
                                 </p>
                               </div>
                               <div className="about-item">
-                                <p className="block text-lg md:text-xl  leading-snug relative  2xl:mb-10 p-[2.5rem] pt-4rem">
+                                <p className="block text-lg md:text-xl  leading-snug relative   p-[2.2rem] pt-4rem">
                                   Promote a mutual understanding for world
                                   cultures and methods of education
                                 </p>

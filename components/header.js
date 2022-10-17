@@ -25,7 +25,7 @@ export default function Header() {
             <div className="relative flex md:flex-wrap">
               <m.div>
                 <Link href="/">
-                  <a className="font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight font-pt">
+                  <a className="flex align-middle items-center font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight font-pt">
                     {/* <div className={"image-container2"}>
                       <Image
                         src="/jlogo1.png"
@@ -35,6 +35,23 @@ export default function Header() {
                         sizes="10vw"
                       />
                     </div> */}
+                      <span className="mr-3 mt-2 hidden md:block">
+                        <Image
+                                       
+                                          src="/ham-logo.png"
+                                          width="34"
+                                          height="34"
+                                        />
+                       
+                      </span>
+                      <span  className="mr-1 mt-2  block md:hidden mobile">
+                         <Image
+                                         
+                                          src="/ham-logo.png"
+                                          width="40"
+                                          height="40"
+                                        />
+                      </span>
                     JEWEL
                   </a>
                 </Link>
