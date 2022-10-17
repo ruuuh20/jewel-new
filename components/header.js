@@ -44,12 +44,12 @@ export default function Header() {
                                         />
                        
                       </span>
-                      <span  className="mr-1 mt-2  block md:hidden mobile">
+                      <span  className="mr-1 mt-1  block md:hidden mobile">
                          <Image
                                          
                                           src="/ham-logo.png"
-                                          width="40"
-                                          height="40"
+                                          width="45"
+                                          height="45"
                                         />
                       </span>
                     JEWEL
