@@ -225,7 +225,7 @@ export default function About(props) {
                       </a>
                     </div>
 
-                    <div className="relative flex items-center h-20 select-none">
+                    <div className="relative flex items-center h-auto md:h-20 select-none">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         5
                       </div>
