@@ -95,9 +95,9 @@ export default function Leadership(props) {
                                           (post) => post.boardName.en === name
                                         )
                                         .map((filteredPost, i) => (
-                                         ( i >= 3 && filteredPost.boardName.en === "Directors" || filteredPost.boardName.en === "Honorary Advisory Board") ? (
-                                            <li className="w-1/3 py-2">
-                                            <p className="font-pt-bold md:text-lg">
+                                         ( i >= 4 && filteredPost.boardName.en === "Directors" || filteredPost.boardName.en === "Honorary Advisory Board") ? (
+                                            <li className="w-1/3 py-2 md:text-lg">
+                                            <p className="font-pt-bold">
                                                {filteredPost.name.en} 
                                             </p>
                                             <p className="text-gray-500 font-pt">
@@ -180,7 +180,7 @@ export default function Leadership(props) {
            
           <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
               <div className="flex flex-col-reverse mt-12 md:flex-row md:mt-0">
-                <div className="w-full max-w-4-col md:order-last mt-6 md:mt-0 border-t border-dashed md:border-none pt-10 md:pt-0">
+                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
                   <div className="relative w-full">
                     <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
@@ -254,7 +254,7 @@ export default function Leadership(props) {
                   </div>
                 </div>
 
-                <div className="flex justify-between w-full md:max-w-4-col md:block text-right md:text-left">
+                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
                   <div className="relative w-full">
                     <nav className="m-auto md:w-2/3">
                       <span className="block mb-4 text-base md:text-[18px] text-gray-600 leading-tight uppercase">
