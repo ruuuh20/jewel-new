@@ -1,6 +1,6 @@
 export default {
-  defaultTitle: 'Joining East & West as Educational Liasons',
-  description: 'Homepage for JEWEL',
+  defaultTitle: 'Joining East & West as Educational Liasons | JEWEL Organization',
+  description: 'Homepage for JEWEL Organization',
   titleTemplate: '%s | JEWEL',
   openGraph: {
     type: 'website',

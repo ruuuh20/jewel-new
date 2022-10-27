@@ -29,7 +29,7 @@ export default function Leadership(props) {
   ];
   return (
     <Layout>
-      <NextSeo title="Leadership" />
+      <NextSeo title="Leadership" description="Leadership positions at JEWEL" />
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"

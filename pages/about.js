@@ -24,7 +24,7 @@ export default function About(props) {
 
   return (
     <Layout>
-      <NextSeo title="About" />
+      <NextSeo title="About" description="JEWEL is a nonprofit organization" />
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"
