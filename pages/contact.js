@@ -24,7 +24,7 @@ export default function Contact(props) {
   return (
     <>
       <Layout>
-        <NextSeo title="Contact Us" />
+        <NextSeo title="Contact Us" description="contact information for JEWEL" />
         <LazyMotion features={domAnimation}>
           <m.div
             initial="initial"

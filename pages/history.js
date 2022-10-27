@@ -45,7 +45,7 @@ export default function About(props) {
 
   return (
     <Layout>
-      <NextSeo title="Our History" />
+      <NextSeo title="Our History" description="History of the organization" />
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"

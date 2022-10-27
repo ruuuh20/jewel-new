@@ -17,7 +17,7 @@ export default function NewsPage({ posts }) {
   return (
     <>
       <Layout>
-        <NextSeo title="Become a Partner" />
+        <NextSeo title="Become a Partner" description="News about JEWEL" />
         <LazyMotion features={domAnimation}>
           <m.div
             initial="initial"

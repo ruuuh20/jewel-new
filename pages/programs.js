@@ -27,7 +27,7 @@ export default function Programs(props) {
 
   return (
     <Layout>
-      <NextSeo title="Programs" />
+      <NextSeo title="Programs" description="Our current programs" />
 
       <LazyMotion features={domAnimation}>
         <m.div
