@@ -63,9 +63,9 @@ export default function About(props) {
                   <Image src="/ham-logo.png" width="60" height="60" />
                 </div>
               </div>
-              <span className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-                {locale === "ko" ? " 걸어온 길 " : "Our History"}
-              </span>
+              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
+                Our History
+              </h3>
             </div>
             <div className="w-full mx-auto mb-10 md:w-10/12">
               <div className="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
@@ -92,11 +92,9 @@ export default function About(props) {
                                 </div>
                               </div>
                               <div className="w-full ml-auto leading-8 md:w-7/12 xl:w-4/6 md:pl-10">
-                                {locale === "ko" ? (
-                                  <PortableText value={item.timelineBlockKo} />
-                                ) : (
+                               
                                   <PortableText value={item.timelineBlockEn} />
-                                )}
+                          
                               </div>
                             </div>
                           </>

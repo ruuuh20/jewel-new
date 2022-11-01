@@ -53,7 +53,7 @@ export default function Leadership(props) {
                 </div>
             </div>
               <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-                {locale === "ko" ? "함께하는 사람들" : "Leadership"}
+               Leadership
               </h3>
             </div>
 

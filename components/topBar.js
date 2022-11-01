@@ -6,7 +6,7 @@ export default function TopBar() {
       <div className="max-w-[1500px] px-6 mx-auto w-full">
         <div className="flex flex-wrap">
           
-
+{/* 
           <nav className="flex w-full ml-auto space-x-4 text-sm md:text-base md:w-auto justify-center items-center">
             
 
@@ -18,7 +18,7 @@ export default function TopBar() {
              <Link href="/" locale="ko">
                       <a className="hover:text-gray-900 focus:text-gray-900">한국어</a>
                     </Link>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </div>
