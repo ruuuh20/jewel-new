@@ -798,3 +798,7 @@ font-family: 'roboto_condensedlight'
     
         opacity: 1;
   }
+
+  .rounded-lg img {
+    border-radius: 1rem;
+  }

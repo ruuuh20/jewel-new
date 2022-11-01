@@ -23,13 +23,13 @@ import { useInView } from "react-intersection-observer";
 const FirstTab = () => {
   return (
     <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
-      <div className="w-full px-0 m-auto border-none md:w-1/2 md:px-0">
-        <div className="flex justify-center w-full p-4 rounded-lg">
+      <div className="w-full px-0 m-auto border-none md:w-full md:px-0">
+        <div className="flex justify-center w-full rounded-lg">
           <Image
-            src="/koreanfestival22.jpg"
+            src="/IMG-1479.PNG"
             // layout="responsive"
-            width="360px"
-            height="450px"
+            width="500px"
+            height="680px"
           />
         </div>
       </div>
@@ -37,22 +37,21 @@ const FirstTab = () => {
         <div className="flex flex-wrap items-center">
           <span className="flex items-center text-sm header-tag md:mr-5">
             <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
-              Festival
+             Seminar
             </span>
           </span>
           <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
-            Sunday, October 23 2022 | 11am - 5:00pm
+            Wednesday, November 9 2022 | 10am - 12:00pm
           </span>
         </div>
       </div>
       <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
-        2022 Korean Festival (KAAGNY)
+        NJ Korean American School Boards Luncheon (2nd)
       </h3>
 
       <div className="relative">
         <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-          Celebrating Korean culture in New York City with food, vendors,
-          performances, and more.
+         
         </div>
       </div>
     </div>
@@ -61,14 +60,15 @@ const FirstTab = () => {
 
 const SecondTab = () => {
   return (
+    <>
     <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
-      <div className="w-full px-0 m-auto border-none md:w-1/2 md:px-0">
-        <div className="flex justify-center w-full p-4 rounded-lg">
+      <div className="w-full px-0 m-auto border-none md:px-0">
+        <div className="flex justify-center w-full rounded-lg">
           <Image
             src="/aac-poster.png"
             // layout="responsive"
-            width="360px"
-            height="460px"
+            width="380px"
+            height="480px"
           />
         </div>
       </div>
@@ -96,6 +96,41 @@ const SecondTab = () => {
         </div>
       </div>
     </div>
+    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
+      <div className="w-full px-0 m-auto border-none  md:px-0">
+        <div className="flex justify-center w-full rounded-lg">
+          <Image
+            src="/koreanfestival22.jpg"
+            // layout="responsive"
+            width="380px"
+            height="480px"
+          />
+        </div>
+      </div>
+      <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
+        <div className="flex flex-wrap items-center">
+          <span className="flex items-center text-sm header-tag md:mr-5">
+            <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
+              Festival
+            </span>
+          </span>
+          <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
+            Sunday, October 23 2022 | 11am - 5:00pm
+          </span>
+        </div>
+      </div>
+      <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
+        2022 Korean Festival (KAAGNY)
+      </h3>
+
+      <div className="relative">
+        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
+          Celebrating Korean culture in New York City with food, vendors,
+          performances, and more.
+        </div>
+      </div>
+    </div>
+    </>
   );
 };
 
@@ -300,7 +335,7 @@ const Home = ({ data }) => {
               </m.h2>
 
               <div className="flex flex-wrap justify-around w-full mt-10">
-                <nav className="events-nav ">
+                <nav className="events-nav font-thin uppercase">
                   <ul className="">
                     <li
                       className={
