@@ -54,7 +54,7 @@ export default function About(props) {
                       <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                         <div className="relative mb-2 md:mb-3">
                           <h2 className="block tracking-wider uppercase md:text-xl text-blue-sub">
-                            {post.title[locale]}
+                            {post.title.en}
                           </h2>
                         </div>
                         <div className="w-full text-lg md:pr-12 md:text-3xl text-darkgray font-thin">

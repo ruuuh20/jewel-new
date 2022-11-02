@@ -17,9 +17,9 @@ const Project = ({ program }) => {
 
   return (
     <Layout>
-      <NextSeo title={program.title[locale]} />
+      <NextSeo title={program.title.en} />
       <Container>
-        <section className="h-auto py-4 md:py-[6rem]">
+        <section className="h-auto py-4 md:py-[6rem] md:pt-[8rem]">
           <button
             className="flex flex-wrap items-center"
             type="button"
@@ -50,7 +50,7 @@ const Project = ({ program }) => {
         {/* <div className="relative w-full pt-8 pb-[88px]"></div> */}
         <div className="w-full md:w-1/2">
           <h1 className="font-serif text-[26px] md:text-[50px] leading">
-            {program.title[locale] ? program.title[locale] : ""}
+            {program.title.en}
           </h1>
         </div>
         <div className="mb-16 images-section">

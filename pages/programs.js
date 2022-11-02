@@ -73,7 +73,7 @@ export default function Programs(props) {
                         <li>
                           <Accordion
                             key={i}
-                            heading={post.title[locale]}
+                            heading={post.title.en}
                             index={`0${i + 1}`}
                             // icon={service.icon.asset}
                           >

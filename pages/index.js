@@ -397,7 +397,7 @@ const Home = ({ data }) => {
                               <div className="flex-1 md:flex md:flex-wrap md:justify-center items=center md:h-full">
                                 <div className="w-full">
                                   <h3 className="mb-2 text-xl font-bold md:text-3xl project-title1 text-darkgray">
-                                    {item.title[locale]}
+                                    {item.title.en}
                                   </h3>
                                   <p className="flex items-center mb-2 text-gray-700">
                                     <svg
