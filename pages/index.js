@@ -36,11 +36,11 @@ const FirstTab = () => {
       <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
         <div className="flex flex-wrap items-center">
           <span className="flex items-center text-sm header-tag md:mr-5">
-            <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
-             Seminar
+            <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
+              Seminar
             </span>
           </span>
-          <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
+          <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
             Wednesday, November 9 2022 | 10am - 12:00pm
           </span>
         </div>
@@ -50,9 +50,7 @@ const FirstTab = () => {
       </h3>
 
       <div className="relative">
-        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-         
-        </div>
+        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark"></div>
       </div>
     </div>
   );
@@ -61,75 +59,75 @@ const FirstTab = () => {
 const SecondTab = () => {
   return (
     <>
-    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
-      <div className="w-full px-0 m-auto border-none md:px-0">
-        <div className="flex justify-center w-full rounded-lg">
-          <Image
-            src="/aac-poster.png"
-            // layout="responsive"
-            width="380px"
-            height="480px"
-          />
+      <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
+        <div className="w-full px-0 m-auto border-none md:px-0">
+          <div className="flex justify-center w-full rounded-lg">
+            <Image
+              src="/aac-poster.png"
+              // layout="responsive"
+              width="380px"
+              height="480px"
+            />
+          </div>
         </div>
-      </div>
-      <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
-        <div className="flex flex-wrap items-center">
-          <span className="flex items-center text-sm header-tag md:mr-5">
+        <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
+          <div className="flex flex-wrap items-center">
+            <span className="flex items-center text-sm header-tag md:mr-5">
+              <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
+                Seminar
+              </span>
+            </span>
             <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
-              Seminar
+              Tuesday, April 26 2022
             </span>
-          </span>
-          <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
-            Tuesday, April 26 2022
-          </span>
+          </div>
         </div>
-      </div>
-      <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
-        Adding Asian American Curriculum in Schools
-      </h3>
+        <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
+          Adding Asian American Curriculum in Schools
+        </h3>
 
-      <div className="relative">
-        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-          NJ Korean American School Boards Luncheon <br /> Who should attend:
-          Korean American School Board, NJ, community leaders, educators,
-          parents and students, and policy makers
+        <div className="relative">
+          <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
+            NJ Korean American School Boards Luncheon <br /> Who should attend:
+            Korean American School Board, NJ, community leaders, educators,
+            parents and students, and policy makers
+          </div>
         </div>
       </div>
-    </div>
-    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
-      <div className="w-full px-0 m-auto border-none  md:px-0">
-        <div className="flex justify-center w-full rounded-lg">
-          <Image
-            src="/koreanfestival22.jpg"
-            // layout="responsive"
-            width="380px"
-            height="480px"
-          />
+      <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
+        <div className="w-full px-0 m-auto border-none md:px-0">
+          <div className="flex justify-center w-full rounded-lg">
+            <Image
+              src="/koreanfestival22.jpg"
+              // layout="responsive"
+              width="380px"
+              height="480px"
+            />
+          </div>
         </div>
-      </div>
-      <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
-        <div className="flex flex-wrap items-center">
-          <span className="flex items-center text-sm header-tag md:mr-5">
-            <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
-              Festival
+        <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
+          <div className="flex flex-wrap items-center">
+            <span className="flex items-center text-sm header-tag md:mr-5">
+              <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
+                Festival
+              </span>
             </span>
-          </span>
-          <span className="block mr-2 text-sm tracking-wide text-blue uppercase">
-            Sunday, October 23 2022 | 11am - 5:00pm
-          </span>
+            <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
+              Sunday, October 23 2022 | 11am - 5:00pm
+            </span>
+          </div>
         </div>
-      </div>
-      <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
-        2022 Korean Festival (KAAGNY)
-      </h3>
+        <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
+          2022 Korean Festival (KAAGNY)
+        </h3>
 
-      <div className="relative">
-        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-          Celebrating Korean culture in New York City with food, vendors,
-          performances, and more.
+        <div className="relative">
+          <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
+            Celebrating Korean culture in New York City with food, vendors,
+            performances, and more.
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
@@ -323,6 +321,56 @@ const Home = ({ data }) => {
           </m.section>
 
           <Container>
+            <section className="grid-wrapper">
+              <div class="card-container grid-container">
+                <Link href="/">
+                  <a>
+                    <div class="card">
+                      <div>image</div>
+                      <h2 class="card-title">Ganadara Korean School</h2>
+                      <p class="card-description">Card Description</p>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <div class="card">
+                      <div>image</div>
+                      <h2 class="card-title">JEWEL</h2>
+                      <p class="card-description">Card Description</p>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <div class="card">
+                      <div>image</div>
+                      <h2 class="card-title">Visiting Korea</h2>
+                      <p class="card-description">Card Description</p>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <div class="card">
+                      <div>image</div>
+                      <h2 class="card-title">Global Network</h2>
+                      <p class="card-description">Card Description</p>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+            </section>
+
+            <section className="grid grid-wrapper">
+              <div className="grid grid-container">
+                <div className="card-item">
+                  <div className="card-container">asdasd</div>
+                </div>
+              </div>
+            </section>
+          </Container>
+          <Container>
             <section className="flex flex-wrap py-4 md:py-10">
               <m.h2
                 variants={boxVariants}
@@ -335,7 +383,7 @@ const Home = ({ data }) => {
               </m.h2>
 
               <div className="flex flex-wrap justify-around w-full mt-10">
-                <nav className="events-nav font-thin uppercase">
+                <nav className="font-thin uppercase events-nav">
                   <ul className="">
                     <li
                       className={
@@ -360,7 +408,7 @@ const Home = ({ data }) => {
                   </ul>
                 </nav>
 
-                <div className="w-full mb-12 md:w-7/12  md:px-6 md:mb-0">
+                <div className="w-full mb-12 md:w-7/12 md:px-6 md:mb-0">
                   {activeTab === "tab1" ? <FirstTab /> : <SecondTab />}
                 </div>
               </div>

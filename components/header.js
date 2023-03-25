@@ -35,7 +35,7 @@ export default function Header() {
                         sizes="10vw"
                       />
                     </div> */}
-                      <span className="mr-3 mt-2 hidden md:block">
+                      <span className="hidden mt-2 mr-3 md:block">
                         <Image
                                        
                                           src="/ham-logo.png"
@@ -44,15 +44,22 @@ export default function Header() {
                                         />
                        
                       </span>
-                      <span  className="mr-1 mt-1  block md:hidden mobile">
+                      <span  className="block mt-1 mr-1 md:hidden mobile">
                          <Image
                                          
                                           src="/ham-logo.png"
-                                          width="45"
+                                          width="50"
+                                          height="50"
+                                        />
+                      </span>
+                     <span  className="block mt-1 mr-1">
+                         <Image
+                                         
+                                          src="/fontlogoET.svg"
+                                          width="90"
                                           height="45"
                                         />
                       </span>
-                    JEWEL
                   </a>
                 </Link>
               </m.div>
