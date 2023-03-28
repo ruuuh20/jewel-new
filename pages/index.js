@@ -17,120 +17,9 @@ import { client } from "../sanity";
 import ImageComponent from "@/components/image";
 import Image from "next/image";
 import ArrowRight from "@/components/arrow-right";
-import Testimonial from "@/components/testimonial";
+
 import { useInView } from "react-intersection-observer";
-
-const FirstTab = () => {
-  return (
-    <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
-      <div className="w-full px-0 m-auto border-none md:w-full md:px-0">
-        <div className="flex justify-center w-full rounded-lg">
-          <Image
-            src="/IMG-1479.PNG"
-            // layout="responsive"
-            width="500px"
-            height="680px"
-          />
-        </div>
-      </div>
-      <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
-        <div className="flex flex-wrap items-center">
-          <span className="flex items-center text-sm header-tag md:mr-5">
-            <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
-              Seminar
-            </span>
-          </span>
-          <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
-            Wednesday, November 9 2022 | 10am - 12:00pm
-          </span>
-        </div>
-      </div>
-      <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
-        NJ Korean American School Boards Luncheon (2nd)
-      </h3>
-
-      <div className="relative">
-        <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark"></div>
-      </div>
-    </div>
-  );
-};
-
-const SecondTab = () => {
-  return (
-    <>
-      <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
-        <div className="w-full px-0 m-auto border-none md:px-0">
-          <div className="flex justify-center w-full rounded-lg">
-            <Image
-              src="/aac-poster.png"
-              // layout="responsive"
-              width="380px"
-              height="480px"
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
-          <div className="flex flex-wrap items-center">
-            <span className="flex items-center text-sm header-tag md:mr-5">
-              <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
-                Seminar
-              </span>
-            </span>
-            <span className="block mr-2 text-sm tracking-wide text-gray-700 uppercase">
-              Tuesday, April 26 2022
-            </span>
-          </div>
-        </div>
-        <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
-          Adding Asian American Curriculum in Schools
-        </h3>
-
-        <div className="relative">
-          <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-            NJ Korean American School Boards Luncheon <br /> Who should attend:
-            Korean American School Board, NJ, community leaders, educators,
-            parents and students, and policy makers
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-wrap bg-[rgba(98,50,0,.04)] py-4 px-4 md:px-16 rounded-lg">
-        <div className="w-full px-0 m-auto border-none md:px-0">
-          <div className="flex justify-center w-full rounded-lg">
-            <Image
-              src="/koreanfestival22.jpg"
-              // layout="responsive"
-              width="380px"
-              height="480px"
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap items-end w-full mt-2 mb-2 md:items-center md:mr-5 md:mt-5 md:mb-5">
-          <div className="flex flex-wrap items-center">
-            <span className="flex items-center text-sm header-tag md:mr-5">
-              <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
-                Festival
-              </span>
-            </span>
-            <span className="block mr-2 text-sm tracking-wide uppercase text-blue">
-              Sunday, October 23 2022 | 11am - 5:00pm
-            </span>
-          </div>
-        </div>
-        <h3 className="flex mb-2 text-xl md:text-2xl project-title1">
-          2022 Korean Festival (KAAGNY)
-        </h3>
-
-        <div className="relative">
-          <div className="mt-2 mb-4 text-lg opacity-70 md:mb-6 content content--dark">
-            Celebrating Korean culture in New York City with food, vendors,
-            performances, and more.
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+import GrayscaleImage from "@/components/grayscaleImage";
 
 const Home = ({ data }) => {
   const controls = useAnimation();
@@ -203,53 +92,43 @@ const Home = ({ data }) => {
           // className="mb-12 md:mb-16 xl:mb-24"
         >
           <Container>
-            <div className="overflow-hidden mt-[10rem] md:mt-[15rem]">
-              <m.span
-                variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
-              >
-                <span className="spin spin-0">J</span>
-                <span className="text-blue">OINING</span>
-              </m.span>
-            </div>
-            <div className="overflow-hidden">
-              <m.span
-                variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
-              >
-                <span className="spin spin-3">E</span>
-                <span className="text-blue">AST &</span>{" "}
-                <span className="spin spin-2">W</span>
-                <span className="text-blue">EST</span>
-              </m.span>
-            </div>
-            <div className="overflow-hidden">
-              <m.span
-                variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
-              >
-                <span className="text-blue">AS</span>{" "}
-                <span className="spin spin-1">E</span>
-                <span className="text-blue">DUCATIONAL</span>
-              </m.span>
-            </div>
-            <div className="overflow-hidden">
-              <m.span
-                variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
-              >
-                <span className="spin spin-4">L</span>
-                <span className="text-blue">IASONS</span>
-              </m.span>
-            </div>
+            <section>
+              <div className="flex flex-wrap h-[90vh]">
+                <div className="w-full img-wrapper">
+                  {/* <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  > */}
+                  <Image
+                    src="/hero-img-1.jpg"
+                    layout="fill"
+                    objectFit="cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  {/* <div
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        backgroundColor: "rgba(0, 0, 0, 0.3)", // semi-transparent black
+                      }}
+                    /> */}
+                  {/* </div> */}
+                </div>
+              </div>
+            </section>
           </Container>
-
           <m.section
             initial="initial"
             animate="enter"
             exit="exit"
             variants={fade}
-            className="relative w-full my-8 bg-yellow"
+            className="relative w-full my-10"
           >
             <div className="hidden md:block absolute top-[7%] left-[48%] overflow-visible spin-slow spin-container">
               <div className="relative">
@@ -274,8 +153,8 @@ const Home = ({ data }) => {
             <Container>
               <div className="m-auto py-[4rem] md:mt-10 md:py-28">
                 <div className="flex flex-col px-2 md:px-[14rem]">
-                  <div className="relative mt-8 mb-2 md:mt-3">
-                    <h4 className="block tracking-widest text-center uppercase text-blue-sub md:text-lg">
+                  <div className="relative mt-8 mb-2 md:mt-4">
+                    <h4 className="block tracking-widest text-center uppercase text-blue-sub md:text-xl">
                       Who We Are
                     </h4>
                   </div>
@@ -324,96 +203,96 @@ const Home = ({ data }) => {
             <section className="grid-wrapper">
               <div class="card-container grid-container">
                 <Link href="/">
-                  <a>
-                    <div class="card">
-                      <div>image</div>
-                      <h2 class="card-title">Ganadara Korean School</h2>
-                      <p class="card-description">Card Description</p>
-                    </div>
+                  <a className="card-wrapper-link">
+                    <article class="card flex flex-col h-full border-l border-[#120902]">
+                      <div className="w-full h-[260px] rounded ">
+                        <GrayscaleImage
+                          src="/hero-img-1.jpg"
+                          alt="imgg"
+                          width="100%"
+                          height="90%"
+                        />
+                      </div>
+                      <h2 class="card-title underline">
+                        Ganadara Korean School
+                      </h2>
+                      <p class="card-description">
+                        Promoting appreciation for Korean language, culture, and
+                        history. The Ganadara Korean Language School provides
+                        language instruction to students of all ages and groups,
+                        which can help promote language learning and increase
+                        communication between different cultures.
+                      </p>
+                    </article>
+                  </a>
+                </Link>
+                <Link href="/jewel">
+                  <a className="card-wrapper-link">
+                    <article class="card flex flex-col h-full">
+                      <div className="w-full h-[260px] rounded">
+                        <GrayscaleImage
+                          src="/aapi-card.webp"
+                          alt="imgg"
+                          width="100%"
+                          height="90%"
+                        />
+                      </div>
+                      <h2 class="card-title underline">JEWEL</h2>
+                      <p class="card-description">
+                        Advocating for the inclusion of Asian American
+                        immigration history in the K-12 curriculum, which is an
+                        important step in recognizing and celebrating the
+                        contributions of Asian Americans to American society.
+                      </p>
+                    </article>
                   </a>
                 </Link>
                 <Link href="/">
-                  <a>
-                    <div class="card">
-                      <div>image</div>
-                      <h2 class="card-title">JEWEL</h2>
-                      <p class="card-description">Card Description</p>
-                    </div>
+                  <a className="card-wrapper-link">
+                    <article class="card flex flex-col h-full relative">
+                      {" "}
+                      <div className="relative w-full h-[260px] rounded">
+                        <GrayscaleImage
+                          src="/visiting-korea-card.jpg"
+                          alt="imgg"
+                          width="100%"
+                          height="90%"
+                        />
+                      </div>
+                      <h2 class="card-title underline">Visiting Korea</h2>
+                      <p class="card-description">
+                        Promoting cross-cultural understanding, developing
+                        partnerships, and enhancing language skills. Through
+                        meaningful interactions and shared learning, we strive
+                        to create a more interconnected world
+                      </p>
+                    </article>
                   </a>
                 </Link>
                 <Link href="/">
-                  <a>
-                    <div class="card">
-                      <div>image</div>
-                      <h2 class="card-title">Visiting Korea</h2>
-                      <p class="card-description">Card Description</p>
-                    </div>
+                  <a className="card-wrapper-link">
+                    <article class="card flex flex-col h-full">
+                      <div className="relative w-full h-[260px] rounded">
+                        <GrayscaleImage
+                          src="/visiting-korea-card.jpg"
+                          alt="imgg"
+                          width="100%"
+                          height="90%"
+                        />
+                      </div>
+                      <h2 class="card-title underline">Youth Network</h2>
+                      <p class="card-description">
+                        Developing Korean overseas youths into confident and
+                        culturally-aware global leaders, and fostering positive
+                        social impact in a diverse and interconnected world
+                      </p>
+                    </article>
                   </a>
                 </Link>
-                <Link href="/">
-                  <a>
-                    <div class="card">
-                      <div>image</div>
-                      <h2 class="card-title">Global Network</h2>
-                      <p class="card-description">Card Description</p>
-                    </div>
-                  </a>
-                </Link>
-              </div>
-            </section>
-
-            <section className="grid grid-wrapper">
-              <div className="grid grid-container">
-                <div className="card-item">
-                  <div className="card-container">asdasd</div>
-                </div>
               </div>
             </section>
           </Container>
           <Container>
-            <section className="flex flex-wrap py-4 md:py-10">
-              <m.h2
-                variants={boxVariants}
-                ref={ref}
-                initial="hidden"
-                animate={controls}
-                className="relative font-thin block pb-2 mb-2 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl after:absolute after:h-[2px] after:bg-blue after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%]"
-              >
-                Events
-              </m.h2>
-
-              <div className="flex flex-wrap justify-around w-full mt-10">
-                <nav className="font-thin uppercase events-nav">
-                  <ul className="">
-                    <li
-                      className={
-                        activeTab === "tab1"
-                          ? "active-tab"
-                          : "text-[#949494] hover:text-black"
-                      }
-                      onClick={handleTab1}
-                    >
-                      Upcoming
-                    </li>
-                    <li
-                      className={
-                        activeTab === "tab2"
-                          ? "active-tab"
-                          : "text-[#949494] hover:text-black"
-                      }
-                      onClick={handleTab2}
-                    >
-                      Past
-                    </li>
-                  </ul>
-                </nav>
-
-                <div className="w-full mb-12 md:w-7/12 md:px-6 md:mb-0">
-                  {activeTab === "tab1" ? <FirstTab /> : <SecondTab />}
-                </div>
-              </div>
-            </section>
-
             <section className="py-4 md:py-10">
               <div className="flex flex-wrap py-10">
                 <h2
@@ -493,13 +372,8 @@ const Home = ({ data }) => {
             </section>
           </Container>
 
-          <section className="bg-gray-100">
-            <Container>
-              <Testimonial />
-            </Container>
-          </section>
           <Container>
-            <section className="md:py-10">
+            {/* <section className="md:py-10">
               <div className="relative z-10 w-full mb-12 md:mb-16 md:mt-24 xl:mb-24 2xl:mb-40 3xl:mb-48">
                 <div className="flex flex-wrap border-t border-opacity-50 border-dotted border-off-black md:border-0 md:-mx-8">
                   {homepageData.callToAction.map((item, i) => {
@@ -566,6 +440,25 @@ const Home = ({ data }) => {
                   })}
                 </div>
               </div>
+            </section> */}
+
+            <section className="py-4 md:py-10">
+              <div className="flex content">
+                <div className="w-1/2">
+                  <div className="">
+                    <h3 className="h3-title">
+                      {homepageData.callToAction[0].title}
+                    </h3>
+                  </div>
+                  <div className="">
+                    <p className="cta-desc">
+                      {homepageData.callToAction[0].description}
+                    </p>
+                  </div>
+                </div>
+                <div>sfsdfds</div>
+              </div>
+              ;
             </section>
           </Container>
         </m.main>

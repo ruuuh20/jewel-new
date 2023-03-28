@@ -18,7 +18,7 @@ export default function Header() {
        
       <m.header initial="initial"
           animate="enter"
-          exit="exit" className="fixed top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 bg-gray-50 md:py-3 md:mb-6 xl:mb-8">
+          exit="exit" className="top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 bg-gray-50 md:py-3 md:mb-6 xl:mb-8">
        
         <m.div variants={fade}>
           <div className="w-full px-8 py-2 mx-auto md:px-6 md:py-3">
@@ -56,8 +56,8 @@ export default function Header() {
                          <Image
                                          
                                           src="/fontlogoET.svg"
-                                          width="90"
-                                          height="45"
+                                          width="100"
+                                          height="50"
                                         />
                       </span>
                   </a>
