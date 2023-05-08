@@ -1,5 +1,6 @@
 import Container from "@/components/container";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer({ contact }) {
   return (
@@ -107,16 +108,21 @@ export default function Footer({ contact }) {
       </footer> */}
 
       {/* <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"> */}
-      <footer class="bg-blue">
+      <footer class="bg-[#d96e34]">
         <div class="max-w-screen-xl px-4 py-8 md:py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               {/* <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" /> */}
-              <p className="text-lg text-white">JEWEL</p>
-              <p class="max-w-xs mt-4 text-sm text-white">
-                Joining East & West as Educational Liasons
-              </p>
-              <div class="flex mt-8 space-x-6 text-white">
+              <p className="text-lg">   <span  className="block mt-1 mr-1">
+                         <Image
+                                         
+                                          src="/fontlogoET.svg"
+                                          width="100"
+                                          height="50"
+                                        />
+                      </span></p>
+              
+              <div class="flex mt-8 space-x-6">
                 {/* <a
                   class="hover:opacity-75"
                   href="https://facebook.com"
@@ -200,8 +206,8 @@ export default function Footer({ contact }) {
             </div>
             <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <p class="font-medium text-yellow">Company</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
+                <p class="font-semibold">About</p>
+                <nav class="flex flex-col mt-4 space-y-2 text-sm">
                   <Link href="/about">
                     <a class="hover:opacity-75"> Who We Are </a>
                   </Link>
@@ -214,21 +220,21 @@ export default function Footer({ contact }) {
                 </nav>
               </div>
               <div>
-                <p class="font-medium text-yellow">Our Programs</p>
-                    <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
+                <p class="font-semibold">Our Programs</p>
+                    <nav class="flex flex-col mt-4 space-y-2 text-sm">
              
-                  <Link href="/programs">
-                    <a class="hover:opacity-75"> Programs</a>
+                  <Link href="/ganadara">
+                    <a class="hover:opacity-75"> Ganadara</a>
                   </Link>
-                  <Link href="/projects">
-                    <a class="hover:opacity-75"> Projects </a>
+                  <Link href="/jewel">
+                    <a class="hover:opacity-75">JEWEL </a>
                   </Link>
                 </nav>
               </div>
 
               <div>
-                <p class="font-medium text-yellow">Helpful Links</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
+                <p class="font-semibold text-bold">Helpful Links</p>
+                <nav class="flex flex-col mt-4 space-y-2 text-sm">
                   <Link href="/privacy">
                     <a className="hover:opacity-75"> Affiliates</a>
                   </Link>
@@ -238,12 +244,18 @@ export default function Footer({ contact }) {
                   <Link href="/support">
                     <a class="hover:opacity-75">Support</a>
                   </Link>
+                  <Link href="/support">
+                    <a class="hover:opacity-75">Visiting Korea</a>
+                  </Link>
+                  <Link href="/support">
+                    <a class="hover:opacity-75">Youth Network</a>
+                  </Link>
              
                 </nav>
               </div>
               <div>
-                <p class="font-medium text-yellow">Join Us</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-white">
+                <p class="font-semibold">Join Us</p>
+                <nav class="flex flex-col mt-4 space-y-2 text-sm ">
                   <Link href="/member">
                     <a className="hover:opacity-75"> Become a Member</a>
                   </Link>
@@ -257,11 +269,11 @@ export default function Footer({ contact }) {
               </div>
             </div>
           </div>
-          <p class="mt-8 text-xs text-white">
-            &copy; {new Date().getFullYear()} JEWEL Organization, All rights
+          <p class="mt-8 text-xs">
+            &copy; {new Date().getFullYear()} Educate Together, All rights
             reserved.
           </p>
-          <div className="w-full mt-3 text-xs text-white md:w-auto">
+          <div className="w-full mt-3 text-xs  md:w-auto">
             <nav>
               <li className="inline-block mx-3 ml-0">
                 <Link href="/terms-of-use">

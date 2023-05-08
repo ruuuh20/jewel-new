@@ -24,47 +24,55 @@ export default function About(props) {
 
   return (
     <Layout>
-      <NextSeo title="About" description="JEWEL is a nonprofit organization" />
+      <NextSeo title="About" description="Educate Together is a nonprofit organization" />
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24  pb-[45px] "
         >
-          <Container>
-            <div className="relative w-full pt-8 pb-[128px]">
-              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
-                <span>함께하는교육 소개</span>
-              </div>
-              <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
+        
+            <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+             
+              {/* <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
                 <div className="relative">
                   <Image src="/ham-logo.png" width="60" height="60" />
                 </div>
-              </div>
-              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl 2xl:text-6xl left-0 md:left-[5%]">
-                Who We Are
-              </h3>
+              </div> */}
+              <Container>
+                <div className="flex items-center justify-between">
+                  <h3 className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                    About
+                  </h3>
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                    <span>함께하는교육 소개</span>
+                  </div>
+                </div>
+              </Container>
             </div>
             <m.div variants={fade}>
               {posts &&
                 posts.map((post) => (
                   <>
-                    <div className="relative max-w-4xl mb-16 md:mb-20 2xl:mb-28">
-                      <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
-                        <div className="relative mb-2 md:mb-3">
-                          <h2 className="block tracking-wider uppercase md:text-xl text-blue-sub">
-                            {post.title.en}
-                          </h2>
-                        </div>
-                        <div className="w-full text-lg md:pr-12 md:text-3xl text-darkgray font-thin">
-                          <p className="leading-snug">{post.introText}</p>
+                    <Container>
+                      <div className="relative max-w-4xl mb-16 md:mb-20 2xl:mb-28">
+                        <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
+                          {/* <div className="relative mb-2 md:mb-3">
+                            <h2 className="block tracking-wider uppercase md:text-xl text-blue-sub">
+                              {post.title.en}
+                            </h2>
+                          </div> */}
+                          <div className="w-full text-lg md:pr-12 md:text-2xl text-darkgray md:pt-8">
+                            <p className="leading-snug">{post.introText}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Container>
                     <section className="my-20">
+                      <Container>
                       <div className="flex flex-col flex-wrap md:flex-row">
-                        <div className="w-full md:w-2/5">
+                        {/* <div className="w-full md:w-2/5">
                           <ImageComponent
                             image={
                               post.imageUrl !== null
@@ -72,11 +80,11 @@ export default function About(props) {
                                 : "https://via.placeholder.com/50"
                             }
                           />
-                        </div>
+                        </div> */}
                         <div className="w-full mt-10 md:w-3/5 md:mt-0">
                           <div className="md:px-16 right-col">
                             <div className="relative mb-2">
-                              <h2 className="block text-base tracking-wider uppercase md:text-xl text-blue-sub">
+                              <h2 className="block text-base tracking-wider uppercase md:text-xl">
                                 Our Goals
                               </h2>
                             </div>
@@ -104,6 +112,7 @@ export default function About(props) {
                           </div>
                         </div>
                       </div>
+                      </Container>
                     </section>
 
                     <div className="max-w-4xl py-2 m-auto mt-12 text-xl md:py-12 content"></div>
@@ -114,7 +123,7 @@ export default function About(props) {
 
             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
               <div className="flex flex-col-reverse mt-12 md:mt-0 md:flex-row">
-                <div className="w-full max-w-4-col md:order-last mt-6 md:mt-0 border-t border-dashed md:border-none pt-10 md:pt-0">
+                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
                   <div className="relative w-full">
                     <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
@@ -188,7 +197,7 @@ export default function About(props) {
                   </div>
                 </div>
 
-                <div className="flex justify-between w-full md:max-w-4-col md:block text-right md:text-left">
+                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
                   <div className="relative w-full">
                     <nav className="m-auto md:w-2/3">
                       <span className="block mb-4  text-gray-600 leading-tight uppercase text-base md:text-[18px]">
@@ -251,7 +260,7 @@ export default function About(props) {
                 </div>
               </div>
             </section>
-          </Container>
+       
         </m.div>
       </LazyMotion>
     </Layout>

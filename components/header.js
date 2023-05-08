@@ -18,7 +18,7 @@ export default function Header() {
        
       <m.header initial="initial"
           animate="enter"
-          exit="exit" className="top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 bg-gray-50 md:py-3 md:mb-6 xl:mb-8">
+          exit="exit" className="top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10  md:py-3 md:mb-2">
        
         <m.div variants={fade}>
           <div className="w-full px-8 py-2 mx-auto md:px-6 md:py-3">
@@ -39,8 +39,8 @@ export default function Header() {
                         <Image
                                        
                                           src="/ham-logo.png"
-                                          width="34"
-                                          height="34"
+                                          width="40"
+                                          height="40"
                                         />
                        
                       </span>
@@ -165,9 +165,12 @@ export default function Header() {
                   </ul>
                 </div>
                 <Link href="/donate">
-                  <a className="hidden px-5 py-2 tracking-wider text-white uppercase rounded-lg btn-donate md:inline-block border-1 bg-blue hover:bg-black">
+                  {/* <a className="hidden px-5 py-2 tracking-wider text-white uppercase rounded-lg btn-donate md:inline-block border-1 bg-blue hover:bg-black">
                     Donate
-                  </a>
+                  </a> */}
+                  
+                      <a className="btn btn--orange btn--donate">Donate</a>
+                   
                 </Link>
                 <div className="mx-3 ml-5 mr-0 md:hidden xl:mx-5 2xl:mx-8 lg:hidden">
                   <button

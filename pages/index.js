@@ -91,24 +91,25 @@ const Home = ({ data }) => {
           exit="exit"
           // className="mb-12 md:mb-16 xl:mb-24"
         >
-          <Container>
-            <section>
-              <div className="flex flex-wrap h-[90vh]">
-                <div className="w-full img-wrapper">
-                  {/* <div
+          <section>
+            <div className="flex flex-wrap h-[90vh]">
+              <div className="w-full img-wrapper">
+                {/* <div
                     style={{
                       position: "relative",
                       width: "100%",
                       height: "100%",
                     }}
                   > */}
-                  <Image
-                    src="/hero-img-1.jpg"
-                    layout="fill"
-                    objectFit="cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                  {/* <div
+                <Image
+                  src="/hero-image.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  unoptimized
+                />
+                {/* <img src="/hero-image.jpg" /> */}
+                {/* <div
                       style={{
                         position: "absolute",
                         top: 0,
@@ -118,11 +119,11 @@ const Home = ({ data }) => {
                         backgroundColor: "rgba(0, 0, 0, 0.3)", // semi-transparent black
                       }}
                     /> */}
-                  {/* </div> */}
-                </div>
+                {/* </div> */}
               </div>
-            </section>
-          </Container>
+            </div>
+          </section>
+
           <m.section
             initial="initial"
             animate="enter"
@@ -154,11 +155,11 @@ const Home = ({ data }) => {
               <div className="m-auto py-[4rem] md:mt-10 md:py-28">
                 <div className="flex flex-col px-2 md:px-[14rem]">
                   <div className="relative mt-8 mb-2 md:mt-4">
-                    <h4 className="block tracking-widest text-center uppercase text-blue-sub md:text-xl">
+                    <h4 className="block tracking-wider text-center uppercase text-blue-sub md:text-lg subtitle">
                       Who We Are
                     </h4>
                   </div>
-                  <p className="mb-4 text-[18px] font-light font-thin text-center md:text-3xl xl:text-5xl xl:leading-snug">
+                  <p className="mb-4 text-[18px] font-light font-thin text-center md:text-3xl xl:text-4xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
 
@@ -292,7 +293,7 @@ const Home = ({ data }) => {
               </div>
             </section>
           </Container>
-          <Container>
+          {/* <Container>
             <section className="py-4 md:py-10">
               <div className="flex flex-wrap py-10">
                 <h2
@@ -370,7 +371,7 @@ const Home = ({ data }) => {
                 </div>
               </div>
             </section>
-          </Container>
+          </Container> */}
 
           <Container>
             {/* <section className="md:py-10">
@@ -455,8 +456,12 @@ const Home = ({ data }) => {
                       {homepageData.callToAction[0].description}
                     </p>
                   </div>
+                  <div className="mt-8">
+                    <Link href="/">
+                      <a className="btn btn--orange">Learn More</a>
+                    </Link>
+                  </div>
                 </div>
-                <div>sfsdfds</div>
               </div>
               ;
             </section>

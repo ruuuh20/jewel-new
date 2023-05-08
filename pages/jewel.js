@@ -7,10 +7,10 @@ import { LazyMotion, useAnimation, domAnimation, m } from "framer-motion";
 import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import { ContactForm } from "@/components/form";
 import Image from "next/image";
 import { fade, textReveal } from "@/helpers/transitions";
 import { useInView } from "react-intersection-observer";
+import Testimonial from "@/components/testimonial";
 
 export default function Jewel(props) {
   const router = useRouter();
@@ -266,6 +266,13 @@ const SecondTab = () => {
                 </div>
               </div>
             </section>
+
+
+          <section className="bg-gray-100">
+            <Container>
+              <Testimonial />
+            </Container>
+          </section>
       </Layout>
     </>
   );

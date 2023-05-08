@@ -1,5 +1,5 @@
-# Homepage for JEWEL Org
+# Homepage for Educate Together organization
 
-[https://wearejewel.org](https://wearejewel.org)
+[https://edu-together.org](https://edu-together.org)
 
-- A nonprofit community-based organization promoting a mutual understanding between the U.S. and world cultures through education
+- A community-based nonprofit promoting a mutual understanding between the U.S. and world cultures through education
