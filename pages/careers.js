@@ -31,7 +31,7 @@ export default function Careers(props) {
              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
               <span>함께해요</span>
             </div>
-             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-2">
+             <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
               <div className="relative">
                 <Image
                   
@@ -50,7 +50,7 @@ export default function Careers(props) {
           <div className="flex flex-wrap py-6">
             <div className="py-5 m-auto md:w-7/12">
               <p className="text-base md:text-xl">
-                At JEWEL, we are commited to building a diverse team that
+                At Educate Together, we are commited to building a diverse team that
                 represents many experiences and perspectives. We're always
                 looking for passionate people to join us in helping serve the
                 community. We hope you join us!
@@ -61,9 +61,9 @@ export default function Careers(props) {
                 send your resume and a brief introduction to:{" "}
                 <a
                   className="border-b border-yellow hover:text-yellow"
-                  href="mailto:kaykim@wearejewel.org"
+                  href="mailto:kay@edu-together.org"
                 >
-                  kaykim@wearejewel.org
+                  kay@edu-together.org
                 </a>{" "}
               </p>
             </div>

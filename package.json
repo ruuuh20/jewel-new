@@ -1,12 +1,10 @@
 {
   "name": "jewel-main-frontend",
-  "description": "Joining Ease and West as Education Liason is a non-proft community-based organization that focuses on education and culture.",
+  "description": "Educate Together is a non-proft community-based organization that focuses on education and culture.",
   "keywords": [
-    "jewel",
-    "korea",
-    "educational program",
-    "visit to korea students",
-    "cultural"
+    "jewel organization",
+    "educate together",
+    "visit to korea students"
   ],
   "version": "1.0.0",
   "scripts": {

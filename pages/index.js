@@ -92,24 +92,25 @@ const Home = ({ data }) => {
           // className="mb-12 md:mb-16 xl:mb-24"
         >
           <section>
-            <div className="flex flex-wrap h-[90vh]">
-              <div className="w-full img-wrapper">
-                {/* <div
+            <Container>
+              <div className="flex flex-wrap h-[90vh]">
+                <div className="w-full img-wrapper">
+                  {/* <div
                     style={{
                       position: "relative",
                       width: "100%",
                       height: "100%",
                     }}
                   > */}
-                <Image
-                  src="/hero-image.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  unoptimized
-                />
-                {/* <img src="/hero-image.jpg" /> */}
-                {/* <div
+                  <Image
+                    src="/p7081481.JPG"
+                    layout="fill"
+                    objectFit="cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                  />
+                  {/* <img src="/hero-image.jpg" /> */}
+                  {/* <div
                       style={{
                         position: "absolute",
                         top: 0,
@@ -119,9 +120,10 @@ const Home = ({ data }) => {
                         backgroundColor: "rgba(0, 0, 0, 0.3)", // semi-transparent black
                       }}
                     /> */}
-                {/* </div> */}
+                  {/* </div> */}
+                </div>
               </div>
-            </div>
+            </Container>
           </section>
 
           <m.section

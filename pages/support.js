@@ -47,7 +47,7 @@ export default function GetInvolved(props) {
            
       
             <section className="max-w-3xl">
-              <div><p className="text-base"><Link href="/donate"><a>To donate to JEWEL, click here.</a></Link>Or if you are interested in more information about supporting JEWEL, please fill out the form and we will get back to you!</p></div>
+              <div><p className="text-base"><Link href="/donate"><a>To donate to Educate Together, please click here.</a></Link>Or if you are interested in more information about supporting Educate Together, please fill out the form and we will get back to you!</p></div>
               <div className="w-full p-6 lg:w-7/12">
                 <ContactForm />
               </div>

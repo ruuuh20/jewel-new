@@ -41,7 +41,7 @@ export default function Terms(props) {
               <p>
                 <strong>Company</strong> (referred to as either &quot;the
                 Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-                in this Agreement) refers to JEWEL, 317 Harrington Ave.
+                in this Agreement) refers to Educate Together, 317 Harrington Ave.
               </p>
             </li>
             <li>
@@ -81,13 +81,13 @@ export default function Terms(props) {
             </li>
             <li>
               <p>
-                <strong>Website</strong> refers to JEWEL, accessible from{" "}
+                <strong>Website</strong> refers to Educate Together, accessible from{" "}
                 <a
-                  href="https://www.wearejewel.org"
+                  href="https://www.edu-together.org"
                   rel="external nofollow noopener"
                   target="_blank"
                 >
-                  https://www.wearejewel.org
+                  https://www.edu-together.org
                 </a>
               </p>
             </li>
@@ -298,7 +298,7 @@ export default function Terms(props) {
             contact us:
           </p>
           <ul>
-            <li>By email: kaykim@wearejewel.org</li>
+            <li>By email: kay@edu-together.org</li>
           </ul>
         </Container>
       </Layout>

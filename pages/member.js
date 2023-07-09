@@ -30,7 +30,7 @@ export default function Member(props) {
             <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
               <span>함께해요</span>
             </div>
-             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-2">
+             <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
               <div className="relative">
                 <Image
                   
@@ -48,7 +48,7 @@ export default function Member(props) {
         <Container>
           <div className="flex flex-wrap py-6">
             <div className="py-5 m-auto md:w-7/12">
-              <p className="tex-base md:text-xl">As a member of JEWEL you will be:</p>{" "}
+              <p className="tex-base md:text-xl">As a member of Educate Together, you will be:</p>{" "}
               <br />
               <ul className="px-6 text-base md:text-xl md:px-0">
                 <li className="mt-2 list-disc">
@@ -72,9 +72,9 @@ export default function Member(props) {
                 send your resume and a brief introduction to:{" "}
                 <a
                   className="border-b border-yellow hover:text-yellow"
-                  href="mailto:kaykim@wearejewel.org"
+                  href="mailto:kay@edu-together.org"
                 >
-                  kaykim@wearejewel.org
+                  kay@edu-together.org
                 </a>{" "}
               </p>
             </div>

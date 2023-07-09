@@ -28,7 +28,7 @@ export default function Donate(props) {
         >
         <Container>
           <div className="relative w-full pt-8 pb-[88px]">
-             <div className="hidden md:block absolute overflow-visible spin-slow spin-container mt-3">
+             <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
               <div className="relative">
                 <Image
                   
@@ -47,7 +47,7 @@ export default function Donate(props) {
           <m.div variants={fade} className="flex flex-wrap py-6 font-serif text-xl">
             <div className="py-5 m-auto md:w-7/12">
               <p>
-                Be a part of creating a thriving community by donating to JEWEL
+                Be a part of creating a thriving community by donating to Educate Together
                 today.
               </p>{" "}
               <br />
@@ -55,10 +55,10 @@ export default function Donate(props) {
                 <h4 className="mb-2 font-bold">Donate by Check</h4>
                 <p className="mb-2">
                   To make a contribution by check, please make your check payable
-                  to “JEWEL” and mail to:
+                  to “Educate Together” and mail to:
                 </p>
                 <p className="text-center">
-                  JEWEL Organization
+                  Educate Together Organization
                   <br />
                   317 Harrington Ave
                   <br/>
@@ -70,7 +70,7 @@ export default function Donate(props) {
 
             <div className="w-full py-8 m-auto md:w-7/12">
               <p className="text-xl text-center text-gray-600">
-                Thank you for donating to JEWEL!
+                Thank you for donating to Educate Together!
               </p>
             </div>
           </m.div>

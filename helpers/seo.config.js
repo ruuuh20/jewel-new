@@ -1,12 +1,12 @@
 export default {
-  defaultTitle: 'Joining East & West as Educational Liasons | JEWEL Organization',
-  description: 'Homepage for JEWEL Organization',
-  titleTemplate: '%s | JEWEL',
+  defaultTitle: 'Empowering minds, transforming futures. | Educate Together Organization',
+  description: 'Homepage for Educate Together Organization',
+  titleTemplate: '%s | Educate Together',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://wearejewel.org',
-    site_name: 'Joining East & West as Educational Liasons',
+    url: 'https://edu-together.org',
+    site_name: 'Educate Together',
   },
   twitter: {
     handle: '#',

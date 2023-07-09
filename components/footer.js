@@ -108,7 +108,7 @@ export default function Footer({ contact }) {
       </footer> */}
 
       {/* <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"> */}
-      <footer class="bg-[#d96e34]">
+      <footer className="footer-wrapper">
         <div class="max-w-screen-xl px-4 py-8 md:py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
@@ -207,7 +207,7 @@ export default function Footer({ contact }) {
             <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
               <div>
                 <p class="font-semibold">About</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm">
+                <nav class="flex flex-col mt-4 space-y-2 text-sm md:text-base">
                   <Link href="/about">
                     <a class="hover:opacity-75"> Who We Are </a>
                   </Link>
@@ -221,7 +221,7 @@ export default function Footer({ contact }) {
               </div>
               <div>
                 <p class="font-semibold">Our Programs</p>
-                    <nav class="flex flex-col mt-4 space-y-2 text-sm">
+                    <nav class="flex flex-col mt-4 space-y-2 text-sm md:text-base">
              
                   <Link href="/ganadara">
                     <a class="hover:opacity-75"> Ganadara</a>
@@ -234,7 +234,7 @@ export default function Footer({ contact }) {
 
               <div>
                 <p class="font-semibold text-bold">Helpful Links</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm">
+                <nav class="flex flex-col mt-4 space-y-2 text-sm md:text-base">
                   <Link href="/privacy">
                     <a className="hover:opacity-75"> Affiliates</a>
                   </Link>
@@ -255,7 +255,7 @@ export default function Footer({ contact }) {
               </div>
               <div>
                 <p class="font-semibold">Join Us</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm ">
+                <nav class="flex flex-col mt-4 space-y-2 text-sm md:text-base">
                   <Link href="/member">
                     <a className="hover:opacity-75"> Become a Member</a>
                   </Link>
