@@ -102,13 +102,13 @@ const Home = ({ data }) => {
                       height: "100%",
                     }}
                   > */}
-                  <Image
+                  {/* <Image
                     src="/p7081481.JPG"
                     layout="fill"
                     objectFit="cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     unoptimized
-                  />
+                  /> */}
                   {/* <img src="/hero-image.jpg" /> */}
                   {/* <div
                       style={{
@@ -208,14 +208,24 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full border-l border-[#120902]">
-                      <div className="w-full h-[260px] rounded ">
-                        <GrayscaleImage
+                      {/* <div className="w-full h-[260px] rounded "> */}
+                      {/* <div className="h-[90%] relative">
+                          <Image
+                            src="/hero-img-1.jpg"
+                            alt="imgg"
+                            // width="100%"
+                            // height="90%"
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div> */}
+                      {/* <GrayscaleImage
                           src="/hero-img-1.jpg"
                           alt="imgg"
                           width="100%"
                           height="90%"
-                        />
-                      </div>
+                        /> */}
+                      {/* </div> */}
                       <h2 class="card-title underline">
                         Ganadara Korean School
                       </h2>
@@ -232,14 +242,14 @@ const Home = ({ data }) => {
                 <Link href="/jewel">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      <div className="w-full h-[260px] rounded">
+                      {/* <div className="w-full h-[260px] rounded">
                         <GrayscaleImage
                           src="/aapi-card.webp"
                           alt="imgg"
                           width="100%"
                           height="90%"
                         />
-                      </div>
+                      </div> */}
                       <h2 class="card-title underline">JEWEL</h2>
                       <p class="card-description">
                         Advocating for the inclusion of Asian American
@@ -254,15 +264,15 @@ const Home = ({ data }) => {
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full relative">
                       {" "}
-                      <div className="relative w-full h-[260px] rounded">
+                      {/* <div className="relative w-full h-[260px] rounded">
                         <GrayscaleImage
                           src="/visiting-korea-card.jpg"
                           alt="imgg"
                           width="100%"
                           height="90%"
                         />
-                      </div>
-                      <h2 class="card-title underline">Visiting Korea</h2>
+                      </div> */}
+                      <h2 class="card-title underline">Eduventure</h2>
                       <p class="card-description">
                         Promoting cross-cultural understanding, developing
                         partnerships, and enhancing language skills. Through
@@ -275,14 +285,14 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      <div className="relative w-full h-[260px] rounded">
+                      {/* <div className="relative w-full h-[260px] rounded">
                         <GrayscaleImage
                           src="/visiting-korea-card.jpg"
                           alt="imgg"
                           width="100%"
                           height="90%"
                         />
-                      </div>
+                      </div> */}
                       <h2 class="card-title underline">Youth Network</h2>
                       <p class="card-description">
                         Developing Korean overseas youths into confident and

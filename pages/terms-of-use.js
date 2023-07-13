@@ -83,11 +83,11 @@ export default function Terms(props) {
               <p>
                 <strong>Website</strong> refers to Educate Together, accessible from{" "}
                 <a
-                  href="https://www.edu-together.org"
+                  href="https://www.edutogether.us"
                   rel="external nofollow noopener"
                   target="_blank"
                 >
-                  https://www.edu-together.org
+                  https://www.edutogether.us
                 </a>
               </p>
             </li>

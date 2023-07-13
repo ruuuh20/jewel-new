@@ -6,6 +6,7 @@ import SEO from '@/helpers/seo.config';
 import Script from "next/script"
 import { IntroContext } from 'context/intro';
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
@@ -78,7 +79,7 @@ const [introContext, setIntroContext] = useState(false);
                 transition={{ delay: 1, duration: 1.2, ease: [0.83, 0, 0.17, 1] }}
                 className="bg-[#D9D4AA] fixed inset-0 z-[1000] flex flex-wrap items-end h-screen min-h-screen max-h-screen p-[10px] cursor-wait"
               >
-                <div className="relative w-full mt-auto flex overflow-hidden full-screen-bg">
+                <div className="relative flex w-full mt-auto overflow-hidden full-screen-bg">
                   <m.div
                     initial="visible"
                     animate="hidden"
@@ -97,6 +98,7 @@ const [introContext, setIntroContext] = useState(false);
       <div className={`transition-colors ease-in-out duration-[550ms] ${bodyColor}`}>
       <AnimatePresence exitBeforeEnter>
         <Component {...pageProps} key={router.asPath} />
+          <Analytics />
       </AnimatePresence>
       </div>
       <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
