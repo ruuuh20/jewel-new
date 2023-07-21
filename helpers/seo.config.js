@@ -1,5 +1,5 @@
 export default {
-  defaultTitle: 'Empowering minds, transforming futures. | Educate Together Organization',
+  defaultTitle: 'Building Bridges, Breaking Barriers | Educate Together Organization',
   description: 'Homepage for Educate Together',
   titleTemplate: '%s | Educate Together',
   openGraph: {

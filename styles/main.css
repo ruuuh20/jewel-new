@@ -1031,3 +1031,10 @@ body {
   /* bg-[#d96e34] */
   background: rgba(217, 212, 170, 1);
 }
+
+.page-title-text {
+  font-size: clamp(3.8rem, 10vw - 4rem, 15rem);
+  /* margin-bottom: 5rem; */
+  font-family: "roboto_condensedbold";
+  color: cornflowerblue;
+}

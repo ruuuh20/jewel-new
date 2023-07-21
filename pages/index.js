@@ -121,6 +121,13 @@ const Home = ({ data }) => {
                       }}
                     /> */}
                   {/* </div> */}
+                  <div className="page-title">
+                    <h1 className="page-title-text">
+                      Building Bridges,
+                      <br />{" "}
+                      <span className="ml-[10rem]">Breaking Barriers</span>
+                    </h1>
+                  </div>
                 </div>
               </div>
             </Container>
