@@ -857,6 +857,8 @@ body {
   .card {
     padding-bottom: 0.7rem;
     padding-top: 0.9rem;
+    padding-left: 0;
+    padding-right: 0;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #120902;
@@ -996,6 +998,12 @@ body {
   font-size: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .cta-desc {
+    font-size: 1.25rem;
+  }
+}
+
 .btn {
   position: relative;
   display: -webkit-box;
@@ -1050,6 +1058,17 @@ body {
 .btn--donate {
   width: 120px;
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 60px;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  .btn--donate {
+    display: none;
+  }
 }
 
 .subtitle {

@@ -18,7 +18,7 @@ export default function Header() {
        
       <m.header initial="initial"
           animate="enter"
-          exit="exit" className="top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10  md:py-3 md:mb-2">
+          exit="exit" className="top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 md:py-3 md:mb-2">
        
         <m.div variants={fade}>
           <div className="w-full px-8 py-2 mx-auto md:px-6 md:py-3">
@@ -63,7 +63,7 @@ export default function Header() {
                   </a>
                 </Link>
               </m.div>
-              <nav className="flex items-center justify-end w-full ml-auto space-x-6 text-sm md:justify-center md:text-base md:w-auto">
+              <nav className="flex items-center justify-end w-full ml-auto text-sm md:space-x-6 md:justify-center md:text-base md:w-auto">
                 <div className="relative hidden ease-in md:inline-block dropdown group">
                   <button className="text-[#242b2d] hover:text-yellow focus:text-yellow px-4 inline-flex items-center">
                     <span className="mr-1 tracking-[1.1px] link">About Us</span>
@@ -169,7 +169,7 @@ export default function Header() {
                     Donate
                   </a> */}
                   
-                      <a className="btn btn--orange btn--donate">Donate</a>
+                      <a className="hidden btn md:flex btn--orange btn--donate">Donate</a>
                    
                 </Link>
                 <div className="mx-3 ml-5 mr-0 md:hidden xl:mx-5 2xl:mx-8 lg:hidden">
@@ -215,20 +215,29 @@ export default function Header() {
                 </Link>
               </nav> */}
             {isNavOpen && (
-              <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full p-8 text-white bg-blue z-12">
-                <div className="flex flex-wrap items-center mb-8">
+              <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full px-8 text-white bg-[#d96e34] z-12">
+                <div className="flex flex-wrap items-center py-2 mb-8">
                   <Link href="/">
-                    <a className="text-2xl font-semibold font-bold uppercase">
-                      {/* <div className={"image-container2"}>
-                        <Image
-                          src="/jlogo1.png"
-                          layout="fill"
-                          className={"image"}
-                          alt="me"
-                          sizes="50vw"
-                        />
-                      </div> */}
-                      JEWEL
+                    <a className="flex align-middle items-center font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight font-pt">
+                      
+                         <span  className="block mt-1 mr-1 md:hidden mobile">
+                         <Image
+                                         
+                                          src="/ham-logo.png"
+                                          width="50"
+                                          height="50"
+                                        />
+                      </span>
+                              <span  className="block mt-1 mr-1">
+                         <Image
+                                         
+                                          src="/fontlogoET.svg"
+                                          width="100"
+                                          height="50"
+                                        />
+                      </span>
+                 
+                      
                     </a>
                   </Link>
                   <button

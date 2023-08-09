@@ -493,7 +493,6 @@ const Home = ({ data }) => {
                   </div>
                 </div>
               </div>
-              ;
             </section>
           </Container>
         </m.main>
