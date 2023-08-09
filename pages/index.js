@@ -161,7 +161,7 @@ const Home = ({ data }) => {
             </div> */}
             <Container>
               <div className="m-auto py-[4rem] md:mt-12 md:py-28">
-                <div className="mx-auto my-5 text-xl text-center text-gray-800 capitalize tagline">
+                <div className="mx-auto my-5 text-lg text-center text-gray-800 capitalize md:text-xl tagline">
                   Building bridges, Breaking barriers
                 </div>
                 <div className="flex flex-col px-2 md:px-[18rem]">
@@ -170,7 +170,7 @@ const Home = ({ data }) => {
                       Who We Are
                     </h4>
                   </div> */}
-                  <p className="mb-4 text-[18px] font-light font-thin text-center md:text-3xl xl:text-4xl xl:leading-snug font-pt">
+                  <p className="mb-4 text-2xl font-thin font-light text-center md:text-3xl xl:text-4xl xl:leading-snug font-pt">
                     {homepageData.welcomeHeading}
                   </p>
 
@@ -217,7 +217,8 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full border-l border-[#120902]">
-                      <div className="w-full h-[260px] rounded ">
+                      <div className="pb-2 text-lg text-right">2023</div>
+                      <div className="relative w-full h-[260px] rounded ">
                         <div className="h-[90%] relative">
                           <Image
                             src="/hero-img-1.jpg"
@@ -228,16 +229,8 @@ const Home = ({ data }) => {
                             objectFit="cover"
                           />
                         </div>
-                        {/* <GrayscaleImage
-                          src="/hero-img-1.jpg"
-                          alt="imgg"
-                          width="100%"
-                          height="90%"
-                        /> */}
                       </div>
-                      <h2 class="card-title underline">
-                        Ganadara Korean School
-                      </h2>
+                      <h2 class="card-title">Ganadara Korean School</h2>
                       <p class="card-description">
                         Promoting appreciation for Korean language, culture, and
                         history. The Ganadara Korean Language School provides
@@ -251,15 +244,20 @@ const Home = ({ data }) => {
                 <Link href="/jewel">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      <div className="w-full h-[260px] rounded">
-                        <GrayscaleImage
-                          src="/aapi-card.webp"
-                          alt="imgg"
-                          width="100%"
-                          height="90%"
-                        />
+                      <div className="pb-2 text-lg text-right">2023</div>
+                      <div className="relative w-full h-[260px] rounded">
+                        <div className="h-[90%] relative">
+                          <Image
+                            src="/aapi-card.webp"
+                            alt="JEWEL image"
+                            // width="100%"
+                            // height="90%"
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div>
                       </div>
-                      <h2 class="card-title underline">JEWEL</h2>
+                      <h2 class="card-title">JEWEL</h2>
                       <p class="card-description">
                         Advocating for the inclusion of Asian American
                         immigration history in the K-12 curriculum, which is an
@@ -273,15 +271,20 @@ const Home = ({ data }) => {
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full relative">
                       {" "}
+                      <div className="pb-2 text-lg text-right">2023</div>
                       <div className="relative w-full h-[260px] rounded">
-                        <GrayscaleImage
-                          src="/visiting-korea-card.jpg"
-                          alt="imgg"
-                          width="100%"
-                          height="90%"
-                        />
+                        <div className="h-[90%] relative">
+                          <Image
+                            src="/visiting-korea-card.jpg"
+                            alt="Visiting Korea image"
+                            // width="100%"
+                            // height="90%"
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div>
                       </div>
-                      <h2 class="card-title underline">Eduventure</h2>
+                      <h2 class="card-title">Eduventure</h2>
                       <p class="card-description">
                         Promoting cross-cultural understanding, developing
                         partnerships, and enhancing language skills. Through
@@ -294,15 +297,20 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
+                      <div className="pb-2 text-lg text-right">2023</div>
                       <div className="relative w-full h-[260px] rounded">
-                        <GrayscaleImage
-                          src="/visiting-korea-card.jpg"
-                          alt="imgg"
-                          width="100%"
-                          height="90%"
-                        />
+                        <div className="h-[90%] relative">
+                          <Image
+                            src="/youth.jpg"
+                            alt="Youth Network image"
+                            // width="100%"
+                            // height="90%"
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div>
                       </div>
-                      <h2 class="card-title underline">Youth Network</h2>
+                      <h2 class="card-title">Youth Network</h2>
                       <p class="card-description">
                         Developing Korean overseas youths into confident and
                         culturally-aware global leaders, and fostering positive
@@ -313,6 +321,7 @@ const Home = ({ data }) => {
                 </Link>
               </div>
             </section>
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container>
           {/* <Container>
             <section className="py-4 md:py-10">

@@ -838,7 +838,7 @@ body {
 
   /* border-top: 1px solid #120902;
             border-left: 1px solid #120902; */
-  border-top: 1px solid #120902;
+  /* border-top: 1px solid #120902; */
 }
 
 .card {
@@ -846,15 +846,21 @@ body {
   -ms-grid-row-span: 1;
   grid-row-end: span 1;
   margin-bottom: 40px;
-  padding: 1.5rem;
+  padding: 1rem;
+  padding-top: 0;
   /* background:rgba(207, 207, 207, 0.9); */
   border-right: 1px solid #120902;
-  border-bottom: 1px solid #120902;
+  /* border-bottom: 1px solid #120902; */
 }
 
 @media (max-width: 768px) {
   .card {
-    border-left: 1px solid #120902;
+    padding-bottom: 0.7rem;
+    padding-top: 0.9rem;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #120902;
+    margin-bottom: 20px;
   }
 }
 
@@ -870,11 +876,13 @@ body {
 }
 
 .card-title {
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 400;
+  /* font-family: "neue-haas-grotesk-display", sans-serif; */
+  font-weight: 300;
   font-style: normal;
   margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 30px;
+  font-family: "Source Serif Pro", serif;
+  letter-spacing: -1.5px;
 }
 
 @media (max-width: 768px) {
@@ -975,6 +983,13 @@ body {
 .h3-title {
   font-weight: 400;
   font-size: 4.25rem;
+}
+
+@media (max-width: 768px) {
+  .h3-title {
+    font-weight: 400;
+    font-size: 2.25rem;
+  }
 }
 
 .cta-desc {
