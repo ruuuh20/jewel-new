@@ -91,26 +91,26 @@ const Home = ({ data }) => {
           exit="exit"
           // className="mb-12 md:mb-16 xl:mb-24"
         >
-          <section>
+          {/* <section>
             <Container>
-              <div className="flex flex-wrap h-[90vh]">
-                <div className="w-full img-wrapper">
-                  {/* <div
+              <div className="flex flex-wrap h-[90vh] rounded bg-[#e5d7ce]">
+                <div className="w-full img-wrapper"> */}
+          {/* <div
                     style={{
                       position: "relative",
                       width: "100%",
                       height: "100%",
                     }}
                   > */}
-                  {/* <Image
+          {/* <Image
                     src="/p7081481.JPG"
                     layout="fill"
                     objectFit="cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     unoptimized
                   /> */}
-                  {/* <img src="/hero-image.jpg" /> */}
-                  {/* <div
+          {/* <img src="/hero-image.jpg" /> */}
+          {/* <div
                       style={{
                         position: "absolute",
                         top: 0,
@@ -120,18 +120,17 @@ const Home = ({ data }) => {
                         backgroundColor: "rgba(0, 0, 0, 0.3)", // semi-transparent black
                       }}
                     /> */}
-                  {/* </div> */}
-                  <div className="page-title">
-                    <h1 className="page-title-text">
-                      Building Bridges,
-                      <br />{" "}
-                      <span className="ml-[10rem]">Breaking Barriers</span>
+          {/* </div> */}
+          {/* <div className="page-title">
+                    <h1 className="page-title-text w-[100vw] text-center">
+                      Building Bridges, Breaking Barriers
+                  
                     </h1>
-                  </div>
-                </div>
+                  </div> */}
+          {/* </div>
               </div>
             </Container>
-          </section>
+          </section> */}
 
           <m.section
             initial="initial"
@@ -140,7 +139,7 @@ const Home = ({ data }) => {
             variants={fade}
             className="relative w-full my-10"
           >
-            <div className="hidden md:block absolute top-[7%] left-[48%] overflow-visible spin-slow spin-container">
+            {/* <div className="hidden md:block absolute top-[6%] left-[48%] overflow-visible spin-slow spin-container">
               <div className="relative">
                 <Image
                   className=""
@@ -155,24 +154,27 @@ const Home = ({ data }) => {
                 <Image
                   className=""
                   src="/ham-logo.png"
-                  width="45"
-                  height="45"
+                  width="50"
+                  height="50"
                 />
               </div>
-            </div>
+            </div> */}
             <Container>
-              <div className="m-auto py-[4rem] md:mt-10 md:py-28">
-                <div className="flex flex-col px-2 md:px-[14rem]">
-                  <div className="relative mt-8 mb-2 md:mt-4">
-                    <h4 className="block tracking-wider text-center uppercase text-blue-sub md:text-lg subtitle">
+              <div className="m-auto py-[4rem] md:mt-12 md:py-28">
+                <div className="mx-auto my-5 text-xl text-center text-gray-800 capitalize tagline">
+                  Building bridges, Breaking barriers
+                </div>
+                <div className="flex flex-col px-2 md:px-[18rem]">
+                  {/* <div className="relative mt-8 mb-2 md:mt-4">
+                    <h4 className="block tracking-wider text-center uppercase text-[#e5d7ce] md:text-lg subtitle">
                       Who We Are
                     </h4>
-                  </div>
-                  <p className="mb-4 text-[18px] font-light font-thin text-center md:text-3xl xl:text-4xl xl:leading-snug">
+                  </div> */}
+                  <p className="mb-4 text-[18px] font-light font-thin text-center md:text-3xl xl:text-4xl xl:leading-snug font-pt">
                     {homepageData.welcomeHeading}
                   </p>
 
-                  <div className="hidden w-full m-auto mt-10 text-center md:block">
+                  {/* <div className="hidden w-full m-auto mt-10 text-center md:block">
                     <Link href="/about">
                       <a className="button learn-more">
                         <span className="circle" aria-hidden="true">
@@ -181,14 +183,14 @@ const Home = ({ data }) => {
                         <span className="button-text">Learn more</span>
                       </a>
                     </Link>
-                  </div>
-                  <div className="w-full m-auto mt-10 text-center md:hidden">
+                  </div> */}
+                  <div className="w-full m-auto mt-10 text-center ">
                     <Link href="/about">
-                      <a className="inline-flex items-center px-6 py-2 mt-2 font-extrabold text-white border rounded bg-blue border-blue hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
-                        <span className="text-sm font-pt"> Learn more</span>
+                      <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black rounded-xl hover:text-white hover:bg-black active:text-white active: focus:outline-none focus:ring">
+                        <span className="text-lg font-light"> About Us</span>
 
                         <svg
-                          className="w-5 h-5 ml-3"
+                          className="w-5 h-5 ml-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -215,8 +217,8 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full border-l border-[#120902]">
-                      {/* <div className="w-full h-[260px] rounded "> */}
-                      {/* <div className="h-[90%] relative">
+                      <div className="w-full h-[260px] rounded ">
+                        <div className="h-[90%] relative">
                           <Image
                             src="/hero-img-1.jpg"
                             alt="imgg"
@@ -225,14 +227,14 @@ const Home = ({ data }) => {
                             layout="fill"
                             objectFit="cover"
                           />
-                        </div> */}
-                      {/* <GrayscaleImage
+                        </div>
+                        {/* <GrayscaleImage
                           src="/hero-img-1.jpg"
                           alt="imgg"
                           width="100%"
                           height="90%"
                         /> */}
-                      {/* </div> */}
+                      </div>
                       <h2 class="card-title underline">
                         Ganadara Korean School
                       </h2>
@@ -249,14 +251,14 @@ const Home = ({ data }) => {
                 <Link href="/jewel">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      {/* <div className="w-full h-[260px] rounded">
+                      <div className="w-full h-[260px] rounded">
                         <GrayscaleImage
                           src="/aapi-card.webp"
                           alt="imgg"
                           width="100%"
                           height="90%"
                         />
-                      </div> */}
+                      </div>
                       <h2 class="card-title underline">JEWEL</h2>
                       <p class="card-description">
                         Advocating for the inclusion of Asian American
@@ -271,14 +273,14 @@ const Home = ({ data }) => {
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full relative">
                       {" "}
-                      {/* <div className="relative w-full h-[260px] rounded">
+                      <div className="relative w-full h-[260px] rounded">
                         <GrayscaleImage
                           src="/visiting-korea-card.jpg"
                           alt="imgg"
                           width="100%"
                           height="90%"
                         />
-                      </div> */}
+                      </div>
                       <h2 class="card-title underline">Eduventure</h2>
                       <p class="card-description">
                         Promoting cross-cultural understanding, developing
@@ -292,14 +294,14 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      {/* <div className="relative w-full h-[260px] rounded">
+                      <div className="relative w-full h-[260px] rounded">
                         <GrayscaleImage
                           src="/visiting-korea-card.jpg"
                           alt="imgg"
                           width="100%"
                           height="90%"
                         />
-                      </div> */}
+                      </div>
                       <h2 class="card-title underline">Youth Network</h2>
                       <p class="card-description">
                         Developing Korean overseas youths into confident and
@@ -463,8 +465,8 @@ const Home = ({ data }) => {
             </section> */}
 
             <section className="py-4 md:py-10">
-              <div className="flex content">
-                <div className="w-1/2">
+              <div className="flex flex-row content md:flex-col">
+                <div className="w-full md:w-1/2">
                   <div className="">
                     <h3 className="h3-title">
                       {homepageData.callToAction[0].title}
