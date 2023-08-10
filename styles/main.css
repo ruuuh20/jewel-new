@@ -866,9 +866,11 @@ body {
   }
 }
 
-.card-:hover {
-  color: rgb(217, 110, 52);
-  background-color: rgb(241, 234, 251);
+@media (min-width: 768px) {
+  .card-:hover {
+    color: rgb(217, 110, 52);
+    background-color: rgb(241, 234, 251);
+  }
 }
 
 .card img {

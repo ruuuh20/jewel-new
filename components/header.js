@@ -215,36 +215,14 @@ export default function Header() {
                 </Link>
               </nav> */}
             {isNavOpen && (
-              <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full px-8 text-white bg-[#d96e34] z-12">
-                <div className="flex flex-wrap items-center py-2 mb-8">
-                  <Link href="/">
-                    <a className="flex align-middle items-center font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight font-pt">
-                      
-                         <span  className="block mt-1 mr-1 md:hidden mobile">
-                         <Image
-                                         
-                                          src="/ham-logo.png"
-                                          width="50"
-                                          height="50"
-                                        />
-                      </span>
-                              <span  className="block mt-1 mr-1">
-                         <Image
-                                         
-                                          src="/fontlogoET.svg"
-                                          width="100"
-                                          height="50"
-                                        />
-                      </span>
-                 
-                      
-                    </a>
-                  </Link>
+              <div className="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full px-8 text-white bg-[#d96e34] z-12 pt-2">
+                <div className="flex flex-wrap items-center py-2 mb-6">
+                  
                   <button
-                    className="p-1 ml-auto btn--reset"
+                    className="p-2 ml-auto btn--reset"
                     onClick={() => setIsNavOpen((prev) => !prev)}
                   >
-                    <svg
+                    {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
                       height="32"
@@ -254,7 +232,8 @@ export default function Header() {
                         fill="#FFF"
                         d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
                       />
-                    </svg>
+                    </svg> */}
+                    Close
                   </button>
                 </div>
                 <nav aria-labelledby="mobileMenuOverlayLabel" className="mb-16">
