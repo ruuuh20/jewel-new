@@ -30,7 +30,7 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pb-[45px] "
+          className="mb-12 md:mb-16 xl:mb-24pb-[45px] "
         >
         
             <div className="relative w-full pt-8 pb-[28px] border-b border-black">
@@ -56,7 +56,7 @@ export default function About(props) {
                 posts.map((post) => (
                   <>
                     <Container>
-                      <div className="relative max-w-4xl mb-16 md:mb-20 2xl:mb-28">
+                      <div className="relative max-w-4xl mt-8 mb-16 md:mb-20 2xl:mb-28 md:mt-0 ">
                         <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
                           {/* <div className="relative mb-2 md:mb-3">
                             <h2 className="block tracking-wider uppercase md:text-xl text-blue-sub">

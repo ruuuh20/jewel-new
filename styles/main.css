@@ -1071,6 +1071,10 @@ body {
   .btn--donate {
     display: none;
   }
+
+  .btn--learn {
+    width: 120px;
+  }
 }
 
 .subtitle {

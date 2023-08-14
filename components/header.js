@@ -25,7 +25,7 @@ export default function Header() {
             <div className="relative flex md:flex-wrap">
               <m.div>
                 <Link href="/">
-                  <a className="flex align-middle items-center font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight font-pt">
+                  <a className="flex align-middle items-center font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight">
                     {/* <div className={"image-container2"}>
                       <Image
                         src="/jlogo1.png"
@@ -52,7 +52,7 @@ export default function Header() {
                                           height="50"
                                         />
                       </span>
-                     <span  className="block mt-1 mr-1">
+                     <span  className="block mt-1 ml-1 mr-1 md:ml-0 md:mt-2">
                          <Image
                                          
                                           src="/fontlogoET.svg"
@@ -63,7 +63,7 @@ export default function Header() {
                   </a>
                 </Link>
               </m.div>
-              <nav className="flex items-center justify-end w-full ml-auto text-sm md:space-x-6 md:justify-center md:text-base md:w-auto">
+              <nav className="flex items-center justify-end ml-auto text-sm md:w-full md:space-x-6 md:justify-center md:text-base md:w-auto">
                 <div className="relative hidden ease-in md:inline-block dropdown group">
                   <button className="text-[#242b2d] hover:text-yellow focus:text-yellow px-4 inline-flex items-center">
                     <span className="mr-1 tracking-[1.1px] link">About Us</span>
@@ -119,22 +119,8 @@ export default function Header() {
                     router.pathname == "/projects" ? "text-yellow" : "text-[#242b2d]"
                   }`}
                 />
-                <FancyLink
-                  destination="/news"
-                  a11yText="Navigate to the newspage"
-                  label="News"
-                  extraClasses={`hidden md:inline-block link link--metis before:absolute ${
-                    router.pathname == "/news" ? "text-yellow" : "text-[#242b2d]"
-                  }`}
-                />
-                <FancyLink
-                  destination="/affiliates"
-                  a11yText="Navigate to the affiliates page"
-                  label="Affiliates"
-                  extraClasses={`hidden md:inline-block link link--metis before:absolute ${
-                    router.pathname == "/affiliates" ? "text-yellow" : "text-[#242b2d]"
-                  }`}
-                />
+              
+                
                 <div className="relative hidden ease-in md:inline-block dropdown group">
                   <button className="text-[#242b2d] hover:text-yellow  focus:text-yellow pr-2 inline-flex items-center">
                     <span className="mr-1 tracking-[1.1px] link">Join Us</span>
@@ -317,30 +303,8 @@ export default function Header() {
                         </a>
                       </Link>
                     </li>
-                    <li key="" className="mb-2 text-white lg:block">
-                      <Link href="/news">
-                        <a
-                          onClick={() => setIsNavOpen((prev) => !prev)}
-                          activeClassName="is--active"
-                          partiallyActive={true}
-                          className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
-                        >
-                          News
-                        </a>
-                      </Link>
-                    </li>
-                    <li key="" className="mb-2 text-white lg:block">
-                      <Link href="/affiliates">
-                        <a
-                          onClick={() => setIsNavOpen((prev) => !prev)}
-                          activeClassName="is--active"
-                          partiallyActive={true}
-                          className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
-                        >
-                          Affiliates
-                        </a>
-                      </Link>
-                    </li>
+                
+                
                     <li>
                     <div className="">
                   <div className="inline-flex items-center pr-2 text-base text-white focus:text-black">

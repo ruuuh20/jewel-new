@@ -113,14 +113,36 @@ export default function Footer({ contact }) {
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               {/* <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" /> */}
-              <p className="text-lg">   <span  className="block mt-1 mr-1">
+              <div className="flex text-lg"> 
+               <Link href="/">
+                  <a className="flex align-middle items-center font-bold text-[1.5rem] md:text-[2rem] uppercase leading-tight font-pt">
+                <span className="hidden mt-2 mr-3 md:block">
+                        <Image
+                                       
+                                          src="/ham-logo.png"
+                                          width="40"
+                                          height="40"
+                                        />
+                       
+                      </span>
+                      <span  className="block mt-1 mr-1 md:hidden mobile">
+                         <Image
+                                         
+                                          src="/ham-logo.png"
+                                          width="50"
+                                          height="50"
+                                        />
+                      </span> 
+               <span  className="block mt-1 ml-1 mr-1 md:ml-0 md:mt-2">
                          <Image
                                          
                                           src="/fontlogoET.svg"
                                           width="100"
                                           height="50"
                                         />
-                      </span></p>
+                      </span>
+                      </a></Link>
+                </div>
               
               <div class="flex mt-8 space-x-6">
                 {/* <a
@@ -204,7 +226,7 @@ export default function Footer({ contact }) {
                 </a> */}
               </div>
             </div>
-            <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3">
               <div>
                 <p class="font-semibold">About</p>
                 <nav class="flex flex-col mt-4 space-y-2 text-sm md:text-base">
@@ -229,30 +251,16 @@ export default function Footer({ contact }) {
                   <Link href="/jewel">
                     <a class="hover:opacity-75">JEWEL </a>
                   </Link>
-                </nav>
-              </div>
-
-              <div>
-                <p class="font-semibold text-bold">Helpful Links</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm md:text-base">
-                  <Link href="/privacy">
-                    <a className="hover:opacity-75"> Affiliates</a>
-                  </Link>
-                  <Link href="/news">
-                    <a class="hover:opacity-75"> News</a>
-                  </Link>
-                  <Link href="/support">
-                    <a class="hover:opacity-75">Support</a>
-                  </Link>
                   <Link href="/support">
                     <a class="hover:opacity-75">Visiting Korea</a>
                   </Link>
                   <Link href="/support">
                     <a class="hover:opacity-75">Youth Network</a>
                   </Link>
-             
                 </nav>
               </div>
+
+          
               <div>
                 <p class="font-semibold">Join Us</p>
                 <nav class="flex flex-col mt-4 space-y-2 text-sm md:text-base">
@@ -265,6 +273,9 @@ export default function Footer({ contact }) {
                   <Link href="/careers">
                     <a class="hover:opacity-75"> Careers</a>
                   </Link>
+                   <Link href="/support">
+                    <a class="hover:opacity-75">Support</a>
+                  </Link>
                 </nav>
               </div>
             </div>
@@ -273,7 +284,7 @@ export default function Footer({ contact }) {
             &copy; {new Date().getFullYear()} Educate Together, All rights
             reserved.
           </p>
-          <div className="w-full mt-3 text-xs  md:w-auto">
+          <div className="w-full mt-3 text-xs md:w-auto">
             <nav>
               <li className="inline-block mx-3 ml-0">
                 <Link href="/terms-of-use">

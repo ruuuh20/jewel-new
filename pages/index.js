@@ -170,7 +170,7 @@ const Home = ({ data }) => {
                       Who We Are
                     </h4>
                   </div> */}
-                  <p className="mb-4 text-2xl font-thin font-light text-center md:text-3xl xl:text-4xl xl:leading-snug font-pt">
+                  <p className="mb-4 text-2xl font-thin font-light text-center md:text-3xl xl:text-4xl xl:leading-snug">
                     {homepageData.welcomeHeading}
                   </p>
 
@@ -488,7 +488,7 @@ const Home = ({ data }) => {
                   </div>
                   <div className="mt-8">
                     <Link href="/">
-                      <a className="btn btn--orange">Learn More</a>
+                      <a className="btn btn--orange btn--learn">Learn More</a>
                     </Link>
                   </div>
                 </div>

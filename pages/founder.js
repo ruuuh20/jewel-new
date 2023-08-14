@@ -76,35 +76,31 @@ export default function Founder(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24pb-[45px]"
           variants={fade}
         >
-          <Container>
-            <div className="relative w-full pt-8 pb-[120px]">
-              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
-                <span>대표 인사말</span>
-              </div>
-              <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
-                <div className="relative">
-                  <Image
-                    src="/ham-logo.png"
-                    width="60"
-                    height="60"
-                  />
+          <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+           <Container>
+                <div className="flex items-center justify-between">
+                  <h3 className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                      Founder's Message
+                  </h3>
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                    <span>대표 인사말</span>
+                  </div>
                 </div>
+              </Container>
               </div>
-              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-              Founder's Message
-              </h3>
-            </div>
+          <Container>
+       
             <m.div>
               {posts &&
                 posts.map((post) => (
                   <>
-                    <div className="flex flex-wrap">
-                      <div className="relative w-full px-1 my-5 rounded md:px-[6rem] md:w-6/12 content md:mb-0">
+                    <div className="flex flex-wrap pt-8">
+                      <div className="relative w-full md:px-1 my-2 md:my-5 rounded md:px-[6rem] md:w-6/12 content md:mb-0">
                         <div className="image-container">
-                          <div className="offset-bg">
+                          <div className="">
                             <figure className="mb-2 rounded-lg md:mb-6">
                               <ImageComponent
                                 image={
@@ -118,7 +114,7 @@ export default function Founder(props) {
                         </div>
                         <section className="pb-4 md:pt-0">
                           <div className="content">
-                            <div className="w-full py-4 mt-0 text-base text-center md:text-xl">
+                            <div className="w-full py-2 mt-10 text-base font-bold text-center md:text-xl">
                               <h4>Profile / 프로필</h4>
                             </div>
                             <div className="w-full">
@@ -276,7 +272,7 @@ export default function Founder(props) {
                           </div>
                         </section>
                       </div>
-                      <div className="w-full py-5 pl-5 pr-5 text-sm bg-gray-100 rounded-lg md:pl-6 md:pr-10 text-slate md:py-10 md:pl-14 md:pr-20 md:w-5/12 content">
+                      <div className="w-full py-5 pl-2 pr-2 text-sm bg-gray-100 rounded-lg md:pl-6 md:pr-10 text-slate md:py-10 md:pl-14 md:pr-20 md:w-5/12 content">
                         <PortableText
                           value={post.content}
                           components={myPortableTextComponents}
@@ -295,7 +291,7 @@ export default function Founder(props) {
             <hr className="my-8 md:my-16" />
             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
               <div className="flex flex-col-reverse mt-12 md:mt-0 md:flex-row">
-                <div className="w-full max-w-4-col md:order-last mt-6 md:mt-0 border-t border-dashed md:border-none pt-10 md:pt-0">
+                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
                   <div className="relative w-full">
                     <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
@@ -369,7 +365,7 @@ export default function Founder(props) {
                   </div>
                 </div>
 
-                <div className="flex justify-between w-full md:max-w-4-col md:block text-right md:text-left">
+                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
                   <div className="relative w-full">
                     <nav className="m-auto md:w-2/3">
                       <span className="block mb-4 text-gray-600 leading-tight uppercase text-base md:text-[18px]">
