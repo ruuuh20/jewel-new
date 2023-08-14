@@ -1064,9 +1064,9 @@ body {
 
 @media (max-width: 768px) {
   .btn {
-    width: 60px;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    width: 50px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .btn--donate {
     display: none;

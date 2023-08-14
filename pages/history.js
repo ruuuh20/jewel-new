@@ -84,7 +84,7 @@ export default function About(props) {
                       {post.timelineItems?.map((item, i) => {
                         return (
                           <>
-                            <div className="flex flex-wrap py-4 border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
+                            <div className="flex flex-wrap py-4 font-thin border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
                               <div className="w-full mb-2 md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
                                 <div className="max-w-xl">
                                   <div className="w-full text-2xl md:text-right md:text-3xl xl:text-4xl">
