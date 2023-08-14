@@ -35,28 +35,23 @@ export default function Leadership(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24pb-[45px]"
           variants={fade}
         >
-          <Container>
-            <div className="relative w-full pt-8 pb-[120px]">
-              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
-                <span>함께하는 사람들</span>
-              </div>
-               <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
-                <div className="relative">
-                  <Image
-                    src="/ham-logo.png"
-                    width="60"
-                    height="60"
-                  />
+           <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+           <Container>
+                <div className="flex items-center justify-between">
+                  <h3 className="relative block pb-0 pr-0 mb-0 text-4xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                     Leadership
+                  </h3>
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                   <span>함께하는 사람들</span>
+                  </div>
                 </div>
-            </div>
-              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-               Leadership
-              </h3>
-            </div>
+            </Container>
+          </div>
 
+          <Container>
             <div className="flex flex-wrap mx-auto md:px-0 md:w-10/12">
               {boardNames.map((name, i) => {
                 let col = "w-full";
@@ -73,11 +68,11 @@ export default function Leadership(props) {
                     <div className={`${col} w-full md:mb-4`}>
                       <div className="mx-auto">
                         <div className="w-full mx-auto overflow-hidden">
-                          <div className="flex flex-wrap w-full">
+                          <div className="flex flex-wrap w-full pt-8">
                             <div className={`${p} w-full mb-16`}>
                               <div className="flex flex-col flex-wrap items-center justify-center">
                                 <div className="flex flex-col flex-wrap mb-2 md:mb-6">
-                                  <span className="uppercase  text-2xl  md:text-3xl block mb-0 pb-0 font-display leading-none pt-1 relative block pb-2 mb-2  after:absolute after:h-[4px] after:bg-yellow after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%] text-center">
+                                  <span className="uppercase  text-2xl  md:text-3xl block mb-0 pb-0 font-display leading-none pt-1 relative block pb-2 mb-2  after:absolute after:h-[4px] after:bg-[#d96e34] after:w-[100%] after:left-[0] after:right-[12.5%] after:bottom-[-5%] text-center">
                                     {name}
                                   </span>
 
@@ -97,19 +92,19 @@ export default function Leadership(props) {
                                         .map((filteredPost, i) => (
                                          ( i >= 4 && filteredPost.boardName.en === "Directors" || filteredPost.boardName.en === "Honorary Advisory Board") ? (
                                             <li className="w-1/3 py-2 md:text-lg">
-                                            <p className="font-pt-bold">
+                                            <p className="font-bold">
                                                {filteredPost.name.en} 
                                             </p>
-                                            <p className="text-gray-500 font-pt">
+                                            <p className="text-gray-500">
                                               {filteredPost.position.en}
                                             </p>
                                           </li>
                                           ) : (
                                             <li className="w-full py-2 md:px-16">
-                                            <p className="font-pt-bold md:text-lg">
+                                            <p className="font-bold md:text-lg">
                                                {filteredPost.name.en}
                                             </p>
-                                            <p className="text-gray-500 font-pt">
+                                            <p className="text-gray-500">
                                               {filteredPost.position.en}
                                             </p>
                                           </li>

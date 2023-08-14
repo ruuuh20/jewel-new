@@ -51,24 +51,25 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
         >
-          <Container>
-            <div className="relative w-full pt-8 pb-[120px]">
-              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
-                <span>함께하는교육이 걸어온 길</span>
-              </div>
-              <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
-                <div className="relative">
-                  <Image src="/ham-logo.png" width="60" height="60" />
+            <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+           <Container>
+                <div className="flex items-center justify-between">
+                  <h3 className="relative block pb-0 pr-0 mb-0 text-4xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                      Our History
+                  </h3>
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                     <span>함께하는교육이 걸어온 길</span>
+                  </div>
                 </div>
-              </div>
-              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-                Our History
-              </h3>
-            </div>
-            <div className="w-full mx-auto mb-10 md:w-10/12">
-              <div className="w-full mx-auto text-center md:w-9/12 lg:w-7/12">
+            </Container>
+          </div>
+
+          <Container>
+         
+            <div className="w-full mx-auto mt-8 mb-10 md:w-10/12 md:mt-0 ">
+              <div className="w-full mx-auto md:w-9/12 lg:w-7/12">
                 <div className="text-base font-thin md:text-[24px] leading-normal">
                   <p>{posts[0].history[locale]}</p>
                 </div>
@@ -83,7 +84,7 @@ export default function About(props) {
                       {post.timelineItems?.map((item, i) => {
                         return (
                           <>
-                            <div className="flex flex-wrap py-4 font-serif border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
+                            <div className="flex flex-wrap py-4 border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
                               <div className="w-full mb-2 md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
                                 <div className="max-w-xl">
                                   <div className="w-full text-2xl md:text-right md:text-3xl xl:text-4xl">
@@ -165,7 +166,7 @@ export default function About(props) {
 
             <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
               <div className="flex flex-col-reverse mt-12 md:flex-row md:mt-0">
-                <div className="w-full max-w-4-col md:order-last mt-6 md:mt-0 border-t border-dashed md:border-none pt-10 md:pt-0">
+                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
                   <div className="relative w-full">
                     <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
@@ -223,7 +224,7 @@ export default function About(props) {
                       </a>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         5
                       </div>
@@ -239,7 +240,7 @@ export default function About(props) {
                   </div>
                 </div>
 
-                <div className="flex justify-between w-full md:max-w-4-col md:block text-right md:text-left">
+                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
                   <div className="relative w-full">
                     <nav className="m-auto md:w-2/3">
                       <span className="block mb-4 text-gray-600 leading-tight uppercase text-base md:text-[18px]">

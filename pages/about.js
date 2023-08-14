@@ -30,7 +30,7 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24pb-[45px] "
+          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
         >
         
             <div className="relative w-full pt-8 pb-[28px] border-b border-black">
