@@ -42,7 +42,7 @@ export default function About(props) {
               </div> */}
               <Container>
                 <div className="flex items-center justify-between">
-                  <h3 className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                  <h3 className="relative block pb-0 pr-12 mb-0 text-3xl tracking-tight font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
                     About
                   </h3>
                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">

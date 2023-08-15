@@ -23,28 +23,25 @@ export default function Donate(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
           variants={fade}
         >
-        <Container>
-          <div className="relative w-full pt-8 pb-[88px]">
-             <div className="absolute hidden mt-3 overflow-visible md:block spin-slow spin-container">
-              <div className="relative">
-                <Image
-                  
-                  src="/ham-logo.png"
-                  width="40"
-                  height="40"
-                />
-              </div>
-            </div>
-            <span className="relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[4%]">
-              Make an Impact
-            </span>
+           <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+           <Container>
+                <div className="flex items-center justify-between">
+                  <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                      Make an Impact
+                  </h3>
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                    
+                  </div>
+                </div>
+            </Container>
           </div>
-        </Container>
+
+        
         <Container>
-          <m.div variants={fade} className="flex flex-wrap py-6 font-serif text-xl">
+          <m.div variants={fade} className="flex flex-wrap py-8 text-xl">
             <div className="py-5 m-auto md:w-7/12">
               <p>
                 Be a part of creating a thriving community by donating to Educate Together

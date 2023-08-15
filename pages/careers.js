@@ -23,31 +23,24 @@ export default function Careers(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24  pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
           variants={fade}
         >
-        <Container>
-          <div className="relative w-full pt-8 pb-[120px]">
-             <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
-              <span>함께해요</span>
-            </div>
-             <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
-              <div className="relative">
-                <Image
-                  
-                  src="/ham-logo.png"
-                  width="60"
-                  height="60"
-                />
-              </div>
-            </div>
-            <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-              Join Our Team
-            </h3>
+           <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+           <Container>
+                <div className="flex items-center justify-between">
+                  <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                     Join Our Team
+                  </h3>
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                      <span>함께해요</span>
+                  </div>
+                </div>
+            </Container>
           </div>
-        </Container>
+       
         <Container>
-          <div className="flex flex-wrap py-6">
+          <div className="flex flex-wrap py-8">
             <div className="py-5 m-auto md:w-7/12">
               <p className="text-base md:text-xl">
                 At Educate Together, we are commited to building a diverse team that
@@ -70,7 +63,7 @@ export default function Careers(props) {
 
             <div className="w-full py-8 m-auto md:w-7/12">
               <p className="text-base text-center text-gray-600 md:text-xl">
-                You can also fill out our contact form for any inquiries.
+                Please fill out our contact form with any questions.
               </p>
               <ContactForm />
             </div>

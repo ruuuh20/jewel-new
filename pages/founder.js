@@ -82,7 +82,7 @@ export default function Founder(props) {
           <div className="relative w-full pt-8 pb-[28px] border-b border-black">
            <Container>
                 <div className="flex items-center justify-between">
-                  <h3 className="relative block pb-0 pr-0 mb-0 text-4xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                  <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
                       Founder's Message
                   </h3>
                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
@@ -92,7 +92,6 @@ export default function Founder(props) {
             </Container>
           </div>
           <Container>
-       
             <m.div>
               {posts &&
                 posts.map((post) => (

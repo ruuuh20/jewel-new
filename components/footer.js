@@ -273,9 +273,7 @@ export default function Footer({ contact }) {
                   <Link href="/careers">
                     <a class="hover:opacity-75"> Careers</a>
                   </Link>
-                   <Link href="/support">
-                    <a class="hover:opacity-75">Support</a>
-                  </Link>
+                 
                 </nav>
               </div>
             </div>

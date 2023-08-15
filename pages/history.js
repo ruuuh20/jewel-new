@@ -56,7 +56,7 @@ export default function About(props) {
             <div className="relative w-full pt-8 pb-[28px] border-b border-black">
            <Container>
                 <div className="flex items-center justify-between">
-                  <h3 className="relative block pb-0 pr-0 mb-0 text-4xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                  <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
                       Our History
                   </h3>
                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
@@ -68,10 +68,10 @@ export default function About(props) {
 
           <Container>
          
-            <div className="w-full mx-auto mt-8 mb-10 md:w-10/12 md:mt-0 ">
-              <div className="w-full mx-auto md:w-9/12 lg:w-7/12">
-                <div className="text-base font-thin md:text-[24px] leading-normal">
-                  <p>{posts[0].history[locale]}</p>
+            <div className="w-full mx-auto mt-8 mb-10 md:mt-0 ">
+              <div className="w-full md:w-9/12 lg:w-7/12">
+                <div className="w-full text-lg md:pr-12 md:text-2xl text-darkgray md:pt-8">
+                  <p className="leading-snug">{posts[0].history[locale]}</p>
                 </div>
               </div>
             </div>
@@ -80,14 +80,14 @@ export default function About(props) {
               {posts &&
                 posts.map((post) => (
                   <>
-                    <section className="my-2">
+                    <section className="my-20">
                       {post.timelineItems?.map((item, i) => {
                         return (
                           <>
                             <div className="flex flex-wrap py-4 font-thin border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
                               <div className="w-full mb-2 md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
                                 <div className="max-w-xl">
-                                  <div className="w-full text-2xl md:text-right md:text-3xl xl:text-4xl">
+                                  <div className="w-full text-xl md:text-right md:text-2xl xl:text-3xl">
                                     <p>{item.timelineItemYear[locale]}</p>
                                   </div>
                                 </div>
