@@ -32,33 +32,27 @@ export default function Projects(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
           variants={fade}
         >
-        <Container>
-          <div className="relative w-full pt-8 pb-[120px] md:max-4xl">
-             <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
-                <span>프로젝트</span>
-              </div>
-            <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
-              <div className="relative">
-                <Image
-                  
-                  src="/ham-logo.png"
-                  width="60"
-                  height="60"
-                />
-              </div>
-            </div>
-            <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-             Current Projects
-            </h3>
-            
+          <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+            <Container>
+                  <div className="flex items-center justify-between">
+                    <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                          Current Projects
+                    </h3>
+                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                         <span>프로젝트</span>
+                    </div>
+                  </div>
+              </Container>
           </div>
+        <Container>
+        
 
           {posts &&
             posts.map((post) => (
-              <section className="mt-4 md:mt-0">
+              <section className="pt-8 mt-4 md:mt-0">
                 <div className="max-w-screen-xl px-0 px-4 mx-auto md:py-16 sm:px-6 lg:px-8">
                   <div className="grid grid-cols-1 gap-0 lg:gap-16 lg:grid-cols-2">
                     <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
@@ -89,7 +83,7 @@ export default function Projects(props) {
 
                       <p className="mt-4 text-gray-600">{post.cardDescription}</p>
                       <Link href={`/projects/${post.slug.current}`}>
-                        <a className="inline-flex items-center px-8 py-3 mt-4 font-extrabold border rounded text-darkgray bg-yellow border-yellow hover:bg-transparent hover:text-blue active:text-blue focus:outline-none focus:ring">
+                        <a className="inline-flex items-center px-8 py-3 mt-4 font-extrabold border rounded text-darkgray bg-[#d9d4aa]  hover:bg-[#d96e34]  focus:outline-none focus:ring">
                           <span className="text-base font-extrabold">
                             {" "}
                             Explore
@@ -120,7 +114,7 @@ export default function Projects(props) {
               <div className="flex mt-12 md:mt-0">
                 <div className="w-full max-w-4-col md:order-last">
                   <div className="relative w-full">
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         1
                       </div>
@@ -133,7 +127,7 @@ export default function Projects(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         2
                       </div>
@@ -146,7 +140,7 @@ export default function Projects(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         3
                       </div>
@@ -159,7 +153,7 @@ export default function Projects(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         4
                       </div>
@@ -172,7 +166,7 @@ export default function Projects(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         5
                       </div>

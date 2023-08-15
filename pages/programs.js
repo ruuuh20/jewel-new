@@ -34,34 +34,34 @@ export default function Programs(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pt-[90px] md:pt-[180px] pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
           variants={fade}
         >
+          <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+            <Container>
+                  <div className="flex items-center justify-between">
+                    <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                          Programs
+                    </h3>
+                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                         <span>프로그램</span>
+                    </div>
+                  </div>
+              </Container>
+          </div>
           <Container>
-            <div className="relative w-full md:max-4xl pt-8 pb-[120px]">
-              <div className="pb-1 md:pb-8 tracking-widest uppercase text-sm md:text-[20px] font-semibold text-gray-400 font-arial">
-                <span>프로그램</span>
-              </div>
-              <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
-                <div className="relative">
-                  <Image src="/ham-logo.png" width="60" height="60" />
-                </div>
-              </div>
-              <h3 className="font-pt relative block pb-0 pr-12 mb-0 text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl left-0 md:left-[5%]">
-                Programs
-              </h3>
-            </div>
+      
             <m.div>
-              <div className="w-full">
+              <div className="w-full pt-8">
                 {/* <div className="w-full mb-5 md:mb-0 md:w-[300px]">
                   <div className="w-full md:w-[250px]">
-                    <span className="block text-sm text-navy mb-5 font-medium">
+                    <span className="block mb-5 text-sm font-medium text-navy">
                       Categories
                     </span>
-                    <span className="inline-block text-sm text-gold underline mb-3 mr-5 font-medium">
+                    <span className="inline-block mb-3 mr-5 text-sm font-medium underline text-gold">
                       A
                     </span>
-                    <span className="inline-block text-sm text-gold underline mb-3 mr-5 font-medium">
+                    <span className="inline-block mb-3 mr-5 text-sm font-medium underline text-gold">
                       B
                     </span>
                   </div>
@@ -106,7 +106,7 @@ export default function Programs(props) {
               <div className="flex mt-12 md:mt-0">
                 <div className="w-full max-w-4-col md:order-last">
                   <div className="relative w-full">
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         1
                       </div>
@@ -119,7 +119,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         2
                       </div>
@@ -132,7 +132,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         3
                       </div>
@@ -145,7 +145,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         4
                       </div>
@@ -158,7 +158,7 @@ export default function Programs(props) {
                       </Link>
                     </div>
 
-                    <div className="relative flex items-center h-auto md:h-20 select-none">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
                       <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
                         5
                       </div>
