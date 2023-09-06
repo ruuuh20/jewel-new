@@ -161,7 +161,7 @@ const Home = ({ data }) => {
             </div> */}
             <Container>
               <div className="m-auto py-[4rem] md:mt-12 md:py-28">
-                <div className="mx-auto my-5 text-lg text-center text-gray-800 capitalize md:text-xl tagline">
+                <div className="mx-auto my-5 text-lg text-center text-gray-800 capitalize md:text-xl tagline text-[#d96e34]">
                   Building bridges, Breaking barriers
                 </div>
                 <div className="flex flex-col px-2 md:px-[18rem]">
@@ -217,7 +217,7 @@ const Home = ({ data }) => {
                 <h3 className="h3-title">Upcoming Events</h3>
               </div>
               <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.5rem] rounded-lg">
-                <div className="w-full pl-6 md:w-4/12">
+                <div className="w-full pl-4 md:w-4/12">
                   <div className="block rounded-lg text-[#075985] font-bold">
                     <p className="text-xl md:text-3xl event-title">
                       {homepageData.upcomingEvents[0].titleEng}
@@ -230,7 +230,7 @@ const Home = ({ data }) => {
                     </p>
                   </div>
 
-                  <div className="mt-0 md:mt-8">
+                  <div className="mt-8">
                     {/* <Link href={`/${homepageData.callToAction[0].slug}`}>
                       <a className="btn btn--orange btn--learn">Learn More</a>
                     </Link> */}
