@@ -33,17 +33,17 @@ export default function Contact(props) {
             className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
             variants={fade}
           >
-              <div className="relative w-full pt-8 pb-[28px] border-b border-black">
-           <Container>
-                <div className="flex items-center justify-between">
-                  <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
-                       Contact Us
-                  </h3>
-                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
-                      <span>연락처</span>
+          <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+            <Container>
+                  <div className="flex items-center justify-between">
+                    <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
+                        Contact Us
+                    </h3>
+                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                        <span>연락처</span>
+                    </div>
                   </div>
-                </div>
-            </Container>
+              </Container>
           </div>
            
             <Container>
