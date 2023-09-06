@@ -161,7 +161,7 @@ const Home = ({ data }) => {
             </div> */}
             <Container>
               <div className="m-auto py-[4rem] md:mt-12 md:py-28">
-                <div className="mx-auto my-5 text-lg text-center text-gray-800 capitalize md:text-xl tagline text-[#d96e34]">
+                <div className="mx-auto my-5 text-lg text-center  md:text-xl tagline text-[#d96e34] uppercase tracking-wide md:tracking-wider">
                   Building bridges, Breaking barriers
                 </div>
                 <div className="flex flex-col px-2 md:px-[18rem]">
