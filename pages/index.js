@@ -216,9 +216,9 @@ const Home = ({ data }) => {
               <div className="">
                 <h3 className="h3-title">Upcoming Events</h3>
               </div>
-              <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.2rem] rounded-lg">
-                <div className="w-full md:w-1/2 ">
-                  <div className="block p-6 text-center rounded-lg text-[#075985] font-bold">
+              <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.5rem] rounded-lg">
+                <div className="w-full pl-6 md:w-4/12">
+                  <div className="block rounded-lg text-[#075985] font-bold">
                     <p className="text-xl md:text-3xl event-title">
                       {homepageData.upcomingEvents[0].titleEng}
                     </p>
@@ -230,21 +230,21 @@ const Home = ({ data }) => {
                     </p>
                   </div>
 
-                  <div className="mt-0 md:mt-6">
+                  <div className="mt-0 md:mt-8">
                     {/* <Link href={`/${homepageData.callToAction[0].slug}`}>
                       <a className="btn btn--orange btn--learn">Learn More</a>
                     </Link> */}
                     <a
                       href="https://forms.gle/bBQpwLw7Zp5QA7Lk6"
                       target="_blank"
-                      className="mx-auto uppercase btn btn--orange btn-event-form"
+                      className="uppercase btn btn--orange btn-event-form"
                     >
                       Sign Up here
                     </a>
                   </div>
                 </div>
-                <div className="w-full mt-10 rounded md:w-1/2 md:mt-0">
-                  <article className="px-[1rem] md:px-[3rem]">
+                <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
+                  <article className="px-[1rem] md:px-[5rem]">
                     <ImageComponent
                       image={
                         homepageData.upcomingEvents[0].image !== null
