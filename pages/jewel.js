@@ -185,10 +185,10 @@ export default function Jewel(props) {
 
         <section className="opacity-[75%]">
           <Container>
-            <div className="overflow-hidden mt-[5rem] md:mt-[15rem] ">
+            <div className="overflow-hidden  md:mt-[8rem] ">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
+                className="block font-display uppercase text-[7vw] md:text-[4vw] 2xl:text-[70px] leading-none relative z-10"
               >
                 <span className="spin spin-0">J</span>
                 <span className="text-blue">OINING</span>
@@ -197,7 +197,7 @@ export default function Jewel(props) {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
+                className="block font-display uppercase text-[7vw] md:text-[4vw] 2xl:text-[70px] leading-none relative z-10"
               >
                 <span className="spin spin-3">E</span>
                 <span className="text-blue">AST &</span>{" "}
@@ -208,7 +208,7 @@ export default function Jewel(props) {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
+                className="block font-display uppercase text-[7vw] md:text-[4vw] 2xl:text-[70px] leading-none relative z-10"
               >
                 <span className="text-blue">AS</span>{" "}
                 <span className="spin spin-1">E</span>
@@ -218,7 +218,7 @@ export default function Jewel(props) {
             <div className="overflow-hidden">
               <m.span
                 variants={textReveal}
-                className="block font-display uppercase text-[10vw] md:text-[6vw] 2xl:text-[100px] leading-none relative z-10"
+                className="block font-display uppercase text-[7vw] md:text-[4vw] 2xl:text-[70px] leading-none relative z-10"
               >
                 <span className="spin spin-4">L</span>
                 <span className="text-blue">IASONS</span>
@@ -271,13 +271,13 @@ export default function Jewel(props) {
           </div>
         </section> */}
         <Container>
-          <section className="py-[60px]">
+          <section className="pb-[60px] pt-[80px]">
             <div className="justify-around w-full mt-10 ">
               <h3 className="h3-title">What we're working on</h3>
               <li className="flex">
                 <Link href="/projects/adding-aapi">
-                  <a className="w-full p-5 bg-gray-200 rounded-xl md:w-3/12 ">
-                    <span className="text-3xl font-semibold">AAPI</span>
+                  <a className="w-full p-5 bg-gray-200 rounded-xl md:w-4/12 ">
+                    <span className="text-2xl font-semibold">AAPI</span>
                     <p>Learn more about our AAPI initiative</p>
                   </a>
                 </Link>
@@ -285,9 +285,9 @@ export default function Jewel(props) {
             </div>
           </section>
 
-          <section className="flex flex-wrap py-4 md:py-10">
-            <div className="flex flex-wrap justify-around w-10/12 py-8 mt-10 md:w-5/12">
-              <p className="md:text-xl">
+          <section className="flex flex-wrap py-4 md:py-[50px]">
+            <div className="flex flex-wrap justify-around w-10/12 py-10 mt-10 md:w-7/12">
+              <p className="md:text-3xl">
                 "For over two decades, Kay has been a trailblazer in the field
                 of education. She has earned a well-deserved reputation as a
                 visionary educator, with a track record of remarkable
@@ -299,7 +299,9 @@ export default function Jewel(props) {
               </p>
             </div>
 
-            <ImageGallery />
+            <div className="mt-5 ml-auto md:w-10/12">
+              <ImageGallery />
+            </div>
           </section>
         </Container>
 

@@ -65,6 +65,8 @@ export default function Terms(props) {
                 <a
                   href="https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/"
                   target="_blank"
+                
+                      rel="noopener noreferrer"
                 >
                   Terms and Conditions Generator
                 </a>

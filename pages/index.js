@@ -186,7 +186,7 @@ const Home = ({ data }) => {
                   </div> */}
                   <div className="w-full m-auto mt-10 text-center ">
                     <Link href="/about">
-                      <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black rounded-xl hover:text-white hover:bg-black active:text-white active: focus:outline-none focus:ring">
+                      <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black rounded-xl bg-[#d9d4aa] hover:bg-[#ebe8d2] focus:outline-none focus:ring">
                         <span className="text-lg font-light"> About Us</span>
 
                         <svg
@@ -523,6 +523,88 @@ const Home = ({ data }) => {
                 </div>
               </div>
             </section> */}
+
+            <section className="py-4 md:py-10">
+              <div className="flex flex-col content">
+                <div className="w-full md:w-1/2">
+                  <div className="">
+                    <h3 className="h3-title">
+                      What's Happening in Our Community
+                    </h3>
+                  </div>
+                  <div className="">
+                    <p className="cta-desc">
+                      Stay in the loop with the latest educational events.
+                    </p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-10 grid-rows-2 mt-8 md:gap-10 md:grid-rows-1">
+                  <div className="col-span-10 font-sans md:col-span-4 event-wrap-header">
+                    <h4 className="text-2xl font-bold">
+                      Hope Against Hate Safety Training
+                    </h4>
+                    <p className="mt-2">
+                      <a
+                        href="https://kace.org"
+                        className="text-2xl font-semibold text-blue"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        KACE
+                      </a>
+                    </p>
+                    <p className="mt-2 text-xl">
+                      TUESDAY, SEPTEMBER 19, 2023 11 AM
+                    </p>
+
+                    <p className="mt-2">
+                      Our greatest safety is with community. Learn how to
+                      protect yourself and look out for others by signing up for
+                      KACE's #HopeAgainstHate Virtual Safety Training in
+                      partnership with Asian American Federation and Nonviolent
+                      Peaceforce. TUESDAY, SEPTEMBER 19, 2023 11 AM - Workshop
+                      via Zoom The Zoom Link will be provided to registered
+                      participants one (1) day before the workshop.
+                    </p>
+                    <p className="mt-2 font-semibold">
+                      For more information, visit{" "}
+                      <a
+                        className="underline"
+                        href="https://kace.org/2023/09/05/hope-against-hate-safety-training/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        KACE.org
+                      </a>{" "}
+                      or{" "}
+                      <a
+                        className="underline"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSe2MrTHTueZJcYHJ80rxUF4HwbPpmVAHXOgE3nwJu_2ATuPNg/viewform"
+                      >
+                        register here.
+                      </a>
+                    </p>
+                  </div>
+                  <div className="relative w-full col-span-10 mt-2 md:mt-0 md:col-span-5 event-wrap-img">
+                    <a
+                      href="https://kace.org/2023/09/05/hope-against-hate-safety-training/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src="/image_6483441.JPG"
+                        layout="responsive"
+                        // objectFit="cover"
+                        width="100%"
+                        height="100"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
 
             <section className="py-4 md:py-10">
               <div className="flex flex-row content md:flex-col">
