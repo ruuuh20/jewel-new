@@ -186,7 +186,7 @@ const Home = ({ data }) => {
                   </div> */}
                   <div className="w-full m-auto mt-10 text-center ">
                     <Link href="/about">
-                      <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black rounded-xl bg-[#d9d4aa] hover:bg-[#ebe8d2] focus:outline-none focus:ring">
+                      <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black rounded-xl hover:bg-[#d9d4aa] focus:outline-none focus:ring">
                         <span className="text-lg font-light"> About Us</span>
 
                         <svg
@@ -238,13 +238,14 @@ const Home = ({ data }) => {
                       href="https://forms.gle/bBQpwLw7Zp5QA7Lk6"
                       target="_blank"
                       className="uppercase btn btn--orange btn-event-form"
+                      rel="noopener noreferrer"
                     >
                       Sign Up here
                     </a>
                   </div>
                 </div>
                 <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
-                  <article className="px-[1rem] md:px-[5rem]">
+                  <article className="px-[2rem] md:px-[5rem] w-4/5">
                     <ImageComponent
                       image={
                         homepageData.upcomingEvents[0].image !== null
@@ -534,69 +535,86 @@ const Home = ({ data }) => {
                   </div>
                   <div className="">
                     <p className="cta-desc">
-                      Stay in the loop with the latest educational events.
+                      📌 Stay in the loop with the latest educational events.
                     </p>
                   </div>
                 </div>
-                <div className="grid grid-cols-10 grid-rows-2 mt-8 md:gap-10 md:grid-rows-1">
-                  <div className="col-span-10 font-sans md:col-span-4 event-wrap-header">
-                    <h4 className="text-2xl font-bold">
-                      Hope Against Hate Safety Training
-                    </h4>
+
+                <div className="grid grid-cols-9 grid-rows-2 my-6 md:my-10 md:gap-8 md:grid-rows-1">
+                  <div className="col-span-9 md:col-span-3 event-wrap-header">
+                    <Image
+                      src="/event-1.jpeg"
+                      layout="responsive"
+                      // objectFit="cover"
+                      width="80%"
+                      height="100%"
+                    />
+                  </div>
+                  <div className="col-span-9 md:col-span-3 event-wrap-header">
+                    <Image
+                      src="/fest0.jpeg"
+                      layout="responsive"
+                      // objectFit="cover"
+                      width="80%"
+                      height="100%"
+                    />
+                  </div>
+                  <div className="relative w-full col-span-9 mt-2 md:mt-0 md:col-span-3 event-wrap-img">
+                    <Image
+                      src="/fest1.jpeg"
+                      layout="responsive"
+                      // objectFit="cover"
+                      width="80%"
+                      height="100"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-10 grid-rows-2 mt-8 md:mt-10 md:gap-10 md:grid-rows-1">
+                  <div className="col-span-10 md:col-span-4 event-wrap-header">
+                    <a
+                      href="https://kace.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h4 className="text-2xl font-bold text-[#075985]">
+                        THE 14TH ANNUAL WPU EDUCATIONAL TECHNOLOGY CONFERENCE
+                      </h4>
+                    </a>
                     <p className="mt-2">
-                      <a
-                        href="https://kace.org"
-                        className="text-2xl font-semibold text-blue"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        KACE
-                      </a>
+                      <span className="font-semibold text-gray-700">
+                        ISTE's Role in Reimagining Teaching, Learning, and
+                        Leadership for K-12 Schools
+                      </span>
                     </p>
-                    <p className="mt-2 text-xl">
-                      TUESDAY, SEPTEMBER 19, 2023 11 AM
+                    <p className="mx-auto mt-2 text-center uppercase bg-gray-200 ">
+                      Friday, November 17th, 2023 | 8:30 AM - 3:10 PM, EST
                     </p>
 
-                    <p className="mt-2">
-                      Our greatest safety is with community. Learn how to
-                      protect yourself and look out for others by signing up for
-                      KACE's #HopeAgainstHate Virtual Safety Training in
-                      partnership with Asian American Federation and Nonviolent
-                      Peaceforce. TUESDAY, SEPTEMBER 19, 2023 11 AM - Workshop
-                      via Zoom The Zoom Link will be provided to registered
-                      participants one (1) day before the workshop.
-                    </p>
+                    <p className="mt-2"></p>
                     <p className="mt-2 font-semibold">
-                      For more information, visit{" "}
                       <a
                         className="underline"
-                        href="https://kace.org/2023/09/05/hope-against-hate-safety-training/"
+                        href="https://2023wpuedtechconference.weebly.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        KACE.org
+                        Visit their page for more information
                       </a>{" "}
-                      or{" "}
-                      <a
-                        className="underline"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSe2MrTHTueZJcYHJ80rxUF4HwbPpmVAHXOgE3nwJu_2ATuPNg/viewform"
-                      >
-                        register here.
-                      </a>
                     </p>
                   </div>
                   <div className="relative w-full col-span-10 mt-2 md:mt-0 md:col-span-5 event-wrap-img">
                     <a
-                      href="https://kace.org/2023/09/05/hope-against-hate-safety-training/"
+                      href="https://2023wpuedtechconference.weebly.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Image
-                        src="/image_6483441.JPG"
+                        src="/ed-logo.png"
                         layout="responsive"
                         // objectFit="cover"
                         width="100%"
-                        height="100"
+                        height="50"
                       />
                     </a>
                   </div>
