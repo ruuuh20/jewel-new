@@ -245,7 +245,7 @@ const Home = ({ data }) => {
                   </div>
                 </div>
                 <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
-                  <article className="px-[2rem] md:px-[5rem] w-4/5">
+                  <article className="px-[2rem] md:px-[5rem] md:w-4/5">
                     <ImageComponent
                       image={
                         homepageData.upcomingEvents[0].image !== null
@@ -540,7 +540,7 @@ const Home = ({ data }) => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-9 grid-rows-2 my-6 md:my-10 md:gap-8 md:grid-rows-1">
+                <div className="grid grid-cols-9 grid-rows-2 gap-4 my-6 md:my-10 md:gap-8 md:grid-rows-1">
                   <div className="col-span-9 md:col-span-3 event-wrap-header">
                     <Image
                       src="/event-1.jpeg"
