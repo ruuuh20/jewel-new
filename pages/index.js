@@ -220,13 +220,13 @@ const Home = ({ data }) => {
                 <div className="w-full pl-4 md:w-4/12">
                   <div className="block rounded-lg text-[#075985] font-bold">
                     <p className="text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[0].titleEng}
+                      {homepageData.upcomingEvents[1].titleEng}
                     </p>
                     {/* <p className="cta-desc">
                       {homepageData.upcomingEvents[0].description}
                     </p> */}{" "}
                     <p className="mt-2 text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[0].titleKor}
+                      {homepageData.upcomingEvents[1].titleKor}
                     </p>
                   </div>
 
@@ -234,22 +234,22 @@ const Home = ({ data }) => {
                     {/* <Link href={`/${homepageData.callToAction[0].slug}`}>
                       <a className="btn btn--orange btn--learn">Learn More</a>
                     </Link> */}
-                    <a
+                    {/* <a
                       href="https://forms.gle/bBQpwLw7Zp5QA7Lk6"
                       target="_blank"
                       className="uppercase btn btn--orange btn-event-form"
                       rel="noopener noreferrer"
                     >
                       Sign Up here
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
                   <article className="px-[2rem] md:px-[5rem] md:w-4/5">
                     <ImageComponent
                       image={
-                        homepageData.upcomingEvents[0].image !== null
-                          ? homepageData.upcomingEvents[0].image.url
+                        homepageData.upcomingEvents[1].image !== null
+                          ? homepageData.upcomingEvents[1].image.url
                           : "https://via.placeholder.com/50"
                       }
                     />
@@ -336,7 +336,27 @@ const Home = ({ data }) => {
                         />
                       </div>
                     </div>
-                    <h2 class="card-title">Eduventure</h2>
+                    <h2 class="card-title">
+                      Eduventure{" "}
+                      <span className="inline-block mt-1 opacity-60">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-external-link"
+                        >
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </span>
+                    </h2>
                     <p class="card-description">
                       Promoting cross-cultural understanding, developing
                       partnerships, and enhancing language skills. Through
