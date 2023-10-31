@@ -234,14 +234,14 @@ const Home = ({ data }) => {
                     {/* <Link href={`/${homepageData.callToAction[0].slug}`}>
                       <a className="btn btn--orange btn--learn">Learn More</a>
                     </Link> */}
-                    {/* <a
-                      href="https://forms.gle/bBQpwLw7Zp5QA7Lk6"
+                    <a
+                      href="https://forms.gle/Ug2ubrBegfHeHWAq9"
                       target="_blank"
                       className="uppercase btn btn--orange btn-event-form"
                       rel="noopener noreferrer"
                     >
-                      Sign Up here
-                    </a> */}
+                      RSVP here
+                    </a>
                   </div>
                 </div>
                 <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
