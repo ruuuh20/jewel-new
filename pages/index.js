@@ -563,7 +563,7 @@ const Home = ({ data }) => {
                 <div className="grid grid-cols-9 grid-rows-2 gap-4 my-6 md:my-10 md:gap-8 md:grid-rows-1">
                   <div className="col-span-9 md:col-span-3 event-wrap-header">
                     <Image
-                      src="/event-1.jpeg"
+                      src="/event1-1.jpeg"
                       layout="responsive"
                       // objectFit="cover"
                       width="80%"
@@ -572,7 +572,7 @@ const Home = ({ data }) => {
                   </div>
                   <div className="col-span-9 md:col-span-3 event-wrap-header">
                     <Image
-                      src="/fest0.jpeg"
+                      src="/event1-2.jpeg"
                       layout="responsive"
                       // objectFit="cover"
                       width="80%"
@@ -581,7 +581,7 @@ const Home = ({ data }) => {
                   </div>
                   <div className="relative w-full col-span-9 mt-2 md:mt-0 md:col-span-3 event-wrap-img">
                     <Image
-                      src="/fest1.jpeg"
+                      src="/event1-3.jpeg"
                       layout="responsive"
                       // objectFit="cover"
                       width="80%"
