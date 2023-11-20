@@ -594,13 +594,12 @@ const Home = ({ data }) => {
                       rel="noopener noreferrer"
                     >
                       <h4 className="text-2xl font-bold text-[#075985]">
-                        THE 14TH ANNUAL WPU EDUCATIONAL TECHNOLOGY CONFERENCE
+                        Fulbright-Hays GPA 2023 South Korea
                       </h4>
                     </a>
                     <p className="mt-2">
-                      <span className="font-semibold text-gray-700">
-                        ISTE's Role in Reimagining Teaching, Learning, and
-                        Leadership for K-12 Schools
+                      <span className="font-semibold">
+                        Call for Applications - by December 1, 2023
                       </span>
                     </p>
                     <p className="mx-auto mt-2 text-center uppercase bg-gray-200 ">
@@ -608,31 +607,13 @@ const Home = ({ data }) => {
                     </p>
 
                     <p className="mt-2"></p>
-                    <p className="mt-2 font-semibold">
-                      <a
-                        className="underline"
-                        href="https://2023wpuedtechconference.weebly.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Visit their page for more information
-                      </a>{" "}
-                    </p>
                   </div>
                   <div className="relative w-full col-span-10 mt-2 md:mt-0 md:col-span-5 event-wrap-img">
-                    <a
-                      href="https://2023wpuedtechconference.weebly.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        src="/ed-logo.png"
-                        layout="responsive"
-                        // objectFit="cover"
-                        width="100%"
-                        height="50"
-                      />
-                    </a>
+                    <iframe
+                      src="Summer_2024_Fulbright-Hays_GPA_to_South_Korea_Flyer.pdf"
+                      width="100%"
+                      height="500px"
+                    />
                   </div>
                 </div>
               </div>
