@@ -218,22 +218,18 @@ const Home = ({ data }) => {
               </div>
               <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.5rem] rounded-lg">
                 <div className="w-full pl-4 md:w-4/12">
-                  <div className="block rounded-lg text-[#075985] font-bold">
+                  {/* <div className="block rounded-lg text-[#075985] font-bold">
                     <p className="text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[1].titleEng}
+                      {homepageData.upcomingEvents[2].titleEng}
                     </p>
-                    {/* <p className="cta-desc">
-                      {homepageData.upcomingEvents[0].description}
-                    </p> */}{" "}
+             
                     <p className="mt-2 text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[1].titleKor}
+                      {homepageData.upcomingEvents[2].titleKor}
                     </p>
-                  </div>
+                  </div> */}
 
-                  <div className="mt-8">
-                    {/* <Link href={`/${homepageData.callToAction[0].slug}`}>
-                      <a className="btn btn--orange btn--learn">Learn More</a>
-                    </Link> */}
+                  {/* <div className="mt-8">
+                
                     <a
                       href="https://forms.gle/Ug2ubrBegfHeHWAq9"
                       target="_blank"
@@ -242,14 +238,14 @@ const Home = ({ data }) => {
                     >
                       RSVP here
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
-                  <article className="px-[2rem] md:px-[5rem] md:w-4/5">
+                  <article className="px-[2rem] md:px-[5rem] md:w-3/5">
                     <ImageComponent
                       image={
-                        homepageData.upcomingEvents[1].image !== null
-                          ? homepageData.upcomingEvents[1].image.url
+                        homepageData.upcomingEvents[2].image !== null
+                          ? homepageData.upcomingEvents[2].image.url
                           : "https://via.placeholder.com/50"
                       }
                     />
