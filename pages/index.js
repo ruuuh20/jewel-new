@@ -586,24 +586,16 @@ const Home = ({ data }) => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-10 grid-rows-2 mt-8 md:mt-10 md:gap-10 md:grid-rows-1">
+                <div className="grid grid-cols-10 gap-1 mt-8 md:mt-10 md:gap-10 md:grid-rows-1">
                   <div className="col-span-10 md:col-span-4 event-wrap-header">
-                    <a
-                      href="https://kace.org"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <h4 className="text-2xl font-bold text-[#075985]">
-                        Fulbright-Hays GPA 2023 South Korea
-                      </h4>
-                    </a>
+                    <h4 className="text-2xl font-bold text-[#075985]">
+                      Fulbright-Hays GPA 2023 South Korea
+                    </h4>
+
                     <p className="mt-2">
                       <span className="font-semibold">
                         Call for Applications - by December 1, 2023
                       </span>
-                    </p>
-                    <p className="mx-auto mt-2 text-center uppercase bg-gray-200 ">
-                      Friday, November 17th, 2023 | 8:30 AM - 3:10 PM, EST
                     </p>
 
                     <p className="mt-2"></p>
@@ -613,6 +605,7 @@ const Home = ({ data }) => {
                       src="Summer_2024_Fulbright-Hays_GPA_to_South_Korea_Flyer.pdf"
                       width="100%"
                       height="500px"
+                      className="w-full"
                     />
                   </div>
                 </div>
