@@ -244,8 +244,8 @@ const Home = ({ data }) => {
                   <article className="px-[2rem] md:px-[5rem] md:w-3/5">
                     <ImageComponent
                       image={
-                        homepageData.upcomingEvents[2].image !== null
-                          ? homepageData.upcomingEvents[2].image.url
+                        homepageData.upcomingEvents[3].image !== null
+                          ? homepageData.upcomingEvents[3].image.url
                           : "https://via.placeholder.com/50"
                       }
                     />
