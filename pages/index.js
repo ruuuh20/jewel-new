@@ -551,7 +551,7 @@ const Home = ({ data }) => {
                   </div>
                   <div className="">
                     <p className="cta-desc">
-                      📌 Stay in the loop with the latest educational events.
+                      📌 Stay in the loop with the latest educational events
                     </p>
                   </div>
                 </div>
