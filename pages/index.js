@@ -218,15 +218,17 @@ const Home = ({ data }) => {
               </div>
               <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.5rem] rounded-lg">
                 <div className="w-full pl-4 md:w-4/12">
-                  {/* <div className="block rounded-lg text-[#075985] font-bold">
+                  <div className="block rounded-lg text-[#075985] font-bold">
                     <p className="text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[2].titleEng}
+                      {homepageData.upcomingEvents[3].titleEng}
                     </p>
-             
-                    <p className="mt-2 text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[2].titleKor}
+                  </div>
+                  <div className="block mt-2 rounded-lg">
+                    <p className="text-lg md:text-2xl event-title">
+                      {homepageData.upcomingEvents[3].description}. Further
+                      information will be updated soon!
                     </p>
-                  </div> */}
+                  </div>
 
                   {/* <div className="mt-8">
                 
