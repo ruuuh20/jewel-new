@@ -20,6 +20,7 @@ import ArrowRight from "@/components/arrow-right";
 
 import { useInView } from "react-intersection-observer";
 import GrayscaleImage from "@/components/grayscaleImage";
+import SignupForm from "@/components/signupForm";
 
 const Home = ({ data }) => {
   const controls = useAnimation();
@@ -210,6 +211,13 @@ const Home = ({ data }) => {
               </div>
             </Container>
           </m.section>
+
+          <Container>
+            <section>
+              <div className="w-full mx-auto"></div>
+              <SignupForm />
+            </section>
+          </Container>
 
           <Container>
             <section className="py-4 md:py-10">
