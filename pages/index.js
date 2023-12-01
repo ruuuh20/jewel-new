@@ -213,13 +213,6 @@ const Home = ({ data }) => {
           </m.section>
 
           <Container>
-            <section>
-              <div className="w-full mx-auto"></div>
-              <SignupForm />
-            </section>
-          </Container>
-
-          <Container>
             <section className="py-4 md:py-10">
               <div className="">
                 <h3 className="h3-title">Upcoming Events</h3>
@@ -260,6 +253,28 @@ const Home = ({ data }) => {
                       }
                     />
                   </article>
+                </div>
+              </div>
+            </section>
+          </Container>
+
+          <Container>
+            <section>
+              <div className="w-full p-[1rem] md:p-[5rem] ">
+                <p className="mx-auto text-xl text-center md:px-10 md:text-3xl">
+                  Sign up for email updates to stay informed about our
+                  community's latest initiatives, volunteer opportunities, and
+                  other events.
+                </p>
+                <div className="mx-auto mt-8 text-center w-90[%]">
+                  <a
+                    href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
+                    className="mx-auto btn btn--orange btn--learn btn-newsletter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    EDUCATE TOGETHER Newsletter
+                  </a>
                 </div>
               </div>
             </section>
