@@ -7,6 +7,7 @@ import Script from "next/script"
 import { IntroContext } from 'context/intro';
 import { useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
@@ -57,13 +58,14 @@ const [introContext, setIntroContext] = useState(false);
    let bodyColor = 'bg-white'
 
   if (router.asPath == '/') {
-    bodyColor = 'bg-[#fcfbf5] selection:bg-black selection:text-[#C6B9A7]'
+    bodyColor = 'bg-[#D9D4AA] selection:bg-black selection:text-[#C6B9A7]'
   } else if (router.asPath == '/bio') {
     bodyColor = 'bg-[#E6C196] selection:bg-black selection:text-[#E6C196]'
   }
 
   return (
     <>
+    <Head>   <title> Educate Together</title></Head>
       <DefaultSeo {...SEO} />
       <IntroContext.Provider value={[introContext, setIntroContext]}>
      <LazyMotion features={domAnimation}>

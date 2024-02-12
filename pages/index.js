@@ -162,16 +162,16 @@ const Home = ({ data }) => {
             </div> */}
             <Container>
               <div className="m-auto py-[4rem] md:mt-12 md:py-28">
-                <div className="mx-auto my-5 text-lg text-center  md:text-xl tagline text-[#d96e34] uppercase tracking-wide md:tracking-wider">
+                {/* <div className="mx-auto my-5 text-lg text-center  md:text-xl tagline text-[#d96e34] uppercase tracking-wide md:tracking-wider">
                   Building bridges, Breaking barriers
-                </div>
+                </div> */}
                 <div className="flex flex-col px-2 md:px-[18rem]">
                   {/* <div className="relative mt-8 mb-2 md:mt-4">
                     <h4 className="block tracking-wider text-center uppercase text-[#e5d7ce] md:text-lg subtitle">
                       Who We Are
                     </h4>
                   </div> */}
-                  <p className="mb-4 text-2xl font-thin font-light text-center md:text-3xl xl:text-4xl xl:leading-snug">
+                  <p className="mb-4 text-3xl text-center md:text-4xl xl:text-5xl ">
                     {homepageData.welcomeHeading}
                   </p>
 
@@ -187,10 +187,9 @@ const Home = ({ data }) => {
                   </div> */}
                   <div className="w-full m-auto mt-10 text-center ">
                     <Link href="/about">
-                      <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black rounded-xl hover:bg-[#d9d4aa] focus:outline-none focus:ring">
-                        <span className="text-lg font-light"> About Us</span>
-
-                        <svg
+                      <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black btn--orange">
+                        About Us
+                        {/* <svg
                           className="w-5 h-5 ml-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -203,7 +202,7 @@ const Home = ({ data }) => {
                             stroke-width="2"
                             d="M17 8l4 4m0 0l-4 4m4-4H3"
                           />
-                        </svg>
+                        </svg> */}
                       </a>
                     </Link>
                   </div>
@@ -219,17 +218,17 @@ const Home = ({ data }) => {
               </div>
               <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.5rem] rounded-lg">
                 <div className="w-full pl-4 md:w-4/12">
-                  <div className="block rounded-lg text-[#075985] font-bold">
+                  <div className="text-center block rounded-lg text-[#075985] font-bold">
                     <p className="text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[3].titleEng}
+                      {homepageData.upcomingEvents[4].titleEng}
                     </p>
                   </div>
-                  <div className="block mt-2 rounded-lg">
+                  {/* <div className="block mt-2 rounded-lg">
                     <p className="text-lg md:text-2xl event-title">
                       {homepageData.upcomingEvents[3].description}. Further
                       information will be updated soon!
                     </p>
-                  </div>
+                  </div> */}
 
                   {/* <div className="mt-8">
                 
@@ -247,8 +246,8 @@ const Home = ({ data }) => {
                   <article className="px-[2rem] md:px-[5rem] md:w-3/5">
                     <ImageComponent
                       image={
-                        homepageData.upcomingEvents[3].image !== null
-                          ? homepageData.upcomingEvents[3].image.url
+                        homepageData.upcomingEvents[4].image !== null
+                          ? homepageData.upcomingEvents[4].image.url
                           : "https://via.placeholder.com/50"
                       }
                     />
@@ -748,7 +747,7 @@ export async function getStaticProps() {
   const siteHeaderData = await client.fetch(siteHeaderQuery);
   const programData = await client.fetch(projectQuery);
   const contactData = await client.fetch(contactQuery);
-  console.log(homepageData);
+
   const data = { homepageData, siteHeaderData, programData, contactData };
 
   return {
