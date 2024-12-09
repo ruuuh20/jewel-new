@@ -246,7 +246,7 @@ const Home = ({ data }) => {
                 <Link href="/jewel">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      <div className="pb-2 text-lg text-right">2023</div>
+                      {/* <div className="pb-2 text-lg text-right">2023</div> */}
                       <div className="relative w-full h-[260px] rounded">
                         <div className="h-[90%] relative">
                           <Image

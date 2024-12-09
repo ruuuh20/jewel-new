@@ -443,6 +443,240 @@ export default function Exhibit(props) {
                     </div>
                   </div>
                 </section>
+
+                {/* slide 6 */}
+                <section>
+                  <div className="pt-[17.5vw] md:pt-[12vw] xl:pt-[7vw] relative">
+                    <div className="absolute top-0 left-[calc(50%-1px)] h-[15vw] md:h-[10vw] xl:h-[6vw] bg-white/30 w-[1px]"></div>
+
+                    <div className="flex flex-wrap justify-center border-b border-white/30 pb-[5vw] md:pb-[3.3vw]"></div>
+                  </div>
+                  <div className="pt-[17.5vw] md:pt-[12vw] xl:pt-[7vw] relative">
+                    <div className="absolute top-0 left-[calc(50%-1px)] h-[15vw] md:h-[10vw] xl:h-[6vw] bg-white/30 w-[1px]"></div>
+
+                    <div className="flex flex-wrap justify-center border-b border-white/30 pb-[5vw] md:pb-[3.3vw]">
+                      <div className="w-11/12 md:w-8/12">
+                        <h3 className="text-[4vw] line-1 md:text-[2vw] font-display tracking-tight text-center">
+                          The Outbreak of Korean War and Participation by UN
+                          Forces
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className="col-span-1 pl-0 pr-0 mb-3 md:p-4 md:p-5 md:pr-0 md:pb-0 md:mb-0">
+                      <div className="w-10/12 md:w-9/12">
+                        <div class="relative">
+                          <div class="aspect-square aspect-2">
+                            <Image
+                              src="/slides/slide6-a.jpeg"
+                              // width={768}
+                              // height="100%"
+                              layout="fill"
+                              className="md:text-right"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative mt-4">
+                          <div class="aspect-square aspect-2">
+                            <Image
+                              src="/slides/slide6-b.jpg"
+                              // width={768}
+                              // height="100%"
+                              layout="fill"
+                              className="md:text-right"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative mt-4">
+                          <div class="aspect-square aspect-2">
+                            <Image
+                              src="/slides/slide6-c.jpeg"
+                              // width={768}
+                              // height="100%"
+                              layout="fill"
+                              className="md:text-right"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-span-1 md:border-r md:border-white/30 flex justify-center py-12 md:py-[7.5vw]">
+                      <div className="w-10/12 md:w-9/12">
+                        <div className="md:max-w-[550px] mx-auto text-[20px] md:text-[23px] xl:text-[26px] line-12">
+                          <p>
+                            On the dawn of June 25th, 1950, North Korea invaded
+                            South Korea across the 38th parallel. That same day
+                            at 2 p.m., an emergency draft was issued by the UN
+                            Security Council at President Truman's urging,
+                            resulting in UN forces joining the Korean War. The
+                            battle began with the deployment of the first unit
+                            of the U.S. military, Task Force Smith, to the
+                            Battle of Osan. The infantry was severely
+                            under-equipped and under- prepared. Until the War's
+                            ceasefire on July 27th, 1973, a total of 263 units
+                            were deployed, including 7 infantry divisions, 1
+                            cavalry division, 1 marine division, the Far East
+                            Fleet, the U.S. 7th Fleet, and 66 units of the Far
+                            East Air force. Within a 3- year span the UN forces
+                            recorded 37,902 deaths, of which 33,686 were
+                            Americans.
+                          </p>
+                          <br />
+
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                {/* slide 7 */}
+                <section>
+                  <div className="pt-[17.5vw] md:pt-[12vw] xl:pt-[7vw] relative">
+                    <div className="flex flex-wrap justify-center border-b border-white/30 pb-[5vw] md:pb-[3.3vw]"></div>
+                  </div>
+                  <div className="pt-[17.5vw] md:pt-[12vw] xl:pt-[7vw] relative">
+                    <div className="absolute top-0 left-[calc(50%-1px)] h-[15vw] md:h-[10vw] xl:h-[6vw] bg-white/30 w-[1px]"></div>
+
+                    <div className="flex flex-wrap justify-center border-b border-white/30 pb-[5vw] md:pb-[3.3vw]">
+                      <div className="w-11/12 md:w-8/12">
+                        <h3 className="text-[4vw] line-1 md:text-[2vw] font-display tracking-tight text-center">
+                          The Catalyst of the Hallyu Wave: Taekwondo
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className="col-span-1 md:border-r md:border-white/30 flex justify-center py-12 md:py-[7.5vw]">
+                      <div className="w-10/12 md:w-9/12">
+                        <div className="md:max-w-[550px] mx-auto text-[20px] md:text-[23px] xl:text-[26px] line-12">
+                          <p>
+                            In the early 1960s, Korean taekwondo arrived in
+                            Manhattan, New York. Some consider this asthe
+                            beginning of the so-called “Korean wave” (Hallyu).
+                            Following Si-hak Cho, founder of the “Henry Cho
+                            Institute" on 27th street in 1961, In-mun Chun
+                            opened “Richard Chun Taekwondo Center’ on 77th
+                            street in 1962. In the late 1960s, Duk-sung Sohn and
+                            Hyun-ok Shin opened their martial art studios and
+                            further introduced Korean taekwondo to Americans.
+                            Numerous taekwondo masters who came to the U.S.
+                            during the 1970s and 80s also seized the
+                            opportunity. With their presence, Korean taekwondo
+                            surpassed the popularity of Japanese karate and
+                            Chinese kung fu. The pioneering work of these
+                            masters contributed to the adoption of taekwondo as
+                            an official Olympic event.
+                          </p>
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-span-1 pl-0 pr-0 mb-3 md:p-4 md:p-5 md:pr-0 md:pb-0 md:mb-0">
+                      <div class="relative">
+                        <div class="aspect-square">
+                          <Image
+                            src="/slides/slide7-a.jpg"
+                            // width={768}
+                            // height="100%"
+                            layout="fill"
+                            className="md:text-right"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                {/* slide 8 */}
+                <section>
+                  <div className="pt-[17.5vw] md:pt-[12vw] xl:pt-[7vw] relative">
+                    <div className="absolute top-0 left-[calc(50%-1px)] h-[15vw] md:h-[10vw] xl:h-[6vw] bg-white/30 w-[1px]"></div>
+
+                    <div className="flex flex-wrap justify-center border-b border-white/30 pb-[5vw] md:pb-[3.3vw]"></div>
+                  </div>
+                  <div className="pt-[17.5vw] md:pt-[12vw] xl:pt-[7vw] relative">
+                    <div className="absolute top-0 left-[calc(50%-1px)] h-[15vw] md:h-[10vw] xl:h-[6vw] bg-white/30 w-[1px]"></div>
+
+                    <div className="flex flex-wrap justify-center border-b border-white/30 pb-[5vw] md:pb-[3.3vw]">
+                      <div className="w-11/12 md:w-8/12">
+                        <h3 className="text-[4vw] line-1 md:text-[2vw] font-display tracking-tight text-center">
+                          The Establishment of KAAGNY
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className="col-span-1 pl-0 pr-0 mb-3 md:p-4 md:p-5 md:pr-0 md:pb-0 md:mb-0">
+                      <div className="w-10/12 md:w-9/12">
+                        <div class="relative">
+                          <div class="aspect-square aspect-2">
+                            <Image
+                              src="/slides/slide8-a.jpg"
+                              // width={768}
+                              // height="100%"
+                              layout="fill"
+                              className="md:text-right"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative mt-4">
+                          <div class="aspect-square aspect-2">
+                            <Image
+                              src="/slides/slide8-b.tif"
+                              // width={768}
+                              // height="100%"
+                              layout="fill"
+                              className="md:text-right"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative mt-4">
+                          <div class="aspect-square aspect-2">
+                            <Image
+                              src="/slides/slide6-c.jpeg"
+                              // width={768}
+                              // height="100%"
+                              layout="fill"
+                              className="md:text-right"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-span-1 md:border-r md:border-white/30 flex justify-center py-12 md:py-[7.5vw]">
+                      <div className="w-10/12 md:w-9/12">
+                        <div className="md:max-w-[550px] mx-auto text-[20px] md:text-[23px] xl:text-[26px] line-12">
+                          <p>
+                            In response to the 4.19 Student Revolution in Korea,
+                            New York Koreans gathered in front of the UN
+                            Headquarters in New York to demonstrate their
+                            support of the students fighting for democracy in
+                            Korea. This event served as the catalyst for the
+                            formation of the Korean American Association of New
+                            York, which started out meeting in a Korean church.
+                            President Sangbok Seon believed it was time for
+                            Korean Americans to begin demonstrating their
+                            strength in solidarity with one another. They
+                            declared this as the purpose alongside celebrating
+                            the birth of a democratic government in Korea as
+                            well as harmonizing the community. A pivotal moment
+                            for the Korean American community in New York was
+                            the1983 purchase of a community building through
+                            fundraising by then president of KAAGNY, Ikjo Kang.
+                          </p>
+                          <br />
+
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </Container>
             </m.div>
           </LazyMotion>
