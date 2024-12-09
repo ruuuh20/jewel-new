@@ -211,73 +211,7 @@ const Home = ({ data }) => {
             </Container>
           </m.section>
 
-          <Container>
-            <section className="py-4 md:py-10">
-              <div className="">
-                <h3 className="h3-title">Upcoming Events</h3>
-              </div>
-              <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.5rem] rounded-lg">
-                <div className="w-full pl-4 md:w-4/12">
-                  <div className="text-center block rounded-lg text-[#075985] font-bold">
-                    <p className="text-xl md:text-3xl event-title">
-                      {homepageData.upcomingEvents[4].titleEng}
-                    </p>
-                  </div>
-                  {/* <div className="block mt-2 rounded-lg">
-                    <p className="text-lg md:text-2xl event-title">
-                      {homepageData.upcomingEvents[3].description}. Further
-                      information will be updated soon!
-                    </p>
-                  </div> */}
-
-                  {/* <div className="mt-8">
-                
-                    <a
-                      href="https://forms.gle/Ug2ubrBegfHeHWAq9"
-                      target="_blank"
-                      className="uppercase btn btn--orange btn-event-form"
-                      rel="noopener noreferrer"
-                    >
-                      RSVP here
-                    </a>
-                  </div> */}
-                </div>
-                <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
-                  <article className="px-[2rem] md:px-[5rem] md:w-3/5">
-                    <ImageComponent
-                      image={
-                        homepageData.upcomingEvents[4].image !== null
-                          ? homepageData.upcomingEvents[4].image.url
-                          : "https://via.placeholder.com/50"
-                      }
-                    />
-                  </article>
-                </div>
-              </div>
-            </section>
-          </Container>
-
-          <Container>
-            <section>
-              <div className="w-full p-[1rem] md:p-[5rem] ">
-                <p className="mx-auto text-xl text-center md:px-10 md:text-3xl">
-                  Sign up for email updates to stay informed about our
-                  community's latest initiatives, volunteer opportunities, and
-                  other events.
-                </p>
-                <div className="mx-auto mt-8 text-center w-90[%]">
-                  <a
-                    href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
-                    className="mx-auto btn btn--orange btn--learn btn-newsletter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    EDUCATE TOGETHER Newsletter
-                  </a>
-                </div>
-              </div>
-            </section>
-          </Container>
+         
 
           <Container>
             <section className="grid-wrapper">
@@ -285,7 +219,7 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full border-l border-[#120902]">
-                      <div className="pb-2 text-lg text-right">2023</div>
+                      {/* <div className="pb-2 text-lg text-right">2023</div> */}
                       <div className="relative w-full h-[260px] rounded ">
                         <div className="h-[90%] relative">
                           <Image
@@ -343,7 +277,7 @@ const Home = ({ data }) => {
                 >
                   <article class="card flex flex-col h-full relative">
                     {" "}
-                    <div className="pb-2 text-lg text-right">2023</div>
+                    {/* <div className="pb-2 text-lg text-right">2023</div> */}
                     <div className="relative w-full h-[260px] rounded">
                       <div className="h-[90%] relative">
                         <Image
@@ -389,7 +323,7 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      <div className="pb-2 text-lg text-right">2023</div>
+                      {/* <div className="pb-2 text-lg text-right">2023</div> */}
                       <div className="relative w-full h-[260px] ">
                         <div className="h-[90%] relative rounded">
                           <Image
@@ -411,10 +345,140 @@ const Home = ({ data }) => {
                     </article>
                   </a>
                 </Link>
+                <Link href="/">
+                  <a className="card-wrapper-link">
+                    <article class="card flex flex-col h-full">
+                      {/* <div className="pb-2 text-lg text-right">2024</div> */}
+                      <div className="relative w-full h-[260px] ">
+                        <div className="h-[90%] relative rounded">
+                          <Image
+                            src="/youth.jpg"
+                            alt="Youth Network image"
+                            // width="100%"
+                            // height="90%"
+                            layout="fill"
+                            objectFit="cover"
+                          />
+                        </div>
+                      </div>
+                      <h2 class="card-title">
+                        Asian American Immigration History
+                      </h2>
+                      <p class="card-description">
+                        Developing Korean overseas youths into confident and
+                        culturally-aware global leaders, and fostering positive
+                        social impact in a diverse and interconnected world
+                      </p>
+                    </article>
+                  </a>
+                </Link>
               </div>
             </section>
             <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container>
+          
+           <Container>
+            <section class="bg-white rounded dark:bg-gray-900">
+              <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+                    Korean American Immigration History Exhibit
+                  </h2>
+                  <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-xl text-bold">
+                    미주한인이민역사
+                  </p>
+                  <a
+                    href="/aaih/exhibit"
+                    class="text-white bg-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-base px-6 py-3 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                  >
+                    Explore
+                  </a>
+                </div>
+                <div className="flex justify-center w-full py-8 m-auto mt-4">
+                  <Image
+                  src="/exhibit-poster-1.png"
+                  // layout="fill"
+                  width={600}
+                  height={600}
+                  alt="Exhibit"
+                  />
+                </div>
+              </div>
+            </section>
+          </Container>
+          <Container>
+            <section className="py-4 md:py-10">
+              <div className="">
+                <h3 className="h3-title">Past Events</h3>
+              </div>
+              <div className="flex flex-col md:flex-row content bg-gray-200 py-[1.5rem] rounded-lg">
+                <div className="w-full pl-4 md:w-4/12">
+                  <div className="block rounded-lg text-[#075985] font-bold">
+                    <p className="text-xl md:text-3xl event-title font-pretend">
+                      {homepageData.upcomingEvents[4].titleEng}
+                    </p>
+                  </div>
+                  {/* <div className="block mt-2 rounded-lg">
+                    <p className="text-lg md:text-2xl event-title">
+                      {homepageData.upcomingEvents[3].description}. Further
+                      information will be updated soon!
+                    </p>
+                  </div> */}
+
+                  {/* <div className="mt-8">
+                
+                    <a
+                      href="https://forms.gle/Ug2ubrBegfHeHWAq9"
+                      target="_blank"
+                      className="uppercase btn btn--orange btn-event-form"
+                      rel="noopener noreferrer"
+                    >
+                      RSVP here
+                    </a>
+                  </div> */}
+                </div>
+                <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
+                  <article className="px-[2rem] md:px-[5rem] md:w-3/5">
+                    <ImageComponent
+                      image={
+                        homepageData.upcomingEvents[4].image !== null
+                          ? homepageData.upcomingEvents[4].image.url
+                          : "https://via.placeholder.com/50"
+                      }
+                    />
+                  </article>
+                </div>
+              </div>
+              <div className="my-4">
+                <Link href="/events">
+                  <a className="text-lg underline">Go to past events</a>
+                </Link>
+              </div>
+            </section>
+          </Container>
+
+          <Container>
+            <section>
+              <div className="w-full p-[1rem] md:p-[5rem] ">
+                <p className="mx-auto text-xl text-center md:px-10 md:text-3xl">
+                  Sign up for email updates to stay informed about our
+                  community's latest initiatives, volunteer opportunities, and
+                  other events.
+                </p>
+                <div className="mx-auto mt-8 text-center w-90[%]">
+                  <a
+                    href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
+                    className="mx-auto btn btn--orange btn--learn btn-newsletter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    EDUCATE TOGETHER Newsletter
+                  </a>
+                </div>
+              </div>
+            </section>
+          </Container>
+
           {/* <Container>
             <section className="py-4 md:py-10">
               <div className="flex flex-wrap py-10">
@@ -580,7 +644,7 @@ const Home = ({ data }) => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-9 grid-rows-2 gap-4 my-6 md:my-10 md:gap-8 md:grid-rows-1">
+                {/* <div className="grid grid-cols-9 grid-rows-2 gap-4 my-6 md:my-10 md:gap-8 md:grid-rows-1">
                   <div className="col-span-9 md:col-span-3 event-wrap-header">
                     <Image
                       src="/event1-1.jpeg"
@@ -608,7 +672,7 @@ const Home = ({ data }) => {
                       height="100"
                     />
                   </div>
-                </div>
+                </div> */}
 
                 <div className="grid grid-cols-10 gap-1 mt-8 md:mt-10 md:gap-10 md:grid-rows-1">
                   <div className="col-span-10 md:col-span-4 event-wrap-header">

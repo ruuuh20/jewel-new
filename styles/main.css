@@ -23,6 +23,10 @@ body {
   font-style: normal;
 }
 
+.font-pretend {
+  font-family: "Pretendard Variable";
+}
+
 .full-screen-bg {
   justify-content: center;
   align-items: center;
@@ -882,7 +886,7 @@ body {
 
 .card-title {
   /* font-family: "neue-haas-grotesk-display", sans-serif; */
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   margin-bottom: 10px;
   font-size: 30px;
@@ -924,7 +928,7 @@ body {
   /* grid-column-gap: 2rem; */
   grid-row-gap: 2rem;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   grid-template-rows: auto;
 }
@@ -1109,4 +1113,32 @@ body {
 .btn-newsletter {
   width: 250px;
   font-size: 16px;
+}
+
+.aspect-square {
+  aspect-ratio: 1;
+}
+
+.font-display {
+  font-family: "Source Serif Pro";
+}
+
+.line-1 {
+  line-height: 1;
+}
+
+.bg-dark {
+  background-color: oklch(18.34% 0 0);
+}
+
+.text-light {
+  color: oklch(80.15% 0 0);
+}
+
+.line-12 {
+  line-height: 1.125;
+}
+
+.aspect-2 {
+  aspect-ratio: 2;
 }

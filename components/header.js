@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-export default function Header() {
+export default function Header({ isExhibitPage }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const router = useRouter();
 
@@ -18,7 +18,10 @@ export default function Header() {
        
       <m.header initial="initial"
           animate="enter"
-          exit="exit" className="top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 md:py-3 md:mb-2">
+          exit="exit" 
+          className={`top-0 z-20 w-full py-2 mb-4 duration-300 ease-in-out border-gray-200 md:py-10 md:py-3 md:mb-2 ${
+        isExhibitPage ? 'bg-gray-200 text-white' : 'border-b-1 border-gray-200'
+      }`}>
        
         <m.div variants={fade}>
           <div className="w-full px-8 py-2 mx-auto md:px-6 md:py-3">

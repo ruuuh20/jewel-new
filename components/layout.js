@@ -1,11 +1,12 @@
 import Footer from "./footer";
 import Header from "./header";
+import { useRouter } from 'next/router';
 
-export default function Layout({ children }) {
+export default function Layout({ children, isExhibitPage  }) {
+
   return (
     <>
-    <Header />
-      {children}
+     <Header isExhibitPage={isExhibitPage} />      {children}
       <Footer />
     </>
   )
