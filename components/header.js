@@ -123,11 +123,11 @@ export default function Header({ isExhibitPage }) {
                   }`}
                 />
                 <FancyLink
-                  destination="/essays"
+                  destination="/essaysnews"
                   a11yText="Navigate to the essays page"
-                  label="Essays"
+                  label="Essays/News"
                   extraClasses={`hidden md:inline-block link link--metis before:absolute ${
-                    router.pathname == "/essays" ? "text-yellow" : "text-[#242b2d]"
+                    router.pathname == "/essaysnews" ? "text-yellow" : "text-[#242b2d]"
                   }`}
                 />
               
@@ -315,14 +315,14 @@ export default function Header({ isExhibitPage }) {
                       </Link>
                     </li>
                     <li key="" className="mb-2 text-white lg:block">
-                      <Link href="/essays">
+                      <Link href="/essaysnews">
                         <a
                           onClick={() => setIsNavOpen((prev) => !prev)}
                           activeClassName="is--active"
                           partiallyActive={true}
                           className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                         >
-                         Essays
+                         Essays/News
                         </a>
                       </Link>
                     </li>

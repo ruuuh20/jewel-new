@@ -14,9 +14,9 @@ export default function Donate(props) {
   const [modalImage, setModalImage] = useState({ src: '', caption: '' });
 
    const clippings = [
-    { src: '/clippings/ny10_11.jpeg', caption: '뉴욕일보 10.11' },
-    { src: '/clippings/ny10_12.jpeg', caption: '뉴욕일보 10.12' },
-    { src: '/clippings/ny10_26.jpeg', caption: '뉴욕일보 10.26' },
+    { src: '/clippings/ny10_11.jpeg', caption: '뉴욕일보' },
+    { src: '/clippings/ny10_12.jpeg', caption: '뉴욕일보' },
+    { src: '/clippings/ny10_26.jpeg', caption: '뉴욕일보' },
   ];
 
   const router = useRouter();
@@ -50,7 +50,7 @@ export default function Donate(props) {
            <Container>
                 <div className="flex items-center justify-between">
                   <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
-                      Essays
+                      Essays and News
                   </h3>
                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
                     
@@ -72,7 +72,7 @@ export default function Donate(props) {
 
         
       <section className="mb-12">
-        <h2 className="mb-4 text-2xl font-semibold">Featured Clippings</h2>
+        <h2 className="mb-4 text-2xl font-semibold">Featured Articles</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
            {clippings.map((clipping, index) => (
             <div
@@ -114,27 +114,101 @@ export default function Donate(props) {
           <ul className="space-y-4">
             <li>
               <a
-                href="https://example.com/article-1"
+                href="http://www.koreatimes.com/article/1526308"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg font-medium text-blue-600 hover:underline"
               >
-                Headline of Article 1
+                한인사회 현안 논의·개선 약속
               </a>
-              <p className="text-sm text-gray-500">Source: Example Publication</p>
+              {/* <p className="text-sm text-gray-500">Source: Example Publication</p> */}
             </li>
             <li>
               <a
-                href="https://example.com/article-2"
+                href="http://www.koreatimes.com/article/1525659"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg font-medium text-blue-600 hover:underline"
               >
-                Headline of Article 2
+                10개 한인단체 대표·고든 존슨 주상원의원 등 참석… 한인들 관심 당부
               </a>
-              <p className="text-sm text-gray-500">Source: Another Publication</p>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
-            {/* Add more links as needed */}
+            <li>
+              <a
+                href="http://www.koreatimes.com/article/1440731"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+               함께하는교육, 뉴저지 한인 교육위원 간담회
+              </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+            <li>
+              <a
+                href="https://www.newyorkilbo.com/42721"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+             “우리를 더 잘 알고, 이웃들과 더불어 함께 웃으며 살아가자”
+              </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+            <li>
+              <a
+                href="http://www.koreatimes.com/article/1425438"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+37선거구 타운홀 미팅… 13개 한인단체 대표 참석              </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+        
+            <li>
+              <a
+                href="http://www.koreatimes.com/article/1412232"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+                  ‘함께하는 교육’ 26일 KCC한인동포회관서        </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+        
+            <li>
+              <a
+                href="http://www.koreatimes.com/article/1217915"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+                뉴욕총영사관, 국민교육발전 정부포상 전수식  </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+            <li>
+              <a
+                href="https://www.dongponews.net/news/articleView.html?idxno=38425"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+               미 ‘함께하는 교육’ 김경화 대표, 국민교육발전 국민포장 수훈 </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+            <li>
+              <a
+                href="http://ny.koreatimes.com/article/20060920/338121"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+               ‘함께하는 교육’ 김경화 대표, 교육 세미나 개최  </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+        
           </ul>
         </section>
       </div>

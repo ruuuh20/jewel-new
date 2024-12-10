@@ -250,7 +250,7 @@ const Home = ({ data }) => {
                       <div className="relative w-full h-[260px] rounded">
                         <div className="h-[90%] relative">
                           <Image
-                            src="/aapi-card.webp"
+                            src="/jewelthumbnail.JPG"
                             alt="JEWEL image"
                             // width="100%"
                             // height="90%"
