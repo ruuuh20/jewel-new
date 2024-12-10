@@ -53,7 +53,7 @@ export default function Contact(props) {
                     We’d love to hear from you. For any inquiries, you can send
                     an email at{" "}
                     <a
-                      className="border-b border-yellow hover:text-yellow"
+                      className="border-b border-[#d96e34] hover:text-[#d96e34]"
                       href="mailto:kay@edu-together.org"
                     >
                       {posts && posts[0].email}

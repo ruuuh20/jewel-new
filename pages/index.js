@@ -261,7 +261,7 @@ const Home = ({ data }) => {
                       </div>
                       <h2 class="card-title">JEWEL</h2>
                       <p class="card-description">
-                       Fostering cultural understanding by promoting education and awareness abour different cultuers and oroviding opportunities for people fomr diverse backgrounds to come together and learn from each other. 
+                       Fostering cultural understanding by promoting education and awareness abour different cultuers and oroviding opportunities for people from diverse backgrounds to come together and learn from each other. 
                       </p>
                     </article>
                   </a>
@@ -269,7 +269,7 @@ const Home = ({ data }) => {
 
                 <a
                   className="card-wrapper-link"
-                  href="https://eduventure.us"
+                  href=""
                   target="_blank"
                 >
                   <article class="card flex flex-col h-full relative">

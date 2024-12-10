@@ -62,14 +62,17 @@ export default function Donate(props) {
                   Closter, NJ 07624
                 </p>
               </div>
-              <div className="my-4 md:my-8"> <h4 className="mb-2 font-bold">Donate by Venmo/Zelle</h4></div>
+              <div className="my-4 md:my-8"> <h4 className="mb-2 font-bold">Donate by Zelle</h4>
+              <p className="mb-2">
+                 
+                </p>
+                <p className="text-center">
+                 @ edutogether22@gmail.com
+                </p>
+              </div>
             </div>
 
-            <div className="w-full py-8 m-auto md:w-7/12">
-              <p className="text-xl text-center text-gray-600">
-                Thank you for donating to Educate Together!
-              </p>
-            </div>
+        
           </m.div>
         </Container>
         </m.div>
