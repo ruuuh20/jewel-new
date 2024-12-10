@@ -673,6 +673,18 @@ const Home = ({ data }) => {
                   </div>
                 </div> */}
 
+                <div className="flex">
+              
+                  <div className="relative max-w-2xl py-5 mx-auto mt-2 mt-5 md:col-span-8 event-wrap-img">
+                    <Image
+                      src="/IMG_6102.JPG"
+                      width={1000}
+                      height={500}
+                      // layout="responsive"
+                      // className="w-full"
+                    />
+                  </div>
+                </div>
                 <div className="grid grid-cols-10 gap-1 mt-8 md:mt-10 md:gap-10 md:grid-rows-1">
                   <div className="col-span-10 md:col-span-4 event-wrap-header">
                     <h4 className="text-2xl font-bold text-[#075985]">

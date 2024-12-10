@@ -1153,3 +1153,9 @@ body {
   border-bottom: rgba(229, 231, 235, 1) 1px solid;
   padding: 5px 0;
 }
+
+@media (max-width: 768px) {
+  .articles-item {
+    font-size: 15px;
+  }
+}

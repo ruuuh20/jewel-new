@@ -60,7 +60,7 @@ export default function Contact(props) {
                     </a>{" "}
                     or fill out the form, and we will get back to you.
                   </p>{" "}
-                  <div className="pt-4 pb-2 pl-5 mt-4 bg-gray-100 rounded-lg box">
+                  <div className="pt-4 pb-2 pl-5 mt-4 border rounded-lg shadow box">
                     {posts &&
                       posts.map((post) => (
                         <>
@@ -130,7 +130,7 @@ export default function Contact(props) {
                   </div>
                 </div>
 
-                <div className="w-full pt-10 lg:w-7/12 md:px-16">
+                <div className="w-full pt-8 pb-4 border rounded-lg lg:w-7/12 md:px-16">
                   <ContactForm />
                 </div>
               </div>
