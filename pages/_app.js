@@ -55,13 +55,14 @@ const [introContext, setIntroContext] = useState(false);
   }
 
 
-   let bodyColor = 'bg-white'
+   let bodyColor = 'bg-[#D9D4AA]'
 
   if (router.asPath == '/') {
     bodyColor = 'bg-[#D9D4AA] selection:bg-black selection:text-[#C6B9A7]'
-  } else if (router.asPath == '/bio') {
-    bodyColor = 'bg-[#E6C196] selection:bg-black selection:text-[#E6C196]'
+  } else if (router.asPath == '/essaysnews') {
+    bodyColor = 'bg-[#ffffff] selection:bg-black selection:text-[#E6C196]'
   }
+  
 
   return (
     <>

@@ -85,7 +85,7 @@ export default function Founder(props) {
                   <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
                       Founder's Message
                   </h3>
-                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
                     <span>대표 인사말</span>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function Founder(props) {
                             </figure>
                           </div>
                         </div>
-                        <section className="pb-4 md:pt-0">
+                        <section className="pb-4 md:pt-0 font-pretend">
                           <div className="content">
                             <div className="w-full py-2 mt-10 text-base font-bold text-center md:text-xl">
                               <h4>Profile / 프로필</h4>
@@ -120,12 +120,12 @@ export default function Founder(props) {
                               <table className="m-auto table-auto text-[14px]">
                                 <tbody>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       대표
                                       <br />
                                       Founding President
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       함께하는교육
                                       <br />
                                       Joining East & West as Educational
@@ -133,12 +133,12 @@ export default function Founder(props) {
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       수석부회장
                                       <br />
                                       Executive Vice President
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       뉴욕한인회 36대, 37대
                                       <br />
                                       Korean American Association of Greater New
@@ -146,36 +146,36 @@ export default function Founder(props) {
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       교장
                                       <br />
                                       Principal
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       가나다라한국문화학교
                                       <br />
                                       Ganadara Korean School
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       대표
                                       <br />
                                       President
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       재외동포청소년네트워크
                                       <br />
                                       Korean Youth Global Network
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       교육위원
                                       <br />
                                       School Board Member
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       (전)뉴저지 노우드학군 교육위원 5선
                                       <br />
                                       NJ Norwood School Board of Education (5
@@ -183,12 +183,12 @@ export default function Founder(props) {
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       이사
                                       <br />
                                       Board Member
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       전미여성유권자연맹 뉴저지노던벨리지구
                                       <br />
                                       League of Women Voters, Northern Valley
@@ -196,24 +196,24 @@ export default function Founder(props) {
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       개설위원장
                                       <br />
                                       Committee Chair
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       (전)미주한국어재단 한국어반개설위원회
                                       <br />
                                       Korean Language Foundation
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       감사
                                       <br />
                                       Auditor
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       (전)민주평통뉴욕협의회 18기
                                       <br />
                                       National Unification Advisory Council, New
@@ -221,12 +221,12 @@ export default function Founder(props) {
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       교육분과위원장
                                       <br />
                                       Committee Chair
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       (전)민주평통뉴욕협의회 16기
                                       <br />
                                       National Unification Advisory Council, New
@@ -234,12 +234,12 @@ export default function Founder(props) {
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       자문위원
                                       <br />
                                       Advisory Member
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate-700 text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
                                       (전)민주평통뉴욕협의회 14기
                                       <br />
                                       National Unification Advisory Council, New
@@ -247,12 +247,12 @@ export default function Founder(props) {
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       연합회장
                                       <br />
                                       President
                                     </td>
-                                    <td className="p-2 pr-4 border-b border-gray-300 dark:border-slate text-slate dark:text-slate-400">
+                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
                                       (전)뉴저지버겐카운티한인학부모연합회
                                       <br />
                                       NJ Bergen County Korean American Parents
@@ -263,7 +263,7 @@ export default function Founder(props) {
                               </table>
                             </div>
                           </div>
-                          <div className="px-4 mt-4 text-base achievement text-slate">
+                          <div className="px-4 text-[14px] mt-4 text-base achievement text-slate">
                             <p>
                               <span className="italic">Achievement:</span>{" "}
                               국민포장 (國民褒章, Civil Merit Medal 2018)
@@ -271,7 +271,7 @@ export default function Founder(props) {
                           </div>
                         </section>
                       </div>
-                      <div className="w-full py-5 pl-2 pr-2 text-sm bg-gray-100 rounded-lg md:pl-6 md:pr-10 text-slate md:py-10 md:pl-14 md:pr-20 md:w-5/12 content">
+                      <div className="w-full py-4 pl-2 pr-2 text-sm bg-gray-100 rounded-lg text-slate md:py-10 md:pl-12 md:pr-12 md:w-5/12 content font-pretend">
                         <PortableText
                           value={post.content}
                           components={myPortableTextComponents}
@@ -280,7 +280,7 @@ export default function Founder(props) {
                     </div>
                     {/* <hr className="h-1 mt-10 bg-gray-200" /> */}
                     <section>
-                      <div className="w-full mx-auto my-10 text-base text-slate md:w-6/12 content blurb">
+                      <div className="w-full mx-auto my-10 text-base md:my-16 text-slate md:w-6/12 content blurb">
                         <PortableText value={posts[0].founderBlurb} />
                       </div>
                     </section>

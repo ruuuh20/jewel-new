@@ -375,21 +375,21 @@ const Home = ({ data }) => {
           </Container>
           
            <Container>
-            <section class="bg-white rounded dark:bg-gray-900">
-              <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                <div class="mx-auto max-w-screen-sm text-center">
-                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+            <section class="bg-gray-800 text-white rounded-xl dark:bg-gray-900 ">
+              <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 rounded">
+                <div class="mx-auto max-w-screen-sm text-center rounded">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-100 dark:text-white">
                     Korean American Immigration History Exhibit
                   </h2>
-                  <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-xl text-bold">
+                  <p class="mb-6 font-light text-gray-100 dark:text-gray-400 md:text-xl text-bold">
                     미주한인이민역사
                   </p>
                   <Link  href="/aaih/exhibit">
                     <a
                      
-                      class="text-white bg-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-base px-6 py-3 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                      class="text-black bg-gray-100 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 rounded-lg text-base font-semibold px-6 py-3 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
                     >
-                      Explore
+                      Explore 
                     </a>
                   </Link>
                 </div>

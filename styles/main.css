@@ -15,6 +15,7 @@
 body {
   @apply font-sans antialiased text-black bg-white;
   /* background-color: rgb(234, 232, 228); */
+  background-color: #d9d4aa;
 }
 
 body {
@@ -1145,4 +1146,10 @@ body {
 
 .hover:shadow-lg {
   transition: box-shadow 0.3s ease;
+}
+
+.articles-item {
+  font-family: "Pretendard Variable";
+  border-bottom: rgba(229, 231, 235, 1) 1px solid;
+  padding: 5px 0;
 }

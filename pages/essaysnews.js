@@ -17,6 +17,8 @@ export default function Donate(props) {
     { src: '/clippings/ny10_11.jpeg', caption: '뉴욕일보' },
     { src: '/clippings/ny10_12.jpeg', caption: '뉴욕일보' },
     { src: '/clippings/ny10_26.jpeg', caption: '뉴욕일보' },
+    { src: '/clippings/IMG_5696.PNG', caption: '' },
+    { src: '/clippings/IMG_5695.PNG', caption: '' },
   ];
 
   const router = useRouter();
@@ -60,8 +62,8 @@ export default function Donate(props) {
           </div>
 
         
-        <Container>
-          <div className="container px-4 py-8 mx-auto">
+      
+          <div className="container px-4 py-8 mx-auto ">
         {/* Page Header */}
         <header className="mb-8 text-center">
           <h1 className="mb-2 text-4xl font-bold">Writings, Essays, and Interviews</h1>
@@ -109,10 +111,10 @@ export default function Donate(props) {
         </div>
       )}
         {/* Links Section */}
-        <section>
-          <h2 className="mb-4 text-2xl font-semibold">Read More</h2>
-          <ul className="space-y-4">
-            <li>
+        <section className="py-10 mx-auto mt-5">
+          <h2 className="mb-4 text-2xl font-semibold text-center">Read More</h2>
+          <ul className="max-w-2xl mx-auto space-y-4">
+            <li className="articles-item">
               <a
                 href="http://www.koreatimes.com/article/1526308"
                 target="_blank"
@@ -123,7 +125,7 @@ export default function Donate(props) {
               </a>
               {/* <p className="text-sm text-gray-500">Source: Example Publication</p> */}
             </li>
-            <li>
+            <li className="articles-item">
               <a
                 href="http://www.koreatimes.com/article/1525659"
                 target="_blank"
@@ -134,7 +136,7 @@ export default function Donate(props) {
               </a>
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
-            <li>
+            <li className="articles-item">
               <a
                 href="http://www.koreatimes.com/article/1440731"
                 target="_blank"
@@ -145,7 +147,7 @@ export default function Donate(props) {
               </a>
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
-            <li>
+            <li className="articles-item">
               <a
                 href="https://www.newyorkilbo.com/42721"
                 target="_blank"
@@ -156,7 +158,7 @@ export default function Donate(props) {
               </a>
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
-            <li>
+            <li className="articles-item">
               <a
                 href="http://www.koreatimes.com/article/1425438"
                 target="_blank"
@@ -167,7 +169,7 @@ export default function Donate(props) {
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
         
-            <li>
+            <li className="articles-item">
               <a
                 href="http://www.koreatimes.com/article/1412232"
                 target="_blank"
@@ -178,7 +180,7 @@ export default function Donate(props) {
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
         
-            <li>
+            <li className="articles-item">
               <a
                 href="http://www.koreatimes.com/article/1217915"
                 target="_blank"
@@ -188,7 +190,7 @@ export default function Donate(props) {
                 뉴욕총영사관, 국민교육발전 정부포상 전수식  </a>
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
-            <li>
+            <li className="articles-item">
               <a
                 href="https://www.dongponews.net/news/articleView.html?idxno=38425"
                 target="_blank"
@@ -198,7 +200,7 @@ export default function Donate(props) {
                미 ‘함께하는 교육’ 김경화 대표, 국민교육발전 국민포장 수훈 </a>
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
-            <li>
+            <li className="articles-item">
               <a
                 href="http://ny.koreatimes.com/article/20060920/338121"
                 target="_blank"
@@ -208,13 +210,43 @@ export default function Donate(props) {
                ‘함께하는 교육’ 김경화 대표, 교육 세미나 개최  </a>
               {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
             </li>
+            <li className="articles-item">
+              <a
+                href="https://hinykorea.com/townnews/221104ny2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+               아시안 혐오범죄 예방 교육위원 간담회 </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+            <li className="articles-item">
+              <a
+                href="http://www.inmulnews.com/689"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+               [클릭이사람] (225) 미국 뉴저지 3선 교육위원 김(하)경화  </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
+            <li className="articles-item">
+              <a
+                href="https://gkjournal.org/30/?bmode=view&idx=8554726"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-blue-600 hover:underline"
+              >
+               김경화 뉴욕 한인회 수석 부회장 인터뷰   </a>
+              {/* <p className="text-sm text-gray-500">Source: Another Publication</p> */}
+            </li>
         
           </ul>
         </section>
       </div>
 
       
-        </Container>
+    
         </m.div>
         </LazyMotion>
 

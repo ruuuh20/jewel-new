@@ -45,7 +45,7 @@ export default function About(props) {
                   <h3 className="relative block pb-0 pr-12 mb-0 text-3xl tracking-tight font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
                     About
                   </h3>
-                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
                     <span>함께하는교육 소개</span>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function About(props) {
                     </Container>
                     <section className="my-20">
                       <Container>
-                      <div className="flex flex-col flex-wrap md:flex-row">
+                      <div className="flex flex-wrap">
                         {/* <div className="w-full md:w-2/5">
                           <ImageComponent
                             image={
@@ -81,7 +81,25 @@ export default function About(props) {
                             }
                           />
                         </div> */}
-                        <div className="w-full mt-10 md:w-3/5 md:mt-0">
+                        <div className="w-full mt-10 md:w-1/2 md:mt-0">
+                          <div className="md:px-16 right-col">
+                            <div className="relative mb-2">
+                              <h2 className="block text-base tracking-wider uppercase md:text-xl">
+                                Our Mission
+                              </h2>
+                            </div>
+                            <div className="flex flex-wrap mt-6 mb-4 text-darkgray">
+                              <div className="">
+                                <p className="block  text-lg md:text-xl  leading-snug relative   p-[2.2rem]">
+                                 To enhance awareness and appreciation of cultural diversity by providing resources and expertise in language education andcultural programs.
+                                </p>
+                                <p className="block  text-lg md:text-xl  leading-snug relative   p-[2.2rem]">By fostering mutual understanding and collaboration, Educate Together serves as a bridge for communities to explore cultures around the world.</p>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        </div>
+                        <div className="w-full mt-10 md:w-1/2 md:mt-0">
                           <div className="md:px-16 right-col">
                             <div className="relative mb-2">
                               <h2 className="block text-base tracking-wider uppercase md:text-xl">

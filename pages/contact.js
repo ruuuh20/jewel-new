@@ -39,7 +39,7 @@ export default function Contact(props) {
                     <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
                         Contact Us
                     </h3>
-                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-arial">
+                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
                         <span>연락처</span>
                     </div>
                   </div>
