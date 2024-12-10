@@ -87,7 +87,7 @@ export default function About(props) {
                             <div className="flex flex-wrap py-4 font-thin border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
                               <div className="w-full mb-2 md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
                                 <div className="max-w-xl">
-                                  <div className="w-full text-xl md:text-right md:text-2xl xl:text-3xl">
+                                  <div className="w-full text-xl font-bold md:text-right md:text-2xl xl:text-3xl">
                                     <p>{item.timelineItemYear[locale]}</p>
                                   </div>
                                 </div>

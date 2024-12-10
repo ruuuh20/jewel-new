@@ -122,6 +122,14 @@ export default function Header({ isExhibitPage }) {
                     router.pathname == "/projects" ? "text-yellow" : "text-[#242b2d]"
                   }`}
                 />
+                <FancyLink
+                  destination="/essays"
+                  a11yText="Navigate to the essays page"
+                  label="Essays"
+                  extraClasses={`hidden md:inline-block link link--metis before:absolute ${
+                    router.pathname == "/essays" ? "text-yellow" : "text-[#242b2d]"
+                  }`}
+                />
               
                 
                 <div className="relative hidden ease-in md:inline-block dropdown group">
@@ -303,6 +311,18 @@ export default function Header({ isExhibitPage }) {
                           className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
                         >
                           Projects
+                        </a>
+                      </Link>
+                    </li>
+                    <li key="" className="mb-2 text-white lg:block">
+                      <Link href="/essays">
+                        <a
+                          onClick={() => setIsNavOpen((prev) => !prev)}
+                          activeClassName="is--active"
+                          partiallyActive={true}
+                          className="text-base text-white link hover:opacity-75 focus:opacity-75 hover:text-white focus:text-white"
+                        >
+                         Essays
                         </a>
                       </Link>
                     </li>

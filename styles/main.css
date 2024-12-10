@@ -1142,3 +1142,7 @@ body {
 .aspect-2 {
   aspect-ratio: 2;
 }
+
+.hover:shadow-lg {
+  transition: box-shadow 0.3s ease;
+}

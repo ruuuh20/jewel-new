@@ -223,11 +223,11 @@ const Home = ({ data }) => {
                       <div className="relative w-full h-[260px] rounded ">
                         <div className="h-[90%] relative">
                           <Image
-                            src="/ganadara-thumbnail.jpeg"
+                            src="/ganadara-logo.png"
                             alt="Teacher"
-                            // width="100%"
-                            // height="90%"
-                            layout="fill"
+                            width="100%"
+                            height="90%"
+                            layout="responsive"
                             objectFit="cover"
                           />
                         </div>
@@ -261,10 +261,7 @@ const Home = ({ data }) => {
                       </div>
                       <h2 class="card-title">JEWEL</h2>
                       <p class="card-description">
-                        Advocating for the inclusion of Asian American
-                        immigration history in the K-12 curriculum, which is an
-                        important step in recognizing and celebrating the
-                        contributions of Asian Americans to American society.
+                       Fostering cultural understanding by promoting education and awareness abour different cultuers and oroviding opportunities for people fomr diverse backgrounds to come together and learn from each other. 
                       </p>
                     </article>
                   </a>
@@ -345,15 +342,15 @@ const Home = ({ data }) => {
                     </article>
                   </a>
                 </Link>
-                <Link href="/">
+                <Link href="/aaih/exhibit">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
                       {/* <div className="pb-2 text-lg text-right">2024</div> */}
                       <div className="relative w-full h-[260px] ">
                         <div className="h-[90%] relative rounded">
                           <Image
-                            src="/youth.jpg"
-                            alt="Youth Network image"
+                            src="/Luncheon.png"
+                            alt="AAIH"
                             // width="100%"
                             // height="90%"
                             layout="fill"
@@ -387,12 +384,14 @@ const Home = ({ data }) => {
                   <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-xl text-bold">
                     미주한인이민역사
                   </p>
-                  <a
-                    href="/aaih/exhibit"
-                    class="text-white bg-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-base px-6 py-3 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
-                  >
-                    Explore
-                  </a>
+                  <Link  href="/aaih/exhibit">
+                    <a
+                     
+                      class="text-white bg-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-base px-6 py-3 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                    >
+                      Explore
+                    </a>
+                  </Link>
                 </div>
                 <div className="flex justify-center w-full py-8 m-auto mt-4">
                   <Image
@@ -406,7 +405,7 @@ const Home = ({ data }) => {
               </div>
             </section>
           </Container>
-          <Container>
+          {/* <Container>
             <section className="py-4 md:py-10">
               <div className="">
                 <h3 className="h3-title">Past Events</h3>
@@ -418,14 +417,14 @@ const Home = ({ data }) => {
                       {homepageData.upcomingEvents[4].titleEng}
                     </p>
                   </div>
-                  {/* <div className="block mt-2 rounded-lg">
+                  <div className="block mt-2 rounded-lg">
                     <p className="text-lg md:text-2xl event-title">
                       {homepageData.upcomingEvents[3].description}. Further
                       information will be updated soon!
                     </p>
-                  </div> */}
+                  </div> 
 
-                  {/* <div className="mt-8">
+                 <div className="mt-8">
                 
                     <a
                       href="https://forms.gle/Ug2ubrBegfHeHWAq9"
@@ -435,7 +434,7 @@ const Home = ({ data }) => {
                     >
                       RSVP here
                     </a>
-                  </div> */}
+                  </div> 
                 </div>
                 <div className="w-full mt-10 rounded md:flex-1 md:mt-0">
                   <article className="px-[2rem] md:px-[5rem] md:w-3/5">
@@ -455,7 +454,7 @@ const Home = ({ data }) => {
                 </Link>
               </div>
             </section>
-          </Container>
+          </Container> */}
 
           <Container>
             <section>
