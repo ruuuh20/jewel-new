@@ -288,7 +288,7 @@ const Home = ({ data }) => {
                       </div>
                     </div>
                     <h2 class="card-title">
-                      Eduventure{" "}
+                      Learncation{" "}
                       <span className="inline-block mt-1 opacity-60">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
