@@ -133,14 +133,16 @@ const Home = ({ data }) => {
             </Container>
           </section> */}
 
-          <m.section
+
+{/* original hero section */}
+          {/* <m.section
             initial="initial"
             animate="enter"
             exit="exit"
             variants={fade}
             className="relative w-full my-10"
           >
-            {/* <div className="hidden md:block absolute top-[6%] left-[48%] overflow-visible spin-slow spin-container">
+            <div className="hidden md:block absolute top-[6%] left-[48%] overflow-visible spin-slow spin-container">
               <div className="relative">
                 <Image
                   className=""
@@ -159,23 +161,23 @@ const Home = ({ data }) => {
                   height="50"
                 />
               </div>
-            </div> */}
+            </div>
             <Container>
               <div className="m-auto py-[4rem] md:mt-12 md:py-28">
-                {/* <div className="mx-auto my-5 text-lg text-center  md:text-xl tagline text-[#d96e34] uppercase tracking-wide md:tracking-wider">
+                <div className="mx-auto my-5 text-lg text-center  md:text-xl tagline text-[#d96e34] uppercase tracking-wide md:tracking-wider">
                   Building bridges, Breaking barriers
-                </div> */}
+                </div>
                 <div className="flex flex-col px-2 md:px-[18rem]">
-                  {/* <div className="relative mt-8 mb-2 md:mt-4">
+                  <div className="relative mt-8 mb-2 md:mt-4">
                     <h4 className="block tracking-wider text-center uppercase text-[#e5d7ce] md:text-lg subtitle">
                       Who We Are
                     </h4>
-                  </div> */}
+                  </div>
                   <p className="mb-4 text-3xl text-center md:text-4xl xl:text-5xl ">
                     {homepageData.welcomeHeading}
                   </p>
 
-                  {/* <div className="hidden w-full m-auto mt-10 text-center md:block">
+                  <div className="hidden w-full m-auto mt-10 text-center md:block">
                     <Link href="/about">
                       <a className="button learn-more">
                         <span className="circle" aria-hidden="true">
@@ -184,12 +186,12 @@ const Home = ({ data }) => {
                         <span className="button-text">Learn more</span>
                       </a>
                     </Link>
-                  </div> */}
+                  </div>
                   <div className="w-full m-auto mt-10 text-center ">
                     <Link href="/about">
                       <a className="inline-flex items-center px-4 py-2 mt-2 font-extrabold border border-black btn--orange">
                         About Us
-                        {/* <svg
+                        <svg
                           className="w-5 h-5 ml-2"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -202,7 +204,136 @@ const Home = ({ data }) => {
                             stroke-width="2"
                             d="M17 8l4 4m0 0l-4 4m4-4H3"
                           />
-                        </svg> */}
+                        </svg>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Container>
+          </m.section> */}
+        
+
+         {/* Hero Section - Featuring Learncation */}
+          <m.section
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={fade}
+            className="relative w-full overflow-hidden"
+          >
+            <div className="relative">
+              {/* Hero Image with Overlay */}
+              <div className="relative h-[70vh] md:h-[80vh]">
+                <Image
+                  src="/visiting-korea-card.jpg"
+                  alt="Learncation - Cultural Exchange Program"
+                  layout="fill"
+                  objectFit="cover"
+                  priority
+                />
+                {/* Dark overlay for text readability */}
+                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+                
+                {/* Hero Content */}
+                <Container>
+                  <div className="relative flex items-center h-full">
+                    <div className="max-w-3xl py-16 text-white">
+                      {/* Badge */}
+                      <div className="mb-6">
+                        <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base">
+                          Applications Open • February 2025
+                        </span>
+                      </div>
+                      
+                      {/* Main Headline */}
+                      <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl xl:text-7xl">
+                        Learncation
+                      </h1>
+                      
+                      {/* Subheadline */}
+                      <p className="mb-8 text-xl font-light leading-relaxed md:text-2xl xl:text-3xl">
+                        Experience Korea beyond the classroom
+                      </p>
+                      
+                      {/* Description */}
+                      <p className="max-w-2xl mb-10 text-lg leading-relaxed md:text-xl">
+                        Immerse yourself in Korean culture through a transformative educational exchange. Connect with Korean students, explore historic landmarks, and gain firsthand cultural experiences that develop you into a globally-minded leader.
+                      </p>
+                      
+                      {/* CTA Buttons */}
+                      <div className="flex flex-col gap-4 sm:flex-row">
+                        <a
+                          href=""
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300 text-lg"
+                        >
+                          Apply Now
+                        </a>
+                        <a
+                          href=""
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
+                        >
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </div>
+            </div>
+          </m.section>
+          
+
+          {/* Mission Statement Section */}
+          <Container>
+            <section className="py-16 md:py-24">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light leading-tight mb-6 text-[#120902]">
+                  Building global understanding through education and cultural exchange
+                </h2>
+                <p className="text-lg text-gray-700 md:text-xl">
+                  Creating meaningful connections between the United States and Korea
+                </p>
+              </div>
+            </section>
+            
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
+          </Container>
+
+           {/* Hero Section - Modernized */}
+          <m.section
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={fade}
+            className="relative w-full"
+          >
+            <Container>
+              <div className="flex flex-col items-center justify-center min-h-[60vh] md:min-h-[70vh] py-16 md:py-24">
+                {/* Mission Statement */}
+                <div className="max-w-5xl mx-auto text-center">
+                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-8 text-[#120902]">
+                    Building global understanding through education and cultural exchange
+                  </h1>
+                  
+                  <p className="max-w-3xl mx-auto mb-12 text-lg text-gray-700 md:text-xl">
+                    Creating meaningful connections between the United States and Korea
+                  </p>
+
+                  {/* CTA Buttons */}
+                  <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <Link href="/about">
+                      <a className="inline-flex items-center px-8 py-3 font-semibold transition-all duration-300 bg-white border-2 border-black hover:bg-black hover:text-white">
+                        Learn About Our Work
+                      </a>
+                    </Link>
+                    <Link href="/contact">
+                      <a className="inline-flex items-center px-8 py-3 font-semibold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300">
+                        Get Involved
                       </a>
                     </Link>
                   </div>
@@ -211,15 +342,178 @@ const Home = ({ data }) => {
             </Container>
           </m.section>
 
-         
-
+            {/* Programs Section - With Better Header */}
           <Container>
+            <section className="py-12 md:py-20">
+              <div className="mb-12 text-center">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-4 text-[#120902]">
+                  Our Programs
+                </h2>
+                <p className="max-w-3xl mx-auto text-lg text-gray-700 md:text-xl">
+                  Explore our initiatives that connect communities through language, culture, and shared experiences
+                </p>
+              </div>
+
+              {/* Featured Program - Learncation */}
+              <div className="mb-8 md:mb-12">
+                <a
+                  className="block"
+                  href=""
+                  target="_blank"
+                >
+                  <article className="flex flex-col md:flex-row gap-6 p-6 md:p-8 border-2 border-[#120902] rounded-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="w-full md:w-1/2">
+                      <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+                        <Image
+                          src="/visiting-korea-card.jpg"
+                          alt="Learncation program"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-center w-full md:w-1/2">
+                      <div className="mb-2">
+                        <span className="inline-block px-3 py-1 text-sm font-semibold bg-[#d96e34] text-white rounded-full">
+                          Featured Program
+                        </span>
+                      </div>
+                      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#120902] flex items-center gap-2">
+                        Learncation
+                        <span className="inline-block opacity-60">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="28"
+                            height="28"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg>
+                        </span>
+                      </h2>
+                      <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
+                        Promoting cross-cultural understanding, developing
+                        partnerships, and enhancing language skills. Through
+                        meaningful interactions and shared learning, we strive to
+                        create a more interconnected world.
+                      </p>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              {/* Other Programs - Two Rows of Two */}
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+                <Link href="/">
+                  <a className="card-wrapper-link">
+                    <article className="card flex flex-col h-full border border-[#120902] rounded-lg hover:shadow-lg transition-shadow duration-300">
+                      <div className="relative w-full h-[260px] rounded-t-lg overflow-hidden">
+                        <Image
+                          src="/ganadara-logo.png"
+                          alt="Ganadara Korean School"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-3 text-[#120902]">Ganadara Korean School</h2>
+                        <p className="leading-relaxed text-gray-700">
+                          Promoting appreciation for Korean language, culture, and
+                          history. The Ganadara Korean Language School provides
+                          language instruction to students of all ages and groups,
+                          which can help promote language learning and increase
+                          communication between different cultures.
+                        </p>
+                      </div>
+                    </article>
+                  </a>
+                </Link>
+                
+                <Link href="/jewel">
+                  <a className="card-wrapper-link">
+                    <article className="card flex flex-col h-full border border-[#120902] rounded-lg hover:shadow-lg transition-shadow duration-300">
+                      <div className="relative w-full h-[260px] rounded-t-lg overflow-hidden">
+                        <Image
+                          src="/jewelthumbnail.JPG"
+                          alt="JEWEL program"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-3 text-[#120902]">JEWEL</h2>
+                        <p className="leading-relaxed text-gray-700">
+                          Fostering cultural understanding by promoting education and awareness about different cultures and providing opportunities for people from diverse backgrounds to come together and learn from each other.
+                        </p>
+                      </div>
+                    </article>
+                  </a>
+                </Link>
+
+                <Link href="/">
+                  <a className="card-wrapper-link">
+                    <article className="card flex flex-col h-full border border-[#120902] rounded-lg hover:shadow-lg transition-shadow duration-300">
+                      <div className="relative w-full h-[260px] rounded-t-lg overflow-hidden">
+                        <Image
+                          src="/youth.jpg"
+                          alt="Youth Network"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-3 text-[#120902]">Youth Network</h2>
+                        <p className="leading-relaxed text-gray-700">
+                          Developing Korean overseas youths into confident and
+                          culturally-aware global leaders, and fostering positive
+                          social impact in a diverse and interconnected world.
+                        </p>
+                      </div>
+                    </article>
+                  </a>
+                </Link>
+                
+                <Link href="/aaih/exhibit">
+                  <a className="card-wrapper-link">
+                    <article className="card flex flex-col h-full border border-[#120902] rounded-lg hover:shadow-lg transition-shadow duration-300">
+                      <div className="relative w-full h-[260px] rounded-t-lg overflow-hidden">
+                        <Image
+                          src="/Luncheon.png"
+                          alt="Asian American Immigration History"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-3 text-[#120902]">Korean American Immigration History</h2>
+                        <p className="leading-relaxed text-gray-700">
+                          Preserving and sharing the rich history of Korean American immigration through exhibitions, resources, and community engagement.
+                        </p>
+                      </div>
+                    </article>
+                  </a>
+                </Link>
+              </div>
+            </section>
+            
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
+          </Container>
+
+{/* original columns layout */}
+          {/* <Container>
             <section className="grid-wrapper">
               <div class="card-container grid-container">
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full border-l border-[#120902]">
-                      {/* <div className="pb-2 text-lg text-right">2023</div> */}
+                   
                       <div className="relative w-full h-[260px] rounded ">
                         <div className="h-[90%] relative">
                           <Image
@@ -246,7 +540,7 @@ const Home = ({ data }) => {
                 <Link href="/jewel">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      {/* <div className="pb-2 text-lg text-right">2023</div> */}
+                     
                       <div className="relative w-full h-[260px] rounded">
                         <div className="h-[90%] relative">
                           <Image
@@ -273,8 +567,7 @@ const Home = ({ data }) => {
                   target="_blank"
                 >
                   <article class="card flex flex-col h-full relative">
-                    {" "}
-                    {/* <div className="pb-2 text-lg text-right">2023</div> */}
+                
                     <div className="relative w-full h-[260px] rounded">
                       <div className="h-[90%] relative">
                         <Image
@@ -320,7 +613,7 @@ const Home = ({ data }) => {
                 <Link href="/">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      {/* <div className="pb-2 text-lg text-right">2023</div> */}
+                  
                       <div className="relative w-full h-[260px] ">
                         <div className="h-[90%] relative rounded">
                           <Image
@@ -345,7 +638,7 @@ const Home = ({ data }) => {
                 <Link href="/aaih/exhibit">
                   <a className="card-wrapper-link">
                     <article class="card flex flex-col h-full">
-                      {/* <div className="pb-2 text-lg text-right">2024</div> */}
+                     
                       <div className="relative w-full h-[260px] ">
                         <div className="h-[90%] relative rounded">
                           <Image
@@ -372,9 +665,12 @@ const Home = ({ data }) => {
               </div>
             </section>
             <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
+          </Container> */}
           
-           <Container>
+          
+        
+
+          <Container>
             <section class="bg-gray-800 text-white rounded-xl dark:bg-gray-900 ">
               <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 rounded">
                 <div class="mx-auto max-w-screen-sm text-center rounded">
@@ -628,89 +924,52 @@ const Home = ({ data }) => {
               </div>
             </section> */}
 
-            <section className="py-4 md:py-10">
-              <div className="flex flex-col content">
-                <div className="w-full md:w-1/2">
-                  <div className="">
-                    <h3 className="h3-title">
-                      What's Happening in Our Community
-                    </h3>
+            {/* Impact Stats Section */}
+          <Container>
+            <section className="py-12 md:py-16">
+              <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl xl:text-6xl font-bold text-[#d96e34] mb-2">
+                    500+
                   </div>
-                  <div className="">
-                    <p className="cta-desc">
-                      📌 Stay in the loop with the latest educational events
-                    </p>
+                  <div className="text-base text-gray-700 md:text-lg">
+                    Students Taught
                   </div>
                 </div>
-
-                {/* <div className="grid grid-cols-9 grid-rows-2 gap-4 my-6 md:my-10 md:gap-8 md:grid-rows-1">
-                  <div className="col-span-9 md:col-span-3 event-wrap-header">
-                    <Image
-                      src="/event1-1.jpeg"
-                      layout="responsive"
-                      // objectFit="cover"
-                      width="80%"
-                      height="100%"
-                    />
+                
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl xl:text-6xl font-bold text-[#d96e34] mb-2">
+                    15+
                   </div>
-                  <div className="col-span-9 md:col-span-3 event-wrap-header">
-                    <Image
-                      src="/event1-2.jpeg"
-                      layout="responsive"
-                      // objectFit="cover"
-                      width="80%"
-                      height="100%"
-                    />
-                  </div>
-                  <div className="relative w-full col-span-9 mt-2 md:mt-0 md:col-span-3 event-wrap-img">
-                    <Image
-                      src="/event1-3.jpeg"
-                      layout="responsive"
-                      // objectFit="cover"
-                      width="80%"
-                      height="100"
-                    />
-                  </div>
-                </div> */}
-
-                <div className="flex">
-              
-                  <div className="relative max-w-2xl py-5 mx-auto mt-2 mt-5 md:col-span-8 event-wrap-img">
-                    <Image
-                      src="/IMG_6102.JPG"
-                      width={1000}
-                      height={500}
-                      // layout="responsive"
-                      // className="w-full"
-                    />
+                  <div className="text-base text-gray-700 md:text-lg">
+                    Years of Programs
                   </div>
                 </div>
-                <div className="grid grid-cols-10 gap-1 mt-8 md:mt-10 md:gap-10 md:grid-rows-1">
-                  <div className="col-span-10 md:col-span-4 event-wrap-header">
-                    <h4 className="text-2xl font-bold text-[#075985]">
-                      Fulbright-Hays GPA 2023 South Korea
-                    </h4>
-
-                    <p className="mt-2">
-                      <span className="font-semibold">
-                        Call for Applications - by December 1, 2023
-                      </span>
-                    </p>
-
-                    <p className="mt-2"></p>
+                
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl xl:text-6xl font-bold text-[#d96e34] mb-2">
+                    20+
                   </div>
-                  <div className="relative w-full col-span-10 mt-2 md:mt-0 md:col-span-5 event-wrap-img">
-                    <iframe
-                      src="Summer_2024_Fulbright-Hays_GPA_to_South_Korea_Flyer.pdf"
-                      width="100%"
-                      height="500px"
-                      className="w-full"
-                    />
+                  <div className="text-base text-gray-700 md:text-lg">
+                    Partner Organizations
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl xl:text-6xl font-bold text-[#d96e34] mb-2">
+                    3
+                  </div>
+                  <div className="text-base text-gray-700 md:text-lg">
+                    Countries Connected
                   </div>
                 </div>
               </div>
             </section>
+            
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
+          </Container>
 
+            
             <hr className="hidden md:block bg-black h-[1px] border-none" />
 
             <section className="py-4 md:py-10">
