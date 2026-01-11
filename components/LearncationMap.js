@@ -33,10 +33,10 @@ const LearncationMap = () => {
           description: 'Gyeongbokgung Palace, DMZ Tour, Traditional Markets, K-pop Culture',
           color: '#d96e34'
         },
-        {
-          name: 'Busan',
-          coords: [35.1796, 129.0756],
-          description: 'Haeundae Beach, Gamcheon Culture Village, Night Markets, Temples',
+         {
+          name: 'Jeonju',
+          coords: [35.8242, 127.1480],
+          description: 'Traditional Hanok Village, Korean Cuisine Capital, Cultural Heritage Sites',
           color: '#d96e34'
         },
         {
@@ -125,21 +125,21 @@ const LearncationMap = () => {
           <div className="flex items-start gap-3">
             <div className="w-6 h-6 rounded-full bg-[#d96e34] flex-shrink-0 mt-1"></div>
             <div>
-              <div className="font-semibold text-[#120902]">Seoul</div>
+              <div className="font-semibold text-[#120902]">Seoul (서울)</div>
               <div className="text-sm text-gray-600">Days 1-4</div>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <div className="w-6 h-6 rounded-full bg-[#d96e34] flex-shrink-0 mt-1"></div>
             <div>
-              <div className="font-semibold text-[#120902]">Gyeongju</div>
+              <div className="font-semibold text-[#120902]">Gyeongju (경주)</div>
               <div className="text-sm text-gray-600">Days 5-7</div>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <div className="w-6 h-6 rounded-full bg-[#d96e34] flex-shrink-0 mt-1"></div>
             <div>
-              <div className="font-semibold text-[#120902]">Busan</div>
+              <div className="font-semibold text-[#120902]">Jeonju (전주)</div>
               <div className="text-sm text-gray-600">Days 8-10</div>
             </div>
           </div>

@@ -66,10 +66,10 @@ export default function Header({ isExhibitPage }) {
                   </a>
                 </Link>
               </m.div>
-              <nav className="flex items-center justify-end ml-auto text-sm md:w-full md:space-x-6 md:justify-center md:text-base md:w-auto">
+              <nav className="flex items-center justify-end ml-auto text-sm font-semibold md:w-full md:space-x-6 md:justify-center md:text-base md:w-auto">
                 <div className="relative hidden ease-in md:inline-block dropdown group">
                   <button className="text-[#242b2d] hover:text-yellow focus:text-yellow px-4 inline-flex items-center">
-                    <span className="mr-1 tracking-[1.1px] link">About Us</span>
+                    <span className="mr-1 tracking-[1.1px] link font-semibold ">About Us</span>
                     <svg
                       className="w-4 h-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ export default function Header({ isExhibitPage }) {
                 
                 <div className="relative hidden ease-in md:inline-block dropdown group">
                   <button className="text-[#242b2d] hover:text-yellow  focus:text-yellow pr-2 inline-flex items-center">
-                    <span className="mr-1 tracking-[1.1px] link">Join Us</span>
+                    <span className="mr-1 tracking-[1.1px] link font-semibold ">Join Us</span>
                     <svg
                       className="w-4 h-4 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@ export default function Header({ isExhibitPage }) {
                     Donate
                   </a> */}
                   
-                      <a className="hidden btn md:flex btn--orange btn--donate">Donate</a>
+                      <a className="hidden font-semibold btn md:flex btn--orange btn--donate">Donate</a>
                    
                 </Link>
                 <div className="mx-3 ml-5 mr-0 md:hidden xl:mx-5 2xl:mx-8 lg:hidden">

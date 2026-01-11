@@ -21,7 +21,7 @@ import ArrowRight from "@/components/arrow-right";
 import { useInView } from "react-intersection-observer";
 import GrayscaleImage from "@/components/grayscaleImage";
 import SignupForm from "@/components/signupForm";
-
+import AnnouncementBanner from "@/components/AnnouncementBanner";
 const Home = ({ data }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -82,7 +82,14 @@ const Home = ({ data }) => {
     setActiveTab("tab2");
   };
 
+  const showBanner = true;
+
   return (
+    <>
+        <AnnouncementBanner 
+      enabled={showBanner}
+      message="🎓 Root & Routes 2026 Applications Now Open"
+    />
     <Layout>
       <NextSeo title="Home" />
       <LazyMotion features={domAnimation}>
@@ -212,7 +219,7 @@ const Home = ({ data }) => {
               </div>
             </Container>
           </m.section> */}
-        
+     
 
          {/* Hero Section - Featuring Learncation */}
           <m.section
@@ -227,7 +234,7 @@ const Home = ({ data }) => {
               <div className="relative h-[70vh] md:h-[80vh]">
                 <Image
                   src="/visiting-korea-card.jpg"
-                  alt="Learncation - Cultural Exchange Program"
+                  alt="Root & Routes - Cultural Exchange Program"
                   layout="fill"
                   objectFit="cover"
                   priority
@@ -242,13 +249,13 @@ const Home = ({ data }) => {
                       {/* Badge */}
                       <div className="mb-6">
                         <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base">
-                          Applications Open • February 2025
+                          Applications Open • April 2026
                         </span>
                       </div>
                       
                       {/* Main Headline */}
-                      <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl xl:text-7xl">
-                        Learncation
+                      <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl xl:text-7xl font-clash">
+                        Root & Routes
                       </h1>
                       
                       {/* Subheadline */}
@@ -258,8 +265,9 @@ const Home = ({ data }) => {
                       
                       {/* Description */}
                       <p className="max-w-2xl mb-10 text-lg leading-relaxed md:text-xl">
-                        Immerse yourself in Korean culture through a transformative educational exchange. Connect with Korean students, explore historic landmarks, and gain firsthand cultural experiences that develop you into a globally-minded leader.
+                        Experience Korea's world-class education system through an exclusive exchange at Minjok Leadership Academy. Explore Seoul's culture, connect with Korean students, and develop global leadership skills—all during Spring Break.
                       </p>
+                      
                       
                       {/* CTA Buttons */}
                       <div className="flex flex-col gap-4 sm:flex-row">
@@ -272,7 +280,7 @@ const Home = ({ data }) => {
                           Apply Now
                         </a>
                         <a
-                          href=""
+                          href="/rootsandroutes"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
@@ -289,7 +297,7 @@ const Home = ({ data }) => {
           
 
           {/* Mission Statement Section */}
-          <Container>
+          {/* <Container>
             <section className="py-16 md:py-24">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl font-light leading-tight mb-6 text-[#120902]">
@@ -302,7 +310,7 @@ const Home = ({ data }) => {
             </section>
             
             <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
+          </Container> */}
 
            {/* Hero Section - Modernized */}
           <m.section
@@ -316,12 +324,12 @@ const Home = ({ data }) => {
               <div className="flex flex-col items-center justify-center min-h-[60vh] md:min-h-[70vh] py-16 md:py-24">
                 {/* Mission Statement */}
                 <div className="max-w-5xl mx-auto text-center">
-                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-8 text-[#120902]">
+                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-8 text-[#120902] font-clash">
                     Building global understanding through education and cultural exchange
                   </h1>
                   
-                  <p className="max-w-3xl mx-auto mb-12 text-lg text-gray-700 md:text-xl">
-                    Creating meaningful connections between the United States and Korea
+                  <p className="max-w-3xl mx-auto mb-12 text-lg text-gray-700 md:text-xl font-clash">
+                   We create meaningful connections between the United States and Korea through immersive programs that bring students, educators, and communities together
                   </p>
 
                   {/* CTA Buttons */}
@@ -346,7 +354,7 @@ const Home = ({ data }) => {
           <Container>
             <section className="py-12 md:py-20">
               <div className="mb-12 text-center">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-4 text-[#120902]">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-4 font-clash text-[#120902]">
                   Our Programs
                 </h2>
                 <p className="max-w-3xl mx-auto text-lg text-gray-700 md:text-xl">
@@ -366,7 +374,7 @@ const Home = ({ data }) => {
                       <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                         <Image
                           src="/visiting-korea-card.jpg"
-                          alt="Learncation program"
+                          alt="Root & Routes program"
                           layout="fill"
                           objectFit="cover"
                         />
@@ -379,7 +387,7 @@ const Home = ({ data }) => {
                         </span>
                       </div>
                       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#120902] flex items-center gap-2">
-                        Learncation
+                       Root & Routes
                         <span className="inline-block opacity-60">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -485,8 +493,8 @@ const Home = ({ data }) => {
                     <article className="card flex flex-col h-full border border-[#120902] rounded-lg hover:shadow-lg transition-shadow duration-300">
                       <div className="relative w-full h-[260px] rounded-t-lg overflow-hidden">
                         <Image
-                          src="/Luncheon.png"
-                          alt="Asian American Immigration History"
+                          src="/exhibit-1.JPG"
+                          alt="Korean American Immigration History"
                           layout="fill"
                           objectFit="cover"
                         />
@@ -667,40 +675,118 @@ const Home = ({ data }) => {
             <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container> */}
           
-          
-        
-
+          {/* Featured Project Section */}
           <Container>
-            <section class="bg-gray-800 text-white rounded-xl dark:bg-gray-900 ">
-              <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 rounded">
-                <div class="mx-auto max-w-screen-sm text-center rounded">
-                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-100 dark:text-white">
-                    Korean American Immigration History Exhibit
-                  </h2>
-                  <p class="mb-6 font-light text-gray-100 dark:text-gray-400 md:text-xl text-bold">
-                    미주한인이민역사
-                  </p>
-                  <Link  href="/aaih/exhibit">
-                    <a
-                     
-                      class="text-black bg-gray-100 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 rounded-lg text-base font-semibold px-6 py-3 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
-                    >
-                      Explore 
-                    </a>
-                  </Link>
+            <section className="py-12 md:py-20">
+              <div className="mb-8 text-center">
+                <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base mb-4">
+                  Featured Project
+                </span>
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-4 text-[#120902]">
+                  Korean American Immigration History
+                </h2>
+                <p className="max-w-3xl mx-auto text-lg text-gray-700 md:text-xl">
+                  미주한인이민역사
+                </p>
+              </div>
+
+              <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+                {/* Image Side */}
+                <div className="order-2 md:order-1">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                    <Image
+                      src="/exhibit-main.jpeg"
+                      width={600}
+                      height={600}
+                      alt="Korean American Immigration History Exhibit"
+                      className="w-full"
+                    />
+                  </div>
                 </div>
-                <div className="flex justify-center w-full py-8 m-auto mt-4">
-                  <Image
-                  src="/exhibit-poster-1.png"
-                  // layout="fill"
-                  width={600}
-                  height={600}
-                  alt="Exhibit"
-                  />
+
+                {/* Content Side */}
+                <div className="order-1 md:order-2">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-[#120902]">
+                    Preserving Our Shared History
+                  </h3>
+                  <p className="mb-6 text-lg leading-relaxed text-gray-700">
+                    Our 2024 exhibition explored the rich and complex history of Korean American immigration, from the first arrivals in the early 1900s to the vibrant communities of today. Through photographs, artifacts, oral histories, and interactive displays, we brought this important story to life.
+                  </p>
+                  <p className="mb-6 text-lg leading-relaxed text-gray-700">
+                    As we prepare for our 2025 exhibition, we continue to collect stories, preserve historical materials, and educate communities about the Korean American experience.
+                  </p>
+
+                 {/* Partner Logos */}
+                  <div className="mb-8 p-6 bg-[#f9f7f4] rounded-lg">
+                    <h4 className="mb-4 text-sm font-semibold tracking-wide text-center text-gray-600 uppercase">
+                      In Partnership With
+                    </h4>
+                    <div className="grid items-center grid-cols-2 gap-6 md:grid-cols-4">
+                      <div className="flex items-center justify-center">
+                        <Image
+                          src="/partner-logo-1.png"
+                          alt="Partner Organization 1"
+                          width={120}
+                          height={60}
+                          objectFit="contain"
+                          className="transition-opacity opacity-70 hover:opacity-100"
+                        />
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <Image
+                          src="/partner-logo-2.avif"
+                          alt="Partner Organization 2"
+                          width={120}
+                          height={60}
+                          objectFit="contain"
+                          className="transition-opacity opacity-70 hover:opacity-100"
+                        />
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <Image
+                          src="/partner-logo-3.jpg"
+                          alt="Partner Organization 3"
+                          width={120}
+                          height={60}
+                          objectFit="contain"
+                          className="transition-opacity opacity-70 hover:opacity-100"
+                        />
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <Image
+                          src="/partner-logo-4.png"
+                          alt="Partner Organization 4"
+                          width={150}
+                          height={60}
+                          objectFit="contain"
+                          className="transition-opacity opacity-70 hover:opacity-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* CTAs */}
+                  <div className="flex flex-col gap-4 sm:flex-row">
+                    <Link href="/aaih/exhibit">
+                      <a className="inline-flex items-center justify-center px-6 py-3 font-semibold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300">
+                        View 2024 Exhibit
+                      </a>
+                    </Link>
+                    <Link href="/contact">
+                      <a className="inline-flex items-center justify-center px-6 py-3 font-semibold transition-all duration-300 bg-white border-2 border-black hover:bg-black hover:text-white">
+                        Get Involved
+                      </a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </section>
+            
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container>
+        
+
+          
           {/* <Container>
             <section className="py-4 md:py-10">
               <div className="">
@@ -753,22 +839,33 @@ const Home = ({ data }) => {
           </Container> */}
 
           <Container>
-            <section>
-              <div className="w-full p-[1rem] md:p-[5rem] ">
-                <p className="mx-auto text-xl text-center md:px-10 md:text-3xl">
-                  Sign up for email updates to stay informed about our
-                  community's latest initiatives, volunteer opportunities, and
-                  other events.
-                </p>
-                <div className="mx-auto mt-8 text-center w-90[%]">
-                  <a
-                    href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
-                    className="mx-auto btn btn--orange btn--learn btn-newsletter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    EDUCATE TOGETHER Newsletter
-                  </a>
+            <section className="mx-4 my-12 bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl">
+              <div className="w-full p-8 md:p-16">
+                <div className="max-w-4xl mx-auto text-center">
+                  <div className="mb-6">
+                    <svg className="w-12 h-12 mx-auto mb-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    <h3 className="mb-4 text-2xl font-bold text-gray-800 md:text-4xl">
+                      Stay Connected
+                    </h3>
+                  </div>
+                  <p className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-gray-700 md:text-xl">
+                    Sign up for email updates to stay informed about our
+                    community's latest initiatives, volunteer opportunities, and
+                    other events.
+                  </p>
+                  <div className="mx-auto text-center">
+                    <a
+                      href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
+                      className="inline-block px-8 py-4 text-lg font-bold text-white transition-all duration-300 transform bg-gray-800 rounded-lg shadow-lg hover:bg-gray-900 hover:scale-105 hover:shadow-xl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      📧 Subscribe to Newsletter
+                    </a>
+                  </div>
                 </div>
               </div>
             </section>
@@ -925,7 +1022,7 @@ const Home = ({ data }) => {
             </section> */}
 
             {/* Impact Stats Section */}
-          <Container>
+          {/* <Container>
             <section className="py-12 md:py-16">
               <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
                 <div className="text-center">
@@ -967,7 +1064,7 @@ const Home = ({ data }) => {
             </section>
             
             <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
+          </Container> */}
 
             
             <hr className="hidden md:block bg-black h-[1px] border-none" />
@@ -997,6 +1094,7 @@ const Home = ({ data }) => {
         </m.main>
       </LazyMotion>
     </Layout>
+    </>
   );
 };
 

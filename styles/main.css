@@ -16,6 +16,8 @@ body {
   @apply font-sans antialiased text-black bg-white;
   /* background-color: rgb(234, 232, 228); */
   background-color: #d9d4aa;
+
+  background-color: #faf6eb;
 }
 
 body {
@@ -1031,7 +1033,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #120902;
+  /* border: 1px solid #120902; */
   /* color: rgb(217, 110, 52); */
   background-color: rgba(217, 212, 170, 0.81);
   -webkit-transition: 0.2s;
@@ -1059,7 +1061,7 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 1.2em;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 }
 

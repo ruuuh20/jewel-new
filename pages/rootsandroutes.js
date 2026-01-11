@@ -13,7 +13,7 @@ import { NextSeo } from "next-seo";
 import Image from "next/image";
 import LearncationMap from "@/components/LearncationMap";
 
-const Learncation = () => {
+const RootsAndRoutes = () => {
   const [activeYear, setActiveYear] = useState("2019");
 
   const router = useRouter();
@@ -48,28 +48,32 @@ const Learncation = () => {
                 </h1>
                 
                 <p className="text-xl font-light leading-relaxed text-gray-700 md:text-2xl xl:text-3xl">
-                  A 9-day transformative journey connecting students across cultures
+                  A 9-day educational and cultural journey for Korean-American students
                 </p>
+
+                 <p className="text-lg font-light leading-relaxed md:text-xl">
+                        April 2–10, 2026 | Grades 7–12
+                      </p>
               </div>
             </Container>
           </m.section>
 
           {/* Overview Section */}
           <Container>
-            <section className="py-16 md:py-24">
+            <section className="py-16 font-normal md:py-24 font-clash">
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#120902]">
                   Overview
                 </h2>
-                <div className="prose prose-lg max-w-none">
+                 <div className="prose prose-lg max-w-none">
                   <p className="mb-6 text-lg leading-relaxed text-gray-700 md:text-xl">
-                    Roots & Routes is an immersive cultural and educational exchange program that brings students to Korea for an unforgettable 10-day experience. This isn't just a vacation—it's a journey of discovery, connection, and personal growth.
+                    Roots and Routes is a 9-day program designed for Korean-American middle and high school students during Spring Break. Experience Korea's vibrant culture, world-class education system, and cutting-edge innovation—all while building global leadership skills and connecting with peers.
                   </p>
                   <p className="mb-6 text-lg leading-relaxed text-gray-700 md:text-xl">
-                    Through carefully curated experiences, participants engage directly with Korean students, explore historic landmarks, participate in cultural activities, and gain perspectives that extend far beyond the classroom. Our program is designed to develop globally-minded leaders who understand the value of cross-cultural connection.
+                    The program combines cultural immersion in Seoul with an exclusive 3-day exchange at Minjok Leadership Academy (MinSaGo), one of Korea's most prestigious schools. From exploring historic palaces to participating in workshops on global citizenship, students gain a comprehensive understanding of both traditional and modern Korea.
                   </p>
                   <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
-                    Whether you're interested in language, history, technology, or simply expanding your worldview, Roots & Routes offers an authentic look at Korean culture while building meaningful international friendships.
+                    Through guided activities, hands-on workshops, and interactions with Korean students, participants return home with expanded perspectives, enhanced cultural awareness, and inspiration for their academic and career futures.
                   </p>
                 </div>
               </div>
@@ -83,7 +87,7 @@ const Learncation = () => {
             <section className="py-16 md:py-24">
               <div className="max-w-5xl mx-auto">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
-                  What Makes Roots & Routes Unique
+                  Program Highlights: What Makes Roots & Routes Unique
                 </h2>
                 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
@@ -95,10 +99,10 @@ const Learncation = () => {
                     </div>
                     <div>
                       <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#120902]">
-                        Direct Student Exchange
+                        Minjok Leadership Academy Exchange
                       </h3>
-                      <p className="leading-relaxed text-gray-700">
-                        Connect with Korean students your age through organized meetups, collaborative activities, and authentic cultural exchanges. Build friendships that last beyond the program.
+                     <p className="leading-relaxed text-gray-700">
+                        Spend 3 days at one of Korea's most prestigious schools. Observe classes, interact with high-achieving students, tour the campus, and participate in workshops on leadership and global citizenship.
                       </p>
                     </div>
                   </div>
@@ -110,11 +114,11 @@ const Learncation = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#120902]">
+                     <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#120902]">
                         Cultural Immersion
                       </h3>
                       <p className="leading-relaxed text-gray-700">
-                        Experience Korea beyond tourist attractions. Participate in traditional activities, visit local markets, try authentic cuisine, and engage with communities.
+                        Explore Seoul's historic palaces, traditional hanok villages, and vibrant neighborhoods. Experience hands-on cultural activities including Hangul calligraphy, traditional crafts, and Korean cooking.
                       </p>
                     </div>
                   </div>
@@ -157,22 +161,350 @@ const Learncation = () => {
             <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container>
 
-          {/* Trip Route Map */}
-<Container>
-  <section className="py-16 md:py-24">
-    <div className="max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#120902] text-center">
-        Your Journey Through Korea
-      </h2>
-      <p className="max-w-3xl mx-auto mb-12 text-lg text-center text-gray-700 md:text-xl">
-        Explore the route we'll take together, visiting three incredible cities over 10 unforgettable days.
-      </p>
-      <LearncationMap />
-    </div>
-  </section>
-  
-  <hr className="hidden md:block bg-black h-[1px] border-none mt-16" />
-</Container>
+     
+
+
+{/* Sample Itinerary */}
+          <Container>
+            <section className="py-16 md:py-24">
+              <div className="max-w-5xl mx-auto">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
+                  Sample Itinerary
+                </h2>
+                
+                <div className="space-y-8">
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                        Day 1
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Arrival & Orientation</h3>
+                      <p className="text-gray-700">
+                        Arrive at Incheon International Airport, transfer to Seoul accommodations, and participate in orientation and ice-breaking activities.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                        Day 2
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Seoul Historical & Cultural Immersion</h3>
+                      <p className="text-gray-700">
+                        Visit Gyeongbokgung Palace, National Folk Museum, and Bukchon Hanok Village. Evening reflection and cultural storytelling session.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                        Day 3
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Modern Korea & Future Skills</h3>
+                      <p className="text-gray-700">
+                        Explore Korean tech hubs, visit university campuses, and participate in global leadership workshops. Group discussion on career aspirations.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                        Day 4
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Korean Language & Cultural Workshop</h3>
+                      <p className="text-gray-700">
+                        Hands-on Hangul calligraphy, traditional crafts, and Korean cooking experiences. Reflection and journaling session.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                        Day 5
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Social Studies & Korean Society</h3>
+                      <p className="text-gray-700">
+                        Visit the National Museum of Korea, historical walking tour of Jongno district, and group discussion on Korean history and modern society.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                        Day 6
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Nature & Community</h3>
+                      <p className="text-gray-700">
+                        DMZ tour or alternative historical site visit. Community service and interaction with local students. Reflection on cultural immersion.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#d96e34] text-white flex items-center justify-center font-bold text-base text-center leading-tight p-2">
+                        Days<br/>7-9
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Minjok Leadership Academy Exchange</h3>
+                      <p className="mb-3 text-gray-700">
+                        Three-day immersion at one of Korea's most prestigious schools:
+                      </p>
+                      <ul className="space-y-2 text-gray-700">
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span>Class observations and academic activities</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span>Student exchange and peer interactions</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span>Campus tours and facility exploration</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span>Leadership and global citizenship workshops</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
+          </Container>
+
+          {/* Why This Program */}
+          <Container>
+            <section className="py-16 md:py-24 bg-[#f9f7f4] -mx-4 md:-mx-8 px-4 md:px-8">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#120902]">
+                  Why Roots and Routes?
+                </h2>
+                <div className="grid gap-8 text-left md:grid-cols-3">
+                  <div>
+                    <div className="mb-4 text-4xl">🎓</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Academic Excellence</h3>
+                    <p className="text-gray-700">
+                      Experience Korea's world-renowned education system firsthand through the exclusive MinSaGo exchange.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="mb-4 text-4xl">🌏</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Global Perspective</h3>
+                    <p className="text-gray-700">
+                      Develop international awareness and leadership skills that prepare you for an interconnected world.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="mb-4 text-4xl">🤝</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Cultural Connection</h3>
+                    <p className="text-gray-700">
+                      Engage with Korean culture in meaningful ways while building friendships with peers from diverse backgrounds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </Container>
+
+          {/* Program Details */}
+          <Container>
+            <section className="py-16 md:py-24">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
+                  Program Details
+                </h2>
+
+                <div className="grid gap-8 mb-12 md:grid-cols-2">
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Dates
+                    </h3>
+                    <p className="text-gray-700">
+                      April 2–10, 2026 (8 nights / 9 days)
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Who Can Apply
+                    </h3>
+                    <p className="text-gray-700">
+                      Korean-American students in grades 7–12
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Group Size
+                    </h3>
+                    <p className="text-gray-700">
+                      Minimum 15, maximum 25 students
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Program Cost
+                    </h3>
+                    <p className="text-gray-700">
+                      $4,500–$5,500 per student (airfare options available)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-[#f9f7f4] p-8 rounded-lg mb-12">
+                  <h3 className="text-2xl font-bold mb-6 text-[#120902]">
+                    What's Included
+                  </h3>
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Accommodation and meals</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">All activities and tours</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Local transportation</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">MinSaGo exchange program</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Professional chaperones</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">24/7 emergency support</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Travel insurance</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Cultural workshops</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6 mb-8 border-l-4 border-blue-500 rounded bg-blue-50">
+                  <p className="text-gray-700">
+                    <strong className="text-blue-900">Payment Plan:</strong> Non-refundable deposit of $1,000 at registration. Balance due by March 10, 2026. Payment plans available upon request.
+                  </p>
+                </div>
+
+                <div className="p-6 border-l-4 rounded bg-amber-50 border-amber-500">
+                  <p className="text-gray-700">
+                    <strong className="text-amber-900">Limited Spots:</strong> This program is limited to 25 students. Early registration is strongly encouraged to secure your spot.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
+          </Container>
+
+          {/* FAQ Section */}
+          <Container>
+            <section className="py-16 md:py-24">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
+                  Frequently Asked Questions
+                </h2>
+
+                <div className="space-y-6">
+                  <div className="pb-6 border-b border-gray-200">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Do students need to speak Korean?
+                    </h3>
+                    <p className="text-gray-700">
+                      No! The program is designed to be accessible regardless of Korean language ability. All activities include English support, and Korean language skills are not required.
+                    </p>
+                  </div>
+
+                  <div className="pb-6 border-b border-gray-200">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      How is safety ensured?
+                    </h3>
+                    <p className="text-gray-700">
+                      We maintain a 1:10 chaperone-to-student ratio, provide 24/7 emergency support, use only pre-screened accommodations and transportation, and include comprehensive travel insurance for all participants. Safety is our top priority.
+                    </p>
+                  </div>
+
+                  <div className="pb-6 border-b border-gray-200">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      What is Minjok Leadership Academy?
+                    </h3>
+                    <p className="text-gray-700">
+                      Minjok Leadership Academy (MinSaGo) is one of Korea's most prestigious high schools, known for academic excellence and innovative educational approaches. The 3-day exchange is an exclusive opportunity for our students to experience this world-class institution firsthand.
+                    </p>
+                  </div>
+
+                  <div className="pb-6 border-b border-gray-200">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Can my child attend if they've never been to Korea?
+                    </h3>
+                    <p className="text-gray-700">
+                      Absolutely! Many participants are visiting Korea for the first time. The program is designed to be accessible and enriching whether this is your child's first trip or they've visited before.
+                    </p>
+                  </div>
+
+                  <div className="pb-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      What if we need to cancel?
+                    </h3>
+                    <p className="text-gray-700">
+                      The $1,000 deposit is non-refundable. For cancellations after the balance is paid, refund policies depend on timing and circumstances. We strongly recommend purchasing travel insurance for additional protection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </Container>
 
           {/* Past Trips Section with Tabs */}
           <Container>
@@ -472,178 +804,9 @@ const Learncation = () => {
           </Container>
 
 
-          {/* Program Details */}
-          <Container>
-            <section className="py-16 md:py-24">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
-                  Program Details
-                </h2>
+        
 
-                <div className="grid gap-8 mb-12 md:grid-cols-2">
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Duration
-                    </h3>
-                    <p className="text-gray-700">
-                      10 days of immersive cultural and educational experiences
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Who Can Apply
-                    </h3>
-                    <p className="text-gray-700">
-                      High school and college students passionate about cross-cultural learning
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Application Deadline
-                    </h3>
-                    <p className="text-gray-700">
-                      February 2025 (specific date TBA)
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Program Dates
-                    </h3>
-                    <p className="text-gray-700">
-                      Summer 2025 (exact dates to be announced)
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-[#f9f7f4] p-8 rounded-lg mb-12">
-                  <h3 className="text-2xl font-bold mb-6 text-[#120902]">
-                    What's Included
-                  </h3>
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Round-trip airfare</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Accommodation</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Most meals</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">All activities and excursions</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Local transportation</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Cultural workshops</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Program staff and guides</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Travel insurance</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-6 border-l-4 border-blue-500 rounded bg-blue-50">
-                  <p className="text-gray-700">
-                    <strong className="text-blue-900">Financial Aid Available:</strong> We believe financial circumstances should not prevent students from participating. Scholarships and payment plans are available. Contact us to learn more about funding opportunities.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
-
-          {/* FAQ Section */}
-          <Container>
-            <section className="py-16 md:py-24">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
-                  Frequently Asked Questions
-                </h2>
-
-                <div className="space-y-6">
-                  <div className="pb-6 border-b border-gray-200">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Do I need to speak Korean to participate?
-                    </h3>
-                    <p className="text-gray-700">
-                      No! While knowledge of Korean is helpful, it's not required. The program includes English-speaking guides and Korean students who speak English. This is actually a great opportunity to practice Korean in a supportive environment.
-                    </p>
-                  </div>
-
-                  <div className="pb-6 border-b border-gray-200">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Is this program safe?
-                    </h3>
-                    <p className="text-gray-700">
-                      Yes. Student safety is our top priority. We have experienced staff, comprehensive travel insurance, 24/7 emergency support, and established partnerships with trusted organizations in Korea. We also conduct thorough orientations before departure.
-                    </p>
-                  </div>
-
-                  <div className="pb-6 border-b border-gray-200">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      What's the group size?
-                    </h3>
-                    <p className="text-gray-700">
-                      We keep groups small (typically 15-20 students) to ensure personalized attention and meaningful connections. This size allows for intimate cultural exchanges while still creating a fun, social atmosphere.
-                    </p>
-                  </div>
-
-                  <div className="pb-6 border-b border-gray-200">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      How do I apply?
-                    </h3>
-                    <p className="text-gray-700">
-                      Applications open in February 2025. The process includes a written application, a short video essay, and (for selected finalists) a brief interview. We're looking for students who are curious, open-minded, and excited about cultural exchange.
-                    </p>
-                  </div>
-
-                  <div className="pb-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      What if I have dietary restrictions or special needs?
-                    </h3>
-                    <p className="text-gray-700">
-                      We accommodate all dietary restrictions and work with participants to ensure their needs are met. Please let us know during the application process so we can make appropriate arrangements.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </Container>
-
-          {/* Application CTA Section */}
+           {/* Application CTA Section */}
           <Container>
             <section className="py-16 md:py-24">
               <div className="max-w-4xl mx-auto text-center bg-[#d96e34] text-white rounded-xl p-12 md:p-16">
@@ -651,9 +814,9 @@ const Learncation = () => {
                   Ready to Apply?
                 </h2>
                 <p className="mb-10 text-xl font-light md:text-2xl">
-                  Join us for an unforgettable journey of discovery, connection, and growth.
+                  Secure your spot for Spring Break 2026. Limited to 25 students.
                 </p>
-                <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
                   <a
                     href=""
                     target="_blank"
@@ -668,8 +831,8 @@ const Learncation = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="mt-8 text-sm opacity-90">
-                  Questions? Email us at info@yourdomain.org
+                <p className="text-sm opacity-90">
+                  Information Session: January 5, 2026 | Questions? Email info@yourdomain.org
                 </p>
               </div>
             </section>
@@ -680,4 +843,4 @@ const Learncation = () => {
   );
 };
 
-export default Learncation;
+export default RootsAndRoutes;

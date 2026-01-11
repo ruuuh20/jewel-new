@@ -7,7 +7,8 @@ module.exports = {
       'sans': ['roboto_condensedregular', 'Arial', 'sans-serif'],
       'thin': ['roboto_condensedlight'],
       'mono': ['Lucida Console', 'Courier', 'monospace'],
-      'serif': ['Source Serif Pro']
+      'serif': ['Source Serif Pro'],
+      'clash': ['Clash Grotesk', 'Arial', 'sans-serif']
     },
     screens: {
       sm: "640px",
@@ -19,7 +20,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'background': 'rgb(234, 232, 228)',
+        // 'background': 'rgb(234, 232, 228)',
         'black': '#000',
         'darkgray': 'rgb(51,51,51)',
         'white': '#FFF',
