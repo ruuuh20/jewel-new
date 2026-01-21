@@ -88,7 +88,7 @@ const Home = ({ data }) => {
     <>
         <AnnouncementBanner 
       enabled={showBanner}
-      message="🎓 Root & Routes 2026 Applications Now Open"
+      message="🎓 Roots & Routes 2026 Applications Now Open"
     />
     <Layout>
       <NextSeo title="Home" />
@@ -219,80 +219,117 @@ const Home = ({ data }) => {
               </div>
             </Container>
           </m.section> */}
+
+          
      
 
-         {/* Hero Section - Featuring Learncation */}
+         {/* Hero Section - Two Column Layout */}
           <m.section
             initial="initial"
             animate="enter"
             exit="exit"
             variants={fade}
-            className="relative w-full overflow-hidden"
+            className="relative w-full bg-gradient-to-br from-[#FFF8F0] via-white to-[#FFF8F0]"
           >
-            <div className="relative">
-              {/* Hero Image with Overlay */}
-              <div className="relative h-[70vh] md:h-[80vh]">
-                <Image
-                  src="/visiting-korea-card.jpg"
-                  alt="Root & Routes - Cultural Exchange Program"
-                  layout="fill"
-                  objectFit="cover"
-                  priority
-                />
-                {/* Dark overlay for text readability */}
-                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-                
-                {/* Hero Content */}
-                <Container>
-                  <div className="relative flex items-center h-full">
-                    <div className="max-w-3xl py-16 text-white">
-                      {/* Badge */}
-                      <div className="mb-6">
-                        <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base">
-                          Applications Open • April 2026
-                        </span>
-                      </div>
+            <Container>
+              <div className="grid items-center gap-8 py-16 md:grid-cols-2 md:gap-12 md:py-24 xl:py-32">
+                {/* Left Column - Text Content */}
+                <div className="order-2 md:order-1">
+                  {/* Badge */}
+                  <div className="mb-6">
+                    <span className="inline-block px-5 py-2 bg-[#d96e34] text-white font-bold rounded-full text-sm md:text-base shadow-lg">
+                      Applications Open Now • Spring Break 2026
+                    </span>
+                  </div>
+                  
+                  {/* Main Headline */}
+                  <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 text-[#120902] tracking-tight">
+                    Roots and Routes
+                  </h1>
+                  
+                  {/* Subheadline */}
+                  <p className="text-xl md:text-2xl xl:text-3xl mb-6 font-semibold leading-relaxed text-[#d96e34]">
+                    A 9-day educational and cultural exchange for Korean-American students
+                  </p>
+                  
+                  {/* Description */}
+                  <p className="mb-6 text-base leading-relaxed text-gray-700 md:text-lg">
+                    Experience Korea's world-class education system through an exclusive exchange at Minjok Leadership Academy. Explore Seoul's culture, connect with Korean students, and develop global leadership skills—all during Spring Break.
+                  </p>
+                  
+                  {/* Key Details */}
+                  <div className="flex flex-wrap gap-4 mb-8">
+                    <div className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg shadow-md">
+                      <svg className="w-5 h-5 text-[#d96e34]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      <span className="font-bold text-gray-800">April 2–10, 2026</span>
+                    </div>
+                    <div className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg shadow-md">
+                      <svg className="w-5 h-5 text-[#d96e34]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                      <span className="font-bold text-gray-800">Grades 7–12</span>
+                    </div>
+                  </div>
+                  
+                  {/* CTA Buttons */}
+                  <div className="flex flex-col gap-4 sm:flex-row">
+                    <a
+                      href="/apply"
+               
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform rounded-lg"
+                    >
+                      Apply Now
+                    </a>
+                    <a
+                      href="/roots-and-routes"
+               
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-8 py-4 font-bold border-2 border-[#120902] text-[#120902] hover:bg-[#120902] hover:text-white transition-all duration-300 text-lg rounded-lg"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right Column - Image */}
+                <div className="order-1 md:order-2">
+                  <div className="relative overflow-hidden transition-transform duration-500 transform shadow-2xl rounded-2xl hover:scale-105">
+                    <div className="relative h-[400px] md:h-[500px] xl:h-[600px]">
+                      <Image
+                        src="/visiting-korea-card.jpg"
+                        alt="Roots and Routes - Cultural Exchange Program"
+                        layout="fill"
+                        objectFit="cover"
+                        priority
+                      />
+                      {/* Subtle overlay for depth */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       
-                      {/* Main Headline */}
-                      <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl xl:text-7xl font-clash">
-                        Root & Routes
-                      </h1>
-                      
-                      {/* Subheadline */}
-                      <p className="mb-8 text-xl font-light leading-relaxed md:text-2xl xl:text-3xl">
-                        Experience Korea beyond the classroom
-                      </p>
-                      
-                      {/* Description */}
-                      <p className="max-w-2xl mb-10 text-lg leading-relaxed md:text-xl">
-                        Experience Korea's world-class education system through an exclusive exchange at Minjok Leadership Academy. Explore Seoul's culture, connect with Korean students, and develop global leadership skills—all during Spring Break.
-                      </p>
-                      
-                      
-                      {/* CTA Buttons */}
-                      <div className="flex flex-col gap-4 sm:flex-row">
-                        <a
-                          href=""
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300 text-lg"
-                        >
-                          Apply Now
-                        </a>
-                        <a
-                          href="/rootsandroutes"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 border-2 border-white hover:bg-white hover:text-black"
-                        >
-                          Learn More
-                        </a>
+                      {/* Optional: Floating stat badge on image */}
+                      <div className="absolute p-4 shadow-lg bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <div className="text-2xl font-extrabold text-[#d96e34]">25 Spots</div>
+                            <div className="text-sm text-gray-700">Limited Availability</div>
+                          </div>
+                          <div className="pl-4 border-l border-gray-300">
+                            <div className="text-2xl font-extrabold text-[#d96e34]">9 Days</div>
+                            <div className="text-sm text-gray-700">Spring Break</div>
+                          </div>
+                          <div className="pl-4 border-l border-gray-300">
+                            <div className="text-2xl font-extrabold text-[#d96e34]">MinSaGo</div>
+                            <div className="text-sm text-gray-700">Exchange</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </Container>
+                </div>
               </div>
-            </div>
+            </Container>
           </m.section>
           
 
@@ -374,7 +411,7 @@ const Home = ({ data }) => {
                       <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                         <Image
                           src="/visiting-korea-card.jpg"
-                          alt="Root & Routes program"
+                          alt="Roots & Routes program"
                           layout="fill"
                           objectFit="cover"
                         />
@@ -387,7 +424,7 @@ const Home = ({ data }) => {
                         </span>
                       </div>
                       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#120902] flex items-center gap-2">
-                       Root & Routes
+                       Roots & Routes
                         <span className="inline-block opacity-60">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
