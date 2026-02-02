@@ -320,7 +320,7 @@ const Home = ({ data }) => {
                             <div className="text-sm text-gray-700">Spring Break</div>
                           </div>
                           <div className="pl-4 border-l border-gray-300">
-                            <div className="text-2xl font-extrabold text-[#d96e34]">MinSaGo</div>
+                            <div className="text-2xl font-extrabold text-[#d96e34]">Minjok Leadership Academy</div>
                             <div className="text-sm text-gray-700">Exchange</div>
                           </div>
                         </div>

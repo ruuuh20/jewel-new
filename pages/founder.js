@@ -1,54 +1,137 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import PageNav from "@/components/pageNav";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
-import { groq } from "next-sanity";
-import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 import { useRouter } from "next/router";
-import { getClient, usePreviewSubscription, urlFor } from "../sanity";
-
+import { groq } from "next-sanity";
+import { getClient, usePreviewSubscription } from "../sanity";
 import ImageComponent from "@/components/image";
-
 import { PortableText } from "@portabletext/react";
 
 const myPortableTextComponents = {
   types: {
     quote: ({ value }) => (
-      <div className="pt-5 pb-5 border-b md:border-t md:border-b-0 border-brown md:pb-0 md:pt-8 2xl:pt-10">
-        <span className="block pb-0 mb-2 text-4xl leading-none font-display md:text-5xl 2xl:text-6xl md:mb-0">
-          “
+      <div className="pt-5 pb-5 border-b md:border-t md:border-b-0 border-[#d96e34] md:pb-0 md:pt-8 2xl:pt-10 my-6">
+        <span className="block pb-0 mb-2 text-4xl leading-none text-[#d96e34] md:text-5xl 2xl:text-6xl md:mb-0">
+          "
         </span>
-        <p className="block mb-3 -mt-5 text-xl leading-tight font-display md:text-xl lg:text-2xl xl:text-3xl md:leading-tight 2xl:leading-tight md:mb-4">
+        <p className="block mb-3 -mt-5 text-xl font-semibold leading-tight text-gray-800 md:text-xl lg:text-2xl xl:text-3xl md:leading-tight 2xl:leading-tight md:mb-4">
           {value.quote}
         </p>
-
         <div className="">
-          <span className="block leading-snug md:text-lg">
+          <span className="block italic leading-snug text-gray-600 md:text-lg">
             {value.personJobTitle}
           </span>
         </div>
       </div>
     ),
-    numeric: ({ value }) => <li className="text-lg">{value.text}</li>,
-    image: ({ value }) => <img src={value.imageUrl} />,
+    numeric: ({ value }) => <li className="mb-2 text-lg">{value.text}</li>,
+    image: ({ value }) => (
+      <div className="my-8">
+        <img src={value.imageUrl} className="rounded-lg shadow-md" alt="" />
+      </div>
+    ),
     callToAction: ({ value, isInline }) =>
       isInline ? (
-        <a href={value.url}>{value.text}</a>
+        <a href={value.url} className="text-[#d96e34] hover:text-[#c45e24] font-semibold underline">
+          {value.text}
+        </a>
       ) : (
-        <div className="callToAction">{value.text}</div>
+        <div className="callToAction my-6 p-4 bg-[#d96e34] text-white rounded-lg text-center font-bold">
+          {value.text}
+        </div>
       ),
   },
-
+  block: {
+    // Paragraphs
+    normal: ({ children }) => (
+      <p className="mb-6 text-base leading-relaxed text-gray-700 md:text-lg">
+        {children}
+      </p>
+    ),
+    // Headings
+    h1: ({ children }) => (
+      <h1 className="text-3xl md:text-4xl font-bold text-[#120902] mb-6 mt-8">
+        {children}
+      </h1>
+    ),
+    h2: ({ children }) => (
+      <h2 className="text-2xl md:text-3xl font-bold text-[#120902] mb-5 mt-7">
+        {children}
+      </h2>
+    ),
+    h3: ({ children }) => (
+      <h3 className="text-xl md:text-2xl font-bold text-[#120902] mb-4 mt-6">
+        {children}
+      </h3>
+    ),
+    h4: ({ children }) => (
+      <h4 className="text-lg md:text-xl font-bold text-[#120902] mb-3 mt-5">
+        {children}
+      </h4>
+    ),
+    // Blockquote
+    blockquote: ({ children }) => (
+      <blockquote className="border-l-4 border-[#d96e34] pl-6 py-2 my-6 italic text-gray-700">
+        {children}
+      </blockquote>
+    ),
+  },
+  list: {
+    // Bullet lists
+    bullet: ({ children }) => (
+      <ul className="mb-6 space-y-2 text-gray-700 list-disc list-inside">
+        {children}
+      </ul>
+    ),
+    // Numbered lists
+    number: ({ children }) => (
+      <ol className="mb-6 space-y-2 text-gray-700 list-decimal list-inside">
+        {children}
+      </ol>
+    ),
+  },
+  listItem: {
+    bullet: ({ children }) => (
+      <li className="ml-4 text-base leading-relaxed md:text-lg">{children}</li>
+    ),
+    number: ({ children }) => (
+      <li className="ml-4 text-base leading-relaxed md:text-lg">{children}</li>
+    ),
+  },
   marks: {
+    // Bold text
+    strong: ({ children }) => (
+      <strong className="font-bold text-[#120902]">{children}</strong>
+    ),
+    // Italic text
+    em: ({ children }) => (
+      <em className="italic">{children}</em>
+    ),
+    // Underline
+    underline: ({ children }) => (
+      <span className="underline">{children}</span>
+    ),
+    // Code
+    code: ({ children }) => (
+      <code className="px-2 py-1 font-mono text-sm bg-gray-100 rounded">
+        {children}
+      </code>
+    ),
+    // Links
     link: ({ children, value }) => {
       const rel = !value.href.startsWith("/")
         ? "noreferrer noopener"
         : undefined;
       return (
-        <a href={value.href} rel={rel}>
+        <a 
+          href={value.href} 
+          rel={rel}
+          className="text-[#d96e34] hover:text-[#c45e24] underline font-semibold"
+          target={!value.href.startsWith("/") ? "_blank" : undefined}
+        >
           {children}
         </a>
       );
@@ -58,15 +141,12 @@ const myPortableTextComponents = {
 
 export default function Founder(props) {
   const { postdata, preview } = props;
-
   const router = useRouter();
-  const locale = router.locale || router.defaultLocale;
 
   const { data: posts } = usePreviewSubscription(query, {
     initialData: postdata,
     enabled: preview || router.query.preview !== undefined,
   });
-
   return (
     <Layout>
       <NextSeo title="Founder's Message" />
@@ -76,357 +156,201 @@ export default function Founder(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
+          className="pb-16"
           variants={fade}
         >
-          <div className="relative w-full pt-8 pb-[28px] border-b border-black">
-           <Container>
-                <div className="flex items-center justify-between">
-                  <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
-                      Founder's Message
-                  </h3>
-                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
-                    <span>대표 인사말</span>
-                  </div>
+          {/* Header */}
+          <div className="relative w-full py-12 md:py-16 border-b-2 border-[#d96e34] bg-gradient-to-r from-[#FFF8F0] to-white">
+            <Container>
+              <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+                <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#120902]">
+                  Founder's Message
+                </h1>
+                <div className="text-2xl font-bold text-gray-600 md:text-3xl font-pretend">
+                  대표 인사말
                 </div>
+              </div>
             </Container>
           </div>
+
           <Container>
-            <m.div>
-              {posts &&
-                posts.map((post) => (
-                  <>
-                    <div className="flex flex-wrap pt-8">
-                      <div className="relative w-full md:px-1 my-2 md:my-5 rounded md:px-[6rem] md:w-6/12 content md:mb-0">
-                        <div className="image-container">
-                          <div className="">
-                            <figure className="mb-2 rounded-lg md:mb-6">
-                              <ImageComponent
-                                image={
-                                  post.foundersImage !== null
-                                    ? post.foundersImage.url
-                                    : "https://via.placeholder.com/50"
-                                }
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                        <section className="pb-4 md:pt-0 font-pretend">
-                          <div className="content">
-                            <div className="w-full py-2 mt-10 text-base font-bold text-center md:text-xl">
-                              <h4>Profile / 프로필</h4>
-                            </div>
-                            <div className="w-full">
-                              <table className="m-auto table-auto text-[14px]">
-                                <tbody>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      대표
-                                      <br />
-                                      Founding President
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      함께하는교육
-                                      <br />
-                                      Joining East & West as Educational
-                                      Liaisons
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      수석부회장
-                                      <br />
-                                      Executive Vice President
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      뉴욕한인회 36대, 37대
-                                      <br />
-                                      Korean American Association of Greater New
-                                      York (36th & 37th)
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      교장
-                                      <br />
-                                      Principal
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      가나다라한국문화학교
-                                      <br />
-                                      Ganadara Korean School
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      대표
-                                      <br />
-                                      President
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      재외동포청소년네트워크
-                                      <br />
-                                      Korean Youth Global Network
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      교육위원
-                                      <br />
-                                      School Board Member
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      (전)뉴저지 노우드학군 교육위원 5선
-                                      <br />
-                                      NJ Norwood School Board of Education (5
-                                      terms)
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      이사
-                                      <br />
-                                      Board Member
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      전미여성유권자연맹 뉴저지노던벨리지구
-                                      <br />
-                                      League of Women Voters, Northern Valley
-                                      Region
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      개설위원장
-                                      <br />
-                                      Committee Chair
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      (전)미주한국어재단 한국어반개설위원회
-                                      <br />
-                                      Korean Language Foundation
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      감사
-                                      <br />
-                                      Auditor
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      (전)민주평통뉴욕협의회 18기
-                                      <br />
-                                      National Unification Advisory Council, New
-                                      York Chapter
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      교육분과위원장
-                                      <br />
-                                      Committee Chair
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      (전)민주평통뉴욕협의회 16기
-                                      <br />
-                                      National Unification Advisory Council, New
-                                      York Chapter
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      자문위원
-                                      <br />
-                                      Advisory Member
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate-700 text-slate dark:text-slate-400">
-                                      (전)민주평통뉴욕협의회 14기
-                                      <br />
-                                      National Unification Advisory Council, New
-                                      York Chapter
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td className="p-2 pl-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      연합회장
-                                      <br />
-                                      President
-                                    </td>
-                                    <td className="p-2 pr-4 border-b border-gray-500 border-dashed dark:border-slate text-slate dark:text-slate-400">
-                                      (전)뉴저지버겐카운티한인학부모연합회
-                                      <br />
-                                      NJ Bergen County Korean American Parents
-                                      Coalitions
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                          <div className="px-4 text-[14px] mt-4 text-base achievement text-slate">
-                            <p>
-                              <span className="italic">Achievement:</span>{" "}
-                              국민포장 (國民褒章, Civil Merit Medal 2018)
-                            </p>
-                          </div>
-                        </section>
+            {/* Main Content - Better Layout */}
+            <div className="py-12 md:py-20">
+              {posts && posts.map((post) => (
+              <div key={post._id} className="grid gap-10 md:grid-cols-5 md:gap-16">
+                
+                {/* Left Column - Profile (2 cols) */}
+                <div className="md:col-span-2">
+                    {/* Profile Image */}
+                    <div className="mb-8">
+                      <div className="relative w-64 h-64 mx-auto overflow-hidden shadow-2xl rounded-2xl">
+                        <ImageComponent
+                          image={
+                            post.foundersImage !== null
+                              ? post.foundersImage.url
+                              : "https://via.placeholder.com/300"
+                          }
+                        />
                       </div>
-                      <div className="w-full py-4 pl-2 pr-2 text-sm bg-gray-100 rounded-lg text-slate md:py-10 md:pl-12 md:pr-12 md:w-5/12 content font-pretend">
+                    </div>
+
+                  {/* Name & Title */}
+                  <div className="mb-10 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#120902] mb-2">
+                      <span className="font-pretend">김경화</span> Kay Kim
+                    </h2>
+                    <p className="text-lg font-semibold text-gray-600">
+                      Founding President / <span className="font-pretend">대표</span>
+                    </p>
+                  </div>
+
+                  {/* Current Positions */}
+                  <div className="mb-10">
+                    <h3 className="text-xl font-bold text-[#120902] mb-6 pb-2 border-b-2 border-[#d96e34]">
+                      Current Positions
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1">Educate Together</div>
+                        <div className="text-sm text-gray-700 font-pretend">함께하는교육 | 비영리교육단체 대표</div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1">JEWEL</div>
+                        <div className="text-sm text-gray-700 font-pretend">Joining East & West | 국제교류협력 대표</div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1 font-pretend">NY한글박물관</div>
+                        <div className="text-sm text-gray-700 font-pretend">NY한글뮤지엄 추진위원회 위원장</div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1">Roots and Routes</div>
+                        <div className="text-sm text-gray-700 font-pretend">교육문화체험 대표</div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1">YWCA of Queens</div>
+                        <div className="text-sm text-gray-700 font-pretend">이사</div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1">Ganadara Korean School</div>
+                        <div className="text-sm text-gray-700 font-pretend">가나다라 한국문화역사학교 교장</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Key Highlights */}
+                  <div className="bg-[#d96e34] text-white p-6 rounded-xl shadow-xl">
+                    <h3 className="mb-4 text-xl font-bold">Key Highlights</h3>
+                    <ul className="space-y-3 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="font-bold">🏆</span>
+                        <span>Civil Merit Medal (<span className="font-pretend">국민포장</span>, 2018)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="font-bold">📚</span>
+                        <span>5-term School Board Member, NJ Norwood</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="font-bold">🌏</span>
+                        <span>Executive Vice President, Korean American Association of Greater NY (36th & 37th)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="font-bold">👥</span>
+                        <span>Founded multiple educational and cultural organizations</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Right Column - Message & Experience (3 cols) */}
+                <div className="md:col-span-3">
+                  {/* Founder's Message */}
+                  <div className="mb-12">
+                    <h3 className="text-2xl md:text-3xl font-bold text-[#120902] mb-6">
+                      Founder's Message
+                    </h3>
+                    <div className="prose prose-lg max-w-none">
+                      <div className="content bg-gradient-to-br from-[#FFF8F0] to-white p-8 rounded-xl border border-gray-200 shadow-sm text-gray-700 leading-relaxed">
                         <PortableText
                           value={post.content}
                           components={myPortableTextComponents}
                         />
                       </div>
                     </div>
-                    {/* <hr className="h-1 mt-10 bg-gray-200" /> */}
-                    <section>
-                      <div className="w-full mx-auto my-10 text-base md:my-16 text-slate md:w-6/12 content blurb">
-                        <PortableText value={posts[0].founderBlurb} />
-                      </div>
-                    </section>
-                  </>
-                ))}
-            </m.div>
-            <hr className="my-8 md:my-16" />
-            <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
-              <div className="flex flex-col-reverse mt-12 md:mt-0 md:flex-row">
-                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
-                  <div className="relative w-full">
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        1
-                      </div>
-                      <a
-                        className="relative w-full text-3xl italic leading-loose pointer-events-none group md:text-5xl font-pt"
-                        href="/about"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
-                          <span className="relative z-10">About us</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        2
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/programs"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Programs</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        3
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/projects"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Projects</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        4
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/news"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow  relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">News</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        5
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/affiliates"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Affiliates</span>
-                        </span>
-                      </a>
-                    </div>
                   </div>
-                </div>
 
-                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
-                  <div className="relative w-full">
-                    <nav className="m-auto md:w-2/3">
-                      <span className="block mb-4 text-gray-600 leading-tight uppercase text-base md:text-[18px]">
-                        {"About Us"}
-                      </span>
-                      <ul className="flex flex-wrap">
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/about">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Our Mission
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/founder">
-                            <a className="block transition-all duration-300 ease-in-out pointer-events-none group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Founder's Message
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/leadership">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Leadership
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/history">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Our History
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/contact">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Contact
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
-                    </nav>
+                  {/* Experience & Background */}
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-[#120902] mb-6">
+                      Experience & Leadership
+                    </h3>
+                    
+                    {/* Grid of Experience Cards */}
+                    <div className="grid gap-4 mb-8 md:grid-cols-2">
+                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
+                        <div className="font-bold text-[#120902] mb-2 font-pretend">뉴욕한인회</div>
+                        <div className="mb-1 text-sm text-gray-700 font-pretend">수석부회장 36대, 37대</div>
+                        <div className="text-xs text-gray-600">Korean American Association of Greater NY</div>
+                      </div>
+                      
+                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
+                        <div className="font-bold text-[#120902] mb-2">NJ Norwood School Board</div>
+                        <div className="mb-1 text-sm text-gray-700">5-term Member (1998-2013)</div>
+                        <div className="text-xs text-gray-600 font-pretend">뉴저지 교육위원 5선</div>
+                      </div>
+                      
+                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
+                        <div className="font-bold text-[#120902] mb-2">Queens College of CUNY</div>
+                        <div className="mb-1 text-sm text-gray-700">Advisory Board</div>
+                        <div className="text-xs text-gray-600 font-pretend">재외동포사회문제연구소 자문위원</div>
+                      </div>
+                      
+                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
+                        <div className="font-bold text-[#120902] mb-2">League of Women Voters</div>
+                        <div className="mb-1 text-sm text-gray-700">Board Member</div>
+                        <div className="text-xs text-gray-600">Northern Valley Region</div>
+                      </div>
+                      
+                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
+                        <div className="font-bold text-[#120902] mb-2 font-pretend">민주평통 뉴욕협의회</div>
+                        <div className="mb-1 text-sm text-gray-700 font-pretend">감사 (18기), 교육분과위원장 (16기)</div>
+                        <div className="text-xs text-gray-600">National Unification Advisory Council</div>
+                      </div>
+                      
+                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
+                        <div className="font-bold text-[#120902] mb-2">Bergen County Korean Parents</div>
+                        <div className="mb-1 text-sm text-gray-700">President</div>
+                        <div className="text-xs text-gray-600 font-pretend">뉴저지버겐카운티한인학부모연합회장</div>
+                      </div>
+                    </div>
+
+                    {/* Additional Info */}
+                    <div className="p-6 border-l-4 border-blue-500 rounded-r-lg bg-blue-50">
+                      <p className="text-sm leading-relaxed text-gray-700">
+                        <span className="font-bold text-blue-900">Recognition: </span>
+                        Kay has received the highest recommendation from educators and community leaders for her commitment, charismatic attitude, and excellence, making her a role model for women everywhere.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </section>
+              ))}
+            </div>
+
+            {/* Bottom Bio/Quote Section */}
+            {posts && posts[0] && posts[0].founderBlurb && (
+              <div className="py-12 border-t border-gray-200">
+                <div className="max-w-4xl mx-auto">
+                  <div className="blurb bg-gradient-to-br from-[#d96e34]/10 to-white p-8 md:p-12 rounded-2xl prose prose-lg max-w-none">
+                    <PortableText value={posts[0].founderBlurb} components={myPortableTextComponents} />
+                  </div>
+                </div>
+              </div>
+            )}
           </Container>
         </m.div>
       </LazyMotion>

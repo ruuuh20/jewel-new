@@ -543,11 +543,43 @@ const RootsAndRoutes = () => {
                   <div className="animate-fadeIn">
                     <div className="mb-8">
                       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
-                        Summer 2019 - Seoul & Busan
+                        Summer 2019 - Seoul & Gyeongju
                       </h3>
                       <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                        Our 2019 cohort explored both Seoul and Busan, connecting with students at three partner schools. Highlights included visiting Gyeongbokgung Palace, participating in a traditional tea ceremony, exploring the DMZ, and experiencing the vibrant night markets of Busan.
+                        Our 2019 cohort explored Seoul, the ancient capital of Gyeongju, and historic Suwon. Highlights included visiting Gyeongbokgung Palace, exploring the UNESCO World Heritage sites of Gyeongju, touring Suwon Hwaseong Fortress, and the powerful experience of the DMZ tour.
                       </p>
+                    </div>
+
+                       {/* Video Highlights */}
+                    <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
+                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                        <video
+  width="100%"
+  height="auto"
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+>
+  <source src="/roots-routes-2019-video-1.mp4" type="video/mp4" />
+  <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
+</video>
+                      </div>
+                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                     <video
+  width="100%"
+  height="auto"
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+>
+  <source src="/roots-routes-2019-video-2.mp4" type="video/mp4" />
+  <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
+</video>
+                      </div>
                     </div>
 
                     {/* Photo Gallery Grid */}
@@ -602,26 +634,22 @@ const RootsAndRoutes = () => {
                       </div>
                     </div>
 
-                    <div className="bg-[#f9f7f4] p-8 rounded-lg">
+                     <div className="bg-[#f9f7f4] p-8 rounded-lg">
                       <h4 className="text-xl font-bold mb-4 text-[#120902]">
                         Trip Highlights
                       </h4>
                       <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
                         <li className="flex items-start gap-2">
                           <span className="text-[#d96e34] font-bold">•</span>
-                          <span>Visited 5 UNESCO World Heritage Sites</span>
+                          <span>Gyeongbokgung Palace in Seoul</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#d96e34] font-bold">•</span>
-                          <span>Connected with 60+ Korean students</span>
+                          <span>UNESCO World Heritage sites in Gyeongju</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#d96e34] font-bold">•</span>
-                          <span>Traditional Korean cooking class</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
-                          <span>K-pop dance workshop</span>
+                          <span>Suwon Hwaseong Fortress city tour</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#d96e34] font-bold">•</span>
@@ -629,7 +657,11 @@ const RootsAndRoutes = () => {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#d96e34] font-bold">•</span>
-                          <span>Beach activities in Busan</span>
+                          <span>K-pop dance workshop</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span>Traditional Korean cultural experiences</span>
                         </li>
                       </ul>
                     </div>
