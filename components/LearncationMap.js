@@ -15,12 +15,12 @@ const LearncationMap = () => {
         mapInstanceRef.current.remove();
       }
 
-      // Initialize map centered on South Korea
-      const map = L.map(mapRef.current).setView([36.5, 127.5], 7);
+      // Initialize map centered on South Korea to show entire route
+      const map = L.map(mapRef.current).setView([36.8, 127.8], 7);
       mapInstanceRef.current = map;
 
       // Add tile layer (map background) - Minimal Style
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '© OpenStreetMap contributors © CARTO',
         maxZoom: 19,
       }).addTo(map);
@@ -28,22 +28,46 @@ const LearncationMap = () => {
       // Define locations with coordinates
       const locations = [
         {
+          name: 'Incheon',
+          coords: [37.4563, 126.7052],
+          description: 'Arrival & Departure - Incheon International Airport',
+          color: '#c17854',
+          days: 'Days 2 & 11'
+        },
+        {
           name: 'Seoul',
           coords: [37.5665, 126.9780],
-          description: 'Gyeongbokgung Palace, DMZ Tour, Traditional Markets, K-pop Culture',
-          color: '#d96e34'
+          description: 'Gyeongbokgung Palace, Insadong, National Museum, COEX',
+          color: '#c17854',
+          days: 'Days 2-4'
         },
-         {
-          name: 'Jeonju',
-          coords: [35.8242, 127.1480],
-          description: 'Traditional Hanok Village, Korean Cuisine Capital, Cultural Heritage Sites',
-          color: '#d96e34'
+        {
+          name: 'Hoengseong',
+          coords: [37.4896, 127.9846],
+          description: 'Minjok Leadership Academy (KMLA) Exchange Program',
+          color: '#c17854',
+          days: 'Days 5-7'
+        },
+        {
+          name: 'Yeoju',
+          coords: [37.2982, 127.6378],
+          description: 'Sejong Royal Tomb UNESCO World Heritage Site',
+          color: '#c17854',
+          days: 'Day 8'
+        },
+        {
+          name: 'Cheonan',
+          coords: [36.8065, 127.1522],
+          description: 'Independence Hall of Korea',
+          color: '#c17854',
+          days: 'Day 8'
         },
         {
           name: 'Gyeongju',
           coords: [35.8562, 129.2247],
-          description: 'Ancient Silla Kingdom Sites, Bulguksa Temple, National Museum',
-          color: '#d96e34'
+          description: 'Ancient Silla Kingdom Sites, Hanok Stay Experience',
+          color: '#c17854',
+          days: 'Days 9-10'
         }
       ];
 
@@ -51,7 +75,7 @@ const LearncationMap = () => {
       const customIcon = L.divIcon({
         className: 'custom-marker',
         html: `<div style="
-          background-color: #d96e34;
+          background-color: #c17854;
           width: 30px;
           height: 30px;
           border-radius: 50% 50% 50% 0;
@@ -92,7 +116,7 @@ const LearncationMap = () => {
       // Draw lines connecting the locations (travel route)
       const routeCoords = locations.map(loc => loc.coords);
       L.polyline(routeCoords, {
-        color: '#d96e34',
+        color: '#c17854',
         weight: 3,
         opacity: 0.7,
         dashArray: '10, 10',
@@ -120,27 +144,48 @@ const LearncationMap = () => {
       
       {/* Legend */}
       <div className="mt-6 bg-[#f9f7f4] p-6 rounded-lg">
-        <h4 className="text-lg font-bold mb-4 text-[#120902]">Trip Route</h4>
-        <div className="grid gap-4 md:grid-cols-3">
+        <h4 className="text-lg font-bold mb-4 text-[#1e3a5f]">10-Day Trip Route</h4>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
           <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full bg-[#d96e34] flex-shrink-0 mt-1"></div>
+            <div className="w-6 h-6 rounded-full bg-[#c17854] flex-shrink-0 mt-1"></div>
             <div>
-              <div className="font-semibold text-[#120902]">Seoul (서울)</div>
-              <div className="text-sm text-gray-600">Days 1-4</div>
+              <div className="font-semibold text-[#120902]">Incheon</div>
+              <div className="text-sm text-gray-600">Days 2 & 11</div>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full bg-[#d96e34] flex-shrink-0 mt-1"></div>
+            <div className="w-6 h-6 rounded-full bg-[#c17854] flex-shrink-0 mt-1"></div>
             <div>
-              <div className="font-semibold text-[#120902]">Gyeongju (경주)</div>
+              <div className="font-semibold text-[#120902]">Seoul</div>
+              <div className="text-sm text-gray-600">Days 2-4</div>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-full bg-[#c17854] flex-shrink-0 mt-1"></div>
+            <div>
+              <div className="font-semibold text-[#120902]">Hoengseong</div>
               <div className="text-sm text-gray-600">Days 5-7</div>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full bg-[#d96e34] flex-shrink-0 mt-1"></div>
+            <div className="w-6 h-6 rounded-full bg-[#c17854] flex-shrink-0 mt-1"></div>
             <div>
-              <div className="font-semibold text-[#120902]">Jeonju (전주)</div>
-              <div className="text-sm text-gray-600">Days 8-10</div>
+              <div className="font-semibold text-[#120902]">Yeoju</div>
+              <div className="text-sm text-gray-600">Day 8</div>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-full bg-[#c17854] flex-shrink-0 mt-1"></div>
+            <div>
+              <div className="font-semibold text-[#120902]">Cheonan</div>
+              <div className="text-sm text-gray-600">Day 8</div>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <div className="w-6 h-6 rounded-full bg-[#c17854] flex-shrink-0 mt-1"></div>
+            <div>
+              <div className="font-semibold text-[#120902]">Gyeongju</div>
+              <div className="text-sm text-gray-600">Days 9-10</div>
             </div>
           </div>
         </div>

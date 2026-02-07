@@ -88,7 +88,7 @@ const Home = ({ data }) => {
     <>
         <AnnouncementBanner 
       enabled={showBanner}
-      message="🎓 Roots & Routes 2026 Applications Now Open"
+      message="Roots & Routes 2026 Applications Open"
     />
     <Layout>
       <NextSeo title="Home" />

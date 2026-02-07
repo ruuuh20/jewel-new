@@ -46,10 +46,7 @@ const RootsAndRoutes = () => {
                 <h1 className="mb-6 text-5xl font-bold leading-tight text-[#120902] md:text-6xl xl:text-7xl">
                   Roots & Routes
                 </h1>
-                
-                <p className="text-xl font-light leading-relaxed text-gray-700 md:text-2xl xl:text-3xl">
-                  A 9-day educational and cultural journey for Korean-American students
-                </p>
+              
 
                  <p className="text-lg font-light leading-relaxed md:text-xl">
                         April 2–10, 2026 | Grades 7–12
@@ -67,10 +64,10 @@ const RootsAndRoutes = () => {
                 </h2>
                  <div className="prose prose-lg max-w-none">
                   <p className="mb-6 text-lg leading-relaxed text-gray-700 md:text-xl">
-                    Roots and Routes is a 9-day program designed for Korean-American middle and high school students during Spring Break. Experience Korea's vibrant culture, world-class education system, and cutting-edge innovation—all while building global leadership skills and connecting with peers.
+                    Roots and Routes is a 9-day program designed for Korean-American middle and high school students during Spring Break. Experience Korea's vibrant culture, world-class education system, and cutting-edge innovation, while building global leadership skills and connecting with peers.
                   </p>
                   <p className="mb-6 text-lg leading-relaxed text-gray-700 md:text-xl">
-                    The program combines cultural immersion in Seoul with an exclusive 3-day exchange at Minjok Leadership Academy (MinSaGo), one of Korea's most prestigious schools. From exploring historic palaces to participating in workshops on global citizenship, students gain a comprehensive understanding of both traditional and modern Korea.
+                    The program combines cultural immersion in Seoul with an exclusive 3-day exchange at Minjok Leadership Academy (민사고), one of Korea's most prestigious schools. From exploring historic palaces to participating in workshops on global citizenship, students gain a comprehensive understanding of both traditional and modern Korea.
                   </p>
                   <p className="text-lg leading-relaxed text-gray-700 md:text-xl">
                     Through guided activities, hands-on workshops, and interactions with Korean students, participants return home with expanded perspectives, enhanced cultural awareness, and inspiration for their academic and career futures.
@@ -163,175 +160,187 @@ const RootsAndRoutes = () => {
 
 
 <Container>
+  <section className="px-20 md:px-24">
           <LearncationMap />
+          </section>
 
 </Container>
      
 
 
-{/* Sample Itinerary */}
-          <Container>
+<Container>
             <section className="py-16 md:py-24">
               <div className="max-w-5xl mx-auto">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#1e3a5f] text-center">
                   Sample Itinerary
                 </h2>
                 
-                <div className="space-y-8">
-                  <div className="flex gap-6 group">
-                    <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
-                        Day 1
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Arrival & Orientation</h3>
-                      <p className="text-gray-700">
-                        Arrive at Incheon International Airport, transfer to Seoul accommodations, and participate in orientation and ice-breaking activities.
-                      </p>
-                    </div>
-                  </div>
+                <p className="mb-12 italic text-center text-gray-600">
+                  April 2-11, 2026 • 10 Days / 10 Nights • Schedule subject to change
+                </p>
 
+                <div className="space-y-8">
+                  {/* Day 2 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
                         Day 2
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Seoul Historical & Cultural Immersion</h3>
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Arrival & Seoul City Tour</h3>
+                      <p className="mb-2 text-sm text-gray-500">Friday, April 3 • Seoul</p>
                       <p className="text-gray-700">
-                        Visit Gyeongbokgung Palace, National Folk Museum, and Bukchon Hanok Village. Evening reflection and cultural storytelling session.
+                        Arrive at Incheon International Airport (5:00 AM). Begin Seoul city tour with a visit to Namsan Tower for panoramic city views. Hotel check-in and orientation session with ice-breaking activities to meet fellow participants.
                       </p>
                     </div>
                   </div>
 
+                  {/* Day 3 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
                         Day 3
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Modern Korea & Future Skills</h3>
-                      <p className="text-gray-700">
-                        Explore Korean tech hubs, visit university campuses, and participate in global leadership workshops. Group discussion on career aspirations.
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Seoul Historical & Cultural Immersion</h3>
+                      <p className="mb-2 text-sm text-gray-500">Saturday, April 4 • Seoul</p>
+                      <p className="mb-3 text-gray-700">
+                        Visit Gyeongbokgung Palace and the National Folk Museum. Explore Insadong for traditional crafts including hanbok try-on and seal carving experiences. Enjoy a unique coin lunch box at Tongin Market. Afternoon shopping, then stroll through Bukchon Hanok Village and the beautiful Cheonggyecheon stream.
                       </p>
                     </div>
                   </div>
 
+                  {/* Day 4 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
                         Day 4
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Korean Language & Cultural Workshop</h3>
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Modern Korea & Cultural Exploration</h3>
+                      <p className="mb-2 text-sm text-gray-500">Sunday, April 5 • Seoul → Hoengseong</p>
                       <p className="text-gray-700">
-                        Hands-on Hangul calligraphy, traditional crafts, and Korean cooking experiences. Reflection and journaling session.
+                        Explore the National Museum of Korea to understand Korean history and culture. Visit Lotte Sky (Seoul Sky observation deck) for stunning city views, then head to Gangnam COEX K-pop Square to experience contemporary Korean culture. Evening departure for Minjok Leadership Academy in Gangwon-do. Reflection and journaling session on the journey.
                       </p>
                     </div>
                   </div>
 
+                  {/* Days 5-7 - KMLA Exchange */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
-                        Day 5
+                      <div className="w-20 h-20 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-base text-center leading-tight p-2">
+                        Days<br/>5-7
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Social Studies & Korean Society</h3>
-                      <p className="text-gray-700">
-                        Visit the National Museum of Korea, historical walking tour of Jongno district, and group discussion on Korean history and modern society.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6 group">
-                    <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#f9f7f4] flex items-center justify-center font-bold text-[#d96e34] text-lg group-hover:bg-[#d96e34] group-hover:text-white transition-colors duration-300">
-                        Day 6
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Nature & Community</h3>
-                      <p className="text-gray-700">
-                        DMZ tour or alternative historical site visit. Community service and interaction with local students. Reflection on cultural immersion.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-6 group">
-                    <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#d96e34] text-white flex items-center justify-center font-bold text-base text-center leading-tight p-2">
-                        Days<br/>7-9
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Minjok Leadership Academy Exchange</h3>
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Minjok Leadership Academy (KMLA) Exchange</h3>
+                      <p className="mb-2 text-sm text-gray-500">Monday-Wednesday, April 6-8 • Hoengseong (Gangwon-do)</p>
                       <p className="mb-3 text-gray-700">
-                        Three-day immersion at one of Korea's most prestigious schools:
+                        Three-day immersion at one of Korea's most prestigious schools. Experience world-class education and Korean student life:
                       </p>
                       <ul className="space-y-2 text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
-                          <span>Class observations and academic activities</span>
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Class observations and academic activities with Korean students</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
-                          <span>Student exchange and peer interactions</span>
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Student exchange, peer interactions, and cultural dialogue</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
-                          <span>Campus tours and facility exploration</span>
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Campus tours and exploration of state-of-the-art facilities</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Leadership and global citizenship workshops</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Farewell ceremony and reflections on the exchange experience</span>
                         </li>
                       </ul>
                     </div>
                   </div>
+
+                  {/* Day 8 */}
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                        Day 8
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">UNESCO Heritage & Korean Independence</h3>
+                      <p className="mb-2 text-sm text-gray-500">Wednesday, April 8 • Yeoju → Cheonan → Gyeongju</p>
+                      <p className="text-gray-700">
+                        Visit Yeoju Sejong Royal Tomb, a UNESCO World Heritage Site honoring King Sejong the Great, creator of Hangul. Travel to Cheonan to explore the Independence Hall of Korea, learning about Korea's journey to independence and modern democracy. Continue to Gyeongju for evening arrival and cultural orientation.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Day 9 */}
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                        Day 9
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Ancient Silla Kingdom Experience</h3>
+                      <p className="mb-2 text-sm text-gray-500">Thursday, April 9 • Gyeongju</p>
+                      <p className="text-gray-700">
+                        Full-day immersion in Gyeongju, the ancient capital of the Silla Kingdom. Explore UNESCO World Heritage sites including Bulguksa Temple, Seokguram Grotto, and the royal tombs. Participate in traditional cultural activities and enjoy a unique hanok stay experience, sleeping in a traditional Korean house.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Day 10 */}
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                        Day 10
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Gyeongju Sites & Return to Incheon</h3>
+                      <p className="mb-2 text-sm text-gray-500">Friday, April 10 • Gyeongju → Incheon</p>
+                      <p className="text-gray-700">
+                        Morning exploration of additional Gyeongju historical sites and cultural landmarks. Travel to Incheon in the afternoon. Evening shopping at Incheon Songdo for last-minute souvenirs and gifts. Group reflection dinner and preparation for departure.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Day 11 */}
+                  <div className="flex gap-6 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                        Day 11
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-[#120902]">Final Reflections & Departure</h3>
+                      <p className="mb-2 text-sm text-gray-500">Saturday, April 11 • Incheon → Newark</p>
+                      <p className="text-gray-700">
+                        Visit Incheon Immigration Museum to learn about Korean diaspora and immigration history. Program wrap-up session with certificates and group photos. Farewell dinner. Airport check-in at 9:00 PM. Depart Korea and arrive back in Newark, USA (same day due to time difference). Return home with unforgettable memories and global perspectives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Note */}
+                <div className="mt-12 p-6 bg-[#f8fafc] rounded-lg border-l-4 border-[#1e3a5f]">
+                  <p className="text-sm text-gray-600">
+                    <strong className="text-[#1e3a5f]">Note:</strong> This is a sample itinerary. Specific activities, timing, and locations are subject to change based on weather, availability, and group dynamics. We strive to provide the best possible experience while remaining flexible to ensure student safety and engagement.
+                  </p>
                 </div>
               </div>
             </section>
 
-            <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
-
-          {/* Why This Program */}
-          <Container>
-            <section className="py-16 md:py-24 bg-[#f9f7f4] -mx-4 md:-mx-8 px-4 md:px-8">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#120902]">
-                  Why Roots and Routes?
-                </h2>
-                <div className="grid gap-8 text-left md:grid-cols-3">
-                  <div>
-                    <div className="mb-4 text-4xl">🎓</div>
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Academic Excellence</h3>
-                    <p className="text-gray-700">
-                      Experience Korea's world-renowned education system firsthand through the exclusive MinSaGo exchange.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="mb-4 text-4xl">🌏</div>
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Global Perspective</h3>
-                    <p className="text-gray-700">
-                      Develop international awareness and leadership skills that prepare you for an interconnected world.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="mb-4 text-4xl">🤝</div>
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Cultural Connection</h3>
-                    <p className="text-gray-700">
-                      Engage with Korean culture in meaningful ways while building friendships with peers from diverse backgrounds.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <hr className="hidden md:block bg-gray-200 h-[1px] border-none" />
           </Container>
 
           {/* Program Details */}
