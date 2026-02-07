@@ -309,7 +309,7 @@ const Home = ({ data }) => {
                         priority
                       />
                       {/* Subtle overlay for depth */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/30 to-transparent"></div>
+                      {/* <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/30 to-transparent"></div> */}
                       
                       {/* Optional: Floating stat badge on image */}
                       <div className="border-2 border-[#1e3a5f]/10 absolute p-4 shadow-lg bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl">
