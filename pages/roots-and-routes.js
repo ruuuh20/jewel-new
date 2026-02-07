@@ -1076,7 +1076,7 @@ const RootsAndRoutes = () => {
                 </p>
                 <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
                   <a
-                    href=""
+                    href="/apply"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-10 py-4 font-bold bg-white text-[#d96e34] hover:bg-gray-100 transition-all duration-300 text-lg"

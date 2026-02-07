@@ -54,7 +54,7 @@ export default function Contact(props) {
                     an email at{" "}
                     <a
                       className="border-b border-[#d96e34] hover:text-[#d96e34]"
-                      href="mailto:kay@edu-together.org"
+                      href="mailto:edutogether22@gmail.com"
                     >
                       {posts && posts[0].email}
                     </a>{" "}
