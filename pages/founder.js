@@ -209,6 +209,10 @@ export default function Founder(props) {
                     <h3 className="text-xl font-bold text-[#120902] mb-6 pb-2 border-b-2 border-[#d96e34]">
                       Current Positions
                     </h3>
+                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1 font-pretend">NY한글뮤지엄 추진위원회</div>
+                        <div className="text-sm text-gray-700 font-pretend">추진위원회 위원장</div>
+                      </div>
                     <div className="space-y-4">
                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
                         <div className="font-bold text-[#120902] mb-1">Educate Together</div>
@@ -220,14 +224,11 @@ export default function Founder(props) {
                         <div className="text-sm text-gray-700 font-pretend">Joining East & West | 국제교류협력 대표</div>
                       </div>
                       
-                      <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
-                        <div className="font-bold text-[#120902] mb-1 font-pretend">NY한글박물관</div>
-                        <div className="text-sm text-gray-700 font-pretend">NY한글뮤지엄 추진위원회 위원장</div>
-                      </div>
+                   
                       
                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
                         <div className="font-bold text-[#120902] mb-1">Roots and Routes</div>
-                        <div className="text-sm text-gray-700 font-pretend">교육문화체험 대표</div>
+                        <div className="text-sm text-gray-700 font-pretend">교육여행체험 대표</div>
                       </div>
                       
                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
@@ -291,11 +292,7 @@ export default function Founder(props) {
                     
                     {/* Grid of Experience Cards */}
                     <div className="grid gap-4 mb-8 md:grid-cols-2">
-                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
-                        <div className="font-bold text-[#120902] mb-2 font-pretend">뉴욕한인회</div>
-                        <div className="mb-1 text-sm text-gray-700 font-pretend">수석부회장 36대, 37대</div>
-                        <div className="text-xs text-gray-600">Korean American Association of Greater NY</div>
-                      </div>
+                     
                       
                       <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
                         <div className="font-bold text-[#120902] mb-2">NJ Norwood School Board</div>
@@ -315,11 +312,7 @@ export default function Founder(props) {
                         <div className="text-xs text-gray-600">Northern Valley Region</div>
                       </div>
                       
-                      <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
-                        <div className="font-bold text-[#120902] mb-2 font-pretend">민주평통 뉴욕협의회</div>
-                        <div className="mb-1 text-sm text-gray-700 font-pretend">감사 (18기), 교육분과위원장 (16기)</div>
-                        <div className="text-xs text-gray-600">National Unification Advisory Council</div>
-                      </div>
+                  
                       
                       <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
                         <div className="font-bold text-[#120902] mb-2">Bergen County Korean Parents</div>

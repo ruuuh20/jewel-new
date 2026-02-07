@@ -486,8 +486,9 @@ body {
 
 .link {
   text-decoration: none;
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform;
+  transition-property:
+    background-color, border-color, color, fill, stroke, opacity, box-shadow,
+    transform;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -830,7 +831,8 @@ body {
   margin-left: -0.25rem;
   width: 0.5rem;
   height: 0.5rem;
-  transition: opacity 0.25s cubic-bezier(0.86, 0, 0.07, 1),
+  transition:
+    opacity 0.25s cubic-bezier(0.86, 0, 0.07, 1),
     visibility 0s linear 0s;
 
   opacity: 1;
@@ -1160,4 +1162,12 @@ body {
   .articles-item {
     font-size: 15px;
   }
+}
+
+.hero-image-container > span {
+  z-index: 10 !important;
+}
+
+section [class*="relative"] > span[style*="position: absolute"] {
+  z-index: 50 !important;
 }

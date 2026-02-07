@@ -221,55 +221,58 @@ const Home = ({ data }) => {
           </m.section> */}
 
           
+
+
      
 
-         {/* Hero Section - Two Column Layout */}
+         {/* Hero Section - Two Column Layout MAIN */}
           <m.section
             initial="initial"
             animate="enter"
             exit="exit"
             variants={fade}
-            className="relative w-full bg-gradient-to-br from-[#FFF8F0] via-white to-[#FFF8F0]"
+            className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9]"
           >
+           
             <Container>
               <div className="grid items-center gap-8 py-16 md:grid-cols-2 md:gap-12 md:py-24 xl:py-32">
                 {/* Left Column - Text Content */}
                 <div className="order-2 md:order-1">
                   {/* Badge */}
                   <div className="mb-6">
-                    <span className="inline-block px-5 py-2 bg-[#d96e34] text-white font-bold rounded-full text-sm md:text-base shadow-lg">
+                    <span className="inline-block px-5 py-2 bg-[#c17854] text-white font-bold rounded-full text-sm md:text-base shadow-lg">
                       Applications Open Now • Spring Break 2026
                     </span>
                   </div>
                   
                   {/* Main Headline */}
-                  <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 text-[#120902] tracking-tight">
+                  <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 text-[#1e3a5f] tracking-tight">
                     Roots and Routes
                   </h1>
                   
                   {/* Subheadline */}
-                  <p className="text-xl md:text-2xl xl:text-3xl mb-6 font-semibold leading-relaxed text-[#d96e34]">
+                  <p className="text-xl md:text-2xl xl:text-3xl mb-6 font-semibold leading-relaxed text-[#334e68]">
                     A 9-day educational and cultural exchange for Korean-American students
                   </p>
                   
                   {/* Description */}
                   <p className="mb-6 text-base leading-relaxed text-gray-700 md:text-lg">
-                    Experience Korea's world-class education system through an exclusive exchange at Minjok Leadership Academy. Explore Seoul's culture, connect with Korean students, and develop global leadership skills—all during Spring Break.
+                    Experience Korea's world-class education system through an exclusive exchange at Minjok Leadership Academy. Explore Seoul's culture, connect with Korean students, and develop global leadership skills.
                   </p>
                   
                   {/* Key Details */}
                   <div className="flex flex-wrap gap-4 mb-8">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg shadow-md">
-                      <svg className="w-5 h-5 text-[#d96e34]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex items-center gap-2 px-4 py-2 bg-[#e0e7ef] border border-[#2c5282]/20 rounded-lg shadow-md">
+                      <svg className="w-5 h-5 text-[#1e3a5f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
-                      <span className="font-bold text-gray-800">April 2–10, 2026</span>
+                      <span className="font-bold text-[#1e3a5f]">April 2–11, 2026</span>
                     </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg shadow-md">
-                      <svg className="w-5 h-5 text-[#d96e34]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex items-center gap-2 px-4 py-2 bg-[#e0e7ef] border border-[#2c5282]/20  rounded-lg shadow-md">
+                      <svg className="w-5 h-5 text-[#1e3a5f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
-                      <span className="font-bold text-gray-800">Grades 7–12</span>
+                      <span className="font-bold text-[#1e3a5f]">Grades 8–12</span>
                     </div>
                   </div>
                   
@@ -279,7 +282,7 @@ const Home = ({ data }) => {
                       href="/apply"
                
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform rounded-lg"
+                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform rounded-lg"
                     >
                       Apply Now
                     </a>
@@ -287,7 +290,7 @@ const Home = ({ data }) => {
                       href="/roots-and-routes"
                
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 font-bold border-2 border-[#120902] text-[#120902] hover:bg-[#120902] hover:text-white transition-all duration-300 text-lg rounded-lg"
+                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] shadow-lg transition-all duration-300 text-lg rounded-lg"
                     >
                       Learn More
                     </a>
@@ -306,22 +309,22 @@ const Home = ({ data }) => {
                         priority
                       />
                       {/* Subtle overlay for depth */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/30 to-transparent"></div>
                       
                       {/* Optional: Floating stat badge on image */}
-                      <div className="absolute p-4 shadow-lg bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl">
+                      <div className="border-2 border-[#1e3a5f]/10 absolute p-4 shadow-lg bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl">
                         <div className="flex items-center justify-between">
                           <div>
-                            <div className="text-2xl font-extrabold text-[#d96e34]">25 Spots</div>
-                            <div className="text-sm text-gray-700">Limited Availability</div>
+                            <div className="text-2xl font-extrabold text-[#1e3a5f]">25 Spots</div>
+                            <div className="text-sm text-gray-600">Limited Availability</div>
                           </div>
-                          <div className="pl-4 border-l border-gray-300">
-                            <div className="text-2xl font-extrabold text-[#d96e34]">9 Days</div>
-                            <div className="text-sm text-gray-700">Spring Break</div>
+                          <div className="pl-4 border-l border-[#2c5282]/20 (make it border-l-2)">
+                            <div className="text-2xl font-extrabold text-[#1e3a5f]">9 Days</div>
+                            <div className="text-sm text-gray-600">Spring Break</div>
                           </div>
-                          <div className="pl-4 border-l border-gray-300">
-                            <div className="text-2xl font-extrabold text-[#d96e34]">Minjok Leadership Academy</div>
-                            <div className="text-sm text-gray-700">Exchange</div>
+                          <div className="pl-4 border-l border-[#2c5282]/20 (make it border-l-2)">
+                            <div className="text-2xl font-extrabold text-[#1e3a5f]">Minjok Leadership Academy</div>
+                            <div className="text-sm text-gray-600">Exchange</div>
                           </div>
                         </div>
                       </div>
@@ -330,7 +333,10 @@ const Home = ({ data }) => {
                 </div>
               </div>
             </Container>
+           
           </m.section>
+
+        
           
 
           {/* Mission Statement Section */}
@@ -386,6 +392,9 @@ const Home = ({ data }) => {
               </div>
             </Container>
           </m.section>
+
+
+          
 
             {/* Programs Section - With Better Header */}
           <Container>

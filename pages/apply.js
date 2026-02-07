@@ -143,10 +143,7 @@ const RootsAndRoutesApplication = () => {
                         <span className="mt-1 text-blue-400">•</span>
                         <span>Applications are due <strong>February 25, 2026</strong></span>
                       </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-1 text-blue-400">•</span>
-                        <span>Decisions will be sent by <strong>[INSERT DECISION DATE]</strong></span>
-                      </li>
+                     
                     </ul>
                   </div>
                 </div>

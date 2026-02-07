@@ -161,6 +161,11 @@ const RootsAndRoutes = () => {
             <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container>
 
+
+<Container>
+          <LearncationMap />
+
+</Container>
      
 
 
