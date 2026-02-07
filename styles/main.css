@@ -1171,3 +1171,7 @@ body {
 section [class*="relative"] > span[style*="position: absolute"] {
   z-index: 50 !important;
 }
+
+section .hero-image-container > span[style*="position: absolute"] {
+  z-index: 10 !important;
+}

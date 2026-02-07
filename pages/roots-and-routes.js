@@ -343,6 +343,40 @@ const RootsAndRoutes = () => {
             <hr className="hidden md:block bg-gray-200 h-[1px] border-none" />
           </Container>
 
+             {/* Why This Program */}
+          <Container>
+            <section className="py-16 md:py-24 bg-[#f9f7f4] -mx-4 md:-mx-8 px-4 md:px-8">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#1e3a5f]">
+                  Why Roots and Routes?
+                </h2>
+                <div className="grid gap-8 text-left md:grid-cols-3">
+                  <div>
+                    <div className="mb-4 text-4xl">🎓</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Academic Excellence</h3>
+                    <p className="text-gray-700">
+                      Experience Korea's world-renowned education system firsthand through the exclusive KMLA exchange at Minjok Leadership Academy.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="mb-4 text-4xl">🌏</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Global Perspective</h3>
+                    <p className="text-gray-700">
+                      Develop international awareness and leadership skills that prepare you for an interconnected world.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="mb-4 text-4xl">🤝</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Cultural Connection</h3>
+                    <p className="text-gray-700">
+                      Engage with Korean culture in meaningful ways while building friendships with peers from diverse backgrounds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </Container>
+
           {/* Program Details */}
           <Container>
             <section className="py-16 md:py-24">
@@ -375,7 +409,7 @@ const RootsAndRoutes = () => {
                       Group Size
                     </h3>
                     <p className="text-gray-700">
-                      Minimum 15, maximum 25 students
+                      Maximum 25 students
                     </p>
                   </div>
 
@@ -384,7 +418,7 @@ const RootsAndRoutes = () => {
                       Program Cost
                     </h3>
                     <p className="text-gray-700">
-                      $4,500–$5,500 per student (airfare options available)
+                      $4,900 per student 
                     </p>
                   </div>
                 </div>
@@ -416,7 +450,7 @@ const RootsAndRoutes = () => {
                       <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className="text-gray-700">MinSaGo exchange program</span>
+                      <span className="text-gray-700">KMLA exchange program</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -445,11 +479,11 @@ const RootsAndRoutes = () => {
                   </div>
                 </div>
 
-                <div className="p-6 mb-8 border-l-4 border-blue-500 rounded bg-blue-50">
+                {/* <div className="p-6 mb-8 border-l-4 border-blue-500 rounded bg-blue-50">
                   <p className="text-gray-700">
                     <strong className="text-blue-900">Payment Plan:</strong> Non-refundable deposit of $1,000 at registration. Balance due by March 10, 2026. Payment plans available upon request.
                   </p>
-                </div>
+                </div> */}
 
                 <div className="p-6 border-l-4 rounded bg-amber-50 border-amber-500">
                   <p className="text-gray-700">
@@ -494,7 +528,7 @@ const RootsAndRoutes = () => {
                       What is Minjok Leadership Academy?
                     </h3>
                     <p className="text-gray-700">
-                      Minjok Leadership Academy (MinSaGo) is one of Korea's most prestigious high schools, known for academic excellence and innovative educational approaches. The 3-day exchange is an exclusive opportunity for our students to experience this world-class institution firsthand.
+                      Minjok Leadership Academy (KMLA) is one of Korea's most prestigious high schools, known for academic excellence and innovative educational approaches. The 3-day exchange is an exclusive opportunity for our students to experience this world-class institution firsthand.
                     </p>
                   </div>
 
@@ -520,21 +554,31 @@ const RootsAndRoutes = () => {
             </section>
           </Container>
 
-          {/* Past Trips Section with Tabs */}
+         {/* Past Trips Section with Tabs */}
           <Container>
             <section className="py-16 md:py-24">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#1e3a5f] text-center">
                   Past Trips
                 </h2>
 
                 {/* Year Tabs */}
-                <div className="flex justify-center gap-4 mb-12">
+                <div className="flex flex-wrap justify-center gap-4 mb-12">
+                  <button
+                    onClick={() => setActiveYear("2024")}
+                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 rounded-lg ${
+                      activeYear === "2024"
+                        ? "bg-[#c17854] text-white shadow-lg"
+                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                    }`}
+                  >
+                    2024 Trip
+                  </button>
                   <button
                     onClick={() => setActiveYear("2019")}
-                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 ${
+                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 rounded-lg ${
                       activeYear === "2019"
-                        ? "bg-[#d96e34] text-white"
+                        ? "bg-[#c17854] text-white shadow-lg"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                   >
@@ -542,9 +586,9 @@ const RootsAndRoutes = () => {
                   </button>
                   <button
                     onClick={() => setActiveYear("2018")}
-                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 ${
+                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 rounded-lg ${
                       activeYear === "2018"
-                        ? "bg-[#d96e34] text-white"
+                        ? "bg-[#c17854] text-white shadow-lg"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                   >
@@ -552,47 +596,159 @@ const RootsAndRoutes = () => {
                   </button>
                 </div>
 
+                {/* 2024 Content */}
+                {activeYear === "2024" && (
+                  <div className="animate-fadeIn">
+                    <div className="mb-8">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
+                        Summer 2024 - Family & Student Experience
+                      </h3>
+                      <p className="mb-6 text-lg leading-relaxed text-gray-700">
+                        Our 2024 program was a special abbreviated trip designed for both students and parents, offering a unique family cultural immersion experience. This shorter-duration program provided an introduction to Korean culture, education, and heritage, creating meaningful connections across generations.
+                      </p>
+                      
+                      {/* Special Badge */}
+                      <div className="inline-block mb-6 px-4 py-2 bg-[#e0e7ef] text-[#1e3a5f] rounded-full text-sm font-semibold">
+                        Special Format: Students & Parents • Shorter Duration
+                      </div>
+                    </div>
+
+                    {/* Student Presentation Embed */}
+                    <div className="mb-8">
+                      <div className="bg-[#f8fafc] p-6 rounded-lg border-2 border-[#1e3a5f]/20 mb-4">
+                        <h4 className="text-xl font-bold mb-3 text-[#1e3a5f] flex items-center gap-2">
+                          <span>📊</span>
+                          Student-Created Trip Presentation
+                        </h4>
+                        <p className="mb-4 text-gray-700">
+                          Our 2024 participants created this presentation to share their experiences. Click through to see their journey in their own words.
+                        </p>
+                      </div>
+
+                      {/* PowerPoint Embed Area - Multiple Options Below */}
+                      
+                      {/* OPTION 1: Google Slides Embed (RECOMMENDED) */}
+                      {/* Upload your PowerPoint to Google Drive, convert to Google Slides, then get embed code */}
+                      <div className="relative w-full overflow-hidden bg-gray-100 shadow-lg rounded-xl" style={{ paddingBottom: '56.25%' }}>
+                        <iframe
+                          src="https://docs.google.com/presentation/d/e/2PACX-1vTL8i5D7x8HKTKqc312iaU-craJqzw7yPp2_PvBTSfaixMCUSgnSIKVECq0g-G5pA/pubembed?start=false&loop=false&delayms=3000"
+                          className="absolute top-0 left-0 w-full h-full"
+                          frameBorder="0"
+                          allowFullScreen
+                          title="2024 Trip Student Presentation"
+                        />
+                      </div>
+
+                      {/* OPTION 2: PDF Embed (if you convert PPT to PDF) */}
+                      {/* 
+                      <div className="relative w-full overflow-hidden bg-gray-100 shadow-lg rounded-xl" style={{ minHeight: '600px' }}>
+                        <iframe
+                          src="/2024-trip-presentation.pdf"
+                          className="w-full h-full"
+                          style={{ minHeight: '600px' }}
+                          frameBorder="0"
+                          title="2024 Trip Student Presentation"
+                        />
+                      </div>
+                      */}
+
+                      {/* OPTION 3: Download Link (simplest fallback) */}
+                      {/* 
+                      <div className="bg-white p-8 rounded-xl border-2 border-dashed border-[#1e3a5f]/30 text-center">
+                        <div className="mb-4 text-5xl">📥</div>
+                        <h4 className="text-xl font-bold mb-3 text-[#120902]">
+                          Download Student Presentation
+                        </h4>
+                        <p className="mb-6 text-gray-700">
+                          View the complete trip presentation created by our 2024 participants
+                        </p>
+                        <a
+                          href="/2024-trip-presentation.pdf"
+                          download
+                          className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg"
+                        >
+                          Download Presentation (PDF)
+                        </a>
+                      </div>
+                      */}
+                    </div>
+
+                    {/* Trip Highlights for 2024 */}
+                    <div className="bg-[#f9f7f4] p-8 rounded-lg">
+                      <h4 className="text-xl font-bold mb-4 text-[#120902]">
+                        Trip Highlights
+                      </h4>
+                      <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Family-oriented cultural immersion experience</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Intergenerational learning opportunities</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Seoul cultural landmarks and museums</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Traditional Korean cultural workshops</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Student-led presentation and reflection project</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-[#c17854] font-bold">•</span>
+                          <span>Meaningful family bonding through shared experiences</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
                 {/* 2019 Content */}
                 {activeYear === "2019" && (
                   <div className="animate-fadeIn">
                     <div className="mb-8">
                       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
-                        Summer 2019 - Seoul & Gyeongju
+                        Summer 2019 - Seoul, Gyeongju & Suwon
                       </h3>
                       <p className="mb-6 text-lg leading-relaxed text-gray-700">
                         Our 2019 cohort explored Seoul, the ancient capital of Gyeongju, and historic Suwon. Highlights included visiting Gyeongbokgung Palace, exploring the UNESCO World Heritage sites of Gyeongju, touring Suwon Hwaseong Fortress, and the powerful experience of the DMZ tour.
                       </p>
                     </div>
 
-                       {/* Video Highlights */}
+                    {/* Video Highlights */}
                     <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
                       <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
                         <video
-  width="100%"
-  height="auto"
-  autoPlay
-  loop
-  muted
-  playsInline
-  preload="auto"
->
-  <source src="/roots-routes-2019-video-1.mp4" type="video/mp4" />
-  <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
-</video>
+                          width="100%"
+                          height="auto"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          preload="auto"
+                        >
+                          <source src="/roots-routes-2019-video-1.mp4" type="video/mp4" />
+                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
+                        </video>
                       </div>
                       <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
-                     <video
-  width="100%"
-  height="auto"
-  autoPlay
-  loop
-  muted
-  playsInline
-  preload="auto"
->
-  <source src="/roots-routes-2019-video-2.mp4" type="video/mp4" />
-  <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
-</video>
+                        <video
+                          width="100%"
+                          height="auto"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          preload="auto"
+                        >
+                          <source src="/roots-routes-2019-video-2.mp4" type="video/mp4" />
+                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
+                        </video>
                       </div>
                     </div>
 
@@ -646,35 +802,59 @@ const RootsAndRoutes = () => {
                           objectFit="cover"
                         />
                       </div>
+                      <div className="relative h-64 overflow-hidden rounded-lg">
+                        <Image
+                          src="/learncation-2019-7.jpg"
+                          alt="2019 Trip - Temple Visit"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="relative h-64 overflow-hidden rounded-lg">
+                        <Image
+                          src="/learncation-2019-8.jpg"
+                          alt="2019 Trip - Temple Visit"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                      <div className="relative h-64 overflow-hidden rounded-lg">
+                        <Image
+                          src="/learncation-2019-9.jpg"
+                          alt="2019 Trip - Temple Visit"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
                     </div>
 
-                     <div className="bg-[#f9f7f4] p-8 rounded-lg">
+                    <div className="bg-[#f9f7f4] p-8 rounded-lg">
                       <h4 className="text-xl font-bold mb-4 text-[#120902]">
                         Trip Highlights
                       </h4>
                       <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Gyeongbokgung Palace in Seoul</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>UNESCO World Heritage sites in Gyeongju</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Suwon Hwaseong Fortress city tour</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>DMZ tour and historical presentation</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>K-pop dance workshop</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Traditional Korean cultural experiences</span>
                         </li>
                       </ul>
@@ -692,6 +872,38 @@ const RootsAndRoutes = () => {
                       <p className="mb-6 text-lg leading-relaxed text-gray-700">
                         The 2018 program focused on the historical depth of Korea, with extended time in Gyeongju, the ancient capital of the Silla Kingdom. Students engaged in archaeological workshops, language exchange sessions, and collaborative art projects with Korean peers.
                       </p>
+                    </div>
+
+                    {/* Video Highlights */}
+                    <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
+                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                        <video
+                          width="100%"
+                          height="auto"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          preload="auto"
+                        >
+                          <source src="/roots-routes-2018-video-1.mp4" type="video/mp4" />
+                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
+                        </video>
+                      </div>
+                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                        <video
+                          width="100%"
+                          height="auto"
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          preload="auto"
+                        >
+                          <source src="/roots-routes-2018-video-2.mp4" type="video/mp4" />
+                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
+                        </video>
+                      </div>
                     </div>
 
                     {/* Photo Gallery Grid */}
@@ -752,27 +964,27 @@ const RootsAndRoutes = () => {
                       </h4>
                       <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Explored ancient Silla Kingdom sites</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Archaeological workshop at museum</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Traditional hanbok dress experience</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Language exchange sessions</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Collaborative art project with Korean students</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#d96e34] font-bold">•</span>
+                          <span className="text-[#c17854] font-bold">•</span>
                           <span>Temple stay experience</span>
                         </li>
                       </ul>
@@ -782,7 +994,7 @@ const RootsAndRoutes = () => {
               </div>
             </section>
 
-            <hr className="hidden md:block bg-black h-[1px] border-none" />
+            <hr className="hidden md:block bg-gray-200 h-[1px] border-none" />
           </Container>
 
           {/* Testimonials Section */}
