@@ -541,14 +541,14 @@ const RootsAndRoutes = () => {
                     </p>
                   </div>
 
-                  <div className="pb-6">
+                  {/* <div className="pb-6">
                     <h3 className="text-xl font-bold mb-3 text-[#120902]">
                       What if we need to cancel?
                     </h3>
                     <p className="text-gray-700">
-                      The $1,000 deposit is non-refundable. For cancellations after the balance is paid, refund policies depend on timing and circumstances. We strongly recommend purchasing travel insurance for additional protection.
+                     TBA 
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </section>
@@ -1013,7 +1013,7 @@ const RootsAndRoutes = () => {
                       </svg>
                     </div>
                     <p className="mb-6 leading-relaxed text-gray-700">
-                      This program completely changed my perspective on what it means to be a global citizen. The connections I made with Korean students were genuine and eye-opening. I came back with friends for life and a deeper understanding of another culture.
+                      This program changed my perspective on what it means to be a global citizen. The connections I made with Korean students were genuine and eye-opening. I came back with friends for life and a deeper understanding of another culture.
                     </p>
                     <div className="font-semibold text-[#120902]">
                       - S.M.
@@ -1030,7 +1030,7 @@ const RootsAndRoutes = () => {
                       </svg>
                     </div>
                     <p className="mb-6 leading-relaxed text-gray-700">
-                      I wasn't sure what to expect, but Learncation exceeded everything I imagined. From exploring ancient temples to chatting with students my age about K-pop and school life, every day was memorable. This trip inspired me to continue studying Korean.
+                      I wasn't sure what to expect, but the program exceeded everything I imagined. From exploring ancient temples to chatting with students my age about K-pop and school life, every day was memorable. This trip inspired me to continue studying Korean.
                     </p>
                     <div className="font-semibold text-[#120902]">
                       - J.L.
@@ -1047,7 +1047,7 @@ const RootsAndRoutes = () => {
                       </svg>
                     </div>
                     <p className="mb-6 leading-relaxed text-gray-700">
-                      The hands-on cultural experiences were incredible. We didn't just visit Korea—we lived it. From making kimchi to learning traditional dances, everything felt authentic. The program organizers really care about creating meaningful experiences.
+                      The hands-on cultural experiences were incredible.  The program organizers really care about creating meaningful experiences.
                     </p>
                     <div className="font-semibold text-[#120902]">
                       - A.K.
@@ -1072,7 +1072,7 @@ const RootsAndRoutes = () => {
                   Ready to Apply?
                 </h2>
                 <p className="mb-10 text-xl font-light md:text-2xl">
-                  Secure your spot for Spring Break 2026. Limited to 25 students.
+                  Secure your spot for Spring Break 2026. 
                 </p>
                 <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
                   <a
@@ -1090,7 +1090,7 @@ const RootsAndRoutes = () => {
                   </Link>
                 </div>
                 <p className="text-sm opacity-90">
-                  Information Session: January 5, 2026 | Questions? Email info@yourdomain.org
+                  Information Session: February 20, 2026 | Questions? Email edutogether22@gmail.com
                 </p>
               </div>
             </section>

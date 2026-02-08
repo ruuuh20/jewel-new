@@ -82,7 +82,7 @@ export default function Contact(props) {
                               ></path>
                             </svg>
                             <a
-                              href="mailto:kay@edu-together.org"
+                              href="mailto:edutogether22@gmail.com"
                               className="transition duration-500 ease-in-out md:text-xl text-secondary-dark hover:text-yellow"
                             >
                               {post.email}{" "}

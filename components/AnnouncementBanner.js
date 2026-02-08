@@ -4,7 +4,7 @@ import Link from 'next/link';
 const AnnouncementBanner = ({ 
   message = "Root & Routes 2025 Applications Now Open",
   linkText = "Apply Today",
-  linkUrl = "/root-and-routes",
+  linkUrl = "/apply",
   bgColor = "bg-[#c17854]",
   textColor = "text-white",
   enabled = true // Easy on/off switch

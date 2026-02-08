@@ -77,14 +77,14 @@ const [introContext, setIntroContext] = useState(false);
               animate="hidden"
               variants={introFullEnd}
               transition={{ delay: 3.4, duration: 0, ease: [0.83, 0, 0.17, 1] }}
-              className="fixed inset-0 z-[1000] flex flex-wrap items-end h-screen min-h-screen max-h-screen p-[10px] cursor-wait"
+              className="fixed inset-0 z-[1000] flex flex-wrap items-end h-screen min-h-screen max-h-screen p-[10px] "
             >
               <m.div 
                 initial="visible"
                 animate="hidden"
                 variants={introEnd}
                 transition={{ delay: 1.3, duration: 1, ease: [0.83, 0, 0.17, 1] }}
-                className="bg-[#D9D4AA] fixed inset-0 z-[1000] flex flex-wrap items-end h-screen min-h-screen max-h-screen p-[10px] cursor-wait"
+                className="bg-[#D9D4AA] fixed inset-0 z-[1000] flex flex-wrap items-end h-screen min-h-screen max-h-screen p-[10px]"
               >
                 <div className="relative flex w-full mt-auto overflow-hidden full-screen-bg">
                   <m.div
