@@ -27,7 +27,6 @@ export default function Leadership(props) {
     "Advisory Board",
     "Honorary Advisory Board",
   ];
-  
   return (
     <Layout>
       <NextSeo title="Leadership" description="Leadership positions at Educate Together" />
@@ -36,10 +35,10 @@ export default function Leadership(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24"
+          className="mb-12 md:mb-16 xl:mb-24pb-[45px]"
           variants={fade}
         >
-          {/* Hero Header */}
+           {/* Hero Header */}
           <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
             <Container>
               <div className="max-w-4xl mx-auto text-center">
@@ -55,154 +54,269 @@ export default function Leadership(props) {
               </div>
             </Container>
           </div>
-
           <Container>
-            {/* Leadership Sections */}
-            <div className="max-w-6xl py-12 mx-auto md:py-16">
+            <div className="flex flex-wrap mx-auto md:px-0 md:w-10/12">
               {boardNames.map((name, i) => {
-                const isOfficers = name === "Officers";
-                const isDirectors = name === "Directors";
-                const isHonorary = name === "Honorary Advisory Board";
-                
+                let col = "w-full";
+                let p = "pr-0";
+                // if (i === 2 || i === 3) {
+                //   col = "md:w-1/2";
+                //   p = "pr-4";
+                // }
+                if (i === 1) {
+                  
+                }
                 return (
-                  <div key={name} className="mb-16 md:mb-20">
-                    {/* Section Header */}
-                    <div className="mb-8 text-center md:mb-12">
-                      <h2 className="text-3xl md:text-4xl font-bold mb-3 text-[#1e3a5f] relative inline-block pb-4">
+                  <>
+                    <div className={`${col} w-full md:mb-4`}>
+                      <div className="mx-auto">
+                        <div className="w-full mx-auto overflow-hidden">
+                          <div className="flex flex-wrap w-full pt-8">
+                            <div className={`${p} w-full mb-16`}>
+                              <div className="flex flex-col flex-wrap items-center justify-center">
+                                <div className="flex flex-col flex-wrap mb-2 md:mb-6">
+                                   <h2 className="text-3xl md:text-4xl font-bold mb-3 text-[#1e3a5f] relative inline-block pb-4">
                         {name}
                         <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#c17854]"></span>
                       </h2>
-                      {isHonorary && (
-                        <p className="mt-4 text-lg italic text-gray-500">
-                          Former School Superintendents
-                        </p>
-                      )}
-                    </div>
 
-                    {/* Members Grid */}
-                    <div className={`grid gap-6 ${
-                      isOfficers 
-                        ? "md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto" 
-                        : isDirectors || isHonorary
-                        ? "md:grid-cols-2 lg:grid-cols-3"
-                        : "md:grid-cols-2 max-w-3xl mx-auto"
-                    }`}>
-                      {posts
-                        .filter((post) => post.boardName.en === name)
-                        .map((filteredPost, idx) => {
-                          const isMultiColumn = (isDirectors && idx >= 4) || isHonorary;
-                          
-                          return (
-                            <div
-                              key={idx}
-                              className={`bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854]/30 ${
-                                !isMultiColumn && "md:col-span-2 lg:col-span-3"
-                              }`}
-                            >
-                              <div className={isMultiColumn ? "text-center" : "text-center md:text-left"}>
-                                <h3 className="text-xl md:text-2xl font-bold text-[#120902] mb-2">
-                                  {filteredPost.name.en}
-                                </h3>
-                                <p className="text-base text-gray-600 md:text-lg">
-                                  {filteredPost.position.en}
-                                </p>
+                                  <span className="text-base italic text-center text-gray-500 md:text-xl">
+                                    {name === "Honorary Advisory Board"
+                                      ? "Former School Superintendants"
+                                      : null}
+                                  </span>
+                                </div>
+                                <div className="w-full 2xl:max-w-5xl">
+                                  <div className="leading-snug text-center lg:text-lg">
+                                    <ul className="flex flex-wrap list-none">
+                                      {posts
+                                        .filter(
+                                          (post) => post.boardName.en === name
+                                        )
+                                        .map((filteredPost, i) => (
+                                         ( i >= 4 && filteredPost.boardName.en === "Directors" || filteredPost.boardName.en === "Honorary Advisory Board") ? (
+                                            <li className="w-1/3 py-2 md:text-lg">
+                                            <p className="font-bold">
+                                               {filteredPost.name.en} 
+                                            </p>
+                                            <p className="text-gray-500">
+                                              {filteredPost.position.en}
+                                            </p>
+                                          </li>
+                                          ) : (
+                                            <li className="w-full py-2 md:px-16">
+                                            <p className="font-bold md:text-lg">
+                                               {filteredPost.name.en}
+                                            </p>
+                                            <p className="text-gray-500">
+                                              {filteredPost.position.en}
+                                            </p>
+                                          </li>
+                                          )
+                                          
+                                         
+                                        ))}
+                                    </ul>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          );
-                        })}
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </>
                 );
               })}
             </div>
 
-            {/* Call to Action */}
-            <div className="max-w-4xl mx-auto mt-16 mb-12 md:mt-24 md:mb-16">
-              <div className="bg-gradient-to-br from-[#f8fafc] to-[#e0e7ef] rounded-2xl p-8 md:p-12 text-center border-2 border-[#1e3a5f]/10">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-4">
-                  Join Our Mission
-                </h3>
-                <p className="max-w-2xl mx-auto mb-6 text-lg text-gray-700">
-                  Interested in supporting educational opportunities for students? Learn more about our programs and how you can get involved.
-                </p>
-                <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                  <Link href="/about">
-                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg">
-                      Learn About Us
-                    </a>
-                  </Link>
-                  <Link href="/contact">
-                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg">
-                      Contact Us
-                    </a>
-                  </Link>
+            {/* <Container>
+                      <div className="relative z-20 grid grid-cols-2 gap-4 mb-16 md:gap-6 md:grid-cols-3 md:mb-24 2xl:mb-32 md:mx-16 2xl:mx-24">
+                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
+                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
+                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
+                              image
+                            </div>
+                          </div>
+                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
+                            Joe Smith
+                          </h4>
+                          <span className="text-xs italic md:text-sm">
+                            Member
+                          </span>
+                        </div>
+                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
+                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
+                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
+                              image
+                            </div>
+                          </div>
+                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
+                            Joe Smith
+                          </h4>
+                          <span className="text-xs italic md:text-sm">
+                            Member
+                          </span>
+                        </div>
+                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
+                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
+                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
+                              image
+                            </div>
+                          </div>
+                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
+                            Joe Smith
+                          </h4>
+                          <span className="text-xs italic md:text-sm">
+                            Member
+                          </span>
+                        </div>        
+                     
+                      </div>
+                    </Container> */}
+
+                    {/* <hr className="my-8 md:my-16"/> */}
+           
+          <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
+              <div className="flex flex-col-reverse mt-12 md:flex-row md:mt-0">
+                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
+                  <div className="relative w-full">
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        1
+                      </div>
+                      <a
+                        className="relative w-full text-3xl italic leading-loose pointer-events-none group md:text-5xl font-pt"
+                        href="/about"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
+                          <span className="relative z-10">About us</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        2
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/programs"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">Programs</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        3
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/projects"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">Projects</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        4
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/news"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow  relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">News</span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="relative flex items-center h-auto select-none md:h-20">
+                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
+                        5
+                      </div>
+                      <a
+                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
+                        href="/affiliates"
+                      >
+                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
+                          <span className="relative z-10">Affiliates</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
+                  <div className="relative w-full">
+                    <nav className="m-auto md:w-2/3">
+                      <span className="block mb-4 text-base md:text-[18px] text-gray-600 leading-tight uppercase">
+                        {"About Us"}
+                      </span>
+                      <ul className="flex flex-wrap">
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/about">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Our Mission
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/founder">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Founder's Message
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/leadership">
+                            <a className="block transition-all duration-300 ease-in-out pointer-events-none group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Leadership
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/history">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Our History
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
+                          <Link href="/contact">
+                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
+                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
+                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
+                                Contact
+                              </span>
+                            </a>
+                          </Link>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Related Pages Navigation */}
-            <div className="max-w-6xl pt-12 pb-16 mx-auto border-t border-gray-200 md:pt-16 md:pb-20">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-8 text-center">
-                Explore More About Us
-              </h3>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                <Link href="/about">
-                  <a className="group">
-                    <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full">
-                      <div className="mb-4 text-4xl">🎯</div>
-                      <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
-                        Our Mission
-                      </h4>
-                      <p className="text-gray-600">
-                        Learn about our vision and values
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-                
-                <Link href="/founder">
-                  <a className="group">
-                    <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full">
-                      <div className="mb-4 text-4xl">✍️</div>
-                      <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
-                        Founder's Message
-                      </h4>
-                      <p className="text-gray-600">
-                        Hear from our founder
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-                
-                <Link href="/history">
-                  <a className="group">
-                    <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full">
-                      <div className="mb-4 text-4xl">📚</div>
-                      <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
-                        Our History
-                      </h4>
-                      <p className="text-gray-600">
-                        Explore our journey
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-                
-                <Link href="/programs">
-                  <a className="group">
-                    <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full">
-                      <div className="mb-4 text-4xl">🌏</div>
-                      <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
-                        Programs
-                      </h4>
-                      <p className="text-gray-600">
-                        See what we offer
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-              </div>
-            </div>
+            
+            </section>
           </Container>
         </m.div>
       </LazyMotion>
@@ -212,7 +326,9 @@ export default function Leadership(props) {
 
 const query = groq`
  *[_type == "team"] | order(order) {
-  ...,
+  
+...,
+
 }
 `;
 

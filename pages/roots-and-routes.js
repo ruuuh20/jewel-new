@@ -160,7 +160,7 @@ const RootsAndRoutes = () => {
 
 
 <Container>
-  <section className="px-20 md:px-24">
+  <section className=" md:px-24">
           <LearncationMap />
           </section>
 
