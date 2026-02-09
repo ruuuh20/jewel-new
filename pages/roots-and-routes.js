@@ -39,7 +39,7 @@ const RootsAndRoutes = () => {
               <div className="max-w-4xl mx-auto text-center">
                 <div className="mb-6">
                   <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base">
-                    Applications Open • April 2025
+                    Applications Open • April 2026
                   </span>
                 </div>
                 
@@ -49,7 +49,7 @@ const RootsAndRoutes = () => {
               
 
                  <p className="text-lg font-light leading-relaxed md:text-xl">
-                        April 2–10, 2026 | Grades 7–12
+                        April 2–11, 2026 | Grades 7–12
                       </p>
               </div>
             </Container>
