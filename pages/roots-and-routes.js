@@ -27,8 +27,7 @@ const RootsAndRoutes = () => {
           animate="enter"
           exit="exit"
         >
-          {/* Simple Header Section */}
-          <m.section
+         <m.section
             initial="initial"
             animate="enter"
             exit="exit"
@@ -38,19 +37,57 @@ const RootsAndRoutes = () => {
             <Container>
               <div className="max-w-4xl mx-auto text-center">
                 <div className="mb-6">
-                  <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base">
+                  <span className="inline-block px-4 py-2 bg-[#c17854] text-white font-semibold rounded-full text-sm md:text-base">
                     Applications Open • April 2026
                   </span>
                 </div>
                 
-                <h1 className="mb-6 text-5xl font-bold leading-tight text-[#120902] md:text-6xl xl:text-7xl">
+                <h1 className="mb-6 text-5xl font-bold leading-tight text-[#1e3a5f] md:text-6xl xl:text-7xl">
                   Roots & Routes
                 </h1>
               
+                <p className="mb-8 text-lg font-light leading-relaxed text-gray-700 md:text-xl">
+                  April 2–11, 2026 | Grades 7–12
+                </p>
 
-                 <p className="text-lg font-light leading-relaxed md:text-xl">
-                        April 2–11, 2026 | Grades 7–12
-                      </p>
+                {/* CTA Buttons */}
+                <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                  <a
+                    href="/apply"
+                    className="inline-flex items-center justify-center px-10 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5"
+                  >
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      strokeWidth={2} 
+                      stroke="currentColor" 
+                      className="w-5 h-5 mr-2"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                    </svg>
+                    Apply Now
+                  </a>
+                  
+                  <a
+                    href="YOUR_CALENDLY_LINK_HERE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-10 py-4 font-semibold border-2 border-[#1e3a5f] text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white transition-all duration-300 text-lg rounded-lg hover:-translate-y-0.5"
+                  >
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      strokeWidth={2} 
+                      stroke="currentColor" 
+                      className="w-5 h-5 mr-2"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                    </svg>
+                    Schedule a Call
+                  </a>
+                </div>
               </div>
             </Container>
           </m.section>
@@ -64,7 +101,7 @@ const RootsAndRoutes = () => {
                 </h2>
                  <div className="prose prose-lg max-w-none">
                   <p className="mb-6 text-lg leading-relaxed text-gray-700 md:text-xl">
-                    Roots and Routes is a 9-day program designed for Korean-American middle and high school students during Spring Break. Experience Korea's vibrant culture, world-class education system, and cutting-edge innovation, while building global leadership skills and connecting with peers.
+                    Roots and Routes is a program designed for Korean-American middle and high school students, with trips offered throughout the year. Experience Korea's vibrant culture, world-class education system, and cutting-edge innovation, while building global leadership skills and connecting with peers.
                   </p>
                   <p className="mb-6 text-lg leading-relaxed text-gray-700 md:text-xl">
                     The program combines cultural immersion in Seoul with an exclusive 3-day exchange at Minjok Leadership Academy (민사고), one of Korea's most prestigious schools. From exploring historic palaces to participating in workshops on global citizenship, students gain a comprehensive understanding of both traditional and modern Korea.
@@ -593,6 +630,33 @@ const RootsAndRoutes = () => {
                 </h2>
 
                 <div className="space-y-6">
+                  <div className="pb-6 border-b border-gray-200">
+  <h3 className="text-xl font-bold mb-3 text-[#120902]">
+    Can I schedule a call to learn more?
+  </h3>
+  <p className="mb-4 text-gray-700">
+    Absolutely! We're happy to answer any questions you have about the program.. Schedule a free 30-minute consultation with our program director.
+  </p>
+  <a
+    href="https://calendly.com/edutogether22/roots-routes-consultation"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center px-6 py-3 font-semibold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+  >
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 24 24" 
+      strokeWidth={2} 
+      stroke="currentColor" 
+      className="w-5 h-5 mr-2"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+    </svg>
+    Schedule a Free Consultation
+  </a>
+</div>
+
                   <div className="pb-6 border-b border-gray-200">
   <h3 className="text-xl font-bold mb-3 text-[#120902]">
     How do I apply?
@@ -1172,37 +1236,46 @@ const RootsAndRoutes = () => {
            {/* Application CTA Section */}
           <Container>
             <section className="py-16 md:py-24">
-              <div className="max-w-4xl mx-auto text-center bg-[#d96e34] text-white rounded-xl p-12 md:p-16">
+              <div className="max-w-4xl mx-auto text-center bg-[#c17854] text-white rounded-xl p-12 md:p-16">
                 <h2 className="mb-6 text-3xl font-bold md:text-4xl xl:text-5xl">
                   Ready to Apply?
                 </h2>
                 <p className="mb-10 text-xl font-light md:text-2xl">
                   Secure your spot for Spring Break 2026. 
                 </p>
-                <p className="mb-10 text-lg opacity-90">
-  Two-step process: Submit online application, then virtual interview if selected.
-</p>
                 <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
                   <a
                     href="/apply"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-10 py-4 font-bold bg-white text-[#d96e34] hover:bg-gray-100 transition-all duration-300 text-lg"
+                    className="inline-flex items-center justify-center px-10 py-4 font-bold bg-white text-[#c17854] hover:bg-gray-100 transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg"
                   >
                     Apply Now
                   </a>
-                  <Link href="/contact">
-                    <a className="inline-flex items-center justify-center px-10 py-4 font-semibold border-2 border-white text-white hover:bg-white hover:text-[#d96e34] transition-all duration-300 text-lg">
-                      Contact Us
-                    </a>
-                  </Link>
+                  <a
+                    href="YOUR_CALENDLY_LINK_HERE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-10 py-4 font-semibold border-2 border-white text-white hover:bg-white hover:text-[#c17854] transition-all duration-300 text-lg rounded-lg"
+                  >
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      strokeWidth={2} 
+                      stroke="currentColor" 
+                      className="w-5 h-5 mr-2"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                    </svg>
+                    Schedule a Call
+                  </a>
                 </div>
-                <p className="text-sm opacity-90">
-                  Information Session: February 20, 2026 | Questions? Email edutogether22@gmail.com
+                <p className="text-lg opacity-90">
+                   Questions? Email edutogether22@gmail.com
                 </p>
               </div>
             </section>
           </Container>
+
         </m.main>
       </LazyMotion>
     </Layout>

@@ -301,29 +301,75 @@ const RootsAndRoutesApplication = () => {
           </section>
 
           {/* Help Section */}
-          <section className="bg-[#faf8f3] border-t border-gray-200">
+         <section className="bg-[#faf8f3] border-t border-gray-200">
             <Container>
               <div className="py-12 md:py-16">
                 <div className="max-w-4xl mx-auto text-center">
                   <h2 className="text-2xl md:text-3xl font-light mb-4 text-[#1e3a5f]">
                     Questions About the Application?
                   </h2>
-                  <p className="mb-6 text-lg text-gray-700">
-                    If you have any questions about the application process or the program itself, please don't hesitate to reach out.
+                  <p className="mb-8 text-lg text-gray-700">
+                    We're here to help! Reach out via email, schedule a consultation call, or send us a message through our contact form.
                   </p>
-                  <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                  <div className="flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
+                    {/* Calendly Button */}
+                    <a
+                      href="YOUR_CALENDLY_LINK_HERE"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-8 py-4 font-semibold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                    >
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        strokeWidth={2} 
+                        stroke="currentColor" 
+                        className="w-5 h-5 mr-2"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                      </svg>
+                      Schedule a Call
+                    </a>
+                    
+                    {/* Email Button */}
                     <a
                       href="mailto:edutogether22@gmail.com"
-                      className="inline-flex items-center justify-center px-8 py-3 font-semibold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                      className="inline-flex items-center justify-center px-8 py-4 font-semibold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                     >
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        strokeWidth={2} 
+                        stroke="currentColor" 
+                        className="w-5 h-5 mr-2"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
                       Email Us
                     </a>
+                    
+                    {/* Contact Form Button */}
                     <Link href="/contact">
-                      <a className="inline-flex items-center justify-center px-8 py-3 font-semibold border-2 border-[#c17854] text-[#c17854] hover:bg-[#c17854] hover:text-white transition-all duration-300 rounded-lg">
+                      <a className="inline-flex items-center justify-center px-8 py-4 font-semibold border-2 border-[#c17854] text-[#c17854] hover:bg-[#c17854] hover:text-white transition-all duration-300 rounded-lg">
+                        <svg 
+                          xmlns="http://www.w3.org/2000/svg" 
+                          fill="none" 
+                          viewBox="0 0 24 24" 
+                          strokeWidth={2} 
+                          stroke="currentColor" 
+                          className="w-5 h-5 mr-2"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                        </svg>
                         Contact Form
                       </a>
                     </Link>
                   </div>
+                  <p className="mt-6 text-sm text-gray-600">
+                    Typical response time: Within 24 hours on weekdays
+                  </p>
                 </div>
               </div>
             </Container>
