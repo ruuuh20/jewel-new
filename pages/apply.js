@@ -25,7 +25,7 @@ const RootsAndRoutesApplication = () => {
     <Layout>
       <NextSeo 
         title="Apply - Roots and Routes Spring 2026" 
-        description="Apply for the Roots and Routes Spring Break 2026 program - a 9-day educational and cultural exchange for Korean-American students in grades 7-12."
+        description="Apply for the Roots and Routes Spring Break 2026 program - an educational and cultural exchange for Korean-American students in grades 7-12."
       />
       <LazyMotion features={domAnimation}>
         <m.main
@@ -75,7 +75,7 @@ const RootsAndRoutesApplication = () => {
                   </h1>
                   
                   <p className="mb-4 text-lg leading-relaxed text-gray-700 md:text-xl">
-                    Thank you for your interest in the Roots and Routes program! This application is for our Spring 2026 cohort, a 9-day educational and cultural exchange program for Korean-American students in grades 7–12.
+                    Thank you for your interest in the Roots and Routes program! This application is for our Spring 2026 cohort, a 10-day educational and cultural exchange program for Korean-American students in grades 7–12.
                   </p>
 
                   <p className="text-base leading-relaxed text-gray-600 md:text-lg">

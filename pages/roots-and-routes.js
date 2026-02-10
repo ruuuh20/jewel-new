@@ -293,6 +293,95 @@ const RootsAndRoutes = () => {
                   </div>
                 </div>
 
+                <div className="bg-[#f8fafc] p-8 rounded-lg border-l-4 border-[#1e3a5f]">
+  <h3 className="text-2xl font-bold mb-4 text-[#1e3a5f]">
+    Application Process
+  </h3>
+  <div className="space-y-3">
+    <div className="flex items-start gap-3">
+      <div className="w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">
+        1
+      </div>
+      <div>
+        <h4 className="font-bold text-[#120902] mb-1">Online Application</h4>
+        <p className="text-gray-700">Complete our online form with student information and essay responses.</p>
+      </div>
+    </div>
+    <div className="flex items-start gap-3">
+      <div className="w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">
+        2
+      </div>
+      <div>
+        <h4 className="font-bold text-[#120902] mb-1">Virtual Interview</h4>
+        <p className="text-gray-700">Selected applicants will be invited to a virtual interview with program directors.</p>
+      </div>
+    </div>
+  </div>
+  <p className="mt-4 text-sm text-gray-600">
+    <a href="/apply" className="text-[#c17854] hover:text-[#a85232] font-semibold underline">
+      View full application details and requirements →
+    </a>
+  </p>
+</div>
+
+<div className="bg-[#f8fafc] p-8 rounded-lg border-l-4 border-[#1e3a5f] mb-8 mt-8">
+  <h3 className="text-2xl font-bold mb-6 text-[#1e3a5f]">
+    Payment Schedule
+  </h3>
+  
+  <div className="mb-6 space-y-4">
+    <div className="flex gap-4">
+      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
+        1
+      </div>
+      <div>
+        <h4 className="font-bold text-[#120902] mb-1">Security Deposit: $1,000</h4>
+        <p className="text-gray-700">
+          Submit with your application. <strong>Fully refundable</strong> if not selected for the program.
+        </p>
+      </div>
+    </div>
+    
+    <div className="flex gap-4">
+      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
+        2
+      </div>
+      <div>
+        <h4 className="font-bold text-[#120902] mb-1">Balance Payment: $2,900</h4>
+        <p className="text-gray-700">
+          Due upon acceptance into the program, along with passport information. Must be submitted by [DATE - e.g., March 1, 2026].
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="pt-6 mt-6 border-t border-gray-300">
+    <h4 className="font-bold text-[#120902] mb-4">Cancellation Policy</h4>
+    
+    <div className="space-y-3 text-gray-700">
+      <p>
+        <strong>Cancellation Fee:</strong> A $200 administrative fee applies to all cancellations after acceptance.
+      </p>
+      
+      <p>
+        <strong>Refund Amount:</strong>
+      </p>
+      <ul className="pl-6 space-y-2 list-disc">
+        <li>
+          <strong>Before airline ticket purchase:</strong> Full refund of payments made, minus $200 cancellation fee.
+        </li>
+        <li>
+          <strong>After airline ticket purchase:</strong> Full refund minus $200 cancellation fee and any non-refundable airline fees (per airline's cancellation policy).
+        </li>
+      </ul>
+      
+      <p className="mt-4 text-sm italic">
+        Note: The $1,000 security deposit is only refundable if you are not selected for the program. Once you accept your spot, all payments are subject to the cancellation policy above.
+      </p>
+    </div>
+  </div>
+</div>
+
                 {/* <div className="p-6 mb-8 border-l-4 border-blue-500 rounded bg-blue-50">
                   <p className="text-gray-700">
                     <strong className="text-blue-900">Payment Plan:</strong> Non-refundable deposit of $1,000 at registration. Balance due by March 10, 2026. Payment plans available upon request.
@@ -504,6 +593,23 @@ const RootsAndRoutes = () => {
                 </h2>
 
                 <div className="space-y-6">
+                  <div className="pb-6 border-b border-gray-200">
+  <h3 className="text-xl font-bold mb-3 text-[#120902]">
+    How do I apply?
+  </h3>
+  <p className="mb-3 text-gray-700">
+    The application process has two steps:
+  </p>
+  <ol className="pl-6 mb-4 space-y-2 text-gray-700 list-decimal">
+    <li><strong>Online Application:</strong> Complete our online form with student information and essay responses.</li>
+    <li><strong>Virtual Interview:</strong> Selected applicants will be invited to a virtual interview with our program directors.</li>
+  </ol>
+  <p className="text-gray-700">
+    <a href="/apply" className="text-[#c17854] hover:text-[#a85232] font-semibold underline">
+      Visit the application page
+    </a> for full details and to begin your application.
+  </p>
+</div>
                   <div className="pb-6 border-b border-gray-200">
                     <h3 className="text-xl font-bold mb-3 text-[#120902]">
                       Do students need to speak Korean?
@@ -1073,6 +1179,9 @@ const RootsAndRoutes = () => {
                 <p className="mb-10 text-xl font-light md:text-2xl">
                   Secure your spot for Spring Break 2026. 
                 </p>
+                <p className="mb-10 text-lg opacity-90">
+  Two-step process: Submit online application, then virtual interview if selected.
+</p>
                 <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
                   <a
                     href="/apply"
