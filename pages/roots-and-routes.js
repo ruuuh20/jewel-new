@@ -79,6 +79,39 @@ const RootsAndRoutes = () => {
             <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container>
 
+          <Container>
+            <section className="py-16 md:py-24 bg-[#f9f7f4] -mx-4 md:-mx-8 px-4 md:px-8">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#1e3a5f]">
+                  Why Roots and Routes?
+                </h2>
+                <div className="grid gap-8 text-left md:grid-cols-3">
+                  <div>
+                    <div className="mb-4 text-4xl">🎓</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Academic Excellence</h3>
+                    <p className="text-gray-700">
+                      Experience Korea's world-renowned education system firsthand through the exclusive KMLA exchange at Minjok Leadership Academy.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="mb-4 text-4xl">🌏</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Global Perspective</h3>
+                    <p className="text-gray-700">
+                      Develop international awareness and leadership skills that prepare you for an interconnected world.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="mb-4 text-4xl">🤝</div>
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Cultural Connection</h3>
+                    <p className="text-gray-700">
+                      Engage with Korean culture in meaningful ways while building friendships with peers from diverse backgrounds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </Container>
+
           {/* Program Highlights */}
           <Container>
             <section className="py-16 md:py-24">
@@ -158,6 +191,120 @@ const RootsAndRoutes = () => {
             <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container>
 
+          {/* Program Details */}
+          <Container>
+            <section className="py-16 md:py-24">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
+                  Program Details
+                </h2>
+
+                <div className="grid gap-8 mb-12 md:grid-cols-2">
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Dates
+                    </h3>
+                    <p className="text-gray-700">
+                      April 2–11, 2026
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Who Can Apply
+                    </h3>
+                    <p className="text-gray-700">
+                      Students in grades 7–12
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Group Size
+                    </h3>
+                    <p className="text-gray-700">
+                      Maximum 25 students
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-[#d96e34] pl-6">
+                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                      Program Cost
+                    </h3>
+                    <p className="text-gray-700">
+                      $3,900 per student 
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-[#f9f7f4] p-8 rounded-lg mb-12">
+                  <h3 className="text-2xl font-bold mb-6 text-[#120902]">
+                    What's Included
+                  </h3>
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Accommodation and meals</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">All activities and tours</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Local transportation</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">KMLA exchange program</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Professional chaperones</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">24/7 emergency support</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Travel insurance</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700">Cultural workshops</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <div className="p-6 mb-8 border-l-4 border-blue-500 rounded bg-blue-50">
+                  <p className="text-gray-700">
+                    <strong className="text-blue-900">Payment Plan:</strong> Non-refundable deposit of $1,000 at registration. Balance due by March 10, 2026. Payment plans available upon request.
+                  </p>
+                </div> */}
+
+              </div>
+            </section>
+
+            <hr className="hidden md:block bg-black h-[1px] border-none" />
+          </Container>
+
 
 <Container>
   <section className=" md:px-24">
@@ -191,7 +338,7 @@ const RootsAndRoutes = () => {
                       <h3 className="text-xl font-bold mb-2 text-[#120902]">Arrival & Seoul City Tour</h3>
                       <p className="mb-2 text-sm text-gray-500">Friday, April 3 • Seoul</p>
                       <p className="text-gray-700">
-                        Arrive at Incheon International Airport (5:00 AM). Begin Seoul city tour with a visit to Namsan Tower for panoramic city views. Hotel check-in and orientation session with ice-breaking activities to meet fellow participants.
+                        Arrive at Incheon International Airport. Begin Seoul city tour with a visit to Namsan Tower for panoramic city views. Hotel check-in and orientation session with ice-breaking activities to meet fellow participants.
                       </p>
                     </div>
                   </div>
@@ -207,7 +354,7 @@ const RootsAndRoutes = () => {
                       <h3 className="text-xl font-bold mb-2 text-[#120902]">Seoul Historical & Cultural Immersion</h3>
                       <p className="mb-2 text-sm text-gray-500">Saturday, April 4 • Seoul</p>
                       <p className="mb-3 text-gray-700">
-                        Visit Gyeongbokgung Palace and the National Folk Museum. Explore Insadong for traditional crafts including hanbok try-on and seal carving experiences. Enjoy a unique coin lunch box at Tongin Market. Afternoon shopping, then stroll through Bukchon Hanok Village and the beautiful Cheonggyecheon stream.
+                        Visit Gyeongbokgung Palace and the National Folk Museum. Explore Insadong for traditional crafts including hanbok try-on and seal carving experiences. Afternoon shopping, then stroll through Bukchon Hanok Village and the Cheonggyecheon stream.
                       </p>
                     </div>
                   </div>
@@ -293,7 +440,7 @@ const RootsAndRoutes = () => {
                       <h3 className="text-xl font-bold mb-2 text-[#120902]">Ancient Silla Kingdom Experience</h3>
                       <p className="mb-2 text-sm text-gray-500">Thursday, April 9 • Gyeongju</p>
                       <p className="text-gray-700">
-                        Full-day immersion in Gyeongju, the ancient capital of the Silla Kingdom. Explore UNESCO World Heritage sites including Bulguksa Temple, Seokguram Grotto, and the royal tombs. Participate in traditional cultural activities and enjoy a unique hanok stay experience, sleeping in a traditional Korean house.
+                        Full-day in Gyeongju, the ancient capital of the Silla Kingdom. Explore sites including Bulguksa Temple, Seokguram Grotto, and the royal tombs. Participate in traditional cultural activities and enjoy a unique hanok stay experience, sleeping in a traditional Korean house.
                       </p>
                     </div>
                   </div>
@@ -334,7 +481,7 @@ const RootsAndRoutes = () => {
                 {/* Note */}
                 <div className="mt-12 p-6 bg-[#f8fafc] rounded-lg border-l-4 border-[#1e3a5f]">
                   <p className="text-sm text-gray-600">
-                    <strong className="text-[#1e3a5f]">Note:</strong> This is a sample itinerary. Specific activities, timing, and locations are subject to change based on weather, availability, and group dynamics. We strive to provide the best possible experience while remaining flexible to ensure student safety and engagement.
+                    <strong className="text-[#1e3a5f]">Note:</strong> This is a sample itinerary. Specific activities, timing, and locations are subject to change based on weather, availability, and group dynamics. 
                   </p>
                 </div>
               </div>
@@ -344,157 +491,9 @@ const RootsAndRoutes = () => {
           </Container>
 
              {/* Why This Program */}
-          <Container>
-            <section className="py-16 md:py-24 bg-[#f9f7f4] -mx-4 md:-mx-8 px-4 md:px-8">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#1e3a5f]">
-                  Why Roots and Routes?
-                </h2>
-                <div className="grid gap-8 text-left md:grid-cols-3">
-                  <div>
-                    <div className="mb-4 text-4xl">🎓</div>
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Academic Excellence</h3>
-                    <p className="text-gray-700">
-                      Experience Korea's world-renowned education system firsthand through the exclusive KMLA exchange at Minjok Leadership Academy.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="mb-4 text-4xl">🌏</div>
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Global Perspective</h3>
-                    <p className="text-gray-700">
-                      Develop international awareness and leadership skills that prepare you for an interconnected world.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="mb-4 text-4xl">🤝</div>
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">Cultural Connection</h3>
-                    <p className="text-gray-700">
-                      Engage with Korean culture in meaningful ways while building friendships with peers from diverse backgrounds.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </Container>
+          
 
-          {/* Program Details */}
-          <Container>
-            <section className="py-16 md:py-24">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
-                  Program Details
-                </h2>
-
-                <div className="grid gap-8 mb-12 md:grid-cols-2">
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Dates
-                    </h3>
-                    <p className="text-gray-700">
-                      April 2–10, 2026 (8 nights / 9 days)
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Who Can Apply
-                    </h3>
-                    <p className="text-gray-700">
-                      Korean-American students in grades 7–12
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Group Size
-                    </h3>
-                    <p className="text-gray-700">
-                      Maximum 25 students
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-[#d96e34] pl-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#120902]">
-                      Program Cost
-                    </h3>
-                    <p className="text-gray-700">
-                      $4,900 per student 
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-[#f9f7f4] p-8 rounded-lg mb-12">
-                  <h3 className="text-2xl font-bold mb-6 text-[#120902]">
-                    What's Included
-                  </h3>
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Accommodation and meals</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">All activities and tours</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Local transportation</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">KMLA exchange program</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Professional chaperones</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">24/7 emergency support</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Travel insurance</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-[#d96e34] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-gray-700">Cultural workshops</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* <div className="p-6 mb-8 border-l-4 border-blue-500 rounded bg-blue-50">
-                  <p className="text-gray-700">
-                    <strong className="text-blue-900">Payment Plan:</strong> Non-refundable deposit of $1,000 at registration. Balance due by March 10, 2026. Payment plans available upon request.
-                  </p>
-                </div> */}
-
-                <div className="p-6 border-l-4 rounded bg-amber-50 border-amber-500">
-                  <p className="text-gray-700">
-                    <strong className="text-amber-900">Limited Spots:</strong> This program is limited to 25 students. Early registration is strongly encouraged to secure your spot.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
+          
 
           {/* FAQ Section */}
           <Container>
