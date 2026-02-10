@@ -70,7 +70,7 @@ const RootsAndRoutes = () => {
                   </a>
                   
                   <a
-                    href="YOUR_CALENDLY_LINK_HERE"
+                    href="https://calendly.com/edutogether22/roots-routes-consultation"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-10 py-4 font-semibold border-2 border-[#1e3a5f] text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white transition-all duration-300 text-lg rounded-lg hover:-translate-y-0.5"
@@ -1251,7 +1251,7 @@ const RootsAndRoutes = () => {
                     Apply Now
                   </a>
                   <a
-                    href="YOUR_CALENDLY_LINK_HERE"
+                    href="https://calendly.com/edutogether22/roots-routes-consultation"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-10 py-4 font-semibold border-2 border-white text-white hover:bg-white hover:text-[#c17854] transition-all duration-300 text-lg rounded-lg"

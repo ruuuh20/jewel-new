@@ -252,7 +252,7 @@ const Home = ({ data }) => {
                   
                   {/* Subheadline */}
                   <p className="text-xl md:text-2xl xl:text-3xl mb-6 font-semibold leading-relaxed text-[#334e68]">
-                    A 9-day educational and cultural exchange for Korean-American students
+                    A 10-day educational and cultural exchange for Korean-American students
                   </p>
                   
                   {/* Description */}

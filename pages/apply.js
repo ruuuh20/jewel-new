@@ -314,7 +314,7 @@ const RootsAndRoutesApplication = () => {
                   <div className="flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
                     {/* Calendly Button */}
                     <a
-                      href="YOUR_CALENDLY_LINK_HERE"
+                      href="https://calendly.com/edutogether22/roots-routes-consultation"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-8 py-4 font-semibold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
