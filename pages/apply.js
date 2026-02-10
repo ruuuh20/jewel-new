@@ -66,7 +66,7 @@ const RootsAndRoutesApplication = () => {
                 <div className="max-w-4xl">
                   <div className="mb-4">
                     <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base">
-                      Spring Break 2026 • April 2–10
+                      Spring Break 2026 • April 2–11, 2026
                     </span>
                   </div>
                   
@@ -86,34 +86,135 @@ const RootsAndRoutesApplication = () => {
             </Container>
           </m.section>
 
-          {/* Application Details Section */}
+           {/* Application Process Overview */}
           <section className="bg-white border-t border-gray-200">
             <Container>
               <div className="py-12 md:py-16">
-                <div className="max-w-4xl">
-                  <h2 className="text-2xl md:text-3xl font-light mb-6 text-[#120902]">
-                    What to Expect
+                <div className="max-w-4xl mx-auto">
+                  <h2 className="text-2xl md:text-3xl font-light mb-8 text-[#1e3a5f] text-center">
+                    Application Process
+                  </h2>
+                  
+                  <div className="grid gap-8 mb-12 md:grid-cols-2">
+                    {/* Step 1 */}
+                    <div className="relative">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-xl">
+                          1
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                            Online Application
+                          </h3>
+                          <p className="mb-3 text-gray-700">
+                            Complete the application form below with student information and thoughtful responses to our essay questions.
+                          </p>
+                          <ul className="space-y-2 text-sm text-gray-600">
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span>Basic information & contact details</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span>3 short essay questions</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span>Parent/guardian consent</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span><strong>$1,000 security deposit</strong> (fully refundable if not selected)</span>
+                            </li>
+                          </ul>
+                          <p className="mt-4 text-sm font-semibold text-[#1e3a5f]">
+                            📅 Deadline: February 25, 2026
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Step 2 */}
+                    <div className="relative">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-xl">
+                          2
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-xl font-bold mb-3 text-[#120902]">
+                            Virtual Interview
+                          </h3>
+                          <p className="mb-3 text-gray-700">
+                            Selected applicants will be invited to a virtual interview with our program directors.
+                          </p>
+                          <ul className="space-y-2 text-sm text-gray-600">
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span>15-20 minute video call</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span>Conversation about interests & goals</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span>Opportunity to ask questions</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-[#c17854]">•</span>
+                              <span>Parent/guardian welcome to attend</span>
+                            </li>
+                          </ul>
+                          <p className="mt-4 text-sm font-semibold text-[#1e3a5f]">
+                            📅 Interviews: Early March 2026
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Timeline Note */}
+                  <div className="p-6 bg-[#e0e7ef] rounded-lg border-l-4 border-[#1e3a5f]">
+                    <h4 className="font-semibold text-lg mb-2 text-[#120902]">
+                      📅 Timeline
+                    </h4>
+                    <p className="text-sm text-gray-700 md:text-base">
+                      Applications reviewed on a rolling basis. Final decisions announced by <strong>March 15, 2026</strong>. Accepted students will receive program details and payment instructions for the $2,900 balance, along with passport submission requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Container>
+          </section>
+
+          {/* Application Details Section */}
+          <section className="bg-[#faf8f3]">
+            <Container>
+              <div className="py-12 md:py-16">
+                <div className="max-w-4xl mx-auto">
+                  <h2 className="text-2xl md:text-3xl font-light mb-6 text-[#1e3a5f]">
+                    What to Expect in Your Application
                   </h2>
                   
                   <div className="grid gap-6 mb-8 md:grid-cols-3">
-                    <div className="bg-[#faf8f3] p-6 rounded-lg">
-                      <div className="text-[#d96e34] text-3xl font-bold mb-2">01</div>
+                    <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
+                      <div className="text-[#c17854] text-3xl font-bold mb-2">01</div>
                       <h3 className="font-semibold text-lg mb-2 text-[#120902]">Basic Information</h3>
                       <p className="text-sm text-gray-600">
-                        Contact details, grade level, and passport information
+                        Contact details, grade level, and school information
                       </p>
                     </div>
 
-                    <div className="bg-[#faf8f3] p-6 rounded-lg">
-                      <div className="text-[#d96e34] text-3xl font-bold mb-2">02</div>
-                      <h3 className="font-semibold text-lg mb-2 text-[#120902]">Short Answers</h3>
+                    <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
+                      <div className="text-[#c17854] text-3xl font-bold mb-2">02</div>
+                      <h3 className="font-semibold text-lg mb-2 text-[#120902]">Short Essays</h3>
                       <p className="text-sm text-gray-600">
-                        3 essay questions about your interest, experiences, and curiosity
+                        3 questions about your interest, experiences, and curiosity about Korea
                       </p>
                     </div>
 
-                    <div className="bg-[#faf8f3] p-6 rounded-lg">
-                      <div className="text-[#d96e34] text-3xl font-bold mb-2">03</div>
+                    <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
+                      <div className="text-[#c17854] text-3xl font-bold mb-2">03</div>
                       <h3 className="font-semibold text-lg mb-2 text-[#120902]">Authorization</h3>
                       <p className="text-sm text-gray-600">
                         Parent/guardian consent and program acknowledgments
@@ -122,28 +223,31 @@ const RootsAndRoutesApplication = () => {
                   </div>
 
                   {/* Important Notes */}
-                  <div className="p-6 mb-8 border-l-4 border-blue-400 bg-blue-50">
+                  <div className="p-6 mb-8 border-l-4 border-[#1e3a5f] bg-[#f8fafc] rounded-r-lg">
                     <h3 className="font-semibold text-lg mb-3 text-[#120902]">
                       📋 Important Notes
                     </h3>
                     <ul className="space-y-2 text-sm text-gray-700 md:text-base">
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-blue-400">•</span>
+                        <span className="mt-1 text-[#c17854]">•</span>
                         <span>This is an <strong>application</strong>, not a confirmation of acceptance</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-blue-400">•</span>
+                        <span className="mt-1 text-[#c17854]">•</span>
+                        <span>The <strong>$1,000 security deposit</strong> is required with your application and is <strong>fully refundable</strong> if you are not selected</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-1 text-[#c17854]">•</span>
                         <span>We do <strong>not</strong> need passport information at this stage</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-blue-400">•</span>
+                        <span className="mt-1 text-[#c17854]">•</span>
                         <span>You can save your progress and return later</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-blue-400">•</span>
-                        <span>Applications are due <strong>February 25, 2026</strong></span>
+                        <span className="mt-1 text-[#c17854]">•</span>
+                        <span>Application deadline: <strong>February 25, 2026 at 11:59 PM EST</strong></span>
                       </li>
-                     
                     </ul>
                   </div>
                 </div>
@@ -151,14 +255,26 @@ const RootsAndRoutesApplication = () => {
             </Container>
           </section>
 
-          {/* Embedded Form Section */}
-          <section className="bg-[#faf8f3] py-12 md:py-16 lg:py-20">
+          
+
+           {/* Embedded Form Section */}
+          <section className="py-12 bg-white border-t border-gray-200 md:py-16 lg:py-20">
             <Container>
               <div className="max-w-5xl mx-auto">
+                {/* Section Header */}
+                <div className="mb-8 text-center">
+                  <h2 className="text-2xl md:text-3xl font-light mb-4 text-[#1e3a5f]">
+                    Ready to Apply?
+                  </h2>
+                  <p className="text-gray-600">
+                    Complete the form below to submit your application.
+                  </p>
+                </div>
+
                 {/* Loading State */}
                 {isLoading && (
-                  <div className="p-12 text-center bg-white shadow-sm rounded-xl">
-                    <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#d96e34] mb-4"></div>
+                  <div className="p-12 text-center shadow-sm bg-gray-50 rounded-xl">
+                    <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#c17854] mb-4"></div>
                     <p className="text-gray-600">Loading application form...</p>
                   </div>
                 )}
@@ -185,25 +301,25 @@ const RootsAndRoutesApplication = () => {
           </section>
 
           {/* Help Section */}
-          <section className="bg-white border-t border-gray-200">
+          <section className="bg-[#faf8f3] border-t border-gray-200">
             <Container>
               <div className="py-12 md:py-16">
                 <div className="max-w-4xl mx-auto text-center">
-                  <h2 className="text-2xl md:text-3xl font-light mb-4 text-[#120902]">
-                    Questions?
+                  <h2 className="text-2xl md:text-3xl font-light mb-4 text-[#1e3a5f]">
+                    Questions About the Application?
                   </h2>
                   <p className="mb-6 text-lg text-gray-700">
                     If you have any questions about the application process or the program itself, please don't hesitate to reach out.
                   </p>
                   <div className="flex flex-col justify-center gap-4 sm:flex-row">
                     <a
-                      href="mailto:info@yourdomain.org"
-                      className="inline-flex items-center justify-center px-8 py-3 font-semibold bg-[#d96e34] text-white hover:bg-[#c85a28] transition-all duration-300 rounded-lg"
+                      href="mailto:edutogether22@gmail.com"
+                      className="inline-flex items-center justify-center px-8 py-3 font-semibold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                     >
                       Email Us
                     </a>
                     <Link href="/contact">
-                      <a className="inline-flex items-center justify-center px-8 py-3 font-semibold border-2 border-[#d96e34] text-[#d96e34] hover:bg-[#d96e34] hover:text-white transition-all duration-300 rounded-lg">
+                      <a className="inline-flex items-center justify-center px-8 py-3 font-semibold border-2 border-[#c17854] text-[#c17854] hover:bg-[#c17854] hover:text-white transition-all duration-300 rounded-lg">
                         Contact Form
                       </a>
                     </Link>
