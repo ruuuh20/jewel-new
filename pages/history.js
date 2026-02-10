@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
+import RelatedPages from "@/components/RelatedPages";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
@@ -8,18 +9,14 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription } from "../sanity";
 import Link from "next/link";
-import BlockContent from "@/components/blockContent";
 import { PortableText } from "@portabletext/react";
 
 const myPortableTextComponents = {
   types: {
     listItem: {
-      // Ex. 1: customizing common list types
       bullet: ({ children }) => (
         <li style={{ listStyleType: "disclosure-closed" }}>{children}</li>
       ),
-
-      // Ex. 2: rendering custom list items
       checkmarks: ({ children }) => <li>✅ {children}</li>,
     },
     image: ({ value }) => <img src={value.imageUrl} />,
@@ -32,7 +29,7 @@ const myPortableTextComponents = {
   },
 };
 
-export default function About(props) {
+export default function History(props) {
   const { postdata, preview, program } = props;
 
   const router = useRouter();
@@ -51,259 +48,115 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
+          variants={fade}
+          className="mb-12 md:mb-16 xl:mb-24"
         >
-            <div className="relative w-full pt-8 pb-[28px] border-b border-black">
-           <Container>
-                <div className="flex items-center justify-between">
-                  <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
-                      Our History
-                  </h3>
-                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
-                     <span>함께하는교육이 걸어온 길</span>
+          {/* Hero Header */}
+          <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
+            <Container>
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-center justify-between mb-8">
+                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#1e3a5f] tracking-tight">
+                    Our History
+                  </h1>
+                  <div className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-lg">
+                    <span>우리의 역사</span>
                   </div>
                 </div>
+                {posts && posts[0] && (
+                  <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
+                    {posts[0].history[locale]}
+                  </p>
+                )}
+              </div>
             </Container>
           </div>
 
+          {/* Timeline Section */}
           <Container>
-         
-            <div className="w-full mx-auto mt-8 mb-10 md:mt-0 ">
-              <div className="w-full md:w-9/12 lg:w-7/12">
-                <div className="w-full text-lg md:pr-12 md:text-2xl text-darkgray md:pt-8">
-                  <p className="leading-snug">{posts[0].history[locale]}</p>
-                </div>
-              </div>
-            </div>
-
-            <m.div variants={fade}>
-              {posts &&
-                posts.map((post) => (
-                  <>
-                    <section className="my-20">
-                      {post.timelineItems?.map((item, i) => {
-                        return (
-                          <>
-                            <div className="flex flex-wrap py-4 font-thin border-t border-black text-darkgray md:py-8 border-opacity-20 md-mx-6 md:py-12">
-                              <div className="w-full mb-2 md:w-7/12 xl:w-2/6 md:px-6 md:mb-0">
-                                <div className="max-w-xl">
-                                  <div className="w-full text-xl font-bold md:text-right md:text-2xl xl:text-3xl">
-                                    <p>{item.timelineItemYear[locale]}</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="w-full ml-auto leading-8 md:w-7/12 xl:w-4/6 md:pl-10">
-                               
-                                  <PortableText value={item.timelineBlockEn} />
+            <section className="py-16 md:py-24">
+              <div className="max-w-5xl mx-auto">
+                <m.div variants={fade}>
+                  {posts &&
+                    posts.map((post) => (
+                      <div key={post._id} className="space-y-12">
+                        {post.timelineItems?.map((item, i) => {
+                          const isLast = i === post.timelineItems.length - 1;
                           
+                          return (
+                            <div 
+                              key={i} 
+                              className={`relative pl-8 md:pl-12 ${
+                                isLast ? 'border-l-4 border-gray-300' : 'border-l-4 border-[#c17854]'
+                              }`}
+                            >
+                              {/* Timeline Marker */}
+                              <div className={`absolute -left-3 top-0 w-6 h-6 rounded-full border-4 border-white ${
+                                isLast ? 'bg-[#1e3a5f]' : 'bg-[#c17854]'
+                              }`}></div>
+                              
+                              {/* Year Badge */}
+                              <div className="mb-4">
+                                <span className={`inline-block px-4 py-2 text-sm font-bold text-white rounded-full ${
+                                  isLast ? 'bg-[#1e3a5f]' : 'bg-[#c17854]'
+                                }`}>
+                                  {item.timelineItemYear[locale]}
+                                </span>
+                              </div>
+
+                              {/* Content */}
+                              <div className="leading-relaxed prose prose-lg text-gray-700 max-w-none">
+                                <PortableText 
+                                  value={item.timelineBlockEn} 
+                                  components={myPortableTextComponents}
+                                />
                               </div>
                             </div>
-                          </>
-                        );
-                      })}
-                    </section>
-
-                    {/* <Container>
-                      <div className="relative mb-2 md:mb-3">
-                        <h2 className="block uppercase md:text-lg ">
-                          Our Team / Leadership
-                        </h2>
+                          );
+                        })}
                       </div>
-                      <div className="relative z-20 grid grid-cols-2 gap-4 mb-16 md:gap-6 md:grid-cols-3 md:mb-24 2xl:mb-32 md:mx-16 2xl:mx-24">
-                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
-                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
-                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
-                              image
-                            </div>
-                          </div>
-                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
-                            Joe Smith
-                          </h4>
-                          <span className="text-xs italic md:text-sm">
-                            Member
-                          </span>
-                        </div>
-                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
-                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
-                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
-                              image
-                            </div>
-                          </div>
-                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
-                            Joe Smith
-                          </h4>
-                          <span className="text-xs italic md:text-sm">
-                            Member
-                          </span>
-                        </div>
-                        <div className="w-full mb-3 md:mb-5 2xl:mb-8">
-                          <div className="border-blue border-2 mb-3 md:mb-4 bg-pink h-[50vw] md:h-[27vw] lg:h-[29vw] xl:h-[33vw] 2xl:h-[31.5vw] max-h-[480px] relative team-image">
-                            <div className="absolute top-0 bottom-0 left-0 right-0 overflow-hidden">
-                              image
-                            </div>
-                          </div>
-                          <h4 className="block pb-0 mb-0 text-lg leading-tight md:text-xl 2xl:text-2xl font-display">
-                            Joe Smith
-                          </h4>
-                          <span className="text-xs italic md:text-sm">
-                            Member
-                          </span>
-                        </div>
-                      </div>
-                    </Container> */}
+                    ))}
+                </m.div>
+              </div>
+            </section>
+          </Container>
 
-                    {/* <ImageComponent
-                      image={
-                        post.imageUrl !== null
-                          ? post.imageUrl
-                          : "https://via.placeholder.com/50"
-                      }
-                    /> */}
-                  </>
-                ))}
-            </m.div>
-            {/* <hr className="my-8 md:my-16" /> */}
-
-            <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
-              <div className="flex flex-col-reverse mt-12 md:flex-row md:mt-0">
-                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
-                  <div className="relative w-full">
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        1
-                      </div>
-                      <a
-                        className="relative w-full text-3xl italic leading-loose pointer-events-none group md:text-5xl font-pt"
-                        href="/about"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
-                          <span className="relative z-10">About us</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        2
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/programs"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Programs</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        3
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/projects"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Projects</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        4
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/news"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow  relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">News</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        5
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/affiliates"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Affiliates</span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
-                  <div className="relative w-full">
-                    <nav className="m-auto md:w-2/3">
-                      <span className="block mb-4 text-gray-600 leading-tight uppercase text-base md:text-[18px]">
-                        {"About Us"}
-                      </span>
-                      <ul className="flex flex-wrap">
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/about">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Our Mission
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/founder">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Founder's Message
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/leadership">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Leadership
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/history">
-                            <a className="block transition-all duration-300 ease-in-out pointer-events-none group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Our History
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/contact">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Contact
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
+          {/* Call to Action */}
+          <Container>
+            <section className="py-12 md:py-16">
+              <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#f8fafc] to-[#e0e7ef] rounded-2xl p-8 md:p-12 text-center border-2 border-[#1e3a5f]/10">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-4">
+                  Be Part of Our Story
+                </h3>
+                <p className="max-w-2xl mx-auto mb-6 text-lg text-gray-700">
+                  Join us in creating educational opportunities and cultural connections for the next generation.
+                </p>
+                <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                  <Link href="/programs">
+                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
+                      Explore Our Programs
+                    </a>
+                  </Link>
+                  <Link href="/contact">
+                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
+                      Get Involved
+                    </a>
+                  </Link>
                 </div>
               </div>
             </section>
           </Container>
+
+          {/* Related Pages Navigation */}
+          <RelatedPages 
+            title="Learn More About Us"
+            pages={[
+              { href: "/about", title: "Our Mission", description: "Learn about our vision and values" },
+              { href: "/founder", title: "Founder's Message", description: "Hear from our founder" },
+              { href: "/leadership", title: "Leadership", description: "Meet our team" },
+              { href: "/programs", title: "Programs", description: "See what we offer" }
+            ]}
+          />
         </m.div>
       </LazyMotion>
     </Layout>
@@ -312,16 +165,13 @@ export default function About(props) {
 
 const query = groq`
  *[_type == "about" && title.en == "Our Mission"] {
-  
-...,
-history,
-content,
-welcomeText,
-introText,
-founderBlurb,
- "imageUrl": heroImage.asset->url,
-
- 
+  ...,
+  history,
+  content,
+  welcomeText,
+  introText,
+  founderBlurb,
+  "imageUrl": heroImage.asset->url,
 }
 `;
 

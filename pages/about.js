@@ -1,15 +1,12 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
-import FooterNav from "@/components/footerNav";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { NextSeo } from "next-seo";
 import { groq } from "next-sanity";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import client, { getClient, usePreviewSubscription } from "../sanity";
-import ImageComponent from "@/components/image";
+import { getClient, usePreviewSubscription } from "../sanity";
 
 export default function About(props) {
   const { postdata, preview } = props;
@@ -30,255 +27,171 @@ export default function About(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
+          variants={fade}
+          className="mb-12 md:mb-16 xl:mb-24"
         >
-        
-            <div className="relative w-full pt-8 pb-[28px] border-b border-black">
-             
-              {/* <div className="absolute hidden mt-2 overflow-visible md:block spin-slow spin-container">
-                <div className="relative">
-                  <Image src="/ham-logo.png" width="60" height="60" />
-                </div>
-              </div> */}
-              <Container>
-                <div className="flex items-center justify-between">
-                  <h3 className="relative block pb-0 pr-12 mb-0 text-3xl tracking-tight font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
-                    About
-                  </h3>
-                   <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
+          {/* Hero Header */}
+          <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
+            <Container>
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-center justify-between mb-8">
+                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#1e3a5f] tracking-tight">
+                    About Us
+                  </h1>
+                  <div className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-lg">
                     <span>함께하는교육 소개</span>
                   </div>
                 </div>
-              </Container>
-            </div>
-            <m.div variants={fade}>
-              {posts &&
-                posts.map((post) => (
-                  <>
-                    <Container>
-                      <div className="relative max-w-4xl mt-8 mb-16 md:mb-20 2xl:mb-28 md:mt-0 ">
-                        <div className="block mb-4 overflow-hidden md:mb-6 2xl:mb-8">
-                          {/* <div className="relative mb-2 md:mb-3">
-                            <h2 className="block tracking-wider uppercase md:text-xl text-blue-sub">
-                              {post.title.en}
-                            </h2>
-                          </div> */}
-                          <div className="w-full text-lg md:pr-12 md:text-2xl text-darkgray md:pt-8">
-                            <p className="leading-snug">{post.introText}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </Container>
-                    <section className="my-20">
-                      <Container>
-                      <div className="flex flex-wrap">
-                        {/* <div className="w-full md:w-2/5">
-                          <ImageComponent
-                            image={
-                              post.imageUrl !== null
-                                ? post.imageUrl
-                                : "https://via.placeholder.com/50"
-                            }
-                          />
-                        </div> */}
-                        <div className="w-full mt-10 md:w-1/2 md:mt-0">
-                          <div className="md:px-16 right-col">
-                            <div className="relative mb-2">
-                              <h2 className="block text-base tracking-wider uppercase md:text-xl">
-                                Our Mission
-                              </h2>
-                            </div>
-                            <div className="flex flex-wrap mt-6 mb-4 text-darkgray">
-                              <div className="">
-                                <p className="block  text-lg md:text-xl  leading-snug relative   p-[2.2rem]">
-                                 To enhance awareness and appreciation of cultural diversity by providing resources and expertise in language education andcultural programs.
-                                </p>
-                                <p className="block  text-lg md:text-xl  leading-snug relative   p-[2.2rem]">By fostering mutual understanding and collaboration, Educate Together serves as a bridge for communities to explore cultures around the world.</p>
-                              </div>
-                             
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-full mt-10 md:w-1/2 md:mt-0">
-                          <div className="md:px-16 right-col">
-                            <div className="relative mb-2">
-                              <h2 className="block text-base tracking-wider uppercase md:text-xl">
-                                Our Goals
-                              </h2>
-                            </div>
-                            <div className="flex flex-wrap mt-6 mb-4 text-darkgray">
-                              <div className="about-item">
-                                <p className="block  text-lg md:text-xl  leading-snug relative   p-[2.2rem]">
-                                  Provide opportunities for the enrichment and
-                                  learning of Asian cultures and history.
-                                </p>
-                              </div>
-                              <div className="about-item">
-                                <p className="block  text-lg md:text-xl  leading-snug relative  p-[2.2rem]">
-                                  Empower future generations to celebrate their
-                                  own heritage while engaging with other
-                                  cultures.
-                                </p>
-                              </div>
-                              <div className="about-item">
-                                <p className="block text-lg md:text-xl  leading-snug relative   p-[2.2rem] pt-4rem">
-                                  Promote a mutual understanding for world
-                                  cultures and methods of education
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      </Container>
-                    </section>
 
-                    <div className="max-w-4xl py-2 m-auto mt-12 text-xl md:py-12 content"></div>
-                  </>
+                {posts && posts.map((post) => (
+                  <div key={post._id}>
+                    <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
+                      {post.introText}
+                    </p>
+                  </div>
                 ))}
-            </m.div>
-            {/* <hr className="my-8 md:my-16" /> */}
+              </div>
+            </Container>
+          </div>
 
-            <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
-              <div className="flex flex-col-reverse mt-12 md:mt-0 md:flex-row">
-                <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
-                  <div className="relative w-full">
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        1
-                      </div>
-                      <a
-                        className="relative w-full text-3xl italic leading-loose pointer-events-none group md:text-5xl font-pt"
-                        href="/about"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
-                          <span className="relative z-10">About us</span>
-                        </span>
-                      </a>
+          {/* Mission & Goals Section */}
+          <Container>
+            <section className="py-16 md:py-24">
+              <div className="max-w-6xl mx-auto">
+                <div className="grid gap-12 md:gap-16 lg:grid-cols-2">
+                  {/* Our Mission */}
+                  <div>
+                    <div className="mb-6">
+                      <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4 relative inline-block pb-3">
+                        Our Mission
+                        <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#c17854]"></span>
+                      </h2>
                     </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        2
+                    <div className="space-y-6">
+                      <div className="bg-white p-6 rounded-lg border-l-4 border-[#c17854] shadow-sm">
+                        <p className="text-lg leading-relaxed text-gray-700">
+                          To enhance awareness and appreciation of cultural diversity by providing resources and expertise in language education and cultural programs.
+                        </p>
                       </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/programs"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Programs</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        3
+                      <div className="bg-white p-6 rounded-lg border-l-4 border-[#c17854] shadow-sm">
+                        <p className="text-lg leading-relaxed text-gray-700">
+                          By fostering mutual understanding and collaboration, Educate Together serves as a bridge for communities to explore cultures around the world.
+                        </p>
                       </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/projects"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Projects</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        4
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/news"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow  relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">News</span>
-                        </span>
-                      </a>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        5
-                      </div>
-                      <a
-                        className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                        href="/affiliates"
-                      >
-                        <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                          <span className="relative z-10">Affiliates</span>
-                        </span>
-                      </a>
                     </div>
                   </div>
-                </div>
 
-                <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
-                  <div className="relative w-full">
-                    <nav className="m-auto md:w-2/3">
-                      <span className="block mb-4  text-gray-600 leading-tight uppercase text-base md:text-[18px]">
-                        {"About Us"}
-                      </span>
-                      <ul className="flex flex-wrap">
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/about">
-                            <a className="transition-all duration-300 ease-in-out pointer-events-none blodfck group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Our Mission
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/founder">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Founder's Message
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/leadership">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Leadership
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/history">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Our History
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                        <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                          <Link href="/contact">
-                            <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                              <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                              <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                Contact
-                              </span>
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
-                    </nav>
+                  {/* Our Goals */}
+                  <div>
+                    <div className="mb-6">
+                      <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4 relative inline-block pb-3">
+                        Our Goals
+                        <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#c17854]"></span>
+                      </h2>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
+                            1
+                          </div>
+                          <p className="flex-1 text-lg leading-relaxed text-gray-700">
+                            Provide opportunities for the enrichment and learning of Asian cultures and history.
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
+                            2
+                          </div>
+                          <p className="flex-1 text-lg leading-relaxed text-gray-700">
+                            Empower future generations to celebrate their own heritage while engaging with other cultures.
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
+                            3
+                          </div>
+                          <p className="flex-1 text-lg leading-relaxed text-gray-700">
+                            Promote mutual understanding for world cultures and methods of education.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
-       
+          </Container>
+
+          {/* Related Pages Navigation */}
+          <Container>
+            <section className="py-12 border-t border-gray-200 md:py-16">
+              <div className="max-w-6xl mx-auto">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-8 text-center">
+                  Learn More About Educate Together
+                </h3>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                  <Link href="/founder">
+                    <a className="group">
+                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
+                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
+                          Founder's Message
+                        </h4>
+                        <p className="text-gray-600">
+                          Hear from our founder
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                  
+                  <Link href="/leadership">
+                    <a className="group">
+                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
+                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
+                          Leadership
+                        </h4>
+                        <p className="text-gray-600">
+                          Meet our team
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                  
+                  <Link href="/history">
+                    <a className="group">
+                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
+                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
+                          Our History
+                        </h4>
+                        <p className="text-gray-600">
+                          Explore our journey
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                  
+                  <Link href="/programs">
+                    <a className="group">
+                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
+                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
+                          Programs
+                        </h4>
+                        <p className="text-gray-600">
+                          See what we offer
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </section>
+          </Container>
         </m.div>
       </LazyMotion>
     </Layout>
@@ -287,39 +200,13 @@ export default function About(props) {
 
 const query = groq`
  *[_type == "about" && title.en == "Our Mission"] | order(_createdAt desc) {
-  
-...,
-title,
-introText,
- "imageUrl": heroImage.asset->url,
- "foundersImageUrl": foundersImage.asset->url
-
- 
+  ...,
+  title,
+  introText,
+  "imageUrl": heroImage.asset->url,
+  "foundersImageUrl": foundersImage.asset->url
 }
 `;
-
-// export const getServerSideProps = async() => {
-//   const query = `*[ _type == "about"]{
-//     title,
-//     description
-//   }`
-//   const about = await sanityClient.fetch(query)
-
-//   if (!about.length) {
-//     return {
-//       props: {
-//         about: []
-//       },
-//     }
-
-//   } else {
-//     return {
-//       props: {
-//        about
-//       }
-//     }
-//   }
-// }
 
 export async function getStaticProps({ params, preview = false }) {
   const program = await getClient(preview).fetch(query);

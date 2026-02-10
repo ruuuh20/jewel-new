@@ -236,9 +236,9 @@ export default function Footer({ contact }) {
                   <Link href="/founder">
                     <a class="hover:opacity-75"> Founder's Message </a>
                   </Link>
-                  <a class="hover:opacity-75"> Leadership </a>
-                  <a class="hover:opacity-75"> History </a>
-                  <a class="hover:opacity-75"> Contact Us </a>
+                  <Link href="/leadership"><a class="hover:opacity-75"> Leadership </a></Link>
+                  <Link href="/history"><a class="hover:opacity-75"> History </a></Link>
+                  <Link href="/contact"><a class="hover:opacity-75"> Contact Us </a></Link>
                 </nav>
               </div>
               <div>
@@ -251,8 +251,8 @@ export default function Footer({ contact }) {
                   <Link href="/jewel">
                     <a class="hover:opacity-75">JEWEL </a>
                   </Link>
-                  <Link href="/support">
-                    <a class="hover:opacity-75">Visiting Korea</a>
+                  <Link href="/roots-and-routes">
+                    <a class="hover:opacity-75">Roots And Routes</a>
                   </Link>
                   <Link href="/support">
                     <a class="hover:opacity-75">Youth Network</a>
