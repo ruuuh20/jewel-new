@@ -60,7 +60,7 @@ export default function History(props) {
                     Our History
                   </h1>
                   <div className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-lg">
-                    <span>우리의 역사</span>
+                    <span>함께하는교육이 걸어온 길</span>
                   </div>
                 </div>
                 {posts && posts[0] && (
