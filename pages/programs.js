@@ -1,5 +1,6 @@
 import Layout from "@/components/layout";
 import Container from "@/components/container";
+import RelatedPages from "@/components/RelatedPages";
 import Link from "next/link";
 import { fade } from "@/helpers/transitions";
 import { LazyMotion, domAnimation, m } from "framer-motion";
@@ -8,10 +9,8 @@ import { groq } from "next-sanity";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription } from "../sanity";
-
 import Accordion from "@/components/accordion";
 import { PortableText } from "@portabletext/react";
-
 import ImageComponent from "@/components/image";
 
 export default function Programs(props) {
@@ -34,149 +33,104 @@ export default function Programs(props) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
+          className="mb-12 md:mb-16 xl:mb-24"
           variants={fade}
         >
-          <div className="relative w-full pt-8 pb-[28px] border-b border-black">
+          {/* Hero Header */}
+          <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
             <Container>
-                  <div className="flex items-center justify-between">
-                    <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
-                          Programs
-                    </h3>
-                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
-                         <span>프로그램</span>
-                    </div>
+              <div className="max-w-4xl mx-auto">
+                <div className="flex items-center justify-between mb-8">
+                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#1e3a5f] tracking-tight">
+                    Programs
+                  </h1>
+                  <div className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-lg">
+                    <span>프로그램</span>
                   </div>
-              </Container>
+                </div>
+                <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
+                  Explore our educational and cultural programs designed to empower students and build global connections.
+                </p>
+              </div>
+            </Container>
           </div>
+
           <Container>
-      
-            <m.div>
-              <div className="w-full pt-8">
-                {/* <div className="w-full mb-5 md:mb-0 md:w-[300px]">
-                  <div className="w-full md:w-[250px]">
-                    <span className="block mb-5 text-sm font-medium text-navy">
-                      Categories
-                    </span>
-                    <span className="inline-block mb-3 mr-5 text-sm font-medium underline text-gold">
-                      A
-                    </span>
-                    <span className="inline-block mb-3 mr-5 text-sm font-medium underline text-gold">
-                      B
-                    </span>
-                  </div>
-                </div> */}
-                <div className="relative z-10">
-                  <ul>
+            {/* Programs List Section */}
+            <section className="py-16 md:py-24">
+              <div className="max-w-5xl mx-auto">
+                <m.div>
+                  <ul className="space-y-4">
                     {posts &&
                       posts.map((post, i) => (
-                        <li>
+                        <li key={i}>
                           <Accordion
-                            key={i}
                             heading={post.title.en}
                             index={`0${i + 1}`}
-                            // icon={service.icon.asset}
                           >
-                            <div className="mb-4 md:max-w-3xl">
+                            <div className="mb-6 prose prose-lg max-w-none">
                               <PortableText value={post.descriptionBlockEn} />
                             </div>
-                            <div className="flex flex-wrap -m-1 md:-m-2">
-                              {post.images
-                                ? post.images.map((img, index) => (
-                                    <div className="flex flex-wrap w-full md:w-1/3">
-                                      <div className="w-full p-1 md:p-2">
-                                        <ImageComponent
-                                          alt="gallery"
-                                          className="block object-cover object-center w-full h-full rounded-lg"
-                                          image={img}
-                                        />
-                                      </div>
-                                    </div>
-                                  ))
-                                : null}
-                            </div>
+                            
+                            {/* Image Gallery */}
+                            {post.images && post.images.length > 0 && (
+                              <div className="grid gap-4 mt-6 md:grid-cols-3">
+                                {post.images.map((img, index) => (
+                                  <div key={index} className="relative overflow-hidden transition-shadow duration-300 rounded-lg shadow-md hover:shadow-xl">
+                                    <ImageComponent
+                                      alt={`${post.title.en} - Image ${index + 1}`}
+                                      className="block object-cover object-center w-full h-full"
+                                      image={img}
+                                    />
+                                  </div>
+                                ))}
+                              </div>
+                            )}
                           </Accordion>
                         </li>
                       ))}
                   </ul>
-                </div>
-              </div>
-            </m.div>
-            <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
-              <div className="flex mt-12 md:mt-0">
-                <div className="w-full max-w-4-col md:order-last">
-                  <div className="relative w-full">
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        1
-                      </div>
-                      <Link href="/about">
-                        <a className="relative w-full text-3xl italic leading-loose uppercase group md:text-5xl font-pt">
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
-                            <span className="relative z-10">About us</span>
-                          </span>
-                        </a>
-                      </Link>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        2
-                      </div>
-                      <Link href="/programs">
-                        <a className="relative w-full text-3xl italic leading-loose pointer-events-none group md:text-5xl font-pt">
-                          <span className="group-hover:italic group-hover:normal-case relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">Programs</span>
-                          </span>
-                        </a>
-                      </Link>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        3
-                      </div>
-                      <Link href="/projects">
-                        <a className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt">
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">Projects</span>
-                          </span>
-                        </a>
-                      </Link>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        4
-                      </div>
-                      <Link href="/news">
-                        <a className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt">
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">News</span>
-                          </span>
-                        </a>
-                      </Link>
-                    </div>
-
-                    <div className="relative flex items-center h-auto select-none md:h-20">
-                      <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                        5
-                      </div>
-                      <Link href="/affiliates">
-                        <a className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt">
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">Affiliates</span>
-                          </span>
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex justify-between w-full md:max-w-4-col md:block"></div>
+                </m.div>
               </div>
             </section>
           </Container>
+
+          {/* Call to Action */}
+          <Container>
+            <section className="py-12 md:py-16">
+              <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#f8fafc] to-[#e0e7ef] rounded-2xl p-8 md:p-12 text-center border-2 border-[#1e3a5f]/10">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-4">
+                  Ready to Join a Program?
+                </h3>
+                <p className="max-w-2xl mx-auto mb-6 text-lg text-gray-700">
+                  Discover how our programs can help you grow, learn, and connect with cultures around the world.
+                </p>
+                <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                  <Link href="/roots-and-routes">
+                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
+                      Roots & Routes Program
+                    </a>
+                  </Link>
+                  <Link href="/contact">
+                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
+                      Contact Us
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </section>
+          </Container>
+
+          {/* Related Pages Navigation */}
+          <RelatedPages 
+            title="Learn More About Educate Together"
+            pages={[
+              { href: "/about", title: "Our Mission", description: "Learn about our vision and values" },
+              { href: "/leadership", title: "Leadership", description: "Meet our team" },
+              { href: "/history", title: "Our History", description: "Explore our journey" },
+              { href: "/contact", title: "Contact Us", description: "Get in touch" }
+            ]}
+          />
         </m.div>
       </LazyMotion>
     </Layout>
@@ -185,10 +139,9 @@ export default function Programs(props) {
 
 const query = groq`
  *[_type == "program"] | order(ID) {
-...,
-title,
-descriptionBlockEn,
- 
+  ...,
+  title,
+  descriptionBlockEn,
 }
 `;
 

@@ -5,6 +5,7 @@ import { groq } from "next-sanity";
 import Layout from "@/components/layout";
 import Image from "next/image";
 import Container from "@/components/container";
+import RelatedPages from "@/components/RelatedPages";
 import { ContactForm } from "@/components/form";
 import Link from "next/link";
 import { LazyMotion, domAnimation, m } from "framer-motion";
@@ -30,252 +31,153 @@ export default function Contact(props) {
             initial="initial"
             animate="enter"
             exit="exit"
-            className="mb-12 md:mb-16 xl:mb-24 pb-[45px]"
+            className="mb-12 md:mb-16 xl:mb-24"
             variants={fade}
           >
-          <div className="relative w-full pt-8 pb-[28px] border-b border-black">
-            <Container>
-                  <div className="flex items-center justify-between">
-                    <h3 className="relative block pb-0 pr-0 mb-0 text-3xl tracking-tight md:pr-12 font-pt md:text-5xl lg:text-6xl 2xl:text-6xl">
-                        Contact Us
-                    </h3>
-                    <div className="tracking-wide uppercase text-sm md:text-[20px] font-semibold text-gray-600 font-pretend">
-                        <span>연락처</span>
+            {/* Hero Header */}
+            <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
+              <Container>
+                <div className="max-w-4xl mx-auto">
+                  <div className="flex items-center justify-between mb-8">
+                    <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#1e3a5f] tracking-tight">
+                      Contact Us
+                    </h1>
+                    <div className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-lg">
+                      <span>연락처</span>
                     </div>
                   </div>
+                  <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
+                    We'd love to hear from you. Get in touch with any questions about our programs.
+                  </p>
+                </div>
               </Container>
-          </div>
-           
+            </div>
+
             <Container>
-              <div className="flex flex-wrap pt-8">
-                <div className="w-full mt-4 md:p-10 lg:w-5/12">
-                  <p className="text-base md:text-xl">
-                    We’d love to hear from you. For any inquiries, you can send
-                    an email at{" "}
-                    <a
-                      className="border-b border-[#d96e34] hover:text-[#d96e34]"
-                      href="mailto:edutogether22@gmail.com"
-                    >
-                      {posts && posts[0].email}
-                    </a>{" "}
-                    or fill out the form, and we will get back to you.
-                  </p>{" "}
-                  <div className="pt-4 pb-2 pl-5 mt-4 border rounded-lg shadow box">
-                    {posts &&
-                      posts.map((post) => (
-                        <>
-                          <div className="flex mb-4 text-base md:text-lg">
-                            {" "}
-                            <svg
-                              aria-hidden="true"
-                              focusable="false"
-                              data-prefix="fas"
-                              data-icon="envelope"
-                              className="inline-block mr-3 svg-inline--fa email-icon text-primary"
-                              role="img"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 512 512"
-                            >
-                              <path
-                                fill="currentColor"
-                                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
-                              ></path>
-                            </svg>
-                            <a
-                              href="mailto:edutogether22@gmail.com"
-                              className="transition duration-500 ease-in-out md:text-xl text-secondary-dark hover:text-yellow"
-                            >
-                              {post.email}{" "}
-                            </a>
-                          </div>
-                          <div className="flex mb-4 text-base md:text-lg">
-                            <svg
-                              aria-hidden="true"
-                              className="inline-block mr-3 svg-inline--fa location-icon fa-w-16 text-primary"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 384 512"
-                            >
-                              <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z" />
-                            </svg>
-                            <span className="transition duration-500 ease-in-out md:text-xl text-secondary-dark hover:text-yellow">
-                              {post.address}{" "}
-                            </span>
-                          </div>
-                          <div className="flex mb-4 text-base md:text-lg">
-                            <svg
-                              aria-hidden="true"
-                              focusable="false"
-                              data-prefix="fas"
-                              data-icon="phone-alt"
-                              className="inline-block mr-3 svg-inline--fa phone-icon fa-w-16 text-primary"
-                              role="img"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 512 512"
-                            >
-                              <path
-                                fill="currentColor"
-                                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
-                                className=""
-                              ></path>
-                            </svg>
-                            <a
-                              href="tel:2017677500"
-                              className="transition duration-500 ease-in-out md:text-xl text-secondary-dark hover:text-yellow"
-                            >
-                              {post.phoneNumber}
-                            </a>
-                          </div>
-                        </>
-                      ))}
-                  </div>
-                </div>
-
-                <div className="w-full pt-8 pb-4 border rounded-lg lg:w-7/12 md:px-16">
-                  <ContactForm />
-                </div>
-              </div>
-              {/* <hr className="my-8 md:my-16" /> */}
-
-              <section className="relative pt-6 pb-6 md:pt-16 md:pb-8 xl:pt-24 2xl:pb-24">
-                <div className="flex flex-col-reverse mt-12 md:mt-0 md:flex-row">
-                  <div className="w-full pt-10 mt-6 border-t border-dashed max-w-4-col md:order-last md:mt-0 md:border-none md:pt-0">
-                    <div className="relative w-full">
-                      <div className="relative flex items-center h-auto select-none md:h-20">
-                        <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                          1
-                        </div>
+              {/* Contact Section */}
+              <section className="py-16 md:py-24">
+                <div className="max-w-6xl mx-auto">
+                  <div className="grid gap-12 lg:grid-cols-5">
+                    {/* Contact Info - Left Side */}
+                    <div className="lg:col-span-2">
+                      <h2 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-6">
+                        Get In Touch
+                      </h2>
+                      <p className="mb-8 text-lg leading-relaxed text-gray-700">
+                        For any inquiries, you can send an email at{" "}
                         <a
-                          className="relative w-full text-3xl italic leading-loose pointer-events-none group md:text-5xl font-pt"
-                          href="/about"
+                          className="font-semibold text-[#c17854] hover:text-[#a85232] transition-colors underline"
+                          href="mailto:edutogether22@gmail.com"
                         >
-                          <span className="group-hover:italic group-hover:normal-case relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-100">
-                            <span className="relative z-10">About us</span>
-                          </span>
-                        </a>
-                      </div>
+                          {posts && posts[0]?.email}
+                        </a>{" "}
+                        or fill out the form, and we will get back to you.
+                      </p>
 
-                      <div className="relative flex items-center h-auto select-none md:h-20">
-                        <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                          2
-                        </div>
-                        <a
-                          className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                          href="/programs"
-                        >
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">Programs</span>
-                          </span>
-                        </a>
-                      </div>
+                      {/* Contact Info Cards */}
+                      <div className="space-y-4">
+                        {posts &&
+                          posts.map((post) => (
+                            <div key={post._id}>
+                              {/* Email Card */}
+                              <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm">
+                                <div className="flex items-start gap-4">
+                                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#c17854] flex items-center justify-center text-white">
+                                    <svg
+                                      className="w-5 h-5"
+                                      fill="currentColor"
+                                      viewBox="0 0 512 512"
+                                    >
+                                      <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                                    </svg>
+                                  </div>
+                                  <div className="flex-1">
+                                    <h3 className="font-semibold text-[#120902] mb-1">Email</h3>
+                                    <a
+                                      href={`mailto:${post.email}`}
+                                      className="text-gray-700 hover:text-[#c17854] transition-colors"
+                                    >
+                                      {post.email}
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
 
-                      <div className="relative flex items-center h-auto select-none md:h-20">
-                        <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                          3
-                        </div>
-                        <a
-                          className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                          href="/projects"
-                        >
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">Projects</span>
-                          </span>
-                        </a>
-                      </div>
+                              {/* Address Card */}
+                              {post.address && (
+                                <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm">
+                                  <div className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#c17854] flex items-center justify-center text-white">
+                                      <svg
+                                        className="w-5 h-5"
+                                        fill="currentColor"
+                                        viewBox="0 0 384 512"
+                                      >
+                                        <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z" />
+                                      </svg>
+                                    </div>
+                                    <div className="flex-1">
+                                      <h3 className="font-semibold text-[#120902] mb-1">Address</h3>
+                                      <p className="text-gray-700">{post.address}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
 
-                      <div className="relative flex items-center h-auto select-none md:h-20">
-                        <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                          4
-                        </div>
-                        <a
-                          className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                          href="/news"
-                        >
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow  relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">News</span>
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="relative flex items-center h-auto select-none md:h-20">
-                        <div className="w-10 h-10 p-2 mr-4 text-center border rounded-full">
-                          5
-                        </div>
-                        <a
-                          className="relative w-full text-3xl leading-loose uppercase group md:text-5xl font-pt"
-                          href="/affiliates"
-                        >
-                          <span className="group-hover:italic group-hover:normal-case group-hover:text-yellow relative z-10 before:bg-secondary md:before:-left-4 before:-left-2 md:before:-right-4 before:-right-2 before:z-[-1] before:block before:top-1/2 before:absolute before:h-2 md:before:h-3 md:before:-mt-1 before:opacity-0 group-hover:before:opacity-100">
-                            <span className="relative z-10">Affiliates</span>
-                          </span>
-                        </a>
+                              {/* Phone Card */}
+                              {post.phoneNumber && (
+                                <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm">
+                                  <div className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#c17854] flex items-center justify-center text-white">
+                                      <svg
+                                        className="w-5 h-5"
+                                        fill="currentColor"
+                                        viewBox="0 0 512 512"
+                                      >
+                                        <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" />
+                                      </svg>
+                                    </div>
+                                    <div className="flex-1">
+                                      <h3 className="font-semibold text-[#120902] mb-1">Phone</h3>
+                                      <a
+                                        href={`tel:${post.phoneNumber}`}
+                                        className="text-gray-700 hover:text-[#c17854] transition-colors"
+                                      >
+                                        {post.phoneNumber}
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          ))}
                       </div>
                     </div>
-                  </div>
 
-                  <div className="flex justify-between w-full text-right md:max-w-4-col md:block md:text-left">
-                    <div className="relative w-full">
-                      <nav className="m-auto md:w-2/3">
-                        <span className="block mb-4 text-base md:text-[18px] text-gray-600 leading-tight uppercase">
-                          {"About Us"}
-                        </span>
-                        <ul className="flex flex-wrap">
-                          <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                            <Link href="/about">
-                              <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                                <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                                <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                  Our Mission
-                                </span>
-                              </a>
-                            </Link>
-                          </li>
-                          <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                            <Link href="/founder">
-                              <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                                <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                                <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                  Founder's Message
-                                </span>
-                              </a>
-                            </Link>
-                          </li>
-                          <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                            <Link href="/leadership">
-                              <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                                <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                                <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                  Leadership
-                                </span>
-                              </a>
-                            </Link>
-                          </li>
-                          <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                            <Link href="/history">
-                              <a className="block transition-all duration-300 ease-in-out group hover:pl-2">
-                                <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                                <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                  Our History
-                                </span>
-                              </a>
-                            </Link>
-                          </li>
-                          <li className="relative w-full py-0 pl-6 md:py-2 md:pl-10">
-                            <Link href="/contact">
-                              <a className="block transition-all duration-300 ease-in-out pointer-events-none group hover:pl-2">
-                                <span className="w-2 h-2 border md:border-2 border-yellow opacity-75 rotate-45 group-hover:-rotate-45 group-focus:-rotate-45 transition-transform ease-in-out duration-300 hidden md:block absolute top-0 left-0 mt-[24px]"></span>
-                                <span className="block mb-2 text-xl font-display md:text-3xl text-slate pm rmd:mb-3">
-                                  Contact
-                                </span>
-                              </a>
-                            </Link>
-                          </li>
-                        </ul>
-                      </nav>
+                    {/* Contact Form - Right Side */}
+                    <div className="lg:col-span-3">
+                      <div className="p-8 bg-white border-2 border-gray-100 shadow-sm md:p-10 rounded-xl">
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-6">
+                          Send Us a Message
+                        </h2>
+                        <ContactForm />
+                      </div>
                     </div>
                   </div>
                 </div>
               </section>
             </Container>
+
+            {/* Related Pages Navigation */}
+            <RelatedPages 
+              title="Explore More"
+              pages={[
+                { href: "/about", title: "About Us", description: "Learn about our mission" },
+                { href: "/programs", title: "Programs", description: "Explore our offerings" },
+                { href: "/roots-and-routes", title: "Roots & Routes", description: "Spring 2026 program" },
+                { href: "/leadership", title: "Leadership", description: "Meet our team" }
+              ]}
+            />
           </m.div>
         </LazyMotion>
       </Layout>
@@ -286,8 +188,6 @@ export default function Contact(props) {
 const query = groq`
 *[_type == "contact"] | order(_createdAt desc) {
   ..., 
-  
- 
 }
 `;
 
