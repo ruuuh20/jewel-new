@@ -635,7 +635,7 @@ const RootsAndRoutes = () => {
     Can I schedule a call to learn more?
   </h3>
   <p className="mb-4 text-gray-700">
-    Absolutely! We're happy to answer any questions you have about the program.. Schedule a free 30-minute consultation with our program director.
+    Yes, we're happy to answer any questions you have about the program. Schedule a free 30-minute consultation with our program director.
   </p>
   <a
     href="https://calendly.com/edutogether22/roots-routes-consultation"
@@ -770,7 +770,7 @@ const RootsAndRoutes = () => {
                   <div className="animate-fadeIn">
                     <div className="mb-8">
                       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
-                        Summer 2024 - Family & Student Experience
+                        Feb 2024 - Family & Student Experience
                       </h3>
                       <p className="mb-6 text-lg leading-relaxed text-gray-700">
                         Our 2024 program was a special abbreviated trip designed for both students and parents, offering a unique family cultural immersion experience. This shorter-duration program provided an introduction to Korean culture, education, and heritage, creating meaningful connections across generations.
@@ -1039,7 +1039,7 @@ const RootsAndRoutes = () => {
                         Summer 2018 - Seoul & Gyeongju
                       </h3>
                       <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                        The 2018 program focused on the historical depth of Korea, with extended time in Gyeongju, the ancient capital of the Silla Kingdom. Students engaged in archaeological workshops, language exchange sessions, and collaborative art projects with Korean peers.
+                        The 2018 program focused on the historical depth of Korea, with extended time in Gyeongju, the ancient capital of the Silla Kingdom. Students engaged in workshops, language exchange sessions, and collaborative art projects with Korean peers.
                       </p>
                     </div>
 
