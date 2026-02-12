@@ -302,7 +302,7 @@ const Home = ({ data }) => {
                   <div className="relative overflow-hidden transition-transform duration-500 transform shadow-2xl rounded-2xl hover:scale-105">
                     <div className="relative h-[400px] md:h-[500px] xl:h-[600px]">
                       <Image
-                        src="/visiting-korea-card.jpg"
+                        src="/mainphoto1.jpg"
                         alt="Roots and Routes - Cultural Exchange Program"
                         layout="fill"
                         objectFit="cover"
