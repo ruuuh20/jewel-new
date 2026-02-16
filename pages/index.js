@@ -22,6 +22,10 @@ import { useInView } from "react-intersection-observer";
 import GrayscaleImage from "@/components/grayscaleImage";
 import SignupForm from "@/components/signupForm";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
+import PhotoGallery from "@/components/PhotoGallery";
+import ZigzagPhotoStrip from "@/components/ZigzagPhotoStrip";
+import SimpleZigzagStrip from "@/components/SimpleZigzagStrip";
+
 const Home = ({ data }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -86,10 +90,10 @@ const Home = ({ data }) => {
 
   return (
     <>
-        <AnnouncementBanner 
+        {/* <AnnouncementBanner 
       enabled={showBanner}
       message="Roots & Routes 2026 Applications Open"
-    />
+    /> */}
     <Layout>
       <NextSeo title="Home" />
       <LazyMotion features={domAnimation}>
@@ -335,6 +339,22 @@ const Home = ({ data }) => {
             </Container>
            
           </m.section>
+          {/* Photo Gallery Section - Add to Homepage */}
+
+
+<div className="relative z-10 -mt-16 md:-mt-20 lg:-mt-24">
+<SimpleZigzagStrip
+  photos={[
+    { src: "/images/strip/strip-1.jpg", alt: "Palace visit" },
+    { src: "/images/strip/strip-2.jpg", alt: "Hanbok experience" },
+    { src: "/images/strip/strip-3.jpg", alt: "School exchange" },
+    { src: "/images/strip/strip-4.jpg", alt: "Temple visit" },
+    { src: "/images/strip/strip-5.jpg", alt: "DMZ tour" },
+    { src: "/images/strip/strip-6.jpg", alt: "Korean food" }
+  ]}
+/>
+</div>
+
 
         
           
