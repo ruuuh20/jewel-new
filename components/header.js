@@ -62,15 +62,13 @@ export default function Header({ isExhibitPage }) {
                     <span className="block mt-1 mr-1 md:hidden mobile">
                       <Image
                         src="/ham-logo.png"
-                        width="50"
-                        height="50"
+                        width="35" height="35" 
                       />
                     </span>
                     <span className="block mt-1 ml-1 mr-1 md:ml-0 md:mt-2">
                       <Image
                         src="/fontlogoET.svg"
-                        width="100"
-                        height="50"
+                       width="35" height="35" 
                       />
                     </span>
                   </a>

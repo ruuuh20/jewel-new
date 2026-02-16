@@ -239,7 +239,7 @@ const Home = ({ data }) => {
           >
            
             <Container>
-              <div className="grid items-center gap-8 py-16 md:grid-cols-2 md:gap-12 md:py-24 xl:py-32">
+              <div className="grid items-center gap-8 py-16 pt-20 pb-12 md:grid-cols-2 md:gap-12 md:py-24 xl:py-32">
                 {/* Left Column - Text Content */}
                 <div className="order-2 md:order-1">
                   {/* Badge */}
@@ -316,7 +316,7 @@ const Home = ({ data }) => {
                       {/* <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/30 to-transparent"></div> */}
                       
                       {/* Optional: Floating stat badge on image */}
-                      <div className="border-2 border-[#1e3a5f]/10 absolute p-4 shadow-lg bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl">
+                      <div className="hidden md:block border-2 border-[#1e3a5f]/10 absolute p-4 shadow-lg bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl">
                         <div className="flex items-center justify-between">
                           <div>
                             <div className="text-2xl font-extrabold text-[#1e3a5f]">25 Spots</div>
