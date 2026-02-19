@@ -320,7 +320,7 @@ const Home = ({ data }) => {
                         <div className="flex items-center justify-between">
                           <div>
                             <div className="text-2xl font-extrabold text-[#1e3a5f]">25 Spots</div>
-                            <div className="text-sm text-gray-600">Limited Availability</div>
+                            <div className="text-sm text-gray-600">Group Size</div>
                           </div>
                           <div className="pl-4 border-l border-[#2c5282]/20 (make it border-l-2)">
                             <div className="text-2xl font-extrabold text-[#1e3a5f]">10 Days</div>

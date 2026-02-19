@@ -68,7 +68,7 @@ export default function Header({ isExhibitPage }) {
                     <span className="block mt-1 ml-1 mr-1 md:ml-0 md:mt-2">
                       <Image
                         src="/fontlogoET.svg"
-                       width="35" height="35" 
+                       width="50" height="50" 
                       />
                     </span>
                   </a>

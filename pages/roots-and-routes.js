@@ -12,6 +12,7 @@ import {
 import { NextSeo } from "next-seo";
 import Image from "next/image";
 import LearncationMap from "@/components/LearncationMap";
+import PhotoGallery from "@/components/PhotoGallery";
 
 const RootsAndRoutes = () => {
   const [activeYear, setActiveYear] = useState("2019");
@@ -92,8 +93,191 @@ const RootsAndRoutes = () => {
             </Container>
           </m.section>
 
+
+<section className="py-16 bg-white md:py-24">
+  <Container>
+    <div className="max-w-6xl mx-auto">
+      {/* Section Header */}
+      <div className="mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-6">
+          Why Roots & Routes
+        </h2>
+        <p className="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700 md:text-xl">
+          Roots & Routes is a transformative 10-day program connecting Korean-American students (grades 7-12) with their heritage through educational exchange at Minjok Leadership Academy and cultural immersion across Korea. This isn't just a trip—it's a journey of self-discovery, academic excellence, and lifelong connections.
+        </p>
+      </div>
+
+      {/* Benefit Cards - 4 Column Grid */}
+      <div className="grid gap-6 mb-12 md:grid-cols-2 lg:grid-cols-4">
+        {/* Card 1: KMLA Exchange */}
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-bold text-[#1e3a5f] mb-3 text-center">
+            KMLA Exchange
+          </h3>
+          <p className="text-sm leading-relaxed text-center text-gray-700">
+            Exclusive access to Korea Minjok Leadership Academy, one of Korea's top schools. Experience their world-class education system firsthand.
+          </p>
+        </div>
+
+        {/* Card 2: Cultural Immersion */}
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-bold text-[#1e3a5f] mb-3 text-center">
+            Cultural Sites
+          </h3>
+          <p className="text-sm leading-relaxed text-center text-gray-700">
+            Visit iconic landmarks: Gyeongbokgung Palace, DMZ, temples, traditional villages. Participate in hands-on activities: Hangul calligraphy, traditional crafts, and more.
+  crafts,
+          </p>
+        </div>
+
+        {/* Card 3: Small Groups */}
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-bold text-[#1e3a5f] mb-3 text-center">
+            Small Groups
+          </h3>
+          <p className="text-sm leading-relaxed text-center text-gray-700">
+            Limited to 25 students for personalized attention, meaningful connections, and an intimate learning environment throughout the journey.
+          </p>
+        </div>
+
+        {/* Card 4: Expert Guides */}
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-bold text-[#1e3a5f] mb-3 text-center">
+            Expert Guidance
+          </h3>
+          <p className="text-sm leading-relaxed text-center text-gray-700">
+            Led by experienced cultural educators and Korean teachers. Develop 
+  cross-cultural communication, adaptability, and global citizenship 
+  skills that prepare you for an interconnected world.
+          </p>
+        </div>
+      </div>
+
+      {/* Optional: Additional Key Features */}
+      <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] rounded-2xl p-8 md:p-10 text-white">
+        <h3 className="mb-6 text-2xl font-bold text-center">
+          What Makes Us Different
+        </h3>
+        <div className="grid gap-6 text-center md:grid-cols-3">
+          <div>
+            <div className="text-3xl font-extrabold text-[#c17854] mb-2">
+              10 Days
+            </div>
+            <p className="text-white/90">
+              Perfect spring break timing, comprehensive itinerary
+            </p>
+          </div>
+          <div>
+            <div className="text-3xl font-extrabold text-[#c17854] mb-2">
+              3-4 Days
+            </div>
+            <p className="text-white/90">
+              Extended stay at KMLA, deep educational immersion
+            </p>
+          </div>
+          <div>
+            <div className="text-3xl font-extrabold text-[#c17854] mb-2">
+              Since 2023
+            </div>
+            <p className="text-white/90">
+              Proven track record, refined program, happy families
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
+
+{/* 🆕 PHOTO GALLERY - "WHAT YOU'LL EXPERIENCE" */}
+<PhotoGallery
+  title="What You'll Experience"
+  subtitle=""
+  photos={[
+    {
+      src: "/images/strip/strip-6.jpg",
+      alt: "Students exploring temples",
+      caption: "Temple Exploration",
+      location: "Temple",
+      badge: "Day 2"
+    },
+    {
+      src: "/hanok.jpg",
+      alt: "Students in hanok village",
+      caption: "Traditional Hanok Stay",
+      location: " Hanok Village",
+      badge: "Day 3"
+    },
+    {
+      src: "/independence-hall.jpg",
+      alt: "Students at the Independence Hall",
+      caption: "Historical Reflection",
+      location: "Independence Hall of Korea",
+      badge: "Day 4-6"
+    },
+    {
+      src: "/learncation-2019-6.jpg",
+      alt: "Blue House",
+      caption: "Visiting the Blue House",
+      location: "Blue House",
+      badge: "Day 5"
+    },
+    {
+      src: "/images/experience/experience-dmz.jpg",
+      alt: "DMZ tour experience",
+      caption: "Understanding Division",
+      location: "DMZ & JSA",
+      badge: "Day 7"
+    },
+    {
+      src: "/learncation-2018-6.jpg",
+      alt: "Traditional Korean meal",
+      caption: "Culinary Culture",
+      location: "Korean Cuisine",
+    },
+    {
+      src: "/learncation-2019-8.jpg",
+      alt: "School Cafeteria",
+      caption: "School Life",
+      location: "School",
+    },
+    {
+      src: "/images/students/temple-1.jpg",
+      alt: "Temple Visit",
+      caption: "Spiritual Sites",
+      location: "Temple",
+      badge: "Day 8"
+    },
+    {
+      src: "/images/students/lecture-1.jpg",
+      alt: "Lecture",
+      caption: "Educational Workshops",
+      location: "Throughout the Journey",
+    }
+  ]}
+/>
           {/* Overview Section */}
-          <Container>
+          {/* <Container>
             <section className="py-16 font-normal md:py-24 font-clash">
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-[#120902]">
@@ -147,10 +331,10 @@ const RootsAndRoutes = () => {
                 </div>
               </div>
             </section>
-          </Container>
+          </Container> */}
 
           {/* Program Highlights */}
-          <Container>
+          {/* <Container>
             <section className="py-16 md:py-24">
               <div className="max-w-5xl mx-auto">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
@@ -226,7 +410,7 @@ const RootsAndRoutes = () => {
             </section>
 
             <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
+          </Container> */}
 
           {/* Program Details */}
           <Container>
