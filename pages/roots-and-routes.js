@@ -103,7 +103,7 @@ const RootsAndRoutes = () => {
           Why Roots & Routes
         </h2>
         <p className="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700 md:text-xl">
-          Roots & Routes is a transformative 10-day program connecting Korean-American students (grades 7-12) with their heritage through educational exchange at Minjok Leadership Academy and cultural immersion across Korea. This isn't just a trip—it's a journey of self-discovery, academic excellence, and lifelong connections.
+          Roots & Routes is a program connecting Korean-American students (grades 7-12) with their heritage through educational exchange at Minjok Leadership Academy and cultural immersion across Korea. 
         </p>
       </div>
 
@@ -178,59 +178,32 @@ const RootsAndRoutes = () => {
   <h3 className="mb-6 text-2xl font-bold text-center">
     What's Included
   </h3>
-  <div className="grid gap-6 text-center md:grid-cols-3">
+  <div className="grid gap-8 text-center md:grid-cols-3">
     <div>
-      <div className="mb-2 text-3xl">✈️</div>
-      <div className="text-lg font-bold text-[#c17854] mb-2">
-        Round-Trip Flights
+      <div className="mb-3 text-4xl">✈️</div>
+      <div className="text-xl font-bold text-[#c17854] mb-3">
+        Complete Travel Package
       </div>
-      <p className="text-sm text-white/90">
-        From major US cities to Seoul
+      <p className="text-sm leading-relaxed text-white/90">
+        Round-trip flights, hotels, KMLA dorm stay, and private transportation throughout Korea
       </p>
     </div>
     <div>
-      <div className="mb-2 text-3xl">🏨</div>
-      <div className="text-lg font-bold text-[#c17854] mb-2">
-        Accommodations
+      <div className="mb-3 text-4xl">🍱</div>
+      <div className="text-xl font-bold text-[#c17854] mb-3">
+        All Meals & Activities
       </div>
-      <p className="text-sm text-white/90">
-        Hotels + KMLA dorm stay
+      <p className="text-sm leading-relaxed text-white/90">
+        Breakfast, lunch, and dinner daily. All entrance fees, workshops, cultural activities, and tours
       </p>
     </div>
     <div>
-      <div className="mb-2 text-3xl">🍱</div>
-      <div className="text-lg font-bold text-[#c17854] mb-2">
-        All Meals
+      <div className="mb-3 text-4xl">👨‍🏫</div>
+      <div className="text-xl font-bold text-[#c17854] mb-3">
+        Expert Guidance & Support
       </div>
-      <p className="text-sm text-white/90">
-        Breakfast, lunch, dinner daily
-      </p>
-    </div>
-    <div>
-      <div className="mb-2 text-3xl">🎫</div>
-      <div className="text-lg font-bold text-[#c17854] mb-2">
-        All Activities
-      </div>
-      <p className="text-sm text-white/90">
-        Entrance fees, workshops, tours
-      </p>
-    </div>
-    <div>
-      <div className="mb-2 text-3xl">🚌</div>
-      <div className="text-lg font-bold text-[#c17854] mb-2">
-        Transportation
-      </div>
-      <p className="text-sm text-white/90">
-        Private bus throughout Korea
-      </p>
-    </div>
-    <div>
-      <div className="mb-2 text-3xl">👨‍🏫</div>
-      <div className="text-lg font-bold text-[#c17854] mb-2">
-        Expert Guides
-      </div>
-      <p className="text-sm text-white/90">
-        24/7 supervision & support
+      <p className="text-sm leading-relaxed text-white/90">
+        Experienced cultural educators, Korean teachers, and 24/7 supervision throughout the trip
       </p>
     </div>
   </div>
