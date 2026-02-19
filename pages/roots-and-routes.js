@@ -175,36 +175,66 @@ const RootsAndRoutes = () => {
 
       {/* Optional: Additional Key Features */}
       <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] rounded-2xl p-8 md:p-10 text-white">
-        <h3 className="mb-6 text-2xl font-bold text-center">
-          What Makes Us Different
-        </h3>
-        <div className="grid gap-6 text-center md:grid-cols-3">
-          <div>
-            <div className="text-3xl font-extrabold text-[#c17854] mb-2">
-              10 Days
-            </div>
-            <p className="text-white/90">
-              Perfect spring break timing, comprehensive itinerary
-            </p>
-          </div>
-          <div>
-            <div className="text-3xl font-extrabold text-[#c17854] mb-2">
-              3-4 Days
-            </div>
-            <p className="text-white/90">
-              Extended stay at KMLA, deep educational immersion
-            </p>
-          </div>
-          <div>
-            <div className="text-3xl font-extrabold text-[#c17854] mb-2">
-              Since 2023
-            </div>
-            <p className="text-white/90">
-              Proven track record, refined program, happy families
-            </p>
-          </div>
-        </div>
+  <h3 className="mb-6 text-2xl font-bold text-center">
+    What's Included
+  </h3>
+  <div className="grid gap-6 text-center md:grid-cols-3">
+    <div>
+      <div className="mb-2 text-3xl">✈️</div>
+      <div className="text-lg font-bold text-[#c17854] mb-2">
+        Round-Trip Flights
       </div>
+      <p className="text-sm text-white/90">
+        From major US cities to Seoul
+      </p>
+    </div>
+    <div>
+      <div className="mb-2 text-3xl">🏨</div>
+      <div className="text-lg font-bold text-[#c17854] mb-2">
+        Accommodations
+      </div>
+      <p className="text-sm text-white/90">
+        Hotels + KMLA dorm stay
+      </p>
+    </div>
+    <div>
+      <div className="mb-2 text-3xl">🍱</div>
+      <div className="text-lg font-bold text-[#c17854] mb-2">
+        All Meals
+      </div>
+      <p className="text-sm text-white/90">
+        Breakfast, lunch, dinner daily
+      </p>
+    </div>
+    <div>
+      <div className="mb-2 text-3xl">🎫</div>
+      <div className="text-lg font-bold text-[#c17854] mb-2">
+        All Activities
+      </div>
+      <p className="text-sm text-white/90">
+        Entrance fees, workshops, tours
+      </p>
+    </div>
+    <div>
+      <div className="mb-2 text-3xl">🚌</div>
+      <div className="text-lg font-bold text-[#c17854] mb-2">
+        Transportation
+      </div>
+      <p className="text-sm text-white/90">
+        Private bus throughout Korea
+      </p>
+    </div>
+    <div>
+      <div className="mb-2 text-3xl">👨‍🏫</div>
+      <div className="text-lg font-bold text-[#c17854] mb-2">
+        Expert Guides
+      </div>
+      <p className="text-sm text-white/90">
+        24/7 supervision & support
+      </p>
+    </div>
+  </div>
+</div>
     </div>
   </Container>
 </section>
