@@ -374,7 +374,7 @@ const Home = ({ data }) => {
                   School Partnerships
                 </h3>
                 <p className="mb-3 text-xl font-medium text-gray-600">
-                  학교 파트너십
+                  국제교류 협력
                 </p>
                 <p className="mb-3 leading-relaxed text-gray-700">
                   Connect US and Korean schools through meaningful cultural and educational exchanges.
@@ -436,7 +436,7 @@ const Home = ({ data }) => {
                   Learn Korean
                 </h3>
                 <p className="mb-3 text-xl font-medium text-gray-600">
-                  한국어 학습
+                  한글문화교육
                 </p>
                 <p className="mb-3 leading-relaxed text-gray-700">
                   Korean language programs for students of all levels, from beginners to advanced.

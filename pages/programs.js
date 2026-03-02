@@ -48,11 +48,11 @@ export default function ProgramsPage() {
                   </h2>
                   
                   <p className="mb-4 text-xl font-medium text-gray-600">
-                    학교 파트너십
+                     국제교류 협력
                   </p>
                   
                   <p className="mb-6 leading-relaxed text-gray-700">
-                    Joining East & West as Educational Liaisons. Connecting US and Korean schools 
+                    Connecting US and Korean schools 
                     through sustainable international partnerships, exchange programs, and collaborative learning.
                   </p>
                   
@@ -111,7 +111,7 @@ export default function ProgramsPage() {
                   </h2>
                   
                   <p className="mb-4 text-xl font-medium text-gray-600">
-                    한국어 학습
+                    가나다라 한글문화교육
                   </p>
                   
                   <p className="mb-6 leading-relaxed text-gray-700">
@@ -139,11 +139,11 @@ export default function ProgramsPage() {
                   </div>
                   
                   <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
-                    Eunoia
+                    Eunoia Future Education
                   </h2>
                   
                   <p className="mb-4 text-xl font-medium text-gray-600">
-                    미래 교육
+                    유노이아 미래교육
                   </p>
                   
                   <p className="mb-6 leading-relaxed text-gray-700">

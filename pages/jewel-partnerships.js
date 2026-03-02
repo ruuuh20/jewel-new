@@ -152,8 +152,8 @@ export default function JewelPage() {
               <div className="grid items-center gap-8 mb-8 md:grid-cols-3">
                 <div className="md:col-span-1">
                   {/* Photo placeholder - add actual photo later */}
-                  <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
-                  </div>
+                  {/* <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
+                  </div> */}
                 </div>
                 
                 <div className="md:col-span-2">
