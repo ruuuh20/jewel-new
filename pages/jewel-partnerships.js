@@ -31,8 +31,106 @@ export default function JewelPage() {
             
             <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
               Connecting US and Korean schools through sustainable educational partnerships. 
-              Not just one-time visits—building lasting international learning experiences.
+           
             </p>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-20 bg-white md:py-28" id="about">
+        <Container>
+          <div className="max-w-6xl mx-auto">
+            {/* Section Label */}
+            <div className="text font-bold text-[#1a5fa8] uppercase tracking-wider mb-4 animate-on-scroll">
+              What is Project JEWEL? • Project JEWEL이란?
+            </div>
+
+            <div className="grid gap-12 md:grid-cols-2 lg:gap-16">
+              {/* Left Column - Text */}
+              <div className="animate-on-scroll">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240] mb-6 leading-tight">
+                  Not a one-time trip.<br />
+                  A sustainable global education.
+                </h2>
+                <p className="mb-4 text-lg leading-relaxed text-gray-700">
+                  "한 번 다녀오는 교류"가 아니라 "지속가능한 글로벌 학습"
+                </p>
+                <p className="mb-4 leading-relaxed text-gray-700">
+                  Project JEWEL is an international exchange specialist nonprofit based in 
+                  New York/New Jersey. We connect US and Korean public and private schools 
+                  — elementary through high school — with safe, trusted, and lasting global 
+                  learning experiences.
+                </p>
+                <p className="mb-6 leading-relaxed text-gray-700">
+                  미국 뉴욕·뉴저지를 기반으로 한국과 미국의 교육 현장을 연결하는 국제교류 전문 
+                  비영리단체입니다. 양국의 공립·사립 초·중·고교 및 교육청을 위한 안전하고 
+                  신뢰할 수 있는 지속가능한 글로벌 학습을 지원합니다.
+                </p>
+                
+                {/* JEWEL Acronym Box */}
+                <div className="bg-gradient-to-br from-[#f7f8fa] to-white p-6 rounded-xl border-2 border-gray-100">
+                  <div className="text-2xl font-extrabold text-[#0d2240] mb-3">JEWEL</div>
+                  <div className="flex flex-wrap gap-2 text-sm">
+                    <span className="text-gray-700"><strong className="font-bold">J</strong>oining</span>
+                    <span className="text-gray-700"><strong className="font-bold">E</strong>ast &</span>
+                    <span className="text-gray-700"><strong className="font-bold">W</strong>est as</span>
+                    <span className="text-gray-700"><strong className="font-bold">E</strong>ducational</span>
+                    <span className="text-gray-700"><strong className="font-bold">L</strong>iaisons</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Three Pillars */}
+              <div className="space-y-6">
+                {/* Pillar 1 */}
+                <div className="flex gap-4 p-6 bg-white rounded-xl border border-gray-200 hover:border-[#c9963b] transition-all animate-on-scroll">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9963b]/10 flex items-center justify-center">
+                    <span className="text-2xl">📚</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#0d2240] mb-2">
+                      Education First • 교육 중심
+                    </h4>
+                    <p className="text-sm leading-relaxed text-gray-600">
+                      K-Culture as an educational tool — for understanding history, society, 
+                      culture, and values.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Pillar 2 */}
+                <div className="flex gap-4 p-6 bg-white rounded-xl border border-gray-200 hover:border-[#c9963b] transition-all animate-on-scroll">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9963b]/10 flex items-center justify-center">
+                    <span className="text-2xl">🌍</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#0d2240] mb-2">
+                      Global Citizenship • 세계시민 교육
+                    </h4>
+                    <p className="text-sm leading-relaxed text-gray-600">
+                      Cross-cultural understanding to develop students' critical thinking 
+                      and global perspective.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Pillar 3 */}
+                <div className="flex gap-4 p-6 bg-white rounded-xl border border-gray-200 hover:border-[#c9963b] transition-all animate-on-scroll">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9963b]/10 flex items-center justify-center">
+                    <span className="text-2xl">🤝</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#0d2240] mb-2">
+                      Sustainable Partnerships • 지속가능한 파트너십
+                    </h4>
+                    <p className="text-sm leading-relaxed text-gray-600">
+                      Year-round collaboration and exchange programs that build lasting 
+                      connections between schools.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
@@ -209,60 +307,9 @@ export default function JewelPage() {
       <section className="py-16 bg-white md:py-24">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <div className="mb-12 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
-                Track Record
-              </h2>
-              <p className="text-xl text-gray-600">
-                실적과 경험
-              </p>
-            </div>
+           
 
-            <div className="grid gap-6 mb-12 text-center md:grid-cols-4">
-              <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100">
-                <div className="text-4xl font-extrabold text-[#c17854] mb-2">
-                  30+
-                </div>
-                <p className="font-medium text-gray-700">
-                  Years of Experience
-                  <br />
-                  <span className="text-sm text-gray-600">교육 경력</span>
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100">
-                <div className="text-4xl font-extrabold text-[#c17854] mb-2">
-                  100+
-                </div>
-                <p className="font-medium text-gray-700">
-                  Schools Connected
-                  <br />
-                  <span className="text-sm text-gray-600">학교 연결</span>
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100">
-                <div className="text-4xl font-extrabold text-[#c17854] mb-2">
-                  5
-                </div>
-                <p className="font-medium text-gray-700">
-                  Terms as School Board Member
-                  <br />
-                  <span className="text-sm text-gray-600">교육위원 연임</span>
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100">
-                <div className="text-4xl font-extrabold text-[#c17854] mb-2">
-                  2007
-                </div>
-                <p className="font-medium text-gray-700">
-                  Korean Language in US Schools
-                  <br />
-                  <span className="text-sm text-gray-600">한국어 정규과목 개설</span>
-                </p>
-              </div>
-            </div>
+            
 
             {/* Key Achievements */}
             <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2c5282] rounded-2xl p-8 md:p-12 text-white">
