@@ -339,10 +339,158 @@ const Home = ({ data }) => {
             </Container>
            
           </m.section>
+
+
+ 
+
+<section className="py-16 bg-white md:py-20">
+  <Container>
+    <div className="max-w-6xl mx-auto">
+      {/* Section Header - Bilingual */}
+      <div className="mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-[#1e3a5f] mb-3">
+          What We Do
+        </h2>
+        <p className="text-2xl font-medium text-gray-600 md:text-3xl">
+          우리가 하는 일
+        </p>
+      </div>
+
+      {/* 4 Program Category Cards */}
+      <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+        
+        {/* Card 1: School Partnerships */}
+        <Link href="/jewel-partnerships">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4">
+              {/* Icon */}
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center text-3xl">
+                🤝
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                  School Partnerships
+                </h3>
+                <p className="mb-3 text-xl font-medium text-gray-600">
+                  학교 파트너십
+                </p>
+                <p className="mb-3 leading-relaxed text-gray-700">
+                  Connect US and Korean schools through meaningful cultural and educational exchanges.
+                </p>
+                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Link>
+
+        {/* Card 2: Visit to Korea */}
+        <Link href="/roots-and-routes">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4">
+              {/* Icon */}
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center text-3xl">
+                ✈️
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                  Visit to Korea
+                </h3>
+                <p className="mb-3 text-xl font-medium text-gray-600">
+                  한국 방문 프로그램
+                </p>
+                <p className="mb-3 leading-relaxed text-gray-700">
+                  Immersive cultural and educational trips for U.S. students.
+                </p>
+                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Link>
+
+        {/* Card 3: Learn Korean */}
+        <Link href="/ganadara">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4">
+              {/* Icon */}
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center text-3xl">
+                📚
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                  Learn Korean
+                </h3>
+                <p className="mb-3 text-xl font-medium text-gray-600">
+                  한국어 학습
+                </p>
+                <p className="mb-3 leading-relaxed text-gray-700">
+                  Korean language programs for students of all levels, from beginners to advanced.
+                </p>
+                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Link>
+
+        {/* Card 4: Future Education */}
+        <Link href="/eunoia">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4">
+              {/* Icon */}
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center text-3xl">
+                🎓
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                  Future Education
+                </h3>
+                <p className="mb-3 text-xl font-medium text-gray-600">
+                  미래 교육
+                </p>
+                <p className="mb-3 leading-relaxed text-gray-700">
+                  Innovative educational programs preparing students for tomorrow's challenges.
+                </p>
+                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Link>
+
+      </div>
+    </div>
+  </Container>
+</section>
           {/* Photo Gallery Section - Add to Homepage */}
 
 
-<div className="relative z-10 -mt-16 md:-mt-20 lg:-mt-24">
+<div className="relative z-10">
 <SimpleZigzagStrip
   photos={[
     { src: "/images/strip/strip-1.jpg", alt: "Palace visit" },
@@ -417,7 +565,7 @@ const Home = ({ data }) => {
           
 
             {/* Programs Section - With Better Header */}
-          <Container>
+          {/* <Container>
             <section className="py-12 md:py-20">
               <div className="mb-12 text-center">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-4 font-clash text-[#120902]">
@@ -428,7 +576,7 @@ const Home = ({ data }) => {
                 </p>
               </div>
 
-              {/* Featured Program - Learncation */}
+           
               <div className="mb-8 md:mb-12">
                 <a
                   className="block"
@@ -483,7 +631,7 @@ const Home = ({ data }) => {
                 </a>
               </div>
 
-              {/* Other Programs - Two Rows of Two */}
+            
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
                 <Link href="/">
                   <a className="card-wrapper-link">
@@ -510,7 +658,7 @@ const Home = ({ data }) => {
                   </a>
                 </Link>
                 
-                <Link href="/jewel">
+                <Link href="/jewel-partnerships">
                   <a className="card-wrapper-link">
                     <article className="card flex flex-col h-full border border-[#120902] rounded-lg hover:shadow-lg transition-shadow duration-300">
                       <div className="relative w-full h-[260px] rounded-t-lg overflow-hidden">
@@ -578,7 +726,7 @@ const Home = ({ data }) => {
             </section>
             
             <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
+          </Container> */}
 
 {/* original columns layout */}
           {/* <Container>
@@ -742,7 +890,7 @@ const Home = ({ data }) => {
           </Container> */}
           
           {/* Featured Project Section */}
-          <Container>
+          {/* <Container>
             <section className="py-12 md:py-20">
               <div className="mb-8 text-center">
                 <span className="inline-block px-4 py-2 bg-[#d96e34] text-white font-semibold rounded-full text-sm md:text-base mb-4">
@@ -757,7 +905,7 @@ const Home = ({ data }) => {
               </div>
 
               <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
-                {/* Image Side */}
+            
                 <div className="order-2 md:order-1">
                   <div className="relative overflow-hidden rounded-lg shadow-lg">
                     <Image
@@ -770,7 +918,7 @@ const Home = ({ data }) => {
                   </div>
                 </div>
 
-                {/* Content Side */}
+             
                 <div className="order-1 md:order-2">
                   <h3 className="text-2xl md:text-3xl font-bold mb-6 text-[#120902]">
                     Preserving Our Shared History
@@ -782,7 +930,7 @@ const Home = ({ data }) => {
                     As we prepare for our 2025 exhibition, we continue to collect stories, preserve historical materials, and educate communities about the Korean American experience.
                   </p>
 
-                 {/* Partner Logos */}
+              
                   <div className="mb-8 p-6 bg-[#f9f7f4] rounded-lg">
                     <h4 className="mb-4 text-sm font-semibold tracking-wide text-center text-gray-600 uppercase">
                       In Partnership With
@@ -831,7 +979,7 @@ const Home = ({ data }) => {
                     </div>
                   </div>
 
-                  {/* CTAs */}
+                  
                   <div className="flex flex-col gap-4 sm:flex-row">
                     <Link href="/aaih/exhibit">
                       <a className="inline-flex items-center justify-center px-6 py-3 font-semibold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300">
@@ -849,7 +997,7 @@ const Home = ({ data }) => {
             </section>
             
             <hr className="hidden md:block bg-black h-[1px] border-none" />
-          </Container>
+          </Container> */}
         
 
           
@@ -904,38 +1052,7 @@ const Home = ({ data }) => {
             </section>
           </Container> */}
 
-          <Container>
-            <section className="mx-4 my-12 bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl">
-              <div className="w-full p-8 md:p-16">
-                <div className="max-w-4xl mx-auto text-center">
-                  <div className="mb-6">
-                    <svg className="w-12 h-12 mx-auto mb-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                    </svg>
-                    <h3 className="mb-4 text-2xl font-bold text-gray-800 md:text-4xl">
-                      Stay Connected
-                    </h3>
-                  </div>
-                  <p className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-gray-700 md:text-xl">
-                    Sign up for email updates to stay informed about our
-                    community's latest initiatives, volunteer opportunities, and
-                    other events.
-                  </p>
-                  <div className="mx-auto text-center">
-                    <a
-                      href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
-                      className="inline-block px-8 py-4 text-lg font-bold text-white transition-all duration-300 transform bg-gray-800 rounded-lg shadow-lg hover:bg-gray-900 hover:scale-105 hover:shadow-xl"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      📧 Subscribe to Newsletter
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </Container>
+         
 
           {/* <Container>
             <section className="py-4 md:py-10">
@@ -1134,7 +1251,7 @@ const Home = ({ data }) => {
 
             
             <hr className="hidden md:block bg-black h-[1px] border-none" />
-
+{/* 
             <section className="py-4 md:py-10">
               <div className="flex flex-row content md:flex-col">
                 <div className="w-full md:w-1/2">
@@ -1155,7 +1272,85 @@ const Home = ({ data }) => {
                   </div>
                 </div>
               </div>
-            </section>
+            </section> */}
+
+            {/* CONSOLIDATED BOTTOM SECTION - Replaces Newsletter + Partner sections */}
+{/* Place this before the footer */}
+
+<section className="py-16 md:py-24 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
+  <Container>
+    <div className="max-w-6xl mx-auto">
+      
+      {/* Section Header */}
+      <div className="mb-12 text-center">
+        <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
+          Get Involved
+        </h2>
+        <p className="text-xl text-white/90">
+          Join our community and stay connected
+        </p>
+      </div>
+
+      {/* Two-column CTAs */}
+      <div className="grid gap-8 md:grid-cols-2">
+        
+        {/* Newsletter CTA */}
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20 hover:border-[#c17854] transition-all">
+          <div className="text-center">
+            <div className="w-16 h-16 rounded-full bg-[#c17854] mx-auto mb-4 flex items-center justify-center">
+              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            </div>
+            
+            <h3 className="mb-3 text-2xl font-bold text-white">
+              Stay Connected
+            </h3>
+            
+            <p className="mb-6 leading-relaxed text-white/90">
+              Get updates about programs, events, and volunteer opportunities.
+            </p>
+            
+            <a
+              href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
+              className="inline-block px-6 py-3 bg-[#c17854] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Subscribe to Newsletter
+            </a>
+          </div>
+        </div>
+
+        {/* Partner CTA */}
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20 hover:border-[#c17854] transition-all">
+          <div className="text-center">
+            <div className="w-16 h-16 rounded-full bg-[#c17854] mx-auto mb-4"></div>
+            
+            <h3 className="mb-3 text-2xl font-bold text-white">
+              Partner with Us
+            </h3>
+            
+            <p className="mb-6 leading-relaxed text-white/90">
+              Collaborate with us to expand our reach and impact on education worldwide.
+            </p>
+            
+            <Link href="/partner-with-us">
+              <a className="inline-block px-6 py-3 bg-white text-[#1e3a5f] font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Learn More
+              </a>
+            </Link>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </Container>
+</section>
+
+{/* FOOTER - Keep as-is but place right after the above section */}
+
           </Container>
         </m.main>
       </LazyMotion>

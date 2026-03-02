@@ -8,7 +8,7 @@ export default function PhotoGallery({ title, subtitle, photos }) {
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
-            {title || "Our Students in Action"}
+            {title || ""}
           </h2>
           {subtitle && (
             <p className="max-w-2xl mx-auto text-lg text-gray-700">
@@ -56,7 +56,7 @@ export default function PhotoGallery({ title, subtitle, photos }) {
         </div>
 
         {/* Optional CTA */}
-        {photos.length >= 6 && (
+        {/* {photos.length >= 6 && (
           <div className="mt-12 text-center">
             <a
               href="/gallery"
@@ -68,7 +68,7 @@ export default function PhotoGallery({ title, subtitle, photos }) {
               </svg>
             </a>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );
@@ -108,7 +108,7 @@ export function MasonryGallery({ photos }) {
 // Photo Testimonial Component
 export function PhotoTestimonial({ image, quote, name, role, year }) {
   return (
-    <div className="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+    <div className="p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
       <div className="flex flex-col gap-6 md:flex-row">
         {/* Photo */}
         <div className="flex-shrink-0">

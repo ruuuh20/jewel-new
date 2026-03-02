@@ -214,7 +214,7 @@ const RootsAndRoutes = () => {
 
 {/* 🆕 PHOTO GALLERY - "WHAT YOU'LL EXPERIENCE" */}
 <PhotoGallery
-  title="What You'll Experience"
+  title=""
   subtitle=""
   photos={[
     {
@@ -573,7 +573,7 @@ const RootsAndRoutes = () => {
       <div>
         <h4 className="font-bold text-[#120902] mb-1">Balance Payment: $2,900</h4>
         <p className="text-gray-700">
-          Due upon acceptance into the program, along with passport information. Must be submitted by [DATE - e.g., March 1, 2026].
+          Due upon acceptance into the program, along with passport information..
         </p>
       </div>
     </div>
@@ -636,7 +636,7 @@ const RootsAndRoutes = () => {
                 </h2>
                 
                 <p className="mb-12 italic text-center text-gray-600">
-                  April 2-11, 2026 • 10 Days / 10 Nights • Schedule subject to change
+                 Schedule subject to change
                 </p>
 
                 <div className="space-y-8">
@@ -651,7 +651,7 @@ const RootsAndRoutes = () => {
                       <h3 className="text-xl font-bold mb-2 text-[#120902]">Arrival & Seoul City Tour</h3>
                       <p className="mb-2 text-sm text-gray-500">Friday, April 3 • Seoul</p>
                       <p className="text-gray-700">
-                        Arrive at Incheon International Airport. Begin Seoul city tour with a visit to Namsan Tower for panoramic city views. Hotel check-in and orientation session with ice-breaking activities to meet fellow participants.
+                        Arrive at Incheon International Airport. Begin Seoul city tour with a visit to Namsan Tower for panoramic city views. Hotel check-in and orientation session with activities to meet fellow participants.
                       </p>
                     </div>
                   </div>
@@ -683,7 +683,7 @@ const RootsAndRoutes = () => {
                       <h3 className="text-xl font-bold mb-2 text-[#120902]">Modern Korea & Cultural Exploration</h3>
                       <p className="mb-2 text-sm text-gray-500">Sunday, April 5 • Seoul → Hoengseong</p>
                       <p className="text-gray-700">
-                        Explore the National Museum of Korea to understand Korean history and culture. Visit Lotte Sky (Seoul Sky observation deck) for stunning city views, then head to Gangnam COEX K-pop Square to experience contemporary Korean culture. Evening departure for Minjok Leadership Academy in Gangwon-do. Reflection and journaling session on the journey.
+                        Explore the National Museum of Korea to understand Korean history and culture. Visit Lotte Sky (Seoul Sky observation deck) for stunning city views, then head to Gangnam COEX K-pop Square to experience contemporary Korean culture. Evening departure for Minjok Leadership Academy in Gangwon-do.
                       </p>
                     </div>
                   </div>
