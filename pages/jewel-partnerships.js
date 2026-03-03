@@ -41,20 +41,14 @@ export default function JewelPage() {
         <Container>
           <div className="max-w-6xl mx-auto">
             {/* Section Label */}
-            <div className="text font-bold text-[#1a5fa8] uppercase tracking-wider mb-4 animate-on-scroll">
+            <div className="text-sm font-bold text-[#1a5fa8] uppercase tracking-wider mb-4 animate-on-scroll">
               What is Project JEWEL? • Project JEWEL이란?
             </div>
 
-            <div className="grid gap-12 md:grid-cols-2 lg:gap-16">
+            <div className="grid gap-12 text-base md:grid-cols-2 lg:gap-16">
               {/* Left Column - Text */}
               <div className="animate-on-scroll">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240] mb-6 leading-tight">
-                  Not a one-time trip.<br />
-                  A sustainable global education.
-                </h2>
-                <p className="mb-4 text-lg leading-relaxed text-gray-700">
-                  "한 번 다녀오는 교류"가 아니라 "지속가능한 글로벌 학습"
-                </p>
+              
                 <p className="mb-4 leading-relaxed text-gray-700">
                   Project JEWEL is an international exchange specialist nonprofit based in 
                   New York/New Jersey. We connect US and Korean public and private schools 
@@ -66,18 +60,12 @@ export default function JewelPage() {
                   비영리단체입니다. 양국의 공립·사립 초·중·고교 및 교육청을 위한 안전하고 
                   신뢰할 수 있는 지속가능한 글로벌 학습을 지원합니다.
                 </p>
+
+                 <p className="mb-4 text-lg leading-relaxed text-gray-700">
+                  "한 번 다녀오는 교류"가 아니라 "지속가능한 글로벌 학습"
+                </p>
                 
-                {/* JEWEL Acronym Box */}
-                <div className="bg-gradient-to-br from-[#f7f8fa] to-white p-6 rounded-xl border-2 border-gray-100">
-                  <div className="text-2xl font-extrabold text-[#0d2240] mb-3">JEWEL</div>
-                  <div className="flex flex-wrap gap-2 text-sm">
-                    <span className="text-gray-700"><strong className="font-bold">J</strong>oining</span>
-                    <span className="text-gray-700"><strong className="font-bold">E</strong>ast &</span>
-                    <span className="text-gray-700"><strong className="font-bold">W</strong>est as</span>
-                    <span className="text-gray-700"><strong className="font-bold">E</strong>ducational</span>
-                    <span className="text-gray-700"><strong className="font-bold">L</strong>iaisons</span>
-                  </div>
-                </div>
+               
               </div>
 
               {/* Right Column - Three Pillars */}

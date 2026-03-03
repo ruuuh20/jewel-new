@@ -209,14 +209,16 @@ export default function Founder(props) {
                     <h3 className="text-xl font-bold text-[#120902] mb-6 pb-2 border-b-2 border-[#d96e34]">
                       Current Positions
                     </h3>
-                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
-                        <div className="font-bold text-[#120902] mb-1 font-pretend">NY한글뮤지엄 추진위원회</div>
-                        <div className="text-sm text-gray-700 font-pretend">추진위원회 위원장</div>
-                      </div>
+                      
                     <div className="space-y-4">
                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
                         <div className="font-bold text-[#120902] mb-1">Educate Together</div>
                         <div className="text-sm text-gray-700 font-pretend">함께하는교육 | 비영리교육단체 대표</div>
+                      </div>
+
+                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
+                        <div className="font-bold text-[#120902] mb-1 font-pretend">NY한글뮤지엄 추진위원회</div>
+                        <div className="text-sm text-gray-700 font-pretend">추진위원회 위원장</div>
                       </div>
                       
                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
