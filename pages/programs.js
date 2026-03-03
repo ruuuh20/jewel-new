@@ -107,7 +107,7 @@ export default function ProgramsPage() {
                   </div>
                   
                   <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
-                    Ganadara 
+                    Ganadara Learn Korean
                   </h2>
                   
                   <p className="mb-4 text-xl font-medium text-gray-600">

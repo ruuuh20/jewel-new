@@ -162,36 +162,7 @@ export default function JewelPage() {
                 </div>
               </div>
 
-              {/* Awards & Recognition */}
-              <div className="grid gap-6 pt-8 border-t-2 border-gray-200 md:grid-cols-3">
-                <div className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-[#c17854] mx-auto mb-3"></div>
-                  <div className="font-bold text-[#1e3a5f] mb-2">2018</div>
-                  <p className="text-sm text-gray-700">
-                    Presidential Citation for Education
-                    <br />
-                    <span className="text-[#c17854]">대한민국 포장 수상</span>
-                  </p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-[#c17854] mx-auto mb-3"></div>
-                  <div className="font-bold text-[#1e3a5f] mb-2">2025</div>
-                  <p className="text-sm text-gray-700">
-                    International Education Forum Speaker
-                    <br />
-                    <span className="text-[#c17854]">대구 국제교류포럼 발표자</span>
-                  </p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-[#c17854] mx-auto mb-3"></div>
-                  <div className="font-bold text-[#1e3a5f] mb-2">2018-2022</div>
-                  <p className="text-sm text-gray-700">
-                    Seoul Education Office Partnership
-                    <br />
-                    <span className="text-[#c17854]">서울시 교육청 위탁 운영</span>
-                  </p>
-                </div>
-              </div>
+            
             </div>
           </div>
         </Container>
@@ -458,7 +429,7 @@ export default function JewelPage() {
           <div className="max-w-5xl mx-auto">
             <div className="mb-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
-                Why Choose Project JEWEL
+                Why Work with Project JEWEL
               </h2>
               <p className="text-xl text-gray-600">
                 왜 JEWEL인가
