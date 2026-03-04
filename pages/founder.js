@@ -159,19 +159,27 @@ export default function Founder(props) {
           className="pb-16"
           variants={fade}
         >
-          {/* Header */}
-          <div className="relative w-full py-12 md:py-16 border-b-2 border-[#d96e34] bg-gradient-to-r from-[#FFF8F0] to-white">
+       {/* Hero Section - Updated to match other pages */}
+          <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
-              <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-                <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#120902]">
+              <div className="max-w-4xl mx-auto text-center text-white">
+                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                  <span className="font-bold">About • 소개</span>
+                </div>
+                
+                <h1 className="mb-4 text-4xl font-bold md:text-5xl xl:text-6xl">
                   Founder's Message
                 </h1>
-                <div className="text-2xl font-bold text-gray-600 md:text-3xl font-pretend">
+                
+                <p className="mb-6 text-2xl font-semibold md:text-3xl font-pretend">
                   대표 인사말
-                </div>
+                </p>
+                
+              
               </div>
             </Container>
-          </div>
+          </section>
+
 
           <Container>
             {/* Main Content - Better Layout */}

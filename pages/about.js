@@ -30,29 +30,37 @@ export default function About(props) {
           variants={fade}
           className="mb-12 md:mb-16 xl:mb-24"
         >
-          {/* Hero Header */}
-          <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
+        {/* Hero Section - Updated to match other pages */}
+          <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
-              <div className="max-w-4xl mx-auto">
-                <div className="flex items-center justify-between mb-8">
-                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#1e3a5f] tracking-tight">
-                    About Us
-                  </h1>
-                  <div className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-lg">
-                    <span>함께하는교육 소개</span>
-                  </div>
+              <div className="max-w-4xl mx-auto text-center text-white">
+                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                  <span className="font-bold">About • 소개</span>
                 </div>
+                
+                <h1 className="mb-4 text-4xl font-bold md:text-5xl xl:text-6xl">
+                  About Us
+                </h1>
+                
+                <p className="mb-8 text-2xl font-semibold md:text-3xl">
+                  함께하는교육 소개
+                </p>
 
-                {posts && posts.map((post) => (
-                  <div key={post._id}>
-                    <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-                      {post.introText}
-                    </p>
-                  </div>
-                ))}
+                {/* Simplified intro text - replace Sanity content with this clearer version */}
+                <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
+                  Educate Together is a New York/New Jersey-based nonprofit connecting US and Korean 
+                  schools through educational and cultural exchange programs. We facilitate school 
+                  partnerships, student trips, Korean language education, and international collaboration.
+                </p>
+                
+                {/* Bilingual version */}
+                <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed md:text-lg text-white/75">
+                  함께하는교육은 뉴욕/뉴저지 기반 비영리단체로, 미국과 한국의 학교를 교육 및 문화 교류 
+                  프로그램으로 연결합니다. 학교 파트너십, 학생 여행, 한국어 교육, 국제 협력을 지원합니다.
+                </p>
               </div>
             </Container>
-          </div>
+          </section>
 
           {/* Mission & Goals Section */}
           <Container>

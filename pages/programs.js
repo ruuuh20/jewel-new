@@ -9,7 +9,7 @@ export default function ProgramsPage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
         <Container>
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="mb-6 text-4xl font-bold md:text-5xl xl:text-6xl">
