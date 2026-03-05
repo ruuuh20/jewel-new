@@ -21,7 +21,7 @@ export default function About(props) {
 
   return (
     <Layout>
-      <NextSeo title="About" description="Educate Together is a nonprofit organization" />
+      <NextSeo title="About" description="Educate Together connects US and Korean schools" />
       <LazyMotion features={domAnimation}>
         <m.div
           initial="initial"
@@ -30,106 +30,212 @@ export default function About(props) {
           variants={fade}
           className="mb-12 md:mb-16 xl:mb-24"
         >
-        {/* Hero Section - Updated to match other pages */}
-          <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
+          {/* Hero Section - Professional Style */}
+          <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-[#0d2240] via-[#163258] to-[#1a5fa8]">
             <Container>
               <div className="max-w-4xl mx-auto text-center text-white">
-                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
-                  <span className="font-bold">About • 소개</span>
+                <div className="inline-block px-5 py-2 mb-6 border rounded-full bg-white/10 border-white/20">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#e8b45a]">
+                    About Us • 소개
+                  </span>
                 </div>
                 
-                <h1 className="mb-4 text-4xl font-bold md:text-5xl xl:text-6xl">
-                  About Us
+                <h1 className="mb-6 text-5xl font-extrabold leading-none md:text-6xl xl:text-7xl">
+                  Educate Together
                 </h1>
                 
-                <p className="mb-8 text-2xl font-semibold md:text-3xl">
-                  함께하는교육 소개
+                <p className="mb-4 text-xl font-light md:text-2xl text-white/75">
+                  함께하는교육
                 </p>
 
-                {/* Simplified intro text - replace Sanity content with this clearer version */}
-                <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
-                  Educate Together is a New York/New Jersey-based nonprofit connecting US and Korean 
-                  schools through educational and cultural exchange programs. We facilitate school 
-                  partnerships, student trips, Korean language education, and international collaboration.
-                </p>
-                
-                {/* Bilingual version */}
-                <p className="max-w-3xl mx-auto mt-4 text-base leading-relaxed md:text-lg text-white/75">
-                  함께하는교육은 뉴욕/뉴저지 기반 비영리단체로, 미국과 한국의 학교를 교육 및 문화 교류 
-                  프로그램으로 연결합니다. 학교 파트너십, 학생 여행, 한국어 교육, 국제 협력을 지원합니다.
+                {/* Simplified intro */}
+                <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/80">
+                  A New York/New Jersey-based nonprofit connecting US and Korean schools through 
+                  educational and cultural exchange programs.
                 </p>
               </div>
             </Container>
           </section>
 
-          {/* Mission & Goals Section */}
+          {/* Mission Statement - Single, Clean */}
           <Container>
-            <section className="py-16 md:py-24">
+            <section className="py-20 md:py-28">
+              <div className="max-w-4xl mx-auto">
+                <div className="mb-6 text-center">
+                  <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
+                    Our Mission • 우리의 미션
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240] mb-8">
+                    What We Do
+                  </h2>
+                </div>
+                
+                <div className="bg-gradient-to-br from-[#0d2240] to-[#1a5fa8] p-10 md:p-12 rounded-2xl text-center">
+                  <p className="text-xl font-light leading-relaxed text-white md:text-2xl">
+                    We connect US and Korean schools through sustainable educational partnerships, 
+                    fostering cross-cultural understanding and global citizenship.
+                  </p>
+                  <p className="mt-4 text-lg font-light md:text-xl text-white/70">
+                    미국과 한국의 학교를 지속가능한 교육 파트너십으로 연결하여 상호 문화 이해와 
+                    세계 시민의식을 함양합니다.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </Container>
+
+          {/* What We Offer - Clean Grid */}
+          <section className="py-20 md:py-28 bg-[#f7f8fa]">
+            <Container>
               <div className="max-w-6xl mx-auto">
-                <div className="grid gap-12 md:gap-16 lg:grid-cols-2">
-                  {/* Our Mission */}
-                  <div>
-                    <div className="mb-6">
-                      <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4 relative inline-block pb-3">
-                        Our Mission
-                        <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#c17854]"></span>
-                      </h2>
-                    </div>
-                    <div className="space-y-6">
-                      <div className="bg-white p-6 rounded-lg border-l-4 border-[#c17854] shadow-sm">
-                        <p className="text-lg leading-relaxed text-gray-700">
-                          To enhance awareness and appreciation of cultural diversity by providing resources and expertise in language education and cultural programs.
-                        </p>
+                <div className="mb-12 text-center">
+                  <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
+                    What We Offer • 제공 서비스
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240]">
+                    Our Programs
+                  </h2>
+                </div>
+
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                  <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
+                    <div className="text-center">
+                      <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
                       </div>
-                      <div className="bg-white p-6 rounded-lg border-l-4 border-[#c17854] shadow-sm">
-                        <p className="text-lg leading-relaxed text-gray-700">
-                          By fostering mutual understanding and collaboration, Educate Together serves as a bridge for communities to explore cultures around the world.
-                        </p>
-                      </div>
+                      <h3 className="text-lg font-bold text-[#0d2240] mb-2">
+                        School Partnerships
+                      </h3>
+                      <p className="text-sm leading-relaxed text-gray-600">
+                        Connecting US and Korean schools for long-term collaboration
+                      </p>
                     </div>
                   </div>
 
-                  {/* Our Goals */}
-                  <div>
-                    <div className="mb-6">
-                      <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4 relative inline-block pb-3">
-                        Our Goals
-                        <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#c17854]"></span>
-                      </h2>
+                  <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
+                    <div className="text-center">
+                      <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
+                      </div>
+                      <h3 className="text-lg font-bold text-[#0d2240] mb-2">
+                        Student Trips
+                      </h3>
+                      <p className="text-sm leading-relaxed text-gray-600">
+                        Immersive cultural and educational experiences in Korea
+                      </p>
                     </div>
-                    <div className="space-y-4">
-                      <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
-                        <div className="flex items-start gap-4">
-                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
-                            1
-                          </div>
-                          <p className="flex-1 text-lg leading-relaxed text-gray-700">
-                            Provide opportunities for the enrichment and learning of Asian cultures and history.
-                          </p>
-                        </div>
+                  </div>
+
+                  <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
+                    <div className="text-center">
+                      <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
                       </div>
-                      
-                      <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
-                        <div className="flex items-start gap-4">
-                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
-                            2
-                          </div>
-                          <p className="flex-1 text-lg leading-relaxed text-gray-700">
-                            Empower future generations to celebrate their own heritage while engaging with other cultures.
-                          </p>
-                        </div>
+                      <h3 className="text-lg font-bold text-[#0d2240] mb-2">
+                        Korean Language
+                      </h3>
+                      <p className="text-sm leading-relaxed text-gray-600">
+                        Language programs for heritage learners and beginners
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
+                    <div className="text-center">
+                      <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
                       </div>
-                      
-                      <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
-                        <div className="flex items-start gap-4">
-                          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
-                            3
-                          </div>
-                          <p className="flex-1 text-lg leading-relaxed text-gray-700">
-                            Promote mutual understanding for world cultures and methods of education.
-                          </p>
-                        </div>
+                      <h3 className="text-lg font-bold text-[#0d2240] mb-2">
+                        Cultural Programs
+                      </h3>
+                      <p className="text-sm leading-relaxed text-gray-600">
+                        Workshops, events, and resources for Korean culture
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Container>
+          </section>
+
+          {/* Goals - Refocused on Korean, Simplified */}
+          <Container>
+            <section className="py-20 md:py-28">
+              <div className="max-w-5xl mx-auto">
+                <div className="mb-12 text-center">
+                  <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
+                    Our Goals • 우리의 목표
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240] mb-4">
+                    What We Aim to Achieve
+                  </h2>
+                  <p className="max-w-3xl mx-auto text-lg text-gray-600">
+                    Three core objectives guide our work
+                  </p>
+                </div>
+
+                <div className="space-y-6">
+                  {/* Goal 1 */}
+                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-8 flex gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-[#1a5fa8] text-white flex items-center justify-center font-bold text-xl">
+                        1
                       </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-[#0d2240] mb-3">
+                        Connect Students with Korean Heritage
+                      </h3>
+                      <p className="mb-2 leading-relaxed text-gray-700">
+                        Provide opportunities for Korean-American students to explore their cultural 
+                        roots through language, history, and traditions.
+                      </p>
+                      <p className="text-sm leading-relaxed text-gray-600">
+                        한국계 미국 학생들이 언어, 역사, 전통을 통해 문화적 뿌리를 탐색할 기회를 제공합니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Goal 2 */}
+                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-8 flex gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-[#1a5fa8] text-white flex items-center justify-center font-bold text-xl">
+                        2
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-[#0d2240] mb-3">
+                        Build US-Korea Educational Bridges
+                      </h3>
+                      <p className="mb-2 leading-relaxed text-gray-700">
+                        Foster lasting partnerships between American and Korean schools, creating 
+                        opportunities for mutual learning and cultural exchange.
+                      </p>
+                      <p className="text-sm leading-relaxed text-gray-600">
+                        미국과 한국 학교 간 지속적인 파트너십을 구축하여 상호 학습과 문화 교류의 기회를 만듭니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Goal 3 */}
+                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-8 flex gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-[#1a5fa8] text-white flex items-center justify-center font-bold text-xl">
+                        3
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-[#0d2240] mb-3">
+                        Develop Global Citizens
+                      </h3>
+                      <p className="mb-2 leading-relaxed text-gray-700">
+                        Empower students to become culturally aware, globally minded individuals who 
+                        can navigate and contribute to an interconnected world.
+                      </p>
+                      <p className="text-sm leading-relaxed text-gray-600">
+                        학생들이 문화적으로 인식하고 글로벌 마인드를 가진 개인으로 성장하여 상호 연결된 
+                        세계에 기여할 수 있도록 역량을 강화합니다.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -137,22 +243,31 @@ export default function About(props) {
             </section>
           </Container>
 
-          {/* Related Pages Navigation */}
+          {/* Related Pages Navigation - Cleaner Style */}
           <Container>
-            <section className="py-12 border-t border-gray-200 md:py-16">
+            <section className="py-20 md:py-28">
               <div className="max-w-6xl mx-auto">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-8 text-center">
-                  Learn More About Educate Together
-                </h3>
+                <div className="mb-12 text-center">
+                  <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
+                    Learn More • 더 알아보기
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#0d2240]">
+                    About Educate Together
+                  </h3>
+                </div>
+                
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                   <Link href="/founder">
                     <a className="group">
-                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
-                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
-                          Founder's Message
+                      <div className="bg-white rounded-xl p-8 border-2 border-gray-100 hover:border-[#1a5fa8] transition-all h-full">
+                        <div className="w-10 h-10 rounded-full bg-[#1a5fa8]/10 mb-4 flex items-center justify-center">
+                          <div className="w-5 h-5 rounded-full bg-[#1a5fa8]"></div>
+                        </div>
+                        <h4 className="text-lg font-bold text-[#0d2240] mb-2 group-hover:text-[#1a5fa8] transition-colors">
+                          Founder
                         </h4>
-                        <p className="text-gray-600">
-                          Hear from our founder
+                        <p className="text-sm text-gray-600">
+                          Meet Kay Kim
                         </p>
                       </div>
                     </a>
@@ -160,12 +275,15 @@ export default function About(props) {
                   
                   <Link href="/leadership">
                     <a className="group">
-                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
-                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
+                      <div className="bg-white rounded-xl p-8 border-2 border-gray-100 hover:border-[#1a5fa8] transition-all h-full">
+                        <div className="w-10 h-10 rounded-full bg-[#1a5fa8]/10 mb-4 flex items-center justify-center">
+                          <div className="w-5 h-5 rounded-full bg-[#1a5fa8]"></div>
+                        </div>
+                        <h4 className="text-lg font-bold text-[#0d2240] mb-2 group-hover:text-[#1a5fa8] transition-colors">
                           Leadership
                         </h4>
-                        <p className="text-gray-600">
-                          Meet our team
+                        <p className="text-sm text-gray-600">
+                          Our team
                         </p>
                       </div>
                     </a>
@@ -173,12 +291,15 @@ export default function About(props) {
                   
                   <Link href="/history">
                     <a className="group">
-                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
-                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
-                          Our History
+                      <div className="bg-white rounded-xl p-8 border-2 border-gray-100 hover:border-[#1a5fa8] transition-all h-full">
+                        <div className="w-10 h-10 rounded-full bg-[#1a5fa8]/10 mb-4 flex items-center justify-center">
+                          <div className="w-5 h-5 rounded-full bg-[#1a5fa8]"></div>
+                        </div>
+                        <h4 className="text-lg font-bold text-[#0d2240] mb-2 group-hover:text-[#1a5fa8] transition-colors">
+                          History
                         </h4>
-                        <p className="text-gray-600">
-                          Explore our journey
+                        <p className="text-sm text-gray-600">
+                          Our journey
                         </p>
                       </div>
                     </a>
@@ -186,12 +307,15 @@ export default function About(props) {
                   
                   <Link href="/programs">
                     <a className="group">
-                      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[#c17854] h-full hover:-translate-y-1">
-                        <h4 className="text-xl font-bold text-[#120902] mb-2 group-hover:text-[#1e3a5f] transition-colors">
+                      <div className="bg-white rounded-xl p-8 border-2 border-gray-100 hover:border-[#1a5fa8] transition-all h-full">
+                        <div className="w-10 h-10 rounded-full bg-[#1a5fa8]/10 mb-4 flex items-center justify-center">
+                          <div className="w-5 h-5 rounded-full bg-[#1a5fa8]"></div>
+                        </div>
+                        <h4 className="text-lg font-bold text-[#0d2240] mb-2 group-hover:text-[#1a5fa8] transition-colors">
                           Programs
                         </h4>
-                        <p className="text-gray-600">
-                          See what we offer
+                        <p className="text-sm text-gray-600">
+                          What we offer
                         </p>
                       </div>
                     </a>
