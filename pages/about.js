@@ -30,26 +30,23 @@ export default function About(props) {
           variants={fade}
           className="mb-12 md:mb-16 xl:mb-24"
         >
-          {/* Hero Section - Professional Style */}
-          <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-[#0d2240] via-[#163258] to-[#1a5fa8]">
+         <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
               <div className="max-w-4xl mx-auto text-center text-white">
-                <div className="inline-block px-5 py-2 mb-6 border rounded-full bg-white/10 border-white/20">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#e8b45a]">
-                    About Us • 소개
-                  </span>
+                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                  <span className="font-bold">About • 소개</span>
                 </div>
                 
-                <h1 className="mb-6 text-5xl font-extrabold leading-none md:text-6xl xl:text-7xl">
-                  Educate Together
+                <h1 className="mb-4 text-4xl font-bold md:text-5xl xl:text-6xl">
+                  About Us
                 </h1>
                 
-                <p className="mb-4 text-xl font-light md:text-2xl text-white/75">
-                  함께하는교육
+                <p className="mb-8 text-2xl font-semibold md:text-3xl">
+                  함께하는교육 소개
                 </p>
 
                 {/* Simplified intro */}
-                <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/80">
+                <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
                   A New York/New Jersey-based nonprofit connecting US and Korean schools through 
                   educational and cultural exchange programs.
                 </p>

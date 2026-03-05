@@ -51,26 +51,28 @@ export default function History(props) {
           variants={fade}
           className="mb-12 md:mb-16 xl:mb-24"
         >
-          {/* Hero Header */}
-          <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
+          <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
-              <div className="max-w-4xl mx-auto">
-                <div className="flex items-center justify-between mb-8">
-                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-[#1e3a5f] tracking-tight">
-                    Our History
-                  </h1>
-                  <div className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-lg">
-                    <span>함께하는교육이 걸어온 길</span>
-                  </div>
+              <div className="max-w-4xl mx-auto text-center text-white">
+                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                  <span className="font-bold">History • 역사</span>
                 </div>
-                {posts && posts[0] && (
-                  <p className="text-xl leading-relaxed text-gray-700 md:text-2xl">
-                    {posts[0].history[locale]}
-                  </p>
-                )}
+                
+                <h1 className="mb-4 text-4xl font-bold md:text-5xl xl:text-6xl">
+                  Our History
+                </h1>
+                
+                <p className="mb-6 text-2xl font-semibold md:text-3xl">
+                  함께하는교육이 걸어온 길
+                </p>
+
+                {/* Clean tagline instead of vague paragraph */}
+                <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/90">
+                  Over 20 years connecting communities through education
+                </p>
               </div>
             </Container>
-          </div>
+          </section>
 
           {/* Timeline Section */}
           <Container>
