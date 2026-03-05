@@ -40,21 +40,23 @@ export default function Leadership(props) {
           variants={fade}
         >
            {/* Hero Header */}
-          <div className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] pt-16 pb-12 md:pt-24 md:pb-16">
+          <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
-              <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold mb-4 text-[#1e3a5f] tracking-tight">
+              <div className="max-w-4xl mx-auto text-center text-white">
+                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                  <span className="font-bold">Leadership • 리더십</span>
+                </div>
+                
+                <h1 className="mb-4 text-4xl font-bold md:text-5xl xl:text-6xl">
                   Leadership
                 </h1>
-                <p className="text-xl md:text-2xl text-[#334e68] font-semibold mb-2">
+                
+                <p className="text-2xl font-semibold md:text-3xl">
                   함께하는 사람들
-                </p>
-                <p className="max-w-2xl mx-auto text-base text-gray-600 md:text-lg">
-                  Meet the dedicated individuals guiding Educate Together's mission to empower students through education and cultural exchange.
                 </p>
               </div>
             </Container>
-          </div>
+          </section>
           <Container>
             <div className="flex flex-wrap mx-auto md:px-0 md:w-10/12">
               {boardNames.map((name, i) => {
