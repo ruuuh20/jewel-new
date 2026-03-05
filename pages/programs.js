@@ -9,22 +9,26 @@ export default function ProgramsPage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
-        <Container>
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="mb-6 text-4xl font-bold md:text-5xl xl:text-6xl">
-              Our Programs
-            </h1>
-            <p className="mb-4 text-2xl md:text-3xl">
-              프로그램
-            </p>
-            <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/90">
-              Connecting students with Korean heritage, culture, and education through 
-              meaningful international experiences.
-            </p>
-          </div>
-        </Container>
-      </section>
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
+  <Container>
+    <div className="max-w-4xl mx-auto text-center text-white">
+      <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+        <span className="font-bold">What We Offer • 제공 서비스</span>
+      </div>
+      
+      <h1 className="mb-6 text-4xl font-bold md:text-5xl xl:text-6xl">
+        Our Programs
+      </h1>
+      <p className="mb-4 text-2xl md:text-3xl">
+        프로그램
+      </p>
+      <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/90">
+        Connecting students with Korean heritage, culture, and education through 
+        meaningful international experiences.
+      </p>
+    </div>
+  </Container>
+</section>
 
       {/* Programs Grid */}
       <section className="py-16 bg-white md:py-24">
