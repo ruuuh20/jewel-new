@@ -14,19 +14,19 @@ export default function JewelPage() {
         <Container>
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
-              <span className="font-bold">School Partnerships • 학교 파트너십</span>
+              <span className="font-bold">School Partnerships • 자매학교 교류</span>
             </div>
             
             <h1 className="mb-6 text-4xl font-bold md:text-5xl xl:text-6xl">
-              Project JEWEL
+              JEWEL Partnership
             </h1>
             
-            <p className="mb-4 text-2xl font-semibold md:text-3xl">
+            <p className="mb-4 text-2xl font-semibold md:text-2xl">
               Joining East & West as Educational Liaisons
             </p>
             
             <p className="mb-8 text-xl md:text-2xl text-white/90">
-              교육을 통해 만나는 세계, 협력으로 이어지는 미래
+              교육을 통해 만나는 세계, &nbsp; 협력으로 이어지는 미래
             </p>
             
             <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
@@ -42,7 +42,7 @@ export default function JewelPage() {
           <div className="max-w-6xl mx-auto">
             {/* Section Label */}
             <div className="text-sm font-bold text-[#1a5fa8] uppercase tracking-wider mb-4 animate-on-scroll">
-              What is Project JEWEL? • Project JEWEL이란?
+              What is JEWEL Partnership?
             </div>
 
             <div className="grid gap-12 text-base md:grid-cols-2 lg:gap-16">
@@ -50,7 +50,7 @@ export default function JewelPage() {
               <div className="animate-on-scroll">
               
                 <p className="mb-4 leading-relaxed text-gray-700">
-                  Project JEWEL is an international exchange specialist nonprofit based in 
+                   JEWEL Partnership is an international exchange specialist nonprofit based in 
                   New York/New Jersey. We connect US and Korean public and private schools 
                   — elementary through high school — with safe, trusted, and lasting global 
                   learning experiences.
@@ -149,7 +149,7 @@ export default function JewelPage() {
                     Kay Kim (김경화)
                   </h3>
                   <p className="text-xl text-[#c17854] font-semibold mb-4">
-                    Founder & Director, Project JEWEL
+                    Founder & Director, JEWEL Partnership
                   </p>
                   <p className="mb-4 text-lg leading-relaxed text-gray-700">
                     5-term elected School Board Member, Norwood Public Schools, New Jersey
@@ -429,7 +429,7 @@ export default function JewelPage() {
           <div className="max-w-5xl mx-auto">
             <div className="mb-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
-                Why Work with Project JEWEL
+                Why Work with JEWEL Partnership?
               </h2>
               <p className="text-xl text-gray-600">
                 왜 JEWEL인가
@@ -482,7 +482,7 @@ export default function JewelPage() {
               파트너십을 시작할 준비가 되셨나요?
             </p>
             <p className="mb-8 text-lg text-white/90">
-              Contact us to discuss how Project JEWEL can support your school's international education goals.
+              Contact us to discuss how we can support your school's international education goals.
             </p>
             
             <div className="flex flex-col justify-center gap-4 sm:flex-row">

@@ -39,7 +39,7 @@ export default function ProgramsPage() {
             <div className="grid gap-8 md:grid-cols-2">
               
               {/* Program 1: JEWEL */}
-              <Link href="/jewel-partnerships">
+              <Link href="/jewel-partnership">
                 <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
                   <div className="mb-6">
                     <div className="inline-block px-4 py-2 bg-[#c17854] text-white rounded-full mb-4">
@@ -48,11 +48,11 @@ export default function ProgramsPage() {
                   </div>
                   
                   <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
-                    Project JEWEL
+                     JEWEL Partnership
                   </h2>
                   
                   <p className="mb-4 text-xl font-medium text-gray-600">
-                     국제교류 협력
+                     국제교류 협력원
                   </p>
                   
                   <p className="mb-6 leading-relaxed text-gray-700">

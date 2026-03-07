@@ -230,7 +230,7 @@ export default function Founder(props) {
                       </div>
                       
                       <div className="bg-gradient-to-r from-[#FFF8F0] to-white p-4 rounded-lg border-l-4 border-[#d96e34]">
-                        <div className="font-bold text-[#120902] mb-1">JEWEL</div>
+                        <div className="font-bold text-[#120902] mb-1">JEWEL Partnership</div>
                         <div className="text-sm text-gray-700 font-pretend">Joining East & West | 국제교류협력 대표</div>
                       </div>
                       
