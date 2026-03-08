@@ -275,6 +275,11 @@ export default function Founder(props) {
                       </li>
                     </ul>
                   </div>
+
+                  {/* Photo */}
+                  <div className="mt-8 overflow-hidden shadow-lg rounded-xl">
+                    <img src="/founder-2.jpg" alt="Kay Kim" className="object-cover w-full" />
+                  </div>
                 </div>
 
                 {/* Right Column - Message & Experience (3 cols) */}
