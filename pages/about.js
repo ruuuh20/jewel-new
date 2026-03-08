@@ -30,7 +30,8 @@ export default function About(props) {
           variants={fade}
           className="mb-12 md:mb-16 xl:mb-24"
         >
-         <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
+          {/* Hero Section - Clean, No Intro */}
+          <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
               <div className="max-w-4xl mx-auto text-center text-white">
                 <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
@@ -41,40 +42,29 @@ export default function About(props) {
                   About Us
                 </h1>
                 
-                <p className="mb-8 text-2xl font-semibold md:text-3xl">
+                <p className="text-2xl font-semibold md:text-3xl">
                   함께하는교육 소개
-                </p>
-
-                {/* Simplified intro */}
-                <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
-                  A New York/New Jersey-based nonprofit connecting US and Korean schools through 
-                  educational and cultural exchange programs.
                 </p>
               </div>
             </Container>
           </section>
 
-          {/* Mission Statement - Single, Clean */}
+          {/* Mission Statement - Gray & Navy Design, Combined with Intro */}
           <Container>
-            <section className="py-20 md:py-28">
+            <section className="py-16 md:py-20">
               <div className="max-w-4xl mx-auto">
-                <div className="mb-6 text-center">
-                  <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
+                <div className="mb-8 text-center">
+                  {/* <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
                     Our Mission • 우리의 미션
-                  </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240] mb-8">
-                    What We Do
-                  </h2>
+                  </div> */}
                 </div>
                 
-                <div className="bg-gradient-to-br from-[#0d2240] to-[#1a5fa8] p-10 md:p-12 rounded-2xl text-center">
-                  <p className="text-xl font-light leading-relaxed text-white md:text-2xl">
-                    We connect US and Korean schools through sustainable educational partnerships, 
-                    fostering cross-cultural understanding and global citizenship.
-                  </p>
-                  <p className="mt-4 text-lg font-light md:text-xl text-white/70">
-                    미국과 한국의 학교를 지속가능한 교육 파트너십으로 연결하여 상호 문화 이해와 
-                    세계 시민의식을 함양합니다.
+                {/* Mission Box - Gray background with Navy border */}
+                <div className="bg-gradient-to-br from-gray-50 to-white p-10 md:p-12 rounded-2xl border-l-4 border-[#1e3a5f] shadow-lg">
+                  <p className="text-2xl md:text-3xl text-[#1e3a5f] leading-relaxed font-medium text-center">
+                    We are a New York/New Jersey-based nonprofit dedicated to connecting US and Korean 
+                    educational communities through sustainable partnerships, cultural exchange programs, 
+                    and language education — fostering cross-cultural understanding and global citizenship.
                   </p>
                 </div>
               </div>
@@ -82,12 +72,12 @@ export default function About(props) {
           </Container>
 
           {/* What We Offer - Clean Grid */}
-          <section className="py-20 md:py-28 bg-[#f7f8fa]">
+          <section className="py-16 md:py-20 bg-[#f7f8fa]">
             <Container>
               <div className="max-w-6xl mx-auto">
-                <div className="mb-12 text-center">
+                <div className="mb-10 text-center">
                   <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
-                    What We Offer • 제공 서비스
+                    What We Offer
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240]">
                     Our Programs
@@ -157,13 +147,13 @@ export default function About(props) {
 
           {/* Goals - Refocused on Korean, Simplified */}
           <Container>
-            <section className="py-20 md:py-28">
+            <section className="py-16 md:py-20">
               <div className="max-w-5xl mx-auto">
-                <div className="mb-12 text-center">
+                <div className="mb-10 text-center">
                   <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
                     Our Goals • 우리의 목표
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240] mb-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#0d2240] mb-3">
                     What We Aim to Achieve
                   </h2>
                   <p className="max-w-3xl mx-auto text-lg text-gray-600">
@@ -171,9 +161,9 @@ export default function About(props) {
                   </p>
                 </div>
 
-                <div className="space-y-6">
+                <div className="space-y-5">
                   {/* Goal 1 */}
-                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-8 flex gap-6">
+                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-6 flex gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-full bg-[#1a5fa8] text-white flex items-center justify-center font-bold text-xl">
                         1
@@ -194,7 +184,7 @@ export default function About(props) {
                   </div>
 
                   {/* Goal 2 */}
-                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-8 flex gap-6">
+                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-6 flex gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-full bg-[#1a5fa8] text-white flex items-center justify-center font-bold text-xl">
                         2
@@ -215,7 +205,7 @@ export default function About(props) {
                   </div>
 
                   {/* Goal 3 */}
-                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-8 flex gap-6">
+                  <div className="bg-white rounded-xl border-2 border-gray-100 hover:border-[#1a5fa8] transition-all p-6 flex gap-5">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-full bg-[#1a5fa8] text-white flex items-center justify-center font-bold text-xl">
                         3
@@ -242,9 +232,9 @@ export default function About(props) {
 
           {/* Related Pages Navigation - Cleaner Style */}
           <Container>
-            <section className="py-20 md:py-28">
+            <section className="py-16 md:py-20">
               <div className="max-w-6xl mx-auto">
-                <div className="mb-12 text-center">
+                <div className="mb-10 text-center">
                   <div className="inline-block text-xs font-bold uppercase tracking-wider text-[#1a5fa8] mb-3">
                     Learn More • 더 알아보기
                   </div>

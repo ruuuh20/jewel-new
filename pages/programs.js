@@ -13,7 +13,7 @@ export default function ProgramsPage() {
   <Container>
     <div className="max-w-4xl mx-auto text-center text-white">
       <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
-        <span className="font-bold">What We Offer • 제공 서비스</span>
+        <span className="font-bold">What We Offer</span>
       </div>
       
       <h1 className="mb-6 text-4xl font-bold md:text-5xl xl:text-6xl">

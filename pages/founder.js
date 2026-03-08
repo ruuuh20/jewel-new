@@ -328,9 +328,9 @@ export default function Founder(props) {
                       </div>
                       
                       <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
-                        <div className="font-bold text-[#120902] mb-2">Queens College of CUNY</div>
-                        <div className="mb-1 text-sm text-gray-700">Advisory Board</div>
-                        <div className="text-xs text-gray-600 font-pretend">재외동포사회문제연구소 자문위원</div>
+                        <div className="font-bold text-[#120902] mb-2">The Korean Language Foundation</div>
+                        <div className="mb-1 text-sm text-gray-700">Board</div>
+                        <div className="text-xs text-gray-600 font-pretend">미주한국어재단 한국어반 개설위원장</div>
                       </div>
                       
                       <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
