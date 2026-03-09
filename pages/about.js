@@ -7,6 +7,7 @@ import { groq } from "next-sanity";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription } from "../sanity";
+import { HiAcademicCap, HiGlobe, HiBookOpen, HiSparkles } from "react-icons/hi";
 
 export default function About(props) {
   const { postdata, preview } = props;
@@ -61,10 +62,8 @@ export default function About(props) {
                 
                 {/* Mission Box - Gray background with Navy border */}
                 <div className="bg-gradient-to-br from-gray-50 to-white p-10 md:p-12 rounded-2xl border-l-4 border-[#1e3a5f] shadow-lg">
-                  <p className="text-2xl md:text-3xl text-[#1e3a5f] leading-relaxed font-medium text-center">
-                    We are a New York/New Jersey-based nonprofit dedicated to connecting US and Korean 
-                    educational communities through sustainable partnerships, cultural exchange programs, 
-                    and language education — fostering cross-cultural understanding and global citizenship.
+                  <p className="text-xl md:text-2xl text-[#1e3a5f] leading-relaxed font-bold text-center">
+                     We are a NY/NJ-based nonprofit bridging U.S. and Korean communities to cultivate cross-cultural understanding and empower the next generation of global citizens.
                   </p>
                 </div>
               </div>
@@ -88,7 +87,7 @@ export default function About(props) {
                   <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
                     <div className="text-center">
                       <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
-                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
+                        <HiAcademicCap className="w-6 h-6 text-[#1a5fa8]" />
                       </div>
                       <h3 className="text-lg font-bold text-[#0d2240] mb-2">
                         School Partnerships
@@ -102,7 +101,7 @@ export default function About(props) {
                   <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
                     <div className="text-center">
                       <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
-                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
+                        <HiGlobe className="w-6 h-6 text-[#1a5fa8]" />
                       </div>
                       <h3 className="text-lg font-bold text-[#0d2240] mb-2">
                         Student Trips
@@ -116,7 +115,7 @@ export default function About(props) {
                   <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
                     <div className="text-center">
                       <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
-                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
+                        <HiBookOpen className="w-6 h-6 text-[#1a5fa8]" />
                       </div>
                       <h3 className="text-lg font-bold text-[#0d2240] mb-2">
                         Korean Language
@@ -130,7 +129,7 @@ export default function About(props) {
                   <div className="bg-white p-8 rounded-xl border border-gray-200 hover:border-[#1a5fa8] transition-all">
                     <div className="text-center">
                       <div className="w-12 h-12 rounded-full bg-[#1a5fa8]/10 mx-auto mb-4 flex items-center justify-center">
-                        <div className="w-6 h-6 rounded-full bg-[#1a5fa8]"></div>
+                        <HiSparkles className="w-6 h-6 text-[#1a5fa8]" />
                       </div>
                       <h3 className="text-lg font-bold text-[#0d2240] mb-2">
                         Cultural Programs

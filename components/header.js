@@ -199,12 +199,22 @@ export default function Header({ isExhibitPage }) {
                   </ul>
                 </div>
 
+                {/* Free Consultation Button */}
+                <a
+                  href="https://calendly.com/edutogether22/roots-routes-consultation"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="hidden md:inline-flex items-center justify-center px-5 py-3 font-bold bg-[#2563eb] text-white hover:bg-[#1d4ed8] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg text-sm"
+                >
+                  Free Consultation
+                </a>
+
                 {/* Donate Button */}
-              <Link href="/donate">
-  <a className="hidden md:inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg">
-    Donate
-  </a>
-</Link>
+                <Link href="/donate">
+                  <a className="hidden md:inline-flex items-center justify-center px-5 py-3 font-bold bg-[#dc2626] text-white hover:bg-[#b91c1c] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg text-sm">
+                    Donate
+                  </a>
+                </Link>
 
                 {/* Mobile Menu Toggle */}
                 <div className="mx-3 ml-5 mr-0 md:hidden xl:mx-5 2xl:mx-8 lg:hidden">
@@ -367,6 +377,23 @@ export default function Header({ isExhibitPage }) {
                           </Link>
                         </ul>
                       </div>
+                    </li>
+                    <li className="mt-4">
+                      <a
+                        href="https://calendly.com/edutogether22/roots-routes-consultation"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="inline-block px-6 py-3 font-bold bg-[#2563eb] text-white rounded-lg text-sm"
+                      >
+                        Free Consultation
+                      </a>
+                    </li>
+                    <li className="mt-3">
+                      <Link href="/donate">
+                        <a className="inline-block px-6 py-3 font-bold bg-[#dc2626] text-white rounded-lg text-sm">
+                          Donate
+                        </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>

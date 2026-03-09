@@ -329,7 +329,7 @@ export default function Founder(props) {
                       
                       <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
                         <div className="font-bold text-[#120902] mb-2">The Korean Language Foundation</div>
-                        <div className="mb-1 text-sm text-gray-700">Board</div>
+                        <div className="mb-1 text-sm text-gray-700">Board/Committee Chair</div>
                         <div className="text-xs text-gray-600 font-pretend">미주한국어재단 한국어반 개설위원장</div>
                       </div>
                       
@@ -342,9 +342,9 @@ export default function Founder(props) {
                   
                       
                       <div className="bg-white p-5 rounded-lg border-2 border-gray-200 hover:border-[#d96e34] transition-colors">
-                        <div className="font-bold text-[#120902] mb-2">Bergen County Korean Parents</div>
-                        <div className="mb-1 text-sm text-gray-700">President</div>
-                        <div className="text-xs text-gray-600 font-pretend">뉴저지버겐카운티한인학부모연합회장</div>
+                        <div className="font-bold text-[#120902] mb-2">The Peaceful Unification Advisory Council</div>
+                        <div className="mb-1 text-sm text-gray-700">Council Member</div>
+                        <div className="text-xs text-gray-600 font-pretend">평통뉴욕협의회 자몬위원 (16, 19, 21기)</div>
                       </div>
                     </div>
 
