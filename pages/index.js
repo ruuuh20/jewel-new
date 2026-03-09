@@ -361,7 +361,7 @@ const Home = ({ data }) => {
       <div className="grid gap-6 md:grid-cols-2 md:gap-8">
         
         {/* Card 1: School Partnerships */}
-        <Link href="/jewel-partnerships">
+        <Link href="/jewel-partnership">
           <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
             <div className="flex items-start gap-4">
               {/* Icon */}
