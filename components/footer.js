@@ -125,9 +125,7 @@ export default function Footer({ contact }) {
             <Image src="/fontlogoET.svg" width="100" height="50" alt="Educate Together" className="ml-2" />
           </a>
         </Link>
-        <p className="mt-4 text-sm text-gray-600">
-          함께하는교육 • Educate Together
-        </p>
+       
       </div>
 
       {/* Programs */}

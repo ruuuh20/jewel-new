@@ -17,7 +17,7 @@ import { client } from "../sanity";
 import ImageComponent from "@/components/image";
 import Image from "next/image";
 import ArrowRight from "@/components/arrow-right";
-import { HiAcademicCap, HiGlobe, HiBookOpen, HiSparkles, HiUserGroup } from "react-icons/hi";
+import { HiAcademicCap, HiGlobe, HiBookOpen, HiLightBulb, HiUserGroup } from "react-icons/hi";
 
 import { useInView } from "react-intersection-observer";
 import GrayscaleImage from "@/components/grayscaleImage";
@@ -459,7 +459,7 @@ const Home = ({ data }) => {
             <div className="flex items-start gap-4">
               {/* Icon */}
               <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center">
-                <HiSparkles className="w-8 h-8" />
+                <HiLightBulb className="w-8 h-8" />
               </div>
               
               {/* Content */}
