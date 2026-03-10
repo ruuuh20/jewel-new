@@ -153,7 +153,7 @@ export default function Footer({ contact }) {
       <div>
         <p className="mb-4 font-semibold text-gray-900">Get Involved</p>
         <nav className="flex flex-col space-y-2 text-sm text-gray-600">
-          <Link href="/member"><a className="hover:text-[#c17854] transition-colors">Become a Member</a></Link>
+          <Link href="/sponsor"><a className="hover:text-[#c17854] transition-colors">Become a sponsor</a></Link>
           <Link href="/partner-with-us"><a className="hover:text-[#c17854] transition-colors">Partner with Us</a></Link>
           <Link href="/donate"><a className="hover:text-[#c17854] transition-colors">Donate</a></Link>
         </nav>

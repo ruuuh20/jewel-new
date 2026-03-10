@@ -66,19 +66,19 @@ const Sponsor = () => {
                   {/* Impact Stats */}
                   <div className="grid gap-8 mb-16 md:grid-cols-3">
                     <div className="text-center p-6 bg-gradient-to-br from-[#f8fafc] to-white rounded-xl border border-gray-200">
-                      <div className="text-5xl font-bold text-[#c17854] mb-2">100%</div>
-                      <p className="font-medium text-gray-700">Tax-Deductible</p>
-                      <p className="mt-1 text-sm text-gray-600">501(c)(3) Nonprofit</p>
-                    </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-[#f8fafc] to-white rounded-xl border border-gray-200">
                       <div className="text-5xl font-bold text-[#c17854] mb-2">Direct</div>
                       <p className="font-medium text-gray-700">Student Impact</p>
                       <p className="mt-1 text-sm text-gray-600">Supporting real programs</p>
                     </div>
                     <div className="text-center p-6 bg-gradient-to-br from-[#f8fafc] to-white rounded-xl border border-gray-200">
-                      <div className="text-5xl font-bold text-[#c17854] mb-2">Visible</div>
-                      <p className="font-medium text-gray-700">Brand Recognition</p>
-                      <p className="mt-1 text-sm text-gray-600">Multi-platform exposure</p>
+                      <div className="text-5xl font-bold text-[#c17854] mb-2">Multi</div>
+                      <p className="font-medium text-gray-700">Platform Visibility</p>
+                      <p className="mt-1 text-sm text-gray-600">Website, social, events</p>
+                    </div>
+                    <div className="text-center p-6 bg-gradient-to-br from-[#f8fafc] to-white rounded-xl border border-gray-200">
+                      <div className="text-5xl font-bold text-[#c17854] mb-2">Lasting</div>
+                      <p className="font-medium text-gray-700">Community Impact</p>
+                      <p className="mt-1 text-sm text-gray-600">Building bridges long-term</p>
                     </div>
                   </div>
 
@@ -118,11 +118,11 @@ const Sponsor = () => {
                     <div className="p-6 text-center">
                       <div className="w-16 h-16 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center mx-auto mb-4">
                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                       </div>
-                      <h3 className="font-bold text-[#1e3a5f] mb-2">Tax Benefits</h3>
-                      <p className="text-sm text-gray-600">100% tax-deductible donations</p>
+                      <h3 className="font-bold text-[#1e3a5f] mb-2">Networking Access</h3>
+                      <p className="text-sm text-gray-600">Connect with educators and leaders in both countries</p>
                     </div>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ const Sponsor = () => {
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
-                          <span>Social media recognition (quarterly)</span>
+                          <span>Social media recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -205,13 +205,13 @@ const Sponsor = () => {
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
-                          <span>Recognition in newsletters</span>
+                          <span>Social media recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
-                          <span>Social media shoutouts (2x/year)</span>
+                          <span>Recognition in newsletters</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -240,6 +240,12 @@ const Sponsor = () => {
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
+                          <span>Social media recognition</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-sm">
+                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
                           <span>Newsletter recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
@@ -255,7 +261,7 @@ const Sponsor = () => {
                     <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#c17854] transition-all shadow-lg">
                       <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2">Bronze</h3>
-                        <div className="text-4xl font-extrabold text-[#c17854] mb-2">$1,000+</div>
+                        <div className="text-4xl font-extrabold text-[#c17854] mb-2">$500+</div>
                         <p className="text-sm text-gray-600">per year</p>
                       </div>
                       <ul className="mb-6 space-y-3">
@@ -263,7 +269,13 @@ const Sponsor = () => {
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
-                          <span>Name listed on website</span>
+                          <span>Logo on website</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-sm">
+                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <span>Social media recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
                           <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -277,7 +289,7 @@ const Sponsor = () => {
 
                   <div className="mt-10 text-center">
                     <p className="mb-4 text-gray-600">
-                      All sponsorship levels are tax-deductible. Custom sponsorship packages available.
+                      All sponsorship levels include recognition and support our educational programs. Custom sponsorship packages available.
                     </p>
                   </div>
                 </div>
@@ -366,16 +378,6 @@ const Sponsor = () => {
                 </div>
               </section>
 
-              {/* Tax Info */}
-              <section className="py-12 border-t border-gray-200">
-                <div className="max-w-4xl mx-auto text-center">
-                  <p className="leading-relaxed text-gray-700">
-                    <strong>Educate Together</strong> is a 501(c)(3) nonprofit organization. 
-                    All donations are tax-deductible to the fullest extent allowed by law. 
-                    Tax ID available upon request.
-                  </p>
-                </div>
-              </section>
             </Container>
 
             {/* Related Pages */}

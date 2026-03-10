@@ -15,7 +15,13 @@ import LearncationMap from "@/components/LearncationMap";
 import PhotoGallery from "@/components/PhotoGallery";
 
 const RootsAndRoutes = () => {
-  const [activeYear, setActiveYear] = useState("2019");
+  const [activeType, setActiveType] = useState("students");
+  const [activeYear, setActiveYear] = useState("2024");
+
+  const handleTypeChange = (type) => {
+    setActiveType(type);
+    setActiveYear("2024");
+  };
 
   const router = useRouter();
 
@@ -918,42 +924,71 @@ const RootsAndRoutes = () => {
                   Past Trips
                 </h2>
 
-                {/* Year Tabs */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
-                  <button
-                    onClick={() => setActiveYear("2024")}
-                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 rounded-lg ${
-                      activeYear === "2024"
-                        ? "bg-[#c17854] text-white shadow-lg"
-                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                    }`}
-                  >
-                    2024 Trip
-                  </button>
-                  <button
-                    onClick={() => setActiveYear("2019")}
-                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 rounded-lg ${
-                      activeYear === "2019"
-                        ? "bg-[#c17854] text-white shadow-lg"
-                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                    }`}
-                  >
-                    2019 Trip
-                  </button>
-                  <button
-                    onClick={() => setActiveYear("2018")}
-                    className={`px-8 py-3 font-semibold text-lg transition-all duration-300 rounded-lg ${
-                      activeYear === "2018"
-                        ? "bg-[#c17854] text-white shadow-lg"
-                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                    }`}
-                  >
-                    2018 Trip
-                  </button>
+                {/* Type Tabs */}
+                <div className="flex justify-center mb-8">
+                  <div className="inline-flex rounded-xl border-2 border-gray-200 overflow-hidden">
+                    <button
+                      onClick={() => handleTypeChange("students")}
+                      className={`px-8 py-3 font-semibold text-base transition-all duration-300 ${
+                        activeType === "students"
+                          ? "bg-[#1e3a5f] text-white"
+                          : "bg-white text-gray-600 hover:bg-gray-50"
+                      }`}
+                    >
+                      Students
+                    </button>
+                    <button
+                      onClick={() => handleTypeChange("educators")}
+                      className={`px-8 py-3 font-semibold text-base transition-all duration-300 ${
+                        activeType === "educators"
+                          ? "bg-[#1e3a5f] text-white"
+                          : "bg-white text-gray-600 hover:bg-gray-50"
+                      }`}
+                    >
+                      Educators
+                    </button>
+                  </div>
                 </div>
 
-                {/* 2024 Content */}
-                {activeYear === "2024" && (
+                {/* Year Sub-Tabs */}
+                <div className="flex flex-wrap justify-center gap-3 mb-12">
+                  {activeType === "students" ? (
+                    <>
+                      {["2024", "2019", "2018"].map((year) => (
+                        <button
+                          key={year}
+                          onClick={() => setActiveYear(year)}
+                          className={`px-6 py-2 font-semibold text-base transition-all duration-300 rounded-lg ${
+                            activeYear === year
+                              ? "bg-[#e8703a] text-white shadow-lg"
+                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                          }`}
+                        >
+                          {year}
+                        </button>
+                      ))}
+                    </>
+                  ) : (
+                    <>
+                      {["2024", "2019", "2018", "2017"].map((year) => (
+                        <button
+                          key={year}
+                          onClick={() => setActiveYear(year)}
+                          className={`px-6 py-2 font-semibold text-base transition-all duration-300 rounded-lg ${
+                            activeYear === year
+                              ? "bg-[#e8703a] text-white shadow-lg"
+                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                          }`}
+                        >
+                          {year}
+                        </button>
+                      ))}
+                    </>
+                  )}
+                </div>
+
+                {/* ── STUDENTS ── */}
+                {activeType === "students" && activeYear === "2024" && (
                   <div className="animate-fadeIn">
                     <div className="mb-8">
                       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
@@ -1064,8 +1099,7 @@ const RootsAndRoutes = () => {
                   </div>
                 )}
 
-                {/* 2019 Content */}
-                {activeYear === "2019" && (
+                {activeType === "students" && activeYear === "2019" && (
                   <div className="animate-fadeIn">
                     <div className="mb-8">
                       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
@@ -1218,8 +1252,7 @@ const RootsAndRoutes = () => {
                   </div>
                 )}
 
-                {/* 2018 Content */}
-                {activeYear === "2018" && (
+                {activeType === "students" && activeYear === "2018" && (
                   <div className="animate-fadeIn">
                     <div className="mb-8">
                       <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
@@ -1347,6 +1380,41 @@ const RootsAndRoutes = () => {
                     </div>
                   </div>
                 )}
+
+                {/* ── EDUCATORS ── */}
+                {activeType === "educators" && (
+                  <div className="animate-fadeIn">
+                    {activeYear === "2024" && (
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2024 — Educator & Administrator Trip</h3>
+                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the 2024 educator trip coming soon.</p>
+                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
+                      </div>
+                    )}
+                    {activeYear === "2019" && (
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2019 — Educator & Administrator Trip</h3>
+                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the 2019 educator trip coming soon.</p>
+                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
+                      </div>
+                    )}
+                    {activeYear === "2018" && (
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2018 — Educator & Administrator Trip</h3>
+                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the 2018 educator trip coming soon.</p>
+                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
+                      </div>
+                    )}
+                    {activeYear === "2017" && (
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2017 — Educator & Administrator Trip</h3>
+                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the inaugural 2017 educator trip coming soon.</p>
+                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
               </div>
             </section>
 

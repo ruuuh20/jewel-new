@@ -17,7 +17,8 @@ import { client } from "../sanity";
 import ImageComponent from "@/components/image";
 import Image from "next/image";
 import ArrowRight from "@/components/arrow-right";
-import { HiAcademicCap, HiGlobe, HiBookOpen, HiLightBulb, HiUserGroup } from "react-icons/hi";
+import { HiAcademicCap, HiBookOpen, HiLightBulb, HiUserGroup } from "react-icons/hi";
+import { FaPlane } from "react-icons/fa";
 
 import { useInView } from "react-intersection-observer";
 import GrayscaleImage from "@/components/grayscaleImage";
@@ -245,7 +246,7 @@ const Home = ({ data }) => {
                 <div className="order-2 md:order-1">
                   {/* Badge */}
                   <div className="mb-6">
-                    <span className="inline-block px-5 py-2 bg-[#c17854] text-white font-bold rounded-full text-sm md:text-base shadow-lg">
+                    <span className="inline-block px-5 py-2 bg-[#e8703a] text-white font-bold rounded-full text-sm md:text-base shadow-lg">
                       Applications Open Now • Spring Break 2026
                     </span>
                   </div>
@@ -287,7 +288,7 @@ const Home = ({ data }) => {
                       href="/apply"
                
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform rounded-lg"
+                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform rounded-lg"
                     >
                       Apply Now
                     </a>
@@ -362,16 +363,16 @@ const Home = ({ data }) => {
         
         {/* Card 1: School Partnerships */}
         <Link href="/jewel-partnership">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
             <div className="flex items-start gap-4">
               {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
                 <HiAcademicCap className="w-8 h-8" />
               </div>
               
               {/* Content */}
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
                   School Partnerships
                 </h3>
                 <p className="mb-3 text-xl font-medium text-gray-600">
@@ -380,7 +381,7 @@ const Home = ({ data }) => {
                 <p className="mb-3 leading-relaxed text-gray-700">
                   Connect US and Korean schools through meaningful cultural and educational exchanges.
                 </p>
-                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                   Learn More
                   <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -393,16 +394,16 @@ const Home = ({ data }) => {
 
         {/* Card 2: Visit to Korea */}
         <Link href="/roots-and-routes">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
             <div className="flex items-start gap-4">
               {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center">
-                <HiGlobe className="w-8 h-8" />
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
+                <FaPlane className="w-8 h-8" />
               </div>
 
               {/* Content */}
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
                   Visit to Korea
                 </h3>
                 <p className="mb-3 text-xl font-medium text-gray-600">
@@ -411,7 +412,7 @@ const Home = ({ data }) => {
                 <p className="mb-3 leading-relaxed text-gray-700">
                   Immersive cultural and educational trips for U.S. students.
                 </p>
-                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                   Learn More
                   <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -424,16 +425,16 @@ const Home = ({ data }) => {
 
         {/* Card 3: Learn Korean */}
         <Link href="/ganadara">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
             <div className="flex items-start gap-4">
               {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
                 <HiBookOpen className="w-8 h-8" />
               </div>
               
               {/* Content */}
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
                   Learn Korean
                 </h3>
                 <p className="mb-3 text-xl font-medium text-gray-600">
@@ -442,7 +443,7 @@ const Home = ({ data }) => {
                 <p className="mb-3 leading-relaxed text-gray-700">
                   Korean language programs for students of all levels, from beginners to advanced.
                 </p>
-                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                   Learn More
                   <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -455,16 +456,16 @@ const Home = ({ data }) => {
 
         {/* Card 4: Future Education */}
         <Link href="/eunoia">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
             <div className="flex items-start gap-4">
               {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
                 <HiLightBulb className="w-8 h-8" />
               </div>
               
               {/* Content */}
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#c17854] transition-colors">
+                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
                   Future Education
                 </h3>
                 <p className="mb-3 text-xl font-medium text-gray-600">
@@ -473,7 +474,7 @@ const Home = ({ data }) => {
                 <p className="mb-3 leading-relaxed text-gray-700">
                   Innovative educational programs preparing students for tomorrow's challenges.
                 </p>
-                <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                   Learn More
                   <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -1296,9 +1297,9 @@ const Home = ({ data }) => {
       <div className="grid gap-8 md:grid-cols-2">
         
         {/* Newsletter CTA */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20 hover:border-[#c17854] transition-all">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20 hover:border-[#e8703a] transition-all">
           <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-[#c17854] mx-auto mb-4 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-[#e8703a] mx-auto mb-4 flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -1315,7 +1316,7 @@ const Home = ({ data }) => {
             
             <a
               href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
-              className="inline-block px-6 py-3 bg-[#c17854] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-block px-6 py-3 bg-[#e8703a] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1325,9 +1326,9 @@ const Home = ({ data }) => {
         </div>
 
         {/* Partner CTA */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20 hover:border-[#c17854] transition-all">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20 hover:border-[#e8703a] transition-all">
           <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-[#c17854] mx-auto mb-4 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-[#e8703a] mx-auto mb-4 flex items-center justify-center">
               <HiUserGroup className="w-8 h-8 text-white" />
             </div>
 

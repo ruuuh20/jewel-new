@@ -181,16 +181,17 @@ export default function Header({ isExhibitPage }) {
                     </svg>
                   </button>
                   <ul className="absolute hidden text-gray-700 pt-0 group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
-                    <Link href="/member">
-                      <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] border-b border-gray-100 rounded-t-lg">
-                        Become a Member
-                      </a>
-                    </Link>
-                    <Link href="/partner-with-us">
+                      <Link href="/partner-with-us">
                       <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] border-b border-gray-100">
                         Become a Partner
                       </a>
                     </Link>
+                    <Link href="/sponsor">
+                      <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] border-b border-gray-100 rounded-t-lg">
+                        Become a Sponsor
+                      </a>
+                    </Link>
+                  
                     <Link href="/careers">
                       <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] rounded-b-lg">
                         Join Our Team
@@ -211,7 +212,7 @@ export default function Header({ isExhibitPage }) {
 
                 {/* Donate Button */}
                 <Link href="/donate">
-                  <a className="hidden md:inline-flex items-center justify-center px-5 py-3 font-bold bg-[#dc2626] text-white hover:bg-[#b91c1c] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg text-sm">
+                  <a className="hidden md:inline-flex items-center justify-center px-5 py-3 font-bold bg-[#e8703a] text-white hover:bg-[#d05e28] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg text-sm">
                     Donate
                   </a>
                 </Link>
@@ -360,14 +361,14 @@ export default function Header({ isExhibitPage }) {
                           </svg>
                         </div>
                         <ul className="pt-1">
-                          <Link href="/member">
-                            <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
-                              Become a Member
-                            </a>
-                          </Link>
                           <Link href="/partner-with-us">
                             <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
                               Become a Partner
+                            </a>
+                          </Link>
+                          <Link href="/sponsor">
+                            <a className="block px-2 py-1 ml-2 text-base text-white whitespace-no-wrap border-l border-gray-500">
+                              Become a Sponsor
                             </a>
                           </Link>
                           <Link href="/careers">
@@ -390,7 +391,7 @@ export default function Header({ isExhibitPage }) {
                     </li>
                     <li className="mt-3">
                       <Link href="/donate">
-                        <a className="inline-block px-6 py-3 font-bold bg-[#dc2626] text-white rounded-lg text-sm">
+                        <a className="inline-block px-6 py-3 font-bold bg-[#e8703a] text-white rounded-lg text-sm">
                           Donate
                         </a>
                       </Link>
