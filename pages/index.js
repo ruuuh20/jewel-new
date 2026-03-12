@@ -495,11 +495,10 @@ const Home = ({ data }) => {
 <div className="relative z-10">
 <SimpleZigzagStrip
   photos={[
-    { src: "/images/strip/strip-1.jpg", alt: "Palace visit" },
-    { src: "/images/strip/strip-2.jpg", alt: "Hanbok experience" },
+    { src: "/images/strip/strip-7.jpg", alt: "Conference" },
+    { src: "/images/strip/strip-8.jpg", alt: "Hanbok experience" },
     { src: "/images/strip/strip-3.jpg", alt: "School exchange" },
     { src: "/images/strip/strip-4.jpg", alt: "Temple visit" },
-    { src: "/images/strip/strip-5.jpg", alt: "DMZ tour" },
     { src: "/images/strip/strip-6.jpg", alt: "Korean food" }
   ]}
 />

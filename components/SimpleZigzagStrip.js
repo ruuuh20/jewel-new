@@ -21,7 +21,7 @@ export default function SimpleZigzagStrip({ photos }) {
               }}
             >
               {/* Photo with white border */}
-              <div className="w-32 h-32 overflow-hidden transition-all duration-300 border-4 border-white rounded-lg shadow-md md:w-40 md:h-40 lg:w-48 lg:h-48 hover:shadow-2xl">
+              <div className="w-36 h-36 overflow-hidden transition-all duration-300 border-4 border-white rounded-lg shadow-md md:w-48 md:h-48 lg:w-56 lg:h-56 hover:shadow-2xl">
                 <img
                   src={photo.src}
                   alt={photo.alt || `Photo ${index + 1}`}
