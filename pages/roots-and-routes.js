@@ -15,13 +15,7 @@ import LearncationMap from "@/components/LearncationMap";
 import PhotoGallery from "@/components/PhotoGallery";
 
 const RootsAndRoutes = () => {
-  const [activeType, setActiveType] = useState("students");
   const [activeYear, setActiveYear] = useState("2024");
-
-  const handleTypeChange = (type) => {
-    setActiveType(type);
-    setActiveYear("2024");
-  };
 
   const router = useRouter();
 
@@ -214,6 +208,219 @@ const RootsAndRoutes = () => {
     </div>
   </div>
 </div>
+    </div>
+  </Container>
+</section>
+
+{/* Past Trips - Year tabs */}
+<section className="py-16 md:py-24 bg-[#f9f7f4]">
+  <Container>
+    <div className="max-w-6xl mx-auto">
+      <div className="mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
+          Past Trips
+        </h2>
+        <p className="text-lg text-gray-600">
+          Students, families &amp; educators — running since 2017
+        </p>
+      </div>
+
+      {/* Year Tabs */}
+      <div className="flex flex-wrap justify-center gap-3 mb-10">
+        {["2017", "2018", "2019", "2024"].map((year) => (
+          <button
+            key={year}
+            onClick={() => setActiveYear(year)}
+            className={`px-6 py-2 font-semibold text-base transition-all duration-300 rounded-lg ${
+              activeYear === year
+                ? "bg-[#1e3a5f] text-white shadow-lg"
+                : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+            }`}
+          >
+            {year}
+          </button>
+        ))}
+      </div>
+
+      {/* 2017 */}
+      {activeYear === "2017" && (
+        <div className="space-y-6 animate-fadeIn">
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
+            <div className="flex flex-wrap items-center gap-3 mb-3">
+              <span className="px-3 py-1 bg-[#f0f4f8] text-[#1e3a5f] rounded-full text-sm font-semibold">Educators</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2017 — Educator Trip</h3>
+            </div>
+            <p className="text-gray-500 italic">Our inaugural educator trip. Photos and details coming soon.</p>
+          </div>
+        </div>
+      )}
+
+      {/* 2018 */}
+      {activeYear === "2018" && (
+        <div className="space-y-6 animate-fadeIn">
+          {/* Student Trip */}
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <span className="px-3 py-1 bg-[#e0e7ef] text-[#1e3a5f] rounded-full text-sm font-semibold">Students</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2018 — Student Trip</h3>
+            </div>
+            <p className="mb-6 text-lg leading-relaxed text-gray-700">
+              The 2018 program focused on the historical depth of Korea, with extended time in Gyeongju, the ancient capital of the Silla Kingdom. Students engaged in workshops, language exchange sessions, and collaborative art projects with Korean peers.
+            </p>
+            <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
+              <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                <video width="100%" height="auto" autoPlay loop muted playsInline preload="auto">
+                  <source src="/roots-routes-2018-video-1.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                <video width="100%" height="auto" autoPlay loop muted playsInline preload="auto">
+                  <source src="/roots-routes-2018-video-2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-3">
+              {[1,2,3,4,5,6].map(n => (
+                <div key={n} className="relative h-64 overflow-hidden rounded-lg">
+                  <Image src={`/learncation-2018-${n}.jpg`} alt="2018 Trip" layout="fill" objectFit="cover" />
+                </div>
+              ))}
+            </div>
+            <div className="bg-[#f9f7f4] p-6 rounded-lg">
+              <h4 className="text-lg font-bold mb-3 text-[#120902]">Trip Highlights</h4>
+              <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Explored ancient Silla Kingdom sites</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Archaeological workshop at museum</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Traditional hanbok dress experience</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Language exchange sessions</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Collaborative art project with Korean students</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Temple stay experience</span></li>
+              </ul>
+            </div>
+          </div>
+          {/* Educator Trip */}
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
+            <div className="flex flex-wrap items-center gap-3 mb-3">
+              <span className="px-3 py-1 bg-[#f0f4f8] text-[#1e3a5f] rounded-full text-sm font-semibold">Educators</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2018 — Educator Trip</h3>
+            </div>
+            <p className="text-gray-500 italic">Photos and details coming soon.</p>
+          </div>
+        </div>
+      )}
+
+      {/* 2019 */}
+      {activeYear === "2019" && (
+        <div className="space-y-6 animate-fadeIn">
+          {/* Student Trip */}
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <span className="px-3 py-1 bg-[#e0e7ef] text-[#1e3a5f] rounded-full text-sm font-semibold">Students</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2019 — Student Trip</h3>
+            </div>
+            <p className="mb-6 text-lg leading-relaxed text-gray-700">
+              Our 2019 cohort explored Seoul, the ancient capital of Gyeongju, and historic Suwon. Highlights included visiting Gyeongbokgung Palace, exploring the UNESCO World Heritage sites of Gyeongju, touring Suwon Hwaseong Fortress, and the powerful experience of the DMZ tour.
+            </p>
+            <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
+              <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                <video width="100%" height="auto" autoPlay loop muted playsInline preload="auto">
+                  <source src="/roots-routes-2019-video-1.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
+                <video width="100%" height="auto" autoPlay loop muted playsInline preload="auto">
+                  <source src="/roots-routes-2019-video-2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-3">
+              {[1,2,3,4,5,6,7,8,9].map(n => (
+                <div key={n} className="relative h-64 overflow-hidden rounded-lg">
+                  <Image src={`/learncation-2019-${n}.jpg`} alt="2019 Trip" layout="fill" objectFit="cover" />
+                </div>
+              ))}
+            </div>
+            <div className="bg-[#f9f7f4] p-6 rounded-lg">
+              <h4 className="text-lg font-bold mb-3 text-[#120902]">Trip Highlights</h4>
+              <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Gyeongbokgung Palace in Seoul</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>UNESCO World Heritage sites in Gyeongju</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Suwon Hwaseong Fortress city tour</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>DMZ tour and historical presentation</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>K-pop dance workshop</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Traditional Korean cultural experiences</span></li>
+              </ul>
+            </div>
+          </div>
+          {/* Educator Trip */}
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
+            <div className="flex flex-wrap items-center gap-3 mb-3">
+              <span className="px-3 py-1 bg-[#f0f4f8] text-[#1e3a5f] rounded-full text-sm font-semibold">Educators</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2019 — Educator Trip</h3>
+            </div>
+            <p className="text-gray-500 italic">Photos and details coming soon.</p>
+          </div>
+        </div>
+      )}
+
+      {/* 2024 */}
+      {activeYear === "2024" && (
+        <div className="space-y-6 animate-fadeIn">
+          {/* Family & Student Trip */}
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <span className="px-3 py-1 bg-[#e0e7ef] text-[#1e3a5f] rounded-full text-sm font-semibold">Students &amp; Families</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Feb 2024 — Family &amp; Student Trip</h3>
+            </div>
+            <p className="mb-4 text-lg leading-relaxed text-gray-700">
+              Our 2024 program was a special abbreviated trip designed for both students and parents, offering a unique family cultural immersion experience. This shorter-duration program provided an introduction to Korean culture, education, and heritage, creating meaningful connections across generations.
+            </p>
+            <div className="inline-block mb-6 px-4 py-2 bg-[#e0e7ef] text-[#1e3a5f] rounded-full text-sm font-semibold">
+              Special Format: Students &amp; Parents • Shorter Duration
+            </div>
+            <div className="mb-8">
+              <div className="bg-[#f8fafc] p-6 rounded-lg border-2 border-[#1e3a5f]/20 mb-4">
+                <h4 className="text-xl font-bold mb-3 text-[#1e3a5f] flex items-center gap-2">
+                  <span>📊</span>
+                  Student-Created Trip Presentation
+                </h4>
+                <p className="text-gray-700">
+                  Our 2024 participants created this presentation to share their experiences. Click through to see their journey in their own words.
+                </p>
+              </div>
+              <div className="relative w-full overflow-hidden bg-gray-100 shadow-lg rounded-xl" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vTL8i5D7x8HKTKqc312iaU-craJqzw7yPp2_PvBTSfaixMCUSgnSIKVECq0g-G5pA/pubembed?start=false&loop=false&delayms=3000"
+                  className="absolute top-0 left-0 w-full h-full"
+                  frameBorder="0"
+                  allowFullScreen
+                  title="2024 Trip Student Presentation"
+                />
+              </div>
+            </div>
+            <div className="bg-[#f9f7f4] p-6 rounded-lg">
+              <h4 className="text-lg font-bold mb-3 text-[#120902]">Trip Highlights</h4>
+              <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Family-oriented cultural immersion experience</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Intergenerational learning opportunities</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Seoul cultural landmarks and museums</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Traditional Korean cultural workshops</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Student-led presentation and reflection project</span></li>
+                <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Meaningful family bonding through shared experiences</span></li>
+              </ul>
+            </div>
+          </div>
+          {/* Educator Trip */}
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
+            <div className="flex flex-wrap items-center gap-3 mb-3">
+              <span className="px-3 py-1 bg-[#f0f4f8] text-[#1e3a5f] rounded-full text-sm font-semibold">Educators</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2024 — Educator Trip</h3>
+            </div>
+            <p className="text-gray-500 italic">Photos and details coming soon.</p>
+          </div>
+        </div>
+      )}
+
     </div>
   </Container>
 </section>
@@ -916,510 +1123,6 @@ const RootsAndRoutes = () => {
             </section>
           </Container>
 
-         {/* Past Trips Section with Tabs */}
-          <Container>
-            <section className="py-16 md:py-24">
-              <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#1e3a5f] text-center">
-                  Past Trips
-                </h2>
-
-                {/* Type Tabs */}
-                <div className="flex justify-center mb-8">
-                  <div className="inline-flex rounded-xl border-2 border-gray-200 overflow-hidden">
-                    <button
-                      onClick={() => handleTypeChange("students")}
-                      className={`px-8 py-3 font-semibold text-base transition-all duration-300 ${
-                        activeType === "students"
-                          ? "bg-[#1e3a5f] text-white"
-                          : "bg-white text-gray-600 hover:bg-gray-50"
-                      }`}
-                    >
-                      Students
-                    </button>
-                    <button
-                      onClick={() => handleTypeChange("educators")}
-                      className={`px-8 py-3 font-semibold text-base transition-all duration-300 ${
-                        activeType === "educators"
-                          ? "bg-[#1e3a5f] text-white"
-                          : "bg-white text-gray-600 hover:bg-gray-50"
-                      }`}
-                    >
-                      Educators
-                    </button>
-                  </div>
-                </div>
-
-                {/* Year Sub-Tabs */}
-                <div className="flex flex-wrap justify-center gap-3 mb-12">
-                  {activeType === "students" ? (
-                    <>
-                      {["2024", "2019", "2018"].map((year) => (
-                        <button
-                          key={year}
-                          onClick={() => setActiveYear(year)}
-                          className={`px-6 py-2 font-semibold text-base transition-all duration-300 rounded-lg ${
-                            activeYear === year
-                              ? "bg-[#e8703a] text-white shadow-lg"
-                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                          }`}
-                        >
-                          {year}
-                        </button>
-                      ))}
-                    </>
-                  ) : (
-                    <>
-                      {["2024", "2019", "2018", "2017"].map((year) => (
-                        <button
-                          key={year}
-                          onClick={() => setActiveYear(year)}
-                          className={`px-6 py-2 font-semibold text-base transition-all duration-300 rounded-lg ${
-                            activeYear === year
-                              ? "bg-[#e8703a] text-white shadow-lg"
-                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                          }`}
-                        >
-                          {year}
-                        </button>
-                      ))}
-                    </>
-                  )}
-                </div>
-
-                {/* ── STUDENTS ── */}
-                {activeType === "students" && activeYear === "2024" && (
-                  <div className="animate-fadeIn">
-                    <div className="mb-8">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
-                        Feb 2024 - Family & Student Experience
-                      </h3>
-                      <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                        Our 2024 program was a special abbreviated trip designed for both students and parents, offering a unique family cultural immersion experience. This shorter-duration program provided an introduction to Korean culture, education, and heritage, creating meaningful connections across generations.
-                      </p>
-                      
-                      {/* Special Badge */}
-                      <div className="inline-block mb-6 px-4 py-2 bg-[#e0e7ef] text-[#1e3a5f] rounded-full text-sm font-semibold">
-                        Special Format: Students & Parents • Shorter Duration
-                      </div>
-                    </div>
-
-                    {/* Student Presentation Embed */}
-                    <div className="mb-8">
-                      <div className="bg-[#f8fafc] p-6 rounded-lg border-2 border-[#1e3a5f]/20 mb-4">
-                        <h4 className="text-xl font-bold mb-3 text-[#1e3a5f] flex items-center gap-2">
-                          <span>📊</span>
-                          Student-Created Trip Presentation
-                        </h4>
-                        <p className="mb-4 text-gray-700">
-                          Our 2024 participants created this presentation to share their experiences. Click through to see their journey in their own words.
-                        </p>
-                      </div>
-
-                      {/* PowerPoint Embed Area - Multiple Options Below */}
-                      
-                      {/* OPTION 1: Google Slides Embed (RECOMMENDED) */}
-                      {/* Upload your PowerPoint to Google Drive, convert to Google Slides, then get embed code */}
-                      <div className="relative w-full overflow-hidden bg-gray-100 shadow-lg rounded-xl" style={{ paddingBottom: '56.25%' }}>
-                        <iframe
-                          src="https://docs.google.com/presentation/d/e/2PACX-1vTL8i5D7x8HKTKqc312iaU-craJqzw7yPp2_PvBTSfaixMCUSgnSIKVECq0g-G5pA/pubembed?start=false&loop=false&delayms=3000"
-                          className="absolute top-0 left-0 w-full h-full"
-                          frameBorder="0"
-                          allowFullScreen
-                          title="2024 Trip Student Presentation"
-                        />
-                      </div>
-
-                      {/* OPTION 2: PDF Embed (if you convert PPT to PDF) */}
-                      {/* 
-                      <div className="relative w-full overflow-hidden bg-gray-100 shadow-lg rounded-xl" style={{ minHeight: '600px' }}>
-                        <iframe
-                          src="/2024-trip-presentation.pdf"
-                          className="w-full h-full"
-                          style={{ minHeight: '600px' }}
-                          frameBorder="0"
-                          title="2024 Trip Student Presentation"
-                        />
-                      </div>
-                      */}
-
-                      {/* OPTION 3: Download Link (simplest fallback) */}
-                      {/* 
-                      <div className="bg-white p-8 rounded-xl border-2 border-dashed border-[#1e3a5f]/30 text-center">
-                        <div className="mb-4 text-5xl">📥</div>
-                        <h4 className="text-xl font-bold mb-3 text-[#120902]">
-                          Download Student Presentation
-                        </h4>
-                        <p className="mb-6 text-gray-700">
-                          View the complete trip presentation created by our 2024 participants
-                        </p>
-                        <a
-                          href="/2024-trip-presentation.pdf"
-                          download
-                          className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg"
-                        >
-                          Download Presentation (PDF)
-                        </a>
-                      </div>
-                      */}
-                    </div>
-
-                    {/* Trip Highlights for 2024 */}
-                    <div className="bg-[#f9f7f4] p-8 rounded-lg">
-                      <h4 className="text-xl font-bold mb-4 text-[#120902]">
-                        Trip Highlights
-                      </h4>
-                      <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Family-oriented cultural immersion experience</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Intergenerational learning opportunities</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Seoul cultural landmarks and museums</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Traditional Korean cultural workshops</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Student-led presentation and reflection project</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Meaningful family bonding through shared experiences</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                )}
-
-                {activeType === "students" && activeYear === "2019" && (
-                  <div className="animate-fadeIn">
-                    <div className="mb-8">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
-                        Summer 2019 - Seoul, Gyeongju & Suwon
-                      </h3>
-                      <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                        Our 2019 cohort explored Seoul, the ancient capital of Gyeongju, and historic Suwon. Highlights included visiting Gyeongbokgung Palace, exploring the UNESCO World Heritage sites of Gyeongju, touring Suwon Hwaseong Fortress, and the powerful experience of the DMZ tour.
-                      </p>
-                    </div>
-
-                    {/* Video Highlights */}
-                    <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
-                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
-                        <video
-                          width="100%"
-                          height="auto"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          preload="auto"
-                        >
-                          <source src="/roots-routes-2019-video-1.mp4" type="video/mp4" />
-                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
-                        </video>
-                      </div>
-                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
-                        <video
-                          width="100%"
-                          height="auto"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          preload="auto"
-                        >
-                          <source src="/roots-routes-2019-video-2.mp4" type="video/mp4" />
-                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
-                        </video>
-                      </div>
-                    </div>
-
-                    {/* Photo Gallery Grid */}
-                    <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-3">
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-1.jpg"
-                          alt="2019 Trip - Palace Visit"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-2.jpg"
-                          alt="2019 Trip - Student Exchange"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-3.jpg"
-                          alt="2019 Trip - Cultural Activity"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-4.jpg"
-                          alt="2019 Trip - Group Photo"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-5.jpg"
-                          alt="2019 Trip - Night Market"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-6.jpg"
-                          alt="2019 Trip - Temple Visit"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-7.jpg"
-                          alt="2019 Trip - Temple Visit"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-8.jpg"
-                          alt="2019 Trip - Temple Visit"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2019-9.jpg"
-                          alt="2019 Trip - Temple Visit"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="bg-[#f9f7f4] p-8 rounded-lg">
-                      <h4 className="text-xl font-bold mb-4 text-[#120902]">
-                        Trip Highlights
-                      </h4>
-                      <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Gyeongbokgung Palace in Seoul</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>UNESCO World Heritage sites in Gyeongju</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Suwon Hwaseong Fortress city tour</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>DMZ tour and historical presentation</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>K-pop dance workshop</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Traditional Korean cultural experiences</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                )}
-
-                {activeType === "students" && activeYear === "2018" && (
-                  <div className="animate-fadeIn">
-                    <div className="mb-8">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">
-                        Summer 2018 - Seoul & Gyeongju
-                      </h3>
-                      <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                        The 2018 program focused on the historical depth of Korea, with extended time in Gyeongju, the ancient capital of the Silla Kingdom. Students engaged in workshops, language exchange sessions, and collaborative art projects with Korean peers.
-                      </p>
-                    </div>
-
-                    {/* Video Highlights */}
-                    <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
-                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
-                        <video
-                          width="100%"
-                          height="auto"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          preload="auto"
-                        >
-                          <source src="/roots-routes-2018-video-1.mp4" type="video/mp4" />
-                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
-                        </video>
-                      </div>
-                      <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
-                        <video
-                          width="100%"
-                          height="auto"
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          preload="auto"
-                        >
-                          <source src="/roots-routes-2018-video-2.mp4" type="video/mp4" />
-                          <p className="p-4 text-gray-600">Your browser doesn't support HTML5 video.</p>
-                        </video>
-                      </div>
-                    </div>
-
-                    {/* Photo Gallery Grid */}
-                    <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-3">
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2018-1.jpg"
-                          alt="2018 Trip - Ancient Temple"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2018-2.jpg"
-                          alt="2018 Trip - Student Workshop"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2018-3.jpg"
-                          alt="2018 Trip - Cultural Performance"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2018-4.jpg"
-                          alt="2018 Trip - Group Activity"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2018-5.jpg"
-                          alt="2018 Trip - Historical Site"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                      <div className="relative h-64 overflow-hidden rounded-lg">
-                        <Image
-                          src="/learncation-2018-6.jpg"
-                          alt="2018 Trip - Team Photo"
-                          layout="fill"
-                          objectFit="cover"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="bg-[#f9f7f4] p-8 rounded-lg">
-                      <h4 className="text-xl font-bold mb-4 text-[#120902]">
-                        Trip Highlights
-                      </h4>
-                      <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Explored ancient Silla Kingdom sites</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Archaeological workshop at museum</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Traditional hanbok dress experience</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Language exchange sessions</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Collaborative art project with Korean students</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
-                          <span>Temple stay experience</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                )}
-
-                {/* ── EDUCATORS ── */}
-                {activeType === "educators" && (
-                  <div className="animate-fadeIn">
-                    {activeYear === "2024" && (
-                      <div>
-                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2024 — Educator & Administrator Trip</h3>
-                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the 2024 educator trip coming soon.</p>
-                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
-                      </div>
-                    )}
-                    {activeYear === "2019" && (
-                      <div>
-                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2019 — Educator & Administrator Trip</h3>
-                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the 2019 educator trip coming soon.</p>
-                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
-                      </div>
-                    )}
-                    {activeYear === "2018" && (
-                      <div>
-                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2018 — Educator & Administrator Trip</h3>
-                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the 2018 educator trip coming soon.</p>
-                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
-                      </div>
-                    )}
-                    {activeYear === "2017" && (
-                      <div>
-                        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#120902]">Summer 2017 — Educator & Administrator Trip</h3>
-                        <p className="mb-6 text-lg leading-relaxed text-gray-700">Details, itinerary, photos, and testimonials from the inaugural 2017 educator trip coming soon.</p>
-                        <div className="bg-[#f0f4f8] border-2 border-dashed border-[#1e3a5f]/20 rounded-xl p-12 text-center text-gray-500">Content in progress</div>
-                      </div>
-                    )}
-                  </div>
-                )}
-
-              </div>
-            </section>
-
-            <hr className="hidden md:block bg-gray-200 h-[1px] border-none" />
-          </Container>
 
           {/* Testimonials Section */}
           <Container>
