@@ -49,20 +49,22 @@ export default function JewelPage() {
               {/* Left Column - Text */}
               <div className="animate-on-scroll">
               
-                <p className="mb-4 leading-relaxed text-gray-700">
-                   JEWEL Partnership is an international exchange specialist nonprofit based in 
-                  New York/New Jersey. We connect US and Korean public and private schools 
-                  — elementary through high school — with safe, trusted, and lasting global 
-                  learning experiences.
+                <p className={'mb-4 leading-relaxed text-gray-700'}>
+                  JEWEL is a division of Educate Together, a nonprofit specializing in school-to-school partnerships between the United States and Korea. We design, facilitate, and manage international exchange programs from an educational standpoint — connecting schools across cultures and building partnerships that go beyond a single visit.
                 </p>
-                <p className="mb-6 leading-relaxed text-gray-700">
-                  미국 뉴욕·뉴저지를 기반으로 한국과 미국의 교육 현장을 연결하는 국제교류 전문 
-                  비영리단체입니다. 양국의 공립·사립 초·중·고교 및 교육청을 위한 안전하고 
-                  신뢰할 수 있는 지속가능한 글로벌 학습을 지원합니다.
+                <p className={'mb-6 leading-relaxed text-gray-700'}>
+                  We support public and private K–12 schools and education offices in both countries at every stage: consultation, partner matching, MOU facilitation, program implementation, and outcome reporting. 
                 </p>
 
-                 <p className="mb-4 text-lg leading-relaxed text-gray-700">
-                  "한 번 다녀오는 교류"가 아니라 "지속가능한 글로벌 학습"
+                <p className={'mb-4 leading-relaxed text-gray-700'}>
+                  JEWEL은 Educate Together 산하 국제교류 전문단체로, 한국과 미국 학교 간의 자매결연 및 교류 프로그램을 교육적 관점에서 설계하고 운영합니다. 단순한 방문 교류를 넘어, 두 나라 교육 현장을 지속적으로 연결하는 것이 저희의 역할입니다.
+                </p>
+                <p className={'mb-6 leading-relaxed text-gray-700'}>
+                  양국의 공립·사립 초·중·고교 및 교육청을 대상으로, 상담부터 파트너 매칭, MOU 체결, 프로그램 운영, 성과 보고까지 전 과정을 지원합니다. 
+                </p>
+
+                <p className={'mb-4 text-base font-semibold text-[#1e3a5f]'}>
+                  {'\u201C'}한 번 다녀오는 교류{'\u201D'}가 아닌, 학교의 문화로 자리잡는 지속가능한 글로벌 교육
                 </p>
                 
                
