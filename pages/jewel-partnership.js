@@ -170,6 +170,41 @@ export default function JewelPage() {
         </Container>
       </section>
 
+      {/* Photo Row - Kay in action */}
+      <section className="py-10 bg-white">
+        <Container>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="relative h-64 overflow-hidden rounded-xl shadow-md">
+              <Image
+                src="/images/jewel-partnership/IMG_0083.jpg"
+                alt="Teacher training program in New York"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center top"
+              />
+            </div>
+            <div className="relative h-64 overflow-hidden rounded-xl shadow-md">
+              <Image
+                src="/images/jewel-partnership/IMG_4210.jpg"
+                alt="Kay Kim visiting Daegu Science High School"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center 70%"
+              />
+            </div>
+            <div className="relative h-64 overflow-hidden rounded-xl shadow-md">
+              <Image
+                src="/images/jewel-partnership/IMG_7595.jpg"
+                alt="School partnership meeting with US administrators"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center 30%"
+              />
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* What We Do */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#f8fafc] to-white">
         <Container>
