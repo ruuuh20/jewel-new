@@ -190,7 +190,7 @@ export default function Founder(props) {
                 {/* Left Column - Profile (2 cols) */}
                 <div className="md:col-span-2">
                     {/* Profile Image */}
-                    <div className="mb-8">
+                    <div className="mb-5">
                       <div className="relative w-64 h-64 mx-auto overflow-hidden shadow-2xl rounded-2xl">
                         <ImageComponent
                           image={
@@ -203,11 +203,11 @@ export default function Founder(props) {
                     </div>
 
                   {/* Name & Title */}
-                  <div className="mb-10 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#120902] mb-2">
+                  <div className="mb-6 text-center">
+                    <h2 className="text-xl md:text-2xl font-bold text-[#120902] font-pretend mb-1">
                       <span className="font-pretend">김경화</span> Kay Kim
                     </h2>
-                    <p className="text-lg font-semibold text-gray-600">
+                    <p className="text-lg text-gray-800">
                       Founding President / <span className="font-pretend">대표</span>
                     </p>
                   </div>

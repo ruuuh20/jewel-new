@@ -132,7 +132,7 @@ export default function Footer({ contact }) {
       <div>
         <p className="mb-4 font-semibold text-gray-900">Programs</p>
         <nav className="flex flex-col space-y-2 text-sm text-gray-600">
-          <Link href="/jewel"><a className="hover:text-[#c17854] transition-colors">JEWEL</a></Link>
+          <Link href="/jewel-partnership"><a className="hover:text-[#c17854] transition-colors">JEWEL Partnership</a></Link>
           <Link href="/roots-and-routes"><a className="hover:text-[#c17854] transition-colors">Roots & Routes</a></Link>
           <Link href="/ganadara"><a className="hover:text-[#c17854] transition-colors">Ganadara</a></Link>
           <Link href="/eunoia"><a className="hover:text-[#c17854] transition-colors">Eunoia</a></Link>

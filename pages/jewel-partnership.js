@@ -171,10 +171,10 @@ export default function JewelPage() {
       </section>
 
       {/* Photo Row - Kay in action */}
-      <section className="py-10 bg-white">
+      <section className="py-6 bg-white">
         <Container>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            <div className="relative h-64 overflow-hidden rounded-xl shadow-md">
+            <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
               <Image
                 src="/images/jewel-partnership/IMG_0083.jpg"
                 alt="Teacher training program in New York"
@@ -183,7 +183,7 @@ export default function JewelPage() {
                 objectPosition="center top"
               />
             </div>
-            <div className="relative h-64 overflow-hidden rounded-xl shadow-md">
+            <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
               <Image
                 src="/images/jewel-partnership/IMG_4210.jpg"
                 alt="Kay Kim visiting Daegu Science High School"
@@ -192,7 +192,7 @@ export default function JewelPage() {
                 objectPosition="center 70%"
               />
             </div>
-            <div className="relative h-64 overflow-hidden rounded-xl shadow-md">
+            <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
               <Image
                 src="/images/jewel-partnership/IMG_7595.jpg"
                 alt="School partnership meeting with US administrators"
@@ -357,6 +357,41 @@ export default function JewelPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Photo Row - Programs in action */}
+      <section className="py-10 bg-white">
+        <Container>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
+              <Image
+                src="/images/jewel-partnership/IMG_7192.JPG"
+                alt="2025 Incheon-New York High School International Exchange"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center center"
+              />
+            </div>
+            <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
+              <Image
+                src="/images/jewel-partnership/IMG_7590.jpeg"
+                alt="Students at cultural exchange performance"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center center"
+              />
+            </div>
+            <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
+              <Image
+                src="/images/jewel-partnership/IMG_7610.jpeg"
+                alt="2025 Incheon Jinsan Science High School overseas program"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center center"
+              />
             </div>
           </div>
         </Container>
