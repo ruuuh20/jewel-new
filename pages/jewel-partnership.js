@@ -29,10 +29,10 @@ export default function JewelPage() {
               교육을 통해 만나는 세계, &nbsp; 협력으로 이어지는 미래
             </p>
             
-            <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
+            {/* <p className="max-w-3xl mx-auto text-lg leading-relaxed md:text-xl text-white/90">
               Connecting US and Korean schools through sustainable educational partnerships. 
            
-            </p>
+            </p> */}
           </div>
         </Container>
       </section>
@@ -173,7 +173,7 @@ export default function JewelPage() {
       {/* Photo Row - Kay in action */}
       <section className="py-6 bg-white">
         <Container>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
               <Image
                 src="/images/jewel-partnership/IMG_0083.jpg"
@@ -199,6 +199,15 @@ export default function JewelPage() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center 30%"
+              />
+            </div>
+            <div className="relative h-64 overflow-hidden shadow-md rounded-xl">
+              <Image
+                src="/images/jewel-partnership/IMG_9020.jpeg"
+                alt="JEWEL Partnership program"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center center"
               />
             </div>
           </div>
