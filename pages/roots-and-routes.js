@@ -1195,63 +1195,61 @@ const RootsAndRoutes = () => {
           {/* Testimonials Section */}
           <Container>
             <section className="py-16 md:py-24 bg-[#f9f7f4] -mx-4 md:-mx-8 px-4 md:px-8">
-              <div className="max-w-5xl mx-auto">
+              <div className="max-w-5xl mx-auto font-clash">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl font-light mb-12 text-[#120902] text-center">
-                  What Students Say
+                  What Participants Say
                 </h2>
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-                  <div className="p-8 bg-white rounded-lg shadow-md">
-                    <div className="mb-4">
-                      <svg className="w-8 h-8 text-[#d96e34]" fill="currentColor" viewBox="0 0 32 32">
-                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                      </svg>
-                    </div>
-                    <p className="mb-6 leading-relaxed text-gray-700">
-                      This program changed my perspective on what it means to be a global citizen. The connections I made with Korean students were genuine and eye-opening. I came back with friends for life and a deeper understanding of another culture.
-                    </p>
-                    <div className="font-semibold text-[#120902]">
-                      - S.M.
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      2019 Participant
-                    </div>
+                {/* Student Quotes */}
+                <div className="mb-14">
+                  <div className="flex items-center gap-4 mb-8">
+                    <span className="px-4 py-1.5 bg-[#c17854] text-white text-sm font-bold rounded-full">Students</span>
+                    <div className="flex-1 h-px bg-gray-300"></div>
                   </div>
-
-                  <div className="p-8 bg-white rounded-lg shadow-md">
-                    <div className="mb-4">
-                      <svg className="w-8 h-8 text-[#d96e34]" fill="currentColor" viewBox="0 0 32 32">
-                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                      </svg>
-                    </div>
-                    <p className="mb-6 leading-relaxed text-gray-700">
-                      I wasn't sure what to expect, but the program exceeded everything I imagined. From exploring ancient temples to chatting with students my age about K-pop and school life, every day was memorable. This trip inspired me to continue studying Korean.
-                    </p>
-                    <div className="font-semibold text-[#120902]">
-                      - J.L.
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      2018 Participant
-                    </div>
-                  </div>
-
-                  <div className="p-8 bg-white rounded-lg shadow-md">
-                    <div className="mb-4">
-                      <svg className="w-8 h-8 text-[#d96e34]" fill="currentColor" viewBox="0 0 32 32">
-                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                      </svg>
-                    </div>
-                    <p className="mb-6 leading-relaxed text-gray-700">
-                      The hands-on cultural experiences were incredible.  The program organizers really care about creating meaningful experiences.
-                    </p>
-                    <div className="font-semibold text-[#120902]">
-                      - A.K.
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      2019 Participant
-                    </div>
+                  <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    {[
+                      { quote: "This program changed my perspective on what it means to be a global citizen. The connections I made with Korean students were genuine and eye-opening. I came back with friends for life and a deeper understanding of another culture.", name: "S.M." },
+                      { quote: "I wasn't sure what to expect, but the program exceeded everything I imagined. From exploring ancient temples to chatting with students my age about K-pop and school life, every day was memorable. This trip inspired me to continue studying Korean.", name: "J.L."},
+                      { quote: "The hands-on cultural experiences were incredible. The program organizers really care about creating meaningful experiences.", name: "A.K."},
+                    ].map((t, i) => (
+                      <div key={i} className="p-8 bg-white rounded-lg shadow-md">
+                        <div className="mb-4">
+                          <svg className="w-8 h-8 text-[#d96e34]" fill="currentColor" viewBox="0 0 32 32">
+                            <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                          </svg>
+                        </div>
+                        <p className="mb-6 leading-relaxed text-gray-700">{t.quote}</p>
+                        <div className="font-semibold text-[#120902]">— {t.name}</div>
+                      
+                      </div>
+                    ))}
                   </div>
                 </div>
+
+                {/* Educator Quotes */}
+                <div>
+                  <div className="flex items-center gap-4 mb-8">
+                    <span className="px-4 py-1.5 bg-[#1e3a5f] text-white text-sm font-bold rounded-full">Educators</span>
+                    <div className="flex-1 h-px bg-gray-300"></div>
+                  </div>
+                  <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    {[
+                      { quote: "This was an unforgettable personal and professional learning experience for me!" },
+                      { quote: "I thought the trip was well thought out and gave each participant a rich Korean experience. I have shared the opportunity with other Superintendents who are very interested in learning more." },
+                      { quote: "Thank you for this exceptional opportunity. I will ever cherish the memories collected and friendships cultivated on this remarkable journey. We look forward to expanding future Korean Language and culture offerings in our school division." },
+                    ].map((t, i) => (
+                      <div key={i} className="p-8 bg-white rounded-lg shadow-md">
+                        <div className="mb-4">
+                          <svg className="w-8 h-8 text-[#1e3a5f]" fill="currentColor" viewBox="0 0 32 32">
+                            <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                          </svg>
+                        </div>
+                        <p className="italic leading-relaxed text-gray-700">{t.quote}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
               </div>
             </section>
           </Container>

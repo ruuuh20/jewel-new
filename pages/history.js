@@ -107,7 +107,7 @@ export default function History(props) {
                               </div>
 
                               {/* Content */}
-                              <div className="leading-relaxed prose prose-lg text-gray-700 max-w-none">
+                              <div className="leading-relaxed prose prose-lg text-gray-700 max-w-none font-clash">
                                 <PortableText 
                                   value={item.timelineBlockEn} 
                                   components={myPortableTextComponents}
