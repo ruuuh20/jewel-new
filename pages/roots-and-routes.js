@@ -360,9 +360,13 @@ const RootsAndRoutes = () => {
             <span className="px-3 py-1 bg-[#e0e7ef] text-[#1e3a5f] rounded-full text-sm font-semibold">Students</span>
             <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2019 — Student Trip</h3>
           </div>
-          <p className="mb-6 text-lg leading-relaxed text-gray-700">
+          <p className="mb-4 text-lg leading-relaxed text-gray-700">
             Our 2019 cohort explored Seoul, the ancient capital of Gyeongju, and historic Suwon. Highlights included visiting Gyeongbokgung Palace, exploring the UNESCO World Heritage sites of Gyeongju, touring Suwon Hwaseong Fortress, and the powerful experience of the DMZ tour.
           </p>
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#f0f4f8] text-[#1e3a5f] rounded-full text-sm font-semibold">
+            <span>Student Exchange Partner:</span>
+            <span className="font-bold">Chung Nam Samsung Academy (CNSA)</span>
+          </div>
           <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-2">
             <div className="relative overflow-hidden bg-gray-100 shadow-lg rounded-xl">
               <video width="100%" height="auto" autoPlay loop muted playsInline preload="auto">
@@ -377,22 +381,24 @@ const RootsAndRoutes = () => {
           </div>
           <div className="grid grid-cols-2 gap-4 mb-8 md:grid-cols-3">
             {[
-              { file: "IMG_2076.JPG", alt: "2019 student trip" },
-              { file: "IMG_2099.JPG", alt: "2019 student trip" },
-              { file: "IMG_2112.JPG", alt: "2019 student trip" },
-              { file: "IMG_2133.JPG", alt: "2019 student trip" },
-              { file: "IMG_2163.JPG", alt: "2019 student trip" },
-              { file: "IMG_2167.JPG", alt: "2019 student trip" },
-              { file: "IMG_2294.JPG", alt: "2019 student trip" },
-            ].map((photo) => (
-              <div key={photo.file} className="relative h-64 overflow-hidden rounded-lg">
-                <Image src={`/images/students/2019/${photo.file}`} alt={photo.alt} layout="fill" objectFit="cover" objectPosition="center center" />
+              "learncation-2019-1.jpg",
+              "learncation-2019-2.jpg",
+              "learncation-2019-3.jpg",
+              "learncation-2019-4.jpg",
+              "learncation-2019-5.jpg",
+              "learncation-2019-7.jpg",
+              "learncation-2019-8.jpg",
+              "learncation-2019-9.JPG",
+            ].map((file) => (
+              <div key={file} className="relative h-64 overflow-hidden rounded-lg">
+                <Image src={`/${file}`} alt="2019 student trip" layout="fill" objectFit="cover" objectPosition="center center" />
               </div>
             ))}
           </div>
           <div className="bg-[#f9f7f4] p-6 rounded-lg">
             <h4 className="text-lg font-bold mb-3 text-[#120902]">Trip Highlights</h4>
             <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
+              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Student exchange with Chung Nam Samsung Academy (CNSA)</span></li>
               <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Gyeongbokgung Palace in Seoul</span></li>
               <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>UNESCO World Heritage sites in Gyeongju</span></li>
               <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Suwon Hwaseong Fortress city tour</span></li>
@@ -407,11 +413,25 @@ const RootsAndRoutes = () => {
       {/* 2019 Educators */}
       {activeTrip === "2019-educators" && (
         <div className="p-6 bg-white shadow-sm rounded-xl md:p-8 animate-fadeIn">
-          <div className="flex flex-wrap items-center gap-3 mb-3">
+          <div className="flex flex-wrap items-center gap-3 mb-6">
             <span className="px-3 py-1 bg-[#f0f4f8] text-[#1e3a5f] rounded-full text-sm font-semibold">Educators</span>
             <h3 className="text-xl md:text-2xl font-bold text-[#120902]">Summer 2019 — Educator Trip</h3>
           </div>
-          <p className="italic text-gray-500">Photos and details coming soon.</p>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+            {[
+              { file: "IMG_2076.JPG", alt: "Educators on the 2019 trip" },
+              { file: "IMG_2099.JPG", alt: "Educators on the 2019 trip" },
+              { file: "IMG_2112.JPG", alt: "Educators on the 2019 trip" },
+              { file: "IMG_2133.JPG", alt: "Educators on the 2019 trip" },
+              { file: "IMG_2163.JPG", alt: "Educators on the 2019 trip" },
+              { file: "IMG_2167.JPG", alt: "Educators on the 2019 trip" },
+              { file: "IMG_2294.JPG", alt: "Educators on the 2019 trip" },
+            ].map((photo) => (
+              <div key={photo.file} className="relative h-56 overflow-hidden rounded-lg">
+                <Image src={`/images/educators/2019/${photo.file}`} alt={photo.alt} layout="fill" objectFit="cover" objectPosition="center center" />
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
