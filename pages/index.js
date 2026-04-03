@@ -231,7 +231,7 @@ const Home = ({ data }) => {
 
      
 
-         {/* Hero Section - Two Column Layout MAIN */}
+         {/* SAVED: Roots & Routes Hero — restore this when summer applications open
           <m.section
             initial="initial"
             animate="enter"
@@ -239,34 +239,23 @@ const Home = ({ data }) => {
             variants={fade}
             className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9]"
           >
-           
             <Container>
               <div className="grid items-center gap-8 py-16 pt-20 pb-12 md:grid-cols-2 md:gap-12 md:py-24 xl:py-32">
-                {/* Left Column - Text Content */}
                 <div className="order-2 md:order-1">
-                  {/* Badge */}
                   <div className="mb-6">
                     <span className="inline-block px-5 py-2 bg-[#e8703a] text-white font-bold rounded-full text-sm md:text-base shadow-lg">
                       Applications Open Now • Spring Break 2026
                     </span>
                   </div>
-                  
-                  {/* Main Headline */}
                   <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 text-[#1e3a5f] tracking-tight">
                     Roots and Routes
                   </h1>
-                  
-                  {/* Subheadline */}
                   <p className="text-xl md:text-2xl xl:text-3xl mb-6 font-semibold leading-relaxed text-[#334e68]">
                     A 10-day educational and cultural exchange for Korean-American students
                   </p>
-                  
-                  {/* Description */}
                   <p className="mb-6 text-base leading-relaxed text-gray-700 md:text-lg">
                     Experience Korea's world-class education system through an exclusive exchange at Minjok Leadership Academy. Explore Seoul's culture, connect with Korean students, and develop global leadership skills.
                   </p>
-                  
-                  {/* Key Details */}
                   <div className="flex flex-wrap gap-4 mb-8">
                     <div className="flex items-center gap-2 px-4 py-2 bg-[#e0e7ef] border border-[#2c5282]/20 rounded-lg shadow-md">
                       <svg className="w-5 h-5 text-[#1e3a5f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -274,61 +263,37 @@ const Home = ({ data }) => {
                       </svg>
                       <span className="font-bold text-[#1e3a5f]">April 2–11, 2026</span>
                     </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-[#e0e7ef] border border-[#2c5282]/20  rounded-lg shadow-md">
+                    <div className="flex items-center gap-2 px-4 py-2 bg-[#e0e7ef] border border-[#2c5282]/20 rounded-lg shadow-md">
                       <svg className="w-5 h-5 text-[#1e3a5f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                       <span className="font-bold text-[#1e3a5f]">Grades 7–12</span>
                     </div>
                   </div>
-                  
-                  {/* CTA Buttons */}
                   <div className="flex flex-col gap-4 sm:flex-row">
-                    <a
-                      href="/apply"
-               
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform rounded-lg"
-                    >
+                    <a href="/apply" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl hover:scale-105 transform rounded-lg">
                       Apply Now
                     </a>
-                    <a
-                      href="/roots-and-routes"
-               
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] shadow-lg transition-all duration-300 text-lg rounded-lg"
-                    >
+                    <a href="/roots-and-routes" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] shadow-lg transition-all duration-300 text-lg rounded-lg">
                       Learn More
                     </a>
                   </div>
                 </div>
-
-                {/* Right Column - Image */}
                 <div className="order-1 md:order-2">
                   <div className="relative overflow-hidden transition-transform duration-500 transform shadow-2xl rounded-2xl hover:scale-105">
                     <div className="relative h-[400px] md:h-[500px] xl:h-[600px]">
-                      <Image
-                        src="/mainphoto1.jpg"
-                        alt="Roots and Routes - Cultural Exchange Program"
-                        layout="fill"
-                        objectFit="cover"
-                        priority
-                      />
-                      {/* Subtle overlay for depth */}
-                      {/* <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/30 to-transparent"></div> */}
-                      
-                      {/* Optional: Floating stat badge on image */}
+                      <Image src="/mainphoto1.jpg" alt="Roots and Routes - Cultural Exchange Program" layout="fill" objectFit="cover" priority />
                       <div className="hidden md:block border-2 border-[#1e3a5f]/10 absolute p-4 shadow-lg bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl">
                         <div className="flex items-center justify-between">
                           <div>
                             <div className="text-2xl font-extrabold text-[#1e3a5f]">25 Spots</div>
                             <div className="text-sm text-gray-600">Group Size</div>
                           </div>
-                          <div className="pl-4 border-l border-[#2c5282]/20 (make it border-l-2)">
+                          <div className="pl-4 border-l-2 border-[#2c5282]/20">
                             <div className="text-2xl font-extrabold text-[#1e3a5f]">10 Days</div>
                             <div className="text-sm text-gray-600">Spring Break</div>
                           </div>
-                          <div className="pl-4 border-l border-[#2c5282]/20 (make it border-l-2)">
+                          <div className="pl-4 border-l-2 border-[#2c5282]/20">
                             <div className="text-2xl font-extrabold text-[#1e3a5f]">Minjok Leadership Academy</div>
                             <div className="text-sm text-gray-600">Exchange</div>
                           </div>
@@ -339,13 +304,145 @@ const Home = ({ data }) => {
                 </div>
               </div>
             </Container>
-           
           </m.section>
+          */}
+
+         {/* Hero Section - General Org */}
+          <m.section
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={fade}
+            className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9]"
+          >
+            <Container>
+              <div className="flex flex-col items-center justify-center py-24 text-center md:py-32 xl:py-40">
+                {/* Tagline */}
+                <div className="mb-6">
+                  <span className="inline-block px-5 py-2 bg-[#1e3a5f] text-white font-semibold rounded-full text-sm tracking-wide uppercase">
+                    Korean-American Education & Culture
+                  </span>
+                </div>
+
+                {/* Main Headline */}
+                <h1 className="max-w-4xl text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 text-[#1e3a5f] tracking-tight">
+                  Building Bridges Between Schools and Korea
+                </h1>
+
+                {/* Subheadline */}
+                <p className="max-w-2xl text-xl md:text-2xl mb-10 leading-relaxed text-[#334e68] font-medium">
+                  From long-term school partnerships and student trips to Korea, to Korean classes and cultural events in your community — we can help you plan it from start to finish.
+                </p>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href="#what-we-do"
+                    className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl rounded-lg"
+                  >
+                    Explore Our Programs
+                  </a>
+                  <Link href="/contact">
+                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-white text-[#1e3a5f] border-2 border-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white transition-all duration-300 text-lg rounded-lg">
+                      Get In Touch
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </Container>
+          </m.section>
+
+          {/* Find Your Path Section */}
+          <section className="py-14 bg-[#1e3a5f] md:py-16">
+            <Container>
+              <div className="max-w-5xl mx-auto">
+                <div className="mb-10 text-center">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white">
+                    Find what's right for you.
+                  </h2>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-3">
+                  {/* Path 1: Directors / Partners */}
+                  <Link href="/jewel-partnership">
+                    <a className="group flex flex-col gap-3 p-6 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#e8703a] rounded-2xl transition-all duration-300">
+                      <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center flex-shrink-0">
+                        <FaHandshake className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For School Directors & Administrators</p>
+                        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+                          I'm interested in a school partnership
+                        </h3>
+                        <p className="text-[#a8c4e0] text-sm leading-relaxed">
+                          We connect US and Korean schools through structured, lasting educational and cultural exchange partnerships.
+                        </p>
+                      </div>
+                      <div className="inline-flex items-center text-[#e8703a] font-semibold text-sm mt-auto group-hover:gap-2 transition-all">
+                        Explore partnerships
+                        <svg className="w-4 h-4 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
+                  </Link>
+
+                  {/* Path 2: Parents */}
+                  <Link href="/roots-and-routes">
+                    <a className="group flex flex-col gap-3 p-6 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#e8703a] rounded-2xl transition-all duration-300">
+                      <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center flex-shrink-0">
+                        <FaPlane className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Parents & Families</p>
+                        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+                          I want my child to visit Korea
+                        </h3>
+                        <p className="text-[#a8c4e0] text-sm leading-relaxed">
+                          Our Roots & Routes program is an immersive 10-day educational exchange to Korea for students in grades 7–12.
+                        </p>
+                      </div>
+                      <div className="inline-flex items-center text-[#e8703a] font-semibold text-sm mt-auto group-hover:gap-2 transition-all">
+                        Learn about Roots & Routes
+                        <svg className="w-4 h-4 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
+                  </Link>
+
+                  {/* Path 3: Organizations & Schools — cultural events */}
+                  <Link href="/ganadara">
+                    <a className="group flex flex-col gap-3 p-6 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#e8703a] rounded-2xl transition-all duration-300">
+                      <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center flex-shrink-0">
+                        <HiBookOpen className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Schools & Organizations</p>
+                        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+                          I want to bring Korean language or culture to my community
+                        </h3>
+                        <p className="text-[#a8c4e0] text-sm leading-relaxed">
+                          Whether it's an ongoing Korean class or a one-time event — a diversity day booth, a cultural workshop, a festival — we can help you plan and execute it.
+                        </p>
+                      </div>
+                      <div className="inline-flex items-center text-[#e8703a] font-semibold text-sm mt-auto group-hover:gap-2 transition-all">
+                        See what we offer
+                        <svg className="w-4 h-4 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </Container>
+          </section>
 
 
  
 
-<section className="py-16 bg-white md:py-20">
+<section id="what-we-do" className="py-16 bg-white md:py-20">
   <Container>
     <div className="max-w-6xl mx-auto">
       {/* Section Header - Bilingual */}
@@ -423,7 +520,7 @@ const Home = ({ data }) => {
           </a>
         </Link>
 
-        {/* Card 3: Learn Korean */}
+        {/* Card 3: Korean Language & Culture */}
         <Link href="/ganadara">
           <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
             <div className="flex items-start gap-4">
@@ -431,17 +528,17 @@ const Home = ({ data }) => {
               <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
                 <HiBookOpen className="w-8 h-8" />
               </div>
-              
+
               {/* Content */}
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
-                  Learn Korean
+                  Korean Language & Culture
                 </h3>
                 <p className="mb-3 text-xl font-medium text-gray-600">
                   한글문화교육
                 </p>
                 <p className="mb-3 leading-relaxed text-gray-700">
-                  Korean language programs for students of all levels, from beginners to advanced.
+                  Korean language classes for students of all levels — and a hub for schools looking to host Korean cultural events like diversity day booths, festivals, and workshops.
                 </p>
                 <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                   Learn More

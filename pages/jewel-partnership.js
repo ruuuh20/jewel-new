@@ -63,9 +63,7 @@ export default function JewelPage() {
                   양국의 공립·사립 초·중·고교 및 교육청을 대상으로, 상담부터 파트너 매칭, MOU 체결, 프로그램 운영, 성과 보고까지 전 과정을 지원합니다. 
                 </p>
 
-                <p className={'mb-4 text-base font-semibold text-[#1e3a5f]'}>
-                  {'\u201C'}한 번 다녀오는 교류{'\u201D'}가 아닌, 학교의 문화로 자리잡는 지속가능한 글로벌 교육
-                </p>
+            
                 
                
               </div>
@@ -85,6 +83,9 @@ export default function JewelPage() {
                       K-Culture as an educational tool — for understanding history, society, 
                       culture, and values.
                     </p>
+                    <p className="text-sm leading-relaxed text-gray-800 font-pretend">
+                     K-Culture를 역사·사회·문화·가치 이해의 교육적 도구로 활용
+                    </p>
                   </div>
                 </div>
 
@@ -101,6 +102,9 @@ export default function JewelPage() {
                       Cross-cultural understanding to develop students' critical thinking 
                       and global perspective.
                     </p>
+                    <p className="text-sm leading-relaxed text-gray-800 font-pretend">
+                     타문화 이해를 통해 학생들의 비판적 사고와 글로벌 시각 함양
+                    </p>
                   </div>
                 </div>
 
@@ -116,6 +120,9 @@ export default function JewelPage() {
                     <p className="text-sm leading-relaxed text-gray-600">
                       Year-round collaboration and exchange programs that build lasting 
                       connections between schools.
+                    </p>
+                    <p className="text-sm leading-relaxed text-gray-800 font-pretend">
+                       {'\u201C'}한 번 다녀오는 교류{'\u201D'}가 아닌, 학교의 문화로 자리잡는 지속가능한 글로벌 교육
                     </p>
                   </div>
                 </div>
