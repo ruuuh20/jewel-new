@@ -367,7 +367,7 @@ const Home = ({ data }) => {
                         <h3 className="mb-2 text-lg font-bold leading-snug text-white">
                           I'm interested in a school partnership
                         </h3>
-                        <p className="text-[#a8c4e0] text-sm leading-relaxed">
+                        <p className="text-sm leading-relaxed text-gray-200">
                           We connect US and Korean schools through structured, lasting educational and cultural exchange partnerships.
                         </p>
                       </div>
@@ -391,8 +391,11 @@ const Home = ({ data }) => {
                         <h3 className="mb-2 text-lg font-bold leading-snug text-white">
                           I want my child to visit Korea
                         </h3>
-                        <p className="text-[#a8c4e0] text-sm leading-relaxed">
-                          Our Roots & Routes program is an immersive 10-day educational exchange to Korea for students in grades 7–12.
+                        <p className="text-sm leading-relaxed text-gray-200">
+                          Our Roots & Routes program is an immersive  educational exchange to Korea for students.
+                        </p>
+                        <p className="pt-3 mt-3 text-xs leading-relaxed border-t text-white/70 border-white/20">
+                          Also an educator interested in visiting Korea? We offer trips for teachers and administrators too.
                         </p>
                       </div>
                       <div className="inline-flex items-center text-[#e8703a] font-semibold text-sm mt-auto group-hover:gap-2 transition-all">
@@ -415,7 +418,7 @@ const Home = ({ data }) => {
                         <h3 className="mb-2 text-lg font-bold leading-snug text-white">
                           I want to bring Korean language or culture to my community
                         </h3>
-                        <p className="text-[#a8c4e0] text-sm leading-relaxed">
+                        <p className="text-sm leading-relaxed text-gray-200">
                           Whether it's an ongoing Korean class or a one-time event — a diversity day booth, a cultural workshop, a festival — we can help you plan and execute it.
                         </p>
                       </div>
