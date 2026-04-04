@@ -317,21 +317,14 @@ const Home = ({ data }) => {
           >
             <Container>
               <div className="flex flex-col items-center justify-center py-24 text-center md:py-32 xl:py-40">
-                {/* Tagline */}
-                <div className="mb-6">
-                  <span className="inline-block px-5 py-2 bg-[#1e3a5f] text-white font-semibold rounded-full text-sm tracking-wide uppercase">
-                    Korean-American Education & Culture
-                  </span>
-                </div>
-
                 {/* Main Headline */}
                 <h1 className="max-w-4xl text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 text-[#1e3a5f] tracking-tight">
-                  Building Bridges Between Schools and Korea
+                  Building global understanding through education and cultural exchange
                 </h1>
 
                 {/* Subheadline */}
                 <p className="max-w-2xl text-xl md:text-2xl mb-10 leading-relaxed text-[#334e68] font-medium">
-                  From long-term school partnerships and student trips to Korea, to Korean classes and cultural events in your community — we can help you plan it from start to finish.
+                  We connect schools and communities in the United States with Korea — through school partnerships, student and educator trips, and Korean language and cultural programs.
                 </p>
 
                 {/* CTA Buttons */}
@@ -357,7 +350,7 @@ const Home = ({ data }) => {
             <Container>
               <div className="max-w-5xl mx-auto">
                 <div className="mb-10 text-center">
-                  <h2 className="text-2xl md:text-3xl font-bold text-white">
+                  <h2 className="text-2xl font-bold text-white md:text-3xl">
                     Find what's right for you.
                   </h2>
                 </div>
@@ -371,7 +364,7 @@ const Home = ({ data }) => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For School Directors & Administrators</p>
-                        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+                        <h3 className="mb-2 text-lg font-bold leading-snug text-white">
                           I'm interested in a school partnership
                         </h3>
                         <p className="text-[#a8c4e0] text-sm leading-relaxed">
@@ -395,7 +388,7 @@ const Home = ({ data }) => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Parents & Families</p>
-                        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+                        <h3 className="mb-2 text-lg font-bold leading-snug text-white">
                           I want my child to visit Korea
                         </h3>
                         <p className="text-[#a8c4e0] text-sm leading-relaxed">
@@ -419,7 +412,7 @@ const Home = ({ data }) => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Schools & Organizations</p>
-                        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+                        <h3 className="mb-2 text-lg font-bold leading-snug text-white">
                           I want to bring Korean language or culture to my community
                         </h3>
                         <p className="text-[#a8c4e0] text-sm leading-relaxed">
@@ -621,43 +614,6 @@ const Home = ({ data }) => {
             <hr className="hidden md:block bg-black h-[1px] border-none" />
           </Container> */}
 
-           {/* Hero Section - Modernized */}
-          <m.section
-            initial="initial"
-            animate="enter"
-            exit="exit"
-            variants={fade}
-            className="relative w-full"
-          >
-            <Container>
-              <div className="flex flex-col items-center justify-center min-h-[60vh] md:min-h-[70vh] py-16 md:py-24">
-                {/* Mission Statement */}
-                <div className="max-w-5xl mx-auto text-center">
-                  <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-8 text-[#120902] font-clash">
-                    Building global understanding through education and cultural exchange
-                  </h1>
-                  
-                  <p className="max-w-3xl mx-auto mb-12 text-lg text-gray-700 md:text-xl font-clash">
-                   We create meaningful connections between the United States and Korea through immersive programs that bring students, educators, and communities together
-                  </p>
-
-                  {/* CTA Buttons */}
-                  <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <Link href="/about">
-                      <a className="inline-flex items-center px-8 py-3 font-semibold transition-all duration-300 bg-white border-2 border-black hover:bg-black hover:text-white">
-                        Learn About Our Work
-                      </a>
-                    </Link>
-                    <Link href="/contact">
-                      <a className="inline-flex items-center px-8 py-3 font-semibold bg-[#d96e34] text-white hover:bg-[#c45e24] transition-all duration-300">
-                        Get Involved
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </Container>
-          </m.section>
 
 
           
