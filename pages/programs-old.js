@@ -107,7 +107,7 @@ export default function Programs(props) {
                 </p>
                 <div className="flex flex-col justify-center gap-4 sm:flex-row">
                   <Link href="/roots-and-routes">
-                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
+                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
                       Roots & Routes Program
                     </a>
                   </Link>

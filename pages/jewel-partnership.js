@@ -13,7 +13,7 @@ export default function JewelPage() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
         <Container>
           <div className="max-w-4xl mx-auto text-center text-white">
-            <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+            <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
               <span className="font-bold">School Partnerships • 자매학교 교류</span>
             </div>
             
@@ -157,7 +157,7 @@ export default function JewelPage() {
                   <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-2">
                     Kay Kim (김경화)
                   </h3>
-                  <p className="text-xl text-[#c17854] font-semibold mb-4">
+                  <p className="text-xl text-[#e8703a] font-semibold mb-4">
                     Founder & Director, JEWEL Partnership
                   </p>
                   <p className="mb-4 text-lg leading-relaxed text-gray-700">
@@ -236,9 +236,9 @@ export default function JewelPage() {
 
             <div className="grid gap-6 md:grid-cols-2">
               {/* Service 1 */}
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all">
+              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854]"></div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a]"></div>
                   <div>
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       School-to-School Matching
@@ -255,9 +255,9 @@ export default function JewelPage() {
               </div>
 
               {/* Service 2 */}
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all">
+              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854]"></div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a]"></div>
                   <div>
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       Year-Round Collaboration
@@ -274,9 +274,9 @@ export default function JewelPage() {
               </div>
 
               {/* Service 3 */}
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all">
+              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854]"></div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a]"></div>
                   <div>
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       Exchange Visits
@@ -293,9 +293,9 @@ export default function JewelPage() {
               </div>
 
               {/* Service 4 */}
-              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all">
+              <div className="bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854]"></div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a]"></div>
                   <div>
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       Full Program Management
@@ -330,7 +330,7 @@ export default function JewelPage() {
               </h3>
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#c17854] mt-2"></div>
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#e8703a] mt-2"></div>
                   <div>
                     <p className="mb-1 font-semibold">Seoul Education Office Partnership</p>
                     <p className="text-sm text-white/80">
@@ -341,7 +341,7 @@ export default function JewelPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#c17854] mt-2"></div>
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#e8703a] mt-2"></div>
                   <div>
                     <p className="mb-1 font-semibold">US School Administrator Programs</p>
                     <p className="text-sm text-white/80">
@@ -352,7 +352,7 @@ export default function JewelPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#c17854] mt-2"></div>
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#e8703a] mt-2"></div>
                   <div>
                     <p className="mb-1 font-semibold">Korean Language Curriculum</p>
                     <p className="text-sm text-white/80">
@@ -363,7 +363,7 @@ export default function JewelPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#c17854] mt-2"></div>
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#e8703a] mt-2"></div>
                   <div>
                     <p className="mb-1 font-semibold">Student Cultural Exchange</p>
                     <p className="text-sm text-white/80">
@@ -429,7 +429,7 @@ export default function JewelPage() {
             <div className="space-y-6">
               {/* Step 1 */}
               <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center text-xl font-bold">
                   1
                 </div>
                 <div className="flex-1">
@@ -445,7 +445,7 @@ export default function JewelPage() {
 
               {/* Step 2 */}
               <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center text-xl font-bold">
                   2
                 </div>
                 <div className="flex-1">
@@ -461,7 +461,7 @@ export default function JewelPage() {
 
               {/* Step 3 */}
               <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center text-xl font-bold">
                   3
                 </div>
                 <div className="flex-1">
@@ -477,7 +477,7 @@ export default function JewelPage() {
 
               {/* Step 4 */}
               <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center text-xl font-bold">
                   4
                 </div>
                 <div className="flex-1">
@@ -493,7 +493,7 @@ export default function JewelPage() {
 
               {/* Step 5 */}
               <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center text-xl font-bold">
                   5
                 </div>
                 <div className="flex-1">
@@ -526,7 +526,7 @@ export default function JewelPage() {
 
             <div className="grid gap-8 md:grid-cols-3">
               <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-[#c17854] mx-auto mb-4"></div>
+                <div className="w-16 h-16 rounded-full bg-[#e8703a] mx-auto mb-4"></div>
                 <h3 className="text-xl font-bold text-[#1e3a5f] mb-3">
                   Proven Expertise
                 </h3>
@@ -536,7 +536,7 @@ export default function JewelPage() {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-[#c17854] mx-auto mb-4"></div>
+                <div className="w-16 h-16 rounded-full bg-[#e8703a] mx-auto mb-4"></div>
                 <h3 className="text-xl font-bold text-[#1e3a5f] mb-3">
                   Sustainable Model
                 </h3>
@@ -546,7 +546,7 @@ export default function JewelPage() {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-[#c17854] mx-auto mb-4"></div>
+                <div className="w-16 h-16 rounded-full bg-[#e8703a] mx-auto mb-4"></div>
                 <h3 className="text-xl font-bold text-[#1e3a5f] mb-3">
                   Full Support
                 </h3>
@@ -575,7 +575,7 @@ export default function JewelPage() {
             
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Link href="/contact">
-                <a className="inline-flex items-center justify-center px-8 py-4 bg-[#c17854] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-xl text-lg">
+                <a className="inline-flex items-center justify-center px-8 py-4 bg-[#e8703a] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-xl text-lg">
                   Contact Us
                 </a>
               </Link>

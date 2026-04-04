@@ -33,12 +33,12 @@ const RootsAndRoutes = () => {
             animate="enter"
             exit="exit"
             variants={fade}
-            className="w-full py-16 md:py-24"
+            className="w-full pt-36 pb-16 md:pt-48 md:pb-24"
           >
             <Container>
               <div className="max-w-4xl mx-auto text-center">
                 <div className="mb-6">
-                  <span className="inline-block px-4 py-2 bg-[#c17854] text-white font-semibold rounded-full text-sm md:text-base">
+                  <span className="inline-block px-4 py-2 bg-[#e8703a] text-white font-semibold rounded-full text-sm md:text-base">
                     Applications Open • April 2026
                   </span>
                 </div>
@@ -55,7 +55,7 @@ const RootsAndRoutes = () => {
                 <div className="flex flex-col justify-center gap-4 sm:flex-row">
                   <a
                     href="/apply"
-                    className="inline-flex items-center justify-center px-10 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5"
+                    className="inline-flex items-center justify-center px-10 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5"
                   >
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
@@ -110,8 +110,8 @@ const RootsAndRoutes = () => {
       {/* Benefit Cards - 4 Column Grid */}
       <div className="grid gap-6 mb-12 md:grid-cols-2 lg:grid-cols-4">
         {/* Card 1: KMLA Exchange */}
-        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
-          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center mb-4 mx-auto">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
@@ -125,8 +125,8 @@ const RootsAndRoutes = () => {
         </div>
 
         {/* Card 2: Cultural Immersion */}
-        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
-          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center mb-4 mx-auto">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -141,8 +141,8 @@ const RootsAndRoutes = () => {
         </div>
 
         {/* Card 3: Small Groups */}
-        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
-          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center mb-4 mx-auto">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
@@ -156,8 +156,8 @@ const RootsAndRoutes = () => {
         </div>
 
         {/* Card 4: Expert Guides */}
-        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-lg">
-          <div className="w-14 h-14 rounded-full bg-[#c17854] text-white flex items-center justify-center mb-4 mx-auto">
+        <div className="bg-gradient-to-br from-[#f8fafc] to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-lg">
+          <div className="w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center mb-4 mx-auto">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
@@ -181,7 +181,7 @@ const RootsAndRoutes = () => {
   <div className="grid gap-8 text-center md:grid-cols-3">
     <div>
       <div className="mb-3 text-4xl">✈️</div>
-      <div className="text-xl font-bold text-[#c17854] mb-3">
+      <div className="text-xl font-bold text-[#e8703a] mb-3">
         Complete Travel Package
       </div>
       <p className="text-sm leading-relaxed text-white/90">
@@ -190,7 +190,7 @@ const RootsAndRoutes = () => {
     </div>
     <div>
       <div className="mb-3 text-4xl">🍱</div>
-      <div className="text-xl font-bold text-[#c17854] mb-3">
+      <div className="text-xl font-bold text-[#e8703a] mb-3">
         All Meals & Activities
       </div>
       <p className="text-sm leading-relaxed text-white/90">
@@ -199,7 +199,7 @@ const RootsAndRoutes = () => {
     </div>
     <div>
       <div className="mb-3 text-4xl">👨‍🏫</div>
-      <div className="text-xl font-bold text-[#c17854] mb-3">
+      <div className="text-xl font-bold text-[#e8703a] mb-3">
         Expert Guidance & Support
       </div>
       <p className="text-sm leading-relaxed text-white/90">
@@ -331,12 +331,12 @@ const RootsAndRoutes = () => {
           <div className="bg-[#f9f7f4] p-6 rounded-lg">
             <h4 className="text-lg font-bold mb-3 text-[#120902]">Trip Highlights</h4>
             <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Explored ancient Silla Kingdom sites</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Archaeological workshop at museum</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Traditional hanbok dress experience</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Language exchange sessions</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Collaborative art project with Korean students</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Temple stay experience</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Explored ancient Silla Kingdom sites</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Archaeological workshop at museum</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Traditional hanbok dress experience</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Language exchange sessions</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Collaborative art project with Korean students</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Temple stay experience</span></li>
             </ul>
           </div>
         </div>
@@ -398,13 +398,13 @@ const RootsAndRoutes = () => {
           <div className="bg-[#f9f7f4] p-6 rounded-lg">
             <h4 className="text-lg font-bold mb-3 text-[#120902]">Trip Highlights</h4>
             <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Student exchange with Chung Nam Samsung Academy (CNSA)</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Gyeongbokgung Palace in Seoul</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>UNESCO World Heritage sites in Gyeongju</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Suwon Hwaseong Fortress city tour</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>DMZ tour and historical presentation</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>K-pop dance workshop</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Traditional Korean cultural experiences</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Student exchange with Chung Nam Samsung Academy (CNSA)</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Gyeongbokgung Palace in Seoul</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>UNESCO World Heritage sites in Gyeongju</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Suwon Hwaseong Fortress city tour</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>DMZ tour and historical presentation</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>K-pop dance workshop</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Traditional Korean cultural experiences</span></li>
             </ul>
           </div>
         </div>
@@ -471,12 +471,12 @@ const RootsAndRoutes = () => {
           <div className="bg-[#f9f7f4] p-6 rounded-lg">
             <h4 className="text-lg font-bold mb-3 text-[#120902]">Trip Highlights</h4>
             <ul className="grid gap-3 text-gray-700 md:grid-cols-2">
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Family-oriented cultural immersion experience</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Intergenerational learning opportunities</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Seoul cultural landmarks and museums</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Traditional Korean cultural workshops</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Student-led presentation and reflection project</span></li>
-              <li className="flex items-start gap-2"><span className="text-[#c17854] font-bold">•</span><span>Meaningful family bonding through shared experiences</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Family-oriented cultural immersion experience</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Intergenerational learning opportunities</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Seoul cultural landmarks and museums</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Traditional Korean cultural workshops</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Student-led presentation and reflection project</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#e8703a] font-bold">•</span><span>Meaningful family bonding through shared experiences</span></li>
             </ul>
           </div>
         </div>
@@ -824,7 +824,7 @@ const RootsAndRoutes = () => {
   </h3>
   <div className="space-y-3">
     <div className="flex items-start gap-3">
-      <div className="w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">
+      <div className="w-8 h-8 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">
         1
       </div>
       <div>
@@ -833,7 +833,7 @@ const RootsAndRoutes = () => {
       </div>
     </div>
     <div className="flex items-start gap-3">
-      <div className="w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">
+      <div className="w-8 h-8 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">
         2
       </div>
       <div>
@@ -843,7 +843,7 @@ const RootsAndRoutes = () => {
     </div>
   </div>
   <p className="mt-4 text-sm text-gray-600">
-    <a href="/apply" className="text-[#c17854] hover:text-[#a85232] font-semibold underline">
+    <a href="/apply" className="text-[#e8703a] hover:text-[#a85232] font-semibold underline">
       View full application details and requirements →
     </a>
   </p>
@@ -856,7 +856,7 @@ const RootsAndRoutes = () => {
   
   <div className="mb-6 space-y-4">
     <div className="flex gap-4">
-      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
+      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold">
         1
       </div>
       <div>
@@ -868,7 +868,7 @@ const RootsAndRoutes = () => {
     </div>
     
     <div className="flex gap-4">
-      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold">
+      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold">
         2
       </div>
       <div>
@@ -944,7 +944,7 @@ const RootsAndRoutes = () => {
                   {/* Day 2 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#e8703a] group-hover:text-white transition-colors duration-300">
                         Day 2
                       </div>
                     </div>
@@ -960,7 +960,7 @@ const RootsAndRoutes = () => {
                   {/* Day 3 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#e8703a] group-hover:text-white transition-colors duration-300">
                         Day 3
                       </div>
                     </div>
@@ -976,7 +976,7 @@ const RootsAndRoutes = () => {
                   {/* Day 4 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#e8703a] group-hover:text-white transition-colors duration-300">
                         Day 4
                       </div>
                     </div>
@@ -992,7 +992,7 @@ const RootsAndRoutes = () => {
                   {/* Days 5-7 - KMLA Exchange */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-base text-center leading-tight p-2">
+                      <div className="w-20 h-20 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold text-base text-center leading-tight p-2">
                         Days<br/>5-7
                       </div>
                     </div>
@@ -1004,23 +1004,23 @@ const RootsAndRoutes = () => {
                       </p>
                       <ul className="space-y-2 text-gray-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
+                          <span className="text-[#e8703a] font-bold">•</span>
                           <span>Class observations and academic activities with Korean students</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
+                          <span className="text-[#e8703a] font-bold">•</span>
                           <span>Student exchange, peer interactions, and cultural dialogue</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
+                          <span className="text-[#e8703a] font-bold">•</span>
                           <span>Campus tours and exploration of state-of-the-art facilities</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
+                          <span className="text-[#e8703a] font-bold">•</span>
                           <span>Leadership and global citizenship workshops</span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-[#c17854] font-bold">•</span>
+                          <span className="text-[#e8703a] font-bold">•</span>
                           <span>Farewell ceremony and reflections on the exchange experience</span>
                         </li>
                       </ul>
@@ -1030,7 +1030,7 @@ const RootsAndRoutes = () => {
                   {/* Day 8 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#e8703a] group-hover:text-white transition-colors duration-300">
                         Day 8
                       </div>
                     </div>
@@ -1046,7 +1046,7 @@ const RootsAndRoutes = () => {
                   {/* Day 9 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#e8703a] group-hover:text-white transition-colors duration-300">
                         Day 9
                       </div>
                     </div>
@@ -1062,7 +1062,7 @@ const RootsAndRoutes = () => {
                   {/* Day 10 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#e8703a] group-hover:text-white transition-colors duration-300">
                         Day 10
                       </div>
                     </div>
@@ -1078,7 +1078,7 @@ const RootsAndRoutes = () => {
                   {/* Day 11 */}
                   <div className="flex gap-6 group">
                     <div className="flex-shrink-0">
-                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#c17854] group-hover:text-white transition-colors duration-300">
+                      <div className="w-20 h-20 rounded-full bg-[#e0e7ef] flex items-center justify-center font-bold text-[#1e3a5f] text-lg group-hover:bg-[#e8703a] group-hover:text-white transition-colors duration-300">
                         Day 11
                       </div>
                     </div>
@@ -1129,7 +1129,7 @@ const RootsAndRoutes = () => {
     href="https://calendly.com/edutogether22/roots-routes-consultation"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center justify-center px-6 py-3 font-semibold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+    className="inline-flex items-center justify-center px-6 py-3 font-semibold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
   >
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
@@ -1157,7 +1157,7 @@ const RootsAndRoutes = () => {
     <li><strong>Virtual Interview:</strong> Selected applicants will be invited to a virtual interview with our program directors.</li>
   </ol>
   <p className="text-gray-700">
-    <a href="/apply" className="text-[#c17854] hover:text-[#a85232] font-semibold underline">
+    <a href="/apply" className="text-[#e8703a] hover:text-[#a85232] font-semibold underline">
       Visit the application page
     </a> for full details and to begin your application.
   </p>
@@ -1223,7 +1223,7 @@ const RootsAndRoutes = () => {
                 {/* Student Quotes */}
                 <div className="mb-14">
                   <div className="flex items-center gap-4 mb-8">
-                    <span className="px-4 py-1.5 bg-[#c17854] text-white text-sm font-bold rounded-full">Students</span>
+                    <span className="px-4 py-1.5 bg-[#e8703a] text-white text-sm font-bold rounded-full">Students</span>
                     <div className="flex-1 h-px bg-gray-300"></div>
                   </div>
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -1280,7 +1280,7 @@ const RootsAndRoutes = () => {
            {/* Application CTA Section */}
           <Container>
             <section className="py-16 md:py-24">
-              <div className="max-w-4xl mx-auto text-center bg-[#c17854] text-white rounded-xl p-12 md:p-16">
+              <div className="max-w-4xl mx-auto text-center bg-[#e8703a] text-white rounded-xl p-12 md:p-16">
                 <h2 className="mb-6 text-3xl font-bold md:text-4xl xl:text-5xl">
                   Ready to Apply?
                 </h2>
@@ -1290,7 +1290,7 @@ const RootsAndRoutes = () => {
                 <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
                   <a
                     href="/apply"
-                    className="inline-flex items-center justify-center px-10 py-4 font-bold bg-white text-[#c17854] hover:bg-gray-100 transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg"
+                    className="inline-flex items-center justify-center px-10 py-4 font-bold bg-white text-[#e8703a] hover:bg-gray-100 transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg"
                   >
                     Apply Now
                   </a>
@@ -1298,7 +1298,7 @@ const RootsAndRoutes = () => {
                     href="https://calendly.com/edutogether22/roots-routes-consultation"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-10 py-4 font-semibold border-2 border-white text-white hover:bg-white hover:text-[#c17854] transition-all duration-300 text-lg rounded-lg"
+                    className="inline-flex items-center justify-center px-10 py-4 font-semibold border-2 border-white text-white hover:bg-white hover:text-[#e8703a] transition-all duration-300 text-lg rounded-lg"
                   >
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 

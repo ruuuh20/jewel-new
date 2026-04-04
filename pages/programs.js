@@ -12,7 +12,7 @@ export default function ProgramsPage() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
   <Container>
     <div className="max-w-4xl mx-auto text-center text-white">
-      <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+      <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
         <span className="font-bold">What We Offer</span>
       </div>
       
@@ -40,14 +40,14 @@ export default function ProgramsPage() {
               
               {/* Program 1: JEWEL */}
               <Link href="/jewel-partnership">
-                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
                   <div className="mb-6">
-                    <div className="inline-block px-4 py-2 bg-[#c17854] text-white rounded-full mb-4">
+                    <div className="inline-block px-4 py-2 bg-[#e8703a] text-white rounded-full mb-4">
                       <span className="text-sm font-semibold">School Partnerships</span>
                     </div>
                   </div>
                   
-                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
+                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#e8703a] transition-colors">
                      JEWEL Partnership
                   </h2>
                   
@@ -60,7 +60,7 @@ export default function ProgramsPage() {
                     through sustainable international partnerships, exchange programs, and collaborative learning.
                   </p>
                   
-                  <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                     Learn More
                     <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -71,14 +71,14 @@ export default function ProgramsPage() {
 
               {/* Program 2: Roots & Routes */}
               <Link href="/roots-and-routes">
-                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
                   <div className="mb-6">
-                    <div className="inline-block px-4 py-2 bg-[#c17854] text-white rounded-full mb-4">
+                    <div className="inline-block px-4 py-2 bg-[#e8703a] text-white rounded-full mb-4">
                       <span className="text-sm font-semibold">Visit to Korea</span>
                     </div>
                   </div>
                   
-                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
+                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#e8703a] transition-colors">
                     Roots & Routes
                   </h2>
                   
@@ -92,7 +92,7 @@ export default function ProgramsPage() {
                     exchange and guided exploration.
                   </p>
                   
-                  <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                     Learn More
                     <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -103,15 +103,15 @@ export default function ProgramsPage() {
 
               {/* Program 3: Ganadara */}
               <Link href="/ganadara">
-                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
                   <div className="mb-6">
-                    <div className="inline-block px-4 py-2 bg-[#c17854] text-white rounded-full mb-4">
-                      <span className="text-sm font-semibold">Learn Korean</span>
+                    <div className="inline-block px-4 py-2 bg-[#e8703a] text-white rounded-full mb-4">
+                      <span className="text-sm font-semibold">Korean Language & Culture</span>
                     </div>
                   </div>
-                  
-                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
-                    Ganadara Learn Korean
+
+                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#e8703a] transition-colors">
+                    Ganadara Korean Language & Culture
                   </h2>
                   
                   <p className="mb-4 text-xl font-medium text-gray-600">
@@ -119,12 +119,10 @@ export default function ProgramsPage() {
                   </p>
                   
                   <p className="mb-6 leading-relaxed text-gray-700">
-                    Korean language programs for students of all levels. From beginners learning 
-                    Hangul to advanced speakers exploring literature and culture—build language 
-                    skills for heritage connection and global communication.
+                    Korean language classes for students of all levels, and a hub for schools and organizations looking to bring Korean culture into their communities — through workshops, performances, cultural events, and more.
                   </p>
                   
-                  <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                     Learn More
                     <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -135,14 +133,14 @@ export default function ProgramsPage() {
 
               {/* Program 4: Eunoia */}
               <Link href="/eunoia">
-                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
                   <div className="mb-6">
-                    <div className="inline-block px-4 py-2 bg-[#c17854] text-white rounded-full mb-4">
+                    <div className="inline-block px-4 py-2 bg-[#e8703a] text-white rounded-full mb-4">
                       <span className="text-sm font-semibold">Future Education</span>
                     </div>
                   </div>
                   
-                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
+                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#e8703a] transition-colors">
                     Eunoia Future Education
                   </h2>
                   
@@ -156,7 +154,7 @@ export default function ProgramsPage() {
                     forward-thinking curricula and experiential learning.
                   </p>
                   
-                  <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                     Learn More
                     <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -167,14 +165,14 @@ export default function ProgramsPage() {
 
               {/* Program 5: Korean American Immigration History */}
               <Link href="/immigration-history">
-                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl">
+                <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-10 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
                   <div className="mb-6">
-                    <div className="inline-block px-4 py-2 bg-[#c17854] text-white rounded-full mb-4">
+                    <div className="inline-block px-4 py-2 bg-[#e8703a] text-white rounded-full mb-4">
                       <span className="text-sm font-semibold">Civic Education</span>
                     </div>
                   </div>
                   
-                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#c17854] transition-colors">
+                  <h2 className="text-3xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#e8703a] transition-colors">
                     Korean American Immigration History
                   </h2>
                   
@@ -188,7 +186,7 @@ export default function ProgramsPage() {
                     understanding their role in American society.
                   </p>
                   
-                  <div className="inline-flex items-center text-[#c17854] font-semibold group-hover:gap-2 transition-all">
+                  <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
                     Learn More
                     <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -213,7 +211,7 @@ export default function ProgramsPage() {
               프로그램에 대해 궁금한 점이 있으신가요?
             </p>
             <Link href="/contact">
-              <a className="inline-flex items-center justify-center px-8 py-4 bg-[#c17854] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl">
+              <a className="inline-flex items-center justify-center px-8 py-4 bg-[#e8703a] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl">
                 Contact Us
               </a>
             </Link>

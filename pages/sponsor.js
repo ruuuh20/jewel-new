@@ -30,7 +30,7 @@ const Sponsor = () => {
             <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
               <Container>
                 <div className="max-w-4xl mx-auto text-center text-white">
-                  <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                  <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
                     <span className="font-bold">Support Our Mission • 후원하기</span>
                   </div>
                   
@@ -66,17 +66,17 @@ const Sponsor = () => {
                   {/* Impact Stats */}
                   <div className="grid gap-8 mb-16 md:grid-cols-3">
                     <div className="text-center p-6 bg-gradient-to-br from-[#f8fafc] to-white rounded-xl border border-gray-200">
-                      <div className="text-5xl font-bold text-[#c17854] mb-2">Direct</div>
+                      <div className="text-5xl font-bold text-[#e8703a] mb-2">Direct</div>
                       <p className="font-medium text-gray-700">Student Impact</p>
                       <p className="mt-1 text-sm text-gray-600">Supporting real programs</p>
                     </div>
                     <div className="text-center p-6 bg-gradient-to-br from-[#f8fafc] to-white rounded-xl border border-gray-200">
-                      <div className="text-5xl font-bold text-[#c17854] mb-2">Multi</div>
+                      <div className="text-5xl font-bold text-[#e8703a] mb-2">Multi</div>
                       <p className="font-medium text-gray-700">Platform Visibility</p>
                       <p className="mt-1 text-sm text-gray-600">Website, social, events</p>
                     </div>
                     <div className="text-center p-6 bg-gradient-to-br from-[#f8fafc] to-white rounded-xl border border-gray-200">
-                      <div className="text-5xl font-bold text-[#c17854] mb-2">Lasting</div>
+                      <div className="text-5xl font-bold text-[#e8703a] mb-2">Lasting</div>
                       <p className="font-medium text-gray-700">Community Impact</p>
                       <p className="mt-1 text-sm text-gray-600">Building bridges long-term</p>
                     </div>
@@ -142,44 +142,44 @@ const Sponsor = () => {
 
                   <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                     {/* Platinum Sponsor */}
-                    <div className="bg-white rounded-2xl p-8 border-2 border-[#c17854] shadow-xl relative">
+                    <div className="bg-white rounded-2xl p-8 border-2 border-[#e8703a] shadow-xl relative">
                       <div className="absolute transform -translate-x-1/2 -top-4 left-1/2">
-                        <span className="bg-[#c17854] text-white px-4 py-1 rounded-full text-sm font-bold">
+                        <span className="bg-[#e8703a] text-white px-4 py-1 rounded-full text-sm font-bold">
                           FEATURED
                         </span>
                       </div>
                       <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2">Platinum</h3>
-                        <div className="text-4xl font-extrabold text-[#c17854] mb-2">$10,000+</div>
+                        <div className="text-4xl font-extrabold text-[#e8703a] mb-2">$10,000+</div>
                         <p className="text-sm text-gray-600">per year</p>
                       </div>
                       <ul className="mb-6 space-y-3">
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Premier logo placement on website</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Featured in all program materials</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Social media recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Exclusive impact reports</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Program naming opportunity</span>
@@ -188,33 +188,33 @@ const Sponsor = () => {
                     </div>
 
                     {/* Gold Sponsor */}
-                    <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#c17854] transition-all shadow-lg">
+                    <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#e8703a] transition-all shadow-lg">
                       <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2">Gold</h3>
-                        <div className="text-4xl font-extrabold text-[#c17854] mb-2">$5,000+</div>
+                        <div className="text-4xl font-extrabold text-[#e8703a] mb-2">$5,000+</div>
                         <p className="text-sm text-gray-600">per year</p>
                       </div>
                       <ul className="mb-6 space-y-3">
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Prominent logo on website</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Social media recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Recognition in newsletters</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Annual impact summary</span>
@@ -223,33 +223,33 @@ const Sponsor = () => {
                     </div>
 
                     {/* Silver Sponsor */}
-                    <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#c17854] transition-all shadow-lg">
+                    <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#e8703a] transition-all shadow-lg">
                       <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2">Silver</h3>
-                        <div className="text-4xl font-extrabold text-[#c17854] mb-2">$2,500+</div>
+                        <div className="text-4xl font-extrabold text-[#e8703a] mb-2">$2,500+</div>
                         <p className="text-sm text-gray-600">per year</p>
                       </div>
                       <ul className="mb-6 space-y-3">
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Logo on website</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Social media recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Newsletter recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Annual thank you letter</span>
@@ -258,27 +258,27 @@ const Sponsor = () => {
                     </div>
 
                     {/* Bronze Sponsor */}
-                    <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#c17854] transition-all shadow-lg">
+                    <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#e8703a] transition-all shadow-lg">
                       <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2">Bronze</h3>
-                        <div className="text-4xl font-extrabold text-[#c17854] mb-2">$500+</div>
+                        <div className="text-4xl font-extrabold text-[#e8703a] mb-2">$500+</div>
                         <p className="text-sm text-gray-600">per year</p>
                       </div>
                       <ul className="mb-6 space-y-3">
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Logo on website</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Social media recognition</span>
                         </li>
                         <li className="flex items-start gap-2 text-sm">
-                          <svg className="w-5 h-5 text-[#c17854] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-5 h-5 text-[#e8703a] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           <span>Recognition in annual report</span>
@@ -309,38 +309,38 @@ const Sponsor = () => {
 
                   <div className="grid gap-8 md:grid-cols-3">
                     {/* JEWEL Sponsorship */}
-                    <div className="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-[#c17854] transition-all">
+                    <div className="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-[#e8703a] transition-all">
                       <h3 className="text-2xl font-bold text-[#1e3a5f] mb-4">
                         JEWEL Partnership
                       </h3>
                       <p className="mb-6 text-gray-700">
                         Support school-to-school partnerships connecting US and Korean educational institutions.
                       </p>
-                      <div className="text-3xl font-bold text-[#c17854] mb-4">Contact Us</div>
+                      <div className="text-3xl font-bold text-[#e8703a] mb-4">Contact Us</div>
                       <p className="text-sm text-gray-600">Custom sponsorship packages available</p>
                     </div>
 
                     {/* Roots & Routes Sponsorship */}
-                    <div className="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-[#c17854] transition-all">
+                    <div className="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-[#e8703a] transition-all">
                       <h3 className="text-2xl font-bold text-[#1e3a5f] mb-4">
                         Roots & Routes
                       </h3>
                       <p className="mb-6 text-gray-700">
                         Sponsor student trips to Korea, providing life-changing cultural experiences.
                       </p>
-                      <div className="text-3xl font-bold text-[#c17854] mb-4">$3,900+</div>
+                      <div className="text-3xl font-bold text-[#e8703a] mb-4">$3,900+</div>
                       <p className="text-sm text-gray-600">Full trip scholarship for one student</p>
                     </div>
 
                     {/* Ganadara Sponsorship */}
-                    <div className="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-[#c17854] transition-all">
+                    <div className="bg-white p-8 rounded-xl border-2 border-gray-200 hover:border-[#e8703a] transition-all">
                       <h3 className="text-2xl font-bold text-[#1e3a5f] mb-4">
                         Ganadara
                       </h3>
                       <p className="mb-6 text-gray-700">
                         Support Korean language education programs for heritage learners and beginners.
                       </p>
-                      <div className="text-3xl font-bold text-[#c17854] mb-4">Contact Us</div>
+                      <div className="text-3xl font-bold text-[#e8703a] mb-4">Contact Us</div>
                       <p className="text-sm text-gray-600">Program and scholarship opportunities</p>
                     </div>
                   </div>
@@ -363,7 +363,7 @@ const Sponsor = () => {
                     </p>
                     <div className="flex flex-col justify-center gap-4 sm:flex-row">
                       <Link href="/contact">
-                        <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg">
+                        <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg">
                           Contact Us About Sponsorship
                         </a>
                       </Link>

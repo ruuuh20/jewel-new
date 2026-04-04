@@ -42,7 +42,7 @@ export default function Donate(props) {
                   <div className="flex flex-col justify-center gap-4 sm:flex-row">
                     <a
                       href="#donate-now"
-                      className="inline-flex items-center justify-center px-10 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5"
+                      className="inline-flex items-center justify-center px-10 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5"
                     >
                       Donate Now
                     </a>
@@ -73,7 +73,7 @@ export default function Donate(props) {
                   {/* Impact Cards */}
                   <div className="grid gap-6 mb-12 md:grid-cols-3">
                     {/* Card 1 */}
-                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300">
                       <div className="mb-4 text-4xl">🎓</div>
                       <h3 className="text-xl font-bold text-[#120902] mb-3">
                         Student Scholarships
@@ -84,7 +84,7 @@ export default function Donate(props) {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300">
                       <div className="mb-4 text-4xl">✈️</div>
                       <h3 className="text-xl font-bold text-[#120902] mb-3">
                         Program Development
@@ -95,7 +95,7 @@ export default function Donate(props) {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300">
                       <div className="mb-4 text-4xl">🌏</div>
                       <h3 className="text-xl font-bold text-[#120902] mb-3">
                         Community Impact
@@ -113,19 +113,19 @@ export default function Donate(props) {
                     </h3>
                     <div className="grid gap-4 md:grid-cols-2">
                       <div className="flex items-start gap-3">
-                        <span className="text-[#c17854] font-bold text-xl">$50</span>
+                        <span className="text-[#e8703a] font-bold text-xl">$50</span>
                         <p className="text-gray-700">Provides program materials for one student</p>
                       </div>
                       <div className="flex items-start gap-3">
-                        <span className="text-[#c17854] font-bold text-xl">$100</span>
+                        <span className="text-[#e8703a] font-bold text-xl">$100</span>
                         <p className="text-gray-700">Supports cultural workshop activities</p>
                       </div>
                       <div className="flex items-start gap-3">
-                        <span className="text-[#c17854] font-bold text-xl">$250</span>
+                        <span className="text-[#e8703a] font-bold text-xl">$250</span>
                         <p className="text-gray-700">Partially funds a student's program participation</p>
                       </div>
                       <div className="flex items-start gap-3">
-                        <span className="text-[#c17854] font-bold text-xl">$500+</span>
+                        <span className="text-[#e8703a] font-bold text-xl">$500+</span>
                         <p className="text-gray-700">Provides full scholarship for one student</p>
                       </div>
                     </div>
@@ -147,9 +147,9 @@ export default function Donate(props) {
 
                   <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {/* Online Donation - PLACEHOLDER for future */}
-                    <div className="bg-white p-8 rounded-xl shadow-md border-2 border-[#c17854]">
+                    <div className="bg-white p-8 rounded-xl shadow-md border-2 border-[#e8703a]">
                       <div className="mb-4 text-center">
-                        <div className="w-16 h-16 rounded-full bg-[#c17854] text-white flex items-center justify-center mx-auto mb-4">
+                        <div className="w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center mx-auto mb-4">
                           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                           </svg>
@@ -157,7 +157,7 @@ export default function Donate(props) {
                         <h3 className="text-xl font-bold text-[#120902] mb-2">
                           Online Donation
                         </h3>
-                        <p className="text-sm text-[#c17854] font-semibold mb-3">
+                        <p className="text-sm text-[#e8703a] font-semibold mb-3">
                           Coming Soon!
                         </p>
                         <p className="mb-4 text-sm text-gray-700">
@@ -176,7 +176,7 @@ export default function Donate(props) {
                     </div>
 
                     {/* Zelle */}
-                    <div className="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                    <div className="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300">
                       <div className="mb-4 text-center">
                         <div className="w-16 h-16 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center mx-auto mb-4">
                           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -199,7 +199,7 @@ export default function Donate(props) {
                     </div>
 
                     {/* Venmo */}
-                    <div className="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300">
+                    <div className="bg-white p-8 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300">
                       <div className="mb-4 text-center">
                         <div className="w-16 h-16 rounded-full bg-[#1e3a5f] text-white flex items-center justify-center mx-auto mb-4">
                           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -285,12 +285,12 @@ export default function Donate(props) {
                   <div className="flex flex-col justify-center gap-4 sm:flex-row">
                     <a
                       href="mailto:edutogether22@gmail.com"
-                      className="inline-flex items-center justify-center px-8 py-3 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                      className="inline-flex items-center justify-center px-8 py-3 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                     >
                       Email Us
                     </a>
                     <Link href="/contact">
-                      <a className="inline-flex items-center justify-center px-8 py-3 font-bold border-2 border-[#c17854] text-[#c17854] hover:bg-[#c17854] hover:text-white transition-all duration-300 rounded-lg">
+                      <a className="inline-flex items-center justify-center px-8 py-3 font-bold border-2 border-[#e8703a] text-[#e8703a] hover:bg-[#e8703a] hover:text-white transition-all duration-300 rounded-lg">
                         Contact Form
                       </a>
                     </Link>

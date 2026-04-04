@@ -44,7 +44,7 @@ export default function Projects(props) {
             <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
               <Container>
                 <div className="max-w-4xl mx-auto text-center text-white">
-                  <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                  <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
                     <span className="font-bold">Current Initiatives • 현재 프로젝트</span>
                   </div>
                   
@@ -78,7 +78,7 @@ export default function Projects(props) {
                         >
                           <Link href={`/projects/${post.slug.current}`}>
                             <a className="block h-full group">
-                              <div className="h-full bg-white rounded-2xl border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden">
+                              <div className="h-full bg-white rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden">
                                 {/* Project Image */}
                                 <div className="relative h-64 overflow-hidden bg-gray-100">
                                   <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/60 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -95,7 +95,7 @@ export default function Projects(props) {
 
                                 {/* Project Content */}
                                 <div className="p-8">
-                                  <h2 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-4 group-hover:text-[#c17854] transition-colors">
+                                  <h2 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-4 group-hover:text-[#e8703a] transition-colors">
                                     {post.title[locale]}
                                   </h2>
                                   
@@ -103,7 +103,7 @@ export default function Projects(props) {
                                     {post.cardDescription}
                                   </p>
 
-                                  <div className="inline-flex items-center gap-2 text-[#c17854] font-semibold group-hover:gap-3 transition-all">
+                                  <div className="inline-flex items-center gap-2 text-[#e8703a] font-semibold group-hover:gap-3 transition-all">
                                     <span>Learn More</span>
                                     <svg
                                       className="w-5 h-5 transition-transform duration-300 transform group-hover:translate-x-1"
@@ -142,7 +142,7 @@ export default function Projects(props) {
                           We're currently developing exciting new initiatives. Check back soon for updates!
                         </p>
                         <Link href="/programs">
-                          <a className="inline-flex items-center gap-2 px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
+                          <a className="inline-flex items-center gap-2 px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
                             <span>Explore Our Programs</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -171,7 +171,7 @@ export default function Projects(props) {
                       </p>
                       <div className="flex flex-col justify-center gap-4 sm:flex-row">
                         <Link href="/partner-with-us">
-                          <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg">
+                          <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg">
                             Partner With Us
                           </a>
                         </Link>

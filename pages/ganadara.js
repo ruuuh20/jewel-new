@@ -7,10 +7,10 @@ export default function GanadaraPage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
+      <section className="relative pt-36 pb-20 md:pt-48 md:pb-32 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
         <Container>
           <div className="max-w-4xl mx-auto text-center text-white">
-            <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+            <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
               <span className="font-bold">Korean Language & Culture • 한글문화교육</span>
             </div>
 
@@ -51,7 +51,7 @@ export default function GanadaraPage() {
             <div className="grid gap-6 mb-16 md:grid-cols-2">
 
               <div className="p-8 bg-gradient-to-br from-[#f8fafc] to-white rounded-2xl border-2 border-gray-100">
-                <div className="w-12 h-12 rounded-full bg-[#c17854] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center mb-4">
                   <HiBookOpen className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">Korean Language Classes</h3>
@@ -61,7 +61,7 @@ export default function GanadaraPage() {
               </div>
 
               <div className="p-8 bg-gradient-to-br from-[#f8fafc] to-white rounded-2xl border-2 border-gray-100">
-                <div className="w-12 h-12 rounded-full bg-[#c17854] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center mb-4">
                   <HiUserGroup className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">Cultural Workshops & Events</h3>
@@ -71,7 +71,7 @@ export default function GanadaraPage() {
               </div>
 
               <div className="p-8 bg-gradient-to-br from-[#f8fafc] to-white rounded-2xl border-2 border-gray-100">
-                <div className="w-12 h-12 rounded-full bg-[#c17854] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center mb-4">
                   <HiSparkles className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">Cultural Performances & Demonstrations</h3>
@@ -81,7 +81,7 @@ export default function GanadaraPage() {
               </div>
 
               <div className="p-8 bg-gradient-to-br from-[#f8fafc] to-white rounded-2xl border-2 border-gray-100">
-                <div className="w-12 h-12 rounded-full bg-[#c17854] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center mb-4">
                   <HiMicrophone className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">Guest Speakers & Cultural Ambassadors</h3>
@@ -137,7 +137,7 @@ export default function GanadaraPage() {
                 Whether you're looking to set up a Korean class, plan a cultural event, or just want to explore what's possible — reach out and we'll take it from there.
               </p>
               <Link href="/contact">
-                <a className="inline-flex items-center justify-center px-10 py-4 bg-[#c17854] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
+                <a className="inline-flex items-center justify-center px-10 py-4 bg-[#e8703a] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
                   Get In Touch
                 </a>
               </Link>

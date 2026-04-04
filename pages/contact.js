@@ -38,7 +38,7 @@ export default function Contact(props) {
            <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
               <div className="max-w-4xl mx-auto text-center text-white">
-                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
                   <span className="font-bold">Contact • 연락처</span>
                 </div>
                 
@@ -71,7 +71,7 @@ export default function Contact(props) {
                       <p className="mb-8 text-lg leading-relaxed text-gray-700">
                         For any inquiries, you can send an email at{" "}
                         <a
-                          className="font-semibold text-[#c17854] hover:text-[#a85232] transition-colors underline"
+                          className="font-semibold text-[#e8703a] hover:text-[#a85232] transition-colors underline"
                           href="mailto:edutogether22@gmail.com"
                         >
                           {posts && posts[0]?.email}
@@ -85,9 +85,9 @@ export default function Contact(props) {
                           posts.map((post) => (
                             <div key={post._id}>
                               {/* Email Card */}
-                              <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm">
+                              <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm">
                                 <div className="flex items-start gap-4">
-                                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#c17854] flex items-center justify-center text-white">
+                                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#e8703a] flex items-center justify-center text-white">
                                     <svg
                                       className="w-5 h-5"
                                       fill="currentColor"
@@ -100,7 +100,7 @@ export default function Contact(props) {
                                     <h3 className="font-semibold text-[#120902] mb-1">Email</h3>
                                     <a
                                       href={`mailto:${post.email}`}
-                                      className="text-gray-700 hover:text-[#c17854] transition-colors"
+                                      className="text-gray-700 hover:text-[#e8703a] transition-colors"
                                     >
                                       {post.email}
                                     </a>
@@ -110,9 +110,9 @@ export default function Contact(props) {
 
                               {/* Address Card */}
                               {post.address && (
-                                <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm">
+                                <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm">
                                   <div className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#c17854] flex items-center justify-center text-white">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#e8703a] flex items-center justify-center text-white">
                                       <svg
                                         className="w-5 h-5"
                                         fill="currentColor"
@@ -131,9 +131,9 @@ export default function Contact(props) {
 
                               {/* Phone Card */}
                               {post.phoneNumber && (
-                                <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 shadow-sm">
+                                <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm">
                                   <div className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#c17854] flex items-center justify-center text-white">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#e8703a] flex items-center justify-center text-white">
                                       <svg
                                         className="w-5 h-5"
                                         fill="currentColor"
@@ -146,7 +146,7 @@ export default function Contact(props) {
                                       <h3 className="font-semibold text-[#120902] mb-1">Phone</h3>
                                       <a
                                         href={`tel:${post.phoneNumber}`}
-                                        className="text-gray-700 hover:text-[#c17854] transition-colors"
+                                        className="text-gray-700 hover:text-[#e8703a] transition-colors"
                                       >
                                         {post.phoneNumber}
                                       </a>

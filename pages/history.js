@@ -54,7 +54,7 @@ export default function History(props) {
           <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
               <div className="max-w-4xl mx-auto text-center text-white">
-                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
                   <span className="font-bold">History • 역사</span>
                 </div>
                 
@@ -89,18 +89,18 @@ export default function History(props) {
                             <div 
                               key={i} 
                               className={`relative pl-8 md:pl-12 ${
-                                isLast ? 'border-l-4 border-gray-300' : 'border-l-4 border-[#c17854]'
+                                isLast ? 'border-l-4 border-gray-300' : 'border-l-4 border-[#e8703a]'
                               }`}
                             >
                               {/* Timeline Marker */}
                               <div className={`absolute -left-3 top-0 w-6 h-6 rounded-full border-4 border-white ${
-                                isLast ? 'bg-[#1e3a5f]' : 'bg-[#c17854]'
+                                isLast ? 'bg-[#1e3a5f]' : 'bg-[#e8703a]'
                               }`}></div>
                               
                               {/* Year Badge */}
                               <div className="mb-4">
                                 <span className={`inline-block px-4 py-2 text-sm font-bold text-white rounded-full ${
-                                  isLast ? 'bg-[#1e3a5f]' : 'bg-[#c17854]'
+                                  isLast ? 'bg-[#1e3a5f]' : 'bg-[#e8703a]'
                                 }`}>
                                   {item.timelineItemYear[locale]}
                                 </span>
@@ -135,7 +135,7 @@ export default function History(props) {
                 </p>
                 <div className="flex flex-col justify-center gap-4 sm:flex-row">
                   <Link href="/programs">
-                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
+                    <a className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-0.5">
                       Explore Our Programs
                     </a>
                   </Link>

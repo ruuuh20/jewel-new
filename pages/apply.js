@@ -99,7 +99,7 @@ const RootsAndRoutesApplication = () => {
                     {/* Step 1 */}
                     <div className="relative">
                       <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-xl">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold text-xl">
                           1
                         </div>
                         <div className="flex-1">
@@ -111,19 +111,19 @@ const RootsAndRoutesApplication = () => {
                           </p>
                           <ul className="space-y-2 text-sm text-gray-600">
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span>Basic information & contact details</span>
                             </li>
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span>3 short essay questions</span>
                             </li>
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span>Parent/guardian consent</span>
                             </li>
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span><strong>$1,000 security deposit</strong> (fully refundable if not selected)</span>
                             </li>
                           </ul>
@@ -137,7 +137,7 @@ const RootsAndRoutesApplication = () => {
                     {/* Step 2 */}
                     <div className="relative">
                       <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-xl">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold text-xl">
                           2
                         </div>
                         <div className="flex-1">
@@ -149,19 +149,19 @@ const RootsAndRoutesApplication = () => {
                           </p>
                           <ul className="space-y-2 text-sm text-gray-600">
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span>15-20 minute video call</span>
                             </li>
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span>Conversation about interests & goals</span>
                             </li>
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span>Opportunity to ask questions</span>
                             </li>
                             <li className="flex items-start gap-2">
-                              <span className="text-[#c17854]">•</span>
+                              <span className="text-[#e8703a]">•</span>
                               <span>Parent/guardian welcome to attend</span>
                             </li>
                           </ul>
@@ -198,7 +198,7 @@ const RootsAndRoutesApplication = () => {
                   
                   <div className="grid gap-6 mb-8 md:grid-cols-3">
                     <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
-                      <div className="text-[#c17854] text-3xl font-bold mb-2">01</div>
+                      <div className="text-[#e8703a] text-3xl font-bold mb-2">01</div>
                       <h3 className="font-semibold text-lg mb-2 text-[#120902]">Basic Information</h3>
                       <p className="text-sm text-gray-600">
                         Contact details, grade level, and school information
@@ -206,7 +206,7 @@ const RootsAndRoutesApplication = () => {
                     </div>
 
                     <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
-                      <div className="text-[#c17854] text-3xl font-bold mb-2">02</div>
+                      <div className="text-[#e8703a] text-3xl font-bold mb-2">02</div>
                       <h3 className="font-semibold text-lg mb-2 text-[#120902]">Short Essays</h3>
                       <p className="text-sm text-gray-600">
                         3 questions about your interest, experiences, and curiosity about Korea
@@ -214,7 +214,7 @@ const RootsAndRoutesApplication = () => {
                     </div>
 
                     <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
-                      <div className="text-[#c17854] text-3xl font-bold mb-2">03</div>
+                      <div className="text-[#e8703a] text-3xl font-bold mb-2">03</div>
                       <h3 className="font-semibold text-lg mb-2 text-[#120902]">Authorization</h3>
                       <p className="text-sm text-gray-600">
                         Parent/guardian consent and program acknowledgments
@@ -229,23 +229,23 @@ const RootsAndRoutesApplication = () => {
                     </h3>
                     <ul className="space-y-2 text-sm text-gray-700 md:text-base">
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-[#c17854]">•</span>
+                        <span className="mt-1 text-[#e8703a]">•</span>
                         <span>This is an <strong>application</strong>, not a confirmation of acceptance</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-[#c17854]">•</span>
+                        <span className="mt-1 text-[#e8703a]">•</span>
                         <span>The <strong>$1,000 security deposit</strong> is required with your application and is <strong>fully refundable</strong> if you are not selected</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-[#c17854]">•</span>
+                        <span className="mt-1 text-[#e8703a]">•</span>
                         <span>We do <strong>not</strong> need passport information at this stage</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-[#c17854]">•</span>
+                        <span className="mt-1 text-[#e8703a]">•</span>
                         <span>You can save your progress and return later</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="mt-1 text-[#c17854]">•</span>
+                        <span className="mt-1 text-[#e8703a]">•</span>
                         <span>Application deadline: <strong>February 25, 2026 at 11:59 PM EST</strong></span>
                       </li>
                     </ul>
@@ -274,7 +274,7 @@ const RootsAndRoutesApplication = () => {
                 {/* Loading State */}
                 {isLoading && (
                   <div className="p-12 text-center shadow-sm bg-gray-50 rounded-xl">
-                    <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#c17854] mb-4"></div>
+                    <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#e8703a] mb-4"></div>
                     <p className="text-gray-600">Loading application form...</p>
                   </div>
                 )}
@@ -317,7 +317,7 @@ const RootsAndRoutesApplication = () => {
                       href="https://calendly.com/edutogether22/roots-routes-consultation"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 font-semibold bg-[#c17854] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                      className="inline-flex items-center justify-center px-8 py-4 font-semibold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                     >
                       <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -352,7 +352,7 @@ const RootsAndRoutesApplication = () => {
                     
                     {/* Contact Form Button */}
                     <Link href="/contact">
-                      <a className="inline-flex items-center justify-center px-8 py-4 font-semibold border-2 border-[#c17854] text-[#c17854] hover:bg-[#c17854] hover:text-white transition-all duration-300 rounded-lg">
+                      <a className="inline-flex items-center justify-center px-8 py-4 font-semibold border-2 border-[#e8703a] text-[#e8703a] hover:bg-[#e8703a] hover:text-white transition-all duration-300 rounded-lg">
                         <svg 
                           xmlns="http://www.w3.org/2000/svg" 
                           fill="none" 

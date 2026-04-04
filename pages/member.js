@@ -64,8 +64,8 @@ export default function Member(props) {
                   {/* Benefits Grid */}
                   <div className="grid gap-6 mb-12 md:grid-cols-3">
                     {/* Benefit 1 */}
-                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 hover:-translate-y-1">
-                      <div className="w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-xl mb-4">
+                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 hover:-translate-y-1">
+                      <div className="w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold text-xl mb-4">
                         1
                       </div>
                       <h3 className="text-lg font-bold text-[#120902] mb-3">
@@ -77,8 +77,8 @@ export default function Member(props) {
                     </div>
 
                     {/* Benefit 2 */}
-                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 hover:-translate-y-1">
-                      <div className="w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-xl mb-4">
+                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 hover:-translate-y-1">
+                      <div className="w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold text-xl mb-4">
                         2
                       </div>
                       <h3 className="text-lg font-bold text-[#120902] mb-3">
@@ -90,8 +90,8 @@ export default function Member(props) {
                     </div>
 
                     {/* Benefit 3 */}
-                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#c17854] transition-all duration-300 hover:-translate-y-1">
-                      <div className="w-12 h-12 rounded-full bg-[#c17854] text-white flex items-center justify-center font-bold text-xl mb-4">
+                    <div className="bg-white p-6 rounded-xl shadow-md border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 hover:-translate-y-1">
+                      <div className="w-12 h-12 rounded-full bg-[#e8703a] text-white flex items-center justify-center font-bold text-xl mb-4">
                         3
                       </div>
                       <h3 className="text-lg font-bold text-[#120902] mb-3">
@@ -111,7 +111,7 @@ export default function Member(props) {
                     <p className="leading-relaxed text-gray-700">
                       If you are interested in exploring career or volunteer opportunities with us, please send your resume and a brief introduction to{" "}
                       <a
-                        className="font-semibold text-[#c17854] hover:text-[#a85232] transition-colors underline"
+                        className="font-semibold text-[#e8703a] hover:text-[#a85232] transition-colors underline"
                         href="mailto:edutogether22@gmail.com"
                       >
                         edutogether22@gmail.com

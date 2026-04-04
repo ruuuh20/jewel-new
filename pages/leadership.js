@@ -43,7 +43,7 @@ export default function Leadership(props) {
           <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
             <Container>
               <div className="max-w-4xl mx-auto text-center text-white">
-                <div className="inline-block px-6 py-2 bg-[#c17854] rounded-full mb-6">
+                <div className="inline-block px-6 py-2 bg-[#e8703a] rounded-full mb-6">
                   <span className="font-bold">Leadership • 리더십</span>
                 </div>
                 
@@ -80,7 +80,7 @@ export default function Leadership(props) {
                                 <div className="flex flex-col flex-wrap mb-2 md:mb-6">
                                    <h2 className="text-3xl md:text-4xl font-bold mb-3 text-[#1e3a5f] relative inline-block pb-4">
                         {name}
-                        <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#c17854]"></span>
+                        <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#e8703a]"></span>
                       </h2>
 
                                   <span className="text-base italic text-center text-gray-500 md:text-xl">
