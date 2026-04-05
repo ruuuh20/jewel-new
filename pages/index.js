@@ -330,7 +330,7 @@ const Home = ({ data }) => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <a
-                    href="#what-we-do"
+                    href="/programs"
                     className="inline-flex items-center justify-center px-8 py-4 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 text-lg shadow-xl hover:shadow-2xl rounded-lg"
                   >
                     Explore Our Programs
@@ -345,95 +345,6 @@ const Home = ({ data }) => {
             </Container>
           </m.section>
 
-          {/* Find Your Path Section */}
-          <section className="py-14 bg-[#1e3a5f] md:py-16">
-            <Container>
-              <div className="max-w-5xl mx-auto">
-                <div className="mb-10 text-center">
-                  <h2 className="text-2xl font-bold text-white md:text-3xl">
-                    Find what's right for you.
-                  </h2>
-                </div>
-
-                <div className="grid gap-4 md:grid-cols-3">
-                  {/* Path 1: Directors / Partners */}
-                  <Link href="/jewel-partnership">
-                    <a className="group flex flex-col gap-3 p-6 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#e8703a] rounded-2xl transition-all duration-300">
-                      <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center flex-shrink-0">
-                        <FaHandshake className="w-5 h-5 text-white" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For School Directors & Administrators</p>
-                        <h3 className="mb-2 text-lg font-bold leading-snug text-white">
-                          I'm interested in a school partnership
-                        </h3>
-                        <p className="text-sm leading-relaxed text-gray-200">
-                          We connect US and Korean schools through structured, lasting educational and cultural exchange partnerships.
-                        </p>
-                      </div>
-                      <div className="inline-flex items-center text-[#e8703a] font-semibold text-sm mt-auto group-hover:gap-2 transition-all">
-                        Explore partnerships
-                        <svg className="w-4 h-4 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </a>
-                  </Link>
-
-                  {/* Path 2: Parents */}
-                  <Link href="/roots-and-routes">
-                    <a className="group flex flex-col gap-3 p-6 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#e8703a] rounded-2xl transition-all duration-300">
-                      <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center flex-shrink-0">
-                        <FaPlane className="w-5 h-5 text-white" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Parents & Families</p>
-                        <h3 className="mb-2 text-lg font-bold leading-snug text-white">
-                          I want my child to visit Korea
-                        </h3>
-                        <p className="text-sm leading-relaxed text-gray-200">
-                          Our Roots & Routes program is an immersive  educational exchange to Korea for students.
-                        </p>
-                        <p className="pt-3 mt-3 text-xs leading-relaxed border-t text-white/70 border-white/20">
-                          Also an educator interested in visiting Korea? We offer trips for teachers and administrators too.
-                        </p>
-                      </div>
-                      <div className="inline-flex items-center text-[#e8703a] font-semibold text-sm mt-auto group-hover:gap-2 transition-all">
-                        Learn about Roots & Routes
-                        <svg className="w-4 h-4 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </a>
-                  </Link>
-
-                  {/* Path 3: Organizations & Schools — cultural events */}
-                  <Link href="/ganadara">
-                    <a className="group flex flex-col gap-3 p-6 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#e8703a] rounded-2xl transition-all duration-300">
-                      <div className="w-12 h-12 rounded-full bg-[#e8703a] flex items-center justify-center flex-shrink-0">
-                        <HiBookOpen className="w-5 h-5 text-white" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Schools & Organizations</p>
-                        <h3 className="mb-2 text-lg font-bold leading-snug text-white">
-                          I want to bring Korean language or culture to my community
-                        </h3>
-                        <p className="text-sm leading-relaxed text-gray-200">
-                          Whether it's an ongoing Korean class or a one-time event — a diversity day booth, a cultural workshop, a festival — we can help you plan and execute it.
-                        </p>
-                      </div>
-                      <div className="inline-flex items-center text-[#e8703a] font-semibold text-sm mt-auto group-hover:gap-2 transition-all">
-                        See what we offer
-                        <svg className="w-4 h-4 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </Container>
-          </section>
 
 
  
@@ -441,139 +352,113 @@ const Home = ({ data }) => {
 <section id="what-we-do" className="py-16 bg-white md:py-20">
   <Container>
     <div className="max-w-6xl mx-auto">
-      {/* Section Header - Bilingual */}
       <div className="mb-12 text-center">
         <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-[#1e3a5f] mb-3">
           What We Do
         </h2>
-        <p className="text-2xl font-medium text-gray-600 md:text-3xl">
+        <p className="text-2xl font-medium text-gray-500 md:text-3xl">
           우리가 하는 일
         </p>
       </div>
 
-      {/* 4 Program Category Cards */}
       <div className="grid gap-6 md:grid-cols-2 md:gap-8">
-        
+
         {/* Card 1: School Partnerships */}
         <Link href="/jewel-partnership">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
-            <div className="flex items-start gap-4">
-              {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
-                <FaHandshake className="w-8 h-8" />
+          <a className="group flex flex-col h-full bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
+                <FaHandshake className="w-7 h-7" />
               </div>
-              
-              {/* Content */}
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
-                  School Partnerships
-                </h3>
-                <p className="mb-3 text-xl font-medium text-gray-600">
-                  국제교류 협력
-                </p>
-                <p className="mb-3 leading-relaxed text-gray-700">
-                  Connect US and Korean schools through meaningful cultural and educational exchanges.
-                </p>
-                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
-                  Learn More
-                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
+              <div>
+                <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For School Directors & Administrators</p>
+                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">School Partnerships</h3>
+                <p className="text-sm font-medium text-gray-400">국제교류 협력</p>
               </div>
+            </div>
+            <p className="mb-4 leading-relaxed text-gray-700 flex-1">
+              We connect US and Korean schools through structured, lasting educational and cultural exchange partnerships — going beyond a one-time visit to build something that becomes part of a school's culture.
+            </p>
+            <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
+              Learn More
+              <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </a>
         </Link>
 
         {/* Card 2: Visit to Korea */}
         <Link href="/roots-and-routes">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
-            <div className="flex items-start gap-4">
-              {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
-                <FaPlane className="w-8 h-8" />
+          <a className="group flex flex-col h-full bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
+                <FaPlane className="w-7 h-7" />
               </div>
-
-              {/* Content */}
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
-                  Visit to Korea
-                </h3>
-                <p className="mb-3 text-xl font-medium text-gray-600">
-                  한국 방문 프로그램
-                </p>
-                <p className="mb-3 leading-relaxed text-gray-700">
-                  Immersive cultural and educational trips for U.S. students.
-                </p>
-                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
-                  Learn More
-                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
+              <div>
+                <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Students, Families & Educators</p>
+                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">Visit to Korea</h3>
+                <p className="text-sm font-medium text-gray-400">한국 방문 프로그램</p>
               </div>
+            </div>
+            <p className="mb-4 leading-relaxed text-gray-700 flex-1">
+              Immersive educational and cultural trips to Korea — for students (grades 7–12) through our Roots & Routes program, and for educators and administrators looking to experience Korea firsthand.
+            </p>
+            <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
+              Learn More
+              <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </a>
         </Link>
 
         {/* Card 3: Korean Language & Culture */}
         <Link href="/ganadara">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
-            <div className="flex items-start gap-4">
-              {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
-                <HiBookOpen className="w-8 h-8" />
+          <a className="group flex flex-col h-full bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
+                <HiBookOpen className="w-7 h-7" />
               </div>
-
-              {/* Content */}
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
-                  Korean Language & Culture
-                </h3>
-                <p className="mb-3 text-xl font-medium text-gray-600">
-                  한글문화교육
-                </p>
-                <p className="mb-3 leading-relaxed text-gray-700">
-                  Korean language classes for students of all levels — and a hub for schools looking to host Korean cultural events like diversity day booths, festivals, and workshops.
-                </p>
-                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
-                  Learn More
-                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
+              <div>
+                <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Schools & Organizations</p>
+                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">Korean Language & Culture</h3>
+                <p className="text-sm font-medium text-gray-400">한글문화교육</p>
               </div>
+            </div>
+            <p className="mb-4 leading-relaxed text-gray-700 flex-1">
+              Korean language classes for students of all levels, and a hub for schools and organizations looking to bring Korean culture into their communities — workshops, performances, diversity day events, festivals, and more.
+            </p>
+            <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
+              Learn More
+              <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </a>
         </Link>
 
         {/* Card 4: Future Education */}
         <Link href="/eunoia">
-          <a className="group block bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
-            <div className="flex items-start gap-4">
-              {/* Icon */}
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
-                <HiLightBulb className="w-8 h-8" />
+          <a className="group flex flex-col h-full bg-gradient-to-br from-[#f8fafc] to-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#e8703a] transition-all duration-300 shadow-sm hover:shadow-xl">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#e8703a] text-white flex items-center justify-center">
+                <HiLightBulb className="w-7 h-7" />
               </div>
-              
-              {/* Content */}
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-2 group-hover:text-[#e8703a] transition-colors">
-                  Future Education
-                </h3>
-                <p className="mb-3 text-xl font-medium text-gray-600">
-                  미래 교육
-                </p>
-                <p className="mb-3 leading-relaxed text-gray-700">
-                  Innovative educational programs preparing students for tomorrow's challenges.
-                </p>
-                <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
-                  Learn More
-                  <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
+              <div>
+                <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Students & Families</p>
+                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">Future Education</h3>
+                <p className="text-sm font-medium text-gray-400">미래 교육</p>
               </div>
+            </div>
+            <p className="mb-4 leading-relaxed text-gray-700 flex-1">
+              Workshops, museum programs, and experiential learning designed for the AI age — building the critical thinking, creativity, and cultural understanding that technology can't replace.
+            </p>
+            <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">
+              Learn More
+              <svg className="w-5 h-5 ml-1 transition-all group-hover:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </a>
         </Link>
