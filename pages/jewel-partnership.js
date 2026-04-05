@@ -56,12 +56,13 @@ export default function JewelPage() {
                   We support public and private K–12 schools and education offices in both countries at every stage: consultation, partner matching, MOU facilitation, program implementation, and outcome reporting. 
                 </p>
 
-                <p className={'mb-4 leading-relaxed text-gray-700'}>
-                  JEWEL은 Educate Together 산하 국제교류 전문단체로, 한국과 미국 학교 간의 자매결연 및 교류 프로그램을 교육적 관점에서 설계하고 운영합니다. 단순한 방문 교류를 넘어, 두 나라 교육 현장을 지속적으로 연결하는 것이 저희의 역할입니다.
+                <p className={'mb-3 leading-relaxed text-gray-700 font-pretend break-keep'}>
+                  JEWEL Partnership 은 동서양 교육 현장을 연결하는 (Joining East & West) 교육 가교 (Educational Liaison)로서, 실질적이고 지속 가능한 국제교육 협력 지원하는 것을 목표로 합니다.
                 </p>
-                <p className={'mb-6 leading-relaxed text-gray-700'}>
-                  양국의 공립·사립 초·중·고교 및 교육청을 대상으로, 상담부터 파트너 매칭, MOU 체결, 프로그램 운영, 성과 보고까지 전 과정을 지원합니다. 
+                <p className={'mb-4 leading-relaxed text-gray-700 font-pretend break-keep'}>
+                  양국 공립·사립 초·중·고교 및 교육청이 안전하고 신뢰할 수 있는 방식으로 국제교류를 확장할 수 있도록 기획–연결–운영–성과 관리 전 과정을 지원, 협력합니다.
                 </p>
+                
 
             
                 
@@ -243,7 +244,7 @@ export default function JewelPage() {
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       School-to-School Matching
                     </h3>
-                    <p className="mb-2 text-gray-700">
+                    <p className="mb-2 text-gray-700 font-pretend">
                       학교 간 매칭 및 MOU 체결 지원
                     </p>
                     <p className="text-sm text-gray-600">
@@ -262,7 +263,7 @@ export default function JewelPage() {
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       Year-Round Collaboration
                     </h3>
-                    <p className="mb-2 text-gray-700">
+                    <p className="mb-2 text-gray-700 font-pretend">
                       연중 지속가능한 교류
                     </p>
                     <p className="text-sm text-gray-600">
@@ -281,7 +282,7 @@ export default function JewelPage() {
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       Exchange Visits
                     </h3>
-                    <p className="mb-2 text-gray-700">
+                    <p className="mb-2 text-gray-700 font-pretend">
                       상호 방문 및 연수 기획
                     </p>
                     <p className="text-sm text-gray-600">
@@ -300,7 +301,7 @@ export default function JewelPage() {
                     <h3 className="text-xl font-bold text-[#1e3a5f] mb-2">
                       Full Program Management
                     </h3>
-                    <p className="mb-2 text-gray-700">
+                    <p className="mb-2 text-gray-700 font-pretend">
                       전 과정 운영 및 성과 관리
                     </p>
                     <p className="text-sm text-gray-600">

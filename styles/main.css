@@ -21,13 +21,15 @@ body {
 }
 
 body {
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .font-pretend {
   font-family: "Pretendard Variable";
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .full-screen-bg {
@@ -890,7 +892,7 @@ body {
 }
 
 .card-title {
-  /* font-family: "neue-haas-grotesk-display", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
   font-weight: 500;
   font-style: normal;
   margin-bottom: 10px;
@@ -906,7 +908,7 @@ body {
 }
 
 .card-description {
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -953,7 +955,7 @@ body {
 
 .program-page-title {
   font-size: clamp(45px, 6vw, 100px);
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1040,7 +1042,7 @@ body {
   background-color: rgba(217, 212, 170, 0.81);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  font-family: "Haas grotesk display 55 roman", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #9f4a19;
   font-size: 16px;
   line-height: 1.4em;
@@ -1059,7 +1061,7 @@ body {
   -ms-flex: 1;
   flex: 1;
   background-color: #d96e34;
-  font-family: "Haas grotesk text pro 55 roman", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-size: 14px;
   line-height: 1.2em;
