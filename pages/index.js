@@ -316,14 +316,14 @@ const Home = ({ data }) => {
             className="relative w-full bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9]"
           >
             <Container>
-              <div className="flex flex-col items-center justify-center py-24 text-center md:py-32 xl:py-40">
+              <div className="flex flex-col items-center justify-center pt-32 pb-20 text-center md:pt-40 md:pb-28 xl:pt-48 xl:pb-36">
                 {/* Main Headline */}
-                <h1 className="max-w-4xl text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 text-[#1e3a5f] tracking-tight">
+                <h1 className="max-w-5xl text-3xl md:text-5xl xl:text-6xl font-bold leading-snug mb-5 text-[#1e3a5f] tracking-tighter">
                   Building global understanding through education and cultural exchange
                 </h1>
 
                 {/* Subheadline */}
-                <p className="max-w-2xl text-xl md:text-2xl mb-10 leading-relaxed text-[#334e68] font-medium">
+                <p className="max-w-xl text-base md:text-lg mb-10 leading-relaxed text-[#334e68] font-medium">
                   We connect schools and communities in the United States with Korea — through school partnerships, student and educator trips, and Korean language and cultural programs.
                 </p>
 
