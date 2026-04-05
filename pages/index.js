@@ -372,8 +372,8 @@ const Home = ({ data }) => {
               </div>
               <div>
                 <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For School Directors & Administrators</p>
-                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">School Partnerships</h3>
-                <p className="text-sm font-medium text-gray-400">국제교류 협력</p>
+                <h3 className="text-lg md:text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors leading-snug">School Partnerships</h3>
+                <p className="text-sm font-medium text-gray-400 mt-0.5">국제교류 협력</p>
               </div>
             </div>
             <p className="mb-4 leading-relaxed text-gray-700 flex-1">
@@ -397,8 +397,8 @@ const Home = ({ data }) => {
               </div>
               <div>
                 <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Students, Families & Educators</p>
-                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">Visit to Korea</h3>
-                <p className="text-sm font-medium text-gray-400">한국 방문 프로그램</p>
+                <h3 className="text-lg md:text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors leading-snug">Visit to Korea</h3>
+                <p className="text-sm font-medium text-gray-400 mt-0.5">한국 방문 프로그램</p>
               </div>
             </div>
             <p className="mb-4 leading-relaxed text-gray-700 flex-1">
@@ -422,8 +422,8 @@ const Home = ({ data }) => {
               </div>
               <div>
                 <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Schools & Organizations</p>
-                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">Korean Language & Culture</h3>
-                <p className="text-sm font-medium text-gray-400">한글문화교육</p>
+                <h3 className="text-lg md:text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors leading-snug">Korean Language & Culture</h3>
+                <p className="text-sm font-medium text-gray-400 mt-0.5">한글문화교육</p>
               </div>
             </div>
             <p className="mb-4 leading-relaxed text-gray-700 flex-1">
@@ -447,8 +447,8 @@ const Home = ({ data }) => {
               </div>
               <div>
                 <p className="text-xs font-semibold text-[#e8703a] uppercase tracking-wide mb-1">For Students & Families</p>
-                <h3 className="text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors">Future Education</h3>
-                <p className="text-sm font-medium text-gray-400">미래 교육</p>
+                <h3 className="text-lg md:text-2xl font-bold text-[#1e3a5f] group-hover:text-[#e8703a] transition-colors leading-snug">Future Education</h3>
+                <p className="text-sm font-medium text-gray-400 mt-0.5">미래 교육</p>
               </div>
             </div>
             <p className="mb-4 leading-relaxed text-gray-700 flex-1">
