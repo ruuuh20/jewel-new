@@ -57,10 +57,16 @@ export default function JewelPage() {
                 </p>
 
                 <p className={'mb-3 leading-relaxed text-gray-700 font-pretend break-keep'}>
-                  JEWEL Partnership 은 동서양 교육 현장을 연결하는 (Joining East & West) 교육 가교 (Educational Liaison)로서, 실질적이고 지속 가능한 국제교육 협력 지원하는 것을 목표로 합니다.
+                 JEWEL Partnership 은 동서양 교육 현장을 연결하는 (Joining East & West)  교육 가교(Educational Liaison)로서, 실질적이고 지속 가능한 국제교육 협력 지원하는 것을  목표로 합니다. 
+
+
+
                 </p>
                 <p className={'mb-4 leading-relaxed text-gray-700 font-pretend break-keep'}>
-                  양국 공립·사립 초·중·고교 및 교육청이 안전하고 신뢰할 수 있는 방식으로 국제교류를 확장할 수 있도록 기획–연결–운영–성과 관리 전 과정을 지원, 협력합니다.
+              양국 공립·사립 초·중·고교 및 교육청이 안전하고 신뢰할 수 있는 방식으로  국제교류를 확장할 수 있도록 기획–연결–운영–성과 관리 전 과정을 지원, 협력합니다.
+                </p>
+                <p className={'mb-4 leading-relaxed text-gray-700 font-pretend break-keep'}>
+       JEWEL Partnership 은 학생들이 교실 안에서 세계를 만나고, 교실 밖에서 미래를 꿈꿀 수 있도록 가장 안전하고 혁신적인 길을 열어갑니다.  미래 교육을 위한 동서양의 가교, AI 시대를 선도하는 교육 파트너, 미국 뉴저지주 공립학군 5선 교육위원 출신 대표가 보증하는 품격 있는 국제교류 파트너십으로  시작부터 끝까지  JEWEL이 함께 하겠습니다.
                 </p>
                 
 
@@ -147,32 +153,18 @@ export default function JewelPage() {
             </div>
 
             <div className="bg-gradient-to-br from-[#f8fafc] to-white p-8 md:p-12 rounded-2xl border-2 border-gray-100">
-              <div className="grid items-center gap-8 mb-8 md:grid-cols-3">
-                <div className="md:col-span-1">
-                  {/* Photo placeholder - add actual photo later */}
-                  {/* <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
-                  </div> */}
-                </div>
-                
-                <div className="md:col-span-2">
-                  <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-2">
-                    Kay Kim (김경화)
-                  </h3>
-                  <p className="text-xl text-[#e8703a] font-semibold mb-4">
-                    Founder & Director, JEWEL Partnership
-                  </p>
-                  <p className="mb-4 text-lg leading-relaxed text-gray-700">
-                    5-term elected School Board Member, Norwood Public Schools, New Jersey
-                  </p>
-                  <p className="leading-relaxed text-gray-700">
-                    30+ years of experience bridging US and Korean education systems. 
-                    Former Vice President of Korean American Association of Greater New York. 
-                    Current Chair of Korean Language Museum Initiative.
-                  </p>
-                </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f]">
+                  Kay Kim (김경화)
+                </h3>
+                <p className="text-lg text-[#e8703a] font-semibold">
+                  Founder & Director, JEWEL Partnership
+                </p>
+                <div className="w-12 h-1 bg-[#e8703a] rounded-full my-3"></div>
+                <p className="text-base leading-relaxed text-gray-700">
+                  5-term elected School Board Member, Norwood Public Schools, New Jersey. 30+ years of experience bridging US and Korean education systems. Former Vice President of the Korean American Association of Greater New York. Current Chair of the Korean Language Museum Initiative.
+                </p>
               </div>
-
-            
             </div>
           </div>
         </Container>
