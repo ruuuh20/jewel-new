@@ -87,9 +87,9 @@ export default function ProgramsPage() {
                   </p>
                   
                   <p className="mb-6 leading-relaxed text-gray-700">
-                    Immersive 10-day cultural and educational journey for Korean-American students. 
-                    Experience Korea's heritage, education system, and modern culture through KMLA 
-                    exchange and guided exploration.
+                    Immersive cultural and educational journeys to Korea for students from our partner schools.
+                    Experience Korea's heritage, education system, and modern culture through
+                    guided exploration and meaningful exchange.
                   </p>
                   
                   <div className="inline-flex items-center text-[#e8703a] font-semibold group-hover:gap-2 transition-all">

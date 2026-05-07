@@ -25,7 +25,7 @@ export default function JewelPage() {
               Joining East & West as Educational Liaisons
             </p>
             
-            <p className="mb-8 text-xl md:text-2xl text-white/90">
+            <p className="mb-8 text-xl md:text-2xl text-white/90 font-pretend">
               교육을 통해 만나는 세계, &nbsp; 협력으로 이어지는 미래
             </p>
             
@@ -80,7 +80,10 @@ export default function JewelPage() {
                 {/* Pillar 1 */}
                 <div className="flex gap-4 p-6 bg-white rounded-xl border border-gray-200 hover:border-[#c9963b] transition-all animate-on-scroll">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9963b]/10 flex items-center justify-center">
-                    <span className="text-2xl">📚</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9963b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0d2240] mb-2">
@@ -99,7 +102,11 @@ export default function JewelPage() {
                 {/* Pillar 2 */}
                 <div className="flex gap-4 p-6 bg-white rounded-xl border border-gray-200 hover:border-[#c9963b] transition-all animate-on-scroll">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9963b]/10 flex items-center justify-center">
-                    <span className="text-2xl">🌍</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9963b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <line x1="2" y1="12" x2="22" y2="12"/>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0d2240] mb-2">
@@ -118,7 +125,10 @@ export default function JewelPage() {
                 {/* Pillar 3 */}
                 <div className="flex gap-4 p-6 bg-white rounded-xl border border-gray-200 hover:border-[#c9963b] transition-all animate-on-scroll">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9963b]/10 flex items-center justify-center">
-                    <span className="text-2xl">🤝</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9963b" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                    </svg>
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0d2240] mb-2">
