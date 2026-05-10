@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import KitForm from "@/components/KitForm";
 import { useRouter } from "next/router";
 import Layout from "@/components/layout";
 import Container from "@/components/container";
@@ -22,7 +23,6 @@ import { FaPlane, FaHandshake } from "react-icons/fa";
 
 import { useInView } from "react-intersection-observer";
 import GrayscaleImage from "@/components/grayscaleImage";
-import SignupForm from "@/components/signupForm";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
 import PhotoGallery from "@/components/PhotoGallery";
 import ZigzagPhotoStrip from "@/components/ZigzagPhotoStrip";
@@ -324,7 +324,7 @@ const Home = ({ data }) => {
 
                 {/* Subheadline */}
                 <p className="max-w-xl text-base md:text-lg mb-10 leading-relaxed text-[#334e68] font-medium">
-                  We connect schools and communities in the United States with Korea — through school partnerships, student and educator trips, and Korean language and cultural programs.
+                  We connect schools and communities in the United States with Korea, through school partnerships, student and educator trips, and Korean language and cultural programs.
                 </p>
 
                 {/* CTA Buttons */}
@@ -1221,48 +1221,40 @@ const Home = ({ data }) => {
 
 <section className="py-16 md:py-24 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
   <Container>
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-4xl mx-auto">
       
       {/* Section Header */}
       <div className="mb-12 text-center">
         <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-          Get Involved
+          Join Our Community
         </h2>
         <p className="text-xl text-white/90">
-          Join our community and stay connected
+          Stay connected and make an impact
         </p>
       </div>
 
       {/* Two-column CTAs */}
       <div className="grid gap-8 md:grid-cols-2">
-        
+
         {/* Newsletter CTA */}
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20 hover:border-[#e8703a] transition-all">
-          <div className="text-center">
-            <div className="w-16 h-16 rounded-full bg-[#e8703a] mx-auto mb-4 flex items-center justify-center">
+          <div className="flex flex-col items-center mb-6 md:flex-row md:items-start md:gap-6">
+            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#e8703a] mb-4 md:mb-0 flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
             </div>
-            
-            <h3 className="mb-3 text-2xl font-bold text-white">
-              Stay Connected
-            </h3>
-            
-            <p className="mb-6 leading-relaxed text-white/90">
-              Get updates about programs, events, and volunteer opportunities.
-            </p>
-            
-            <a
-              href="https://mailchi.mp/a99f1dbd0b8a/educate-together"
-              className="inline-block px-6 py-3 bg-[#e8703a] text-white font-bold rounded-lg hover:bg-[#a85232] transition-all duration-300 shadow-lg hover:shadow-xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Subscribe to Newsletter
-            </a>
+            <div>
+              <h3 className="mb-2 text-2xl font-bold text-white text-center md:text-left">
+                Stay Connected
+              </h3>
+              <p className="leading-relaxed text-white/90 text-center md:text-left">
+                Get updates about programs, events, and volunteer opportunities.
+              </p>
+            </div>
           </div>
+          <KitForm />
         </div>
 
         {/* Partner CTA */}
@@ -1271,15 +1263,12 @@ const Home = ({ data }) => {
             <div className="w-16 h-16 rounded-full bg-[#e8703a] mx-auto mb-4 flex items-center justify-center">
               <HiUserGroup className="w-8 h-8 text-white" />
             </div>
-
             <h3 className="mb-3 text-2xl font-bold text-white">
               Partner with Us
             </h3>
-            
             <p className="mb-6 leading-relaxed text-white/90">
               Collaborate with us to expand our reach and impact on education worldwide.
             </p>
-            
             <Link href="/partner-with-us">
               <a className="inline-block px-6 py-3 bg-white text-[#1e3a5f] font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
                 Learn More
