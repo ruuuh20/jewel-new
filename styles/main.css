@@ -460,8 +460,8 @@ body {
   cursor: pointer;
   position: relative;
   white-space: nowrap;
-  letter-spacing: 1.1px;
-  font-size: 18px;
+  letter-spacing: normal;
+  font-size: 16px;
 }
 
 /* underline hover effect */
@@ -1176,4 +1176,8 @@ section [class*="relative"] > span[style*="position: absolute"] {
 
 section .hero-image-container > span[style*="position: absolute"] {
   z-index: 10 !important;
+}
+
+.leading-25 {
+  line-height: 25px;
 }

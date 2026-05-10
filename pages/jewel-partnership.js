@@ -49,7 +49,7 @@ export default function JewelPage() {
               {/* Left Column - Text */}
               <div className="animate-on-scroll">
               
-                <p className={'mb-4 leading-relaxed text-gray-700'}>
+                <p className={'mb-4 text-gray-700'}>
                   JEWEL is a division of Educate Together, a nonprofit specializing in school-to-school partnerships between the United States and Korea. We design, facilitate, and manage international exchange programs from an educational standpoint — connecting schools across cultures and building partnerships that go beyond a single visit.
                 </p>
                 <p className={'mb-6 leading-relaxed text-gray-700'}>
@@ -164,11 +164,11 @@ export default function JewelPage() {
 
             <div className="bg-gradient-to-br from-[#f8fafc] to-white p-8 md:p-12 rounded-2xl border-2 border-gray-100">
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f]">
+                <h4 className="text-xl md:text-2xl font-bold text-[#1e3a5f]">
                   Kay Kim (김경화)
-                </h3>
+                </h4>
                 <p className="text-lg text-[#e8703a] font-semibold">
-                  Founder & Director, JEWEL Partnership
+                  Founder & Director
                 </p>
                 <div className="w-12 h-1 bg-[#e8703a] rounded-full my-3"></div>
                 <p className="text-base leading-relaxed text-gray-700">

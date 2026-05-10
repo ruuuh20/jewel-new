@@ -62,25 +62,25 @@ export default function Header({ isExhibitPage }) {
                     <span className="block mt-1 mr-1 md:hidden mobile">
                       <Image
                         src="/ham-logo.png"
-                        width="35" height="35" 
+                        width="35" height="35"
                       />
                     </span>
                     <span className="block mt-1 ml-1 mr-1 md:ml-0 md:mt-2">
                       <Image
                         src="/fontlogoET.svg"
-                       width="50" height="50" 
+                       width="50" height="50"
                       />
                     </span>
                   </a>
                 </Link>
               </m.div>
 
-              <nav className="flex items-center justify-end ml-auto text-sm font-semibold md:w-full md:space-x-6 md:justify-center md:text-base md:w-auto">
+              <nav className="flex items-center justify-end ml-auto text-sm font-semibold md:space-x-6 md:text-base md:w-auto">
                 {/* About Us Dropdown */}
                 <div className="relative hidden ease-in md:inline-block dropdown group">
                   <button 
                     className={`
-                      hover:text-[#c17854] focus:text-[#c17854] px-4 inline-flex items-center
+                      hover:text-[#c17854] focus:text-[#c17854] inline-flex items-center
                       transition-colors duration-200
                       text-[#242b2d] 
                     `}
@@ -166,7 +166,7 @@ export default function Header({ isExhibitPage }) {
                 <div className="relative hidden ease-in md:inline-block dropdown group">
                   <button 
                     className={`
-                      hover:text-[#c17854] focus:text-[#c17854] pr-2 inline-flex items-center
+                      hover:text-[#c17854] focus:text-[#c17854] inline-flex items-center
                       transition-colors duration-200
                      text-[#242b2d] 
                     `}
@@ -212,7 +212,7 @@ export default function Header({ isExhibitPage }) {
 
                 {/* Donate Button */}
                 <Link href="/donate">
-                  <a className="hidden md:inline-flex items-center justify-center px-5 py-3 font-bold bg-[#e8703a] text-white hover:bg-[#d05e28] transition-all duration-300 shadow-lg hover:shadow-xl rounded-lg text-sm">
+                  <a className="hidden md:inline-flex items-center justify-center px-5 py-3 font-bold border-2 border-[#e8703a] text-[#e8703a] hover:bg-[#e8703a] hover:text-white transition-all duration-300 rounded-lg text-sm">
                     Donate
                   </a>
                 </Link>
