@@ -182,12 +182,12 @@ export default function Header({ isExhibitPage }) {
                   </button>
                   <ul className="absolute hidden text-gray-700 pt-0 group-hover:block w-[230px] ease-in duration-300 z-50 dropdown-menu">
                       <Link href="/partner-with-us">
-                      <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] border-b border-gray-100">
+                      <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] border-b border-gray-100 rounded-t-lg">
                         Become a Partner
                       </a>
                     </Link>
                     <Link href="/sponsor">
-                      <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] border-b border-gray-100 rounded-t-lg">
+                      <a className="block px-8 py-3 whitespace-no-wrap bg-white hover:bg-[#f8fafc] border-b border-gray-100">
                         Become a Sponsor
                       </a>
                     </Link>
