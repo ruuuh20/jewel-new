@@ -72,7 +72,7 @@ export default function Contact(props) {
                         For any inquiries, you can send an email at{" "}
                         <a
                           className="font-semibold text-[#e8703a] hover:text-[#a85232] transition-colors underline"
-                          href="mailto:edutogether22@gmail.com"
+                          href="mailto:partnership@edutogether.us"
                         >
                           {posts && posts[0]?.email}
                         </a>{" "}
