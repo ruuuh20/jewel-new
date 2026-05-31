@@ -192,7 +192,7 @@ export default function Donate(props) {
                       </div>
                       <div className="bg-[#f8fafc] p-4 rounded-lg text-center">
                         <p className="mb-1 text-sm text-gray-600">Send to:</p>
-                        <p className="text-lg font-bold text-[#1e3a5f] break-all">
+                        <p className="text-sm font-bold text-[#1e3a5f] whitespace-nowrap">
                           edutogether22@gmail.com
                         </p>
                       </div>
@@ -247,8 +247,8 @@ export default function Donate(props) {
                         </p>
                         <div className="p-4 text-center bg-white border-2 border-gray-200 rounded">
                           <p className="font-semibold text-[#120902]">Educate Together Organization</p>
-                          <p className="text-gray-700">317 Harrington Ave</p>
-                          <p className="text-gray-700">Closter, NJ 07624</p>
+                          <p className="text-gray-700">650 E Palisades Ave</p>
+                          <p className="text-gray-700">Englewood Cliffs, NJ 07632</p>
                         </div>
                       </div>
                     </div>

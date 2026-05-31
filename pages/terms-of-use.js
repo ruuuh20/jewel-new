@@ -41,7 +41,7 @@ export default function Terms(props) {
               <p>
                 <strong>Company</strong> (referred to as either &quot;the
                 Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-                in this Agreement) refers to Educate Together, 317 Harrington Ave.
+                in this Agreement) refers to Educate Together, 650 E Palisades Ave, Englewood Cliffs, NJ 07632.
               </p>
             </li>
             <li>

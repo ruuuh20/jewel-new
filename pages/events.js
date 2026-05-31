@@ -70,9 +70,11 @@ export default function Events(props) {
                 <p className="text-center">
                   Educate Together Organization
                   <br />
-                  317 Harrington Ave
+                  650 E Palisades Ave
+                  <br />
+                  Englewood Cliffs, NJ 07632
                   <br/>
-                  Closter, NJ 07624
+                  
                 </p>
               </div>
               <div className="my-4 md:my-8"> <h4 className="mb-2 font-bold">Donate by Venmo/Zelle</h4></div>

@@ -10,6 +10,7 @@ import { ContactForm } from "@/components/form";
 import Link from "next/link";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { fade } from "@/helpers/transitions";
+import { SiKakaotalk } from "react-icons/si";
 
 export default function Contact(props) {
   const { postdata, preview } = props;
@@ -154,6 +155,19 @@ export default function Contact(props) {
                                   </div>
                                 </div>
                               )}
+
+                              {/* KakaoTalk Card */}
+                              <div className="bg-white p-6 rounded-lg border-2 border-gray-100 hover:border-[#FAE100] transition-all duration-300 shadow-sm">
+                                <div className="flex items-start gap-4">
+                                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#FAE100] flex items-center justify-center">
+                                    <SiKakaotalk className="w-5 h-5 text-[#3A1D1D]" />
+                                  </div>
+                                  <div className="flex-1">
+                                    <h3 className="font-semibold text-[#120902] mb-1">KakaoTalk</h3>
+                                    <p className="text-gray-700">ID: kaykim1313</p>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           ))}
                       </div>
