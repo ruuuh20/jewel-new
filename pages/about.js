@@ -40,11 +40,11 @@ export default function About(props) {
                 </div>
                 
                 <h1 className="mb-4 text-4xl font-bold md:text-5xl xl:text-6xl">
-                  About Us
+                  Educate Together
                 </h1>
                 
                 <p className="text-2xl font-semibold md:text-3xl">
-                  함께하는교육 소개
+                  함께하는교육
                 </p>
               </div>
             </Container>
