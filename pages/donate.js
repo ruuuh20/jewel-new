@@ -193,7 +193,7 @@ export default function Donate(props) {
                       <div className="bg-[#f8fafc] p-4 rounded-lg text-center">
                         <p className="mb-1 text-sm text-gray-600">Send to:</p>
                         <p className="text-sm font-bold text-[#1e3a5f] whitespace-nowrap">
-                          edutogether22@gmail.com
+                         partnership@edutogether.us
                         </p>
                       </div>
                     </div>
@@ -284,7 +284,7 @@ export default function Donate(props) {
                   </p>
                   <div className="flex flex-col justify-center gap-4 sm:flex-row">
                     <a
-                      href="mailto:edutogether22@gmail.com"
+                      href="mailto:partnership@edutogether.us"
                       className="inline-flex items-center justify-center px-8 py-3 font-bold bg-[#e8703a] text-white hover:bg-[#a85232] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                     >
                       Email Us

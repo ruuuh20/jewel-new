@@ -334,7 +334,7 @@ const RootsAndRoutesApplication = () => {
                     
                     {/* Email Button */}
                     <a
-                      href="mailto:edutogether22@gmail.com"
+                      href="mailto:partnership@edutogether.us"
                       className="inline-flex items-center justify-center px-8 py-4 font-semibold bg-[#1e3a5f] text-white hover:bg-[#0f1f3d] transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                     >
                       <svg 

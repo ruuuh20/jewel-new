@@ -368,7 +368,7 @@ const Sponsor = () => {
                         </a>
                       </Link>
                       <a
-                        href="mailto:edutogether22@gmail.com"
+                        href="mailto:partnership@edutogether.us"
                         className="inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 border rounded-lg bg-white/10 hover:bg-white/20 border-white/25"
                       >
                         Email Us Directly

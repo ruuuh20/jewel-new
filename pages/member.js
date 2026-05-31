@@ -112,9 +112,9 @@ export default function Member(props) {
                       If you are interested in exploring career or volunteer opportunities with us, please send your resume and a brief introduction to{" "}
                       <a
                         className="font-semibold text-[#e8703a] hover:text-[#a85232] transition-colors underline"
-                        href="mailto:edutogether22@gmail.com"
+                        href="mailto:partnership@edutogether.us"
                       >
-                        edutogether22@gmail.com
+                        partnership@edutogether.us
                       </a>
                     </p>
                   </div>

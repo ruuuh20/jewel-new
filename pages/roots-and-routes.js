@@ -1352,7 +1352,7 @@ const RootsAndRoutes = () => {
                   </a>
                 </div>
                 <p className="text-lg opacity-90">
-                   Questions? Email edutogether22@gmail.com
+                   Questions? Email partnership@edutogether.us
                 </p>
               </div>
             </section>

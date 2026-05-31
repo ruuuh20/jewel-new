@@ -245,7 +245,7 @@ const Partner = (props) => {
                         Fill Out Partnership Form
                       </a>
                       <a
-                        href="mailto:edutogether22@gmail.com"
+                        href="mailto:partnership@edutogether.us"
                         className="inline-flex items-center justify-center px-8 py-4 font-bold bg-white text-[#1e3a5f] hover:bg-gray-100 transition-all duration-300 text-lg shadow-lg hover:shadow-xl rounded-lg"
                       >
                         Email Us Directly
