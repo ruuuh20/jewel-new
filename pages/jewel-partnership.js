@@ -583,10 +583,10 @@ export default function JewelPage() {
                 </a>
               </Link>
               <a
-                href="mailto:jewelspeaks@gmail.com"
+                href="mailto:partnership@edutogether.us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#1e3a5f] font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-xl text-lg"
               >
-                jewelspeaks@gmail.com
+                partnership@edutogether.us
               </a>
             </div>
 
