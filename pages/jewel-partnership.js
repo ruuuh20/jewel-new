@@ -562,6 +562,65 @@ export default function JewelPage() {
         </Container>
       </section>
 
+      {/* Partnership Deck */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#f8fafc] to-white">
+        <Container>
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="text-sm font-bold text-[#1a5fa8] uppercase tracking-wider mb-4">
+              Partnership Deck • 파트너십 자료
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
+              Learn More About JEWEL
+            </h2>
+            <p className="text-lg text-gray-600 mb-10">
+              Download or view our full partnership deck to learn about our programs, track record, and how we can support your school.
+            </p>
+
+            <div className="bg-white rounded-2xl border-2 border-gray-100 p-8 md:p-12 shadow-sm flex flex-col items-center gap-6">
+              <div className="w-16 h-16 rounded-full bg-[#1e3a5f]/10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1e3a5f" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <div>
+                <p className="text-xl font-bold text-[#1e3a5f]">JEWEL Partnership Deck</p>
+                <p className="text-gray-500 text-sm mt-1">PDF</p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="/JEWEL_Partnership_Deck.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#1e3a5f] text-white font-bold rounded-lg hover:bg-[#0d2240] transition-all duration-300 shadow-md text-base"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  View Deck
+                </a>
+                <a
+                  href="/JEWEL_Partnership_Deck.pdf"
+                  download="JEWEL_Partnership_Deck.pdf"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#1e3a5f] border-2 border-[#1e3a5f] font-bold rounded-lg hover:bg-[#f0f4f8] transition-all duration-300 text-base"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                  </svg>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-[#1e3a5f] to-[#2c5282]">
         <Container>
@@ -589,6 +648,7 @@ export default function JewelPage() {
                 partnership@edutogether.us
               </a>
             </div>
+
 
             <div className="mt-8 text-white/80">
               <p>Kay Kim (김경화) • Director</p>

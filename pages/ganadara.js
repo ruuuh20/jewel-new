@@ -14,6 +14,8 @@ export default function GanadaraPage() {
               <span className="font-bold">Korean Language & Culture • 한글문화교육</span>
             </div>
 
+            <img src="/images/ganadara-logo.png" alt="Ganadara Logo" className="h-32 mx-auto mb-8" />
+
             <h1 className="mb-6 text-4xl font-bold md:text-5xl xl:text-6xl">
               Ganadara Korean Language & Culture
             </h1>
